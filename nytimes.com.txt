@@ -15,6 +15,7 @@ strip_id_or_class:byline
 strip_id_or_class:dateline
 strip_id_or_class:articleheadline
 strip_id_or_class:articleBottomExtra
+strip_id_or_class:shareTools
 strip://a[contains(@href, 'nytimes.com/adx/')]
 strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
@@ -34,3 +35,4 @@ author:substring-after(//h6[@class='byline'],'By ')
 
 test_url: http://www.nytimes.com/2011/07/24/books/review/an-academic-authors-unintentional-masterpiece.html
 test_url: http://www.nytimes.com/2012/06/10/arts/television/the-newsroom-aaron-sorkins-return-to-tv.html
+test_url: http://www.nytimes.com/2013/03/25/world/middleeast/israeli-military-responds-after-patrols-come-under-fire-from-syria.html
