@@ -1,4 +1,6 @@
 body: //div[@class="story-body"]
+# for video entries
+body: //div[contains(@class, "videoInStory") or @id="meta-information"]
 title: //h1[@class="story-header"]
 date: //span[@class="story-date"]/span[@class='date']
 
@@ -30,3 +32,5 @@ prune: no
 
 dissolve: //h2
 test_url: http://www.bbc.co.uk/news/business-15060862
+# video entry
+test_url: http://www.bbc.co.uk/news/world-asia-22056933
