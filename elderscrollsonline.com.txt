@@ -1,0 +1,9 @@
+# date below won't work as strtotime doesn't' understand that format (03.28.2013)
+date: //time
+title: //h1[contains(@class, "alpha")]
+body: //article[contains(@class, "news-post")]
+
+prune: no
+
+test_url: http://elderscrollsonline.com/en/rss
+test_url: http://elderscrollsonline.com/en/news/post/2013/03/27/developer-question-of-the-week-17
