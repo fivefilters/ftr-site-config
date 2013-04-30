@@ -23,9 +23,15 @@ strip_id_or_class: comments
 strip_id_or_class: ui-jump-list
 strip_id_or_class: pullquote
 
+find_string: <script 
+replace_string: <div style="display:none" 
+find_string: </script>
+replace_string: </div>
+
 strip: //q
 
 strip: //a[contains(@class, 'entry-section-title')]
 
 test_url: http://www.theverge.com/2012/2/29/2821763/lytro-review
 test_url: http://www.theverge.com/2011/11/3/2534861/nokia-lumia-800-review
+test_url: http://www.theverge.com/2013/2/24/4026114/barnes-noble-shifting-focus-away-from-nook-hardware
