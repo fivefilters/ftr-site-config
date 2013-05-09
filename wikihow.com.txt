@@ -1,0 +1,9 @@
+body: //div[@id='bodycontents']
+prune: no
+tidy: no
+strip_id_or_class: editsection
+strip: //div[contains(@class, 'step_num')]
+
+single_page_link: //a[@id='gatPrintView']
+
+test_url: http://www.wikihow.com/Start-Your-Own-Country
