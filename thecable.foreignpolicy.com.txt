@@ -1,0 +1,11 @@
+title: //title
+author: //span[@class="post_by"]/a/text()
+date: //span[@class="post_date"]
+body: //div[@class="translateBody"]
+
+#Strip article junk
+strip: //div[@id="share-box"] 
+strip: //div[@id="fb-meta-like"] 
+
+
+test_url: http://thecable.foreignpolicy.com/posts/2013/04/12/will_the_magnitsky_list_spoil_donilon_s_russia_trip

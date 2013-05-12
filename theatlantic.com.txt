@@ -10,6 +10,9 @@ author: //*[@class='author']/span
 prune: no
 
 strip: //div[@class='moreOnBoxWithImages']
+strip: //p[contains(., 'This article available online at:')]
+strip: //p[contains(., 'This article available online at:')]/following::*
+strip: //div[@class='earthbox']
 
 single_page_link: //a[@class='print']
 

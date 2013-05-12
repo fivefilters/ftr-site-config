@@ -1,0 +1,6 @@
+body: //article[@id='entry-top']/div[@class='float_wrapper']
+author: //header/p[@class='byline']/em/a
+date: //header/p[@class='byline']/span[@class='timestamp']
+
+strip: //div[@class='float_wrapper']/header
+test_url: http://www.polygon.com/2013/4/5/4189028/donkey-kong-country-returns-3d-new-content

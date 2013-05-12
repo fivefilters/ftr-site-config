@@ -1,6 +1,6 @@
 title:h1
-author: //*[@class = 'author']
-date: //*[@class = 'date']
+author: //*[@id = 'gazeta_article_author']
+date: //*[@id = 'gazeta_article_date']
 body: //*[@id = 'art']
 next_page_link: //*[@id='Str']/a[contains(text(), 'nastepne')]
 strip: //*[@class = 'rel_zdjTOP']
