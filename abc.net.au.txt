@@ -1,4 +1,4 @@
-title: //h1
+title: //div[@class='article section']//h1
 author: //div[@class="byline"]/a
 date: //span[@class="timestamp"]
 body: //div[@class="page section"]
@@ -9,5 +9,7 @@ strip: //p[@class="topics"]
 strip: //h1
 strip: //div[@class="byline"]
 strip: //p[@class="published"]
+strip: //div[@id="footer"]
 strip: //div[contains(@class,"featured-scroller")]
 test_url: http://www.abc.net.au/news/2013-03-27/open-speed-highways-change-clp-giles/4597892
+test_url: http://www.abc.net.au/news/2013-04-30/credit-growth-remains-subdued/4660054?section=business
