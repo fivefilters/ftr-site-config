@@ -2,7 +2,7 @@ title: //meta[@property="og:title"]/@content
 body: //div[@id='article_story_body']
 
 author: //h3[@class='byline']/a
-# for slid show content
+# for slide show content
 body: //ul[@id='imageSlide']//li[@class='firstSlide']//img | (//div[@class='txt_body']//p)[1]
 date: //li[@class='dateStamp']/small
 
@@ -14,6 +14,7 @@ strip_id_or_class: recipeACShopAndBuyText
 strip: //div[contains(@class, 'insetContent')]//cite
 strip: //*[contains(@style, 'visibility: hidden;')]
 strip: //div[contains(@class, 'insetContent') and not(contains(@class, 'image'))]
+strip: //div[contains(@class, 'carousel')]
 
 prune: no
 tidy: no
