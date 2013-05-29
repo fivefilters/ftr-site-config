@@ -1,0 +1,1 @@
+body: //div[@class='frame']//img[@class='horizontal'] | //div[@class='content']
