@@ -24,6 +24,11 @@ strip: //p[@class='caption']//a[contains(., 'More Photos')]
 prune: no
 tidy: no
 
+find_string: <script 
+replace_string: <div style="display:none" 
+find_string: </script>
+replace_string: </div>
+
 date: substring-after(//*[contains(@class, 'dateline')], 'Published:')
 
 single_page_link: //link[contains(@href, 'pagewanted=all')]
@@ -36,3 +41,4 @@ author:substring-after(//h6[@class='byline'],'By ')
 test_url: http://www.nytimes.com/2011/07/24/books/review/an-academic-authors-unintentional-masterpiece.html
 test_url: http://www.nytimes.com/2012/06/10/arts/television/the-newsroom-aaron-sorkins-return-to-tv.html
 test_url: http://www.nytimes.com/2013/03/25/world/middleeast/israeli-military-responds-after-patrols-come-under-fire-from-syria.html
+test_url: http://www.nytimes.com/2013/08/15/nyregion/when-the-new-york-city-subway-ran-without-rails.html
