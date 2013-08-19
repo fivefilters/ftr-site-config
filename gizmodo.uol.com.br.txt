@@ -1,0 +1,10 @@
+title: //h1
+
+body: //div[@id='featuredBanner_img'] | //div[@id='content'][1]
+
+strip: //div[@style="float: right; margin-bottom: 20px;"]
+strip: //*[@class="listTags"]
+strip: //*[@id='posts_relacionados']
+
+test_url: http://gizmodo.uol.com.br/compra-seguidores-curtidas-instagram/
+test_url: http://gizmodo.uol.com.br/perfil-mark-zuckerberg-hackeado/
