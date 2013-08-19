@@ -1,0 +1,21 @@
+title: //h1[@class="entry-title"]
+
+body: ///div[@class='materia-titulo']/h2 | //*[@id="materia-letra"]
+
+date: //abbr[@class="published"]
+date: //abbr[@class="updated"]
+
+author: //*[@class="author"]/strong
+
+# quotes
+wrap_in(blockquote): //*[@class="frase-materia"]
+
+strip: //*[@class="foto"]//strong
+strip: //*[@class="saibamais"]
+
+prune: no
+
+replace_string([Clique aqui e veja mais vídeos do Fluminense]): []
+
+test_url: http://globoesporte.globo.com/atletismo/noticia/2013/08/michael-johnson-diz-que-bolt-e-melhor-da-historia-nao-ha-duvidas.html
+test_url: http://globoesporte.globo.com/futebol/futebol-internacional/futebol-espanhol/noticia/2013/08/barca-atropela-levante-e-neymar-passa-em-branco-em-estreia-oficial.html
