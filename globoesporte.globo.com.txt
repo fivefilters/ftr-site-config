@@ -1,15 +1,17 @@
 title: //h1[@class="entry-title"]
 
-body: //*[@id="materia-letra"]
+body: ///div[@class='materia-titulo']/h2 | //*[@id="materia-letra"]
 
 date: //abbr[@class="published"]
 date: //abbr[@class="updated"]
 
 author: //*[@class="author"]/strong
 
+# quotes
+wrap_in(blockquote): //*[@class="frase-materia"]
+
 strip: //*[@class="foto"]//strong
 strip: //*[@class="saibamais"]
-strip: //*[@class="frase-materia"]
 
 prune: no
 
