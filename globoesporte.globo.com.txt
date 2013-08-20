@@ -10,8 +10,9 @@ author: //*[@class="author"]/strong
 # quotes
 wrap_in(blockquote): //*[@class="frase-materia"]
 
-strip: //*[@class="foto"]//strong
+strip: //*[@class="foto"]/strong
 strip: //*[@class="saibamais"]
+strip: //ul[@class="toolbar"]
 
 prune: no
 
