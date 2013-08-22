@@ -24,6 +24,7 @@ strip_id_or_class: pullquote
 strip_id_or_class: m-ad
 strip_id_or_class: social-sharing
 strip_id_or_class: m-video-entry__excerpt
+strip_id_or_class: hidden
 
 find_string: <script
 replace_string: <div style="display:none"
