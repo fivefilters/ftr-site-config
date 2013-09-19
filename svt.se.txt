@@ -5,7 +5,9 @@ replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
 strip_id_or_class: svtHide-No-Js
 strip_id_or_class: aside
+strip_id_or_class: Aside
 strip_id_or_class: hidden
+strip_id_or_class: Share
 tidy: no
 prune: no
 
