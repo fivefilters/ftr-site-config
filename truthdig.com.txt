@@ -4,6 +4,7 @@ prune: no
 
 strip: //div[@class='printbody']/a[@href='http://www.truthdig.com/']
 strip: //table[@class='footer']
+strip: //h6[contains(., 'http://')]
 
 single_page_link: //a[contains(@href, '/print/')]
 
