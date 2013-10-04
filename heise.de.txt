@@ -1,4 +1,4 @@
-single_page_link: //p[@class='news_option']/a
+next_page_link: //a[@title='vor']
 
 date: //p[@class='news_datum']
 title: //h1
