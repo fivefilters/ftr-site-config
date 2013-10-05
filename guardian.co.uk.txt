@@ -1,9 +1,0 @@
-title: //div[@id='main-article-info']//h1
-body: //div[@id='article-wrapper']
-date: //li[@class='publication']//time[@pubdate] | //li[@class='publication']//data[@pubdate]
-strip: //div[contains(@class, 'email-subscription')]
-author: //li[@class='byline']
-prune: no
-tidy: no
-test_url: http://www.guardian.co.uk/business/2011/oct/06/quantitative-easing-75bn-bank-of-england
-test_url: http://www.guardian.co.uk/world/2013/jul/10/nsa-duckduckgo-gabriel-weinberg-prism
