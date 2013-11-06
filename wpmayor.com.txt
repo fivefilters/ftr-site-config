@@ -1,0 +1,6 @@
+body: //div[starts-with(@id, 'post-')]//div[contains(@class, 'entry-content')]
+
+prune: no
+
+test_url: http://www.wpmayor.com/themes/wordpress-portfolio-resume-themes/
+test_url: http://www.wpmayor.com/feed/
