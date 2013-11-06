@@ -1,4 +1,4 @@
-body: //div[starts-with(@id, 'post-')]//div[contains(@class, 'entry-content')]
+body: //div[@id='nrelate_flyout_placeholder']
 
 strip_id_or_class: share
 
