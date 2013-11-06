@@ -1,5 +1,7 @@
 body: //div[starts-with(@id, 'post-')]//div[contains(@class, 'entry-content')]
 
+strip_id_or_class: share
+
 prune: no
 
 test_url: http://www.wpmayor.com/themes/wordpress-portfolio-resume-themes/
