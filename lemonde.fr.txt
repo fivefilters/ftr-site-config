@@ -11,7 +11,7 @@ date: //time[@itemprop='datePublished']/@datetime
 
 body: //div[@id='articleBody']
 #Shoot the insane "conjugaison.lemonde.fr" links :
-strip: //a[contains(@class, 'conjug')]
+#strip: //a[contains(@class, 'conjug')]
 
 prune: no
 
