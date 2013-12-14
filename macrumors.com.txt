@@ -3,4 +3,5 @@ date: substring-before(//div[@class='byline'], " by ")
 title: //h3
 body: //div[@class='article']
 strip: //div[@class='linkback']
+strip: //div[@class='byline']
 test_url: http://www.macrumors.com/2013/12/14/mac-pro-launch-nears-as-apple-business-staff-begin-offering-price-quotes/
