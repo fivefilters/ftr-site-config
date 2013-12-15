@@ -4,5 +4,3 @@ This is a fork of [Full-Text RSS Site Config Files](https://github.com/fivefilte
 * Updated MacRumors
 * Updated ArsTechnica
 * Updated FastCompany
-
-More coming ...
