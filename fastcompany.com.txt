@@ -12,5 +12,6 @@ strip://section[@id='header_region']
 strip://h1[@class='node-title']
 strip://div[@class='node-submitted']
 strip_id_or_class: skipnav
+strip: //aside[@id='author']
 test_url: http://www.fastcompany.com/3000226/link-between-quietness-and-productivity
 test_url: http://www.fastcompany.com/3003586/6-simple-rituals-reach-your-potential-every-day
