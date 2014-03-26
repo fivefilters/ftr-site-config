@@ -1,6 +1,6 @@
 title: //h1
 
-body: //div[@id='featuredBanner_img'] | //div[@id='content'][1]/p
+body: //div[@id='destaques']//div[contains(@class, 'img')] | //div[@id='maincontent']//p
 
-test_url: http://gizmodo.uol.com.br/compra-seguidores-curtidas-instagram/
+test_url: http://gizmodo.uol.com.br/nvidia-gtx-titan-z/
 test_url: http://gizmodo.uol.com.br/perfil-mark-zuckerberg-hackeado/
