@@ -12,6 +12,7 @@ strip: //article/header
 strip: //*[@id='sticky-menu']
 strip: //aside
 strip: //nav
+strip: //img[contains(@class, 'vox-lazy-load')]
 
 strip_id_or_class: gallery
 strip_id_or_class: article-meta
@@ -26,8 +27,11 @@ strip_id_or_class: social-sharing
 strip_id_or_class: m-video-entry__excerpt
 strip_id_or_class: hidden
 
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
+
 find_string: <script
-replace_string: <div style="display:none"
+replace_string: <div style="display:none" 
 find_string: </script>
 replace_string: </div>
 
