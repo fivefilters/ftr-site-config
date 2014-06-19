@@ -30,11 +30,10 @@ strip_id_or_class: hidden
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
 
-find_string: <script
-replace_string: <div style="display:none" 
-find_string: </script>
-replace_string: </div>
+replace_string(<script>): <div id='removeMe'>
+replace_string(</script>): </div>
 
+strip: //div[@id='removeMe']
 strip: //q
 
 strip: //a[contains(@class, 'entry-section-title')]
