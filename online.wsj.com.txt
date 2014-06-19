@@ -19,6 +19,7 @@ strip: //div[contains(@class, 'carousel')]
 prune: no
 tidy: no
 
+test_url: http://online.wsj.com/news/articles/SB10001424052702304626304579509100018004342
 test_url: http://online.wsj.com/article/SB10001424052970203363504577185322849515102.html
 # slide show
 test_url: http://online.wsj.com/article/SB10001424052970204791104577110550376458164.html
