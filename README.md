@@ -19,7 +19,9 @@ If a site is not in our set, you can create a file for it in the same way. See [
 
 ### How to write a site config file
 
-The quickest and simplest way is to use our [point-and-click interface](http://siteconfig.fivefilters.org). It's a simple tool only intended to create a rule to extract the correct content block. For further refinements, e.g. selecting the title, stripping elements, dealing with multi-page articles, please see our [help page](http://help.fivefilters.org/customer/portal/articles/223153-site-patterns) for more information.
+The quickest and simplest way is to use our [point-and-click interface](http://siteconfig.fivefilters.org). It's a simple tool only intended to create a rule to extract the correct content block. 
+
+For further refinements, e.g. selecting the title, stripping elements, dealing with multi-page articles, please see our [help page](http://help.fivefilters.org/customer/portal/articles/223153-site-patterns).
 
 ### Instapaper
 
