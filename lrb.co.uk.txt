@@ -1,8 +1,13 @@
-title: substring-before(//title, ' · LRB')
+title: //div[@class="article-body indent"]/hgroup/h1
 
 body: //div[@class="article-body indent"]
 
 date: substring-after(//p[@class="meta-info"]/a, '· ')
 
-prune: no
+author: //div[@class="article-body indent"]/hgroup/h2
+
+strip_id_or_class: print-hide
+strip_id_or_class: books
+
 test_url: http://www.lrb.co.uk/v33/n18/james-meek/its-already-happened
+test_url: http://www.lrb.co.uk/v36/n13/benjamin-kunkel/paupers-and-richlings
