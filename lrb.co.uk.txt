@@ -1,8 +1,8 @@
-title: substring-before(//title, ' · LRB')
+title: substring-before(//title, ' Â· LRB')
 
 body: //div[@class="article-body indent"]
 
-date: substring-after(//p[@class="meta-info"]/a, '· ')
+date: substring-after(//p[@class="meta-info"]/a, 'Â· ')
 
 prune: no
 test_url: http://www.lrb.co.uk/v33/n18/james-meek/its-already-happened
