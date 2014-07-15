@@ -1,7 +1,7 @@
-body: //div[contains(@class, 'post-content-inner')]
-strip_id_or_class: follow-ups
-strip_id_or_class: footer
+body: //div[contains(@class, 'postContent-inner')]
+strip_id_or_class: supplementalPostContent
 
 prune: no
 
-test_url: https://medium.com/p/6844c0d7893b
+test_url: https://medium.com/@savolai/kaytettavyyden-haasteet-keskustelukulttuurista-2-3-6844c0d7893b
+test_url: https://medium.com/health-the-future/thirty-things-ive-learned-482765ee3503
