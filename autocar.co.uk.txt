@@ -1,0 +1,11 @@
+title: //div[@class='col-center']/h1
+author: //div[@class='personality']/a
+date: //div[@class='personality-date']
+body: //div[@class='content-top ']//div[@class='content'][1] | //div[contains(@class,'article-body')]
+
+strip: //div[@class='author-block']
+# remove email subscription nag text
+strip: //p//iframe[contains(@src,'signup')]/preceding::p[1]
+
+test_url: http://www.autocar.co.uk/car-review/volkswagen/e-golf
+test_url: http://www.autocar.co.uk/car-news/pebble-beach/saleen-unveils-performance-electric-vehicle-based-tesla-model-s
