@@ -1,5 +1,5 @@
-body: //section[@class='main_cont'] /img | //div[@class='articleContent']
-title: //div[@class='blog_top_left'] //h2
+body: //section[@class='main_cont']/img | //div[@class='articleContent']
+title: //div[@class='blog_top_left']//h2
 author: //a[@class='b'][1]
 date: substring-after(substring-before(//div, 'Posted in'), ' on ')
 strip_image_src: /content/images/globals/
