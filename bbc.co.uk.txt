@@ -31,6 +31,7 @@ strip: //div[contains(@class, 'share-tools')]
 strip: //div[@id='also-related-links']
 
 strip_id_or_class: share-help
+strip_id_or_class: comments_module
 
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
