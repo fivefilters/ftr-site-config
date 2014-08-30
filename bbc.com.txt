@@ -36,6 +36,8 @@ strip_id_or_class: comments_module
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
 
+native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
+
 tidy: no
 prune: no
 
