@@ -10,6 +10,8 @@ date: //time[@data-print='date']
 body: //div[@data-print='body']
 body: //section[@data-print='body']
 
+native_ad_clue: //meta[@property="article:section" and @content="Advertiser"]
+
 # For various things...
 strip: *[@data-print="ignore"]
 test_url: http://www.buzzfeed.com/hgrant/35-reasons-why-dogs-hate-the-holidays
