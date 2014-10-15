@@ -40,8 +40,13 @@ tidy: no
 prune: no
 
 dissolve: //h2
+
 test_url: http://www.bbc.co.uk/sport/0/football/23224017
+test_contains: Swansea City have completed the club-record signing 
+
 test_url: http://www.bbc.co.uk/news/business-15060862
+test_contains: Europe's leaders are meeting again to try to solve
+
 # news feed
 test_url: http://feeds.bbci.co.uk/news/rss.xml
 # sports feed
