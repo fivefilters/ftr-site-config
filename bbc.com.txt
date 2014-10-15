@@ -42,9 +42,16 @@ tidy: no
 prune: no
 
 dissolve: //h2
+
 test_url: http://www.bbc.com/sport/0/football/28918021
+test_contains: Cameroonian footballer Albert Ebosse has died
+
 test_url: http://www.bbc.com/sport/0/football/23224017
+
 test_url: http://www.bbc.com/news/business-15060862
+test_contains: Europe's leaders are meeting again to try
+
+
 # news feed
 test_url: http://feeds.bbci.co.uk/news/rss.xml
 # sports feed
