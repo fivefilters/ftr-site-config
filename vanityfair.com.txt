@@ -26,5 +26,7 @@ strip: //li[@class='blogNavPrev']
 single_page_link: //a[@title='Print this page']
 
 test_url: http://www.vanityfair.com/politics/features/2011/05/egypt-revolutionaries-201105
+test_contains: Jonas Fredwall Karlsson captures face-to-face the thrilling
+
 test_url: http://www.vanityfair.com/politics/features/2008/08/hitchens200808
 test_url: http://www.vanityfair.com/style/2012/01/prisoners-of-style-201201
