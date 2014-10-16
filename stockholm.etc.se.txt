@@ -1,5 +1,4 @@
-strip_id_or_class: 'left'
-strip_id_or_class: 'right'
-strip_id_or_class: 'block-belowcontent'
+body: //div[contains(@class, '-body-')]
 
-test_url: http://stockholm.etc.se/reportage/bakom-stangda-dorrar-pa-fas-3-massa
+test_url: http://stockholm.etc.se/debatt/jobbgaraget-gav-hopp-ungdomar-i-tensta
+test_contains: Jobbgaraget startades av Angeles
