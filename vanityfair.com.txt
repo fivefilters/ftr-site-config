@@ -3,6 +3,7 @@ author: //div[contains(@class, 'byline')]//span[contains(@class, 'name')]
 date: //div[contains(@class, 'cn_date_time')]
 body: //div[contains(@class, 'pageContainers')]
 body: //article[@id='items-container']
+body: //div[@id='main']
 #body: //h2[@class='sub-header'] | //div[contains(@class, 'contributor-type') or @class='display-date' or @class='content-container']
 
 strip_id_or_class: bc
