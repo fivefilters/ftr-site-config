@@ -1,4 +1,8 @@
 body: //div[@id='imagestage']
+body: //div[contains(@class, 'userContentWrapper')]
+
+strip_id_or_class: commentable
+
 prune: no
 tidy: no
 
