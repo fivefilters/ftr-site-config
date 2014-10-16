@@ -1,4 +1,0 @@
-body: //div[contains(@class, '-body-')]
-
-test_url: http://stockholm.etc.se/debatt/jobbgaraget-gav-hopp-ungdomar-i-tensta
-test_contains: Jobbgaraget startades av Angeles
