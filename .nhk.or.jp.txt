@@ -1,0 +1,2 @@
+test_url: http://www3.nhk.or.jp/news/html/20141019/t10015522601000.html
+test_contains: 小渕経済産業大臣は
