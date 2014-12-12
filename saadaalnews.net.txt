@@ -1,0 +1,3 @@
+body: //div[contains(@class, 'section-content-left')]
+
+test_url: http://saadaalnews.net/?p=42624
