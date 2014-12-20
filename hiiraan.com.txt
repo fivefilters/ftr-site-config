@@ -4,5 +4,7 @@
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' single ')]//div[contains(concat(' ',normalize-space(@class),' '),' description ')]
 
+prune: no
+
 test_url: http://www.hiiraan.com/news/2014/Dec/wararka_maanta20-89428.htm
 test_url: http://rss.hiiraan.com/wararka_maanta_rss.xml
