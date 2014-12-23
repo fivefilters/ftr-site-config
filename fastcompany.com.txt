@@ -2,6 +2,8 @@ author: //div[@class='byline']//a
 date: //meta[@property='article:published_time']/@content
 body: //figure[@class='jumbotron'] | //div[@itemprop='body']
 
+prune: no
+
 #strip_id_or_class: article-top-wrapper
 #strip_id_or_class: footer-message
 #strip_id_or_class: print-logo
