@@ -1,0 +1,3 @@
+parser: html5php
+
+test_url: http://www.presseportal.de/pm/103258/2930232/felix-neureuther-vor-der-ski-wm-ich-denke-von-rennen-zu-rennen
