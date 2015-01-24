@@ -1,3 +1,8 @@
+body: //div[contains(@class, 'story-text')]
+
 parser: html5php
 
 test_url: http://www.presseportal.de/pm/103258/2930232/felix-neureuther-vor-der-ski-wm-ich-denke-von-rennen-zu-rennen
+test_url: http://www.presseportal.de/pm/66749/2933779/koelner-stadt-anzeiger-bahnmitarbeiter-werden-in-nrw-immer-haeufiger-angegriffen-zahl-der/rss
+test_contains: kleineren Bahnhöfen installieren und erhofft
+test_url: http://www.presseportal.de/rss/presseportal.rss2
