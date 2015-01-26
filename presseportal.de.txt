@@ -1,4 +1,4 @@
-body: (//div[@itemprop="articleBody"])[1]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' story-text ')]
 
 autodetect_on_failure: no
 
