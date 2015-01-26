@@ -1,6 +1,6 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' story-text ')]
 
-autodetect_on_failure: no
+strip_id_or_class: news-bodycopy
 
 parser: html5php
 tidy: no
