@@ -1,5 +1,7 @@
 body: //div[contains(@class, 'story-text')]
 
+autodetect_on_failure: no
+
 parser: html5php
 tidy: no
 
