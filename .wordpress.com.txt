@@ -24,4 +24,4 @@ strip_id_or_class: addtoany
 strip: //div[contains(@class, 'navigation')]
 #strip: //iframe
 
-test_url: https://elisehahn.wordpress.com/2011/11/10/the-vatican-and-st-peters-basilica/
+test_url: https://elisehahn.wordpress.com/2013/09/22/looking-back-to-move-forward-navigating-race-and-racism-in-neoliberal-terrain/

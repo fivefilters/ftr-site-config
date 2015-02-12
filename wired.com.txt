@@ -3,9 +3,13 @@ author: //meta[@name='Author']/@content
 date: //meta[@name='DisplayDate']/@content
 body: //div[@class='entry']
 strip: //p[contains(., 'Pages:') and contains(., 'View All')]
+strip: //p[@class='caption']
+strip: //div[@class='desc' or @class='slide' or @id='slide-info']
 
 strip_id_or_class: pullquote
 strip_id_or_class: left_rail
+strip_id_or_class: related-container
+strip_id_or_class: radvert-caption-wrap
 
 # Remove gallery?
 strip_id_or_class: wpgallery
