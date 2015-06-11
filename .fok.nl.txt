@@ -8,4 +8,6 @@ replace_string(90%;">Lees ook): 0%;"></h3></div></body></html>
 tidy: no
 prune: no
 
+http_header(user-agent): Googlebot/2.1
+
 test_url: http://sport.fok.nl/nieuws/548725/1/1/50/rosicky-traint-weer-mee-bij-tsjechie.html

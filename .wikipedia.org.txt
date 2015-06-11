@@ -14,6 +14,9 @@ strip: //div[@id='contentSub']
 strip: //table[contains(@class, 'metadata')]
 strip: //*[contains(@class, 'noprint')]
 strip: //span[@class='noexcerpt']
+
+http_header(user-agent): Mozilla/5.2
+
 prune: no
 tidy: no
 test_url: http://en.wikipedia.org/wiki/Christopher_Lloyd
