@@ -1,7 +1,7 @@
-body: //div[@id='imagestage']
-body: //div[contains(@class, 'userContentWrapper')]
 body: //div[@id='m_story_permalink_view' or contains(@data-sigil, 'm-story-view')]
-strip_id_or_class: commentable
+
+title: (//div[@id='m_story_permalink_view' or contains(@data-sigil, 'm-story-view')]//p)[1]
+
 strip: //div[contains(@data-sigil, 'm-mentions-expand')]
 
 prune: no
@@ -9,5 +9,5 @@ tidy: no
 
 single_page_link: concat("https://m.", substring-after(//link[@rel="alternate" and @media="handheld"]/@href, "//www."))
 
-test_url: https://www.facebook.com/permalink.php?story_fbid=10154584776550183&id=294468630182
+test_url: https://m.facebook.com/permalink.php?story_fbid=10154584776550183&id=294468630182
 test_contains: holding an extraordinary session in Brussels this month
