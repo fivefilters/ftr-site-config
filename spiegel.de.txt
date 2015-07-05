@@ -8,6 +8,9 @@
 # - Fixed single_page_link
 # - Included intro text in single page view
 # - Added body in default view
+# stesie@
+# - removed copyright box
+# - removed "print more" box
 
 # set body
 tidy: no
@@ -66,6 +69,9 @@ strip: //div[@id='spBreadcrumb']
 strip: //div[@id='spBigaLatestEntries']
 strip: //div[contains(@class, 'spBigaNavi')]
 strip: //div[@class='spDottedLine']
+
+strip: //div[@class='asset-box article-print-more']
+strip: //div[@class='article-copyright']
 
 # Use link to print article for single page view
 single_page_link: //a[contains(@href, '-druck')]
