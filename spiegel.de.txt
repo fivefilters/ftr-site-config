@@ -55,7 +55,7 @@ strip: //*/div[@class='spCredit']/following-sibling::p
 strip: //div[@class='spMInline']
 
 # remove photogalleries and extras
-strip: //div[@class='spPhotoGallery']
+strip: //div[contains(@class, 'spPhotoGallery')]
 strip: //div[@class='spPhotoGallery']/following-sibling::br
 strip: //div[@class='spAssetAlignleft']
 strip: //div[contains(@class,'spAsset')]
