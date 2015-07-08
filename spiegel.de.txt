@@ -81,6 +81,10 @@ strip: //span[@class='image-buttons']
 single_page_link: //a[contains(@href, '-druck')]
 if_page_contains: //div[contains(@class, 'multi-pager-control')]
 
+# Clean up title in print view
+find_string: <title>Druckversion - 
+replace_string: <title>
+
 # use next link in "Fotostrecke"
 next_page_link: //a[@class='spBigaControlForw']
 test_url: http://www.spiegel.de/politik/deutschland/0,1518,787602,00.html
