@@ -18,7 +18,7 @@ tidy: no
 body: //div[@id="spArticleContent"]
 # body in default view
 body: //div[@id="spArticleSection"]
-body: //div[contains(@class, 'article-section')] | //div[@id='js-article-top-wide-asset'] | //p[contains(@class, 'article-intro')]
+body: //div[contains(@class, 'article-section')] | //div[@id='js-article-top-wide-asset'] | //p[contains(@class, 'article-intro')] | //div[contains(@class, 'js-module-box-image')]
 # body in "Fotostrecke"
 body: //div[@id="spBigaContent"]
 
