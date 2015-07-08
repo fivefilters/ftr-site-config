@@ -18,7 +18,7 @@ tidy: no
 body: //div[@id="spArticleContent"]
 # body in default view
 body: //div[@id="spArticleSection"]
-body: //div[contains(@class, 'article-section') or contains(@class, 'column-both') or contains(@class, 'js-module-box-image')]
+body: //div[contains(@class, 'article-section')] | //div[@id='js-article-top-wide-asset'] | //p[contains(@class, 'article-intro')]
 # body in "Fotostrecke"
 body: //div[@id="spBigaContent"]
 
@@ -84,6 +84,9 @@ if_page_contains: //div[contains(@class, 'multi-pager-control')]
 # use next link in "Fotostrecke"
 next_page_link: //a[@class='spBigaControlForw']
 test_url: http://www.spiegel.de/politik/deutschland/0,1518,787602,00.html
+
+# regular article
+test_url: http://www.spiegel.de/wirtschaft/soziales/griechenland-was-den-griechischen-buergern-nun-droht-a-1042682.html
 
 # multipage article
 test_url: http://www.spiegel.de/spiegel/a-710880.html
