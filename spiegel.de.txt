@@ -18,7 +18,7 @@ tidy: no
 body: //div[@id="spArticleContent"]
 # body in default view
 body: //div[@id="spArticleSection"]
-body: //div[contains(@class, 'column-both')] | //div[contains(@class, 'article-section')]
+body: //div[contains(@class, 'article-section') or contains(@class, 'column-both') or contains(@class, 'js-module-box-image')]
 # body in "Fotostrecke"
 body: //div[@id="spBigaContent"]
 
@@ -75,6 +75,7 @@ strip: //div[@class='spDottedLine']
 
 strip: //div[@class='asset-box article-print-more']
 strip: //div[@class='article-copyright']
+strip: //span[@class='image-buttons']
 
 # Use link to print article for single page view
 single_page_link: //a[contains(@href, '-druck')]
