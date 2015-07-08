@@ -18,6 +18,7 @@ tidy: no
 body: //div[@id="spArticleContent"]
 # body in default view
 body: //div[@id="spArticleSection"]
+body: //div[contains(@class, 'column-both')] | //div[contains(@class, 'article-section')]
 # body in "Fotostrecke"
 body: //div[@id="spBigaContent"]
 
@@ -28,6 +29,8 @@ strip: //div[@id="spArticleContent"]/h3
 # set date in "Fotostrecke"
 date: //div[@id="spBigaDatum"]
 
+# title in default view
+title: //h2[contains(@class, 'article-title')]
 #set title in single page view
 title: //div[@id='spArticleContent']/h2
 # strip title
@@ -75,7 +78,11 @@ strip: //div[@class='article-copyright']
 
 # Use link to print article for single page view
 single_page_link: //a[contains(@href, '-druck')]
+if_page_contains: //div[contains(@class, 'multi-pager-control')]
 
 # use next link in "Fotostrecke"
 next_page_link: //a[@class='spBigaControlForw']
 test_url: http://www.spiegel.de/politik/deutschland/0,1518,787602,00.html
+
+# multipage article
+test_url: http://www.spiegel.de/spiegel/a-710880.html
