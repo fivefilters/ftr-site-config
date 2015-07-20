@@ -43,6 +43,9 @@ strip: //p[@class="arrow"]
 # Remove "track" image from article body
 strip: //img[@alt="track"]
 
+# Remove hidden URLs
+strip: //a[@x-inset="hidden"]
+
 http_header(user-agent): PHP/5.3
 
 test_url: http://lifehacker.com/5925801/how-can-i-turn-vague-goals-into-actionable-to+dos
