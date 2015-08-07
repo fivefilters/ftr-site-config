@@ -1,0 +1,12 @@
+{
+    "name": "fivefilters/ftr-site-config",
+    "description": "Full-Text RSS site config files",
+    "license": "AGPL-3.0",
+    "type": "library",
+    "homepage": "http://fivefilters.org/content-only/",
+    "authors": [{
+        "name": "FiveFilters.org",
+        "email": "fivefilters@fivefilters.org",
+        "role": "Developer"
+    }]
+}
