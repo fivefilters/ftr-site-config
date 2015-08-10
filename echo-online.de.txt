@@ -1,4 +1,4 @@
-# Author: Marvin Dickhaus <github@marvindickhaus.de>
+# Author: Marvin Dickhaus
 # 2014-10-08
 
 #Tidy just messes up the DOM
