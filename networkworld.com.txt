@@ -1,5 +1,9 @@
 author: //meta[@name="author"]/@content
+date: //meta[@name="DC.date.issued"]/@content
+
 body: //div[@itemprop="articleBody"]
+body: //figcaption|//div[@class="img-wrapper"]/noscript/img
+
 next_page_link: //a[@rel="next"]
 
 strip: //aside
@@ -14,3 +18,4 @@ test_url: http://www.networkworld.com/article/2951819/infrastructure-management/
 test_url: http://www.networkworld.com/article/2951823/cisco-subnet/early-access-qa-new-cisco-ceo-chuck-robbins-heads-into-hyper-connected-mode.html
 test_url: http://www.networkworld.com/article/2947478/mobile/what-if-the-apple-watch-really-is-a-flop.html
 test_url: http://www.networkworld.com/article/2953522/cloud-computing/nfv-a-hit-for-opendaylight.html
+test_url: http://www.networkworld.com/article/2960522/wi-fi/best-wi-fi-stumblers-for-the-mac.html
