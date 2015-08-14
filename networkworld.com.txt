@@ -2,6 +2,7 @@ author: //meta[@name="author"]/@content
 date: //meta[@name="DC.date.issued"]/@content
 
 body: //div[@itemprop="articleBody"]
+body: //div[@itemprop="reviewBody"]
 body: //figcaption|//div[@class="img-wrapper"]/noscript/img
 
 next_page_link: //a[@rel="next"]
@@ -19,3 +20,4 @@ test_url: http://www.networkworld.com/article/2951823/cisco-subnet/early-access-
 test_url: http://www.networkworld.com/article/2947478/mobile/what-if-the-apple-watch-really-is-a-flop.html
 test_url: http://www.networkworld.com/article/2953522/cloud-computing/nfv-a-hit-for-opendaylight.html
 test_url: http://www.networkworld.com/article/2960522/wi-fi/best-wi-fi-stumblers-for-the-mac.html
+test_url: http://www.networkworld.com/article/2969669/email-services/outlook-2016-review-a-new-coat-of-paint-on-the-same-reliable-personal-information-manager.html
