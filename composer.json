@@ -8,5 +8,10 @@
             "email": "jeremy.benoist@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/finder": "^2.6.6"
+    },
+    "autoload": {
+        "psr-4": { "GrabySiteConfig\\SiteConfig\\": "/" }
+    }
 }
