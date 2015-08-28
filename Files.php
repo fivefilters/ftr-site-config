@@ -6,9 +6,18 @@ use Symfony\Component\Finder\Finder;
 
 class Files
 {
+    /**
+     * Get txt files from many directories.
+     * And load them in an array (filename => filepath)
+     *
+     * @param  array  $dirs List of directories
+     *
+     * @return array
+     */
     public static function getFiles($dirs = array())
     {
-        $dirs = array_merge('.', $dirs);
+        // add current directory
+        $dirs = array_merge(array(__DIR__), $dirs);
 
         $finder = new Finder();
         $finder->files()
@@ -19,7 +28,7 @@ class Files
 
         $configFiles = array();
         foreach ($finder as $files) {
-            $configFiles[$files->getRelativePathname()] = $files->getRealpath();
+            $configFiles[$files->getFilename()] = $files->getRealpath();
         }
 
         return $configFiles;
