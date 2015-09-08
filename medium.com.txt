@@ -1,3 +1,4 @@
+body: //main[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'postArticle-content')]
 strip_id_or_class: supplementalPostContent
 
