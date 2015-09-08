@@ -21,4 +21,5 @@ date: //li[@class='artikeldatum']
 #installed. Using the feed should present valid output
 #test_url: http://www.echo-online.de/art1231,5503063
 #test_url: http://www.echo-online.de/art1168,5502598
-test_url: http://www.echo-online.de/rss/darmstadt.xml
+test_url: http://www.echo-online.de/lokales/darmstadt/index.rss
+
