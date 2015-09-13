@@ -12,6 +12,6 @@
         "symfony/finder": "^2.6.6"
     },
     "autoload": {
-        "psr-4": { "GrabySiteConfig\\SiteConfig\\": "/" }
+        "psr-4": { "GrabySiteConfig\\SiteConfig\\": "src/" }
     }
 }
