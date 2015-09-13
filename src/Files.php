@@ -8,16 +8,16 @@ class Files
 {
     /**
      * Get txt files from many directories.
-     * And load them in an array (filename => filepath)
+     * And load them in an array (filename => filepath).
      *
-     * @param  array  $dirs List of directories
+     * @param array $dirs List of directories
      *
      * @return array
      */
     public static function getFiles($dirs = array())
     {
         // add current directory
-        $dirs = array_merge(array(__DIR__), $dirs);
+        $dirs = array_merge(array(__DIR__.'/..'), $dirs);
 
         $finder = new Finder();
         $finder->files()
