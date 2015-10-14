@@ -1,5 +1,5 @@
 #bypass cookie check
-single_page_link: //a[contains(@href, '/cookiewall/accept.do?')]
+single_page_link: //a[contains(@href, '/cookiewall/accept')]
 
 title: //h1[@itemprop="headline"]
 body: //figure[contains(@class, 'article__top-image')] | //div[@itemprop="articleBody"]
