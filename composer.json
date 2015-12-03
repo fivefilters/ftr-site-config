@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "symfony/finder": "^2.6.6"
+        "symfony/finder": "~2.6|~3.0"
     },
     "autoload": {
         "psr-4": { "GrabySiteConfig\\SiteConfig\\": "src/" }
