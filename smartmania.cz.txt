@@ -1,0 +1,4 @@
+strip_id_or_class: komentare
+replace_string(<h2>Nepřehlédněte</h2>): <!-- nothing -->
+
+test_url: http://smartmania.cz/bleskovky/oppo-vanoce-2015-adventni-kalendar-r7-12597
