@@ -1,0 +1,3 @@
+body: //img[@class='attachment-large wp-post-image'] | //div[@class='entry-content']
+
+test_url: http://androidandme.com/2015/12/news/google-introduces-trial-run-ads-and-interactive-interstitials/
