@@ -2,6 +2,8 @@ body: //main[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'postArticle-content')]
 strip_id_or_class: supplementalPostContent
 
+parser: html5php
+
 prune: no
 
 test_url: https://medium.com/@savolai/kaytettavyyden-haasteet-keskustelukulttuurista-2-3-6844c0d7893b
