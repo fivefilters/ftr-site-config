@@ -1,5 +1,6 @@
 # Since this element has class="clear", the Instapaper stylesheets (at least this text parser preview), will render it unreadable, with a 1px font size and line height.
 
+body: //div[contains(@class, 'article__body-content')]
 body: //div[@id="article-content"]
 
 
@@ -23,6 +24,8 @@ strip: //div[@id="mirrors"]
 
 # Author
 author: //div[@id="byline"]/div/p/strong
+
+parser: html5php
 
 # Date
 date: substring(substring-after(//p[@class="published"], 'Publicerad '), 0, 11)
