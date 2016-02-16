@@ -1,4 +1,4 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' first-row ')]//div[contains(concat(' ',normalize-space(@class),' '),' article-row ') and (contains(concat(' ',normalize-space(@class),' '),' row-md '))]//div[contains(concat(' ',normalize-space(@class),' '),' article-main ') and (contains(concat(' ',normalize-space(@class),' '),' col-auto ')) and (contains(concat(' ',normalize-space(@class),' '),' article-content-body '))]
+body: //div[(contains(concat(' ',normalize-space(@class),' '),' article-content-body '))]
 
 // we can't load this (JS load) so may as well strip it to remove byline
 strip: //figure[contains(@class, 'main-image')]
