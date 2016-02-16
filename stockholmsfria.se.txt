@@ -4,4 +4,4 @@ strip_id_or_class: rekommenderade
 strip_id_or_class: disqus
 strip_id_or_class: annonser
 
-test_url: http://www.stockholmsfria.nu/artikel/112068
+test_url: http://www.stockholmsfria.se/artikel/112068

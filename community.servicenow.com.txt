@@ -5,4 +5,4 @@ date: substring-before(//div[@id="center"]//div[@class="node"]//span[@class="sub
 strip: //div[@id="center"]//h2[1]
 strip: //span[@class="submitted"][1]
 move_into(//div[@class="node"])://div[@class="breadcrumb"]
-test_url: http://community.service-now.com/blog/lawrenceeng/seasons-greetings-servicenow-team
+test_url: http://community.servicenow.com/blog/lawrenceeng/seasons-greetings-servicenow-team
