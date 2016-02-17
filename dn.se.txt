@@ -31,8 +31,8 @@ find_string: </noscript>
 replace_string: <!-- removed -->
 
 #parser: html5php
-#prune: no
-#tidy: no
+prune: no
+tidy: no
 
 # Date
 date: substring(substring-after(//p[@class="published"], 'Publicerad '), 0, 11)
