@@ -6,6 +6,10 @@ strip: //div[@class='apss-social-share']
 strip: //div[@class='tags']
 strip: //*[@class='nav-single']
 
+strip_id_or_class: post_meta
+strip_id_or_class: social-share
+strip: //nav
+
 # strip_comments:yes
 
 prune:no
