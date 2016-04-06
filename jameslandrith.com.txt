@@ -11,5 +11,4 @@ strip: //*[@class='nav-single']
 prune:no
 tidy:yes
 
-test_url:
-http://jameslandrith.com/2016/03/20/so-turnabout-is-not-actual-advocacy-or-how-to-be-a-shitty-person-101/
+test_url: http://jameslandrith.com/2016/03/20/so-turnabout-is-not-actual-advocacy-or-how-to-be-a-shitty-person-101/
