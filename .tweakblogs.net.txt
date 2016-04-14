@@ -2,4 +2,3 @@ body: //div[@class="article"]
 author: //p[@class="author"]/a
 
 test_url: http://harryl.tweakblogs.net/blog/11988/voorstellen
-test_url: http://tweakblogs.net/feed/
