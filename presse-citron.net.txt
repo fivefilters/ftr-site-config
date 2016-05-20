@@ -6,4 +6,4 @@ body: //div[@class="entry-content"]
 strip: //div[@class="shareaholic-canvas shareaholic-ui shareaholic-resolved-canvas ng-scope"]
 strip: //ul[@class="st-related-posts"]
 
-test_url: http://www.presse-citron.net/voici-comment-vous-pourrez-customiser-vos-fils-dactualite-facebook/
+test_url: http://www.ubuntugeek.com/install-glpi-it-and-asset-managemet-software-on-ubuntu-16-04-server.html
