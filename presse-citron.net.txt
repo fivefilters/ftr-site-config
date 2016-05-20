@@ -1,9 +1,9 @@
 title: //header[@class='post-header cf']/h1[@class='post-title']
 author: //div[@class="post-meta"]/span[@class='posted-by']/span[@class='reviewer']/a
 date: //div[@class="post-meta"]/span[@class='posted-on']/span[@class='dtreviewed']/time/@datetime
-body: //div[@class="post-content description"]
+body: //div[@class="entry-content"]
 
-strip: //div[@id="essb_links essb_counters essb_displayed_bottom essb_share essb_template_fancy-retina essb_1179534949 essb_links_right print-no"]
-strip: //div[@class="tagcloud"]
+strip: //div[@class="shareaholic-canvas shareaholic-ui shareaholic-resolved-canvas ng-scope"]
+strip: //ul[@class="st-related-posts"]
 
-test_url: http://www.presse-citron.net/voici-comment-vous-pourrez-customiser-vos-fils-dactualite-facebook/
+test_url: http://www.ubuntugeek.com/install-glpi-it-and-asset-managemet-software-on-ubuntu-16-04-server.html
