@@ -1,3 +1,0 @@
-body: //article[@id='article']
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' article-after ')]
-test_url: http://www.theatlantic.com/entertainment/archive/2016/02/the-power-and-the-glory-lent-graham-greene/461820/
