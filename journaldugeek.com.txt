@@ -3,7 +3,7 @@
 # Source: http://siteconfig.fivefilters.org/grab.php?url=http://www.journaldugeek.com/2015/09/09/apple-ipad-pro/
 
 date: //meta[@property="og:updated_time"]/@content
-next_page_link: //div[contains(concat(' ',normalize-space(@class),' '),' pagination ')]/a[contains(concat(' ',normalize-space(@class),' '),' next ')]
+next_page_link: //div[@class="post-content"]/div[@class='row pagination']/a[contains(concat(' ',normalize-space(@class),' '),' next ')]
 
 strip_id_or_class: jdg-recommend
 strip_id_or_class: proofreader-bloc
