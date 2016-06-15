@@ -4,7 +4,7 @@ author://a[@class="plus-icon modfont"]
 # Add date and time
 date: //span[@class="date"]
 
-body: //div[contains(@class, 'marquee-asset-wrapper') or contains(@class, 'post-content')]
+body: //div[contains(@class, 'marquee-asset-wrapper') or contains(@class, 'post-content')] | //p[@class='first-text'] | //p
 
 # Remove date and time from article text
 strip: //span[@class="date"]
@@ -51,3 +51,4 @@ http_header(user-agent): PHP/5.3
 test_url: http://lifehacker.com/5925801/how-can-i-turn-vague-goals-into-actionable-to+dos
 test_url: http://lifehacker.com/5941600/hack-an-old-computer-mouse-into-a-wireless-bluetooth-mouse
 test_url: http://lifehacker.com/what-happens-to-the-brain-when-you-meditate-and-how-it-1202533314
+test_url: http://lifehacker.com/im-nolan-bushnell-and-this-is-how-i-work-505731333
