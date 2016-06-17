@@ -1,0 +1,8 @@
+body: //div[@class='content']
+prune: no
+
+test_url: http://schuelerlabor.informatik.rwth-aachen.de/module/zauberschule
+test_url: http://schuelerlabor.informatik.rwth-aachen.de/module/robot-karol
+test_url: http://schuelerlabor.informatik.rwth-aachen.de/module/scratchjr
+test_url: http://schuelerlabor.informatik.rwth-aachen.de/module/alles-informatik
+
