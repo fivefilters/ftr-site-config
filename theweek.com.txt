@@ -1,4 +1,4 @@
-body: //div[@class="briefingEntry"]
-prune: no
+body: //div[@class="text underline drop_caps"]
 
 test_url: http://theweek.com/article/index/215763/insider-trading-on-capitol-hill
+test_url: https://theweek.com/articles/642979/why-poor-whites-flock-donald-trump
