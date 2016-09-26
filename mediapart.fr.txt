@@ -1,0 +1,12 @@
+title://h1[@class="title"]
+body: //div[@class="content-article"]/div[@class="page-pane"]
+
+requires_login: yes
+
+login_uri: https://www.mediapart.fr/login_check
+login_username_field: name
+login_password_field: password
+
+not_logged_in_xpath: //body[@class="not-logged-in"]
+
+test_url: https://www.mediapart.fr/journal/france/170116/le-site-slatefr-est-passe-entre-les-mains-du-cac-40
