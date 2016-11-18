@@ -1,0 +1,7 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+date: //time[contains(concat(' ',normalize-space(@class),' '),' entry-date ')]
+author: //a[contains(concat(' ',normalize-space(@class),' '),' ph-article-author-link ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-summary ')]//p | //div[contains(concat(' ',normalize-space(@class),' '),' ph-article-image-wrapper ')] | //div[contains(concat(' ',normalize-space(@class),' '),' ph-article-text-body ')]
+
+test-url: http://ze.tt/fotograf-portraetiert-menschen-nach-12-und-3-glaesern-wein/
+test-url: http://ze.tt/fotoprojekt-menschen-in-mosambik-zeigen-selbst-wie-sie-der-duerre-trotzen/
