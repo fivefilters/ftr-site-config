@@ -1,5 +1,5 @@
 # Important Note:
-# The last paragraph of any article seems to be a teaser from the sports resort.
+# The last paragraph of any article seems to be a teaser from the sports section.
 
 tidy: no
 prune: no
