@@ -1,0 +1,18 @@
+title: //h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' articlebody ')] //span[contains(concat(' ',normalize-space(@class),' '),' picture ')]
+date: //time
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//span
+
+#Socialbar
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' articlebody ')]//div[contains(concat(' ',normalize-space(@class),' '),' social-bar ')]
+#Suggestions
+strip: //ul[contains(concat(' ',normalize-space(@class),' '),' triplelist ')]
+#Static Links
+strip: //ul[contains(concat(' ',normalize-space(@class),' '),' static_links ')]
+#Video Ad
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' video_container ')]
+
+
+
+test_url: http://wow.gamona.de/2016/01/10/wochenruckblick-teufelsenergie-schicksalshammer-und-mehr/?utm_source=rss&utm_medium=rss&utm_campaign=rss
+test_url: http://wow.gamona.de/2016/12/02/make-a-wish-die-bose-miez-ab-sofort-als-ingame-haustier-und-pluschtier-zu-haben/

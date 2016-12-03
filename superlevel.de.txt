@@ -1,0 +1,4 @@
+body: //div[@class='.supervideo' | //div[@id='body']
+strip: //section[@id='comments']
+ 
+test_url: https://superlevel.de/spiele/fast-racing-neo-und-es-hat-zoom-gemacht/
