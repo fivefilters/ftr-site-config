@@ -2,6 +2,7 @@ body: //div[@itemprop='articleBody']
 single_page_link: //a[contains(., 'Singlepage-weergave')]
 
 strip: //q[@class='streamer']
+strip_id_or_class: notificationsContainer
 prune: no
 
 test_url: http://tweakers.net/feeds/mixed.xml

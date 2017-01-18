@@ -3,7 +3,6 @@
 
 prune: no
 
-title: //article/h1 | //h1
 date: //p[@class='news_datum']
 author: //span[@class='author']
 
@@ -59,3 +58,4 @@ test_url: http://www.heise.de/newsticker/meldung/Ueberwachungstechnik-Die-global
 test_url: http://www.heise.de/newsticker/meldung/Bodenradar-fuer-selbstfahrende-Autos-horcht-unter-die-Strasse-3273941.html
 test_url: http://www.heise.de/tp/artikel/49/49473/1.html
 test_url: http://www.heise.de/ct/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
+test_url: http://heise.de/-3527918
