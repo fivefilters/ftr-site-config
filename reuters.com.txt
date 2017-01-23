@@ -1,7 +1,7 @@
 title: //h1[@class='headline3']
 author: substring-after(//p[@class="byline"], 'By ')
 date: //meta[@name="REVISION_DATE"]/@content
-body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='articleText'] | //div[@class='pageNavigation']
+body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='article-text'] | //div[@class='pageNavigation']
 strip: //li[@class='next']
 strip: //span[@class='articleLocation']
 prune: no
