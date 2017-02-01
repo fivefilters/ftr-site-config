@@ -1,0 +1,6 @@
+title: //div[@class='post-header']
+body: //div[@class='post-body']
+author: //a[@class='author-link']
+date: //span[@class='byline-date']
+
+test_url: http://blog.trello.com/how-to-set-better-life-goals
