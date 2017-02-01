@@ -6,4 +6,4 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' itemFullText ')]
 author: //span[contains(concat(' ',normalize-space(@class),' '),' itemAuthor ')]
 date: //span[contains(concat(' ',normalize-space(@class),' '),' itemDateCreated ')]
 
-test-url: http://www.oxfordamerican.org/magazine/item/1066-sweet-bitter-blues
+test_url: http://www.oxfordamerican.org/magazine/item/1066-sweet-bitter-blues
