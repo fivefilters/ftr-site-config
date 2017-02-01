@@ -4,8 +4,8 @@ convert_double_br_tags: [yes]
 #body: //div[@id='leftside']
 title: //h1
 title: //h2
-Author: substring-after(//h4, 'By ')
-Author: substring-after(//h4, 'By: ')
+author: substring-after(//h4, 'By ')
+author: substring-after(//h4, 'By: ')
 #Strip: //span
 strip_id_or_class: morefromcat
 strip_id_or_class: mostpopular
