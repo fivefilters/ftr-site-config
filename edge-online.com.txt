@@ -1,4 +1,4 @@
-﻿title: //meta[@property="og:title"]/@content
+title: //meta[@property="og:title"]/@content
 body: //h2[@class='strapline'] | //article[contains(@class, 'node-article')]
 date: //time[@pubdate]/@datetime
 author: //span[@class='author-name']
