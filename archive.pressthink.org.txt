@@ -8,4 +8,4 @@ date: //div[contains(concat(' ',normalize-space(@class),' '),' date ')]
 strip: //h3[contains(concat(' ',normalize-space(@class),' '),' title ')]
 strip: //span[contains(concat(' ',normalize-space(@class),' '),' posted ')]
 
-test-url: http://archive.pressthink.org/2003/09/08/basics_master.html
+test_url: http://archive.pressthink.org/2003/09/08/basics_master.html
