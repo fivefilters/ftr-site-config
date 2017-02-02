@@ -1,6 +1,6 @@
 title: //div[@class='story-details']/h1
 date: //span[@class='date-time']
-Author: substring-after(//p[@class='by-line'], 'By ')
+author: substring-after(//p[@class='by-line'], 'By ')
 
 strip: //div[@class='videoThumbnails']
 strip: //div[@class='ad-square2-container']
