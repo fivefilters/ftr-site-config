@@ -3,9 +3,13 @@
 # Source: http://siteconfig.fivefilters.org/grab.php?url=http%3A%2F%2Fwww.slate.fr%2Fstory%2F115631%2Ftwitter-devin-tirages-ligue-champions
 
 body: //article[contains(concat(' ',normalize-space(@class),' '),' full_article ')]
+
 strip_id_or_class: media_legend
 strip_id_or_class: article_author
 strip_id_or_class: tag_articles
 strip_id_or_class: article_insert
+
+strip_id_or_class: tag
+strip_id_or_class: category
 
 test_url: http://www.slate.fr/story/115631/twitter-devin-tirages-ligue-champions
