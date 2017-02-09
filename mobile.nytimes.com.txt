@@ -6,4 +6,4 @@ author: //meta[@name="byl"]/@content
 tidy: no
 
 strip_id_or_class: image-credit
-test_url: http://mobile.nytimes.com/2014/06/19/opinion/gail-collins-romney-and-the-2016-contenders-huddle.html
+test_url: https://mobile.nytimes.com/2014/06/19/opinion/gail-collins-romney-and-the-2016-contenders-huddle.html
