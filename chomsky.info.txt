@@ -2,5 +2,5 @@ title: //*[@class='title']
 author: //*[@class='author']
 prune: no
 
-test_url: https://chomsky.info/20150820-2/
-test_contains: The first prime-time Republican primary debate
+test_url: https://chomsky.info/20150120/
+test_contains: The crimes also elicited a flood of commentary
