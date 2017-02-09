@@ -44,6 +44,9 @@ replace_string: http://ichef.bbci.co.uk/news/624/
 find_string: http://ichef.bbci.co.uk/news/304/
 replace_string: http://ichef.bbci.co.uk/news/624/
 
+find_string: http://ichef.bbci.co.uk/news/320/
+replace_string: http://ichef.bbci.co.uk/news/660/
+
 replace_string({width}{hidpi}): 624
 
 replace_string(<noscript>): <div>
