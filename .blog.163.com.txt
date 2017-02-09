@@ -23,4 +23,4 @@ date://span[contains(@class, 'blogsep')]
 body://div[contains(@class, 'mcnt ztag')]
 
 convert_double_br_tags: yes
-test_url: http://lvqiuluwei1510.blog.163.com/blog/static/9028525120124146100841/
+test_url: http://elainejeff.blog.163.com/blog/static/167190291201381121654580/
