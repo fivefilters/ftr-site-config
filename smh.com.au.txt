@@ -1,4 +1,4 @@
-body: //div[@id='content']
+body: div[@itemprop="articleBody"]
 title: //h1[@class='cN-headingPage']
 author: //h3[@class='authorName']
 date: //dd[@class='updated dtstamp']
