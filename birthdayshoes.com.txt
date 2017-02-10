@@ -1,0 +1,4 @@
+title: //title
+body: //div[@class='content_full']
+
+test_url: http://birthdayshoes.com/why-toe-shoes
