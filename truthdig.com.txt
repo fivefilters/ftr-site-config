@@ -1,5 +1,6 @@
 title: //div[@class='printbody']/h1
 body: //div[@class='printbody']
+date: //meta[@property="article:published_time"]/@content
 prune: no
 
 strip: //div[@class='printbody']/a[@href='http://www.truthdig.com/']
@@ -9,4 +10,5 @@ strip: //h6[contains(., 'http://')]
 single_page_link: //a[contains(@href, '/print/')]
 
 test_url: http://www.truthdig.com/report/item/the_election_march_of_the_trolls_20110829/
+test_contains: Most important, we must stop being afraid.
 test_url: http://www.truthdig.com/dig/item/the_death_of_truth_20130505/
