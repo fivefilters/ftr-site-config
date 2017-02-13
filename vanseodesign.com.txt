@@ -1,0 +1,4 @@
+tidy: no
+
+test_url: http://vanseodesign.com/web-design/learning-web-design/
+
