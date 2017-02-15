@@ -1,0 +1,8 @@
+title: //h1[@id='page-title']
+author: //div[contains(concat(' ',normalize-space(@class),' '),' highwire-citation-biorxiv-article-top ')]//div[contains(concat(' ',normalize-space(@class),' '),' highwire-cite-authors ')]//span[contains(concat(' ',normalize-space(@class),' '),' highwire-citation-authors ')]
+date: //li[contains(concat(' ',normalize-space(@class),' '),' published ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' section ')]//p
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' panels-flexible-region-inside ')]
+single_page_link: //span[contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata-doi ') and (contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata '))]
+test_url: http://biorxiv.org/content/early/2017/02/11/107706
+prune: yes
