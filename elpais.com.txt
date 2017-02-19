@@ -17,6 +17,7 @@ strip_id_or_class: info_complementa
 
 strip: //div[starts-with(@id, 'sumario') and contains(., 'más información')]
 strip: //div[@id='coment' or @id='foros_not']
+strip: //picture//source
 
 test_url: http://elpais.com/elpais/2012/02/06/gente/1328526783_491687.html
 test_url: http://elpais.com/diario/2012/02/07/cultura/1328569202_850215.html
