@@ -1,6 +1,8 @@
-body: //div[contains(@class, '-body-')]
+body: //div[contains(@class, 'body-preamble')]
 date: //meta[@name='dcterms.date']/@content
 author: //meta[@name='dcterms.creator']/@content
+
+strip_id_or_class: top-link
 
 test_url: http://stockholm.etc.se/debatt/jobbgaraget-gav-hopp-ungdomar-i-tensta
 test_contains: Jobbgaraget startades av Angeles

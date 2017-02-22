@@ -14,4 +14,4 @@ strip: //div[@class='post-rail-ad']
 strip: //div[@class='post-rail-content']
 strip: //aside[@class='post-rail']
 
-test_url: http://www.time.com/time/specials/packages/article/0,28804,2094921_2094923_2094924,00.html
+test_url: http://business.time.com/2012/08/22/can-entrepreneurship-bring-change-where-the-arab-spring-has-not/

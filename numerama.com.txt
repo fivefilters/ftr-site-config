@@ -1,1 +1,3 @@
 strip://section[@class='related-article']
+
+test_url: http://www.numerama.com/sciences/231009-les-radiochats-et-lepineuse-question-de-la-memoire-des-sites-nucleaires.html

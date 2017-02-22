@@ -15,3 +15,5 @@ strip: //h3[contains(., "See also:")]
 strip: //div[@id="article-top-page-number"]
 strip: //p[starts-with(normalize-space(.), '[')]
 strip: //p[starts-with(normalize-space(.), '+')]
+
+test_url: http://www.javaworld.com/article/3168052/security/open-source-users-its-time-for-extreme-vetting.html

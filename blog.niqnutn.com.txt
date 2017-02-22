@@ -6,4 +6,4 @@ body: //article[contains(concat(' ',normalize-space(@class),' '),' article-conte
 
 strip_id_or_class: sommaire
 
-test_url: http://blog.niqnutn.com/article35/steganographie-l-art-de-dissimuler-un-message
+test_url: http://blog.niqnutn.com/index.php?article69/commandes-en-vrac
