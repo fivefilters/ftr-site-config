@@ -31,6 +31,7 @@ strip_id_or_class: c-related-list
 
 #2017
 strip_id_or_class: e-image__meta
+replace_string(<strong> </strong>): <!-- nothing -->
 
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
