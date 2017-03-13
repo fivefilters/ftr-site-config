@@ -1,4 +1,5 @@
 # mobile site (automatic redirect - noscript meta refresh)
+title: concat("Tweet from ", (//*[contains(@class, 'UserNames-displayName') or contains(@class, 'fullname')])[1])
 author: (//*[contains(@class, 'UserNames-displayName') or contains(@class, 'fullname')])[1]
 body: (//div[contains(@class, 'TweetDetail-text') or contains(@class, 'tweet-text')])[1]
 date: (//div[contains(@class, 'TweetDetail-timeAndGeo') or contains(@class, 'metadata')])[1]
