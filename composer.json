@@ -11,6 +11,9 @@
     "require": {
         "symfony/finder": "~2.6|~3.0"
     },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.2"
+    },
     "autoload": {
         "psr-4": { "GrabySiteConfig\\SiteConfig\\": "src/" }
     }
