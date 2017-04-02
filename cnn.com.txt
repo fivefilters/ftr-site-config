@@ -18,6 +18,11 @@ strip_id_or_class: cnn_strybtmcntnt
 strip_id_or_class: sharebar
 #strip_id_or_class: cnn_containerwht
 strip_id_or_class: cnn_stryathrtmp
+
+http_header(user-agent): Mozilla/5.0 (X11; CrOS x86_64 9000.91.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.110 Safari/537.36
+
 replace_string(<a name="em0"></a>): <!-- a name -->
 test_url: http://www.cnn.com/2012/05/13/us/new-york-police-policy/index.html?eref=rss_topstories
+test_contains: this discriminatory and ineffective practice
+
 test_url: http://rss.cnn.com/rss/edition.rss
