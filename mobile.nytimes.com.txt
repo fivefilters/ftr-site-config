@@ -3,7 +3,6 @@ body: //article[contains(@class, 'full-art')]
 date: //meta[@name="pdate"]/@content
 author: //meta[@name="byl"]/@content
 
-prune: no
 tidy: no
 
 strip_id_or_class: image-credit
