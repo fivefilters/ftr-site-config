@@ -1,5 +1,5 @@
 title: //h1[contains(@class, 'headline')]
-body: //article[contains(@class, 'full-art')]
+body: //article//div[contains(@class, 'imageholder')] | //article[contains(@class, 'full-art')]//div[contains(@class, 'article-body')]
 date: //meta[@name="pdate"]/@content
 author: //meta[@name="byl"]/@content
 
