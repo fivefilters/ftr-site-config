@@ -2,8 +2,6 @@ body: //section[contains(@class, 'body-text')]
 
 strip_id_or_class: highlights
 
-http_header(user-agent): Mozilla/5.0 (X11; CrOS x86_64 9000.91.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.110 Safari/537.36
-
 test_url: http://edition.cnn.com/2012/05/13/us/new-york-police-policy/index.html
 test_contains: this discriminatory and ineffective practice
 
