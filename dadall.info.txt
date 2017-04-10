@@ -1,0 +1,4 @@
+title: //article//header//h1
+body: //article//section
+date: //header//p
+test_url: https://www.dadall.info/blog/index.php?article597/installer-collaboraonline-avec-nextcloud
