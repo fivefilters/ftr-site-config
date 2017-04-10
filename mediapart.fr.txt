@@ -1,6 +1,8 @@
 title://h1[@class="title"]
 body://section[@class="global-wrapper"]//div[@class="page-pane"]
 
+single_page_link: //link[@rel="canonical"]
+
 requires_login: yes
 
 login_uri: https://www.mediapart.fr/login_check
