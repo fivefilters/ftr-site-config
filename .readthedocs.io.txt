@@ -1,0 +1,3 @@
+title: //h1
+body: //div[@class='section']
+test_url: http://wallabag.readthedocs.io/en/master/
