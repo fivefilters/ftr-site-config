@@ -9,3 +9,4 @@ if_page_contains: //a[contains(@class, 'pagination-collection')]
 test_url: http://www.rollingstone.com/politics/news/the-plastic-bag-wars-20110725
 # mult-page article
 test_url: http://www.rollingstone.com/culture/pictures/beyond-gypsy-blancharde-when-mothers-harm-their-kids-w437364
+test_contains: Former chemist and mother of three
