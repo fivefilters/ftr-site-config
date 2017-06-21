@@ -16,6 +16,8 @@ strip: //article//figure[contains(@class, 'element-audio')]
 strip: //article//a[contains(@style, 'display: none')]
 strip: //article/div[@class='paidfor-band']
 
+strip_id_or_class: hide-on-mobile
+
 author: //article//p[@class='byline']
 date: //article//time/@datetime
 strip: //article//div[contains(@class, 'content__meta-container')]

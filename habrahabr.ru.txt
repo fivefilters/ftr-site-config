@@ -2,7 +2,7 @@ title: //span[@class="post_title"]
 author: //div[@class="author"]
 date: //div[@class="published
 
-body: //div[@class='content html_format'] | //div[@id='comments']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')] | //div[@id='comments']
 
 strip: //a[@class="link_to_comment"]
 strip: //div[@class="show_tree"]
@@ -19,3 +19,4 @@ prune: no
 tidy: no
 
 test_url: http://habrahabr.ru/post/229883/
+test_url: https://habrahabr.ru/company/mailru/blog/324078/
