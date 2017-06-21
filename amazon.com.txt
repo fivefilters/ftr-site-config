@@ -16,4 +16,6 @@ strip_id_or_class: expandPS
 strip_id_or_class: psPlaceHolde
 strip: //li[contains(., 'update product info') or contains(., 'give feedback on images')]
 
+http_header(user-agent): PHP/5.3
+
 test_url: http://www.amazon.com/Common-Sense-Forestry-Living-Mother/dp/1931498210/
