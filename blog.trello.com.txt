@@ -1,5 +1,5 @@
 title: //div[contain(@class, 'post-header')]
-body: //div[contains(@class, 'post-body')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
 author: //a[contains(@class, 'author-link')]
 date: //span[contains(@class, 'byline-date')]
   
