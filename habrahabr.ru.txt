@@ -4,6 +4,9 @@ date: //div[@class="published
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')] | //div[@id='comments']
 
+strip_id_or_class: comment-item__controls
+strip_id_or_class: voting-wjt voting-wjt_comments js-voting
+
 strip: //a[@class="link_to_comment"]
 strip: //div[@class="show_tree"]
 strip: //a[@class="to_parent"]
