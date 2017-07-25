@@ -26,11 +26,6 @@ strip: //p[@class='caption']//a[contains(., 'More Photos')]
 prune: no
 tidy: no
 
-find_string: <script 
-replace_string: <div style="display:none" 
-find_string: </script>
-replace_string: </div>
-
 date: substring-after(//*[contains(@class, 'dateline')], 'Published:')
 
 single_page_link: //link[contains(@href, 'pagewanted=all')]
