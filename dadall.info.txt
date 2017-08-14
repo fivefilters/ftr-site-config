@@ -1,0 +1,3 @@
+title: //article//header//h1
+body: //article//section
+test_url: https://www.dadall.info/article611/message-de-service
