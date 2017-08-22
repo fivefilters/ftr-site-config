@@ -1,0 +1,33 @@
+title: //h1
+
+# We can have multiple authors
+author: //span[@id='publisher']
+author: //a[@class='auteur']
+
+# Last edition date (if any)
+date: //time[@itemprop='dateModified']/@datetime
+# Publication date
+date: //time[@itemprop='datePublished']/@datetime
+
+
+body: //div[@id='articleBody']|//section[@class='contenu']//div[@class='texte']
+
+# Remove highlighted quotes
+strip_id_or_class: accroche
+strip_id_or_class: encart
+
+# Remove "Lire aussi" blocks
+strip: //p[@class='lire']
+
+# Remove footers for Le Monde Festival
+strip: //aside[@class='fenetre']
+
+# Remove the insane "conjugaison.lemonde.fr" links:
+find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
+replace_string: <input type='hidden' style='display:none;'
+
+prune: no
+
+test_url: http://abonnes.lemonde.fr/festival/article/2017/08/22/la-terreur-un-pan-de-l-histoire-russe_5175130_4415198.html
+test_url: http://abonnes.lemonde.fr/festival/article/2017/08/18/fin-de-partie-pour-les-fraudeurs-au-carbone_5173972_4415198.html
+test_url: http://abonnes.lemonde.fr/politique/article/2017/08/22/code-du-travail-pour-hollande-il-ne-faudrait-pas-demander-aux-francais-des-sacrifices-qui-ne-sont-pas-utiles_5175211_823448.html
