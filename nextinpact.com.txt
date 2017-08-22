@@ -1,0 +1,16 @@
+prune:yes
+
+body://div[@itemprop="articleBody"]
+
+strip_id_or_class: container_form_alert
+
+requires_login: yes
+login_uri: https://compte.nextinpact.com/Account/Login
+login_username_field: UserName
+login_password_field: Password
+not_logged_in_xpath: //h2[@class="title_reserve_article"]
+
+login_extra_fields: __RequestVerificationToken=@=xpath('//form[@action="/Account/Login"]/input[@name="__RequestVerificationToken"]', request_html('https://compte.nextinpact.com/Account/Login?http://www.nextinpact.com/', {'headers': {'X-Requested-With':'XMLHttpRequest'}}))
+login_extra_fields: returnUrl=https://www.nextinpact.com/news/102835-pour-cour-comptes-fonctionnement-actuel-vote-par-internet-nest-pas-satisfaisant.htm
+
+test_url: https://www.nextinpact.com/news/102862-free-problemes-dns-a-repetition-rendent-difficile-navigation-web.htm
