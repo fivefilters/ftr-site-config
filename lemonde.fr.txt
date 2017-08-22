@@ -8,6 +8,8 @@ date: //time[@itemprop='dateModified']/@datetime
 # Publication date
 date: //time[@itemprop='datePublished']/@datetime
 
+# Remove "Lire aussi" blocks
+strip: //p[@class='lire']
 
 body: //div[@id='articleBody']
 
