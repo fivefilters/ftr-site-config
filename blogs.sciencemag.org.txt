@@ -1,6 +1,6 @@
 title: //h1
 
-author: //a[@rel='author']
+author: //a[contains(@rel, 'author')]
 
 # Publication date
 date: //time
