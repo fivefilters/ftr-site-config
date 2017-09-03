@@ -21,6 +21,7 @@ strip://div[@class="module component todays-paper-module curved"]
 strip://div[@class="module component live-qa curved img-border"]
 strip://div[@class="module component newsletter-signup curved"]
 strip://div[@class="module featured-stories component curved img-border"]
+strip://h3[@property="dc.creator"]
 
 strip_id_or_class: carousel
 strip_id_or_class: toolbar
