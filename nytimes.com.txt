@@ -19,6 +19,10 @@ strip_id_or_class:dateline
 strip_id_or_class:articleheadline
 strip_id_or_class:articleBottomExtra
 strip_id_or_class:shareTools
+strip_id_or_class:story-meta
+strip_id_or_class:related-coverage
+strip_id_or_class:ad-header
+strip_id_or_class:bottom-ad
 strip://a[contains(@href, 'nytimes.com/adx/')]
 strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
