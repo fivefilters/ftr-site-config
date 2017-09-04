@@ -33,6 +33,11 @@ tidy: no
 
 date: substring-after(//*[contains(@class, 'dateline')], 'Published:')
 
+find_string: src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
+replace_string: ignore-src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
+find_string: data-mediaviewer-src='https://static01.nyt.com
+replace_string: src='https://static01.nyt.com
+
 single_page_link: //link[contains(@href, 'pagewanted=all')]
 single_page_link: //link[@rel='alternate' and contains(@href, 'mobile.nytimes.com')]/@href
 single_page_link: concat(substring-before(//div[@id='pageLinks']//a[contains(@href, 'pagewanted=')]/@href, 'pagewanted='), 'pagewanted=all') 
