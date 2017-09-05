@@ -2,6 +2,7 @@ title://h1[@class="articleHeadline"]
 body://div[@id="article"]
 body://*[@itemprop="articleBody"]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' g-body-article-container ')]
+body: //article[@id='story']
 strip_id_or_class:articleTools
 strip_id_or_class:readerscomment
 #strip://div[contains(@class, "articleInline runaroundLeft")]
@@ -18,6 +19,11 @@ strip_id_or_class:dateline
 strip_id_or_class:articleheadline
 strip_id_or_class:articleBottomExtra
 strip_id_or_class:shareTools
+strip_id_or_class:story-meta
+strip_id_or_class:related-coverage
+strip_id_or_class:ad-header
+strip_id_or_class:bottom-ad
+strip_id_or_class:advert_item
 strip://a[contains(@href, 'nytimes.com/adx/')]
 strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
@@ -27,6 +33,11 @@ prune: no
 tidy: no
 
 date: substring-after(//*[contains(@class, 'dateline')], 'Published:')
+
+find_string: src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
+replace_string: ignore-src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
+find_string: data-mediaviewer-src='https://static01.nyt.com
+replace_string: src='https://static01.nyt.com
 
 single_page_link: //link[contains(@href, 'pagewanted=all')]
 single_page_link: //link[@rel='alternate' and contains(@href, 'mobile.nytimes.com')]/@href
@@ -42,6 +53,9 @@ test_contains: In this column I want to look at a not uncommon way of writing
 
 test_url: http://www.nytimes.com/2012/06/10/arts/television/the-newsroom-aaron-sorkins-return-to-tv.html
 test_contains: IF you’ve seen enough of Aaron Sorkin’s theater
+
+test_url: https://www.nytimes.com/interactive/2016/books/review/best-books.html
+test_contains: invention and speculation flow together
 
 test_url: http://www.nytimes.com/2013/03/25/world/middleeast/israeli-military-responds-after-patrols-come-under-fire-from-syria.html
 test_url: http://www.nytimes.com/2013/08/15/nyregion/when-the-new-york-city-subway-ran-without-rails.html
