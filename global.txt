@@ -21,4 +21,4 @@ strip_image_src: doubleclick.net
 find_string: <amp-img
 replace_string: <img
 find_string: </amp-img>
-replace_string: 
+replace_string: <!-- nothing -->
