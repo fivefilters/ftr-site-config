@@ -4,6 +4,10 @@ body: //div[contains(@class, 'image-annotation-box') or contains(@class, 'post-c
 author: //span[contains(@class, 'display-name')]
 date: //span[@class="date"]
 
+strip_id_or_class: related
+
+strip: //svg
+
 prune: no
 
 http_header(user-agent): PHP/5.3
