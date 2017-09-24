@@ -7,6 +7,8 @@ date: //span[@class="date"]
 strip_id_or_class: related
 strip: //aside
 strip: //svg
+# For Gumbo parsing <svg>, <math> namespaced elems 
+strip: //*[local-name() = 'svg']
 
 prune: no
 
