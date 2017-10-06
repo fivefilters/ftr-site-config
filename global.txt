@@ -16,3 +16,9 @@ strip_image_src: doubleclick.net
 #replace_string: <div style="display:none" 
 #find_string: </script>
 #replace_string: </div>
+
+# convert amp image tag to html image tag
+find_string: <amp-img
+replace_string: <img
+find_string: </amp-img>
+replace_string: <!-- nothing -->

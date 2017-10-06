@@ -2,6 +2,7 @@
 # Place this file inside your site_config/custom/ folder
 # Source: http://siteconfig.fivefilters.org/grab.php?url=http%3A%2F%2Fwww.bastamag.net%2FEncadrement-des-loyers-pourquoi-Anne-Hidalgo-ferait-bien-de-visiter-Vienne-l
 
+date: //time[@pubdate]/@datetime
 body: //div[@id='content']//article
 
 strip_id_or_class: appel-soutien

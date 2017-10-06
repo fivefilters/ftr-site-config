@@ -2,6 +2,5 @@ body: //div[contains(@class, 'article-body')]
 
 prune: no
 
-test_url: http://www.resume.se/nyheter/media/2013/09/18/cecilia-blankens-lamnar-mama-for-konkurrent/
-test_url: http://www.resume.se/nyheter/reklam/2013/09/18/ravelli-trodde-jag-var-med-i-blasningen/
+test_url: https://www.resume.se/nyheter/artiklar/2017/09/19/blossa-lanserar-arets-glogg-via-livestream--hamtar-inspiration-fran-indien
 test_url: http://www.resume.se/rss-nyheter

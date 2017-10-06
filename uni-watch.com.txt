@@ -4,8 +4,7 @@ date: substring-after(//div[@class='post-byline'], ', on')
 # for some reason, the following is producing a "no text [48]" error
 #title: //div[@class='post-headline']
 
-# for some reason, the following doesn't appear to isolate just the body copy
-body: //div[@class='post-bodycopy']
+body: //div[contains(@class, 'post-bodycopy')]
 
 # we solve the above issue by stripping out everything else we don't want
 # these can probably all be removed if the body: command above worked

@@ -1,0 +1,2 @@
+body://section[@class='descriptif'] | //section[contains(@class, 'texte')] | //section[@class='notes']
+test_url: http://nota-bene.org/Une-situation-qui-AMPire
