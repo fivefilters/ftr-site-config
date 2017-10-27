@@ -6,6 +6,8 @@ prune: no
 date: //p[@class='news_datum']
 author: //span[@class='author']
 
+title: //h1
+title: //h2
 body: //article | //div[@class='meldung_wrapper']
 
 strip: //nav
