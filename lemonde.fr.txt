@@ -17,6 +17,11 @@ body: //div[@id='articleBody']
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
 replace_string: <input type='hidden' style='display:none;' 
 
+# Remove the insane cross-linking categories "Toute l’actualité"
+find_string: <a class="lien_interne rub"
+replace_string: <input type="hidden" style="display:none;"
+
 prune: no
 
 test_url: http://www.lemonde.fr/economie/article/2011/07/05/moody-s-abaisse-la-note-du-portugal-de-quatre-crans_1545237_3234.html
+test_url: http://www.lemonde.fr/big-browser/article/2017/10/27/assassinat-de-kennedy-ce-qu-on-a-appris-dans-les-documents-declassifies_5207029_4832693.html
