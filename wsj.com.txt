@@ -3,10 +3,10 @@ body: //div[@id='wsj-article-wrap']
 # is this still used?
 body: //div[@id='article_story_body']
 
-author: //h3[@class='byline']/a
+author: //meta[@name="author"]/@content
 # for slide show content
 body: //ul[@id='imageSlide']//li[@class='firstSlide']//img | (//div[@class='txt_body']//p)[1]
-date: //li[@class='dateStamp']/small
+date: //meta[@itemprop="dateCreated"]/@content
 
 strip_id_or_class: insetFullBracket
 strip_id_or_class: insettipBox
