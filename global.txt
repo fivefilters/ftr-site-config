@@ -22,3 +22,6 @@ find_string: <amp-img
 replace_string: <img
 find_string: </amp-img>
 replace_string: <!-- nothing -->
+
+# strip all class attributes after processing
+post_strip_attr: //*/@class
