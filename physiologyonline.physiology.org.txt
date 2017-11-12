@@ -1,0 +1,12 @@
+title: //h1[@id='page-title']
+author: //div[contains(concat(' ',normalize-space(@class),' '),' highwire-cite-authors ')]//span[contains(concat(' ',normalize-space(@class),' '),' highwire-citation-authors ')]//span[contains(concat(' ',normalize-space(@class),' '),' highwire-citation-author ')]
+date: //span[contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata-date ') and (contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata '))]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
+single_page_link: //div[contains(concat(' ',normalize-space(@class),' '),' highwire-citation-jnl-aps-full-citation ')]//div[contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata ')]//span[contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata-doi ') and (contains(concat(' ',normalize-space(@class),' '),' highwire-cite-metadata '))]
+test_url: http://physiologyonline.physiology.org/content/22/6/358
+prune: yes
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' sidebar-right-wrapper ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' pane-highwire-panel-tabs ')]//div[contains(concat(' ',normalize-space(@class),' '),' pane-content ')]//div[contains(concat(' ',normalize-space(@class),' '),' item-list ')]//ul[contains(concat(' ',normalize-space(@class),' '),' tabs ') and (contains(concat(' ',normalize-space(@class),' '),' inline ')) and (contains(concat(' ',normalize-space(@class),' '),' panels-ajax-tab '))]
+strip: //header[@id='section-header']
+strip: //footer[@id='section-footer']
