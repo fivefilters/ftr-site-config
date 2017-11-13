@@ -24,4 +24,4 @@ test_url: http://www.chefkoch.de/rezepte/1748851284207014/Schweinefilet-mit-Apfe
 test_contains: Das Schweinefilet trocken tupfen und einmal quer halbieren
 
 test_url: http://www.chefkoch.de/magazin/artikel/6157/Chefkoch/kamelle-selber-machen.html
-test_contains: Und da an Rosenmontag mittlerweile Bonbons
+test_contains: Für viele ist der Umzug am Rosenmontag die Gelegenheit, den Bonbon-Vorrat für das ganze Jahr zu sichern.
