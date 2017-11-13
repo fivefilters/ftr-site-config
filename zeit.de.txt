@@ -61,4 +61,4 @@ strip_id_or_class: article__head__meta
 test_url: http://www.zeit.de/zeit-magazin/2015/51/daisy-ridley-traum
 test_contains: Mein ganzes Leben lang habe
 test_url: http://www.zeit.de/zeit-magazin/2015/52/cyberstalking-internet-stalker-familie-mierau
-test_url: http://www.zeit.de/zeit-magazin/leben/2015-12/rueckblick-2015-magnum-fs
+test_url: http://www.zeit.de/zeit-magazin/2017/46/harald-martenstein-ddr-toastbrot
