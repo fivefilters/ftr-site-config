@@ -1,4 +1,5 @@
 title://div[@id="titrage-contenu"]/h1[@class="title"]
+author: //div[@id="titrage-contenu"]//a[starts-with(@href,'/recherche.php?auteur_id=')]
 body: //div[@class="contenu-html"]/div[@class="page-pane"]
 
 # Wallabag-specific login directives (not supported in FTR)

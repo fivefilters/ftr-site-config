@@ -3,10 +3,10 @@ body: //div[@id='wsj-article-wrap']
 # is this still used?
 body: //div[@id='article_story_body']
 
-author: //h3[@class='byline']/a
+author: //meta[@name="author"]/@content
 # for slide show content
 body: //ul[@id='imageSlide']//li[@class='firstSlide']//img | (//div[@class='txt_body']//p)[1]
-date: //li[@class='dateStamp']/small
+date: //meta[@itemprop="dateCreated"]/@content
 
 strip_id_or_class: insetFullBracket
 strip_id_or_class: insettipBox
@@ -18,7 +18,9 @@ strip: //*[contains(@style, 'visibility: hidden;')]
 strip: //div[contains(@class, 'insetContent') and not(contains(@class, 'image'))]
 strip: //div[contains(@class, 'carousel')]
 
-http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+# see https://elaineou.com/2017/01/19/how-the-twitter-app-bypasses-paywalls/
+http_header(user-agent): Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.1.32 (KHTML, like Gecko) Mobile/14C92 Twitter for iPhone
+http_header(referer): https://t.co/T1323aaaa
 
 prune: no
 tidy: no
