@@ -1,7 +1,7 @@
 title://h1[@class="title"]
 body://section[@class="global-wrapper"]//div[@class="page-pane"]
 
-date: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//time
+date: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//time/@datetime
 author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//a[@class='journalist']
 
 single_page_link: //link[@rel="canonical"]
