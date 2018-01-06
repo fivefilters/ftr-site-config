@@ -4,10 +4,11 @@ prune: no
 tidy: no
 strip_id_or_class: gatEditSection
 strip_id_or_class: relatedwikihows
+strip_id_or_class: editsection
 #strip: //div[contains(@class, 'step_num')]
 
-replace_string(<script ): <div style="display: none" 
-replace_string(</script>): </div>
+#replace_string(<script ): <div style="display: none" 
+#replace_string(</script>): </div>
 
 single_page_link: //a[@id='gatPrintView']
 single_page_link: concat(//link[@rel='canonical']/@href, '?printable=yes')
