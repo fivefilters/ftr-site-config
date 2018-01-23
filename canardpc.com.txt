@@ -1,4 +1,4 @@
-strip: //h3[@class="article-subtitle"]
+title: //h2[@class="article-title"]
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
