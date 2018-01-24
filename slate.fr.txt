@@ -8,6 +8,7 @@ strip_id_or_class: article_author
 strip_id_or_class: tag_articles
 strip_id_or_class: article_insert
 strip_id_or_class: col-right
+strip_id_or_class: aside_blockquote
 
 strip_id_or_class: tag
 strip_id_or_class: category
