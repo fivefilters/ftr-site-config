@@ -1,6 +1,5 @@
-title://article[contains(@id, "post-")]/h1
-date://article[contains(@id, "post-")]/p[@class="time"]/time
-body://article[contains(@id, "post-")]
-strip://article[contains(@id, "post-")]/p[@class="time"]/time
-prune:yes
-test_url: http://css-tricks.com/off-canvas-menu-with-css-target/
+title: //h1
+author: //a[contains(@href, "css-tricks.com/author")]
+body: //div[@class="article-content"]
+strip: //div[contains(@class, "sharedaddy")]
+test_url: https://css-tricks.com/using-custom-properties-modify-components/

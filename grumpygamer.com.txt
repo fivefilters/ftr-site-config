@@ -1,0 +1,4 @@
+title: //h3[@class="post-title"]
+author: "Ron Gilbert"
+
+test_url: https://grumpygamer.com/friday_questions_3
