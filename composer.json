@@ -13,7 +13,7 @@
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^3.2",
-        "liip/rmt": "^1.3"
+        "liip/rmt": "1.2.*"
     },
     "autoload": {
         "psr-4": { "GrabySiteConfig\\SiteConfig\\": "src/" }
