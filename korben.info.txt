@@ -1,0 +1,18 @@
+# Title
+title: //
+# <meta property="og:title" content="L&#039;intégration de Pocket dans Firefox ? Beurk... - Korben" />
+
+# Publication date and author
+date: //
+author: //
+<div class="post-date"><p>Posté par <a href="https://korben.info/auteur" class="orange">Korben</a> le <strong>jeudi 14 mai 2015</strong></p></div>
+
+# Body
+body: //
+# div class="post-content"
+
+# Remove Footer
+strip: 
+
+# Test URL
+test_url: https://korben.info/lintegration-de-pocket-dans-firefox-beurk.html
