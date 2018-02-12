@@ -28,6 +28,7 @@ strip://a[contains(@href, 'nytimes.com/adx/')]
 strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
 strip: //p[@class='caption']//a[contains(., 'More Photos')]
+strip_id_or_class: ResponsiveAd
 
 prune: no
 tidy: no
