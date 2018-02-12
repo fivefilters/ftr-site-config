@@ -1,4 +1,4 @@
-title: //h1[@itemprop='headline']
+title: //h1[@articleprop='headline']
 
 body: //article
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content__main ')]//div[contains(concat(' ',normalize-space(@class),' '),' gs-container ')]
@@ -17,6 +17,11 @@ strip: //article//a[contains(@style, 'display: none')]
 strip: //article/div[@class='paidfor-band']
 
 strip_id_or_class: hide-on-mobile
+strip_id_or_class: reveal-caption
+strip_id_or_class: readerquestions
+
+strip: //figcaption
+
 
 author: //article//p[@class='byline']
 date: //article//time/@datetime
