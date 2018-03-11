@@ -1,4 +1,5 @@
 title: //h2[@class="article-title"]
+body: //div[@id="zenContent"] | //div[@id="block-articlenote"]
 author: //div[@class="article-author"]//a[@class="username"]
 
 # wallabag-specific login directives (not supported in FTR)
