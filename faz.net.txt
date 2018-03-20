@@ -35,6 +35,8 @@ strip: //div[@class='clear']
 strip: //a[@title='Zur Homepage FAZ.NET']
 strip: //iframe
 replace_string( ·  ):
+strip_id_or_class: TeaserMore
+strip_id_or_class: plista_alternativ
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
