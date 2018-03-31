@@ -1,3 +1,6 @@
+# mobile.nytimes.com appears to be the same as www.nytimes.com now, 
+# so any changes here should probably also be made to mobile.nytimes.com.txt too
+
 title://h1[@class="articleHeadline"]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' story-body ')]
 body://div[@id="article"]
