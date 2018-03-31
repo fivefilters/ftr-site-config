@@ -1,4 +1,8 @@
+# mobile.nytimes.com appears to be the same as www.nytimes.com now, 
+# so any changes here should probably also be made to mobile.nytimes.com.txt too
+
 title://h1[@class="articleHeadline"]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' story-body ')]
 body://div[@id="article"]
 body://*[@itemprop="articleBody"]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' g-body-article-container ')]
@@ -30,10 +34,13 @@ strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
 strip: //p[@class='caption']//a[contains(., 'More Photos')]
 strip_id_or_class: ResponsiveAd
 
+strip_id_or_class: robots-nocontent
+strip_id_or_class: hidden
+
 prune: no
 tidy: no
 
-date: substring-after(//*[contains(@class, 'dateline')], 'Published:')
+date: //meta[@itemprop="datePublished"]/@content
 
 find_string: src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
 replace_string: ignore-src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
@@ -41,13 +48,11 @@ find_string: data-mediaviewer-src='https://static01.nyt.com
 replace_string: src='https://static01.nyt.com
 
 single_page_link: //link[contains(@href, 'pagewanted=all')]
-single_page_link: //link[@rel='alternate' and contains(@href, 'mobile.nytimes.com')]/@href
-single_page_link: concat(substring-before(//div[@id='pageLinks']//a[contains(@href, 'pagewanted=')]/@href, 'pagewanted='), 'pagewanted=all') 
-#single_page_link: //a[contains(@href, 'pagewanted=all') and not(contains(@href, 'login'))]
+#mobile.nytimes.com looks same as regular www.nytimes.com now
+#single_page_link: //link[@rel='alternate' and contains(@href, 'mobile.nytimes.com')]/@href
+#single_page_link: concat(substring-before(//div[@id='pageLinks']//a[contains(@href, 'pagewanted=')]/@href, 'pagewanted='), 'pagewanted=all') 
 
-strip://ul[@id = 'toolsList']
 strip://h6[@class = 'kicker']
-author:substring-after(//h6[@class='byline'],'By ')
 
 test_url: http://www.nytimes.com/2011/07/24/books/review/an-academic-authors-unintentional-masterpiece.html
 test_contains: In this column I want to look at a not uncommon way of writing
