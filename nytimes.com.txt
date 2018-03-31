@@ -32,7 +32,7 @@ strip: //p[@class='caption']//a[contains(., 'More Photos')]
 strip_id_or_class: ResponsiveAd
 
 strip_id_or_class: robots-nocontent
-strip_id_or_class: visually-hidden
+strip_id_or_class: hidden
 
 prune: no
 tidy: no
