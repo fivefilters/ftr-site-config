@@ -3,6 +3,9 @@ author: (//cite//span[@class="plus-icon"])[1]
 date: //span[@class="date"]
 date: //time
 
+find_string: <meta http-equiv="refresh"
+replace_string: <meta http-equiv="disabled-refresh"
+
 prune: no
 
 test_url: http://www.gizmodo.com.au/2016/01/these-hateful-eightfigures-are-delightfully-retro/
