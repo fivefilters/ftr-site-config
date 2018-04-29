@@ -1,6 +1,6 @@
 date: //*[@itemprop='datePublished']/@datetime
 author: //meta[@name="sailthru.author"]/@content
-body: //*[@itemprop='articleBody' or @itemprop='description']
+body: //div[contains(@class, 'body-copy')]
 
 strip_id_or_class: inline-newsletter
 strip_id_or_class: terminal-tout-container
