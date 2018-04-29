@@ -9,6 +9,7 @@ strip: //dd[@class='updated dtstamp']
 strip: //h3[@class='authorName']
 strip: //ul[@class='social  cfix']
 strip: //div[contains(@id, 'adspot')]
+strip: //aside
 
 strip: //div[contains(@class, 'overlayPlayCountdown')]
 strip: //div[@class='fdVideoWof']//span[@class='gone']
