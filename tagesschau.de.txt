@@ -9,7 +9,7 @@ strip_id_or_class: metablockwrapper
 
 prune: no
 
-test_url: http://www.tagesschau.de/ausland/aleppo-477.html
-test_contains: bevor aus Aleppo ein einziger großer Friedhof wird
+test_url: http://www.tagesschau.de/kommentar/nordkorea-suedkorea-113.html
+test_contains: Staatsmann wahrgenommen
 
 test_url: http://www.tagesschau.de/xml/rss2

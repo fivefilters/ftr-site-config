@@ -19,5 +19,5 @@ replace_string(Katharina Lübke): &nbsp;
 replace_string(Julia Pradel): &nbsp;
 replace_string(Franziska Gerhardt): &nbsp;
 
-test_url: http://www.apotheke-adhoc.de/nachrichten/politik/nachricht-detail-politik/deutscher-apothekertag-antraege-gegen-lieferengpaesse-2/
+test_url: https://www.apotheke-adhoc.de/nachrichten/detail/panorama/avie-fuer-den-nachfolger/
 
