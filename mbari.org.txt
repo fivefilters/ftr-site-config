@@ -1,0 +1,6 @@
+title: //h1
+body: //section[@class='av_textblock_section']
+
+# Everything else is well done with opengraph data
+
+test_url: https://www.mbari.org/ctenophore-evolution/
