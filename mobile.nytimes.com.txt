@@ -40,6 +40,7 @@ strip_id_or_class: hidden
 prune: no
 tidy: no
 
+date: //meta[@property="article:published"]/@content
 date: //meta[@itemprop="datePublished"]/@content
 
 find_string: src='https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png
