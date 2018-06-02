@@ -8,6 +8,8 @@ strip: //div[@class="sl-art-ad-midflex"]
 #strip: //p[em/a[contains(@href, 'facebook.com')]]
 prune: no
 
+http_header(Cookie): GDPR_consent=1
+
 author: //div[@id='author_bio']//a[contains(@href, '/author/')]
 author: //a[contains(@href, '/authors.')]
 
