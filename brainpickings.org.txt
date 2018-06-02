@@ -1,5 +1,5 @@
 title: //h1[@class='entry-title']
-body: //div[@id='main_body']
+body: //div[@class='entry_content']
 strip: //div[@id='bottom_donation']
 strip: //div[@id='bottom_newsletter']
 strip: //div[@id='end_print']
