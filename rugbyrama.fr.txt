@@ -1,0 +1,31 @@
+title: //h1
+body: //h2[@class="storyfull__teaser"] | //div[@class="storyfull__paragraphs"]
+
+find_string: <div data-img-interchange="{"f":{"85":{"src":"
+replace_string: <div><img src="
+
+find_string: ","x":
+replace_string: " data-trash=
+
+find_string: ","y":"
+replace_string: -
+
+find_string: ","fx":"
+replace_string: -
+
+find_string: ","fy":"
+replace_string: -
+
+find_string: }}}
+replace_string: -"
+
+find_string:  class="wrapper-interchange img-interchange wrapper-interchange--on format-16-9 focal-point lazyload-ok"><img 
+replace_string:  "
+
+find_string: "-"" "
+replace_string: "
+
+prune: no
+tidy: no
+
+test_url: https://www.rugbyrama.fr/rugby/rugby-bernard-laporte-vise-par-mediapart-pour-fraude-fiscale_sto6011354/story.shtml

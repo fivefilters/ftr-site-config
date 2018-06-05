@@ -1,0 +1,4 @@
+title: //div[@class="video-player__header"]//h1
+body: //div[@class="video-player__teaser"]
+
+test_url: https://video.rugbyrama.fr/rugby/galthie-jamais-candidat-au-poste-de-selectionneur_vid1022810/video.shtml
