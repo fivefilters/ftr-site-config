@@ -3,7 +3,7 @@ body: //div[contains(@class, "article-body")]
 
 date: substring-after(//p[@class="meta-info"]/a, '· ')
 
-author: //div[contains(@class, "article-body")]/hgroup/h2
+author: //p[@class='intro']/a[contains(@rel, 'author')]/@content
 
 strip_id_or_class: print-hide
 strip_id_or_class: books
