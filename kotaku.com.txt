@@ -1,5 +1,8 @@
-author: //span[@class="plus-icon"]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' headline ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' meta__byline ')]
+date: //a[contains(concat(' ',normalize-space(@class),' '),' js_entry-link.js_publish_time ')]
 
-http_header(user-agent): PHP/5.3
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ad-mobile ')]
 
-test_url: http://kotaku.com/5920211/save-the-furries-on-your-wii-in-this-weeks-nintendo-download
+test_url: https://kotaku.com/the-last-of-us-part-ii-s-violence-is-designed-to-be-rep-1826781044
