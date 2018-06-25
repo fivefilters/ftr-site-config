@@ -1,0 +1,6 @@
+body: //p[contains(@class, 'id-Article-content-item')]
+strip: //p[contains(strong, 'Lesen Sie auch:')]
+
+test_url: https://www.merkur.de/lokales/freising/freising-ort28692/s1-sperrung-zwischen-feldmoching-und-neufahrn-bahn-entschaedigt-pendler-aber-mvv-kunden-gehen-leer-aus-9974088.html
+test_url: https://www.merkur.de/lokales/region-holzkirchen/holzkirchen-ort28831/bosch-engineering-zweiter-bauabschnitt-ist-fertig-8002845.html
+
