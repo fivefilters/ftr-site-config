@@ -1,23 +1,20 @@
-title: //h1[contains(concat(' ',normalize-space(@class),' '),' o-head__title ')]
-
 # Publication date
 date: //header[contains(concat(' ',normalize-space(@class),' '),' o-page__content__head ')]//div[contains(concat(' ',normalize-space(@class),' '),' o-infos ')]//time[contains(concat(' ',normalize-space(@class),' '),' o-infos__date ')]
 
 # Author
 author: //header[contains(concat(' ',normalize-space(@class),' '),' o-page__content__head ')]//div[contains(concat(' ',normalize-space(@class),' '),' o-infos ')]//a[contains(concat(' ',normalize-space(@class),' '),' o-infos__author ')]
 
-# Body
-body: //div[contains(concat(' ',normalize-space(@class),' '),' o-page__content ')]
-
-# Remove Footer
+# Remove quotes and others
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' o-page__footer ')]
+strip_id_or_class: c-same-subject
+strip_id_or_class: c-kiosk--single
+strip_id_or_class: o-page__footer
+strip_id_or_class: o-page__figure__trigger
+strip_id_or_class: c-comments
+strip_id_or_class: c-epigraph
 
-# Paywall (not working now)
-#requires_login: yes
-#login_uri: https://www.alternatives-economiques.fr/index.php?redirection=frontpage
-#login_username_field: login
-#login_password_field: password
-#not_logged_in_xpath
+# Strip optional [removed because clearer like this
+#strip_id_or_class: o-page__content__head
 
 # Test URL
-test_url: https://www.alternatives-economiques.fr/reforme-rythmes-scolaires-grand-malentendu/00080361
+test_url: https://www.alternatives-economiques.fr/etats-unis-overdoses-tuent-plus-armes-a-feu/00085167
