@@ -6,7 +6,7 @@ prune: no
 date: //p[@class='news_datum']
 author: //span[@class='author']
 
-body: //article | //div[@class='meldung_wrapper']
+body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
 
 strip: //nav
 
