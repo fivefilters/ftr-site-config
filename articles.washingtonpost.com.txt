@@ -2,6 +2,9 @@ body: //div[contains(@class, "article_body")]
 # print view
 body: //div[@id='print_facet']//div[@id='body']
 
+#GDPR cookies
+http_header(Cookie): wp_devicetype=0; rplpwabt4=1; devicetype=0; osfam=0; de=; client_region=0; wp_gdpr=1|1; rplmct=1; washpost_poe=true;
+
 tidy: no
 prune: no
 

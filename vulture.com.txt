@@ -1,3 +1,5 @@
+#copied from nymag.com.txt
+
 title: //h2[contains(@class, 'primary')]
 body: //*[@itemprop="articleBody"]
 body: //div[@id='story']
@@ -12,8 +14,5 @@ tidy: no
 
 next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
-test_url: http://nymag.com/news/features/wall-street-2012-2/
-test_contains: bonus season is a sacred ritual
-
-test_url: http://nymag.com/daily/intelligencer/2016/04/america-tyranny-donald-trump.html
-test_contains: This rainbow-flag polity
+test_url: http://www.vulture.com/2018/06/damsel-review.html
+test_contains: after her favorite candy
