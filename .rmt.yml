@@ -1,0 +1,7 @@
+vcs:
+    name: git
+    sign-tag: true
+    sign-commit: true
+version-generator: semantic
+version-persister: vcs-tag
+post-release-actions: [vcs-publish]

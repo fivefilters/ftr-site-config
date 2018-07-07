@@ -5,4 +5,4 @@ date: //div[contains(concat(' ',normalize-space(@class),' '),' highwire-citation
 strip: //header[@id='section-header']
 strip: //footer[@id='section-footer']
 prune: yes
-test_link: http://www.jneurosci.org/content/22/13/5344.full
+test_url: http://www.jneurosci.org/content/22/13/5344.full

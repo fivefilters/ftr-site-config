@@ -5,6 +5,7 @@ date: //time
 
 strip: //iframe
 strip: //img[@id='amazon-track']
+strip: //div[@class='featured-image']
 strip: //img[@id='gaz-track']
 strip: //aside
 strip_id_or_class: NEWS_BODY

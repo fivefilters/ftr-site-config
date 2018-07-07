@@ -1,7 +1,7 @@
 {
     "name": "j0k3r/graby-site-config",
     "description": "Graby site config files",
-    "license": "AGPL-3.0",
+    "license": "CC0-1.0",
     "authors": [
         {
             "name": "Jeremy Benoist",
@@ -10,6 +10,10 @@
     ],
     "require": {
         "symfony/finder": "~2.6|~3.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.2",
+        "liip/rmt": "1.2.*"
     },
     "autoload": {
         "psr-4": { "GrabySiteConfig\\SiteConfig\\": "src/" }

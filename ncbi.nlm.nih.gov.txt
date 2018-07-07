@@ -6,5 +6,5 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' icons ')]
 strip: //div[@id='footer']
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' header ')]
 prune: yes
-test_link: https://www.ncbi.nlm.nih.gov/pubmed/10356353?access_num=10356353&link_type=MED&dopt=Abstract
+test_url: https://www.ncbi.nlm.nih.gov/pubmed/10356353?access_num=10356353&link_type=MED&dopt=Abstract
 

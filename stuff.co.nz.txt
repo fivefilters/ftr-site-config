@@ -18,5 +18,4 @@ strip_id_or_class: subscribe_order
 
 strip://div[contains(@class,'ad_story')]
 
-test_url: http://www.stuff.co.nz/national/politics/3930344/PM-issues-challenge
-test_url: http://www.stuff.co.nz/entertainment/7045944/International-praise-for-Ladyhawke
+test_url: https://www.stuff.co.nz/business/103470616/behind-the-pricing-internal-email-lifts-veil-on-bps-petrol-prices

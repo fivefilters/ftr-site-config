@@ -4,6 +4,9 @@ body: //div[@id='story']
 author: //*[@class='by']/a
 date: substring-after(//*[@class='date'], 'Published')
 
+#Skip GDPR warning
+http_header(Cookie): nymuc=11111111111
+
 parser: html5php
 tidy: no
 
