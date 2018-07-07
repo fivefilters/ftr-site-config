@@ -21,6 +21,17 @@ replace_string: <input type='hidden' style='display:none;'
 find_string: <a class="lien_interne rub"
 replace_string: <input type="hidden" style="display:none;"
 
+requires_login: yes
+
+login_uri: https://secure.lemonde.fr/sfuser/connexion
+login_username_field: connection[mail]
+login_password_field: connection[password]
+
+login_extra_fields: connection[token]=@=xpath("//form//input[@id='connection__token']", request_html(config.getLoginUri()))
+
+not_logged_in_xpath: //body[contains(@class, 'site-gratuit')]//div[@id='teaser_article']
+
+
 prune: no
 
 test_url: http://www.lemonde.fr/economie/article/2011/07/05/moody-s-abaisse-la-note-du-portugal-de-quatre-crans_1545237_3234.html

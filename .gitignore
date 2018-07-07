@@ -168,3 +168,6 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+composer.lock
+vendor

@@ -1,0 +1,13 @@
+title://h1[@class="h2"]
+body: //div[@class="article-holder"]
+
+# Wallabag-specific login directives (not supported in FTR)
+requires_login: yes
+
+login_uri: https://lesjours.fr/session
+login_username_field: mail
+login_password_field: password
+
+not_logged_in_xpath: //body[@class="not-logged-in"]
+
+test_url: https://lesjours.fr/obsessions/pole-financier/ep12-marcel-campion/
