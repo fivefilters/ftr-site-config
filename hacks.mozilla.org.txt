@@ -1,3 +1,4 @@
+title: //div[@id="content-head"]//h1
 date: //abbr[@class='published']/@title
 author: //h3[@class='post__author']//a[@class='url']
 
