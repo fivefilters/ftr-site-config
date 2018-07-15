@@ -12,3 +12,5 @@ strip: //figcaption[contains(@class, 'caption')]
 
 prune: yes
 tidy: no
+
+test_url: https://earther.com/ireland-is-officially-the-first-country-to-divest-from-1827552460
