@@ -11,6 +11,8 @@ date: //time[@itemprop='datePublished']/@datetime
 # Remove "Lire aussi" blocks
 strip: //p[@class='lire']
 
+strip: //div[@class="dfp_slot"]
+
 body: //div[@id='articleBody']
 
 # Remove the insane "conjugaison.lemonde.fr" links:
@@ -25,3 +27,4 @@ prune: no
 
 test_url: http://www.lemonde.fr/economie/article/2011/07/05/moody-s-abaisse-la-note-du-portugal-de-quatre-crans_1545237_3234.html
 test_url: http://www.lemonde.fr/big-browser/article/2017/10/27/assassinat-de-kennedy-ce-qu-on-a-appris-dans-les-documents-declassifies_5207029_4832693.html
+test_url: https://www.lemonde.fr/pixels/article/2018/07/14/douze-jeux-video-pour-s-amuser-a-plusieurs_5331269_4408996.html
