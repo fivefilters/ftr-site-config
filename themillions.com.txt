@@ -1,10 +1,10 @@
-title: /html/body/div/div[2]/div/div/div/h3
+title: //h1[@class='entry-title']
 
-body: /html/body/div/div[2]/div/div/div/div[2]
+body: //div[@class='the-content']
 
-strip: /html/body/div/div[2]/div/div/div/div[6]/div[3]/div/div/div
+strip: //div[@class='author-description']
+strip: //div[@class='the-content']/p/small
+strip_id_or_class: support_millions_single
 
-tidy: no
-
-# any way to get rid of this word character garbage?
+test_url: https://themillions.com/2018/01/regarding-the-em-dash.html
 test_url: http://www.themillions.com/2010/07/at-the-movies-with-david-mitchell-the-thousand-autumns-of-jacob-de-zoet.html
