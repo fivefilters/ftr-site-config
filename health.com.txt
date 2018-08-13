@@ -1,0 +1,4 @@
+http_header(cookie): euConsent=true;
+
+test_url: https://www.health.com/news/cell-phone-elbow-new-ill-wired-age
+test_contains: As symptoms progress
