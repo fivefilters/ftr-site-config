@@ -37,8 +37,8 @@ strip_id_or_class: ResponsiveAd
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
 
-prune: no
-tidy: no
+prune: yes
+tidy: yes
 
 date: //meta[@property="article:published"]/@content
 date: //meta[@itemprop="datePublished"]/@content
