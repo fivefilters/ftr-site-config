@@ -32,6 +32,14 @@ strip: //div[@class='ftrss-strip']
 body: //div[@class='ArticleText']
 strip: //table[@class='Form']
 
+requires_login: yes
+
+login_uri: https://lwn.net/login
+login_username_field: Username
+login_password_field: Password
+
+not_logged_in_xpath: /html/body/div[3]/div[1]/form[@class="loginform"]
+
 test_url: http://lwn.net/Articles/668318/
 test_url: http://lwn.net/Articles/668695/
 test_url: http://lwn.net/Articles/669114/
