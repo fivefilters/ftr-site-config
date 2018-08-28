@@ -1,7 +1,9 @@
-title: //article[@id='story-page']/h1
-date: //p[@class="byline"]/time/@datetime
-body: //div[@class="summary"]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' gk__main__content ')]
 
-strip: //select[@id="news_changing_node"]
+requires_login: yes
+login_uri: https://www.gamekult.com/utilisateur/connexion.html
+login_username_field: _username
+login_password_field: _password
+not_logged_in_xpath: //body[@class="gk__menu__login"]
 
-test_url: http://www.gamekult.com/actu/toukiden-2-demo-vita-japonaise-le-24-mai-A163469.html
+test_url: https://www.gamekult.com/actualite/ninja-theory-chez-microsoft-studios-la-fin-des-annees-galere-3050806759.html
