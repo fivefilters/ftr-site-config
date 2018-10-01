@@ -35,6 +35,8 @@ strip_id_or_class: image-num
 strip_id_or_class: heisebox_right
 strip_id_or_class: dossier
 strip_id_or_class: latest_posting_snippet
+strip_id_or_class: a-pvgs
+strip_id_or_class: a-pvg__body
 
 # Strip Ads
 strip_id_or_class: ad_
