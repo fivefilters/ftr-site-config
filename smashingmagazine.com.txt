@@ -7,5 +7,6 @@ strip_id_or_class: hsl
 strip_id_or_class: further-reading-on-smashingmag
 
 strip: //a[@class='sot single']
+strip: //div[@class='drop-caps']
 
 test_url: https://www.smashingmagazine.com/2017/06/building-production-ready-css-grid-layout/
