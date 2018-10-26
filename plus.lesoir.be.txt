@@ -1,0 +1,12 @@
+title://article/header[@class="gr-article-header"]/h1
+body://article/div[@class="gr-article-content"]
+
+requires_login: yes
+
+login_uri: https://login.lesoir.be/html/login
+login_username_field: login
+login_password_field: password
+
+not_logged_in_xpath: //div[@class="gr-paywall-block"]
+
+test_url: https://plus.lesoir.be/archive/d-20181024-3PA04M
