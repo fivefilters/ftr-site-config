@@ -3,7 +3,7 @@ author: //cite[contains(concat(' ',normalize-space(@class),' '),' e_author_t ')]
 date: //time[@class='e_terms_posted'] 
 strip: //article[contains(concat(' ',normalize-space(@class),' '),' a_art__link ')] 
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' t_thankyou ')]//p 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' b_single_e ')]//p | //div[contains(concat(' ',normalize-space(@class),' '),' a_single__post ')] | //li[contains(concat(' ',normalize-space(@class),' '),' s_h_usr_itm__options ')]//ul[contains(concat(' ',normalize-space(@class),' '),' sub-menu ')] 
+body: //div[contains(concat(' ',normalize-space(@class),' '),' b_single_e ')]//p | //div[contains(concat(' ',normalize-space(@class),' '),' a_single__post ')]
  
 requires_login: yes 
  
