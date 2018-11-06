@@ -23,5 +23,5 @@ replace_string: <img
 find_string: </amp-img>
 replace_string: <!-- nothing -->
 
-# strip all class attributes after processing
+# strip all class attributes after processing (not supported in Full-Text RSS yet)
 post_strip_attr: //*/@class
