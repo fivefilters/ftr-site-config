@@ -19,6 +19,7 @@ strip: //footer
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: reveal-caption
 strip_id_or_class: readerquestions
+strip_id_or_class: submeta
 
 strip: //figcaption
 
