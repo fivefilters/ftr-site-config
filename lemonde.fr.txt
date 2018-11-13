@@ -1,7 +1,7 @@
-title: //h1
+title: //h1[@class='article__title']
 
 # We can have multiple authors
-author: //a[@class='auteur']
+author: //span[contains(concat(' ',normalize-space(@class),' '),' author__name ')]
 
 # Last edition date (if any)
 date: //time[@itemprop='dateModified']/@datetime
@@ -9,11 +9,9 @@ date: //time[@itemprop='dateModified']/@datetime
 date: //time[@itemprop='datePublished']/@datetime
 
 # Remove "Lire aussi" blocks
-strip: //p[@class='lire']
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
 
-strip: //div[@class="dfp_slot"]
-
-body: //div[@id='articleBody']
+body: //section[@class='article__content']
 
 # Remove the insane "conjugaison.lemonde.fr" links:
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
@@ -22,6 +20,17 @@ replace_string: <input type='hidden' style='display:none;'
 # Remove the insane cross-linking categories "Toute l’actualité"
 find_string: <a class="lien_interne rub"
 replace_string: <input type="hidden" style="display:none;"
+
+requires_login: yes
+
+login_uri: https://secure.lemonde.fr/sfuser/connexion
+login_username_field: connection[mail]
+login_password_field: connection[password]
+
+login_extra_fields: connection[_token]=@=xpath("//form//input[@id='connection__token']", request_html(config.getLoginUri()))
+
+not_logged_in_xpath: //section[contains(concat(' ',normalize-space(@class),' '),' paywall__container ')]//p[@class='paywall__login']
+
 
 prune: no
 
