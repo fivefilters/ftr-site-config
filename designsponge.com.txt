@@ -7,7 +7,7 @@ prune: no
 title: //header/h1
 
 # Set author
-author: //a[rel='author']
+author: //a[@rel='author']
 
 # Content is here
 body: //article

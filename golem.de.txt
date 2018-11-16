@@ -26,10 +26,14 @@ strip_id_or_class: implied
 strip_id_or_class: social-
 strip_id_or_class: comments
 strip_id_or_class: footer
+strip_id_or_class: job-market
+strip_id_or_class: tags
 
 # Tidy up galleries (could still be improved, though)
 strip: //img[@src='']
-strip: //li[not(*)]
+# This removes valid lists:
+# https://www.golem.de/news/sap-berater-der-coolste-job-nach-tourismusmanager-und-bierbrauer-1807-135389-2.html
+# strip: //li[not(*)]
 strip: //div[contains(@style,'margin')]
 strip: //figure[contains(@id,'gvideo')]
 

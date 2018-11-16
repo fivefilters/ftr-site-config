@@ -17,6 +17,8 @@ strip: //div[@id='feature-meta']
 strip: //li[@class='empty']
 strip: //ul[@class='lookup-links']
 
+http_header(Cookie): DSGVO_ZUSAGE_V1=true
+
 prune: no
 tidy: no
 

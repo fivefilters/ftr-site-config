@@ -1,6 +1,10 @@
-title: //div[contains(@class, 'articleHead')]//h1
+title: //meta[@property='og:title']/@content
 
-single_page_link: //link[contains(@href, '/amp/article/')]
+#title: //div[contains(@class, 'articleHead')]//h1
+
+# single_page_link: //link[contains(@href, '/amp/article/')]
+
+body: //div[@id='main-article']
 
 body: //div[@itemprop='articleBody']
 body: //div[@class='articleText']
@@ -16,11 +20,11 @@ strip: //p[contains(., 'This article available online at:')]
 strip: //p[contains(., 'This article available online at:')]/following::*
 strip: //div[@class='earthbox']
 
-single_page_link: //div[contains(@class, 'article-tools')]//a[contains(@class, 'print')]
+#single_page_link: //div[contains(@class, 'article-tools')]//a[contains(@class, 'print')]
 
 native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
 
-#multi-page article
+#multi-page article (not multi-page anymore)
 test_url: http://www.theatlantic.com/magazine/archive/2014/12/the-real-roots-of-midlife-crisis/382235/
 test_contains: The curve tends to evince itself
 

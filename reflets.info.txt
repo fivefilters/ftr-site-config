@@ -1,6 +1,17 @@
-body://div[@class='maincontent']
-date://div[@class='meta-date']
-strip://li[@class='sharing_label']
-strip://a[@class='FlattrButton']
-strip://div[@class='jp-relatedposts']
-test_url: http://reflets.info/orange-nokia-siemens-deep-packet-inspection/
+title: //h1
+author: //a[@class='author']
+
+# wallabag-specific login directives (not supported in FTR)
+requires_login: yes
+
+login_uri: https://reflets.info/users/sign_in
+login_username_field: user[email]
+login_password_field: user[password]
+login_extra_fields: authenticity_token=@=xpath('//input[@name="authenticity_token"]', request_html('https://reflets.info/users/sign_in'))
+login_extra_fields: utf8=✓
+login_extra_fields: user[remember_me]=1
+login_extra_fields: commit=Connexion
+
+not_logged_in_xpath: //div[contains(@class, "warning")]
+
+test_url: https://reflets.info/articles/monetiser-ses-donnees-personnelles-l-arbre-qui-cache-la-foret

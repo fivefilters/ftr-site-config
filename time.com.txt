@@ -5,6 +5,9 @@ body: //section[contains(@class, 'article-body')]
 prune: no
 tidy: no
 
+#Skip GDPR tracking wall
+http_header(Cookie): euConsent=true
+
 strip: //figcaption
 strip: //p[contains(., 'MORE:') and ./a]
 strip: //aside

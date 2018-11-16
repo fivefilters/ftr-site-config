@@ -22,7 +22,7 @@ find_string: <div class="Answer"
 replace_string: <hr /><div class="Answer" 
 
 test_url: http://www.quora.com/What-everyday-habit-do-you-wish-you-had-developed-earlier-in-life
-test_contains: Exercising every day
+test_contains: overcome emotional eating
 
 test_url: http://www.quora.com/What-is-the-greatest-illusion-in-life
 test_contains: What is the greatest illusion in life?

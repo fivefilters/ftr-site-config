@@ -1,21 +1,12 @@
-single_page_link: //a[@class='print']
+title: //h1[@class='title']
 
-parser: html5php
-tidy: no
-prune: no
+body: //section[@class='section']
+strip: //div[@class='swiper-wrapper']
+#strip: //figcaption[@class='ficaption']
+#strip: //figcaption/span
 
-body: //article
-strip: //section[@class='heroheader']
-strip: //section[contains(concat(' ', normalize-space(@class), ' '), ' tags ')]
-strip: //div[@class='gallery-title-container']
-strip: //figcaption/span
-strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' controls ')]
-strip: //i[@class='icon zoom']
+date: //span[@class='published-time']
 
-author: normalize-space(substring-after(//article/p[1], 'Autor: '))
-strip: //article/p[1]
 
-date: substring-after(//div[contains(concat(' ', normalize-space(@class), ' '), ' editedby ')]/span, 'Erstellt am ')
-strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' editedby ')]
-
-test_url: http://futurezone.at/produkte/sony-xperia-x-im-test-mittelklasse-zum-premium-preis/209.178.838
+test_url: https://futurezone.at/produkte/lego-verkauft-bugatti-chiron-aus-3599-teilen/400044290
+test_url: https://futurezone.at/science/nasa-verkuendet-am-donnerstag-neue-entdeckung-am-mars/400047008

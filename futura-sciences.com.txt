@@ -11,6 +11,9 @@ strip_id_or_class: httplogbar-wrapper
 strip_id_or_class: diaporamafullscreenariane
 strip_id_or_class: ariane
 strip_id_or_class: diaporamafullscreen
+strip_id_or_class: module-propal-nl
+strip_id_or_class: readmore-wrapper
+strip_id_or_class: bg-light-green
 
 test_url: http://www.futura-sciences.com/magazines/espace/infos/actu/d/astronomie-surprenants-panaches-ceres-62066/
 test_url: http://www.futura-sciences.com/magazines/high-tech/infos/actu/d/technologie-bientot-plus-besoin-machine-laver-62157/#xtor=RSS-8

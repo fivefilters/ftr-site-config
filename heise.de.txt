@@ -6,7 +6,7 @@ prune: no
 date: //p[@class='news_datum']
 author: //span[@class='author']
 
-body: //article | //div[@class='meldung_wrapper']
+body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
 
 strip: //nav
 
@@ -35,6 +35,8 @@ strip_id_or_class: image-num
 strip_id_or_class: heisebox_right
 strip_id_or_class: dossier
 strip_id_or_class: latest_posting_snippet
+strip_id_or_class: a-pvgs
+strip_id_or_class: a-pvg__body
 
 # Strip Ads
 strip_id_or_class: ad_
@@ -42,6 +44,12 @@ strip_id_or_class: ad_
 # Some optimizations
 replace_string(<h5>): <h2>
 replace_string(</h5>): </h2>
+replace_string(<title>Druckversion - ): <title>
+replace_string( | heise online</title>): </title>
+replace_string( | c't Magazin</title>): </title>
+replace_string( | Telepolis</title>): </title>
+replace_string( | heise Security</title>): </title>
+replace_string( | heise Autos</title>): </title>
 # this line breaks the parser
 #replace_string(<span class="bild_rechts" style="width:): <p "
 replace_string(<div class="heisebox">): <blockquote>

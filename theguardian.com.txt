@@ -1,9 +1,5 @@
-title: //h1[@itemprop='headline']
-
 body: //article
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content__main ')]//div[contains(concat(' ',normalize-space(@class),' '),' gs-container ')]
-strip: //article/header/div[contains(@class, 'content__header')]
-strip: //article/header/div[contains(@class, 'content__logo-container')]
 strip: //article//div[contains(@class, 'content__secondary-column')]
 strip: //article//aside
 strip: //article//div[contains(@class, 'block-share')]
@@ -15,8 +11,18 @@ strip: //article//script
 strip: //article//figure[contains(@class, 'element-audio')]
 strip: //article//a[contains(@style, 'display: none')]
 strip: //article/div[@class='paidfor-band']
+strip: //header
+strip: //div[@class='content__main-column']
+strip: //div[contains(@class, 'content-footer')]
+strip: //footer
 
 strip_id_or_class: hide-on-mobile
+strip_id_or_class: reveal-caption
+strip_id_or_class: readerquestions
+strip_id_or_class: submeta
+
+strip: //figcaption
+
 
 author: //article//p[@class='byline']
 date: //article//time/@datetime

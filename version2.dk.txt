@@ -9,4 +9,4 @@ convert_double_br_tags: yes
 
 # This is required, because Tidy chokes on the HTML5 tags...
 tidy: no
-test_url: http://www.version2.dk/artikel/17069-amerikansk-hit-investor-er-vild-med-danske-net-ivaerksaettere
+test_url: https://www.version2.dk/artikel/amerikansk-hit-investor-er-vild-med-danske-net-ivaerksaettere-17069

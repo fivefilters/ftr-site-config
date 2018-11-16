@@ -14,6 +14,9 @@ strip_id_or_class: secondary
 strip_id_or_class: con1col
 strip: //h3[@class='conheader']
 
+#GDPR bypass
+http_header(Cookie): trackingChoice=true; choiceVersion=1
+
 replace_string(<a name="more">&nbsp;</a>): <!-- no more -->
 replace_string(<div class="transcript">): <div class="transcript"><h2>Transcript</h2>
 replace_string(<div class="transcript storytext">): <div class="transcript storytext"><h2>Transcript</h2>

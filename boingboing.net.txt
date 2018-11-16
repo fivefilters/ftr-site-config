@@ -2,10 +2,12 @@
 title: //h2[@class="headline"]
 single_page_link: //h2[@class="headline"]/a
 #date: //p[@class="byline"]
-body: //div[@class="post"]
+body: //div[@id="story"]
 
 strip_id_or_class: shareMe
 strip_id_or_class: authorbox
 strip_id_or_class: byline
+strip_id_or_class: share
+strip_id_or_class: separator
 
 test_url: http://boingboing.net/2011/10/23/understanding-the-hyperrich-through-the-lens-of-tomorrows-history.html
