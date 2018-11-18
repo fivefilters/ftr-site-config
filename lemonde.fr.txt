@@ -1,7 +1,7 @@
-title: //h1
+title: //h1[@class='article__title']
 
 # We can have multiple authors
-author: //a[@class='auteur']
+author: //span[contains(concat(' ',normalize-space(@class),' '),' author__name ')]
 
 # Last edition date (if any)
 date: //time[@itemprop='dateModified']/@datetime
@@ -9,15 +9,17 @@ date: //time[@itemprop='dateModified']/@datetime
 date: //time[@itemprop='datePublished']/@datetime
 
 # Remove "Lire aussi" blocks
-strip: //p[@class='lire']
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
 
-strip: //div[@class="dfp_slot"]
+body: //section[@class='article__content']
 
-body: //div[@id='articleBody']
+# Another body selector and strip for video-only links
+body: //section[contains(concat(' ',normalize-space(@class), ' '), ' video ')]
+strip: //div[contains(concat(' ',normalize-space(@class), ' '), ' related-content--video ')]
 
 # Remove the insane "conjugaison.lemonde.fr" links:
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
-replace_string: <input type='hidden' style='display:none;' 
+replace_string: <input type='hidden' style='display:none;'
 
 # Remove the insane cross-linking categories "Toute l’actualité"
 find_string: <a class="lien_interne rub"
@@ -29,13 +31,13 @@ login_uri: https://secure.lemonde.fr/sfuser/connexion
 login_username_field: connection[mail]
 login_password_field: connection[password]
 
-login_extra_fields: connection[token]=@=xpath("//form//input[@id='connection__token']", request_html(config.getLoginUri()))
+login_extra_fields: connection[_token]=@=xpath("//form//input[@id='connection__token']", request_html(config.getLoginUri()))
 
-not_logged_in_xpath: //body[contains(@class, 'site-gratuit')]//div[@id='teaser_article']
-
+not_logged_in_xpath: //section[contains(concat(' ',normalize-space(@class),' '),' paywall__container ')]//p[@class='paywall__login']
 
 prune: no
 
 test_url: http://www.lemonde.fr/economie/article/2011/07/05/moody-s-abaisse-la-note-du-portugal-de-quatre-crans_1545237_3234.html
 test_url: http://www.lemonde.fr/big-browser/article/2017/10/27/assassinat-de-kennedy-ce-qu-on-a-appris-dans-les-documents-declassifies_5207029_4832693.html
 test_url: https://www.lemonde.fr/pixels/article/2018/07/14/douze-jeux-video-pour-s-amuser-a-plusieurs_5331269_4408996.html
+test_url: https://www.lemonde.fr/sante/video/2016/04/07/diabete-pourquoi-une-telle-progression-de-l-epidemie_4898147_1651302.html
