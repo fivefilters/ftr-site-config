@@ -8,14 +8,24 @@ date: //time[@itemprop='dateModified']/@datetime
 # Publication date
 date: //time[@itemprop='datePublished']/@datetime
 
-# Remove "Lire aussi" blocks
-strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
-
 body: //section[@class='article__content']
 
 # Another body selector and strip for video-only links
 body: //section[contains(concat(' ',normalize-space(@class), ' '), ' video ')]
 strip: //div[contains(concat(' ',normalize-space(@class), ' '), ' related-content--video ')]
+
+
+# Remove "Lire aussi" blocks
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
+
+# Remove comments
+strip: //*[contains(@class, 'comments')]
+
+# Remove "Article réservé aux abonnés"
+strip: //p[@class='article__status']
+
+# Remove share buttons
+strip://ul[contains(@class, 'meta__social')]
 
 # Remove the insane "conjugaison.lemonde.fr" links:
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'

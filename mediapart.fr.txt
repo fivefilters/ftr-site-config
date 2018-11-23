@@ -6,6 +6,8 @@ author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//a[@
 
 single_page_link: //link[@rel="canonical"]
 
+strip: //h2[@class='h4']
+
 requires_login: yes
 
 login_uri: https://www.mediapart.fr/login_check
