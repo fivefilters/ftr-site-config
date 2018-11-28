@@ -14,15 +14,21 @@ body: //section[@class='article__content']
 body: //section[contains(concat(' ',normalize-space(@class), ' '), ' video ')]
 strip: //div[contains(concat(' ',normalize-space(@class), ' '), ' related-content--video ')]
 
-
 # Remove "Lire aussi" blocks
 strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
+
+# Remove "Lire aussi" paragraphs (just containing "Lire" in strong and a link)
+strip: //p[contains(strong, 'Lire') and a]
 
 # Remove comments
 strip: //*[contains(@class, 'comments')]
 
 # Remove "Article réservé aux abonnés"
 strip: //p[@class='article__status']
+
+# Remove quotes highlighted in articles, doublons with content
+# We use parent::blockquote to avoid a remaining empty blockquote node
+strip: //p[@class='article__quote']/parent::blockquote
 
 # Remove share buttons
 strip://ul[contains(@class, 'meta__social')]
