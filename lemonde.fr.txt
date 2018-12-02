@@ -41,6 +41,9 @@ replace_string: <input type='hidden' style='display:none;'
 find_string: <a class="lien_interne rub"
 replace_string: <input type="hidden" style="display:none;"
 
+# Remove some inline stylesheets
+strip: //link[@rel='stylesheet']
+
 requires_login: yes
 
 login_uri: https://secure.lemonde.fr/sfuser/connexion
