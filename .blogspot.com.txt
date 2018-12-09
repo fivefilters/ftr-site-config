@@ -5,6 +5,9 @@ body://div[contains(@class,'entry-content')]
 strip_comments:no
 prune:no
 
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
+
 tidy:yes
 
 test_url: http://themerryone.blogspot.com/2010/08/new-move-new-blog.html
