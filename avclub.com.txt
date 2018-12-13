@@ -1,4 +1,6 @@
-author: //*[@id="article_wrapper"]/div[1]/a[1]
-body: //*[@id="article_wrapper"]/div[2]
-date: //*[@id="article_wrapper"]/div[1]/text()[2]
-test_url: http://www.avclub.com/articles/forgetmenot,70904
+title: //head/title
+author: //meta[@name="author"]/@content
+body: //div[contains(@class, 'post-content')]
+strip: //div[contains(@class, 'content-summary')]
+
+test_url: https://music.avclub.com/paul-williams-on-the-enduring-magic-and-no-longer-lost-1830862575
