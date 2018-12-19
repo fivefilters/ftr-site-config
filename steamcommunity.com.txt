@@ -1,0 +1,4 @@
+body: //div[contains(@class, "announcement_body")]
+author: //a[@class="whiteLink"]
+
+test_url: https://steamcommunity.com/games/elitedangerous/announcements/detail/1711828601535410336
