@@ -1,0 +1,7 @@
+title: //meta[@property='og:title']/@content
+body: //h2[@class='art-chapeau'] | //div[@class='art-text']
+
+# Remove "Lire aussi" and "À lire aussi" links
+strip: //p/strong[contains(text(), 'aussi') and a]
+
+test_url: https://www.lepoint.fr/politique/dans-les-coulisses-d-un-couac-gouvernemental-19-12-2018-2280794_20.php
