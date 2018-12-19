@@ -3,4 +3,4 @@ author: //meta[@name="author"]/@content
 body: //div[contains(@class, 'post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
-test_url: https://pictorial.jezebel.com/how-the-blacklist-shut-progressive-women-out-of-tv-and-1830547491
+test_url: https://theinventory.com/the-best-adult-backpack-in-your-price-range-1830754804

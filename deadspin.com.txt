@@ -1,4 +1,6 @@
-http_header(user-agent): PHP/5.3
+title: //head/title
+author: //meta[@name="author"]/@content
+body: //div[contains(@class, 'post-content')]
+strip: //div[contains(@class, 'content-summary')]
 
-test_url: http://deadspin.com/actually-extra-innings-should-stay-just-as-they-are-1792189890
-test_contains: Imagine watching the last postseason
+test_url: https://deadspin.com/everythings-going-great-with-the-skins-why-do-you-ask-1831070342

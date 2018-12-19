@@ -1,11 +1,6 @@
-title: //h2[@class='title']
-date: substring-before(//p[@class='meta'], '|')
-body: //div[@class='story']
-#body: //div[@class='article_body']
+title: //head/title
+author: //meta[@name="author"]/@content
+body: //div[contains(@class, 'post-content')]
+strip: //div[contains(@class, 'content-summary')]
 
-strip: //h2[@class='title']
-strip: //p[@class='meta']
-strip: //div[@class='ga_section']
-strip: //div[@id='recent_slider']
-
-test_url: http://www.theonion.com/articles/pathetic-bobcats-owner-again-regaling-players-with,27572/
+test_url: https://www.theonion.com/theresa-may-narrowly-manages-to-survive-parliamentary-f-1831077604

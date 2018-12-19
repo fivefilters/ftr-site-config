@@ -1,8 +1,6 @@
-title: //h1[contains(concat(' ',normalize-space(@class),' '),' headline ')]
-body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
-author: //div[contains(concat(' ',normalize-space(@class),' '),' meta__byline ')]
-date: //a[contains(concat(' ',normalize-space(@class),' '),' js_entry-link.js_publish_time ')]
+title: //head/title
+author: //meta[@name="author"]/@content
+body: //div[contains(@class, 'post-content')]
+strip: //div[contains(@class, 'content-summary')]
 
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' ad-mobile ')]
-
-test_url: https://kotaku.com/the-last-of-us-part-ii-s-violence-is-designed-to-be-rep-1826781044
+test_url: https://kotaku.com/tumblr-porn-ban-leaves-artists-and-fans-seeking-new-pla-1831056412
