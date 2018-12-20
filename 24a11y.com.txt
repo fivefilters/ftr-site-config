@@ -1,0 +1,4 @@
+title: //h1
+author: substring-after(//div[contains(@class, "author-description")]//h2[@class="author-title"], 'About')
+
+test_url: https://www.24a11y.com/2018/web-components-still-need-to-be-accessible/
