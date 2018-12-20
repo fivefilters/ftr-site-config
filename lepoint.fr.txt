@@ -1,8 +1,8 @@
 title: //h1
-body: //h2[@class='art-chapeau'] | //div[@class='art-text']
+body: //h2[@class='art-chapeau'] | //div[contains(@class, 'art-text')]
 
-# Remove "Lire aussi" and "À lire aussi" links
-strip: //p/strong[contains(text(), 'aussi') and a]
+# Remove "Lire aussi", "Lire également" and "À lire aussi" links
+strip: //p/strong[contains(translate(text(), 'L', 'l'), 'lire') and a]
 
 requires_login: true
 
