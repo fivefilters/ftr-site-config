@@ -1,0 +1,15 @@
+title: //h1
+body: //h2[@class='art-chapeau'] | //div[contains(@class, 'art-text')]
+
+# Remove "Lire aussi", "Lire également" and "À lire aussi" links
+strip: //p/strong[contains(translate(text(), 'L', 'l'), 'lire') and a]
+
+requires_login: true
+
+login_uri: https://moncompte.lepoint.fr
+login_username_field: email
+login_password_field: password
+login_extra_fields: sessionouverte
+not_logged_in_xpath: //aside[@id='article-reserve-aux-abonnes']
+
+test_url: https://www.lepoint.fr/politique/dans-les-coulisses-d-un-couac-gouvernemental-19-12-2018-2280794_20.php
