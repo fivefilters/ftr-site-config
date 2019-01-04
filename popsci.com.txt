@@ -7,5 +7,7 @@ replace_string: </div>
 
 prune: no
 
+http_header(cookie): bonnier_consent=true
+
 test_url: http://www.popsci.com/nasa-crashed-another-plane-today
 test_url: http://www.popsci.com/rss.xml
