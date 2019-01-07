@@ -1,0 +1,3 @@
+http_header(accept): */*
+
+test_url: https://www.marigold.cz/item/projektovy-manazer-je-v-cesku-sproste-slovo-ke-skode-projektu
