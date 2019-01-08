@@ -1,0 +1,4 @@
+# Two articles appear, so we always want to pick the first.
+body: (//div[contains(@class, 'article-content')])[1]
+
+test_url: https://www.lifehack.org/566117/how-meditate-for-beginners
