@@ -1,6 +1,8 @@
+# Changes might need to be made to lifehacker.com.txt too
+
 title: //head/title
 author: //meta[@name="author"]/@content
 body: //div[contains(@class, 'post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
-test_url: https://lifehacker.com/find-the-cheapest-destinations-for-that-last-minute-tri-1831047448
+test_url: https://vitals.lifehacker.com/use-these-apps-for-tracking-strength-workouts-1830938052
