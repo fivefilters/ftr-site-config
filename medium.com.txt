@@ -1,7 +1,9 @@
 body: //main[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'section-inner')]
+
 strip_id_or_class: supplementalPostContent
+strip_id_or_class: js-postMetaLockup
 
 parser: html5php
 

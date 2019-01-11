@@ -1,3 +1,5 @@
+# Changes might need to be made to .lifehacker.com.txt too
+
 title: //head/title
 author: //meta[@name="author"]/@content
 body: //div[contains(@class, 'post-content')]

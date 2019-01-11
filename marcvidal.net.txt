@@ -1,0 +1,6 @@
+title: //div[contains(@class, 'post-title')]
+body: //article/div
+
+skip_json_ld: yes
+
+test_url: https://www.marcvidal.net/blog/2019/1/8/google-ya-es-un-banco-europeo-y-ahora-que
