@@ -34,7 +34,7 @@ strip: //table[@class='Form']
 
 requires_login: yes
 
-login_uri: https://lwn.net/login
+login_uri: https://lwn.net/Login/
 login_username_field: Username
 login_password_field: Password
 
