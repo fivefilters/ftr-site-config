@@ -8,10 +8,10 @@ date: //time[@itemprop='dateModified']/@datetime
 # Publication date
 date: //time[@itemprop='datePublished']/@datetime
 
-body: //section[@class='article__content']
-
+body: //section[contains(concat(' ',normalize-space(@class), ' '), ' article__content ')]
 # Another body selector and strip for video-only links
 body: //section[contains(concat(' ',normalize-space(@class), ' '), ' video ')]
+
 strip: //div[contains(concat(' ',normalize-space(@class), ' '), ' related-content--video ')]
 
 # Remove "Lire aussi" blocks

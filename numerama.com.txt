@@ -1,9 +1,12 @@
 # Need html5lib or replace_string to handle correctly badly included in-content-ad inclusion script. html5lib is a lot slower.
 # parser: html5lib
 replace_string("</div>"): "&lt;/div&gt;"
+
 body: //article[@class='post-content']
+
 strip: //span[@class='summary-entry']
 strip: //footer
+strip_id_or_class: js-cookies-bar
 
 test_url: http://www.numerama.com/sciences/243352-hubble-detecte-un-trou-noir-supermassif-propulse-hors-de-sa-galaxie.html
 test_url: http://www.numerama.com/tech/242703-free-mobile-et-la-4g-en-illimite-ce-quil-faut-savoir.html
