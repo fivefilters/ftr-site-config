@@ -1,4 +1,6 @@
-author: //a[contains(@class, "p-author")]
 date: //time/@datetime
 
-test_url: https://www.rachelandrew.co.uk/archives/2018/10/04/the-way-we-talk-about-css/
+strip: //aside[@class="article-meta"]
+strip: //div[@class="keep-in-touch"]
+
+test_url: https://www.rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/
