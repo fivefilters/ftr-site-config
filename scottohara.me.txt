@@ -1,0 +1,5 @@
+title: //h1
+author: "Scott O'Hara"
+date: //time[@itemprop="datePublished"]/@datetime
+
+test_url: https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html
