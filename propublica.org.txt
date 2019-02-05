@@ -8,4 +8,6 @@ strip_id_or_class: byline-block
 strip_id_or_class: photo-caption
 strip_id_or_class: foot-tools
 
+skip_json_ld: yes
+
 test_url: http://www.propublica.org/article/pardon-applicants-benefit-from-friends-in-high-places
