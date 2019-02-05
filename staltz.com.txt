@@ -1,0 +1,3 @@
+author: //h2[@class="name-title"]
+
+test_url: https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html
