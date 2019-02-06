@@ -1,0 +1,5 @@
+title: //h1[@class="entry-title"]
+author: //meta[@itemprop="author"]/@content
+date: //header[contains(@class, "entry-header")]//time[contains(@class, "published")]/@datetime
+
+test_url: https://www.champeau.info/blog/2018/10/12/gmail-et-lassistant-google-ce-futur-asile-de-fous/

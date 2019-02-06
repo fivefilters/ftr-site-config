@@ -1,0 +1,5 @@
+title: //h2[@class="post-title"]
+date: //meta[@name="date"]/@content
+author: //meta[@name="dc.publisher"]/@content
+
+test_url: http://www.glazman.org/weblog/dotclear/index.php?post/2019/01/23/WebExtensions-v3-considered-harmful
