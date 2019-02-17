@@ -25,6 +25,7 @@ strip_id_or_class: site-message
 strip: //figcaption
 
 
+title: //h1[@articleprop='headline']
 author: //article//p[@class='byline']
 date: //article//time/@datetime
 strip: //article//div[contains(@class, 'content__meta-container')]
