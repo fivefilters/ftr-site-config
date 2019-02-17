@@ -2,8 +2,11 @@ single_page_link: //link[contains(@href, 'm.theregister')]
 if_page_contains: //div[@id='nextpage']
 strip: //div[@class='wptl btm']
 body: //div[contains(@class,'article_head')]//h2 | //div[@id='body']
+author: //div[@class='byline']/a[0]
 
 #multipage
 test_url: http://www.theregister.co.uk/2015/07/06/geeks_guide_spaceguard_center/
 #singlepage
 test_url: http://www.theregister.co.uk/2015/07/06/us_japan_massive_robots_in_the_ring/
+#with author
+test_url: https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/
