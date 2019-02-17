@@ -1,9 +1,11 @@
+title: //h1
 body: //main[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'section-inner')]
-
 strip_id_or_class: supplementalPostContent
-strip_id_or_class: js-postMetaLockup
+
+strip: //div[@class="section-divider"]
+strip: //div[contains(@class, 'js-postMetaLockup')]
 
 parser: html5php
 
@@ -17,3 +19,5 @@ test_contains: Keskustelukulttuuriongelmasta (subjective vs. objective bugs)
 test_url: https://medium.com/health-the-future/thirty-things-ive-learned-482765ee3503
 test_contains: Remember you will die
 test_contains: You have to have some faith.
+
+test_url: https://medium.com/@bfrancis/the-legacy-of-firefox-os-c58ec32d94f0
