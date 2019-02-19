@@ -1,0 +1,3 @@
+body: //div[contains(@class, 'article-main-image') or contains(@class, 'intro ') or contains(@class, 'chapter-content')]
+
+test_url: https://www.moneysavingexpert.com/news/2019/02/rail-passengers-complain-of-ticket-machine-problems/
