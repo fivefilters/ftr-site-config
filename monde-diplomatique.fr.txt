@@ -1,5 +1,9 @@
-title://h1[@class="h1"]
-body: //div[@class="contenu-principal"]/div[@class="texte"]
+title: //h1[@class="h1"]
+body: //div[contains(@class, 'contenu-principal')]
+author: //meta[@property='article:author']/@content
+
+strip: //div[contains(@class, 'bandeautitre')]
+strip: //div[contains(@class, 'dates_auteurs')]
 
 requires_login: yes
 
@@ -16,4 +20,4 @@ login_extra_fields: valider=valider
 
 not_logged_in_xpath: //div[@id="paywall"]
 
-test_url: https://blog.mondediplo.net/2017-01-13-Les-vrais-responsables-des-fausses-nouvelles
+test_url: https://www.monde-diplomatique.fr/1996/04/BOURDIEU/5425
