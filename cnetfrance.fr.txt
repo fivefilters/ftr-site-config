@@ -1,0 +1,11 @@
+title: //h1
+body: //header/p/text() | //div[concat(' ',normalize-space(@class), ' '), ' article-main-body ')]
+strip: //header/div[@id="article-info"]
+strip: //div[@class="nr_title"]
+strip: //div[@id="livefyreContainer"]
+strip: //div[@section="tag"]
+
+# Get rid off "A lire aussi" links, which aren't in any container
+strip: //ul/li[a[strong]]
+
+test_url: https://www.cnetfrance.fr/news/vlc-40-une-nouvelle-interface-salvatrice-en-preparation-39880419.htm
