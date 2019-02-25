@@ -1,0 +1,9 @@
+body: //div[contains(@class, 'article-main-image') or contains(@class, 'intro ') or contains(@class, 'chapter-content')]
+
+# we don't handle <source> elements so well at the moment. strip them (leaving <img>) and resize
+strip: //source
+find_string: rendition.320.320
+replace_string: rendition.768.768
+
+test_url: https://www.moneysavingexpert.com/news/2019/02/rail-passengers-complain-of-ticket-machine-problems/
+test_contains: staffed ticket counter

@@ -1,6 +1,6 @@
 author: //meta[@name="author"]/@content
-body: //div[@class="entry-content"]
-strip: //div[@class="stagi-sous-article-rotation"]
-strip_id_or_class: korben-sous-article
+body: //article[contains(concat(' ',normalize-space(@class),' '),' status-publish ')]//div[contains(concat(' ',normalize-space(@class),' '),' entry-container ')]
+strip_id_or_class: post-categories
 
 test_url: https://korben.info/gitcoin-aider-a-financer-les-developpements-open-source-avec-de-lethereum.html
+test_url: https://korben.info/leon-assistant-vocal-siri.html
