@@ -1,0 +1,4 @@
+title: //h2[@class="entry-title"]
+date: //time[@class="published"]/@datetime
+
+test_url: https://kresus.org/blog/kresus-version-0-14-0.html
