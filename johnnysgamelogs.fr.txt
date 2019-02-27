@@ -1,0 +1,4 @@
+author: //a[@class="url fn n"]
+date: //time[contains(@class, "published")]/@datetime
+
+test_url: http://johnnysgamelogs.fr/le-jeu-ordinaire-et-ses-vicissitudes-ecrire-a-nouveau/
