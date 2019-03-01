@@ -1,0 +1,4 @@
+title: //h1
+body: //div[@itemprop="content"]
+
+test_url: https://www.mytotalretail.com/article/how-site-search-could-kill-amazon/
