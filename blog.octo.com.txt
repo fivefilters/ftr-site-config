@@ -1,0 +1,7 @@
+author: //div[contains(@class, "entry-meta")]//a[contains(@href, 'blog.octo.com/author/')]
+date: //div[contains(@class, 'post-meta')]//time/@datetime
+
+strip: //div[@class="sharify-container"]
+strip: //div[@class="yarpp-related"]
+
+test_url: https://blog.octo.com/sortir-de-la-consanguinite-logicielle/
