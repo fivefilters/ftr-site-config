@@ -1,0 +1,4 @@
+author: //header//h1[@class="full-name"]
+date: //div[@class="post-metadata"]//time/@date
+
+test_url: https://redalemeden.com/blog/2019/we-need-chrome-no-more
