@@ -8,6 +8,14 @@ author: //span[@class='author']
 
 body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
 
+requires_login: yes
+
+login_uri: https://www.heise.de/sso/login/login
+login_username_field: username
+login_password_field: password
+
+not_logged_in_xpath: //body[@Class="a-login__link a-login__link--sso"]
+
 strip: //nav
 
 # General cleanup
