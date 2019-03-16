@@ -1,16 +1,8 @@
-title:concat(//h1,' - ',//h2,' - ',//h3)
-author://address
-date://span[@class='pub-date']
-body://div[@id='main']
-single_page_link://link[@rel='canonical']
-strip://div[@class='info']
-strip_id_or_class:'object-grid related-content'
-strip_id_or_class:'object-prevnext'
-strip_id_or_class:'object-header'
-strip_id_or_class:'source'
-strip_id_or_class:'label'
-strip_id_or_class:'title'
-dissolve://ul
-strip://li[@class='next']
-strip://li[@class='prev']
-test_url: http://pitchfork.com/features/why-we-fight/8796-on-the-far-slope-of-the-uncanny-valley/
+body: //div[contains(@class, 'blocks-area')]
+author: //a[@class="authors-detail__display-name"]
+date://time[@class='pub-date']/@datetime
+
+strip: //div[contains(@class, 'article-meta')]
+
+test_url: https://pitchfork.com/news/the-prodigys-keith-flint-dead-at-49/
+test_url: https://pitchfork.com/features/article/queens-bohemian-rhapsody-is-now-the-biggest-music-biopic-ever-its-also-total-bullshit/

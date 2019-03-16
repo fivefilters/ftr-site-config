@@ -2,7 +2,7 @@
 date: //header[contains(concat(' ',normalize-space(@class),' '),' o-page__content__head ')]//div[contains(concat(' ',normalize-space(@class),' '),' o-infos ')]//time[contains(concat(' ',normalize-space(@class),' '),' o-infos__date ')]
 
 # Author
-author: //header[contains(concat(' ',normalize-space(@class),' '),' o-page__content__head ')]//div[contains(concat(' ',normalize-space(@class),' '),' o-infos ')]//a[contains(concat(' ',normalize-space(@class),' '),' o-infos__author ')]
+author: //header//a[contains(@href, '/users/')]
 
 # Content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' o-page ')]

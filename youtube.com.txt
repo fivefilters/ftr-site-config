@@ -9,7 +9,10 @@ replace_string: ></iframe>
 
 single_page_link: //link[@type='text/xml+oembed']
 
+# Correct User-Agent string needed to get the oembed URL
+http_header(user-agent): PHP/7.2
+
 prune: no
 tidy: no
 
-test_url: http://www.youtube.com/watch?v=F6gLH0r3iVU
+test_url: https://www.youtube.com/watch?v=GjENnyQupow
