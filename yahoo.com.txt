@@ -11,5 +11,7 @@ replace_string: <div
 find_string: </noscript>
 replace_string: </div>
 
+prune: no
+
 test_url: https://www.yahoo.com/news/amazon-just-accidentally-leaked-details-145441439.html
 test_contains: stereo functionality could allow
