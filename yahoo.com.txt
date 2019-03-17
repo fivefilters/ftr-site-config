@@ -4,6 +4,7 @@ body: //article[@itemprop="articleBody"]
 
 strip_id_or_class: img-mask
 strip_id_or_class: StretchedBox
+strip_image_src: spaceball.gif
 strip: //button
 
 find_string: <noscript 
