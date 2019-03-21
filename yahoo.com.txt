@@ -1,0 +1,18 @@
+# changes to this file should also be made to .yahoo.com.txt
+title: //meta[@property="og:title"]/@content
+body: //article[@itemprop="articleBody"]
+
+strip_id_or_class: img-mask
+strip_id_or_class: StretchedBox
+#strip_image_src: spaceball.gif
+strip: //button
+
+find_string: itemprop="url" style="background-image:url( 
+replace_string: itemprop="url" src="
+find_string: );" src="https://s.yimg.com/g/images/spaceball.gif"
+replace_string: "
+
+prune: no
+
+test_url: https://www.yahoo.com/news/amazon-just-accidentally-leaked-details-145441439.html
+test_contains: stereo functionality could allow
