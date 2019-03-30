@@ -1,4 +1,4 @@
-The examples are useful - keep
+#The examples are useful - keep
 #strip: //div[contains(concat(' ',normalize-space(@class),' '),' folder ')]
 #strip: //div[contains(concat(' ',normalize-space(@class),' '),' folderlabel ')]
 
