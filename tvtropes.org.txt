@@ -1,3 +1,4 @@
-strip_id_or_class: folder
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' folder ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' folderlabel ')]
 
 test_url: https://tvtropes.org/pmwiki/pmwiki.php/Main/Masquerade
