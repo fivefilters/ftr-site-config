@@ -1,4 +1,5 @@
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' folder ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' folderlabel ')]
+The examples are useful - keep
+#strip: //div[contains(concat(' ',normalize-space(@class),' '),' folder ')]
+#strip: //div[contains(concat(' ',normalize-space(@class),' '),' folderlabel ')]
 
 test_url: https://tvtropes.org/pmwiki/pmwiki.php/Main/Masquerade
