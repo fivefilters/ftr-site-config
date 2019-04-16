@@ -3,6 +3,8 @@ prune:yes
 body://div[@itemprop="articleBody"]
 
 strip_id_or_class: container_form_alert
+strip_id_or_class: spinner-container wide
+strip_id_or_class: child-briefs-container
 
 requires_login: yes
 login_uri: https://compte.nextinpact.com/Account/Login

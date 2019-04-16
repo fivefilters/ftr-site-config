@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'featured-embed-holder')] | //div[contains(@class, 'article-content') and @itemprop="articleBody"]
+
+strip_id_or_class: wp-polls
+
+test_url: https://www.gofugyourself.com/can-maren-morris-be-a-cinderella-03-2019
