@@ -1,0 +1,4 @@
+title: //div[@class="titrearticle"]
+body: //div[@class="article"]
+
+test_url: http://www.utiliser-lightroom.com/blog/2019/04/23/skylum-flex-et-airmagic-pour-les-utilisateurs-de-lightroom/
