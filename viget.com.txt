@@ -1,0 +1,5 @@
+body: (//article)[1]
+
+prune: no
+
+test_url: https://www.viget.com/articles/understanding-futures-in-rust-part-1/
