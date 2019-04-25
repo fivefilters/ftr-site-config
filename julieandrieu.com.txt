@@ -1,4 +1,8 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' title ')]
-body: //section[contains(concat(' ',normalize-space(@class),' '),' feature ')]//ul[contains(concat(' ',normalize-space(@class),' '),' full-width ')] | //div[contains(concat(' ',normalize-space(@class),' '),' ingredients ')] | //div[contains(concat(' ',normalize-space(@class),' '),' row2 ')]
-strip : //section[contains(concat(' ',normalize-space(@class),' '),' tab-title ')]
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' primary_block ')]
+
+strip_id_or_class: tab-title
+strip_id_or_class: ratingblock
+
 test_url: https://www.julieandrieu.com/le-fromage-dans-tous-ses-etats/1065-papillote-de-feta-comme-a-corfou.html
