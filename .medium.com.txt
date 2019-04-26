@@ -1,0 +1,16 @@
+# Copy changes between medium.com.txt and .medium.com.txt
+
+title: //h1
+body: //main[contains(@class, 'postArticle-content')]
+body: //div[contains(@class, 'postArticle-content')]
+body: //div[contains(@class, 'section-inner')]
+strip_id_or_class: supplementalPostContent
+
+strip: //div[@class="section-divider"]
+strip: //div[contains(@class, 'js-postMetaLockup')]
+
+tidy: no
+prune: no
+
+test_url: https://elemental.medium.com/the-dark-side-of-fitness-tracking-9b218989bc47
+test_contains: Apps have turned movement and mindfulness
