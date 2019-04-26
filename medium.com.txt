@@ -1,3 +1,5 @@
+# Copy changes between medium.com.txt and .medium.com.txt
+
 title: //h1
 body: //main[contains(@class, 'postArticle-content')]
 body: //div[contains(@class, 'postArticle-content')]
@@ -6,8 +8,6 @@ strip_id_or_class: supplementalPostContent
 
 strip: //div[@class="section-divider"]
 strip: //div[contains(@class, 'js-postMetaLockup')]
-
-parser: html5php
 
 tidy: no
 prune: no

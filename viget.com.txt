@@ -1,0 +1,7 @@
+body: (//article)[1]
+
+strip_id_or_class: sharer
+
+prune: no
+
+test_url: https://www.viget.com/articles/understanding-futures-in-rust-part-1/

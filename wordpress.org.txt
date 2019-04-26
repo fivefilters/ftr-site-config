@@ -1,0 +1,7 @@
+author: //div[@class="meta"]/a[1]
+
+strip: //div[@class="meta"]
+strip: //div[@id="likes-other-gravatars"]
+strip: //noscript
+
+test_url: https://wordpress.org/news/2018/07/update-on-gutenberg/

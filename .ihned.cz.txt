@@ -1,0 +1,15 @@
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' relevant-articles ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' pstSkryt ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' social-buttons ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' user-article-share ')]
+
+requires_login: yes
+
+login_uri: https://ssl.ihned.cz/site/api/cs/logins/create_new/
+login_username_field: login
+login_password_field: password
+login_extra_fields: expire=permanent
+
+not_logged_in_xpath: //div[@id="paywall-lock-screen"]
+
+test_url: https://domaci.ihned.cz/c1-66553110-kde-se-v-cesku-zije-nejlepe-unikatni-mapa-ukazuje-kde-jsou-nejvyssi-mzdy-i-cerstvy-vzduch-praha-na-tom-neni-zrovna-nejlepe
