@@ -2,7 +2,7 @@
 # Place this file inside your site_config/custom/ folder
 # Source: http://siteconfig.fivefilters.org/grab.php?url=http://www.futura-sciences.com/magazines/espace/infos/actu/d/astronomie-surprenants-panaches-ceres-62066/
 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' grid ') and (contains(concat(' ',normalize-space(@class),' '),' col-gauche '))]
+body : //section[contains(concat(' ',normalize-space(@class),' '),' article-text ')]
 
 strip_id_or_class: ficheprevnext
 strip_id_or_class: bar
