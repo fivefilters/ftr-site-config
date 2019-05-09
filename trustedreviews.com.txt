@@ -1,0 +1,6 @@
+tidy: no
+body: //div[@itemprop='articleBody']
+author: //a[contains(@class, 'post-author__name')]
+
+test_url: https://www.trustedreviews.com/news/azerbaijan-grand-prix-2019-schedule-3705205
+test_url: https://www.trustedreviews.com/news/darpa-wants-make-better-secure-version-whatsapp-3696558

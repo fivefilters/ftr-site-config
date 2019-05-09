@@ -1,2 +1,7 @@
-body: //div[@id='article']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__body ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+author: //meta[@name='dc.creator']/@content
+
+strip: //div[contains(concat(' ',normalize-space(@id),' '),' further-reading-section ')]
+
+test_url: https://www.nature.com/articles/d41586-019-01307-2
 test_url: https://www.nature.com/npp/journal/v42/n11/full/npp201786a.html
