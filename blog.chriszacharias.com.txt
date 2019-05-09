@@ -1,0 +1,6 @@
+author: //h2[@id="nav_title"]//a
+date: //time[@class="article_time"]/@datetime
+
+strip: //figure[contains(@class, "kudo")]
+
+test_url: http://blog.chriszacharias.com/a-conspiracy-to-kill-ie6
