@@ -1,4 +1,4 @@
-body: //div[@class='field-items']
+body: //div[contains(@class, 'node-body')]//div[@class='field-items']
 title: //div[@class='title']
 
 test_url: https://lawfareblog.com/limits-panopticon
