@@ -1,0 +1,16 @@
+# Title not working correctly in Wallabag
+title: //meta[@name='dc.title']/@content
+author: //meta[@name='author']/@content
+date: substring-before(//span[@class='info-text'], ', <br>')
+body: //div[@class='span2.article']
+
+# Strip clutter
+strip: //img[@class='plus-box__image']
+strip: //div[@class='plus-box__text']
+strip: //a[@href='https://www.shz.de/plus/']
+strip: //div[@class='startpage']
+
+# Appear to be Google
+http_header(User-agent): GoogleBot/4.51
+
+test-url: https://www.shz.de/lokales/landeszeitung/eine-ampel-fuer-die-b-202-id23776527.html

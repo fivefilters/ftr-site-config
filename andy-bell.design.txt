@@ -1,0 +1,7 @@
+title: //h1
+author: //meta[@property="og:site_name"]/@content
+date: //header[@class="post__header"]//time/@datetime
+
+skip_json_ld: true
+
+test_url: https://andy-bell.design/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/

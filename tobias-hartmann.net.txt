@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' gp-entry-text ')]
+
+strip_id_or_class: aawp
+strip_id_or_class: aawp-disclaimer
+
+test_url: https://www.tobias-hartmann.net/2013/01/recovery-hotkeys-tastenkombinationen-fur-systemwiederherstellung-dell-asus-acer-hp-toshiba-samsung-fujitsu-sony-lenovo/

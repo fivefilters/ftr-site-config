@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' formatted ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' tutoriel_date ')]
+
+test_url: https://www.grafikart.fr/tutoriels/json-web-token-presentation-958

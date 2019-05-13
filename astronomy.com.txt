@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
+
+strip_id_or_class: relatedArticles
+strip_id_or_class: byline
+
+author: //div[contains(concat(' ',normalize-space(@class),' '),' byline ')]/a
+
+test_url: http://www.astronomy.com/news/2019/05/the-universes-first-supernovae-spewed-jets-of-material-into-neighboring-galaxies

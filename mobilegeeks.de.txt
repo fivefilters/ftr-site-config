@@ -1,0 +1,9 @@
+body: //div[@id='main-content-wrap']
+
+strip_id_or_class: postinfo
+strip_id_or_class: widgets-container
+strip_id_or_class: authorship
+strip_id_or_class: connect-author
+strip_id_or_class: breadcrumbs-wrapper
+
+test_url: https://www.mobilegeeks.de/test/oneplus-6t/
