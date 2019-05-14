@@ -1,0 +1,10 @@
+requires_login: yes
+
+login_uri: https://aoc.media/wp-admin/admin-ajax.php
+login_username_field: login
+login_password_field: password
+
+login_extra_fields: action=login_user
+login_extra_fields: security=@=preg_match('/security\\\":\\\"([a-z0-9]+)\\\"/si', request_html('https://aoc.media/'))
+
+not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' content-form-account-paywall ')]
