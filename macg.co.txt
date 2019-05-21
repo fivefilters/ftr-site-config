@@ -4,6 +4,8 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' plusLoin ')]
 strip: //select
 strip_id_or_class: comments
 strip_id_or_class: smart-paging-pager
+strip_id_or_class: megaUne
+strip_id_or_class: pas
 
 next_page_link: //div[contains(concat(' ',normalize-space(@class),' '),' smart-paging-pager ')]//a[@title='Aller à la page suivante']
 
