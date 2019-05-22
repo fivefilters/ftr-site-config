@@ -6,6 +6,8 @@ author: //div[@id='main']//div[@class='byline']//span[@class='authorName']
 
 strip_id_or_class: RelatedArtTag
 strip_id_or_class: syndication-btn
+strip_id_or_class: inline-related
+strip_id_or_class: inline-prompt
 
 strip: //h5[contains(., 'READ MORE:')]
 strip: //h5[contains(., 'Read more:')]
