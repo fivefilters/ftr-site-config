@@ -1,6 +1,7 @@
 body: //section[contains(@class, 'body-text')]
 
 strip_id_or_class: highlights
+strip_id_or_class: ai2html
 
 # Avoid redirecting to 'unsupported browser' page
 find_string: <meta http-equiv="refresh"
