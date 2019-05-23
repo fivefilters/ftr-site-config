@@ -3,6 +3,8 @@ strip_id_or_class: post-more
 strip_id_or_class: sidebar
 strip_id_or_class: social-container
 
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-wrapper ')]
+
 author: //a[@rel='author']
 
 test_url: https://www.cultofmac.com/568215/eu-may-force-iphone-to-switch-from-lightning-to-usb/
