@@ -1,3 +1,8 @@
 
 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' recipe-ingredients ')] | //p[contains(concat(' ',normalize-space(@class),' '),' recipe-steps__title ')] | //p[contains(concat(' ',normalize-space(@class),' '),' recipe-steps__title ')]
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' recipe-ingredients ')] | //p[contains(concat(' ',normalize-space(@class),' '),' recipe-steps__title ')] | //div[contains(concat(' ',normalize-space(@class),' '),' recipe-steps ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' desk-seven-twelfths ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' mod-cta--juicy__recipe-step ')]//div[contains(concat(' ',normalize-space(@class),' '),' mod-cta__button ')]
+strip: //label[contains(concat(' ',normalize-space(@class),' '),' recipe-ingredients__label ')]
+prune: no
