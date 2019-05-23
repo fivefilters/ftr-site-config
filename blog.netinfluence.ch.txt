@@ -1,0 +1,10 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+
+strip_id_or_class: ad-content
+strip_id_or_class: post-author
+strip_id_or_class: post-pagination
+strip_id_or_class: post-related
+
+author: //a[contains(concat(' ',normalize-space(@class),' '),' author-url ')]
+
+test_url: https://blog.netinfluence.ch/2019/05/17/faire-une-application-temps-reel-a-la-decouverte-de-mercure/
