@@ -1,0 +1,3 @@
+date: //time[@class="entry-date"]/@datetime
+
+test_url: https://www.w3.org/blog/2019/05/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/
