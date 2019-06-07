@@ -1,0 +1,9 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' recipe-header ')]
+
+strip_id_or_class: recipe-method-nav
+strip_id_or_class: single-recipe-top-sidebar
+strip_id_or_class: source-jamie
+strip_id_or_class: method-mobile-prompt
+strip_id_or_class: recipe-ingred-nav
+
+test_url: https://www.jamieoliver.com/recipes/fish-recipes/five-spice-salmon-tacos/
