@@ -1,0 +1,8 @@
+title: //h1
+author: //b[@itemprop="author"]
+date: //time[@itemprop="datePublished"]/@datetime
+
+strip: //nav[@class="c-pagination"]
+strip: //a[@href="/services/"]
+
+test_url: https://csswizardry.com/2019/05/self-host-your-static-assets/
