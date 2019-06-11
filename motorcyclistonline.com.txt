@@ -1,0 +1,5 @@
+http_header(cookie): bonnier_consent=true
+
+strip_id_or_class: arcAdsBox
+
+author: //div[contains(concat(' ',normalize-space(@class),' '),' by_author ')]
