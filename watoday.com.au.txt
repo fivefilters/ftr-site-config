@@ -1,0 +1,7 @@
+# strip the breadcrumb
+strip: //div//ul
+strip: //aside
+strip_id_or_class: adWrapper
+strip_id_or_class: noPrint
+
+test_url: https://www.watoday.com.au/business/the-economy/no-one-died-behind-the-typo-on-the-new-50-note-20190618-p51yqg.html

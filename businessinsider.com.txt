@@ -1,5 +1,11 @@
 title://div[@class="sl-layout-post"]/h1
+
 body: //div[@id='content' or contains(@class, 'post-content') or contains(@class, 'slide-module') or contains(@class, 'KonaBody')]
+body: //article
+
+strip_id_or_class: post-content-more
+strip_id_or_class: category-wrapper
+
 strip: //div[contains(@class, "post-sidebar")]
 strip: //div[@id='related-links']
 strip: //div[@class='related-links-container']

@@ -1,0 +1,4 @@
+body: //main[@id="main-content"]
+author: "Lindsey Kopacz"
+
+test_url: https://www.a11ywithlindsey.com/blog/javascript-accessibility-accordions/
