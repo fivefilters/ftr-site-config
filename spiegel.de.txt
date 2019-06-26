@@ -88,6 +88,8 @@ replace_string: <title>
 # field name is always the id of the article (a-710880) instead of the title...
 skip_json_ld: yes
 
+strip_id_or_class: article-function-box
+
 # use next link in "Fotostrecke"
 next_page_link: //a[@class='spBigaControlForw']
 test_url: http://www.spiegel.de/politik/deutschland/0,1518,787602,00.html
