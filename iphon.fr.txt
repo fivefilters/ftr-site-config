@@ -1,5 +1,9 @@
-date: //meta[@name="date"]/@content
-author: //meta[@name="author"]/@content
 strip_id_or_class: follow
+strip_id_or_class: mvp-soc-mob-list
+strip_id_or_class: mvp-content-bot
 
-test_url: http://www.iphon.fr/post/iphone-8-x-recharge-sans-fil-cable-simultanee-891682
+body: //div[@class="mvp-post-main-in"]
+
+author: //a[@rel="author"]
+
+test_url: https://www.iphon.fr/post/iphone-8-x-recharge-sans-fil-cable-simultanee-891682
