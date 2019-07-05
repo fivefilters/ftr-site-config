@@ -1,8 +1,9 @@
 title: //span[@id='hs_cos_wrapper_name']
 
-author: //div[contains(concat(' ',normalize-space(@class),' '),' hs-author-avatar ')]//img
+author: //div[contains(concat(' ',normalize-space(@class),' '),' hs-author-avatar ')]//img/@alt
 
-body://div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
+
+date: //time[contains(concat(' ',normalize-space(@class),' '),' post-date ')]/@datetime
 
 test_url: https://www.synbioz.com/blog/hebergement-applications-web
-
