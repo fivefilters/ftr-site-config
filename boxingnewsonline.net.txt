@@ -1,0 +1,12 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' col-mod-main ')]
+
+strip_id_or_class: entry-meta-wrapper-sticky
+strip_id_or_class: herald-related-wrapper
+strip_id_or_class: div-gpt-ad-MPU_InlineArticleAD1
+strip_id_or_class: meta-tags
+strip_id_or_class: hidden-lg
+strip_id_or_class: hidden-md
+
+author: //a[contains(concat(' ',normalize-space(@class),' '),' herald-author-name ')]
+
+test_url: https://www.boxingnewsonline.net/long-read-roberto-duran-and-esteban-de-jesus-the-last-goodbye/
