@@ -1,0 +1,10 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' innercontent ')]
+
+strip_id_or_class: single_cat
+strip_id_or_class: single_meta
+strip_id_or_class: bildbeschreibung
+strip_id_or_class: werbung
+strip_id_or_class: ps-facebook-teilen
+strip_id_or_class: ps-facebook-liken
+
+test_url: https://www.unsertirol24.com/2019/06/20/klima-aktivisten-stumm-gemacht-video/

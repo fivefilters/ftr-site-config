@@ -1,0 +1,15 @@
+body: //div[@id='mvp-post-content']
+
+strip_id_or_class: mvp-post-head
+strip_id_or_class: mvp-feat-caption
+strip_id_or_class: mvp-soc-mob-list
+strip_id_or_class: ce_aff
+strip_id_or_class: mvp-content-bot
+strip_id_or_class: mvp-post-add-story
+strip_id_or_class: mvp-cont-read-wrap
+
+date: //time[@itemprop="datePublished"]/@datetime
+
+author: //div[contains(concat(' ',normalize-space(@class),' '),' mvp-author-info-name ')]//a[@rel="author"]
+
+test_url: https://www.collective-evolution.com/2019/06/19/consciousness-do-we-all-need-to-fight-for-positive-change/

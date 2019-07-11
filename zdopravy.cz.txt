@@ -1,0 +1,6 @@
+title: //h1
+author: //a[contains(concat(' ',normalize-space(@class),' '),' herald-author-name ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' herald-date ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' herald-entry-content ')]
+
+test_url: https://zdopravy.cz/ustup-ceskych-kamionu-pokracuje-i-letos-tuzemska-nakladni-zeleznice-sili-30865/

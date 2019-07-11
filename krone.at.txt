@@ -1,0 +1,3 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' kmm-article-box ')]
+
+test_url: https://www.krone.at/1941895

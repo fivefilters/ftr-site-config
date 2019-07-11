@@ -1,0 +1,14 @@
+body: //article
+
+# convert id with hidden string to avoid being dumped
+replace_string(hidden-): show-
+
+date: //time[@itemprop="datePublished"]/@datetime
+author: //a[contains(concat(' ',normalize-space(@class),' '),' gtm-author-byline ')]
+
+strip: //time[@itemprop="datePublished"]
+strip: //img[@role="presentation"]
+
+strip_id_or_class: gtm-primary-tag-link
+
+test_url: https://www.axios.com/apple-buy-driveai-753da17d-60fe-44f9-84ff-1d2d82cd0b81.html
