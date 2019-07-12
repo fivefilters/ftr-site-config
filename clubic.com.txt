@@ -12,6 +12,7 @@ strip_id_or_class: slideshow-head
 strip_id_or_class: parse-shopper-resume-produit
 strip_id_or_class: NlTitle
 strip_id_or_class: NlSubTitle
+strip_id_or_class: author-infos
 prune: no
 
 body: //article
