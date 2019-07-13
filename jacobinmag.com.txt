@@ -1,0 +1,6 @@
+body: //article[contains(@class, 'po__article')]
+
+strip: //aside
+strip: //footer
+
+test_url: https://www.jacobinmag.com/2019/07/noam-chomsky-interview-climate-change-imperialism
