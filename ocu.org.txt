@@ -1,0 +1,11 @@
+title: //h1
+date: //meta[@name='PublishedDate']/@content
+body: //div[@class='constrained']
+
+strip_id_or_class: mobile-only
+strip_id_or_class: hide-on-mobile
+strip_id_or_class: panel--related-content
+strip_id_or_class: relative
+strip_id_or_class: yellow-boutique
+
+test_url: https://www.ocu.org/electrodomesticos/frigorificos/consejos/como-descongelar
