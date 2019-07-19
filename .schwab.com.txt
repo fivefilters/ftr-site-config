@@ -1,0 +1,8 @@
+title: //h2[contains(@class, 'title')]
+date: //div[contains(@class, 'submitted')]
+body: //div[contains(@class, 'content-body')]
+
+strip: //em[contains(text(), 'Listen to the latest ')]
+strip: //img[@alt='Listen on Apple Podcasts']//parent::a//parent::p
+
+test_url: https://www.schwab.com/resource-center/insights/content/schwab-market-update
