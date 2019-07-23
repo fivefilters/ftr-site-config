@@ -25,6 +25,26 @@ The quickest and simplest way is to use our [point-and-click interface](http://s
 
 For further refinements, e.g. selecting the title, stripping elements, dealing with multi-page articles, please see our [help page](http://help.fivefilters.org/customer/portal/articles/223153-site-patterns).
 
+### File naming
+
+Use `example.com.txt` for
+
+* www.example.com
+* example.com
+
+Use `.example.com.txt` for
+
+* sport.example.com
+* news.example.com
+* environment.example.com
+* etc.
+
+Use `sport.example.com.txt` to target just that sub-domain:
+
+* sport.example.com
+
+Note: `.example.com.txt` will _not_ match `www.example.com` or `example.com`
+
 ### Instapaper
 
 When we introduced site patterns, we chose to adopt the [same format](http://blog.instapaper.com/post/730281947) used by Instapaper. This allows us to make use of the existing extraction rules contributed by Instapaper users. 

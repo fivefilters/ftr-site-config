@@ -1,0 +1,13 @@
+body: //div[contains(@class, 'main-content')]
+
+find_string:<noscript>
+replace_string:-
+find_string:</noscript>
+replace_string:-
+
+strip: //div[contains(@class, 'author-promo')]
+strip: //section[@id="imadeits"]
+strip: //section[contains(@class, 'recommendations')]
+strip: //section[@id="comments"]
+
+test_url: https://www.instructables.com/id/DIY-Induction-Stove/

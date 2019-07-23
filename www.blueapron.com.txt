@@ -1,0 +1,16 @@
+body: //div[@id='main']
+# pruning gets rid of dumb layout stuff, but also ingredients :( so we'll take the dumb layout
+prune: no
+strip: //svg[contains(@class, 'icon-svg')]
+strip: //section[contains(@class, 'section-recipe__sidebar')]
+strip: //div[contains(@class, 'recipe-social')]
+strip: //div[contains(@class, 'recipe-main__badges')]
+strip: //div[contains(@class, 'ing-modal')]
+strip: //a[contains(@class, 'js-StepLaunch')]
+strip: //div[contains(@class, 'step-by-step-modal')]
+strip: //section[contains(@class, 'recipe-tools')]
+strip: //section[contains(@class, 'recipe-tips')]
+strip: //section[contains(@class, 'recipe-comments')]
+strip: //a[contains(@class, 'get-cooking-btn')]
+
+test_url: https://www.blueapron.com/recipes/roasted-cauliflower-orecchiette-with-garlic-breadcrumbs
