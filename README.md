@@ -27,12 +27,12 @@ For further refinements, e.g. selecting the title, stripping elements, dealing w
 
 ### File naming
 
-**Use `example.com.txt` for**
+Use `example.com.txt` for
 
 * example.com
 * www.example.com
 
-**Use `.example.com.txt` for**
+Use `.example.com.txt` for
 
 * sport.example.com
 * news.example.com
