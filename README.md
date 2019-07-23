@@ -29,8 +29,8 @@ For further refinements, e.g. selecting the title, stripping elements, dealing w
 
 Use `example.com.txt` for
 
-* example.com
 * www.example.com
+* example.com
 
 Use `.example.com.txt` for
 
@@ -38,6 +38,10 @@ Use `.example.com.txt` for
 * news.example.com
 * environment.example.com
 * etc.
+
+Use `sport.example.com.txt` target just that sub-domain:
+
+* sport.example.com
 
 Note: `.example.com.txt` will _not_ match `www.example.com` or `example.com`
 
