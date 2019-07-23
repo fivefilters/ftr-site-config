@@ -39,7 +39,7 @@ Use `.example.com.txt` for
 * environment.example.com
 * etc.
 
-Use `sport.example.com.txt` target just that sub-domain:
+Use `sport.example.com.txt` to target just that sub-domain:
 
 * sport.example.com
 
