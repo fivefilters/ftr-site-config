@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+
+strip_id_or_class: collapseTwo
+strip_id_or_class: collapsed
+strip_id_or_class: module-theme-actions
+strip_id_or_class: carousel-wrapper
+
+test_url: https://www.bosch-presse.de/pressportal/de/de/bosch-system-schiebt-digitalem-autoklau-einen-riegel-vor-179142.html
