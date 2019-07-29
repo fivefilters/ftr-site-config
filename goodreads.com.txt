@@ -18,6 +18,7 @@ strip_id_or_class: asyncPreviewButtonContainer
 strip_id_or_class: reviewControls
 strip_id_or_class: ctaBannerShown
 strip_id_or_class: otherEditions
+strip_id_or_class: add_mention_box
 
 strip: //div[@id="friendReviews"]
 
