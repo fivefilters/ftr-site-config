@@ -3,6 +3,11 @@ prune: no
 
 strip: //td[@width="130px"]
 
+# Replace shortened text
+find_string: style="display:none">
+replace_string: >
+strip: //div[./a[contains(@onclick, "swapContent")]]/span[contains(@id, 'freeTextContainer')]
+
 strip_id_or_class: wtrButtonContainer
 strip_id_or_class: pagination
 strip_id_or_class: rightContainer
