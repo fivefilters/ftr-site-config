@@ -1,6 +1,13 @@
 body: //div[contains(@class, 'mainContentFloat')]
 prune: no
 
+strip: //td[@width="130px"]
+
+strip_id_or_class: wtrButtonContainer
+strip_id_or_class: pagination
+strip_id_or_class: rightContainer
+strip_id_or_class: flagList11
+
 # List view
 test_url: https://www.goodreads.com/list/show/19.Best_for_Book_Clubs
 # Single review
