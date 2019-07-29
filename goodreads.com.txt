@@ -16,6 +16,9 @@ strip_id_or_class: flagList11
 strip_id_or_class: bookCoverActions
 strip_id_or_class: asyncPreviewButtonContainer
 strip_id_or_class: reviewControls
+strip_id_or_class: ctaBannerShown
+strip_id_or_class: otherEditions
+strip_id_or_class: friendReviews
 
 # List view
 test_url: https://www.goodreads.com/list/show/19.Best_for_Book_Clubs
