@@ -1,0 +1,8 @@
+body: //div[contains(@class, 'mainContentFloat')]
+
+# List view
+test_url: https://www.goodreads.com/list/show/19.Best_for_Book_Clubs
+# Single review
+test_url: https://www.goodreads.com/review/show/66574515?book_show_action=true&from_review_page=1
+# Book view
+test_url: https://www.goodreads.com/book/show/42506310-leaving-the-witness
