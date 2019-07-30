@@ -20,7 +20,9 @@ strip_id_or_class: ctaBannerShown
 strip_id_or_class: otherEditions
 strip_id_or_class: add_mention_box
 strip_id_or_class: chooseExplanation
+strip_id_or_class: moreLinks
 
+strip: //table[contains(@class, 'bookDiscussions')]
 strip: //div[@id="friendReviews"]
 
 # List view
