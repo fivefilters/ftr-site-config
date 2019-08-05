@@ -1,0 +1,9 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' lp_article_content ')]
+
+prune: no
+
+strip_id_or_class: id-Mediabox-info
+strip_id_or_class: id-Mediabox-media-copyright
+strip_id_or_class: id-Mediabox-zoom
+
+test_url: https://www.tz.de/reise/in-italien-drohen-streiks-bei-bahn-fliegern-und-schiffen-zr-12847211.html

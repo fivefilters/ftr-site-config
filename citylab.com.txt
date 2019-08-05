@@ -1,0 +1,5 @@
+author: //ol[contains(@class, 'c-meta__byline--article__hed')]
+date: //time[contains(@class, 'c-byline__time--article__hed')]
+
+test_url: https://www.citylab.com/design/2018/08/the-case-for-rooms/563216/
+test_contains: src="https://cdn.theatlantic.com/assets/media/img/posts/2018/08/AP_051007018677/01f7b92fc.jpg"

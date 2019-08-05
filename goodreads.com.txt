@@ -1,0 +1,34 @@
+body: //div[contains(@class, 'mainContentFloat')]
+prune: no
+
+strip: //td[@width="130px"]
+
+# Replace shortened text
+find_string: style="display:none">
+replace_string: >
+strip: //div[./a[contains(@onclick, "swapContent")]]/span[contains(@id, 'freeTextContainer')]
+strip: //div/a[contains(@onclick, "swapContent")]
+
+strip_id_or_class: wtrButtonContainer
+strip_id_or_class: pagination
+strip_id_or_class: rightContainer
+strip_id_or_class: flagList11
+strip_id_or_class: bookCoverActions
+strip_id_or_class: asyncPreviewButtonContainer
+strip_id_or_class: reviewControls
+strip_id_or_class: ctaBannerShown
+strip_id_or_class: otherEditions
+strip_id_or_class: add_mention_box
+strip_id_or_class: chooseExplanation
+strip_id_or_class: moreLinks
+strip_id_or_class: initiallyHidden
+
+strip: //table[contains(@class, 'bookDiscussions')]
+strip: //div[@id="friendReviews"]
+
+# List view
+test_url: https://www.goodreads.com/list/show/19.Best_for_Book_Clubs
+# Single review
+test_url: https://www.goodreads.com/review/show/66574515?book_show_action=true&from_review_page=1
+# Book view
+test_url: https://www.goodreads.com/book/show/42506310-leaving-the-witness
