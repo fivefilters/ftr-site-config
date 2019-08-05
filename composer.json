@@ -12,7 +12,7 @@
         "symfony/finder": "~2.6|~3.0|~4.0"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^3.2",
+        "symfony/phpunit-bridge": "^4.3",
         "liip/rmt": "1.2.*"
     },
     "autoload": {
