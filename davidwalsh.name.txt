@@ -1,0 +1,4 @@
+author: //article//span[@itemprop="name"]
+strip: //div[@class="article-block"]
+
+test_url: https://davidwalsh.name/optional-chaining
