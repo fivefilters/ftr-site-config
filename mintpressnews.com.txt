@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+test_url: https://www.mintpressnews.com/mega-group-maxwells-mossad-spy-story-jeffrey-epstein-scandal/261172/
+test_contains: One of those businessmen
