@@ -1,0 +1,6 @@
+title: //span[@itemprop='mainEntityOfPage']
+date: //span[@class='date-display-single']
+author: //div[@id='field-wrapper-authors']
+body: //div[@itemprop='articleBody']
+
+test_url: https://www.commondreams.org/news/2019/08/19/17-million-turn-out-hong-kong-demonstration-vow-keep-fighting-protests-enter-11th
