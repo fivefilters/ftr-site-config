@@ -1,6 +1,8 @@
 strip_id_or_class: follow
 strip_id_or_class: mvp-soc-mob-list
 strip_id_or_class: mvp-content-bot
+strip_id_or_class: comp-vgrid
+strip_id_or_class: comp-box
 
 body: //div[@class="mvp-post-main-in"]
 
