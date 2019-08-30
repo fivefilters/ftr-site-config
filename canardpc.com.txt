@@ -1,6 +1,13 @@
 title: //h2[@class="article-title"]
 body: //div[@id="zenContent"] | //div[@id="block-articlenote"]
 author: //div[@class="article-author"]//a[@class="username"]
+author: //div[@class="block-author row"]//a[contains(@href, "membre")]
+
+find_string: style="background-image: url('
+replace_string: ><img src="
+
+find_string: ');">
+replace_string: " /></a><a class="hide">
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
