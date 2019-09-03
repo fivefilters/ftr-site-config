@@ -1,0 +1,5 @@
+body: //div[@id="content-left"]
+strip_id_or_class: recommended-video
+prune: no
+
+test_url: https://www.thrillist.com/eat/new-york/best-greek-restaurants-in-astoria-queens
