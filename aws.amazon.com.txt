@@ -1,0 +1,6 @@
+author: substring-before(substring-after(//footer[@class="blog-post-meta"], "by "), ' |')
+
+strip: //footer
+strip_id_or_class: aws-comment-wrapper
+
+test_url: https://aws.amazon.com/fr/blogs/database/building-a-cross-account-continuous-delivery-pipeline-for-database-migrations/
