@@ -1,0 +1,3 @@
+http_header(User-agent): PHP/7.4
+
+test_url: https://www.miamiherald.com/sports/spt-columns-blogs/barry-jackson/article234098497.html
