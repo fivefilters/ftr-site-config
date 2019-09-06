@@ -1,0 +1,3 @@
+http_header(User-agent): PHP/7.4
+
+test_url: https://www.charlotteobserver.com/news/weather-news/article234746837.html
