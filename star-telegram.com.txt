@@ -1,0 +1,3 @@
+http_header(User-agent): PHP/7.4
+
+test_url: https://www.star-telegram.com/sports/nfl/dallas-cowboys/article234782487.html
