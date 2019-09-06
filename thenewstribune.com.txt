@@ -1,0 +1,3 @@
+http_header(User-agent): PHP/7.4
+
+test_url: https://www.thenewstribune.com/news/local/military/article234751962.html
