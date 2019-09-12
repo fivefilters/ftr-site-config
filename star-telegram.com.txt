@@ -1,3 +1,9 @@
 http_header(User-agent): PHP/7.4
 
+author: //h6[contains(@class, "byline")]
+
+strip: //div[contains(@class, 'lead-item') and contains(@class, 'video')]
+
+strip_id_or_class: related-stories
+
 test_url: https://www.star-telegram.com/sports/nfl/dallas-cowboys/article234782487.html
