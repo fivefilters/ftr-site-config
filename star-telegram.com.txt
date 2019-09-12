@@ -1,6 +1,6 @@
 http_header(User-agent): PHP/7.4
 
-author: //h6[contains(@class, "byline")]
+author: (//p[contains(@class, "byline")])[1]
 
 strip: //div[contains(@class, 'lead-item') and contains(@class, 'video')]
 
