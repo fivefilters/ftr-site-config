@@ -1,3 +1,5 @@
+# Part of: star-telegram.com, sacbee.com, miamiherald.com, thenewstribune.com, charlotteobserver.com
+
 http_header(User-agent): PHP/7.4
 
 author: (//p[contains(@class, "byline")])[1]
