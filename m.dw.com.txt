@@ -1,5 +1,9 @@
 title: //h1
+# mobile version m.dw.com
 body: //div[@class='article__intro'] | //div[@itemprop='articleBody']
+# desktop version www.dw.com
+body: //p[contains(concat(' ',normalize-space(@class),' '), ' intro ')] | //div[contains(concat(' ',normalize-space(@class),' '), ' longText ')]
 author: //meta[@name='author']/@content
 
 test_url: https://m.dw.com/de/wie-sieht-die-zukunft-von-fridays-for-future-aus/a-50436506
+test_url: https://www.dw.com/de/wie-sieht-die-zukunft-von-fridays-for-future-aus/a-50436506
