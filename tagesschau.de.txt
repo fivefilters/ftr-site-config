@@ -1,4 +1,7 @@
 body: //div[contains(@class, 'sectionArticle') and contains(@class, 'sectionZ')]
+title: //meta[@property='og:title']/@content
+author: //meta[@name='author']/@content
+date: //meta[@name='date']/@content
 
 strip_id_or_class: infokasten
 strip_id_or_class: teaserImTeaser
@@ -9,7 +12,5 @@ strip_id_or_class: metablockwrapper
 
 prune: no
 
-test_url: http://www.tagesschau.de/kommentar/nordkorea-suedkorea-113.html
-test_contains: Staatsmann wahrgenommen
-
-test_url: http://www.tagesschau.de/xml/rss2
+test_url: https://www.tagesschau.de/ausland/kim-trump-us-reaktionen-101.html
+test_contains: Es waren ein paar Schritte für Donald Trump
