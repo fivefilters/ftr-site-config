@@ -1,6 +1,7 @@
 title: //meta[@property="og:title"]/@content
 author: //meta[@name='Author']/@content
 date: //meta[@name='DisplayDate']/@content
+body: //div[contains(@class, 'article__chunks')]
 body: (//article[contains(@class, 'body-copy')])[1]
 body: (//article[contains(@class, 'article-body-component')])[1]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
@@ -8,6 +9,7 @@ strip: //p[contains(., 'Pages:') and contains(., 'View All')]
 strip: //p[@class='caption']
 strip: //div[@class='desc' or @class='slide' or @id='slide-info']
 
+strip_id_or_class: callout
 strip_id_or_class: pullquote
 strip_id_or_class: left_rail
 strip_id_or_class: related-container
@@ -27,6 +29,8 @@ prune: no
 # 2017-07-27 No longer used it seems
 # single_page_link: //a[.='View All' and contains(@href, '/all/')]
 
+test_url: https://www.wired.com/story/telltale-heart-fitbit-murder/
+test_contains: twiddling his thumbs in her direction
 test_url: https://www.wired.com/2017/07/inside-cubas-diy-internet-revolution/
 test_contains: I should call the hostess once I know
 test_url: http://www.wired.com/cloudline/2011/10/meet-arms-cortex-a15-the-future-of-the-ipad-and-possibly-the-macbook-air/
