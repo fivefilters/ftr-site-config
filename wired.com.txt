@@ -9,6 +9,7 @@ strip: //p[contains(., 'Pages:') and contains(., 'View All')]
 strip: //p[@class='caption']
 strip: //div[@class='desc' or @class='slide' or @id='slide-info']
 
+strip_id_or_class: full-bleed-ad
 strip_id_or_class: layout__aside
 strip_id_or_class: callout
 strip_id_or_class: pullquote
