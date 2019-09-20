@@ -20,6 +20,8 @@ strip_id_or_class: article-tags
 strip_id_or_class: visually-hidden
 strip_id_or_class: inset-left-component
 
+strip: //img[contains(@alt, 'capital letter')]
+
 find_string: <noscript>
 replace_string: <!-- noscript -->
 find_string: </noscript>
