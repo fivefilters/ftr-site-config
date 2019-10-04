@@ -1,0 +1,9 @@
+body: //main/div/article
+
+strip: //header
+strip: //aside
+
+author: //p[@data-scp="author_name"]
+date: //time/@datetime
+
+test_url: https://thewirecutter.com/money/credit-cards/

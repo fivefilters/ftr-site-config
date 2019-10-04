@@ -1,0 +1,6 @@
+body: //div[contains(@class, 'entry-content')]
+strip_id_or_class: blog-categories
+strip_id_or_class: av-share-box
+prune: no
+
+test_url: https://www.netzoekonom.de/2019/09/17/autokonzerne-fokussieren-auf-elektromobilitaet-digitale-angreifer-auf-plattformen/

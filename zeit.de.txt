@@ -46,6 +46,7 @@ test_url: http://www.zeit.de/hamburg/politik-wirtschaft/2015-12/hamburg-wohnungs
 #######################################
 
 next_page_link: //meta[@rel='next']/@href
+single_page_link: //li[@class='article-pager__all']/a
 
 author: //a[@class='article__head__meta__author']/span
 

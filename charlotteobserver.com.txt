@@ -1,0 +1,11 @@
+# Part of: star-telegram.com, sacbee.com, miamiherald.com, thenewstribune.com, charlotteobserver.com
+
+http_header(User-agent): PHP/7.4
+
+author: (//p[contains(@class, "byline")])[1]
+
+strip: //div[contains(@class, 'lead-item') and contains(@class, 'video')]
+
+strip_id_or_class: related-stories
+
+test_url: https://www.charlotteobserver.com/news/weather-news/article234746837.html

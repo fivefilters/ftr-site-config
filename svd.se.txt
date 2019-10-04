@@ -1,8 +1,5 @@
-body: //div[@id='article-content']
-author: //div[@id='article']//div[@class='byline']/p
-
-# Ads
-strip_id_or_class: articlead
+body: //div[contains(@class, 'ArticleLayout-featureImage')] | //div[contains(concat(' ',normalize-space(@class),' '),' Body ')]
+author: //meta[@name="author"]/@content
 
 # Sharing
 strip_id_or_class: share

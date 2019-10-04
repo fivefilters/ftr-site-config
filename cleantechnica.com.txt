@@ -1,0 +1,9 @@
+strip_id_or_class: dpsp-content-top
+strip_id_or_class: omc-inner-placeholder
+strip_id_or_class: omc-related-posts
+
+strip: //a[@href="https://shop.spreadshirt.com/CleanTechnica"]
+strip: //a[@href="https://future-trends.cleantechnica.com/subscribe/"]
+strip: //a[@href="https://cleantechnica.com/cleantechnica-newsletters/"]
+
+test_url: https://cleantechnica.com/2019/07/16/how-did-a-nissan-leaf-beat-a-tesla-model-s-in-a-race/
