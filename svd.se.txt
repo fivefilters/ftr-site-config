@@ -1,4 +1,4 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' Body ')]
+body: //div[contains(@class, 'ArticleLayout-featureImage')] | //div[contains(concat(' ',normalize-space(@class),' '),' Body ')]
 author: //meta[@name="author"]/@content
 
 # Sharing
