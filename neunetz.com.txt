@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'entry-content')]
+prune: no
+
+strip_id_or_class: sharedaddy
+
+test_url: https://neunetz.com/2019/09/13/apple-tv-quasi-geschenkt/
+test_contains: Apple muss hier noch aufholen
