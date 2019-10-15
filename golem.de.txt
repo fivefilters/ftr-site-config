@@ -23,7 +23,7 @@ strip_id_or_class: iqadtile4
 strip_id_or_class: list-jtoc
 strip_id_or_class: table-jtoc
 strip_id_or_class: implied
-strip_id_or_class: social-
+strip_id_or_class: social-tools
 strip_id_or_class: comments
 strip_id_or_class: footer
 strip_id_or_class: job-market
