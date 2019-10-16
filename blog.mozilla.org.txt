@@ -1,4 +1,4 @@
-title: //h1
+title: //main[@id="content"]//h1
 author: //address
 date: //div[@class="entry-info"]//time/@datetime
 body: //div[@class="entry-content"]
