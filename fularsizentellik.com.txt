@@ -3,6 +3,7 @@ prune: no
 
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
+strip_attr: //div/@style
 strip: //img[@data-src]
 strip: //footer
 strip: //aside
