@@ -3,6 +3,13 @@
 title: //h1
 body: //article
 
+strip: //button
+# Remove low quality images
+strip: //article//img[contains(@src, '?q=20') or contains(@src, 'max/34/')]
+# Use the high-quality copies in <noscript> elements
+replace_string(<noscript>): <!-- noscript -->
+replace_string(</noscript>): <!-- /noscript -->
+
 tidy: no
 prune: no
 
