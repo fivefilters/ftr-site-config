@@ -7,7 +7,7 @@ strip: //button
 # Remove low quality images
 strip: //article//img[contains(@src, '?q=20') or contains(@src, 'max/34/')]
 # Remove empty images (width attribute but no src attribute)
-strip: //article//img[not(contains(@src))]
+strip: //article//img[not(@src)]
 # Use the high-quality copies in <noscript> elements
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
