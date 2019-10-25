@@ -1,0 +1,3 @@
+author: //div[@class="post-details"]//a[contains(@class, "p-name")]
+
+test_url: https://www.jvt.me/posts/2019/10/20/indieweb-talk/
