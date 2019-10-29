@@ -1,0 +1,4 @@
+body: //div[@id='article-body']
+
+test_url: https://www.inquirer.com/news/berks-detention-center-child-migrants-20191029.html
+test_contains: candidates running for Berks County
