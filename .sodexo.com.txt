@@ -1,0 +1,3 @@
+body: //main[@id='main']
+
+test_url: https://uk.sodexo.com/home/media/news-room/newsList-area/uk-press-releases/SSAFA-Friendly-to-Forces.html
