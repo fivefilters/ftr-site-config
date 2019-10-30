@@ -2,6 +2,7 @@ title: //h1[@class='article__title']
 
 # We can have multiple authors
 author: //span[contains(concat(' ',normalize-space(@class),' '),' author__name ')]
+author: //div[@class="entry-meta"]//a[contains(@class, "url")]
 
 # Last edition date (if any)
 date: //time[@itemprop='dateModified']/@datetime
