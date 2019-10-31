@@ -1,0 +1,4 @@
+# Avoid duplicating content
+strip_id_or_class: mrf-hidden
+
+test_url: https://www.americanthinker.com/articles/2019/10/hillarys_health_coming_up_again.html
