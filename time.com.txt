@@ -10,6 +10,9 @@ tidy: no
 #Skip GDPR tracking wall
 http_header(Cookie): euConsent=true
 
+strip_id_or_class: jumpstart-video
+strip_id_or_class: inline-recirc
+
 strip: //figcaption
 strip: //p[contains(., 'MORE:') and ./a]
 strip: //aside
