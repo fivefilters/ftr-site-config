@@ -7,6 +7,8 @@ author: //a[@rel='author']
 body: //div[@class='entry-content']
 
 strip: //div[@class='entry-share']
+strip: //ul[contains(@class, 'omg-socials')]
+strip: //div[contains(@class, 'post-links')]
 strip: //div[@class='entry-meta']
 strip: //div[@class='sharedaddy sd-sharing-enabled']
 strip: //div[@class='tag-links']

@@ -1,0 +1,12 @@
+body: //article[contains(@class, 'entry--item')]
+prune: no
+
+replace_string(<noscript>): <!-- noscript -->
+replace_string(</noscript>): <!-- /noscript -->
+strip_attr: //div/@style
+strip: //img[@data-src]
+strip: //footer
+strip: //aside
+strip_id_or_class: comments
+
+test_url: https://fularsizentellik.com/journal/2019/07/16/evrimsel-psikoloji-redpill

@@ -1,0 +1,6 @@
+title: //h1[@class='headline']
+date: //div[@class='date']
+author: //div[@class='author']//a
+body: //div[contains(concat(" ", normalize-space(@class), " "), " gsd-paywall ")]
+
+test_url: https://www.preparedfoods.com/articles/122242-flavor-boosters-maskers

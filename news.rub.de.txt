@@ -1,0 +1,3 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-inner-inner-wrapper ')]
+
+http_header(Cookie): has_js=1

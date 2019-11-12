@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'article-content')][1]
+author: //div[contains(@class, 'author')][1]
+
+strip_id_or_class: date-text
+strip_id_or_class: after-article-subscribe-nl
+strip_id_or_class: eyebrow-text
+strip_id_or_class: eyebrow-tail

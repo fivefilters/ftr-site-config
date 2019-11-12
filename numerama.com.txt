@@ -1,3 +1,4 @@
+title: //div[@class="post-title"]//h1
 # Need html5lib or replace_string to handle correctly badly included in-content-ad inclusion script. html5lib is a lot slower.
 # parser: html5lib
 replace_string("</div>"): "&lt;/div&gt;"
