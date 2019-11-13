@@ -36,6 +36,7 @@ strip: //img[@src='']
 # strip: //li[not(*)]
 strip: //div[contains(@style,'margin')]
 strip: //figure[contains(@id,'gvideo')]
+strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
 
 
 # Try yourself
