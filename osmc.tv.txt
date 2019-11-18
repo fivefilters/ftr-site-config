@@ -1,0 +1,4 @@
+title: //h1[@class="post-title"]
+date: //time[@class="post-date"]/@datetime
+
+test_url: https://osmc.tv/2019/11/osmcs-november-update-is-here-with-kodi-18-5/
