@@ -14,6 +14,9 @@ body: //section[contains(concat(' ',normalize-space(@class), ' '), ' article__co
 body: //section[contains(concat(' ',normalize-space(@class), ' '), ' video ')]
 
 strip: //div[contains(concat(' ',normalize-space(@class), ' '), ' related-content--video ')]
+strip: //section[contains(@class, 'services')]
+strip: //section[@id="js-capping"]
+strip: //footer[contains(@class, "article__footer-single")]
 
 # Remove "Lire aussi" blocks
 strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
