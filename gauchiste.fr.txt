@@ -1,0 +1,3 @@
+date: //meta[@name="date"]/@content
+
+test_url: https://gauchiste.fr/post/2019/11/08/Un-catadioptre-vous-sauvera-(peut-%C3%AAtre)-la-vie
