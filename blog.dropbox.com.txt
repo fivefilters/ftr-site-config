@@ -1,0 +1,7 @@
+body: (//article)[1]
+
+strip_id_or_class: quote-plank
+strip_id_or_class: article-next-prev-plank
+strip_id_or_class: author-bios__description-mobile
+
+test_url: https://blog.dropbox.com/topics/work-culture/meet-the-lasermonks
