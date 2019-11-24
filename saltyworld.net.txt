@@ -1,3 +1,5 @@
 body: //article[contains(@class, 'hentry')]
 
+prune: no
+
 test_url: https://saltyworld.net/contrapoints/
