@@ -1,0 +1,8 @@
+body: //div[@id='content']//article
+
+strip: //header
+strip: //footer
+
+prune: no
+
+test_url: https://sivers.org/exex

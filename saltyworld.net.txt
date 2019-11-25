@@ -1,0 +1,7 @@
+body: //article[contains(@class, 'hentry')]
+
+prune: no
+# remove related
+strip_id_or_class: relpost
+
+test_url: https://saltyworld.net/contrapoints/
