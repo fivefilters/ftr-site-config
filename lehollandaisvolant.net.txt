@@ -1,0 +1,4 @@
+title: //h1[@class="blog-post-title"]
+date: //time[contains(@itemprop, "datePublished")]/@datetime
+
+test_url: https://lehollandaisvolant.net/?d=2019/12/07/11/41/38-non-respirer-nemet-pas-plus-de-co2-dans-latmosphere
