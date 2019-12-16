@@ -1,0 +1,5 @@
+body: //div[@id="article-body"]
+author: //header[@id="main-title"]//a[@class="author"]
+date: //header[@id="main-title"]//time[@itemprop="datePublished"]/@datetime
+
+test_url: https://dev.to/addyosmani/adaptive-loading-improving-web-performance-on-low-end-devices-1m69
