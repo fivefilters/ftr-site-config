@@ -5,6 +5,7 @@ date: substring-after(//p[@class="meta s-10"], '|')
 date: substring-after(//p[@class="meta"], '|')
 body: //div[@class="content-1 entry space-1 clear"]
 body: //div[@class="storyBody"]
+strip_id_or_class: shortcodeGalleryWrapper
 
 test_url: http://www.zdnet.com/blog/microsoft/the-bing-back-end-more-on-cosmos-tiger-and-scope/10920
 test_url: http://www.zdnet.com/researchers-find-web-tracking-up-privacy-down-7000000358/
