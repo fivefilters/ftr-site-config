@@ -1,6 +1,3 @@
-# Important Note:
-# The last paragraph of any article seems to be a teaser from the sports section.
-
 tidy: no
 prune: no
 autodetect_on_failure: yes
@@ -20,10 +17,11 @@ strip: //div[@id="article-sidebar-wrapper"]
 strip: //p[@class="anzeige"]
 strip: //section[@class="authors"]
 strip_id_or_class: teaserable-layout
+strip_id_or_class: sz-zoom-icon-button
 strip: //noscript
 strip: //div//i
 
-next_page_link: //a[@class='article-paging-nav-btn']
+single_page_link: //a[@data-track='{"itemType":"article-pagination","itemSubtype":"display-on-one-page"}'] 
 
 # 1 page
 test_url: http://www.sueddeutsche.de/reise/bergwinter-saisonstart-in-den-skigebieten-geht-schon-1.3251799
