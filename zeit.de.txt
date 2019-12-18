@@ -39,7 +39,7 @@ test_url: http://www.zeit.de/sport/2016-01/darts-wm-finale-anderson-lewis/komple
 test_url: http://www.zeit.de/kultur/2015-12/selbstverwirklichung-optimierung-essay
 test_url: http://www.zeit.de/2015/51/selbstdiagnose-gesundheit-zuhause-blut-urin-selbsttest
 test_url: http://www.zeit.de/campus/2015/s2/nebenjob-master-studium-finanzierung
-test_url: https://www.zeit.de/gesellschaft/2019-12/uiguren-china-verfolgung-exil-muenchen?utm_source=pocket-newtab
+test_url: https://www.zeit.de/gesellschaft/2019-12/uiguren-china-verfolgung-exil-muenchen
 
 #######################################
 # ZEIT MAGAZIN:
