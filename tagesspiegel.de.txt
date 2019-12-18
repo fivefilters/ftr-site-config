@@ -23,7 +23,9 @@ strip_id_or_class: ts-recommendation
 
 # Fix pictures and captions
 replace_string(<a class="ts-gallery): <p class="ts-gallery
-replace_string(<figcaption class="ts-caption">): <br><small><em>                                                                                                                                                                             replace_string(</figcaption>): </em></small>                                                                                                                                                                                                                                                                                                                                                                                                                                              # Fix image galleries
+replace_string(<figcaption class="ts-caption">): <br><small><em>
+replace_string(</figcaption>): </em></small>
+# Fix image galleries
 replace_string(<a class=" ajaxify): <p class="ajaxify
 replace_string(<div class="ts-caption"><div><p>): <small><em>
 
