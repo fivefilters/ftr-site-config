@@ -5,6 +5,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' post__main ')]
 
 prune: no
 
+strip: //h1[@class='post__title']
 strip_id_or_class: eyebrow
 strip_id_or_class: post__footer
 strip_id_or_class: social__list
