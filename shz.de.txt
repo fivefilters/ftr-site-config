@@ -1,7 +1,8 @@
 # Redirect to AMP page to bypass blocking
 single_page_link: //link[@rel='amphtml']
 
-# Title not working correctly in Wallabag
+skip_json_ld: yes
+
 title: //h1[@class='headline']
 author: //span[@itemprop='author']
 date: substring-before(//span[@class='info-text'], ', <br>')
