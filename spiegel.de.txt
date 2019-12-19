@@ -77,6 +77,14 @@ strip: //div[@class='asset-box article-print-more']
 strip: //div[@class='article-copyright']
 strip: //span[@class='image-buttons']
 
+# remove other non-article elements
+strip: //br[@class='clearfix']
+strip: //div/div[@class='innen']
+
+# Remove link at the bottom of the page
+strip: //div/h4[contains(text(), 'URL:')]/following::ul
+strip: //div/h4[contains(text(), 'URL:')]
+
 # Use link to print article for single page view
 single_page_link: //a[contains(@href, '-druck')]
 if_page_contains: //div[contains(@class, 'multi-pager-control')]
