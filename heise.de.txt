@@ -25,11 +25,11 @@ strip: //div[@class='gallery compact']/h2
 strip: //p[@class='themen_foren']
 strip: //style
 strip: //span[@class='source']
-#strip: //div[@class='gallery compact']/figcaption
+strip: //figure[@class='printversion__logo']
+
 strip_id_or_class: comments
 strip_id_or_class: ISI_IGNORE
-#strip_id_or_class: clear
-
+strip_id_or_class: printversion--hide
 strip_id_or_class: linkurl_grossbild
 strip_id_or_class: image-num
 strip_id_or_class: heisebox_right
