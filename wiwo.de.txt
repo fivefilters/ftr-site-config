@@ -1,0 +1,10 @@
+title: //h2[@class:'c-headline--article']
+date: //time
+author: //div[@class:'c-metadata']//a[@class='c-link--borderless']
+
+body: //div[@class:'o-article__content']
+
+strip_id_or_class: c-standard-article-teaser
+strip_id_or_class: c-socialshare
+
+test_url: https://www.wiwo.de/unternehmen/auto/klimaschutz-der-green-deal-ist-fuer-daimler-der-horror/25333692.html
