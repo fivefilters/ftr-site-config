@@ -4,6 +4,7 @@ strip: //div[@class="department_kicker"]
 strip: //div[@id="insider_ad_wrapper" or @id="insider_ad_inner"]
 strip: //div[@id="bottom_sponsored_links"]
 strip: //div[@class="sl-art-ad-midflex"]
+strip: //aside[contains(@class, 'in-article-recirc')]
 #strip: //dl
 #strip: //p[em/a[contains(@href, 'facebook.com')]]
 prune: no
