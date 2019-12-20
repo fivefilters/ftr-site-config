@@ -29,6 +29,7 @@ strip_id_or_class: footer
 strip_id_or_class: job-market
 strip_id_or_class: tags
 strip: //div[contains(@class, 'authors--withsource')]
+strip: //div[@class='toc']
 strip: //li[not(.//text()[normalize-space()])][not(@class)]
 
 # Tidy up galleries (could still be improved, though)
