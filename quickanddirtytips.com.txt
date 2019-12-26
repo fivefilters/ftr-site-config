@@ -1,0 +1,13 @@
+# Source: http://siteconfig.fivefilters.org/grab.php?url=https%3A%2F%2Fwww.quickanddirtytips.com%2Feducation%2Fgrammar%2Fwhat-is-proto-indo-european-language
+
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' views-field-stamp ')]//span[contains(concat(' ',normalize-space(@class),' '),' field-content ')]//span
+next_page_link: //a[@title="Go to next page"]
+
+strip_id_or_class: podcast-episode-number
+strip_id_or_class: jp-audio
+strip_id_or_class: element-invisible
+strip_id_or_class: pager
+strip_id_or_class: article-author-block
+
+test_url: https://www.quickanddirtytips.com/education/grammar/what-is-proto-indo-european-language
