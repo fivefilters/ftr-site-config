@@ -1,0 +1,6 @@
+title: //div[@id="content"]//h1
+author: //p[@class="article_author"]//a[contains(@href, "/about")]
+
+strip: //p[@class="articles_viewall"]
+
+test_url: https://www.filamentgroup.com/lab/select-css.html

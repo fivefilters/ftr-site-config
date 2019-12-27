@@ -1,0 +1,8 @@
+date: //span[@class='article__date']
+title: //title
+body: //div[@class='article__text']
+
+test_url: https://www.n-tv.de/politik/Die-alten-Maenner-werden-es-nie-blicken-article21447318.html
+
+# Last update: 2019-12-12
+# Tested with: Wallabag 2.3.8

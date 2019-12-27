@@ -5,9 +5,13 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' post__main ')]
 
 prune: no
 
+strip: //h1[@class='post__title']
 strip_id_or_class: eyebrow
 strip_id_or_class: post__footer
 strip_id_or_class: social__list
+
+replace_string(<h2 class="post__deck">): <p>
+replace_string(</h2>): </p>   
 
 test_url: http://www.fastcompany.com/3000226/link-between-quietness-and-productivity
 test_contains: Some of you may have tried to reach me this morning
