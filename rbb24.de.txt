@@ -1,0 +1,11 @@
+author: substring(//div[@class='shorttext']//p//i), 5)
+title: //article//h3
+
+skip_json_ld: true
+
+strip: //div[contains(@class, 'newSharing')]
+strip: //section[contains(@class, 'teaserbox')]
+strip: //figure[@class='picture']
+
+# Test
+test_url: https://www.rbb24.de/panorama/beitrag/2019/12/interview-eltern-constantin-toedlicher-unfall-lkw-radfahrer.html
