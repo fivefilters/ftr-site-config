@@ -10,6 +10,7 @@ strip_id_or_class: inline-related
 strip_id_or_class: inline-prompt
 
 strip: //amp-carousel
+strip: //amp-lightbox
 strip_id_or_class: icon-chevron
 
 strip: //h5[contains(., 'READ MORE:')]
