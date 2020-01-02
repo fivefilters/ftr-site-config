@@ -20,6 +20,7 @@ strip_id_or_class: ts-user-quote
 strip_id_or_class: ts-abo-link
 strip_id_or_class: ts-homepage-link
 strip_id_or_class: ts-recommendation
+strip_id_or_class: newsletter
 
 # Fix pictures and captions
 replace_string(<a class="ts-gallery): <p class="ts-gallery
