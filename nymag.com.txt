@@ -10,6 +10,10 @@ http_header(Cookie): nymuc=11111111111
 parser: html5php
 tidy: no
 
+# avoid side notes to appear in the middle of the main text (they will
+# appear at the end)
+strip_id_or_class: fns-desktop
+
 next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
 test_url: http://nymag.com/news/features/wall-street-2012-2/
@@ -17,3 +21,8 @@ test_contains: bonus season is a sacred ritual
 
 test_url: http://nymag.com/daily/intelligencer/2016/04/america-tyranny-donald-trump.html
 test_contains: This rainbow-flag polity
+
+# article with side text
+test_url: https://nymag.com/intelligencer/2016/06/the-hack-that-could-take-down-nyc.html
+test_contains: Justice Department representative
+
