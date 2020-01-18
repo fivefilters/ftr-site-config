@@ -1,3 +1,4 @@
+title: //div[@class="blog-title-and-subtitle"]//h1
 date: //time/@datetime
 
 test_url: https://nextcloud.com/blog/celebrating-2-years-nextcloud/
