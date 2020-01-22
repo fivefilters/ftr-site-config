@@ -17,8 +17,9 @@ author: //div[@id='profile']//*[@class='authors']//a[1]
 author: //*[@class='author']/span
 prune: no
 
-strip_id_or_class: share-social
+strip_id_or_class:share-social
 
+strip: //section[@id='share-social']
 strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]
 strip: //p[contains(., 'This article available online at:')]/following::*
