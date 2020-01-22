@@ -17,7 +17,8 @@ author: //div[@id='profile']//*[@class='authors']//a[1]
 author: //*[@class='author']/span
 prune: no
 
-strip_id_or_class:share-social
+strip_id_or_class: share-social
+strip_id_or_class: c-article-writer__social
 
 strip: //header//h1[contains(@class, 'article-header')]
 strip: //header//address
