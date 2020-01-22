@@ -19,6 +19,10 @@ prune: no
 
 strip_id_or_class:share-social
 
+strip: //header//h1[contains(@class, 'article-header')]
+strip: //header//address
+strip: //header//time
+
 strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]
 strip: //p[contains(., 'This article available online at:')]/following::*
