@@ -36,6 +36,7 @@ strip: //p[@class='caption']//a[contains(., 'More Photos')]
 strip_id_or_class: ResponsiveAd
 strip: //figure//span[.='Image' or .='Video']
 strip: //div[@aria-labelledby="modal-title"]
+strip: //button
 
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
