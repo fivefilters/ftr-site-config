@@ -4,6 +4,7 @@ title: //meta[@property='og:title']/@content
 
 # single_page_link: //link[contains(@href, '/amp/article/')]
 
+body: //article[@id='main-article']
 body: //div[@id='main-article']
 
 body: //div[@itemprop='articleBody']
