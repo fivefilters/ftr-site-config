@@ -11,6 +11,7 @@ body: //div[@class='articleText']
 body: //div[@class='articleContent']
 body: //div[@id='article']
 date: //*[contains(@class, 'date')]
+author: //meta[@name="author"]/@content
 author: //div[@id='profile']//*[@class='authors']//a[1]
 author: //*[@class='author']/span
 prune: no
