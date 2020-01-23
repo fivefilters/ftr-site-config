@@ -1,0 +1,4 @@
+body: //div[@class='row pageheaderAnlauf'] | //div[@class='row tt-content-layout-0']
+strip: //div[@class='content_7']
+
+test_url: https://www.pharmazeutische-zeitung.de/54-apotheken-weniger-in-2019/

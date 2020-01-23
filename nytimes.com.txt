@@ -2,6 +2,7 @@
 # so any changes here should probably also be made to mobile.nytimes.com.txt too
 
 title://h1[@class="articleHeadline"]
+author://meta[@name="byl"]/@content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' story-body ')]
 body://div[@id="article"]
 body://*[@itemprop="articleBody"]
@@ -33,6 +34,9 @@ strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
 strip: //p[@class='caption']//a[contains(., 'More Photos')]
 strip_id_or_class: ResponsiveAd
+strip: //figure//span[.='Image' or .='Video']
+strip: //div[@aria-labelledby="modal-title"]
+strip: //button
 
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden

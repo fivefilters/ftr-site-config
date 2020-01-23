@@ -4,6 +4,7 @@ title: //meta[@property='og:title']/@content
 
 # single_page_link: //link[contains(@href, '/amp/article/')]
 
+body: //article[@id='main-article']
 body: //div[@id='main-article']
 
 body: //div[@itemprop='articleBody']
@@ -11,9 +12,17 @@ body: //div[@class='articleText']
 body: //div[@class='articleContent']
 body: //div[@id='article']
 date: //*[contains(@class, 'date')]
+author: //meta[@name="author"]/@content
 author: //div[@id='profile']//*[@class='authors']//a[1]
 author: //*[@class='author']/span
 prune: no
+
+strip_id_or_class: share-social
+strip_id_or_class: c-article-writer__social
+
+strip: //header//h1[contains(@class, 'article-header')]
+strip: //header//address
+strip: //header//time
 
 strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]
