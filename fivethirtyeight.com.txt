@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'single-post-content')]
+prune: no
+
+test_url: https://fivethirtyeight.com/features/some-of-our-best-work-from-2019/
+test_url: https://fivethirtyeight.com/features/election-update-what-are-the-chances-of-a-brokered-convention/
