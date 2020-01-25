@@ -1,10 +1,12 @@
 title://div[contains(@class, "article")]/h1
 body://div[contains(@class,"story-text")]
+author: //div[contains(@class,"story-text")]//p[contains(@class, 'story-meta__authors')]
+author: //div[contains(@class,"story-text")]//p[contains(@class, 'byline')]
 
 # Why doesn't this work? next_page_link://ul[contains(@class,"pagination")]/li/a[@rel="next"]
 
-next_page_link://ul[contains(@class,"pagination")]/li[contains(@class, "current")]/following-sibling::node()/a
-date://meta[@name="publish_date"]/@content
+# next_page_link://ul[contains(@class,"pagination")]/li[contains(@class, "current")]/following-sibling::node()/a
+date: //div[contains(@class,"story-text")]//time[@itemprop="datePublished"]/@datetime
 
 strip://div[contains(@class, "breadcrumbs")]
 strip://a[contains(@class, "hidden")]
