@@ -7,7 +7,10 @@ date: //p[@class='news_datum']
 author: //span[@class='author']
 author: //div[@class="article__author"]
 
-body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text'] | //article//p[contains(@class, 'article__description')]
+body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
+# TODO: Try to preserve lede (currently stripped by strip: //header)
+# https://www.heise.de/select/ct/2020/3/1580493780857147
+# //article//p[contains(@class, 'article__description')]
 
 strip: //nav
 
