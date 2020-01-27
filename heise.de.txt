@@ -5,8 +5,9 @@ prune: no
 
 date: //p[@class='news_datum']
 author: //span[@class='author']
+author: //div[@class="article__author"]
 
-body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
+body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text'] | //article//p[contains(@class, 'article__description')]
 
 strip: //nav
 
@@ -62,6 +63,7 @@ next_page_link: //a[@class='next' and not(contains(text(), 'Artikel'))]
 next_page_link: //a[@title='vor']
 next_page_link: //a[@rel='next']
 
+test_url: https://www.heise.de/select/ct/2020/3/1580493780857147
 test_url: http://www.heise.de/open/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
 test_url: http://m.heise.de/open/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
 test_url: http://www.heise.de/newsticker/meldung/Ueberwachungstechnik-Die-globale-Handy-Standortueberwachung-2301494.html
