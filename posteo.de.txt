@@ -1,0 +1,5 @@
+title: //h3[@class="p_hx--medium"]
+
+test_url: https://posteo.de/blog/datensch%C3%BCtzer-beschlie%C3%9Fen-eu-leitlinie-zur-video%C3%BCberwachung
+test_url: https://posteo.de/blog/londoner-polizei-f%C3%BChrt-gesichtserkennung-ein
+test_url: https://posteo.de/blog/tipps-f%C3%BCr-den-pc-und-speicherverkauf
