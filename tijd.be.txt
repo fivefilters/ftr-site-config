@@ -1,0 +1,4 @@
+strip: //div[@class="ac_paragraph-hidden"]
+
+test_url: https://www.tijd.be/politiek-economie/internationaal/algemeen/ik-ben-vooral-bezorgd-dat-corona-uitbreekt-in-afrika/10204834.html
+test_contains: U klinkt gealarmeerder
