@@ -1,0 +1,17 @@
+requires_login: yes
+
+login_uri: https://www.apache.be/wp-login.php
+login_username_field: log
+login_password_field: pwd
+
+not_logged_in_xpath: //div[contains(concat(' ', normalize-space(@class), ' '), ' card-the-cta ')]
+
+login_extra_fields: rememberme=forever
+login_extra_fields: wp-submit=Inloggen
+#login_extra_fields: testcookie=1
+
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' card-ad ')]
+strip_attr: //*/@class
+
+test_url: https://www.apache.be/2020/01/27/dpg-media-vrt-toekomst-netflix/
+test_contains: Maand na maand krijgen de werknemers
