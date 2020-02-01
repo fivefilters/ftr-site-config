@@ -6,6 +6,7 @@ date: //article//time[contains(@class, 'content-header__publish-date')]
 
 strip_id_or_class: content-header__title-block
 strip_id_or_class: content-header__accreditation
+strip_id_or_class: full-bleed-ad
 
 test_url: https://www.newyorker.com/magazine/2016/02/08/mothers-day-fiction-george-saunders
 test_url: https://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
