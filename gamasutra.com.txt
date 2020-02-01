@@ -3,16 +3,13 @@ title: //span[@class='newsTitle']
 # print view title
 title: //h3[@class='title']
 
-# default view author
-author: //span[@class='newsAuth']/a
-author: substring-after(//span[@class='newsAuth'], 'by ')
+author: //div[contains(class, 'comment_title')]//a[contains(@href, '/author/')]
 
 # default view date
 date: //td[@class='newsDate']
 
 # default view body
-body: //td[@class='featureText']
-body: //td[@class='newsText']
+body: //div[contains(@class, 'hide_phone')] | //div[contains(@class, "page_data_1")]
 
 strip: //h3[@class='title']
 
