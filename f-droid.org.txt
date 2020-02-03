@@ -1,0 +1,4 @@
+title: //h2[@class="post-title"]
+author: //header[@class="post-header"]//img/@alt
+
+test_url: https://f-droid.org/en/2020/01/16/tracking-the-trackers.html
