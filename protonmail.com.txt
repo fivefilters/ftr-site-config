@@ -1,0 +1,6 @@
+title: //h1[@class="entry-title"]
+author: //header[@class="entry-header"]//a[@class="url fn n"]
+
+strip: //div[@class="csbtns"]
+
+test_url: https://protonmail.com/blog/biometric-authentication/
