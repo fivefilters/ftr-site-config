@@ -11,12 +11,11 @@ prune: no
 
 http_header(Cookie): GDPR_consent=1
 
-author: //div[@id='author_bio']//a[contains(@href, '/author/')]
-author: //a[contains(@href, '/authors.')]
+author: //meta[@name="author"]/@content
+author: //a[contains(@href, '/author')]
 
-date: substring-before(substring-after(//span[@class='sl-art-byline'], 'Posted '), ', at ')
+date: //meta[@property="article:published_time"]/@content
 
-single_page_link: //a[@class='sl-art-sinpage']
-
-test_url: http://www.slate.com/id/2274583/pagenum/all/
-test_url: http://www.slate.com/id/2293116/
+test_url: https://slate.com/news-and-politics/2020/01/impeachment-trial-witness-trade-bad-idea.html
+test_url: https://slate.com/technology/2010/11/the-facebook-google-spat-over-who-controls-your-data.html
+test_url: https://slate.com/news-and-politics/2011/05/the-danger-of-confusing-the-death-of-osama-bin-laden-with-an-act-of-justice.html

@@ -1,10 +1,19 @@
-title: //h1[@id='articlehed'] | //h2[@id="articleintro"]
-body: //article//div[@id='articleBody']
+body: //article[contains(@class, 'main-content')]
 
-author: //header//p[contains(@class, 'Byline')]//a
+author: //meta[@name="author"]/@content
 
-date: //meta[@name='pubdate']/@value
+date: //article//time[contains(@class, 'content-header__publish-date')]
 
-single_page_link: //div[@class='paginationViewSinglePage']/a
-test_url: http://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
-test_url: http://www.newyorker.com/reporting/2013/04/22/130422fa_fact_bilger?currentPage=all&mobify=0
+strip_id_or_class: content-header__title-block
+strip_id_or_class: content-header__accreditation
+strip_id_or_class: grid-layout__aside
+strip_id_or_class: full-bleed-ad
+strip_id_or_class: consumer-marketing-unit
+strip_id_or_class: ad--in-content
+strip_id_or_class: ad--rail
+
+prune: no
+
+test_url: https://www.newyorker.com/magazine/2016/02/08/mothers-day-fiction-george-saunders
+test_url: https://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
+test_url: https://www.newyorker.com/reporting/2013/04/22/130422fa_fact_bilger?currentPage=all&mobify=0

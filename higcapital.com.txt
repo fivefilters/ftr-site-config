@@ -1,0 +1,6 @@
+title: //h2[contains(@class, 'news-release-title')]
+body: //article
+strip: //div[contains(@class, 'intro')]
+strip: //div[contains(@class, 'contact')]
+
+test_url: https://higcapital.com/news/release/1251
