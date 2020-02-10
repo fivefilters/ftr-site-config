@@ -1,6 +1,7 @@
 #bypass cookie check
 http_header(Cookie): pwv=2; pws=functional|analytics|content_recommendation|targeted_advertising|social_media
 #single_page_link: //a[contains(@href, '/cookiewall/accept')]
+http_header(User-Agent): PHP/7.4
 
 title: //h1[@itemprop="headline"]
 body: //figure[contains(@class, 'article__top-image')] | //div[@itemprop="articleBody"]
