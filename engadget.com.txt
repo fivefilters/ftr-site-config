@@ -2,6 +2,7 @@ title: //meta[@property="og:title"]/@content
 body: //div[contains(@class, 'o-article_block')]
 
 strip_id_or_class: engadget-article-footer
+strip_id_or_class: right-ads-rail
 
 prune: no
 
