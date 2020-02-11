@@ -19,4 +19,5 @@ http_header(Cookie): A3=d=AQABBHKoQl4CEIemT4yNVwXsjj9-v6PMOlMFEgABAQH4Q14LX_W6b2
 
 prune: no
 
-test_url: http://techcrunch.com/2016/02/02/spotcap/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+francaistechcrunch+%28TechCrunch+en+Francais%29
+test_url: http://techcrunch.com/2016/02/02/spotcap/
+test_contains: bring a high level of automation to the lending process
