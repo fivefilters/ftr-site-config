@@ -6,5 +6,7 @@ body: //section[@id='entry-body']
 
 prune: no
 
-test_url: http://www.huffingtonpost.com/mitch-moxley/tracking-beijings-boom-th_b_1209828.html
-test_url: http://www.huffingtonpost.com/2012/09/11/president-obama-iphone-throwdown_n_1873826.html
+test_url: https://www.huffpost.com/entry/tracking-beijings-boom-th_b_1209828
+test_contains: expats liked to wax nostalgic
+test_url: https://www.huffpost.com/entry/president-obama-iphone-throwdown_n_1873826
+test_contains: president was allowed to keep the phone
