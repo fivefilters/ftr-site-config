@@ -1,3 +1,6 @@
+# GDPR cookie wall (Applies to some other Verizon Media sites - e.g. techchrunch.com)
+http_header(Cookie): A3=d=AQABBHKoQl4CEIemT4yNVwXsjj9-v6PMOlMFEgABAQH4Q14LX_W6b2UB_iMAAAcIa6hCXgxb2nQ&S=AQAAAmgPcrcQNEeDSeHZkaQboZc
+
 body: //div[contains(concat(' ',normalize-space(@class),' '),' entry__body ')]
 strip_id_or_class: tag-cloud
 strip_id_or_class: below-entry
