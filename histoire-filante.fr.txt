@@ -1,0 +1,4 @@
+title: //h1[@class="entry-title"]
+date: //header[@class="entry-header"]//time[@class="entry-date published"]/@datetime
+
+test_url: https://histoire-filante.fr/2019/09/05/notre-itineraire/
