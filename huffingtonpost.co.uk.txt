@@ -1,8 +1,11 @@
 # GDPR cookie wall (Applies to some other Verizon Media sites - e.g. techchrunch.com)
 http_header(Cookie): A3=d=AQABBHKoQl4CEIemT4yNVwXsjj9-v6PMOlMFEgABAQH4Q14LX_W6b2UB_iMAAAcIa6hCXgxb2nQ&S=AQAAAmgPcrcQNEeDSeHZkaQboZc
 
+body: //div[contains(@class, 'yr-entry-text')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' entry__body ')]
 strip_id_or_class: tag-cloud
 strip_id_or_class: below-entry
+
+prune: no
 
 test_url: http://www.huffingtonpost.co.uk/entry/edward-snowdens-david-cameron-tweet-tells-public-to-rise-up-if-they-want-him-to-resign_uk_57074b52e4b00c769e2d91a9?s481714i
