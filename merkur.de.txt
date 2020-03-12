@@ -1,0 +1,3 @@
+single_page_link: //link[@rel='amphtml']/@href
+
+test_url: https://www.merkur.de/politik/tuerkei-griechenland-grenze-eu-fluechtlinge-merkel-erdogan-syrien-putin-eu-abkommen-zr-13592094.html
