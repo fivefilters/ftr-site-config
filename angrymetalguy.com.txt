@@ -1,0 +1,7 @@
+body: //div[contains(@class,'entry_content')]
+
+author: //a[@rel="author"]
+
+date: //time[contains(@class, 'published')]
+
+test_url: https://www.angrymetalguy.com/mental-health-awareness-interview-with-aln-of-mizmor/
