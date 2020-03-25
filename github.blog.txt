@@ -1,0 +1,3 @@
+title: //div[@class="post__header-content"]//h1
+
+test_url: https://github.blog/2020-02-12-supercharge-your-command-line-experience-github-cli-is-now-in-beta/

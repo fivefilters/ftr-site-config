@@ -1,5 +1,8 @@
 title: //h1[@class="entry-title"]
 author: //a[@class="url fn n"]
 date: //time[contains(@class, "published")]/@datetime
+body: //div[@class="post-content"]
+
+strip: //div[contains(@class, "bar-categories")]
 
 test_url: http://johnnysgamelogs.fr/le-jeu-ordinaire-et-ses-vicissitudes-ecrire-a-nouveau/

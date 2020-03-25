@@ -1,0 +1,6 @@
+single_page_link: //link[@rel='amphtml']/@href
+
+# one page:
+test_url: https://www.manager-magazin.de/unternehmen/autoindustrie/continental-mit-milliardenverlust-a-1305227.html
+# two pages:
+test_url: https://www.manager-magazin.de/politik/weltwirtschaft/coronavirus-was-der-lockdown-in-italien-gegen-covid-19-bringt-und-kostet-a-1305338.html

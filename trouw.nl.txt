@@ -1,0 +1,6 @@
+# Skip GDPR cookie wall
+http_header(Cookie): pwv=2; pws=functional|analytics|content_recommendation|targeted_advertising|social_media
+
+http_header(User-Agent): PHP/7.4
+
+test_url: https://www.trouw.nl/buitenland/zit-trump-straks-nog-vier-jaar-in-het-witte-huis-dit-zijn-z-n-kansen~b6017d3a/

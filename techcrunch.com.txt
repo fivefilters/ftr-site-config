@@ -14,6 +14,10 @@ author: substring-after(//span[@class="single-post-meta-top"],'rsaquo; ')
 date: substring-before(//div[@class="single-post-meta-top"],' @')
 title: //a[@class="sh2"]
 
+# GDPR cookie wall (Applies to some other Verizon Media sites - e.g. huffpost.com)
+http_header(Cookie): A3=d=AQABBHKoQl4CEIemT4yNVwXsjj9-v6PMOlMFEgABAQH4Q14LX_W6b2UB_iMAAAcIa6hCXgxb2nQ&S=AQAAAmgPcrcQNEeDSeHZkaQboZc
+
 prune: no
 
-test_url: http://techcrunch.com/2016/02/02/spotcap/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+francaistechcrunch+%28TechCrunch+en+Francais%29
+test_url: http://techcrunch.com/2016/02/02/spotcap/
+test_contains: bring a high level of automation to the lending process

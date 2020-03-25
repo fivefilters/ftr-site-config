@@ -1,0 +1,6 @@
+body: //main//div[contains(@class, 'article')]
+
+prune: no
+
+test_url: https://healthletter.mayoclinic.com/issues/june-2018/heat-illness
+test_url: https://healthletter.mayoclinic.com/issues/january-2019/freshening-bad-breath

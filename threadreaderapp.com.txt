@@ -1,0 +1,4 @@
+body: //div[@class='row t-tweet']
+
+test_url: https://threadreaderapp.com/thread/1232407401678147586.html?refreshed=yes
+

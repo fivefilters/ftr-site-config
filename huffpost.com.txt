@@ -1,0 +1,12 @@
+# GDPR cookie wall (Applies to some other Verizon Media sites - e.g. techchrunch.com)
+http_header(Cookie): A3=d=AQABBHKoQl4CEIemT4yNVwXsjj9-v6PMOlMFEgABAQH4Q14LX_W6b2UB_iMAAAcIa6hCXgxb2nQ&S=AQAAAmgPcrcQNEeDSeHZkaQboZc
+
+body: //div[contains(@class, 'entry__text')]
+body: //section[@id='entry-body']
+
+prune: no
+
+test_url: https://www.huffpost.com/entry/tracking-beijings-boom-th_b_1209828
+test_contains: expats liked to wax nostalgic
+test_url: https://www.huffpost.com/entry/president-obama-iphone-throwdown_n_1873826
+test_contains: president was allowed to keep the phone

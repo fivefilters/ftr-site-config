@@ -1,0 +1,5 @@
+body: //div[@class='entry-content']
+strip: //div[@class='yasr-auto-insert-visitor']
+
+test_url: https://www.car-it.com/die-utopie-von-level-5/id-0071510
+
