@@ -1,4 +1,5 @@
 single_page_link: //link[@rel='amphtml']/@href
+skip_json_ld: true
 
 # one page:
 test_url: https://www.manager-magazin.de/unternehmen/autoindustrie/continental-mit-milliardenverlust-a-1305227.html
