@@ -1,7 +1,7 @@
 title: //header/h2
 strip: //header/h2
 
-body: //div[@class='article__header-teaser'] | //div[@class='article__content']//p | //div[@class='article__content']//img | //div[@class='article__content']//a
+body: //div[contains(concat(' ',normalize-space(@class),' '),' document-main__container ')]
 strip: //ul[contains(@class, 'sharingbar')]
 strip: //ol[@class='teaser__widget']
 
