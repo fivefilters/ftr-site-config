@@ -21,3 +21,6 @@ strip: //section[@data-tracking-id='recipe-categories-container']
 strip_id_or_class: kb-recipe-calculator
 strip_id_or_class: kb-tip-side-teaser-wrapper
 strip: //div[contains(@class, 'subheadline')]
+
+test_url: https://www.kochbar.de/rezept/543271/Buttermilch-Zitronen-Torte.html
+test_contains: Springform am Boden mit Backpapier
