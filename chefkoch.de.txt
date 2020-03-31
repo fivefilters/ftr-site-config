@@ -4,22 +4,25 @@ prune: no
 # Chefkoch Rezepte
 ########################################
 
-# Set article informations
-title: //h1[@class = 'page-title']
-author: //span[@class= 'author']
-
 # Content
-body: //div[contains(@class, 'main-content')]
+body: //main[contains(@class, 'ds-container')]
 
 # Cleanup
-strip_id_or_class: text-ads-rezeptbild
-strip_id_or_class: recipe-buttons
-strip_id_or_class: incredientform
-strip_id_or_class: js-how2video-container
-strip_id_or_class: order-online
+strip_id_or_class: recipe-header
 strip_id_or_class: mobile-only
-strip_id_or_class: text-ads-unter-zubereitung
-strip_id_or_class: sharing-wrapper
+strip_id_or_class: bi-form-servings
+strip_id_or_class: recipe-author
+strip_id_or_class: img-title-stars
+strip_id_or_class: rg-list
+strip_id_or_class: recipe-comments
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' ad ')]
+strip: //aside
+strip_id_or_class: ds-hr
+strip_id_or_class: ds-grid
+strip: //h3
+strip_id_or_class: pi-cont
+strip: //main[contains(@class, 'ds-container')]/div
+strip_id_or_class: recipe-servings
 
 test_url: http://www.chefkoch.de/rezepte/1748851284207014/Schweinefilet-mit-Apfel-Curry-Sauce.html
 test_contains: Das Schweinefilet trocken tupfen und einmal quer halbieren
@@ -52,6 +55,7 @@ strip_id_or_class: recipe-guide-wrapper
 strip_id_or_class: recipe-guide-hint-tile
 strip_id_or_class: container-video
 strip_id_or_class: recipe2shoppinglist
+strip_id_or_class: slick slick--thumbnail
 
 test_url: http://www.chefkoch.de/magazin/artikel/6157/Chefkoch/kamelle-selber-machen.html
 test_contains: Für viele ist der Umzug am Rosenmontag die Gelegenheit, den Bonbon-Vorrat für das ganze Jahr zu sichern.
