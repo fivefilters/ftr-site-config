@@ -1,0 +1,4 @@
+body: //div[@id='inhalts-spalte']
+prune: no
+strip: //div[@class='footerlinks']
+test_url: https://www.stadt-muenster.de/immobilien/wohnbaupotenzialflaechen/sozialgerechte-bodennutzung.html
