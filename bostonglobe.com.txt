@@ -13,6 +13,10 @@ strip_id_or_class: article-more
 strip_id_or_class: article-bar
 strip_id_or_class: post-comment
 
+find_string: data-src="
+replace_string: srcset="
+strip: //img[contains(@src, '/20x0/')]/@src
+
 # This removes image captions.
 strip_id_or_class: figure
 
