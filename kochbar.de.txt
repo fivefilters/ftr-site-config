@@ -1,0 +1,26 @@
+prune: no
+ 
+# Content
+body: //div[contains(@class, 'kochbar')]
+
+# Cleanup
+strip_id_or_class: kb-recipe-image-gallery-wrapper
+strip_id_or_class: kb-favourite
+strip_id_or_class: kb-recipe-main-rating-static
+strip_id_or_class: kb-recipe-infobox-middle
+strip_id_or_class: kb-recipe-image-gallery-rating-count
+strip_id_or_class: kb-recipe-user-profile-icon
+strip_id_or_class: kb-recipe-user-profile-name-container
+strip_id_or_class: kb-recipe-action-bar-button
+strip_id_or_class: kb-recipe-notify
+strip_id_or_class: kb-recipe-calc-middle
+strip_id_or_class: kb-comments
+strip_id_or_class: kommentare
+strip: //section[@data-tracking-id='recipe-similar-container']
+strip: //section[@data-tracking-id='recipe-categories-container']
+strip_id_or_class: kb-recipe-calculator
+strip_id_or_class: kb-tip-side-teaser-wrapper
+strip: //div[contains(@class, 'subheadline')]
+
+test_url: https://www.kochbar.de/rezept/543271/Buttermilch-Zitronen-Torte.html
+test_contains: Springform am Boden mit Backpapier

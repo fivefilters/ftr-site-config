@@ -1,15 +1,25 @@
-title: //article[@id='story-page']/h1
+title: //h1[@class="ed__news__title"] | //h4[@class='gk__helpers__fat-title-m--complementary ed__show-h__mdb__title']
 date: //p[@class="byline"]/time/@datetime
-body: //div[@class="gk__content__container"] | //div[@class="js-pm-refreshed-content"]
+body: //div[@class="gk__content__container"] | //div[@class="js-pm-refreshed-content"] | //article[contains(@class, "ed__review__article")]
 
 strip: //aside[@id="beginning"]
 strip: //select[@id="news_changing_node"]
+strip: //section[@class="gk__pt js-pt-container has--tbs is--md gk__hide"]
+strip: //aside[@class="ed__show__aside"]
+strip: //div[@class="gk__breadcrumb"]
+strip: //p[@class="ed__header__info--top"]
+strip: //div[contains(@class, "ed__review__article__header__price")]
+strip: //ul[contains(@class, 'js-preview-list')]
+replace_string(<footer>): <div>
+replace_string(</footer>): </div>
+replace_string(data-lazy): src
 
 requires_login: yes
 
 login_uri: https://www.gamekult.com/utilisateur/connexion.html
-login_username_field: _username
-login_password_field: _password
+login_username_field: username
+login_password_field: password
+login_extra_fields: _csrf_token=@=xpath('//input[@name="_csrf_token"]', request_html('https://www.gamekult.com/utilisateur/connexion.html'))
 
 not_logged_in_xpath: //div[contains(@class,"gk__message--warning")]
 
