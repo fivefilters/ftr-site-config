@@ -1,0 +1,27 @@
+body: //div[@class='GeneralMaterial-article']
+
+prune: no
+
+strip_id_or_class: Toolbar
+strip_id_or_class: RelatedBlock
+strip_id_or_class: AudioPanel-podcast
+strip_id_or_class: AudioPanel-buttonPlay
+strip_id_or_class: AudioPanel-title
+strip_id_or_class: AudioPanel-progressText
+strip_id_or_class: Progress-panel
+
+replace_string(<noscript>): <span data-was="noscript">
+replace_string(</noscript>): </span>
+replace_string(<p class="SimpleBlock-context_p">): <p class="SimpleBlock-context_p" style="display:list-item; margin-left:2em">
+
+test_url: https://meduza.io/news/2020/03/25/sud-v-nyu-yorke-zapretil-vypusk-kriptovalyuty-telegram
+test_url: https://meduza.io/video/2019/12/11/dalnost-poleta-poka-ne-ta-o-kakoy-mozhno-mechtat-no-dlya-nachala-revolyutsii-etogo-dostatochno
+test_url: https://meduza.io/episodes/2020/02/27/moya-tsel-svoboda-molodoy-uchenyy-astrofizik-investiruet-neskolko-let-i-uzhe-millioner-no-kak
+test_url: https://meduza.io/episodes/2020/04/08/beloe-krasnoe-konyak-ne-odnovremenno-my-ochen-trevozhimsya-za-sebya-i-svoih-detey-kak-s-etim-spravitsya
+test_url: https://meduza.io/news/2019/09/20/ya-na-svobode-pavel-ustinov-poblagodaril-vseh-za-podderzhku
+test_url: https://meduza.io/feature/2019/09/24/v-iphone-11-pro-tselyh-tri-kamery-my-poprosili-fotografa-evgeniya-feldmana-ispytat-ih-vozmozhnosti
+test_url: https://meduza.io/feature/2019/12/10/chto-takoe-luzhkovskaya-arhitektura-10-zdaniy-kotorye-izmenili-moskvu
+test_url: https://meduza.io/news/2020/04/08/putin-ob-yavil-o-doplate-80-tysyach-rubley-vracham-rabotayuschim-s-patsientami-s-koronavirusom
+test_url: https://meduza.io/feature/2019/09/18/meduza-opoznala-politseyskogo-slomavshego-nogu-dizayneru-konstantinu-konovalovu-vo-vremya-zaderzhaniya-v-tsentre-moskvy
+test_url: https://meduza.io/news/2020/04/01/belorussiya-poprosila-u-rossii-pomoschi-v-borbe-s-koronavirusom
+test_url: https://meduza.io/shapito/2020/04/08/politsiya-luiziany-sluchayno-ob-yavila-sudnuyu-noch-da-da-toy-samoy-sirenoy-iz-odnoimennyh-filmov
