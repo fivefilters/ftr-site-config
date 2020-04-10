@@ -1,0 +1,8 @@
+# Same rules as for mobilenet.cz
+
+strip_id_or_class: inarticle--tip
+
+next_page_link: //a[@class='navChapters__next']
+
+test_url: https://fzone.cz/clanky/lepsitv-za-1kc-1047
+test:url: https://fzone.cz/clanky/recenze-anker-eufy-robovac-l70-hybrid-1063/2-vydrz-a-nabijeni-aplikace
