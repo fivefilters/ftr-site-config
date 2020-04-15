@@ -1,3 +1,5 @@
+dist: xenial
+os: linux
 language: php
 
 php:
@@ -6,8 +8,8 @@ php:
     - 7.1
     - 7.2
     - 7.3
+    - 7.4
 
-# cache vendor dirs
 cache:
     directories:
         - vendor
@@ -20,4 +22,4 @@ install:
     - composer install -o --prefer-source --no-interaction
 
 script:
-    - php vendor/bin/simple-phpunit
+    - php vendor/bin/simple-phpunit -v
