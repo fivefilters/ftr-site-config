@@ -1,7 +1,7 @@
 title: //meta[@property="og:title"]/@content
 author: //meta[@name='Author']/@content
 date: //meta[@name='DisplayDate']/@content
-body: //div[contains(@class, 'article__chunks')]
+body: //div[contains(@class, 'article__chunks') or contains(@class, 'content-header__dek')]
 body: (//article[contains(@class, 'body-copy')])[1]
 body: (//article[contains(@class, 'article-body-component')])[1]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
