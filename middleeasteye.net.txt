@@ -1,0 +1,3 @@
+strip_id_or_class: mee-readmore
+
+test_url: https://www.middleeasteye.net/opinion/how-top-labour-officials-plotted-bring-down-corbyn
