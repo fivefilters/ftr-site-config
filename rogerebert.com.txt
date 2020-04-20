@@ -1,4 +1,6 @@
+author: //meta[@name='author']/@content
 body: //div[contains(@class, 'ads--reviewPage')]
+date: //div[contains(@class, 'page-content--byline-share--byline')]//time
 
 strip_id_or_class: advertisement
 strip_id_or_class: disqus_thread
