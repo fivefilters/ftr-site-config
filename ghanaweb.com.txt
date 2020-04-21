@@ -1,0 +1,3 @@
+http_header(User-Agent): PHP/7.4
+
+test_url: https://cdn.ghanaweb.com/feed/newsfeed.xml
