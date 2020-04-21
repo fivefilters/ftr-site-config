@@ -1,7 +1,7 @@
 title: //meta[@property="og:title"]/@content
 author: //meta[@name='Author']/@content
 date: //meta[@name='DisplayDate']/@content
-body: //div[contains(@class, 'article__chunks')]
+body: //div[contains(@class, 'article__chunks') or contains(@class, 'content-header__dek')]
 body: (//article[contains(@class, 'body-copy')])[1]
 body: (//article[contains(@class, 'article-body-component')])[1]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
@@ -11,7 +11,8 @@ strip: //div[@class='desc' or @class='slide' or @id='slide-info']
 
 strip_id_or_class: full-bleed-ad
 strip_id_or_class: layout__aside
-strip_id_or_class: callout
+#strip_id_or_class: callout
+strip: //*[contains(concat(' ',normalize-space(@class),' '),' callout ')]
 strip_id_or_class: pullquote
 strip_id_or_class: left_rail
 strip_id_or_class: related-container

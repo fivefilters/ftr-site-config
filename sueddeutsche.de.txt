@@ -2,24 +2,21 @@ tidy: no
 prune: no
 autodetect_on_failure: yes
 
-date: //time[@class='timeformat']
-title: //section[@class='header']//h2
-body: //article[@id="sitecontent"]
+date: //time
+title: //meta[@name="og:title"]/@content
+# teaserimage | article body
+body: //div[@class="sz-article__top-asset"] | //div[contains(concat(' ', normalize-space(@class), ' '), ' sz-article__body ')]
 author: //meta[@name="author"]/@content
 
 replace_string(<h2>): <h3>
 replace_string(</h2>): </h3>
 
-#strip: //section[@class="header"]
-strip: //section[@class='header']//time
-strip: //section[@class='header']//strong
-strip: //div[@id="article-sidebar-wrapper"]
-strip: //p[@class="anzeige"]
-strip: //section[@class="authors"]
+strip: //figcaption
 strip_id_or_class: teaserable-layout
-strip_id_or_class: sz-zoom-icon-button
+# Box "Aktuelles zum Coronavirus ..." 
+strip_id_or_class: css-oo0q1r
+strip_id_or_class: sz-image-asset__zoom-icon
 strip: //noscript
-strip: //div//i
 
 single_page_link: //a[@data-track='{"itemType":"article-pagination","itemSubtype":"display-on-one-page"}'] 
 
