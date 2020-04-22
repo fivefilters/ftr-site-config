@@ -1,6 +1,8 @@
-title: //*[@class="news"]//h1[@class="title"]
-author: //*[@class="news"]//*[@class="newsInfo"]/a
-date: substring-before(//*[@class="news"]//*[@class="newsInfo"]/text(), ',')
-body: //*[@class="news"]//*[@class="newsContent"]
-footnotes: no
-test_url: http://www.dobreprogramy.pl/Sony-konczy-z-Foldinghome-na-PS3,Aktualnosc,36899.html
+strip_id_or_class: block-content
+strip_id_or_class: social_top
+strip_id_or_class: bio
+
+body: //div[@id='phContent_divMetaBody']
+
+test_url: https://www.dobreprogramy.pl/Sony-konczy-z-Foldinghome-na-PS3,Aktualnosc,36899.html
+test_url: https://www.dobreprogramy.pl/Wyciekly-dane-osob-na-kwarantannie.-Lista-zawiera-ponad-300-adresow,News,107502.html
