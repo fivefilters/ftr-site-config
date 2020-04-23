@@ -1,6 +1,7 @@
 {
     "name": "j0k3r/graby-site-config",
     "description": "Graby site config files",
+    "type": "library",
     "license": "CC0-1.0",
     "authors": [
         {
