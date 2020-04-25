@@ -1,4 +1,5 @@
 author: //div[@class="titleinfo"]//a[@itemprop="author"]
 date: //div[@class="titleinfo"]//time[@itemprop="datePublished"]/@datetime
+body: //div[@class="textzone"]
 
 test_url: https://www.generation-nt.com/connexion-sans-mot-passe-webauthn-w3c-standard-web-actualite-1962765.html
