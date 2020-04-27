@@ -12,6 +12,7 @@ strip_image_src: doubleclick.net
 # If you get chunks of Javascript code appearing in the extracted output, try uncommenting the lines below.
 # This tries to convert script tags to hidden div elements (which Full-Text RSS removes).
 # If you notice issues with this approach, please let us know.
+# A good HTML parser shouldn't cause issues, so these lines are commented out by default.
 #find_string: <script 
 #replace_string: <div style="display:none" 
 #find_string: </script>
@@ -25,3 +26,7 @@ replace_string: <!-- nothing -->
 
 # strip all class attributes after processing (not supported in Full-Text RSS yet)
 post_strip_attr: //*/@class
+
+# This might need re-thinking, but I don't think srcdoc attributes in <iframe srcdoc="{HTML}"> elements
+# contain relevant content, and appear to trip up some post-processing parsers, e.g. HTML Purifier.
+strip_attr: //iframe/@srcdoc
