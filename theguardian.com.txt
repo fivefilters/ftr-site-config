@@ -30,6 +30,7 @@ title: //h1[@articleprop='headline']
 author: //a[@rel='author']
 date: //article//time/@datetime
 strip: //article//div[contains(@class, 'content__meta-container')]
+strip: //iframe[@srcdoc]
 
 native_ad_clue: //meta[@property='article:tag' and contains(@content, 'partner zone')]
 native_ad_clue: //meta[@property='video:tag' and contains(@content, 'partner zone')]
