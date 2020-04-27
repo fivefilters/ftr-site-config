@@ -15,6 +15,7 @@ strip: //header
 strip: //div[@class='content__main-column']
 strip: //div[contains(@class, 'content-footer')]
 strip: //footer
+strip: //form
 
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: reveal-caption
