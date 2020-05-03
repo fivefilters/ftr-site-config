@@ -1,4 +1,6 @@
-body: //article[contains(@class, 'main-content')]
+body: //article[contains(@class, "main-content")]
+author: //meta[@name="author"]/@content
+date: //article//time[contains(@class, "publish-date")]
 
 test_url: https://www.gq.com/story/terry-thompson-ohio-zoo-massacre-chris-heath-gq-february-2012
 test_url: https://www.gq.com/story/american-grotesque-john-jeremiah-sullivan-birthers
