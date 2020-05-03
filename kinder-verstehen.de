@@ -1,0 +1,12 @@
+title: //header/h1
+body: //article/img | //div[@class="singular-main"]
+# no chance to get author xpath due to readability preprocessing
+
+strip: //hr
+# Link "Zur Diskussion ..."
+strip: //h2[@class="western"]
+strip_id_or_class: singular-book-slider
+strip_id_or_class: singular-abo-wrapper
+
+test_url: https://www.kinder-verstehen.de/mein-werk/artikel/wie-kinder-sauber-werden/
+test_contains: Die Ausscheidungen des Kindes waren über viele Generationen
