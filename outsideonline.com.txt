@@ -3,6 +3,9 @@ body: //article//div[contains(@clss, 'article__content')]
 date: //meta[@property="article:published_time"]/@content
 author: //meta[@name="author"]/@content
 
+find_string: data-original="http
+replace_string: src="http
+
 strip_id_or_class: block-recirc
 strip_id_or_class: social
 strip: //a[@data-pin-custom="true"]
