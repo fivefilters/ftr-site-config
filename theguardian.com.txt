@@ -15,6 +15,7 @@ strip: //header
 strip: //div[@class='content__main-column']
 strip: //div[contains(@class, 'content-footer')]
 strip: //footer
+strip: //form
 
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: reveal-caption
@@ -30,6 +31,7 @@ title: //h1[@articleprop='headline']
 author: //a[@rel='author']
 date: //article//time/@datetime
 strip: //article//div[contains(@class, 'content__meta-container')]
+strip: //iframe[@srcdoc]
 
 native_ad_clue: //meta[@property='article:tag' and contains(@content, 'partner zone')]
 native_ad_clue: //meta[@property='video:tag' and contains(@content, 'partner zone')]

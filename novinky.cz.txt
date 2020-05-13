@@ -1,0 +1,6 @@
+body: //div[contains(@class, 'tpl-king-top-content')]
+
+prune: no
+strip_id_or_class: ogm-advert
+
+test_url: https://www.novinky.cz/koronavirus/clanek/zlom-v-boji-s-koronavirem-svycari-chteji-ockovat-uz-na-podzim-40321864
