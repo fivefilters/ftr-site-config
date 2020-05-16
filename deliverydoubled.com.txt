@@ -1,0 +1,7 @@
+title: //meta[@property='og:title']/@content
+body: //article
+
+strip: //div[@id='sidebar']
+strip: //div[@class='post-related penci-posts-related-grid']
+
+test_url: https://deliverydoubled.com/correcting-a-team-member-avoid-my-damaging-rookie-mistakes/?utm_source=hackernewsletter&utm_medium=email&utm_term=working
