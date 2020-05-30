@@ -1,0 +1,5 @@
+body: //div[@class='entry-content']
+author: //div[@class='entry-byline']//a[@class='entry-author']
+strip: //aside
+
+test_url: https://www.sdxcentral.com/articles/news/pandemic-muddles-sd-wan-supply-chain/2020/05/
