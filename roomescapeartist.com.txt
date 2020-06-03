@@ -1,0 +1,5 @@
+prune: no
+
+strip: //svg
+
+test_url: https://roomescapeartist.com/2020/05/18/locked-amsterdam-submarine-hivemind-review/

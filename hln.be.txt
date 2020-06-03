@@ -1,0 +1,14 @@
+# get past the cookie wall
+http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=2
+
+# grab article body
+body: //article[@class='article fjs-article']
+
+# strip author, date and timestamp metadata
+strip: //ul[@class='article__metadata']
+
+# strip the "Meer over" part at the bottom
+strip: //div[@class='article__tag-list']
+
+test_url: https://www.hln.be/in-de-buurt/leuven/minister-geens-bezoekt-pop-up-naaiatelier-en-krijgt-modieus-mondmasker-aangemeten~a88e678d/
+test_contains: Minister Geens bezoekt pop-up naaiatelier en krijgt modieus mondmasker aangemeten
