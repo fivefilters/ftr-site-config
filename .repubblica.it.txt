@@ -1,0 +1,5 @@
+body: //div[@itemprop="articleBody"]
+
+prune: no
+
+test_url: https://rep.repubblica.it/pwa/longform/2020/05/27/news/rsa_morti_coronavirus_trivulzio-257664697/?ref=RHPPTP-BH-I257793309-C12-P7-S1.12-T1
