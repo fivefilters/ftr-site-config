@@ -1,0 +1,3 @@
+body: //section[@itemprop="articleSection"]
+
+test_url: https://www.wysokieobcasy.pl/wysokie-obcasy/7,53664,25805103,milosc-w-zwiazku-to-nie-namietnosc-sprawia-ze-ludzie-czuja.html
