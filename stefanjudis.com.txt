@@ -1,0 +1,5 @@
+title: //h1
+body: //div[@class="c-markdown"]
+date: (//dl[@class="c-pageDetails"]//time[@class="c-prettyDate"]/@datetime)[1]
+
+test_url: https://www.stefanjudis.com/today-i-learned/css-content-accepts-alternative-text/
