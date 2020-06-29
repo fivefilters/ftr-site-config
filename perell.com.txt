@@ -1,0 +1,3 @@
+body: //section[contains(@class, 'BlogItem-main')]
+
+test_url: https://www.perell.com/blog/50-ideas-that-changed-my-life

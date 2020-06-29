@@ -1,0 +1,6 @@
+body: //div[@id="block-system-main"]
+title: //div[@id="block-system-main"]//h1
+
+prune: no
+
+test_url: https://www.edge.org/responses/what-scientific-term-or%C2%A0concept-ought-to-be-more-widely-known

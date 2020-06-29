@@ -1,0 +1,7 @@
+title: //h1
+body: //div[@class='mce-body']
+
+strip: //aside
+
+test_url: https://www.vozpopuli.com/opinion/pandemia-racismo-iglesias_0_1365163963.html
+test_contains: Ande yo caliente y muérase la gente

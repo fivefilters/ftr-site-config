@@ -1,0 +1,6 @@
+body: //div[contains(@class, 'article-content__copy')]
+strip: //section[@id='cookie']
+
+insert_detected_image: no
+
+test_url: https://www.proskauer.com/pub/launching-a-hedge-fund-in-a-crisis
