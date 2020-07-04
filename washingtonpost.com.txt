@@ -5,7 +5,7 @@ body: //div[contains(@class, "article_body")]
 body: //div[@id='print_facet']//div[@id='body']
 
 # this top one currently appears after JS has done its work
-author://article//div[contains(@class, 'byline')]//div[contains(@class, 'relative')]
+author://article//div[contains(@class, 'byline')]//a[contains(@class, 'author-name-link')]
 author://meta[@name='DC.creator']/@content
 author://span[@class="pb-byline"]
 author://h3[@property='dc.creator']//a[@rel='author']
@@ -32,6 +32,8 @@ strip_id_or_class: carousel
 strip_id_or_class: toolbar
 strip_id_or_class: module
 strip_id_or_class: tooltip
+
+strip: //svg
 
 # Change gJQAwdJG4U_story.html to gJQAwdJG4U_print.html
 single_page_link: concat(substring-before(//link[@rel="canonical"]/@href, "_story.html"), "_print.html?noredirect=on")
