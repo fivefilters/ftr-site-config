@@ -1,0 +1,4 @@
+body: //div[contains(@class, 'html-article-content')]
+
+test_url: https://www.mdpi.com/2072-6643/12/6/1842/htm
+test_contains: Randomized controlled trials of several weeks of coffee consumption
