@@ -31,6 +31,7 @@ strip://h3[@property="dc.creator"]
 strip_id_or_class: carousel
 strip_id_or_class: toolbar
 strip_id_or_class: module
+strip_id_or_class: tooltip
 
 # Change gJQAwdJG4U_story.html to gJQAwdJG4U_print.html
 single_page_link: concat(substring-before(//link[@rel="canonical"]/@href, "_story.html"), "_print.html?noredirect=on")
