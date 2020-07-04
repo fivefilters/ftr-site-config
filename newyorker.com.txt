@@ -1,4 +1,5 @@
 body: //article[contains(@class, 'main-content')]
+body: //div[@id='articleBody']
 
 author: //meta[@name="author"]/@content
 
@@ -18,3 +19,5 @@ prune: no
 test_url: https://www.newyorker.com/magazine/2016/02/08/mothers-day-fiction-george-saunders
 test_url: https://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
 test_url: https://www.newyorker.com/reporting/2013/04/22/130422fa_fact_bilger?currentPage=all&mobify=0
+# Cartoons
+test_url: https://www.newyorker.com/cartoons/blitts-kvetchbook/a-man-of-substance
