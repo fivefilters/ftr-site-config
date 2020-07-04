@@ -5,7 +5,7 @@ body: //div[contains(@class, "article_body")]
 body: //div[@id='print_facet']//div[@id='body']
 
 # this top one currently appears after JS has done its work
-author://article//div[contains(@class, 'byline')]
+author://article//div[contains(@class, 'byline')]//div[contains(@class, 'relative')]
 author://meta[@name='DC.creator']/@content
 author://span[@class="pb-byline"]
 author://h3[@property='dc.creator']//a[@rel='author']
