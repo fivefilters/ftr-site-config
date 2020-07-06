@@ -1,0 +1,9 @@
+title: //h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' bwp-content ')]
+
+# Google Ads
+strip: //ins
+# Ignore duplicated pictures
+strip: //figure/noscript
+
+test_url: https://www.jesuisundev.com/comprendre-la-notation-big-o-en-7-minutes/
