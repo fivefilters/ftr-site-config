@@ -11,6 +11,8 @@ body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loo
 strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
 strip: //aside
+# Remove 'Mehr zum Thema' section
+strip: //section/div[contains(., 'Mehr zum Thema')]
 
 # remove pull quotes
 strip: //div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")]
