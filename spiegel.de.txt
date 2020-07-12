@@ -12,10 +12,10 @@ strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
 strip: //aside
 # Remove 'Mehr zum Thema' section
-strip: //section/div[contains(., 'Mehr zum Thema')]
+strip: //section/div[contains(./span/text(), 'Mehr zum Thema')]
 
 # remove pull quotes
-strip: //div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")]
+strip: //div[@data-article-el="body"]//div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")]
 
 # field name is always the id of the article (a-710880) instead of the title...
 skip_json_ld: yes
