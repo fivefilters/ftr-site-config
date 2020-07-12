@@ -10,9 +10,10 @@ body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loo
 
 strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
+strip: //aside
 
 # remove pull quotes
-strip: //div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")
+strip: //div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")]
 
 # field name is always the id of the article (a-710880) instead of the title...
 skip_json_ld: yes
