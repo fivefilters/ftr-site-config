@@ -21,6 +21,7 @@ strip: //div[@data-article-el="body"]//div[contains(concat(" ", normalize-space(
 skip_json_ld: yes
 
 test_url: https://www.spiegel.de/politik/deutschland/barbara-borchardt-skandal-die-linke-grinst-sich-eins-kolumne-a-c1e59f4c-9bbd-42e2-a144-81b7115584ef
+test_contains: Und sie kann es, weil sie keiner in die Schranken weist.
 test_url: http://www.spiegel.de/politik/deutschland/0,1518,787602,00.html
 test_url: http://www.spiegel.de/wirtschaft/soziales/griechenland-was-den-griechischen-buergern-nun-droht-a-1042682.html
 test_url: http://www.spiegel.de/spiegel/a-710880.html
