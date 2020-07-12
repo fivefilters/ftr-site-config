@@ -12,7 +12,7 @@ strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
 strip: //aside
 # Remove 'Mehr zum Thema' section
-strip: //section/div[contains(./span/text(), 'Mehr zum Thema')]
+strip: //div[@data-article-el="body"]//section/div[contains(./span/text(), 'Mehr zum Thema')]
 
 # remove pull quotes
 strip: //div[@data-article-el="body"]//div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")]
