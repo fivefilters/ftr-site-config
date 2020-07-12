@@ -1,4 +1,4 @@
-# 2020 redesign
+# July 2020 redesign
 
 tidy: no
 prune: no
@@ -9,7 +9,7 @@ date: //meta[@name="date"]/@content
 body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loose')] | //div[@data-article-el="body"]
 
 strip: //*[@data-app-hidden="true"]
-strip: //*[@data-advertisement]
+#strip: //*[@data-advertisement]
 
 # remove pull quotes
 strip: //div[contains(concat(" ", normalize-space(@class), " "), " my-32 ")
