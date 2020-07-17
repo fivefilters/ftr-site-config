@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-content ')]
+
+strip_id_or_class: td-tags
+
+test_url: https://www.terrestres.org/2020/06/04/lutter-avec-le-droit-contre-les-derives-de-letat-durgence-sanitaire/
