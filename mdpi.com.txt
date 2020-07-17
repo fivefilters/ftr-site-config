@@ -1,0 +1,11 @@
+#body: //div[contains(concat(' ',normalize-space(@class),' '),' html-article-content ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' html-body ')]
+
+prune: no
+
+# bad HTML
+find_string: style=>
+replace_string: >
+
+test_url: https://www.mdpi.com/2072-6643/12/6/1842/htm
+test_contains: Randomized controlled trials of several weeks of coffee consumption

@@ -16,7 +16,7 @@ strip: //nav
 
 # General cleanup
 strip: //time
-strip: //header
+#strip: //header
 strip: //h4[@class='author']
 strip: //div[@class='gallery compact']/h3
 strip: //div[@class='gallery compact']/figcaption

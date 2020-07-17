@@ -1,0 +1,5 @@
+body: //article
+
+author: //a[@rel='author']
+
+test_url: https://www.dissentmagazine.org/article/why-the-left-needs-liberals
