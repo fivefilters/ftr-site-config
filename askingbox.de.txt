@@ -1,0 +1,7 @@
+body: //div[@id='spl']
+
+strip_id_or_class: bewtp
+strip_id_or_class: uh1
+strip_id_or_class: ste
+
+test_url: https://www.askingbox.de/tipp/lazarus-datei-umbenennen-und-verschieben
