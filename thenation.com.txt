@@ -7,7 +7,13 @@ date: //span[@class='article-date']
 date: substring-after(//div[@class='print-created'], '|')
 prune: no
 
+strip_id_or_class: email-signup-module
+strip_id_or_class: most-popular-plus-ad
+strip: //aside[contains(@class, 'current-issue')]
+strip_id_or_class: related-oneup
+
 #single_page_link: //ul[contains(@class, 'article-actions-bar')]//a[contains(@href, '/print/article/')]
 single_page_link: //ul[contains(@class, 'article-actions-bar')]//a[contains(@href, '?page=full')]
 
 test_url: http://www.thenation.com/article/162331/hard-against-time-roy-fisher
+test_url: https://www.thenation.com/article/world/opcw-leaks-syria/
