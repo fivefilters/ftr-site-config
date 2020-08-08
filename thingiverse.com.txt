@@ -1,0 +1,4 @@
+tidy: yes
+autodetect_on_failure: yes
+prune: yes
+body: /html/head/title
