@@ -14,7 +14,7 @@ login_uri: https://www.heise.de/sso/login/login
 login_username_field: username
 login_password_field: password
 
-not_logged_in_xpath: //body[@Class="a-login__link a-login__link--sso"]
+not_logged_in_xpath: //a[@id='heiselogin-link-login']
 
 strip: //nav
 
