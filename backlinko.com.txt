@@ -1,0 +1,5 @@
+body: //main
+strip: //footer
+prune: no
+
+test_url: https://backlinko.com/ecommerce-seo

@@ -1,5 +1,16 @@
-author: //h3[@class='authorName']
-date: //time
-body: //div[@class='articleBody']
-strip_id_or_class: adspot
+author: //meta[@itemProp="author"]/@content
+date: //meta[@itemProp="datePublished"]/@content
+title: //meta[@name="title"]/@content
+body: //article
+
+strip: //header
+strip: //aside
+
+strip: //article/div[contains(., 'For our free coronavirus pandemic coverage')]
+strip_id_or_class: adWrapper
+strip_id_or_class: noPrint
+strip: //*[starts-with(@id, 'adspot-')]
+
 test_url: http://www.theage.com.au/victoria/top-cops-warns-outlaw-bikies-we-have-a-gang-too-20130331-2h1l8.html
+test_url: https://www.theage.com.au/national/the-twin-baggage-of-pride-and-ideology-impeding-the-pandemic-strategy-20200716-p55cq1.html
+test_contains: Health campaigns have to be delivered

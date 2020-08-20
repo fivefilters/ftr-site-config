@@ -1,0 +1,12 @@
+# Article's title
+title: //h1[@class='em-project-header__title']
+
+# Article's main content
+body: //div[@class='em-project-body']
+
+# Parts to strip in the content
+strip: //div[contains(@class, 'modal')]
+strip: //a[contains(@class, 'js--em-project__follow-btn-user')]
+
+# A test URL, e.g. the article you used to write the file
+test_url: https://www.electromaker.io/project/view/rgb-hexmatrix-iot-clock

@@ -1,10 +1,9 @@
-title: //h1[contains(concat(' ',normalize-space(@class),' '),' hed ')]
+title: //meta[@property="og:title"]/@content
+date: //article//time[contains(@class, "content-header__publish-date")]
+body: //div[contains(@class, 'article__chunks') or contains(@class, 'content-header__accreditation')]
+author: //meta[@name="author"]/@content
 
-body: //article[contains(concat(' ',normalize-space(@class),' '),' component-article ')]
-
-// we can't load this (JS load) so may as well strip it to remove byline
-strip: //header[contains(concat(' ',normalize-space(@class),' '),' container ')]
-strip: //figure[contains(@class, 'main-image')]
+strip_id_or_class: full-bleed-ad
 
 test_url: http://www.vanityfair.com/news/2016/02/george-w-bush-donald-trump-iraq
 test_contains: riding high off a fourth-place finish in New Hampshire

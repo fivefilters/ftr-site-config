@@ -1,0 +1,5 @@
+# Also as c.newsnow.co.uk.txt
+
+single_page_link: //div[@id="js-retrieval-msg"]//a
+
+test_url: http://c.newsnow.com/A/1041394538?-15254:37150

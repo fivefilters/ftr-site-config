@@ -12,6 +12,14 @@ body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text'
 # https://www.heise.de/select/ct/2020/3/1580493780857147
 # //article//p[contains(@class, 'article__description')]
 
+requires_login: yes
+
+login_uri: https://www.heise.de/sso/login/login
+login_username_field: username
+login_password_field: password
+
+not_logged_in_xpath: //a[@id='heiselogin-link-login']
+
 strip: //nav
 
 # General cleanup

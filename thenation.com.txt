@@ -1,13 +1,17 @@
-title: //h2[@property='dc:title']
+title: //meta[@property="og:title"]/@content
 #body: //div[@class='print-content']
-body: //div[@id='wysiwyg']
+body: //div[contains(@class, 'article-body-inner')]
+author: //meta[@name="sailthru.author"]/@content	
 author: //a[contains(@href, '/authors')]
-author: substring-before(//div[@class='print-created'], '|')
-date: //span[@class='article-date']
-date: substring-after(//div[@class='print-created'], '|')
+date: //meta[@property="article:published_time"]/@content
+date: //meta[@name="sailthru.date"]/@content
+
 prune: no
 
-#single_page_link: //ul[contains(@class, 'article-actions-bar')]//a[contains(@href, '/print/article/')]
-single_page_link: //ul[contains(@class, 'article-actions-bar')]//a[contains(@href, '?page=full')]
+strip_id_or_class: email-signup-module
+strip_id_or_class: most-popular-plus-ad
+strip: //aside[contains(@class, 'current-issue')]
+strip_id_or_class: related-oneup
 
 test_url: http://www.thenation.com/article/162331/hard-against-time-roy-fisher
+test_url: https://www.thenation.com/article/world/opcw-leaks-syria/
