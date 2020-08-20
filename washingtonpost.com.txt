@@ -35,6 +35,9 @@ strip://div[@class="module featured-stories component curved img-border"]
 strip://h3[@property="dc.creator"]
 strip: //div[@data-qa="article-body-ad"]
 
+find_string: .jpg&amp;w=32"
+replace_string: .jpg&amp;w=916"
+
 strip_id_or_class: carousel
 strip_id_or_class: toolbar
 strip_id_or_class: module
