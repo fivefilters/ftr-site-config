@@ -38,6 +38,9 @@ strip: //figure//span[.='Image' or .='Video']
 strip: //div[@aria-labelledby="modal-title"]
 strip: //button
 
+# If HTML parsed by JS, let's remove duplicate images
+strip: //div[contains(@style, "visibility: hidden")]//picture
+
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
 
