@@ -1,7 +1,11 @@
-# Seems to be redirecting to articles.washingtonpost.com for many users
+# Seems to be redirecting to articles.washingtonpost.com for many users - still true?
 
+body: //div[contains(@class, 'article-body')]
+# this one doesn't appear to be in use - remove?
 body: //div[contains(@class, "article_body")]
 # print view
+body: //body[@id='print_facet']//div[@id='content']
+# this one doesn't appear to be in use - remove?
 body: //div[@id='print_facet']//div[@id='body']
 
 # this top one currently appears after JS has done its work
@@ -27,6 +31,7 @@ strip://div[@class="module component live-qa curved img-border"]
 strip://div[@class="module component newsletter-signup curved"]
 strip://div[@class="module featured-stories component curved img-border"]
 strip://h3[@property="dc.creator"]
+strip: //div[@data-qa="article-body-ad"]
 
 strip_id_or_class: carousel
 strip_id_or_class: toolbar
