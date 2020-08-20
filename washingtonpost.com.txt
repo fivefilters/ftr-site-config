@@ -45,6 +45,8 @@ strip_id_or_class: tooltip
 
 strip: //svg
 
+prune: no
+
 # Change gJQAwdJG4U_story.html to gJQAwdJG4U_print.html
 single_page_link: concat(substring-before(//link[@rel="canonical"]/@href, "_story.html"), "_print.html?noredirect=on")
 if_page_contains: //link[@rel="canonical" and contains(@href, '_story.html')]
