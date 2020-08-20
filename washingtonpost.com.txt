@@ -9,11 +9,13 @@ body: //body[@id='print_facet']//div[@id='content']
 body: //div[@id='print_facet']//div[@id='body']
 
 # this top one currently appears after JS has done its work
+author:(//article//div[contains(@class, 'author-names')])[1]
 author://article//div[contains(@class, 'byline')]//a[contains(@class, 'author-name-link')]
 author://meta[@name='DC.creator']/@content
 author://span[@class="pb-byline"]
 author://h3[@property='dc.creator']//a[@rel='author']
 title://meta[@name='title']/@content
+date: //article//div[contains(@class, 'display-date')]
 date://div[contains(@class,'byline')]//span[contains(@class,'published')]/@title
 date://meta[@name="DC.date.issued"]/@content
 date://span[contains(@class,"pb-timestamp")]
