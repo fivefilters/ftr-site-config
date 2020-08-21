@@ -1,3 +1,4 @@
+body: //div[contains(@class, 'article__body-content')]
 body: //div[@id="story-body"]
 # for video entries
 body: //div[contains(@class, "videoInStory") or @id="meta-information"]
@@ -58,6 +59,9 @@ tidy: no
 prune: no
 
 dissolve: //h2
+
+test_url: https://www.bbc.com/worklife/article/20200121-why-procrastination-is-about-managing-emotions-not-time
+test_contains: The emotional regulation theory of procrastination
 
 test_url: http://www.bbc.com/sport/0/football/28918021
 test_contains: Cameroonian footballer Albert Ebosse has died
