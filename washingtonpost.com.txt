@@ -26,7 +26,7 @@ http_header(Cookie): wp_devicetype=0; rplpwabt4=1; devicetype=0; osfam=0; de=; c
 
 strip://div[@class="relative primary-slot padding-top img-border gallery-container photo-wrapper"]
 strip://div[@id="wp-column six end"]
-# strip://div[contains(@class,'hidden')]  
+# strip://div[contains(@class,'hidden')]
 strip://div[@id='article-side-rail']
 strip://div[@class="module component todays-paper-module curved"]
 strip://div[@class="module component live-qa curved img-border"]
