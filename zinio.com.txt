@@ -1,5 +1,5 @@
-title: //div[@id="article-body"]//div[contains(@class, 'title')]
-author: //div[@id="article-body"]//div[contains(@class, 'byline)]
+title: //div[@id="article-body"]//div[contains(concat(' ',normalize-space(@class),' '),' title ')]
+author: //div[@id="article-body"]//div[contains(concat(' ',normalize-space(@class),' '),' byline ')]
 body: //div[@id="article-body"]
 prune: no
 
