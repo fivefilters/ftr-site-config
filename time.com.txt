@@ -1,5 +1,7 @@
 title: //h1[contains(@class, 'article-title')]
+author: //div[@id="page-gtm-values"]/div[contains(@class, 'keyvals')]/@data-content_author_name
 author: //article//span[contains(@class, 'byline')]
+date: //div[@id="page-gtm-values"]/div[contains(@class, 'keyvals')]/@data-content_published_date
 date: //time[@pubdate]/@datetime
 body: //div[@id="article-body"]
 # Old, remove?
