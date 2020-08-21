@@ -14,6 +14,10 @@ strip_id_or_class: terminal-tout-container
 strip_id_or_class: lede
 strip_id_or_class: postr-recirc
 strip_id_or_class: left-column
+strip_id_or_class: touts-v2
+
+# repeats
+strip_id_or_class: first-paragraph-image__credit
 
 strip: //aside
 
