@@ -1,4 +1,5 @@
 title: //h1[@class="sl-art-head-dek"]
+body: //div[@itemprop="mainEntityOfPage"]
 body: //article//div[@class='sl-art-body']/div[contains(@class, 'body')]
 strip: //div[@class="department_kicker"]
 strip: //div[@id="insider_ad_wrapper" or @id="insider_ad_inner"]
@@ -8,6 +9,9 @@ strip: //aside[contains(@class, 'in-article-recirc')]
 #strip: //dl
 #strip: //p[em/a[contains(@href, 'facebook.com')]]
 prune: no
+
+# Use img in <noscript> instead
+strip_id_or_class: image__src
 
 http_header(Cookie): GDPR_consent=1
 
