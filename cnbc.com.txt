@@ -3,7 +3,7 @@ author: //meta[@name="author"]/@content
 date: //meta[@itemProp="dateCreated"]/@content
 title: //meta[@property="og:title"]/@content
 
-strip: //div[contains(@id, 'Placeholder-ArticleBody-Video')
+strip: //div[contains(@id, 'Placeholder-ArticleBody-Video')]
 
 prune: no
 
