@@ -19,6 +19,7 @@ prune: no
 
 strip_id_or_class: share-social
 strip_id_or_class: c-article-writer__social
+strip_id_or_class: c-nudge__container
 
 strip: //header//h1[contains(@class, 'article-header')]
 strip: //header//address
@@ -28,6 +29,8 @@ strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]
 strip: //p[contains(., 'This article available online at:')]/following::*
 strip: //div[@class='earthbox']
+strip: //aside[@role="complementary"]
+strip: //p[contains(@id, 'injected-recirculation-link')]
 
 #single_page_link: //div[contains(@class, 'article-tools')]//a[contains(@class, 'print')]
 
