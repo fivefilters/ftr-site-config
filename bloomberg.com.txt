@@ -1,5 +1,12 @@
+title: //meta[@property="og:title"]/@content
+
+date: //meta[@name="iso-8601-publish-date"]/@content
+date: //meta[@name="parsely-pub-date"]/@content
 date: //*[@itemprop='datePublished']/@datetime
+
 author: //meta[@name="sailthru.author"]/@content
+author: //meta[@name="parsely-author"]/@content
+
 body: //div[contains(@class, 'body-copy')]
 
 strip_id_or_class: inline-newsletter
@@ -7,6 +14,8 @@ strip_id_or_class: terminal-tout-container
 strip_id_or_class: lede
 strip_id_or_class: postr-recirc
 strip_id_or_class: left-column
+
+strip: //aside
 
 skip_json_ld: yes
 
