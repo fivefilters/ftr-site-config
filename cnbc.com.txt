@@ -3,4 +3,6 @@ author: //meta[@name="author"]/@content
 date: //meta[@itemProp="dateCreated"]/@content
 title: //meta[@property="og:title"]/@content
 
+prune: no
+
 test_url: https://www.cnbc.com/2020/08/20/former-trump-advisor-steve-bannon-arrested-on-charges-of-defrauding-donors-in-fundraising-scheme.html
