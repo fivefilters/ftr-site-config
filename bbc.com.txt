@@ -2,10 +2,15 @@ body: //div[contains(@class, 'article__body-content')]
 body: //div[@id="story-body"]
 # for video entries
 body: //div[contains(@class, "videoInStory") or @id="meta-information"]
+title: //meta[@property="og:title"]/@content
 title: //h1[@class="story-header"]
+
+date: //article//div[contains(@class, 'author-unit__container')]//span
 date: //span[@class="story-date"]/span[@class='date']
 # for sport site
 date: //meta[@name='DCTERMS.created']/@content
+
+author: //meta[@name="author"]/@content
 author: //div[@id='headline']//span[@class='byline-name']
 
 # recipes, e.g. http://www.bbc.co.uk/food/recipes/mymincepies_71055
