@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' left ')]
+
+strip_id_or_class: native-ad
+strip_id_or_class: newsletter_youngtimer
+strip_id_or_class: block-auteur
+strip_id_or_class: title-block
+
+test_url: https://www.autoplus.fr/peugeot/3008/actualite/Peugeot-3008-SUV-Scoop-Equipements-1549589.html
