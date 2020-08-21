@@ -12,6 +12,8 @@ prune: no
 
 # Use img in <noscript> instead 
 strip_id_or_class: image__src
+replace_string(<noscript>):<div>
+replace_string(</noscript):</div>
 
 http_header(Cookie): GDPR_consent=1
 
