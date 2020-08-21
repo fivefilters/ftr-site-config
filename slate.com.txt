@@ -15,6 +15,10 @@ strip_id_or_class: image__src
 replace_string(<noscript>):<div>
 replace_string(</noscript>):</div>
 
+strip_id_or_class: slate-megaphone
+strip_id_or_class: social-share
+strip_id_or_class: slate-kicker-promo
+
 http_header(Cookie): GDPR_consent=1
 
 author: //meta[@name="author"]/@content
