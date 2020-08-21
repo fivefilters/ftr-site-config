@@ -12,6 +12,10 @@ http_header(Cookie): euConsent=true
 
 strip_id_or_class: jumpstart-video
 strip_id_or_class: inline-recirc
+strip_id_or_class: most-popular-feed
+strip_id_or_class: newsletter-callout
+strip_id_or_class: author-feedback-text
+strip_id_or_class: article-bottom
 
 strip: //figcaption
 strip: //p[contains(., 'MORE:') and ./a]
