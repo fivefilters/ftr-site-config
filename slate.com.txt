@@ -10,7 +10,7 @@ strip: //aside[contains(@class, 'in-article-recirc')]
 #strip: //p[em/a[contains(@href, 'facebook.com')]]
 prune: no
 
-# Use img in <noscript> instead
+# Use img in <noscript> instead 
 strip_id_or_class: image__src
 
 http_header(Cookie): GDPR_consent=1
@@ -20,6 +20,8 @@ author: //a[contains(@href, '/author')]
 
 date: //meta[@property="article:published_time"]/@content
 
+test_url: https://slate.com/news-and-politics/2020/08/joe-biden-empathy-candidate.html
+test_contains: So many Americans are exhausted
 test_url: https://slate.com/news-and-politics/2020/01/impeachment-trial-witness-trade-bad-idea.html
 test_url: https://slate.com/technology/2010/11/the-facebook-google-spat-over-who-controls-your-data.html
 test_url: https://slate.com/news-and-politics/2011/05/the-danger-of-confusing-the-death-of-osama-bin-laden-with-an-act-of-justice.html
