@@ -46,6 +46,7 @@ strip: //div[@data-testid="inline-message"]
 
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
+strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
 
 prune: no
 tidy: no
