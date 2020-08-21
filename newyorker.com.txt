@@ -13,6 +13,7 @@ strip_id_or_class: consumer-marketing-unit
 strip_id_or_class: ad--in-content
 strip_id_or_class: ad--rail
 strip_id_or_class: article__social-share
+strip_id_or_class: cne-interlude-embed
 
 prune: no
 
