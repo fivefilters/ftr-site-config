@@ -1,5 +1,7 @@
 body: //div[@id='collection-items-container']
 body: //div[contains(@class, 'article-content')]
+author: //meta[@name="cXenseParse:author"]/@content
+date: //meta[@name="cXenseParse:recs:publishtime"]/@content
 
 prune: no
 
