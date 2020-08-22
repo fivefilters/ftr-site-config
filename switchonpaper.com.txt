@@ -20,6 +20,4 @@ login_extra_fields: rememberme=forever
 login_extra_fields: submit=Se+connecter
 login_extra_fields: testcookie=@=xpath('//input[@name="testcookie"]', request_html('https://www.switchonpaper.com/se-connecter/'))
 
-test_url: https://www.switchonpaper.com/2018/07/25/gustav-metzgeragir-ou-perir/
-
-
+test_url: https://www.switchonpaper.com/noe-les-gays-et-larc-en-ciel-une-sculpture-stigmatise-lhypocrisie-autour-des-droits-lgbt/
