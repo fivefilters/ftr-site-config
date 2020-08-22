@@ -9,4 +9,6 @@ strip_id_or_class: commentsform
 strip_id_or_class: post-meta-group-additional
 strip: //form
 
+prune: no
+
 test_url: https://typo3.org/article/frontend-editing-planning-the-next-major-version
