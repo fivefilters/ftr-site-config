@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]//div[contains(concat(' ',normalize-space(@class),' '),' row ')]
+date: //meta[@itemprop="datePublished"]/@content
+
+strip_id_or_class: newsrelated
+
+test_url: https://typo3.org/article/frontend-editing-planning-the-next-major-version
