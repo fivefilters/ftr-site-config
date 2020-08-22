@@ -3,7 +3,9 @@
 
 prune: no
 
+date: //article//time[@itemprop="datePublished"]/@datetime
 date: //p[@class='news_datum']
+author: //article//span[@itemprop="author"]
 author: //span[@class='author']
 author: //div[@class="article__author"]
 
