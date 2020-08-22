@@ -1,5 +1,5 @@
 # GDPR cookie wall (Applies to some other Verizon Media sites - e.g. techchrunch.com)
-http_header(Cookie): A3=d=AQABBHKoQl4CEIemT4yNVwXsjj9-v6PMOlMFEgABAQH4Q14LX_W6b2UB_iMAAAcIa6hCXgxb2nQ&S=AQAAAmgPcrcQNEeDSeHZkaQboZc
+http_header(Cookie): A3=d=AQABBFBuQF8CEKPAdo66GfNu0MU1b8SaEjcFEgABAgG3QV8MYPW6b2UB9iMAAAYsQVFBQkFnRmZRYmRnREVJaS13VGYmcz1BUUFBQU9zRl82QngmZz1YMEJ1V2cHCEduQF-_6lqP&S=AQAAAh8LNG77OoAMJtCrgLTaLiQ
 
 body: //div[contains(@class, 'entry__text')]
 body: //section[@id='entry-body']
