@@ -3,6 +3,8 @@ body: //div[contains(@class, 'article-content')]
 
 prune: no
 
+strip: //footer
+
 next_page_link: //link[@rel="next"]/@href
 if_page_contains: //a[contains(@class, 'pagination-collection')]
 
