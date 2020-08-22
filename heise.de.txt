@@ -9,7 +9,11 @@ author: //article//span[@itemprop="author"]
 author: //span[@class='author']
 author: //div[@class="article__author"]
 
-body: //article | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
+# print version (if single_page_link is followed)
+body: //article[contains(@class, 'printversion')]
+
+# regular
+body: //article[@id="meldung"] | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
 # TODO: Try to preserve lede (currently stripped by strip: //header)
 # https://www.heise.de/select/ct/2020/3/1580493780857147
 # //article//p[contains(@class, 'article__description')]
