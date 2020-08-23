@@ -1,3 +1,4 @@
+body: //section[@id="body-text"]
 body: //section[contains(@class, 'body-text')]
 
 strip_id_or_class: highlights
