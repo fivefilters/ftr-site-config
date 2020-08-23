@@ -1,1 +1,7 @@
-http_header(user-agent): PHP/5.3
+http_header(user-agent): PHP/7.4
+
+single_page_link: //a
+if_page_contains: //h3[contains(., 'You are leaving Pocket')]
+
+test_url: https://getpocket.com/redirect?&url=https%3A%2F%2Fwww.washingtonpost.com%2Fpolitics%2Fdonald-trumps-demand-for-a-border-wall-shut-down-the-government-at-the-same-time-his-company-was-firing-undocumented-workers%2F2019%2F01%2F26%2F8cf75d66-20c5-11e9-8e21-59a09ff1e2a1_story.html
+
