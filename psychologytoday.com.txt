@@ -1,0 +1,8 @@
+body: //div[contains(@class, 'field-name-body')]
+title: //meta[@property="og:title"]/@content
+author: //h3[contains(@class, 'profile_card__profile-name')]
+
+strip_id_or_class: pt-ad
+strip_id_or_class: advertisement-label
+
+test_url: https://www.psychologytoday.com/intl/blog/close-encounters/202008/why-do-people-take-selfies
