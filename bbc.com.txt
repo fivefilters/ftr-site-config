@@ -40,6 +40,8 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' drop-capped ')]
 strip: //figcaption
 strip_id_or_class: image-and-copyright-container
 
+strip_id_or_class: article-body__pull-quote
+
 strip: //aside[contains(@class, 'sp-pullout')]
 
 strip_id_or_class: share-help
