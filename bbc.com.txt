@@ -35,6 +35,7 @@ strip: //form[@id='comment-form']
 strip: //div[contains(@class, 'comment-introduction')]
 strip: //div[contains(@class, 'share-tools')]
 strip: //div[@id='also-related-links']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' drop-capped ')]
 
 strip: //figcaption
 strip_id_or_class: image-and-copyright-container
