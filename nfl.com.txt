@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'nfl-c-article__body')]
+author: //article//a[contains(@class, 'nfl-o-author__name')]
+
+test_url: https://www.nfl.com/news/ravens-release-earl-thomas-sorting-out-winners-losers
+test_contains: loss to the defense of a Super Bowl contender
