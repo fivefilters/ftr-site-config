@@ -1,0 +1,3 @@
+body: //div[contains(@class, 'tls-article-body')]
+
+test_url: https://www.the-tls.co.uk/articles/katrina-history-1915-2015-andy-horowitz-review-peter-coates/

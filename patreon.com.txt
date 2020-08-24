@@ -1,0 +1,7 @@
+body: //div[@data-tag="post-content"]
+date: substring-before(//a[@data-tag="post-published-at"], ' at ')
+
+prune: no
+
+test_url: https://www.patreon.com/posts/switch-between-40339561
+test_contains: Browser-retrieved content is the default

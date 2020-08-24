@@ -1,5 +1,7 @@
 title: //h1[contains(@class, 'article-title')]
+author: //div[@id="page-gtm-values"]/div[contains(@class, 'keyvals')]/@data-content_author_name
 author: //article//span[contains(@class, 'byline')]
+date: //div[@id="page-gtm-values"]/div[contains(@class, 'keyvals')]/@data-content_published_date
 date: //time[@pubdate]/@datetime
 body: //div[@id="article-body"]
 # Old, remove?
@@ -12,6 +14,10 @@ http_header(Cookie): euConsent=true
 
 strip_id_or_class: jumpstart-video
 strip_id_or_class: inline-recirc
+strip_id_or_class: most-popular-feed
+strip_id_or_class: newsletter-callout
+strip_id_or_class: author-feedback-text
+strip_id_or_class: article-bottom
 
 strip: //figcaption
 strip: //p[contains(., 'MORE:') and ./a]

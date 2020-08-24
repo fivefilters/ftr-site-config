@@ -1,9 +1,19 @@
-strip_id_or_class: teaser
+body: //section[@id="article_content"]
+author: //meta[@name="author"]/@content
+date: //article//time[@datetime]/@datetime
+
+strip_id_or_class: article_tags_hl
+strip_id_or_class: article_tags
+strip_id_or_class: techstage--aside-global
+strip_id_or_class: rectangle_ad
+strip_id_or_class: article_navigation
 strip_id_or_class: a-pvg
 strip_id_or_class: a-pvg-deal__price
 strip_id_or_class: a-pvg__logo
 strip_id_or_class: a-grid
 strip_id_or_class: comments_container
 strip: //a-tabs
+strip: //section[contains(@class, 'teaser')]
 
-test_url: http://techstage.de/-4156945
+test_url: https://www.techstage.de/ratgeber/Android-One-Smartphones-Diese-Handys-sind-verfuegbar-4156945.html
+test_url: https://www.techstage.de/ratgeber/Kaufberatung-Mit-Koepfchen-zum-passenden-Fahrradhelm-4872243.html

@@ -15,7 +15,7 @@ date: substring-before(//div[@class="single-post-meta-top"],' @')
 title: //a[@class="sh2"]
 
 # GDPR cookie wall (Applies to some other Verizon Media sites - e.g. huffpost.com)
-http_header(Cookie): A3=d=AQABBPakFV8CEB2X1JpJCvbbS83H1pIUIasFEgABAQHpFl83X_W6b2UB_iMAAAcI0qQVX7jKQxA&S=AQAAAq3OOnPzI9-lH8TqHWNRoAk;
+http_header(Cookie): A3=d=AQABBFBuQF8CEKPAdo66GfNu0MU1b8SaEjcFEgABAgG3QV8MYPW6b2UB9iMAAAYsQVFBQkFnRmZRYmRnREVJaS13VGYmcz1BUUFBQU9zRl82QngmZz1YMEJ1V2cHCEduQF-_6lqP&S=AQAAAh8LNG77OoAMJtCrgLTaLiQ;
 
 prune: no
 

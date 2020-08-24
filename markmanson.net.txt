@@ -1,0 +1,22 @@
+body: //article//div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+author: //meta[@property="article:author"]/@content
+date: //meta[@property="article:published_time"]/@content
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+
+strip_id_or_class: article-audio-player
+strip_id_or_class: in-article-opt-in
+strip_id_or_class: footer-opt-in
+strip_id_or_class: no-print
+
+# Let's use img in <noscript> instead
+strip_id_or_class: lazyloaded
+strip: //img[@data-lazy-src]
+
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
+
+prune: no
+
+test_url: https://markmanson.net/how-to-be-insanely-successful
+test_contains: you see everyone around you obsessed
+test_url: https://markmanson.net/feed

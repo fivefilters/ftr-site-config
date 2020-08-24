@@ -1,7 +1,0 @@
-title: //h1
-
-body: //div[@class="post-content"]/*
-
-author: //div[@class="post-author"]/img/@alt
-
-test_url: https://okfn.de/blog/2018/03/Open-Gov-Koalitionsvertrag/

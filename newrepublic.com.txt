@@ -1,8 +1,7 @@
-author: //span[@class="authors"]
-date: //span[@class="date"]
-body: //div[@class="primary"]
+author: //article//a[@itemprop="author"]
+date: //article//time[@itemprop="datePublished"]/@content
+body: //div[contains(@class, 'article-body-wrap')]
 
-strip: //div[@id="controls"]
-strip: //div[@id="read-next"]
-
+test_url: https://newrepublic.com/article/120178/problem-international-development-and-plan-fix-it
+test_contains: It seemed like such a good idea at the time
 test_url: http://www.newrepublic.com/article/112731/moocs-will-online-education-ruin-university-experience

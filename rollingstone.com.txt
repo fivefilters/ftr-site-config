@@ -1,7 +1,11 @@
 body: //div[@id='collection-items-container']
 body: //div[contains(@class, 'article-content')]
+author: //meta[@name="cXenseParse:author"]/@content
+date: //meta[@name="cXenseParse:recs:publishtime"]/@content
 
 prune: no
+
+strip: //footer
 
 next_page_link: //link[@rel="next"]/@href
 if_page_contains: //a[contains(@class, 'pagination-collection')]

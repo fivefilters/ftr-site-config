@@ -1,0 +1,6 @@
+title: //div[@id="article-body"]//div[contains(concat(' ',normalize-space(@class),' '),' title ')]
+author: //div[@id="article-body"]//div[contains(concat(' ',normalize-space(@class),' '),' byline ')]
+body: //div[@id="article-body"]
+prune: no
+
+test_url: https://www.zinio.com/explore/mindful/fall-2020-i498228/finding-space-for-memory-a6176

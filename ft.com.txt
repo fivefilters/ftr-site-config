@@ -1,6 +1,19 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__content-body ')]
 body: //div[@id='storyContent']
+date: //meta[@property="article:published_time"]/@content
+author: //p[contains(@class, 'article-info__byline')]
+author: //meta[@property="article:author"]/@content
+title: //meta[@property="og:title"]/@content
+
+prune: no
 
 strip_id_or_class: shareArt
 strip_id_or_class: promobox
+strip_id_or_class: n-content-pullquote__content
+strip_id_or_class: in-article-advert
+strip: //aside
+strip: //experimental
 
 test_url: http://www.ft.com/cms/s/2/19fe32bc-d6db-11e5-8887-98e7feb46f27.html
+test_contains: The French president said compromises
+test_url: https://www.ft.com/content/b053f55b-2a8b-436c-8154-0e93dcdb3c1a

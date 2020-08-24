@@ -1,15 +1,21 @@
-# Seems to be redirecting to articles.washingtonpost.com for many users
+# Seems to be redirecting to articles.washingtonpost.com for many users - still true?
 
+body: //div[contains(@class, 'article-body')]
+# this one doesn't appear to be in use - remove?
 body: //div[contains(@class, "article_body")]
 # print view
+body: //body[@id='print_facet']//div[@id='content']
+# this one doesn't appear to be in use - remove?
 body: //div[@id='print_facet']//div[@id='body']
 
 # this top one currently appears after JS has done its work
+# author:(//article//div[contains(@class, 'author-names')])[1]
 author://article//div[contains(@class, 'byline')]//a[contains(@class, 'author-name-link')]
 author://meta[@name='DC.creator']/@content
 author://span[@class="pb-byline"]
 author://h3[@property='dc.creator']//a[@rel='author']
 title://meta[@name='title']/@content
+date: substring-before(//article//div[contains(@class, 'display-date')], ' at ')
 date://div[contains(@class,'byline')]//span[contains(@class,'published')]/@title
 date://meta[@name="DC.date.issued"]/@content
 date://span[contains(@class,"pb-timestamp")]
@@ -20,20 +26,28 @@ http_header(Cookie): wp_devicetype=0; rplpwabt4=1; devicetype=0; osfam=0; de=; c
 
 strip://div[@class="relative primary-slot padding-top img-border gallery-container photo-wrapper"]
 strip://div[@id="wp-column six end"]
-strip://div[contains(@class,'hidden')]
+# strip://div[contains(@class,'hidden')]
 strip://div[@id='article-side-rail']
 strip://div[@class="module component todays-paper-module curved"]
 strip://div[@class="module component live-qa curved img-border"]
 strip://div[@class="module component newsletter-signup curved"]
 strip://div[@class="module featured-stories component curved img-border"]
 strip://h3[@property="dc.creator"]
+strip: //div[@data-qa="article-body-ad"]
+
+find_string: .jpg&amp;w=32"
+replace_string: .jpg&amp;w=916"
 
 strip_id_or_class: carousel
 strip_id_or_class: toolbar
 strip_id_or_class: module
 strip_id_or_class: tooltip
+strip_id_or_class: powa-wrapper
+strip_id_or_class: powa-blurb-wrapper
 
 strip: //svg
+
+# prune: no
 
 # Change gJQAwdJG4U_story.html to gJQAwdJG4U_print.html
 single_page_link: concat(substring-before(//link[@rel="canonical"]/@href, "_story.html"), "_print.html?noredirect=on")

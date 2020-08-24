@@ -1,13 +1,16 @@
 title: //meta[@property='og:title']/@content
+body: //div[@id='main']//div[contains(concat(' ',normalize-space(@class),' '),' body-content ')]
 body: //div[@itemprop="articleBody"]
 body: //img[contains(@class, 'FirstImage')] | //div[contains(@class, 'articleContent')]
 date: //meta[@property='article:published_time']/@content
+author: //meta[@name="article:author_name"]/@content
 author: //div[@id='main']//div[@class='byline']//span[@class='authorName']
 
 strip_id_or_class: RelatedArtTag
 strip_id_or_class: syndication-btn
 strip_id_or_class: inline-related
 strip_id_or_class: inline-prompt
+strip_id_or_class: sub-message
 
 strip: //amp-carousel
 strip: //amp-lightbox

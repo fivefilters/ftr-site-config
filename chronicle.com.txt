@@ -1,9 +1,14 @@
-title: //h1[contains(@class, "entry-title")]
-author: //p[contains(@class, "byline")]
+title: //meta[@property="og:title"]/@content
+author: //div[contains(@class, 'ArticleFullBleedLeadPage-authorName')]
 
 # all (?) other articles
-body: //div[@class="content-item__story"]
-date: //p[contains(@class, "dateline")]
+body: //div[contains(@class, 'RichTextArticleBody-body')]
+date: //meta[@property="article:published_time"]/@content
+
+strip_id_or_class: GoogleDfpAd-container
+strip: //div[contains(@class, 'Enhancement-item')]/div[contains(@class, 'Quote')]
+
+prune: no
 
 # note that if you're not a Chronicle subscriber (personally or institutionally), you'll only see the first couple of paragraphs of the article, and Instapaper $
 test_url: http://chronicle.com/article/In-a-Land-of-Second-Chances/128375/

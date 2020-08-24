@@ -19,10 +19,16 @@ strip_image_src: doubleclick.net
 #replace_string: </div>
 
 # convert amp image tag to html image tag
+# this is useful if AMP JS hasn't run on source HTML to do its own replacements (see below)
 find_string: <amp-img
 replace_string: <img
 find_string: </amp-img>
 replace_string: <!-- nothing -->
+
+# if the source HTML has been modified by AMP JS, there'll be nested <img> tag in <amp-img>
+# with class i-amphtml-replaced-content. Since we do our own "replacing" above, we'll
+# end up with duplicate images if we don't remove this. So let's remove it...
+strip_id_or_class: i-amphtml-replaced-content
 
 # strip all class attributes after processing (not supported in Full-Text RSS yet)
 post_strip_attr: //*/@class

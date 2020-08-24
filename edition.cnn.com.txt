@@ -1,7 +1,15 @@
+body: //section[@id="body-text"]
 body: //section[contains(@class, 'body-text')]
+author: //meta[@name="author"]/@content
+date: //meta[@name="pubdate"]/@content
+title: //meta[@property="og:title"]/@content
 
 strip_id_or_class: highlights
 strip_id_or_class: ai2html
+strip_id_or_class: ad--epic
+strip_id_or_class: zn-body__read-more
+strip_id_or_class: el__embedded--standard
+strip_id_or_class: cn-zoneAdContainer
 
 # Avoid redirecting to 'unsupported browser' page
 find_string: <meta http-equiv="refresh"

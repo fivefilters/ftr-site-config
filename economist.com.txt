@@ -1,3 +1,4 @@
+body: //div[@itemprop="text"]
 body: //div[@class='main-content']
 body: //article[contains(@class, 'resp-node')]
 date: //time[@class='date-created']
@@ -5,6 +6,9 @@ strip: //aside
 prune: no
 
 strip_id_or_class: newsletter-form--inline
+strip_id_or_class: layout-article-links
+strip_id_or_class: layout-sticky-rail
+strip_id_or_class: article__aside
 
 requires_login: yes
 

@@ -2,9 +2,11 @@ title: //meta[@name='DC.title']/@content
 title: //div[contains(@class, 'cabecera_noticia')]//h1
 date: //meta[@name='DC.date']/@content
 date: //meta[@name='date']/@content
+body: //div[contains(@class, 'article_body')]
 body: //div[@class='columna_texto']
 body: //div[@id='cuerpo_noticia']
 body: //div[@class='estructura_2col_1zq']//div[@class='margen_n']
+author: //meta[@name="author"]/@content
 
 prune: no
 
@@ -14,10 +16,12 @@ strip_id_or_class: utilidades
 strip_id_or_class: info_relacionada
 strip_id_or_class: m-kiosko
 strip_id_or_class: info_complementa
+strip_id_or_class: more_info
 
 strip: //div[starts-with(@id, 'sumario') and contains(., 'más información')]
 strip: //div[@id='coment' or @id='foros_not']
 strip: //picture//source
 
+test_url: https://elpais.com/educacion/2020-08-20/el-empeoramiento-de-la-epidemia-empuja-a-las-comunidades-a-endurecer-sus-planes-para-el-nuevo-curso.html
 test_url: http://elpais.com/elpais/2012/02/06/gente/1328526783_491687.html
 test_url: http://elpais.com/diario/2012/02/07/cultura/1328569202_850215.html

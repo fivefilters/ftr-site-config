@@ -1,11 +1,5 @@
-# doesn't look like selecting an attribute value works?
-# author: //meta[@id="authorName"]@value
+body: //div[contains(@class, 'nfl-c-article__body')]
+author: //article//a[contains(@class, 'nfl-o-author__name')]
 
-author: substring-after(//li[@id="article-hdr-meta-author"]/text(), "By ")
-date: //abbr[@id="article-time"]
-title: //div[@id="article-hdr"]/h1
-body: //div[@class="articleText"]
-
-# strip miscellaneous teasers & etc
-strip: //div[@class="removeformobile"]
-test_url: http://www.nfl.com/news/story/09000d5d82388707/article/close-shave-chiefs-haley-perseveres-through-rough-start?module=HP11_content_stream
+test_url: https://www.nfl.com/news/ravens-release-earl-thomas-sorting-out-winners-losers
+test_contains: loss to the defense of a Super Bowl contender

@@ -38,8 +38,15 @@ strip: //figure//span[.='Image' or .='Video']
 strip: //div[@aria-labelledby="modal-title"]
 strip: //button
 
+# If HTML parsed by JS... 
+# let's remove duplicate images
+strip: //div[contains(@style, "visibility: hidden")]//picture
+# let's remove inline messages
+strip: //div[@data-testid="inline-message"]
+
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
+strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
 
 prune: no
 tidy: no

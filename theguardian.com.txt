@@ -17,6 +17,8 @@ strip: //div[contains(@class, 'content-footer')]
 strip: //footer
 strip: //form
 
+strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
+
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: reveal-caption
 strip_id_or_class: readerquestions

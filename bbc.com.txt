@@ -1,10 +1,16 @@
+body: //div[contains(@class, 'article__body-content')]
 body: //div[@id="story-body"]
 # for video entries
 body: //div[contains(@class, "videoInStory") or @id="meta-information"]
+title: //meta[@property="og:title"]/@content
 title: //h1[@class="story-header"]
+
+date: //article//div[contains(@class, 'author-unit__container')]//span
 date: //span[@class="story-date"]/span[@class='date']
 # for sport site
 date: //meta[@name='DCTERMS.created']/@content
+
+author: //meta[@name="author"]/@content
 author: //div[@id='headline']//span[@class='byline-name']
 
 # recipes, e.g. http://www.bbc.co.uk/food/recipes/mymincepies_71055
@@ -29,9 +35,12 @@ strip: //form[@id='comment-form']
 strip: //div[contains(@class, 'comment-introduction')]
 strip: //div[contains(@class, 'share-tools')]
 strip: //div[@id='also-related-links']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' drop-capped ')]
 
 strip: //figcaption
 strip_id_or_class: image-and-copyright-container
+
+strip_id_or_class: article-body__pull-quote
 
 strip: //aside[contains(@class, 'sp-pullout')]
 
@@ -58,6 +67,9 @@ tidy: no
 prune: no
 
 dissolve: //h2
+
+test_url: https://www.bbc.com/worklife/article/20200121-why-procrastination-is-about-managing-emotions-not-time
+test_contains: The emotional regulation theory of procrastination
 
 test_url: http://www.bbc.com/sport/0/football/28918021
 test_contains: Cameroonian footballer Albert Ebosse has died

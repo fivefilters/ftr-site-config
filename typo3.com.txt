@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]
+date: //time[@itemprop="datepublished"]/@datetime
+
+strip_id_or_class: commentsform
+strip_id_or_class: post-meta-group-additional
+strip: //form
+
+test_url: https://typo3.com/blog/interview-our-new-project-manager-markus-kamp
