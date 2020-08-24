@@ -8,6 +8,8 @@ date: //meta[@property="article:published_time"]/@content
 strip_id_or_class: GoogleDfpAd-container
 strip: //div[contains(@class, 'Enhancement-item')]/div[contains(@class, 'Quote')]
 
+prune: no
+
 # note that if you're not a Chronicle subscriber (personally or institutionally), you'll only see the first couple of paragraphs of the article, and Instapaper $
 test_url: http://chronicle.com/article/In-a-Land-of-Second-Chances/128375/
 test_url: http://chronicle.com/blogs/wiredcampus/university-run-boot-camps-offer-students-marketable-skills-but-not-course-credit/57494
