@@ -4,6 +4,12 @@ http_header(Cookie): A3=d=AQABBFBuQF8CEKPAdo66GfNu0MU1b8SaEjcFEgABAgG3QV8MYPW6b2
 body: //div[contains(@class, 'entry__text')]
 body: //section[@id='entry-body']
 
+strip_id_or_class: promo-modal
+strip_id_or_class: evaluate-test-inline-promo
+strip_id_or_class: app-download-interstitial
+strip_id_or_class: entry-inline-subscription-module
+strip_id_or_class: teads-entry-placement
+
 prune: no
 
 test_url: https://www.huffpost.com/entry/tracking-beijings-boom-th_b_1209828
