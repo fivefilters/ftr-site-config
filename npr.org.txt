@@ -1,5 +1,5 @@
 title: //div[contains(@class, 'storytitle')]//h1
-author: //p[@class="byline"]/span
+author: //div[@aria-label="Byline"]
 body: //div[@id='primaryaudio']//*[@class='duration' or @class='download' or contains(@class, 'photo')] | //div[@id='storytext' or @id='supplementarycontent' or contains(@class, 'transcript')]
 date: //meta[@name="date"]/@content
 
@@ -21,6 +21,10 @@ replace_string(<a name="more">&nbsp;</a>): <!-- no more -->
 replace_string(<div class="transcript">): <div class="transcript"><h2>Transcript</h2>
 replace_string(<div class="transcript storytext">): <div class="transcript storytext"><h2>Transcript</h2>
 
+strip: //button
+strip_id_or_class: hide-caption
+strip_id_or_class: toggle-caption
+
 prune: no
 strip://div[@class="ecommercepop"]
 strip://span[@class="bull"]
@@ -34,4 +38,3 @@ strip://div[contains(@class, "bucketwrap internallink")]
 test_url: http://www.npr.org/blogs/thetwo-way/2011/07/12/137799301/sports-loses-its-escapist-gleam-in-a-summer-of-court-dates
 test_url: http://www.npr.org/2012/07/04/156190948/feeling-under-siege-catholic-leadership-shifts-right
 test_url: http://www.npr.org/2012/12/13/166480907/the-years-best-sci-fi-crosses-galaxies-and-genres
-test_url: http://www.npr.org/templates/story/story.php?storyId=229103221
