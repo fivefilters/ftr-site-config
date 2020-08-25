@@ -15,7 +15,7 @@ strip: //article//img[not(@src)]
 replace_string(<noscript>): <div class="ftr-noscript">
 replace_string(</noscript>): </div>
 
-strip: //h1/parent::div
+strip: (//h1/parent::div)[1]
 
 # remove duplicate images in this form... <img><noscript><img></noscript>
 # handled above, but if browser HTML is submitted, the above rules won't apply
