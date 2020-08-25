@@ -1,6 +1,9 @@
-body: //div[@class = 'article-body']
-title: //h1[@class = 'article-title']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+author: //header[contains(concat(' ',normalize-space(@class),' '),' article-header ')]//span[contains(concat(' ',normalize-space(@class),' '),' author ')]
 strip: //aside
+strip: //div[starts-with(@id, 'dfp-ad-')]
 
 test_url: http://www.newsweek.com/day-steve-mcqueen-met-his-new-nazi-neighbor-keith-moon-229741
 test_url: http://www.newsweek.com/2014/06/13/how-greylock-partners-finds-next-facebook-253329.html
