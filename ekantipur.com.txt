@@ -1,0 +1,9 @@
+title: //meta[@property="og:title"]/@content
+author: //meta[@name="web_author"]/@content
+body: (//article)[1]
+
+strip_id_or_class: leftSidebar
+strip_id_or_class: article-header
+strip_id_or_class: static-sponsor
+
+test_url: https://ekantipur.com/news/2020/08/26/159844070328089155.html
