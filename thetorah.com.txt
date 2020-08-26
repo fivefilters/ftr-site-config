@@ -1,6 +1,6 @@
 title: //h1[contains(@class, 'main-head') and @print="true"]
 author: (//div[contains(@class, 'name-art-box')])[1]
-body: //div[@id="article-box"]/div[@print="true" and (contains(@class, 'teaser')] | //div[@id="article-box"]/figure[@print="true"] | //div[contains(concat(' ',normalize-space(@class),' '),' sym-rtf ')]
+body: //div[@id="article-box"]/div[@print="true" and contains(@class, 'teaser')] | //div[@id="article-box"]/figure[@print="true"] | //div[contains(concat(' ',normalize-space(@class),' '),' sym-rtf ')]
 
 strip_id_or_class: print-don
 
