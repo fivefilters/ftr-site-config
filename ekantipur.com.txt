@@ -4,6 +4,8 @@ body: (//article)[1]
 
 replace_string(data-src="):src="
 
+strip: //span[contains(concat(' ',normalize-space(@class),' '),' author ')]
+
 strip_id_or_class: leftSidebar
 strip_id_or_class: article-header
 strip_id_or_class: static-sponsor
