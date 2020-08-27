@@ -25,6 +25,7 @@ strip_id_or_class: readerquestions
 strip_id_or_class: submeta
 strip_id_or_class: site-message
 strip_id_or_class: contributions__epic
+strip_id_or_class: youtube-media-atom__overlay
 
 strip: //figcaption
 
