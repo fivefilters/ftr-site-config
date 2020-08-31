@@ -1,0 +1,8 @@
+# This only appears after JS is processed
+body: //div[contains(@class, 'desc_div')]
+
+insert_detected_image: no
+
+prune: no
+
+test_url: https://www.thinkspot.com/discourse/OJumEP/post/spencer-t-folmar/telling-stories-that-liberate/9YtZ6zl
