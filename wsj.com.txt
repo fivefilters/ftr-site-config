@@ -22,6 +22,7 @@ strip_id_or_class: type-InsetMediaVideo
 strip_id_or_class: wsj-ad
 strip_id_or_class: bylineWrap
 strip: //amp-iframe
+strip: //*[@amp-access-hide]
 
 strip: //div[contains(@class, 'insetContent')]//cite
 strip: //*[contains(@style, 'visibility: hidden;')]
