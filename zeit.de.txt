@@ -14,6 +14,7 @@ title: //meta[@property='og:title']/@content
 date: //meta[@name='date']/@content
 
 strip: //span[@class='figure__copyright']
+strip: //aside
 
 # Self advertisements
 strip: //figure[@class='figure-stamp']
