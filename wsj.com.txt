@@ -20,6 +20,8 @@ strip_id_or_class: recipeACShopAndBuyText
 strip_id_or_class: article__byline
 strip_id_or_class: type-InsetMediaVideo
 strip_id_or_class: wsj-ad
+strip_id_or_class: bylineWrap
+strip: //amp-iframe
 
 strip: //div[contains(@class, 'insetContent')]//cite
 strip: //*[contains(@style, 'visibility: hidden;')]
@@ -28,8 +30,8 @@ strip: //div[contains(@class, 'carousel')]
 strip: //div[contains(@class, 'media-object-rich-text') and contains(./h4, "Read More")]
 
 # see https://elaineou.com/2017/01/19/how-the-twitter-app-bypasses-paywalls/
-http_header(user-agent): Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.1.32 (KHTML, like Gecko) Mobile/14C92 Twitter for iPhone
-http_header(referer): https://t.co/T1323aaaa
+#http_header(user-agent): Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.1.32 (KHTML, like Gecko) Mobile/14C92 Twitter for iPhone
+#http_header(referer): https://t.co/T1323aaaa
 
 prune: no
 tidy: no
