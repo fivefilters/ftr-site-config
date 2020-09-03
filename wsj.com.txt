@@ -1,5 +1,5 @@
 # Use AMP version
-single_page_link: //link[@rel="amphtml]/@href
+single_page_link: //link[@rel="amphtml"]/@href
 body: //main[@id="main"]//div[@itemprop="articleLead" or @itemprop="articleBody"]
 
 
