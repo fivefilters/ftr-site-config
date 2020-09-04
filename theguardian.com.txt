@@ -16,6 +16,7 @@ strip: //div[@class='content__main-column']
 strip: //div[contains(@class, 'content-footer')]
 strip: //footer
 strip: //form
+strip: //div[starts-with(@id, "qanda-")]
 
 strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
 
