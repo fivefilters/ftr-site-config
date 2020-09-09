@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' stk-post ')]
+author: //meta[@property="article:author"]/@content
+date: //meta[@property="article:published_time"]/@content
+
+prune: no
+
+test_url: https://paperpaper.ru/dw/zdaniya-i-infrastruktura-razrushayuts/

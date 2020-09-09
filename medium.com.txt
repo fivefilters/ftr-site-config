@@ -15,9 +15,16 @@ strip: //article//img[not(@src)]
 replace_string(<noscript>): <div class="ftr-noscript">
 replace_string(</noscript>): </div>
 
+# Only the first - h1 can appear later in an article
+# e.g. https://medium.com/the-shape-of-things-to-come/facilitating-communities-of-practice-from-individual-to-ecosystem-learning-outcomes-bf7b54660b08
+strip: (//h1)[1]
+strip: //svg
+
 # remove duplicate images in this form... <img><noscript><img></noscript>
 # handled above, but if browser HTML is submitted, the above rules won't apply
-strip: //article//img[@src and @role="presentation"]/following-sibling::div[@class="ftr-noscript"]
+strip: //article//img[@src]/following-sibling::*[1][self::div and @class='ftr-noscript']
+# less accurate...
+# strip: //article//img[@src]/following-sibling::div[@class="ftr-noscript"]
 
 tidy: no
 prune: no

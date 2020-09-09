@@ -37,6 +37,7 @@ strip_id_or_class: ResponsiveAd
 strip: //figure//span[.='Image' or .='Video']
 strip: //div[@aria-labelledby="modal-title"]
 strip: //button
+strip: //div[starts-with(@id, 'story-ad-')]
 
 # If HTML parsed by JS... 
 # let's remove duplicate images

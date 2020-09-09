@@ -1,0 +1,9 @@
+title: //h1[contains(@class, 'main-head') and @print="true"]
+author: (//div[contains(@class, 'name-art-box')])[1]
+body: //div[@id="article-box"]/div[@print="true" and contains(@class, 'teaser')] | //div[@id="article-box"]/figure[@print="true"] | //div[contains(concat(' ',normalize-space(@class),' '),' sym-rtf ')]
+
+prune: no
+
+strip_id_or_class: print-don
+
+test_url: https://www.thetorah.com/article/a-corpse-left-hanging-overnight-is-a-cursing-of-god

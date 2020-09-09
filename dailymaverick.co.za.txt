@@ -1,0 +1,8 @@
+author: //meta[@name="author"]/@content
+date: //meta[@name="published"]/@content
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-container ')]
+
+strip_id_or_class: lightgallery-icon
+
+test_url: https://www.dailymaverick.co.za/article/2020-08-28-revealed-the-cia-and-mi6s-secret-war-in-kenya/
+test_contains: The secretive Kenyan team is informally known as

@@ -1,0 +1,6 @@
+body: //main
+prune: no
+
+strip_id_or_class: top-panel 
+
+test_url: https://gorky.media/books-collection/5-knig-o-tom-kak-razobratsya-v-istorii-velikogo-knyazhestva-litovskogo/

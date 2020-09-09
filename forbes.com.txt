@@ -1,27 +1,15 @@
-title: //hgroup//h1
-title: //span[@class='mainarttitle']
-
-body: //div[@id='leftRail']//div[contains(@class, 'body')]
-
-author: //meta[@name="author"]/@content
-author: //span[@class='mainartauthor']
-
-date: substring-before(//hgroup//h6, '@')
-date: //span[@class='mainartdate']
+title: //meta[@property="og:title"]/@content
+body: //div[contains(concat(' ',normalize-space(@class),' '),' fs-article ')]
+author: //meta[@property="article:author"]/@content
+date: //meta[@itemprop="datePublished"]/@content
 
 prune: no
 strip: //aside
-strip_id_or_class: sticky_sharing
-strip_id_or_class: pagination
-strip_id_or_class: controlsbox
-strip_id_or_class: storyboxes
-strip_id_or_class: sponsoredlinks
-strip_id_or_class: nextpage
-strip_id_or_class: contextuallinks
-strip_id_or_class: article_actions
-strip_id_or_class: engagement_block
 
-single_page_link: //a[contains(@href, '/print/')]
+strip_id_or_class: recirc-unit
+strip: //fbs-ad
+strip: //a[contains(., 'MORE FROM FORBES')]
 
-test_url: http://www.forbes.com/forbes/2011/0509/technology-frog-design-jan-chipchase-ethnographer-birth-cool_print.html
 test_url: http://www.forbes.com/sites/bruceupbin/2012/09/11/the-iphone-5-winners-and-losers/
+test_url: https://www.forbes.com/sites/zakdoffman/2020/08/23/whatsapp-beaten-stunning-new-alternative-signal-apple-iphone-google-android-messsaging-security-upgrade-release/
+test_contains: the only update Signal has

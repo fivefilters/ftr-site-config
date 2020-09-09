@@ -16,6 +16,7 @@ strip: //div[@class='content__main-column']
 strip: //div[contains(@class, 'content-footer')]
 strip: //footer
 strip: //form
+strip: //div[starts-with(@id, "qanda-")]
 
 strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
 
@@ -25,6 +26,7 @@ strip_id_or_class: readerquestions
 strip_id_or_class: submeta
 strip_id_or_class: site-message
 strip_id_or_class: contributions__epic
+strip_id_or_class: youtube-media-atom__overlay
 
 strip: //figcaption
 

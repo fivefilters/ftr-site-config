@@ -1,0 +1,5 @@
+# use this to avoid meta redirect to badbrowser.php
+# user agent will cause a redirect to m.vk.com (mobile version) instead
+http_header(user-agent): PHP/7.2
+
+test_url: https://vk.com/noamchomskyvk?w=wall433994637_327
