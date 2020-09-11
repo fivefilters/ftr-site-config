@@ -1,0 +1,5 @@
+body: //div[@id='content--body']
+date: //div[contains(@class, 'contentHeader__publishDate')]
+
+test_url: https://www.technologyreview.com/2020/09/10/1008282/north-korea-hackers-money-laundering-cryptocurrency-bitcoin/
+test_contains: raise false alarms for investigators
