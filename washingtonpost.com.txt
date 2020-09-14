@@ -14,8 +14,10 @@ author://article//div[contains(@class, 'byline')]//a[contains(@class, 'author-na
 author://meta[@name='DC.creator']/@content
 author://span[@class="pb-byline"]
 author://h3[@property='dc.creator']//a[@rel='author']
+author://a[@class='author-name'][1]
 title://meta[@name='title']/@content
 date: substring-before(//article//div[contains(@class, 'display-date')], ' at ')
+title://h1
 date://div[contains(@class,'byline')]//span[contains(@class,'published')]/@title
 date://meta[@name="DC.date.issued"]/@content
 date://span[contains(@class,"pb-timestamp")]
