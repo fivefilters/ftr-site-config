@@ -1,5 +1,6 @@
-body: //div[@class='panel-panel panel-main-3 content-column']
-title: //div[@class='panel-pane pane-node-title']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-column ')]
+title: //div[contains(concat(' ',normalize-space(@class),' '),' pane-node-title')]
 date: //div[@class='updated-date']
 
 test_url: https://www.aclu.org/blog/free-future/chinas-nightmarish-citizen-scores-are-warning-americans
+test_url: https://www.aclu.org/press-releases/aclu-statement-amazon-face-recognition-moratorium
