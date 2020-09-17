@@ -1,7 +1,9 @@
 body: //article[contains(@class, 'main-content')]
 body: //div[contains(@class, 'blocks-area')]
+author: //meta[@name="author"]/@content
 author: //a[@class="authors-detail__display-name"]
 date://time[@class='pub-date']/@datetime
+title: //meta[@property="og:title"]/@content
 
 prune: no
 
