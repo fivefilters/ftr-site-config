@@ -1,8 +1,13 @@
+body: //article[contains(@class, 'main-content')]
 body: //div[contains(@class, 'blocks-area')]
 author: //a[@class="authors-detail__display-name"]
 date://time[@class='pub-date']/@datetime
+
+prune: no
 
 strip: //div[contains(@class, 'article-meta')]
 
 test_url: https://pitchfork.com/news/the-prodigys-keith-flint-dead-at-49/
 test_url: https://pitchfork.com/features/article/queens-bohemian-rhapsody-is-now-the-biggest-music-biopic-ever-its-also-total-bullshit/
+test_url: https://pitchfork.com/thepitch/alex-ross-wagnerism-book-interview/
+test_contains: has been translated and contested
