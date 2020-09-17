@@ -1,0 +1,8 @@
+title: //article//h1
+body: //article
+
+strip_id_or_class: entry-meta
+strip_id_or_class: post-card
+strip: //footer
+
+test_url: https://devblogs.microsoft.com/oldnewthing/?p=42203
