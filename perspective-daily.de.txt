@@ -3,6 +3,8 @@
 
 strip: //cite
 
+skip_json_ld: yes
+
 requires_login: yes
 not_logged_in_xpath: //form[@id='signupForm']
 
