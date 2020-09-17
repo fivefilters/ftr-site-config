@@ -18,7 +18,7 @@ date: //span[@class='Datum']
 date: //span[@class='Datum'],/span
 
 # Fetch full multipage articles
-next_page_link: //a[@title='Nächste Seite']
+single_page_link: //a[contains(@href, 'printPagedArticle')]
 
 # Content is here
 body: //div[@class='Artikel']
@@ -100,4 +100,5 @@ strip_id_or_class: hideMMElements
 test_url: http://www.faz.net/aktuell/feuilleton/zum-tod-von-margaret-thatcher-die-reizfigur-12141919.html#Drucken
 test_url: http://www.faz.net/aktuell/politik/inland/allensbach-analyse-im-namen-des-volkes-13106492.html
 test_url: http://www.faz.net/aktuell/feuilleton/kino/video-filmkritiken/video-filmkritik-when-animals-dream-zerrissene-jugend-13105772.html
+test_url: https://www.faz.net/aktuell/feuilleton/debatten/keine-smart-city-in-toronto-google-stadt-ist-abgesagt-16763217.html?GEPC=s5
 
