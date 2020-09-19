@@ -12,6 +12,7 @@ strip_id_or_class: inline-related
 strip_id_or_class: inline-prompt
 strip_id_or_class: sub-message
 
+strip: //aside
 strip: //amp-carousel
 strip: //amp-lightbox
 strip_id_or_class: icon-chevron
