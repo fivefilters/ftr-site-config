@@ -1,0 +1,3 @@
+body: //div[@class="block_news_main_content_preview"]
+
+test_url: https://www.vakarm.net/news/read/Choual-History-X-tout-un-cinema/10270/2
