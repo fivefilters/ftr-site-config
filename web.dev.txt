@@ -1,0 +1,8 @@
+body: //div[contains(@class, "w-post-content")]
+author: //a[@class="w-author__name-link"]
+date: //header//time
+
+strip: //div[@class="w-post-breadcrumbs"]
+strip: //div[@class="w-chips"]
+
+test_url: https://web.dev/content-visibility/
