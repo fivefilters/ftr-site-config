@@ -37,6 +37,9 @@ strip: //div[contains(@class, 'share-tools')]
 strip: //div[@id='also-related-links']
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' drop-capped ')]
 
+strip: //section[@data-component="tag-list"]
+strip: //section[@data-component="see-alsos"]
+
 strip: //figcaption
 strip_id_or_class: image-and-copyright-container
 

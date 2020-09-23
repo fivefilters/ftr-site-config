@@ -1,0 +1,2 @@
+body: //article
+test_url: https://digitalcourage.de/blog/2020/corona-apps_gastbeitrag

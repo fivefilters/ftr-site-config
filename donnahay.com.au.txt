@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' recipe-panel '))]
+title: //div[(contains(concat(' ',normalize-space(@class),' '),' recipe-title__mobile '))]
+strip_id_or_class: modal
+strip_id_or_class: hide-print

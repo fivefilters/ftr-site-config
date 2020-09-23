@@ -3,5 +3,7 @@
 # Source: http://siteconfig.fivefilters.org/grab.php?url=http%3A%2F%2Fwww.linux-community.de%2Fausgaben%2Flinuxuser%2F2012%2F08%2Fahnenforschung-mit-der-genealogie-software-gramps%2F
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-content ')]
+title: //h1[@class="entry-title"]
+strip_id_or_class: fusion-post-medium
 next_page_link: //link[contains(@rel, 'next')]/@href
 test_url: http://www.linux-community.de/ausgaben/linuxuser/2012/08/ahnenforschung-mit-der-genealogie-software-gramps/
