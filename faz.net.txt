@@ -55,6 +55,7 @@ strip_id_or_class: SocialMediaStatus
 strip_id_or_class: RelatedLinkBox
 strip_id_or_class: MultimediaNavigation
 strip_id_or_class: IndexTitel
+strip_id_or_class: cbx-Author-is-in-article-container-info
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
@@ -67,6 +68,12 @@ strip_id_or_class: ArtikelBild610
 strip_id_or_class: MediaLink
 strip_id_or_class: FotoBoxInnerLeft
 strip_id_or_class: BilderRelatedLinks
+# Handle <img src='https://www.faz.net/img/leer.gif' width='62' data-retina-src='[real img URL]'
+strip_attr: //img/@width
+strip_attr: //img/@height
+find_string: src='https://www.faz.net/img/leer.gif'
+replace_string: removed-src=''
+replace_string(data-retina-src=): src= 
 
 # Remove clutter after article
 strip_id_or_class: ArticlePagerBottom
