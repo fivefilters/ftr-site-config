@@ -1,31 +1,15 @@
-#Single Page
-single_page_link: //li[contains(@class,"hcf-print")]/a
+body: //div[@itemprop="articleBody"]
+author: //meta[@name="vr:author"]/@content
+date: //span[@itemprop="datePublished"]/@content
+title: //meta[@property="og:title"]/@content
 
-# Title  hcf-headline
-title: //span[@class='hcf-headline']
+# fix image lazy loading
+find_string: data-src="
+replace_string: src="
 
-# Authors 
-author: //div[@class="hcf-author"]/a/text()
-author: substring-after(//div[@class='hcf-author'], 'von ')
-
-# Date 
-date: //div[@class='hcf-article-date']
-
-# Body
-body: //div[@class='article']
-
-# General removements
-strip: //div[contains(@class,"hcf-smartbox")]
-strip: //div[contains(@class,"hcf-stopper")]
-strip: //div[contains(@class,"hcf-img-controls")]
-strip: //span[@class='hcf-location-mark']
-strip: //span[@class='hcf-copyright']
-strip: //div[@class='hcf-copyright']
-strip: //div[@class='hcf-origin']
-
-
-
+prune: no
 
 # Fix picture captions
-wrap_in(small): //div[@class="hcf-caption"]
+# wrap_in(small): //div[@class="hcf-caption"]
 test_url: http://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-zum-emissionshandel-kurskorrekturen-fuehren-zum-kentern/8044326.html
+test_url: https://www.handelsblatt.com/politik/deutschland/flughafen-berlin-brandenburg-vier-milliarden-euro-mehr-neun-jahre-zu-spaet-die-wichtigsten-fakten-zum-start-des-ber/26205178.html
