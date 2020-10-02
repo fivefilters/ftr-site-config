@@ -1,5 +1,11 @@
 title: //h1
-body: //div[@id='cuerpo_noticia']/p
-skip_json_ld: yes
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-main ')]/div
+
+strip: //article
+strip_id_or_class: Article__socialShareContent
+strip_id_or_class: enPortada
+strip_id_or_class: stocks_Related
+strip_id_or_class: Article__authors
+strip_id_or_class: Article_time
 
 test_url: http://www.eleconomista.es/construccion-inmobiliario/noticias/9052821/04/18/Asi-es-el-puente-maritimo-mas-largo-del-mundo-luces-y-sombras-del-viaducto-que-unira-Macao-Hong-Kong-y-Zhuhai.html
