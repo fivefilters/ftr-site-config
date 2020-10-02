@@ -1,0 +1,4 @@
+title: //h1[@class="c-article-body__title"]
+author: //div[@class="c-article-meta"]//p[@class="c-article-meta__author"]
+
+test_url: https://www.fairphone.com/en/2020/09/30/behind-the-scenes/
