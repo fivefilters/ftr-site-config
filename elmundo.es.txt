@@ -4,5 +4,6 @@ author: //li[@class='author-name']
 
 strip: //figure[0]
 strip: //aside
+strip_id_or_class: ue-c-article__trust
 
 test_url: http://www.elmundo.es/cataluna/2018/01/14/5a5b3be9e5fdea3f118b45c6.html
