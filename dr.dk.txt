@@ -1,10 +1,14 @@
+title: (//h1[contains(@class, 'hydra-latest-news-page-short-news__title')])[1]
 title: //meta[@property='og:title']/@content
 author: //div[@class='articleFunctions']//a
 date: //meta[@property="article:published_time"]/@content
 
 body: //div[@itemprop="articleBody"]
-body: (//article[contains(@class, 'hydra-latest-news-page-short-news')])[1]
+body: (//div[contains(@class, 'hydra-latest-news-page-short-news__body')])[1]
 body: (//article)[1]
+
+strip_id_or_class: hydra-latest-news-page-short-news__meta
+strip_id_or_class: hydra-latest-news-page-short-news__a11y
 
 prune: no
 tidy: no
