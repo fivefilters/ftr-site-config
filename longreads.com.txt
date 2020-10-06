@@ -1,0 +1,10 @@
+body: //section[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+date: //meta[@property="article:published_time"]/@content
+
+prune: no
+
+strip_id_or_class: pullquote
+strip_id_or_class: jp-post-flair
+strip_id_or_class: sharedaddy
+
+test_url: https://longreads.com/2019/10/22/the-final-five-percent/

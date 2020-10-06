@@ -1,10 +1,12 @@
 title: //h1
 date: //meta[@name='PublishedDate']/@content
-body: //div[@class='constrained']
+body: //main
 
+strip_id_or_class: breadcrumbs
 strip_id_or_class: mobile-only
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: panel--related-content
+strip_id_or_class: community-entry-point
 strip_id_or_class: relative
 strip_id_or_class: yellow-boutique
 
