@@ -4,5 +4,12 @@ strip_id_or_class: native-ad
 strip_id_or_class: newsletter_youngtimer
 strip_id_or_class: block-auteur
 strip_id_or_class: title-block
+strip_id_or_class: teaser-x-items
+strip_id_or_class: newsletter-atp
+strip_id_or_class: occasion
+strip: //link
+
+replace_string(<h2): <p
+replace_string(</h2>): </p>
 
 test_url: https://www.autoplus.fr/peugeot/3008/actualite/Peugeot-3008-SUV-Scoop-Equipements-1549589.html
