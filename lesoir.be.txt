@@ -1,0 +1,12 @@
+title: //h1//text()
+date: //time[contains(concat(' ',normalize-space(@class),' '),' pubdate ')]
+author: //p[contains(concat(' ',normalize-space(@class),' '),' gr-meta-author ')]
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' gr-article-teaser ')] | //div[contains(concat(' ',normalize-space(@class),' '),' gr-main-media ')] | //div[contains(concat(' ',normalize-space(@class),' '),' gr-article-content ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' gr-ads-inread ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' gr-newsletter-inread ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' gr-linked-stories ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' gr-free-tags ')]
+
+test_url: https://www.lesoir.be/art/1137303/article/debats/cartes-blanches/2016-03-01/neoliberalisme-est-un-fascisme
+test_url: https://www.lesoir.be/330356/article/2020-10-08/wibra-belgique-declare-faillite
