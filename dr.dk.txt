@@ -1,9 +1,18 @@
+title: (//h1[contains(@class, 'hydra-latest-news-page-short-news__title')])[1]
 title: //meta[@property='og:title']/@content
 author: //div[@class='articleFunctions']//a
-date: //meta[@name='pubdate']/@content
+date: //meta[@property="article:published_time"]/@content
 
-# Can you strip elements from the body only? It is required here (`//div[@class='articleContent']/p` breaks for some reason)
-body: //div[@class='articleContent']
+body: //div[@itemprop="articleBody"]
+body: (//div[contains(@class, 'hydra-latest-news-page-short-news__body')])[1]
+body: (//article)[1]
 
+strip_id_or_class: hydra-latest-news-page-short-news__meta
+strip_id_or_class: hydra-latest-news-page-short-news__a11y
+
+prune: no
 tidy: no
+
 test_url: http://www.dr.dk/Nyheder/Udland/2011/10/24/150115.htm
+test_url: https://www.dr.dk/nyheder/seneste/fire-maaneder-paa-flugt-politiet-efterlyser-farlig-person
+test_contains: en konflikt mellem Loyal to Familia
