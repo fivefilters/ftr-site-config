@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__content ')]
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+
+strip_id_or_class: rail--trending
+strip_id_or_class: advert-wrapper
+
+test_url: https://www.thesun.co.uk/money/12915940/martin-lewis-coronavirus-payment-500/
