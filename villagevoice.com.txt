@@ -1,0 +1,10 @@
+title: //meta[@property="og:title"]/@content
+date: (//time[contains(@class, "c-sHeader__date-published")])[1]
+body: //div[@id="js-Content"]
+
+strip_id_or_class: u-skip
+strip_id_or_class: c-relatedPostList
+
+prune: no
+
+test_url: https://www.villagevoice.com/2020/09/29/robert-mitchum-a-seasoned-champion/
