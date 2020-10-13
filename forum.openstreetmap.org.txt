@@ -1,2 +1,4 @@
 next_page_link: //link[@rel='next']/@href
+test_url: https://forum.openstreetmap.org/viewtopic.php?id=69069
+test_contains: I also experience heavy lags in refreshing standard layer
 
