@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
+
+prune: no
+
+test_url: https://www.greaterwrong.com/posts/BHqzGLNyQHjDXhEc8/is-stupidity-expanding-some-hypotheses
