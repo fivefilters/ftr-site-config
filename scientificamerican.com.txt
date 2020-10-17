@@ -6,6 +6,6 @@ date: //time[@itemprop="datePublished"]/@content
 prune: no
 
 strip_id_or_class: dfp-article-ad
-strip_id_or_class: newsletter-promo
+strip: //figure[contains(@class, 'newsletter-promo')]
 
 test_url: https://www.scientificamerican.com/article/what-if-a-pill-can-change-your-politics-or-religious-beliefs/
