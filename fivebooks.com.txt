@@ -1,4 +1,5 @@
 body: //article[contains(@class, 'complete-interview')]
+title: //h1[contains(@class, 'interview-title']
 title: //meta[@property="og:title"]/@content
 
 strip: //ul[contains(@class, 'book-covers')][.//div[contains(@class, 'picture')]]
