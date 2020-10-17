@@ -1,4 +1,8 @@
 body: //div[@id='js-article-text']
+author: //meta[@name="author"]/@content
+date: //meta[@property="article:published_time"]/@content
+title: //meta[@property="og:title"]/@content
+
 strip: //div[@class='explore-links']
 strip: //div[@id='js-article-text']/br[position()=1]
 strip_id_or_class: print-or-mail-links
@@ -13,9 +17,13 @@ strip_id_or_class: reader-comments
 strip_id_or_class: most-watched
 strip_id_or_class: most-read
 
+strip: //noscript
+strip: //div[@itemprop="video"]
+
 find_string:blkBorder img-share
 replace_string: nothing
 
 tidy: no
 
-test_url: http://www.dailymail.co.uk/news/article-1375423/Royal-wedding-Texan-billionaire-Joe-Albritton-invited-Prince-Charles.html
+test_url: https://www.dailymail.co.uk/news/article-1375423/Royal-wedding-Texan-billionaire-Joe-Albritton-invited-Prince-Charles.html
+test_url: https://www.dailymail.co.uk/news/article-8850463/Paris-attack-Islamist-terrorist-asked-pupils-point-teacher-beheading-him.html
