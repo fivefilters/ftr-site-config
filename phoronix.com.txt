@@ -4,6 +4,5 @@
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]
 author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]/a[1]
-#next_page_link: //div[contains(concat(' ',normalize-space(@class),' '),' pagination ')]/a[2]
 next_page_link: //div[@id='content-bg']/div/div[@id='main-wrap']/div/article/div[@class="foot"]/div/a[@title="Go To Next Page"]
 test_url: https://www.phoronix.com/scan.php?page=article&item=clear-fall-2020&num=8
