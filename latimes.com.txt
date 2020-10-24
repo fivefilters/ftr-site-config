@@ -1,11 +1,13 @@
-strip: //div[@id="tugs_story_display"]
-strip: //div[@id="search_overlay"]
-strip: //div[@id="adv_search"]
-body: //div[@class='story']
-tidy: no
-convert_double_br_tags: yes
-single_page_link: //a[contains(@href, ',print.')]
-strip: //p[starts-with(., 'latimes.com')]
-strip: //h1[starts-with(., 'latimes.com')]
-strip_id_or_class: cubead
-test_url: http://www.latimes.com/news/opinion/commentary/la-oe-gartonash-wilders-20110512,0,2876761.story
+body: //div[contains(@class, 'page-article-body-inner')]
+body: //div[contains(@class, 'page-article-body')]
+author: //div[contains(@class, "author-bio")]//div[contains(@class, "author-name")]
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+
+strip_id_or_class: google-dfp-ad-wrapper
+
+prune: no
+
+test_url: https://www.latimes.com/opinion/la-xpm-2011-may-12-la-oe-gartonash-wilders-20110512-story.html
+test_url: https://www.latimes.com/world-nation/story/2020-10-22/china-xi-jinping-mao-zedong-communist-party
+test_contains: Xi Zhongxun lived through hellish periods of internal party factionalism
