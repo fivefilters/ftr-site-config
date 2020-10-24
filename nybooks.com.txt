@@ -3,6 +3,7 @@ author: //meta[@name="author"]/@content
 title: //meta[@property="og:title"]/@content
 
 strip_id_or_class: inline-ad
+strip_id_or_class: read-more
 
 prune: no
 
