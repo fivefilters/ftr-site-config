@@ -5,6 +5,7 @@ title: //meta[@property="og:title"]/@content
 date: //meta[@property="article:published_time"]/@content
 
 strip_id_or_class: google-dfp-ad-wrapper
+strip_id_or_class: promo-large
 
 prune: no
 
