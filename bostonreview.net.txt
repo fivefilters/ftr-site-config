@@ -1,0 +1,13 @@
+body: //div[@id="detail-intro" or @id="detail-body"]
+author: //meta[@name="dcterms.creator"]/@content
+date: //meta[@property="article:published_time"]/@content
+title: //meta[@property="og:title"]/@content
+
+prune: no
+
+strip: //pullquote
+strip_id_or_class: detail-secondary-mobile
+strip_id_or_class: most-related-view-mobile
+
+test_url: https://bostonreview.net/philosophy-religion-gender-sexuality/vivian-gornick-obligation-self-discovery
+test_contains: Upon its publication, first in French in 1949
