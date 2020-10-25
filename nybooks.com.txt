@@ -1,13 +1,12 @@
-strip_id_or_class: sIFR-alternate
-title: //div[@id='page-title-wrapper']/div[@id='page-title']/h2
-single_page_link: //a[contains(@href, 'pagination=false') and not(contains(@href, 'printpage=true'))]
+body: //article//div[contains(@class, 'review-items')] | //div[contains(@class, 'article-main-content')]
+author: //meta[@name="author"]/@content
+title: //meta[@property="og:title"]/@content
 
-body: //div[@id = 'article-body']
-strip_id_or_class:article-tools
-strip_id_or_class:js_target
-strip_id_or_class:marker
-author://div[@id = 'page-title']/h3
-date://div[@id = 'page-title']/h5/a[starts-with(@href,'/issues/')]
+strip_id_or_class: inline-ad
+strip_id_or_class: read-more
 
+prune: no
 
 test_url: http://www.nybooks.com/articles/archives/2012/feb/23/were-more-unequal-you-think/
+test_url: https://www.nybooks.com/articles/2020/11/05/the-hide-that-binds/
+test_contains: She had suspected this, since its story was so distinctive.

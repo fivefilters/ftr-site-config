@@ -1,0 +1,9 @@
+body: //body
+
+prune: no
+
+strip: //div[contains(@class, 'vue-app')]
+strip_id_or_class: download-pdf-row
+
+test_url: http://dispatchesjournal.org/articles/blackout-the-necropolitics-of-extraction/
+test_contains: one would be right to question if these instances of volunteerist

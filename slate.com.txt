@@ -1,10 +1,8 @@
-title: //h1[@class="sl-art-head-dek"]
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+date: //header[@id="article_header"]//div[@class="pub-date"]
 body: //div[@itemprop="mainEntityOfPage"]
-body: //article//div[@class='sl-art-body']/div[contains(@class, 'body')]
-strip: //div[@class="department_kicker"]
-strip: //div[@id="insider_ad_wrapper" or @id="insider_ad_inner"]
-strip: //div[@id="bottom_sponsored_links"]
-strip: //div[@class="sl-art-ad-midflex"]
+body: //article//section[contains(@class, 'content')]
 strip: //aside[contains(@class, 'in-article-recirc')]
 #strip: //dl
 #strip: //p[em/a[contains(@href, 'facebook.com')]]
@@ -18,13 +16,14 @@ replace_string(</noscript>):</div>
 strip_id_or_class: slate-megaphone
 strip_id_or_class: social-share
 strip_id_or_class: slate-kicker-promo
+strip_id_or_class: tablet-ad
 
 http_header(Cookie): GDPR_consent=1
 
 author: //meta[@name="author"]/@content
 author: //a[contains(@href, '/author')]
 
-date: //meta[@property="article:published_time"]/@content
+
 
 test_url: https://slate.com/news-and-politics/2020/08/joe-biden-empathy-candidate.html
 test_contains: So many Americans are exhausted

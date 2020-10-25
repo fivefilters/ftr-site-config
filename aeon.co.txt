@@ -1,0 +1,10 @@
+date: //time[contains(@class, 'article__date published')]/@datetime
+body: //div[contains(@class, 'article__body__content')]
+
+prune: no
+
+strip_id_or_class: newsletter-signup
+strip_id_or_class: pullquote
+strip_id_or_class: article__shares
+
+test_url: https://aeon.co/essays/how-did-creativity-become-an-engine-of-economic-growth

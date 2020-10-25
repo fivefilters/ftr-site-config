@@ -1,0 +1,8 @@
+author: //meta[@property="article:author"]/@content
+date: //meta[@name="dcterms.Date"]/@content
+
+body: //div[contains(@class, 'o-titleBar-summary') or contains(concat(' ',normalize-space(@class),' '),' c-userContent ') or contains(concat(' ',normalize-space(@class),' '),' c-auxContent ')]
+
+prune: no
+
+test_url: https://www.poetryfoundation.org/poetrymagazine/articles/154200/impossible-word-toward-a-poetics-of-aphasia

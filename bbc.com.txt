@@ -1,3 +1,4 @@
+body: //article[contains(@class, "-ArticleWrapper")]
 body: //div[contains(@class, 'article__body-content')]
 body: //div[@id="story-body"]
 # for video entries

@@ -1,0 +1,5 @@
+date: //meta[@itemprop="datePublished]/@content
+title: //meta[@property="og:title"]/@content
+author: (//h1[@itemprop="author"])[1]
+
+test_url: https://literaryreview.co.uk/the-woolworths-poltergeist

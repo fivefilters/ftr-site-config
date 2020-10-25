@@ -6,8 +6,14 @@ date: //meta[@property="article:published_time"]/@content
 # Remove Google Publisher Tags: https://support.google.com/dfp_sb/answer/1649768?hl=en
 #strip_id_or_class: div-gpt-ad
 
+# Strip Google ads
+strip: //*[contains(@class, 'google-dfp-ad-wrapper')]
+
 # Strip doubleclick image ads
 strip_image_src: doubleclick.net
+
+# Strip WordPress ShareDaddy elements
+strip_id_or_class: sharedaddy
 
 # If you get chunks of Javascript code appearing in the extracted output, try uncommenting the lines below.
 # This tries to convert script tags to hidden div elements (which Full-Text RSS removes).
