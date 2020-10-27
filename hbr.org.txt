@@ -1,7 +1,15 @@
-title: //div[@id='article-title']
-author: //div[@id='articleAuthors']
-body: //div[@id='article']
-strip: //div[@class='module wide']
-#single_page_link: //a[@class='social-print']
+title: //meta[@property="og:title"]/@content
+author: //stream-item/@data-authors
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
+date: //meta[@property="article:published_time"]/@content
+
+strip_id_or_class: hide-for-print
+strip_id_or_class: is-hidden
+strip_id_or_class: translate-message
+
+strip: //article-ideainbrief
+
 test_url: http://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs/ar/
 test_url: http://hbr.org/2013/03/big-bang-disruption/ar/
+test_url: https://hbr.org/2020/11/how-apple-is-organized-for-innovation
+test_contains: individual and team reputations act as a control mechanism
