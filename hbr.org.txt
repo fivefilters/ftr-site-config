@@ -9,6 +9,8 @@ strip_id_or_class: translate-message
 
 strip: //article-ideainbrief
 
+prune: no
+
 test_url: http://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs/ar/
 test_url: http://hbr.org/2013/03/big-bang-disruption/ar/
 test_url: https://hbr.org/2020/11/how-apple-is-organized-for-innovation
