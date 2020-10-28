@@ -1,6 +1,7 @@
 body: //div[contains(@class, 'story_content')]
 
 strip_id_or_class: story-ad-container
+strip_id_or_class: new_share_widget
 strip: //pre
 
 prune: no
