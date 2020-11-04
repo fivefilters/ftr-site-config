@@ -19,6 +19,7 @@ body: //div[contains(@class, 'hrecipe')]//div[@id='subcolumn-1']
 
 strip: //article//header
 strip: //div[contains(@class, "CommentsWrapper")]
+strip: //*[contains(@class, 'VisuallyHidden')]
 
 #strip: //div[@class="story-feature narrow"]
 #strip: //div[@class="story-feature wide"]
