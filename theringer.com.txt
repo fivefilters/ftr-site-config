@@ -11,3 +11,4 @@ strip_id_or_class: newsletter-signup-short-form
 prune: no
 
 test_url: https://www.theringer.com/music/2020/10/30/21542521/ariana-grande-position-exit-survey-review
+test_contains: The melody is absolutely infectious
