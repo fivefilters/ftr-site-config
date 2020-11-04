@@ -18,6 +18,7 @@ author: //div[@id='headline']//span[@class='byline-name']
 body: //div[contains(@class, 'hrecipe')]//div[@id='subcolumn-1']
 
 strip: //article//header
+strip: //div[contains(@class, "CommentsWrapper")]
 
 #strip: //div[@class="story-feature narrow"]
 #strip: //div[@class="story-feature wide"]
