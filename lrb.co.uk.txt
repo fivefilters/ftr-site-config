@@ -1,12 +1,9 @@
-title: //div[contains(@class, "article-body")]/hgroup/h1
-body: //div[contains(@class, "article-body")]
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+author: //meta[@property="article:author"]/@content
+body: //main[@itemprop="articleBody"]/div[contains(@class, 'article-copy')]
+body: //main[@itemprop="articleBody"]
 
-date: substring-after(//p[@class="meta-info"]/a, '· ')
-
-author: //p[@class='intro']/a[contains(@rel, 'author')]/@content
-
-strip_id_or_class: print-hide
-strip_id_or_class: books
 strip_id_or_class: article-share
 
 test_url: http://www.lrb.co.uk/v33/n18/james-meek/its-already-happened
