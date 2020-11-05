@@ -1,7 +1,19 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article__body ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+title: //meta[@property="og:title"]/@content
+date: //meta[@name="dc.date"]/@content
+date: //meta[@name="prism.publicationDate"]/@content
 author: //meta[@name='dc.creator']/@content
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__body ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 
 strip: //div[contains(concat(' ',normalize-space(@id),' '),' further-reading-section ')]
 
+# Don't duplicate images
+find_string: data-src="
+replace_string: src="
+strip: //noscript
+
+prune: no
+
 test_url: https://www.nature.com/articles/d41586-019-01307-2
 test_url: https://www.nature.com/npp/journal/v42/n11/full/npp201786a.html
+test_url: https://www.nature.com/articles/d41586-020-03050-5
+test_contains: A precociously gifted child
