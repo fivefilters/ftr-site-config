@@ -7,6 +7,7 @@ author: //p[@class='intro']/a[contains(@rel, 'author')]/@content
 
 strip_id_or_class: print-hide
 strip_id_or_class: books
+strip_id_or_class: article-share
 
 test_url: http://www.lrb.co.uk/v33/n18/james-meek/its-already-happened
 test_url: http://www.lrb.co.uk/v36/n13/benjamin-kunkel/paupers-and-richlings
