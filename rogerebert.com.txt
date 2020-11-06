@@ -8,3 +8,4 @@ strip_id_or_class: disqus_thread
 
 test_url: https://www.rogerebert.com/reviews/great-movie-blade-runner-the-final-cut-1982
 test_url: https://www.rogerebert.com/far-flung-correspondents/a-little-black-dress-makes-the-world-go-round
+test_contains: With the passing of Andy Williams
