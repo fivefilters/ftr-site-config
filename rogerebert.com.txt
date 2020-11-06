@@ -1,5 +1,6 @@
 author: //meta[@name='author']/@content
-body: //div[contains(@class, 'ads--reviewPage')]
+# body: //div[contains(@class, 'ads--reviewPage')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' page-content ')]
 date: //div[contains(@class, 'page-content--byline-share--byline')]//time
 
 strip_id_or_class: advertisement
