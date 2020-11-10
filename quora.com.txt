@@ -1,3 +1,5 @@
+# Update .quora.com.txt for language-specific sites (e.g. sv.quora.com)
+
 tidy: no
 prune: no
 body: //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_header ')] | //div[contains(concat(' ',normalize-space(@class),' '),' qu-userSelect--text ')][.//a] | //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_content ')]
