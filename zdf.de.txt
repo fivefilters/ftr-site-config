@@ -4,6 +4,8 @@ author: //div[contains(concat(' ',normalize-space(@class),' '),' author-wrap ')]
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' b-post-content ')]
 
+strip_id_or_class: b-heute-video
+strip_id_or_class: b-content-module
 prune: no
 
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' content-item ') and (contains(concat(' ',normalize-space(@class),' '),' grid-x ')) and (contains(concat(' ',normalize-space(@class),' '),' m-clickarea '))]
