@@ -1,6 +1,6 @@
 tidy: no
 prune: no
-body: //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_header ')] | //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_content ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_header ')] | //div[contains(concat(' ',normalize-space(@class),' '),' qu-userSelect--text ')][.//a] | //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_content ')]
 
 strip_id_or_class: AnswerFooter
 strip_id_or_class: ActionBar
