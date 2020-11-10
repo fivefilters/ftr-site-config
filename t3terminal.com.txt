@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-detail-wrap ')]//div[contains(concat(' ',normalize-space(@class),' '),' blog-detail-container ')]
+
+prune: no
+
+test_url: https://t3terminal.com/blog/typo3-interview-jochen-weiland/
