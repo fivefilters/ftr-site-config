@@ -2,6 +2,7 @@
 
 tidy: no
 prune: no
+title: (//span[contains(@class, 'TitleText')])[1]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_header ')] | //div[contains(concat(' ',normalize-space(@class),' '),' qu-userSelect--text ')][.//a] | //div[contains(concat(' ',normalize-space(@class),' '),' spacing_log_answer_content ')]
 
 strip_id_or_class: AnswerFooter
