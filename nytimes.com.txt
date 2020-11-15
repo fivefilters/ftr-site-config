@@ -38,6 +38,7 @@ strip: //figure//span[.='Image' or .='Video']
 strip: //div[@aria-labelledby="modal-title"]
 strip: //button
 strip: //div[starts-with(@id, 'story-ad-')]
+strip: //aside
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
