@@ -1,0 +1,15 @@
+author: //meta[@name="author"]/@content
+title: //meta[@property="og:title"]/@content
+body: //h3[contains(concat(' ',normalize-space(@class),' '),' subtitle ')] | //div[contains(concat(' ',normalize-space(@class),' '),' body ')]
+
+# Clean Twitter embeds
+strip: //div[contains(@class, 'tweet-footer')]//span
+strip_id_or_class: expanded-link-description
+strip_id_or_class: expanded-link-domain
+
+strip_id_or_class: subscribe-widget
+
+prune: no
+
+test_url: https://taibbi.substack.com/p/glenn-greenwald-on-his-resignation
+test_contains: Greenwald, by then furious, noted that neither Maass nor Reed had identified a factual inaccuracy

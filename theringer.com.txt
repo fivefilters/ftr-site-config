@@ -1,0 +1,14 @@
+author: //meta[@property="author"]/@content
+date: //meta[@property="article:published_time"]/@content
+title: //meta[@property="og:title"]/@content
+body: //article//figure[contains(@class, 'e-image--hero')] | //article//p[contains(@class, 'c-entry-summary')] | //div[contains(@class, 'c-entry-content')]
+
+strip: //aside
+
+strip_id_or_class: c-newsletter_signup_box
+strip_id_or_class: newsletter-signup-short-form
+
+prune: no
+
+test_url: https://www.theringer.com/music/2020/10/30/21542521/ariana-grande-position-exit-survey-review
+test_contains: The melody is absolutely infectious

@@ -1,0 +1,8 @@
+strip: //h1
+strip: //div[@class="info"]
+strip: //div[@class="osd-sms-wrapper"]
+strip: //div[@id="sidebar"]
+strip: //div[@id="postnavi"]
+strip: //form[@id="commentform"]
+
+test_url: https://nicj.net/cumulative-layout-shift-in-practice/

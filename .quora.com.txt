@@ -1,4 +1,4 @@
-# Update .quora.com.txt for language-specific sites (e.g. sv.quora.com)
+# Update quora.com.txt for main site
 
 tidy: no
 prune: no

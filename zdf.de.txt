@@ -1,0 +1,14 @@
+title: //meta[@property="og:title"]/@content
+date: //meta[@name="zdf:publicationDate"]/@content
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author-wrap ')]//div//span
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' b-post-content ')]
+
+strip_id_or_class: b-heute-video
+strip_id_or_class: b-content-module
+prune: no
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' content-item ') and (contains(concat(' ',normalize-space(@class),' '),' grid-x ')) and (contains(concat(' ',normalize-space(@class),' '),' m-clickarea '))]
+
+test_url: https://www.zdf.de/nachrichten/politik/coronavirus-maskenpflicht-draussen-faktencheck-100.html
+test_contains: Entsprechend deuteten Untersuchungen
