@@ -45,7 +45,7 @@ native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
 skip_json_ld: yes
 
 #multi-page article (not multi-page anymore)
-test_url: http://www.theatlantic.com/magazine/archive/2014/12/the-real-roots-of-midlife-crisis/382235/
+test_urls: http://www.theatlantic.com/magazine/archive/2014/12/the-real-roots-of-midlife-crisis/382235/
 test_contains: The curve tends to evince itself
 
 test_url: https://www.theatlantic.com/technology/archive/2011/04/want-to-see-how-crazy-a-bot-run-market-can-be/237773/
