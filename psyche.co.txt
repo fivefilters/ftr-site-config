@@ -1,0 +1,9 @@
+title: //meta[@property="og:title"]/@content
+date: //div[contains(@class, 'guides__PublishedDate')]
+body: //div[contains(@class, 'guides__SectionsContainer')]
+strip: //*[contains(@class, 'styled__Sidebar)]
+strip: //*[contains(@class, 'styled__GuideNav)]
+strip: //*[contains(@class, 'SocialMetaWrapper')]
+
+test_url: https://psyche.co/guides/use-mediation-techniques-to-overcome-the-muck-of-blame-and-anger
+test_contains: I have helped people have difficult conversations for more than 20 years
