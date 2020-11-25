@@ -1,0 +1,11 @@
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+
+body: //div[@id="jsStoryContentContainer"]
+body: //div[contains(@class, 'article__content__blocks')]
+
+strip_id_or_class: article-footnote
+
+prune: no
+
+# Articles are behind a paywall
