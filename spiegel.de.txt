@@ -8,6 +8,9 @@ author: //meta[@name="author"]/@content
 date: //meta[@name="date"]/@content
 body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loose')] | //div[@data-article-el="body"]
 
+strip_id_or_class: jwplayer
+
+strip: //div[@data-component="JWPlayer"]
 strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
 strip: //aside
