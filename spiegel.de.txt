@@ -17,6 +17,7 @@ replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
 strip: //img[contains(concat(" ", normalize-space(@class), " "), " lazyload ")]
 
+strip: //svg
 strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
 strip: //aside
