@@ -1,0 +1,9 @@
+title: //meta[@property="og:title"]/@content
+date: //time[@datetime]/@datetime
+body: //main[@id="main"]//div[contains(@class, '')]
+
+strip_id_or_class: ab-toc
+
+prune: no
+
+test_url: https://www.alberta.ca/release.cfm?xID=7579378EB135E-E6C1-8702-086FA782A1D024EA
