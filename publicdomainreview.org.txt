@@ -1,0 +1,9 @@
+body: //div[contains(@class, 'essay-body') or contains(@class, 'essay-intro')]
+title: //meta[@property="og:title"]/@content
+date: //div[@class="essay-intro"]/p[@class="date"]
+author: //div[@class="essay-header"]/p[@class="byline"]/a
+
+prune: no
+
+test_url: https://publicdomainreview.org/essay/fungi-folklore-and-fairyland
+test_contains: By chance a physician named Everard Brande
