@@ -39,6 +39,9 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page ')]
 strip: //a[@href='#']
 strip: //form[@id='newsletter-teaser-form']
 strip_id_or_class: 'article-pagination article__item'
+strip_id_or_class: js-videoplayer
+strip: //figure[@data-video-provider="brightcove"]
+strip: //a[contains(concat(' ',normalize-space(@class),' '),' faq-link ')]
 
 test_url: http://www.zeit.de/kultur/film/2012-12/Kurzfilmtag
 test_contains: In drei Minuten die Welt erobern
