@@ -8,6 +8,16 @@ author: //meta[@name="author"]/@content
 date: //meta[@name="date"]/@content
 body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loose')] | //div[@data-article-el="body"]
 
+# Remove video with lots of inner tags
+strip_id_or_class: jwplayer
+strip: //div[@data-component="JWPlayer"]
+
+# Remove lazy-loaded image tags, favouring image in <noscript> elements
+replace_string(<noscript>): <!-- noscript -->
+replace_string(</noscript>): <!-- /noscript -->
+strip: //img[contains(concat(" ", normalize-space(@class), " "), " lazyload ")]
+
+strip: //svg
 strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
 strip: //aside

@@ -2,5 +2,12 @@
 # Place this file inside your site_config/custom/ folder
 # Source: http://siteconfig.fivefilters.org/grab.php?url=http%3A%2F%2Fwww.notebookcheck.net%2FLenovo-ThinkPad-X1-Carbon-Ultrabook-Review.138033.0.html
 
-body: //div[@id='nbc_maincontent']
+body: //div[@id='content']
+
+strip_id_or_class: introa_form
+strip_id_or_class: ttcl_1
+strip_id_or_class: ttcl_3
+strip_id_or_class: ttcl_5
+strip_id_or_class: nbc_belowcontent
+
 test_url: http://www.notebookcheck.net/Lenovo-ThinkPad-X1-Carbon-Ultrabook-Review.138033.0.html

@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'dk-entry__body)]
+author: //meta[@property="author"]/@content
+title: //meta[@property="og:title"]/@content
+
+prune: no
+
+test_url: https://valdaiclub.com/a/highlights/do-empires-have-allies/

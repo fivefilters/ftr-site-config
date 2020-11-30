@@ -22,6 +22,7 @@ strip: //a[contains(@title, 'Dieser Text ')]
 strip: //a[contains(@title, 'Dieser Artikel ')]
 strip: //span[@class='figure__text']/text()[contains(., 'Dieser Text ')]
 strip: //span[@class='figure__text']/text()[contains(., 'Dieser Artikel ')]
+strip_id_or_class: ad-container
 
 #######################################
 # ZEIT:
@@ -33,10 +34,14 @@ author: //a[@class='byline__author']/span
 author: substring-after(//span[@class='metadata__source'], 'Quelle: ')
 
 body: //main/article/div[@itemprop='articleBody']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page ')]
 
 strip: //a[@href='#']
 strip: //form[@id='newsletter-teaser-form']
 strip_id_or_class: 'article-pagination article__item'
+strip_id_or_class: js-videoplayer
+strip: //figure[@data-video-provider="brightcove"]
+strip: //a[contains(concat(' ',normalize-space(@class),' '),' faq-link ')]
 
 test_url: http://www.zeit.de/kultur/film/2012-12/Kurzfilmtag
 test_contains: In drei Minuten die Welt erobern
@@ -68,3 +73,5 @@ test_url: http://www.zeit.de/zeit-magazin/2015/51/daisy-ridley-traum
 test_contains: Mein ganzes Leben lang habe
 test_url: http://www.zeit.de/zeit-magazin/2015/52/cyberstalking-internet-stalker-familie-mierau
 test_url: http://www.zeit.de/zeit-magazin/2017/46/harald-martenstein-ddr-toastbrot
+test_url: https://www.zeit.de/wissen/gesundheit/2020-10/corona-mundschutz-alltag-maske-infektionsschutz-hygiene-ratgeber-faq
+test_contains: Die bisherigen Hygieneregeln in Restaurants

@@ -6,6 +6,7 @@ title: //meta[@property='og:title']/@content
 
 body: //article[@id='main-article']
 body: //div[@id='main-article']
+body: //article[contains(@class, 'ArticleLayout_article')]
 
 body: //div[@itemprop='articleBody']
 body: //div[@class='articleText']
@@ -20,10 +21,15 @@ prune: no
 strip_id_or_class: share-social
 strip_id_or_class: c-article-writer__social
 strip_id_or_class: c-nudge__container
+strip_id_or_class: ad-boxinjector-m-wrapper
 
-strip: //header//h1[contains(@class, 'article-header')]
-strip: //header//address
-strip: //header//time
+# strip: //header//h1[contains(@class, 'article-header')]
+# strip: //header//address
+# strip: //header//time
+strip: //header
+strip: //gpt-ad
+strip: //div[contains(@class, 'ArticleBio_social')]
+strip: //*[contains(@class, 'ArticleRecirc')]
 
 strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]
@@ -39,10 +45,11 @@ native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
 skip_json_ld: yes
 
 #multi-page article (not multi-page anymore)
-test_url: http://www.theatlantic.com/magazine/archive/2014/12/the-real-roots-of-midlife-crisis/382235/
+test_urls: http://www.theatlantic.com/magazine/archive/2014/12/the-real-roots-of-midlife-crisis/382235/
 test_contains: The curve tends to evince itself
 
-test_url: http://www.theatlantic.com/technology/archive/2011/04/want-to-see-how-crazy-a-bot-run-market-can-be/237773/
-test_url: http://www.theatlantic.com/magazine/archive/2007/11/the-autumn-of-the-multitaskers/6342/
-test_url: http://www.theatlantic.com/entertainment/archive/2012/04/30-rock-live-a-funny-reminder-of-why-sitcoms-arent-shot-live-anymore/256447/
-test_url: http://www.theatlantic.com/technology/archive/2013/06/fix-things-never-force-it-lessons-from-grandpa/276873/
+test_url: https://www.theatlantic.com/technology/archive/2011/04/want-to-see-how-crazy-a-bot-run-market-can-be/237773/
+test_url: https://www.theatlantic.com/magazine/archive/2007/11/the-autumn-of-the-multitaskers/6342/
+test_url: https://www.theatlantic.com/entertainment/archive/2012/04/30-rock-live-a-funny-reminder-of-why-sitcoms-arent-shot-live-anymore/256447/
+test_url: https://www.theatlantic.com/technology/archive/2013/06/fix-things-never-force-it-lessons-from-grandpa/276873/
+test_url: https://www.theatlantic.com/family/archive/2020/11/dear-therapist-i-discovered-my-husbands-sexts/617092/

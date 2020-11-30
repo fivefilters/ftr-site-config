@@ -1,0 +1,7 @@
+body: //*[@itemprop="articleBody"]
+title: //meta[@property="og:title"]/@content
+date: //meta[@property="article:published_time"]/@content
+
+strip: //div[contains(@class, 'code-block code-block-9')]
+
+test_url: https://crimereads.com/the-end-of-things-my-favorite-islands-in-crime-fiction/

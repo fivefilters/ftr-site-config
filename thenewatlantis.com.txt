@@ -1,0 +1,10 @@
+title: //div[@class='text-center']//h1
+body: //div[@class='container']//div[contains(concat(' ',normalize-space(@class),' '),' article-entry ')]
+
+author: //div[@class='text-center']//a[@class="link-author"]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '), ' tooltip-container ')]
+
+test_url: https://www.thenewatlantis.com/publications/why-the-arabic-world-turned-away-from-science 
+test_url: https://www.thenewatlantis.com/publications/petrodollar-science
+
