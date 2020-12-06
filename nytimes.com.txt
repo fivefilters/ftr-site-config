@@ -1,8 +1,11 @@
 # mobile.nytimes.com appears to be the same as www.nytimes.com now, 
 # so any changes here should probably also be made to mobile.nytimes.com.txt too
+# also .nytimes.com
 
-title://h1[@class="articleHeadline"]
+title: //h1[@class="articleHeadline"]
+title: //meta[@property="og:title"]/@content
 author://meta[@name="byl"]/@content
+body: //section[@name="articleBody"] | //p[@id="article-summary"] | //header/figure[contains(@class, 'sizeMedium')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' story-body ')]
 body://div[@id="article"]
 body://*[@itemprop="articleBody"]
@@ -39,6 +42,8 @@ strip: //div[@aria-labelledby="modal-title"]
 strip: //button
 strip: //div[starts-with(@id, 'story-ad-')]
 strip: //aside
+strip: //div[@data-test-id="RecommendedNewsletter"]
+strip: //div[@role="complementary"]
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
@@ -49,6 +54,7 @@ strip: //div[@data-testid="inline-message"]
 strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
 strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
+strip_id_or_class: related-links-block
 
 prune: no
 tidy: no
