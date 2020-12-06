@@ -44,6 +44,7 @@ strip: //div[starts-with(@id, 'story-ad-')]
 strip: //aside
 strip: //div[@data-test-id="RecommendedNewsletter"]
 strip: //div[@role="complementary"]
+strip: //video
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
