@@ -43,6 +43,7 @@ strip: //button
 strip: //div[starts-with(@id, 'story-ad-')]
 strip: //aside
 strip: //div[@data-test-id="RecommendedNewsletter"]
+strip: //div[@data-test-id="share-tools"]
 strip: //div[@role="complementary"]
 strip: //video
 strip: //span/span/span[contains(., 'Credit...')]
