@@ -46,7 +46,8 @@ strip: //div[@data-test-id="RecommendedNewsletter"]
 strip: //div[@data-test-id="share-tools"]
 strip: //div[@role="complementary"]
 strip: //video
-strip: //span/span/span[contains(., 'Credit...')]
+strip: //span/span[contains(text(), 'Credit')]
+strip: //span/span/span[contains(text(), 'Credit')]
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
