@@ -1,0 +1,4 @@
+author: //div[@class="post-author-avatar"]//img/@alt
+date: //p[@class="post-metas"]//time/@datetime
+
+test_url: https://www.24joursdeweb.fr/2020/impact-environnemental-du-numerique-quelles-regulations/
