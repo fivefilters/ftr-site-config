@@ -1,4 +1,4 @@
 title: //h2[@class="post-title"]
-author: //h3[@class="post-subtitle"]//a
+author: //p[contains(@class, "body2")]//a
 
 test_url: https://signal.org/blog/signal-private-group-system/
