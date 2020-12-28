@@ -1,4 +1,4 @@
-title: //h1
+title: //header/h1
 body: //div[@id='article-body-content']
 
 strip: //section[@class='rel-news']
