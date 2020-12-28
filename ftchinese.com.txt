@@ -13,6 +13,6 @@ date: //a[@class='storytime']
 #date: //div[@class='byline']/a/following-sibling::a
 body: //div[@id="bodytext"]
 strip://div[@class='pagination']
-single_page_link://div[@class='pagination']/a[.='全文']
+single_page_link://div[@class='pagination-inner']/a[.='全文']
 #next_page_link: //div[@class='pagination']//a[.='下一页']
 test_url: http://www.ftchinese.com/story/001049088
