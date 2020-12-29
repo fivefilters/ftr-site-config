@@ -1,0 +1,3 @@
+strip_id_or_class: glossary-item-hidden-content
+
+test_url: https://make.wordpress.org/core/2020/12/21/bug-scrub-schedule-for-5-7/
