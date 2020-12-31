@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'post__body')]
+strip: //section[@class='article__infopanel']
+
+test_url: https://habr.com/ru/post/293962/
+test_url: https://habr.com/ru/article/480152/

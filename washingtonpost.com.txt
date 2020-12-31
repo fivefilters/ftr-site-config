@@ -36,6 +36,13 @@ strip://div[@class="module component newsletter-signup curved"]
 strip://div[@class="module featured-stories component curved img-border"]
 strip://h3[@property="dc.creator"]
 strip: //div[@data-qa="article-body-ad"]
+strip: //p[a[@data-qa="interstitial-link"]]
+strip: //strong[contains(., 'Read more consumer tech reviews and analysis')]
+strip: //strong[contains(., 'Read more tech reviews and advice from')]
+strip: //strong[contains(., 'Read more tech advice and analysis from')]
+strip: //strong[contains(., 'Read more:')]
+strip: //strong[contains(., 'More from PostEverything:')]
+strip: //em[contains(., 'You might also like:')]
 
 find_string: .jpg&amp;w=32"
 replace_string: .jpg&amp;w=916"
@@ -61,3 +68,6 @@ if_page_contains: //link[@rel="canonical" and contains(@href, '_story.html')]
 test_url: http://www.washingtonpost.com/world/europe/in-europe-new-fears-of-german-might/2011/10/19/gIQA3baZ7L_story.html?hpid=z1
 test_url: http://www.washingtonpost.com/national/health-science/radical-theory-of-first-americans-places-stone-age-europeans-in-delmarva-20000-years-ago/2012/02/28/gIQA4mriiR_story.html
 test_url: http://www.washingtonpost.com/lifestyle/magazine/the-sorry-fate-of-a-tech-pioneer-halsey-minor-and-historic-virginia-estate-carters-grove/2012/05/30/gJQAwdJG4U_story.html
+test_url: https://www.washingtonpost.com/technology/2020/12/10/amazon-halo-band-review/
+test_url: https://www.washingtonpost.com/posteverything/wp/2015/05/15/take-off-that-fitbit-exercise-alone-wont-make-you-lose-weight/
+test_url: https://www.washingtonpost.com/news/wonk/wp/2015/10/04/what-people-in-1900-thought-the-year-2000-would-look-like/

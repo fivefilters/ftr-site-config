@@ -1,0 +1,7 @@
+title: //main//div[contains(@class, 'col-8-content')]/h3
+body: //main//div[contains(@class, 'col-8-content')]
+date: //main//div[contains(@class, 'col-8-content')]//time[@datetime]/@datetime
+
+prune: no
+
+test_url: https://www.rhein-kreis-neuss.de/de/verwaltung-politik/nachrichten/2020/fachbereich-des-strassenverkehrsamts-in-grevenbroich-zieht-jetzt-um/

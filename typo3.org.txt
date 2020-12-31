@@ -1,4 +1,5 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]//div[contains(concat(' ',normalize-space(@class),' '),' row ')]
+#body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]//div[contains(concat(' ',normalize-space(@class),' '),' row ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
 
 date: //meta[@itemprop="datePublished"]/@content
 

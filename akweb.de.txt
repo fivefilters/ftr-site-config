@@ -1,0 +1,20 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article__title ')]
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
+date: //time
+author: //div[contains(concat(' ',normalize-space(@class),' '),' wp-block-ak-authors ')]/h3
+
+requires_login: yes
+login_uri: https://www.akweb.de/wp-login.php
+login_username_field: log
+login_password_field: pwd
+not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' wp-block-ak-subscription__inner-container ')]
+
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' wp-block-ak-kasten ')]
+strip: //header[contains(concat(' ',normalize-space(@class),' '),' article__header ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' wp-block-columns ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' wp-block-embed__wrapper ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' author__content-container ')]
+
+test_url: https://www.akweb.de/ausgaben/666/durch-qanon-erlebt-die-satanic-panic-ein-revival/
+test_url: https://www.akweb.de/politik/corona-dauerwelle-wie-die-westlichen-staaten-als-ideelle-gesamtkapitalisten-versagen/
+test_url: https://www.akweb.de/bewegung/metamorphose-des-imperialismus-teil-3/
