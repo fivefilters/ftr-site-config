@@ -5,4 +5,8 @@ author: //meta[@name="author"]/@content
 body: //div[contains(@class, 'post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
+strip: //aside
+
+prune: no
+
 test_url: https://vitals.lifehacker.com/use-these-apps-for-tracking-strength-workouts-1830938052
