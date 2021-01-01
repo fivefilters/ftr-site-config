@@ -1,0 +1,10 @@
+# Similar to deadspin, gizmodo, lifehacker, etc.
+
+title: //head/title
+author: //meta[@name="author"]/@content
+body: //div[contains(@class, 'post-content')]
+strip: //div[contains(@class, 'content-summary')]
+
+strip: //aside
+
+test_url: https://news.theinventory.com/herman-miller-x-logitech-embody-gaming-chair-review-1845898043?ks=curation
