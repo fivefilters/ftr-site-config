@@ -17,6 +17,7 @@ strip_id_or_class: slate-megaphone
 strip_id_or_class: social-share
 strip_id_or_class: slate-kicker-promo
 strip_id_or_class: tablet-ad
+strip_id_or_class: slate-ad
 
 http_header(Cookie): GDPR_consent=1
 

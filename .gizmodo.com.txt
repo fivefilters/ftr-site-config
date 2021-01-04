@@ -1,5 +1,3 @@
-# Similar to deadspin, gizmodo, lifehacker, etc.
-
 title: //head/title
 author: //meta[@name="author"]/@content
 body: //div[contains(@class, 'post-content')]
@@ -7,4 +5,4 @@ strip: //div[contains(@class, 'content-summary')]
 
 strip: //aside
 
-test_url: https://theinventory.com/the-best-adult-backpack-in-your-price-range-1830754804
+test_url: https://io9.gizmodo.com/the-expanses-keon-alexander-and-dominique-tipper-on-mar-1845951334

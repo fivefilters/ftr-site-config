@@ -7,4 +7,4 @@ strip: //div[contains(@class, 'content-summary')]
 
 strip: //aside
 
-test_url: https://theinventory.com/the-best-adult-backpack-in-your-price-range-1830754804
+test_url: https://news.theinventory.com/herman-miller-x-logitech-embody-gaming-chair-review-1845898043?ks=curation
