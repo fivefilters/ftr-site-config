@@ -1,0 +1,5 @@
+body: //div[@id='content']
+
+date: //span[@id='revdate']
+
+test_url: https://archiloque.net/blog/task-engine-ruby/task-engine-ruby.html
