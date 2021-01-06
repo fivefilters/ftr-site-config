@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' recipe ')]
+
+strip_id_or_class: nutrition-container
+strip_id_or_class: recipe-more
+strip_id_or_class: secondary-controls
+
+test_url: https://cooking.nytimes.com/recipes/1017724-cheesy-hasselback-potato-gratin
