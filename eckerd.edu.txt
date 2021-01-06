@@ -1,0 +1,4 @@
+title: //h1[contains(@class, 'entry-title')]
+body: //div[contains(@class, 'main-content')]
+date: //span[contains(@class, 'meta-date')]
+test_url: https://www.eckerd.edu/news/blog/eckerd-college-data-science-minor/
