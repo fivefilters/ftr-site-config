@@ -6,10 +6,20 @@ date: //meta[@itemprop="datePublished"]/@content
 prune: no
 strip: //aside
 
-strip_id_or_class: recirc-unit
+strip: //div[@class="article-sharing"]
+
+# the first image is often the same as the article image
+strip: //figure[contains(@class, "embed-base")][1]
+strip: //div[div[@class="article-body-image"]][1]
+
+strip: //div[contains(@class, "recirc-module")]
+strip: //div[contains(@class, "embed-base")]
+strip: //a[contains(@class, "embed-base")]
 strip: //fbs-ad
-strip: //a[contains(., 'MORE FROM FORBES')]
+strip: //p[@class="inread-parent"]
+strip: //a[contains(text(), "Subscribe to Forbes")]
 
 test_url: http://www.forbes.com/sites/bruceupbin/2012/09/11/the-iphone-5-winners-and-losers/
 test_url: https://www.forbes.com/sites/zakdoffman/2020/08/23/whatsapp-beaten-stunning-new-alternative-signal-apple-iphone-google-android-messsaging-security-upgrade-release/
 test_contains: the only update Signal has
+test_url: https://www.forbes.com/sites/haydnshaughnessy/2013/03/07/why-is-samsung-such-an-innovative-company/
