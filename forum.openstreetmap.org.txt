@@ -6,7 +6,7 @@ strip_id_or_class: postfootleft
 strip_id_or_class: postfootright
 strip_id_or_class: postsignature
 strip_id_or_class: crumbsplus
-strip: //div[@class='postright']/h3
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' postright ')]/h3
 
 next_page_link: //link[@rel='next']/@href
 test_url: https://forum.openstreetmap.org/viewtopic.php?id=69069
