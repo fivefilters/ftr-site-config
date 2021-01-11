@@ -1,4 +1,4 @@
-body: //section[@class='content']
+body: //section[contains(concat(' ',normalize-space(@class),' '),' content ')]
 strip_id_or_class: brdwelcome
 strip_id_or_class: usercontacts
 strip_id_or_class: usertitle
