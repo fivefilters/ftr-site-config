@@ -1,0 +1,6 @@
+body: //div[@id="article-contents"] | //article//figure[contains(@class, 'featured-image')]
+author: //meta[@name="author"]/@content
+date: //meta[@name="dcterms.created"]/@content
+title: //meta[@property="og:title"]/@content
+
+test_url: https://scroll.in/reel/983100/how-guru-dutt-became-the-reluctant-hero-of-his-masterpiece-pyaasa
