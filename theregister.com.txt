@@ -1,3 +1,4 @@
+# mirror of theregister.co.uk.txt
 single_page_link: //link[contains(@href, 'm.theregister')]
 if_page_contains: //div[@id='nextpage']
 strip: //div[@class='wptl btm']
