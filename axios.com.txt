@@ -4,7 +4,7 @@ body: //article
 # convert id with hidden string to avoid being dumped
 replace_string(hidden-): show-
 
-date: //time[@itemprop="datePublished"]/@datetime
+date: //meta[@name="datePublished"]/@content
 author: //a[contains(concat(' ',normalize-space(@class),' '),' gtm-author-byline ')]
 
 strip: //time[@itemprop="datePublished"]
