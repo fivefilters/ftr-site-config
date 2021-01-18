@@ -1,4 +1,5 @@
 body: //div[@data-tag="post-content"]
+title: //span[@data-tag="post-title"]
 date: substring-before(//a[@data-tag="post-published-at"], ' at ')
 
 prune: no

@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' reading-body ')]
+
+date: //div[contains(concat(' ',normalize-space(@class),' '),' date-posted ')]
+
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]
+
+test_url: https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/

@@ -3,7 +3,7 @@ author: //p[@class='byline']/a
 
 body: //div[contains(@class,'article-content')]
 strip: //h2[@class='title']
-strip: //div[contains(@class, 'pullbox)]
+strip: //div[contains(@class, 'pullbox')]
 
 strip_id_or_class: byline
 strip_id_or_class: story-sidebar

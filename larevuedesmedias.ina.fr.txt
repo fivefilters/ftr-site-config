@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-holder ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' article__authors ')]/a/div
+
+strip_id_or_class: article__authors
+
+test_url: https://larevuedesmedias.ina.fr/trump-plateformes-regulation-moderation-reseaux-sociaux

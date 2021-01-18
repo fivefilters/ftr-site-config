@@ -6,4 +6,6 @@ date: //time
 # first image inside the article
 strip: //div[@id='news-body-center']//article
 
+strip: //section[contains(@class, 'inTextNews')]
+
 test_url: http://www.elconfidencial.com/tecnologia/2017-02-06/microsoft-windows-google-chrome_1327589/
