@@ -1,3 +1,5 @@
+# Changes should be made to both statista.com.txt and .statista.com.txt
+
 title: //h2
 body: //article
 
