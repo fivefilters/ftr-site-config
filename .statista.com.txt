@@ -1,0 +1,13 @@
+# Changes should be made to both statista.com.txt and .statista.com.txt
+
+title: //h2
+body: //article
+
+prune:no
+
+strip: //article/div[1]
+strip: //article/div[1]/div[2]
+strip: //article/div[2]/div[2]
+strip_id_or_class: hidePrint
+
+test_url: https://es.statista.com/grafico/23957/tropas-de-ee-uu-desplegadas-en-afganistan-irak-siria-y-washington-d-c/
