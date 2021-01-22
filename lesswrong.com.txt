@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' PostsPage-postContent ')]
+title: //h1[contains(@class, "PostsPageTitle-root")]
+
+prune: no
+
+test_url: https://www.lesswrong.com/posts/FfrWGCEhZJbkeFgww/the-power-to-demolish-bad-arguments
