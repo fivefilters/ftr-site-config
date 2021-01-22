@@ -8,6 +8,8 @@ strip_id_or_class: shareSticky
 strip_id_or_class: shareArticle
 strip_id_or_class: appDownload
 strip_id_or_class: closeStory
+strip_id_or_class: readFull
+strip_id_or_class: catName
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' subscribe ')]
 
 # Fix lazy load images
