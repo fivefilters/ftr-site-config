@@ -17,5 +17,7 @@ find_string: data-src="https://images.hindustantimes.com
 replace_string: src="https://images.hindustantimes.com
 strip_attr: //img/@disabled-src
 
+prune: no
+
 test_url: https://www.hindustantimes.com/books/interview-pallavi-raghavan-author-animosity-at-bay-an-alternative-history-of-the-india-pakistan-relationship/story-HDwzapqxH4IRw7h1VL5TZJ.html
 test_contains: What can historians do
