@@ -1,0 +1,3 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' blog-post__title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-post__body ')]
+test_url: https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation
