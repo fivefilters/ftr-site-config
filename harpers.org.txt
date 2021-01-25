@@ -2,6 +2,8 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content '
 date: //meta[@property="article:published_time"]/@content
 title: //meta[@property="og:title"]/@content
 
+strip: //aside
+
 prune: no
 
 test_url: https://harpers.org/archive/2020/11/making-meaning-garth-greenwell/
