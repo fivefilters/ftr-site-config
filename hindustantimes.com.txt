@@ -1,0 +1,25 @@
+date: //meta[@property="article:published_time"]/@content
+title: //meta[@property="og:title"]/@content
+body: //div[contains(concat(' ',normalize-space(@class),' '),' fullStory ')]
+
+strip_id_or_class: storyAd
+strip_id_or_class: ht-dfp-ad
+strip_id_or_class: shareSticky
+strip_id_or_class: shareArticle
+strip_id_or_class: appDownload
+strip_id_or_class: closeStory
+strip_id_or_class: readFull
+strip_id_or_class: catName
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' subscribe ')]
+
+# Fix lazy load images
+find_string: src="https://images.hindustantimes.com/default
+replace_string: disabled-src="https://images.hindustantimes.com/default
+find_string: data-src="https://images.hindustantimes.com
+replace_string: src="https://images.hindustantimes.com
+strip_attr: //img/@disabled-src
+
+prune: no
+
+test_url: https://www.hindustantimes.com/books/interview-pallavi-raghavan-author-animosity-at-bay-an-alternative-history-of-the-india-pakistan-relationship/story-HDwzapqxH4IRw7h1VL5TZJ.html
+test_contains: What can historians do

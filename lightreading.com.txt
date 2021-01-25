@@ -1,0 +1,6 @@
+date: //div[@itemprop='article-profile']//div[@class='byline']//span[@class='date']
+author: //div[@itemprop='article-profile']//div[@class='byline']//span[@class='allcaps']
+
+body: //div[contains(@class, 'article-main-body')]/article
+
+test_url: https://www.lightreading.com/4g3gwifi/eurobites-deutsche-telekom-o2-to-tackle-gray-spots-through-network-sharing/d/d-id/766728

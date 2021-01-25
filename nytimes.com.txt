@@ -48,6 +48,7 @@ strip: //div[@role="complementary"]
 strip: //video
 strip: //span/span[contains(text(), 'Credit')]
 strip: //span/span/span[contains(text(), 'Credit')]
+strip: //img[contains(@class, 'post-screenshot')]
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
