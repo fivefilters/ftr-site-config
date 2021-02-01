@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' postContent ')]
+
+author: //li[@itemprop='author']
+
+test_url: https://fortelabs.co/blog/the-ultimate-guide-to-summarizing-books/
