@@ -1,0 +1,10 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]
+
+strip_id_or_class: crumb
+strip_id_or_class: adrightsm
+strip_id_or_class: adrightlg
+strip_id_or_class: cc
+strip_id_or_class: alsoon
+strip_id_or_class: totop
+
+test_url: https://www.explainthatstuff.com/television.html
