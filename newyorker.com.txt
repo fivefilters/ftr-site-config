@@ -14,6 +14,9 @@ strip_id_or_class: ad--in-content
 strip_id_or_class: ad--rail
 strip_id_or_class: article__social-share
 strip_id_or_class: cne-interlude-embed
+strip_id_or_class: social-icons
+strip_id_or_class: split-screen-content-header__rubric
+strip_id_or_class: split-screen-content-header__rubric-issue-date
 
 prune: no
 
