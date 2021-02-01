@@ -1,0 +1,6 @@
+body: //div[@id='content']
+
+strip_id_or_class: preamble
+strip_id_or_class: sidebarblock
+
+test_url: https://www.keycloak.org/docs/12.0/authorization_services/

@@ -1,0 +1,5 @@
+author: //*[@id="author_header"]
+
+body: //article//div[contains(concat(' ',normalize-space(@class),' '),' text-primary ')] | //article//div[contains(concat(' ',normalize-space(@class),' '),' rich-text ')]
+
+test_url: https://usbeketrica.com/fr/article/open-source-logiciel-libre-inclusion

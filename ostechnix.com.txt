@@ -1,0 +1,11 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' type-post ')]
+
+strip_id_or_class: penci-wrap-gprd-law
+strip_id_or_class: after-post-box
+strip_id_or_class: penci-single-link-pages
+strip_id_or_class: post-tags
+strip_id_or_class: post-related
+strip_id_or_class: post-pagination
+strip_id_or_class: tags-share-box
+
+test_url: https://ostechnix.com/cronopete-apples-time-machine-clone-linux/

@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' l-entry ')]
+
+strip_id_or_class: l-hidden
+strip_id_or_class: l-entry__banner
+
+test_url: https://vc.ru/finance/128687-60-poleznyh-saytov-dlya-poiska-investiciy-v-startap

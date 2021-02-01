@@ -1,5 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
 replace_string(<img src=): <img notused=
-replace_string(ix-path=): src=
+replace_string(ix-path="): src="https://krautreporter.imgix.net
 
 test_url: https://krautreporter.de/2244-stell-dir-vor-du-erbst-nazi-geld-was-machst-du?shared=c30432e7-4d96-42c5-85d3-354e1f90482d
 
