@@ -17,6 +17,9 @@ replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
 strip: //img[contains(concat(" ", normalize-space(@class), " "), " lazyload ")]
 
+strip_id_or_class: pointer-events-none
+strip_id_or_class: border-separator-b
+strip: //button
 strip: //svg
 strip: //*[@data-app-hidden="true"]
 #strip: //*[@data-advertisement]
