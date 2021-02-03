@@ -3,19 +3,12 @@
 # http://www.zhihu.com/question/20649035
 # http://www.zhihu.com/question/20637942
 
+body: //div[@id="QuestionAnswers-answers"]//div[contains(@class, 'List-item')]
+
 http_header(user-agent): Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
 
-author: //h3[@class='zm-item-answer-author-wrap']
-title://h2[@class='zm-item-title']
-date://a[@class='answer-date-link meta-item']
-convert_double_br_tags: yes
+author: (//span[contains(@class, 'AuthorInfo-name')])[1]
+title: //h1[contains(@class, "QuestionHeader-title")]
+date: (//meta[@itemProp="dateCreated"])[1]/@content
 
-wrap_in(blockquote)://div[@class='zm-editable-content']
-wrap_in(blockquote)://sup/text()
-dissolve://sup
-
-strip://div[@class='zh-answers-title']
-strip:///div[@class='zm-item-vote-info ']
-strip://div[@class='zm-item-answer-author-info']
-strip://div[@class='zu-blue-info-board zg-r3px']
 test_url: http://www.zhihu.com/question/20637942
