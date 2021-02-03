@@ -15,4 +15,6 @@ author: (//span[contains(@class, 'AuthorInfo-name')])[1]
 title: //h1[contains(@class, "QuestionHeader-title")]
 date: (//meta[@itemProp="dateCreated"])[1]/@content
 
+prune: no
+
 test_url: http://www.zhihu.com/question/20637942
