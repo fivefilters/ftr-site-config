@@ -5,7 +5,6 @@
 
 body: //div[@id="QuestionAnswers-answers"]//div[contains(@class, 'List-item')]
 
-strip_id_or_class: ContentItem-meta
 strip_id_or_class: ModalWrap
 strip_id_or_class: ContentItem-actions
 strip_id_or_class: RichContent-actions
