@@ -5,6 +5,7 @@ prune: no
 strip: //*[contains(@id, 'advads-')]
 strip_id_or_class: ss-inline-share-wrapper
 strip_id_or_class: conv-container
+strip_id_or_class: dg-locker-outer
 strip: //aside
 
 test_url: https://www.commentarymagazine.com/john-steele-gordon/lincolns-legacy-in-print/
