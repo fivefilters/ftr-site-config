@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+prune: no
+
+strip: //*[contains(@id, 'advads-')]
+strip_id_or_class: ss-inline-share-wrapper
+
+test_url: https://www.commentarymagazine.com/john-steele-gordon/lincolns-legacy-in-print/
