@@ -1,0 +1,11 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__body-components ')]
+
+strip_id_or_class: topic-callout
+strip_id_or_class: abc__quote--pullquote
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' adph ')]
+strip: //div[@data-component="RelatedArticleBlock"]
+
+prune: no
+
+test_url: https://www.vice.com/en/article/4ad8qd/why-bidens-ice-is-still-deporting-people
+test_contains: The order is temporary
