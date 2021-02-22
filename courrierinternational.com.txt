@@ -17,6 +17,8 @@ strip_id_or_class: box-reserved-abo
 strip_id_or_class: action-zen-off-top
 strip_id_or_class: action-zen-off-bottom
 
+strip: //aside
+
 prune: no
 
 requires_login: true
