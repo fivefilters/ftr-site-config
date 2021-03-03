@@ -8,7 +8,8 @@ prune:no
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
 
-tidy:yes
+# Tidy cleans away the json-ld content
+# tidy:yes
 
 test_url: http://themerryone.blogspot.com/2010/08/new-move-new-blog.html
 test_url: http://strobist.blogspot.com/2012/01/qa-down-phase-one-rabbit-hole.html

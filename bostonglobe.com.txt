@@ -4,7 +4,7 @@ title: //article//h1[contains(@class, 'title')]
 author: //div[contains(@class, "byline")]//span[contains(@class, 'author')]
 date: //meta[@name="datePublished"]/@content
 #date: //div[@class="byline"]/p[last()]
-body: //article//h2[contains(@class, 'subheader')] | (//article//div[contains(@class, 'image')])[1] | //div[@id="article-body"]
+body: //article//h2[contains(@class, 'subheader')] | (//article//div[contains(@class, 'image')])[1] | //article[@id="article-body"]
 
 strip_id_or_class: bgmp-comments
 strip_id_or_class: aside
@@ -26,3 +26,4 @@ strip: //img[contains(@src, '/20x0/')]
 strip_id_or_class: figure
 
 test_url: https://www.bostonglobe.com/2020/04/07/metro/coronavirus-cases-surge-citys-safety-net-hospital-four-out-10-cases-are-now-related-pandemic/
+test_url: https://www.bostonglobe.com/2021/03/01/metro/charlie-youre-making-big-mistake-experts-criticize-states-monday-reopening/

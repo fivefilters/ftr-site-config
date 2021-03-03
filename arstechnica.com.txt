@@ -9,6 +9,15 @@ strip_id_or_class: byline
 strip_id_or_class: story-sidebar
 prune: no
 
+find_string: " data-src="
+replace_string: "><img src="
+
+find_string: " data-responsive="
+replace_string: " /><span "
+
+find_string: <figure style="
+replace_string: </span><figure style="
+
 date: //div[@class='byline']/span[@class='posted']//abbr/@original-title
 date: //div[@class='byline']/span[@class='posted']//abbr
 date: //*[@class='byline']//time[@class='date']
@@ -26,6 +35,7 @@ next_page_link: //nav//a/span[contains(text(), 'Next')]/../@href
 test_url: http://arstechnica.com/tech-policy/news/2012/02/gigabit-internet-for-80-the-unlikely-success-of-californias-sonicnet.ars
 test_url: http://arstechnica.com/apple/2005/04/macosx-10-4/
 test_url: https://arstechnica.com/features/2020/10/the-space-operating-systems-booting-up-where-no-one-has-gone-before
+test_url: https://arstechnica.com/gaming/2021/02/coders-reverse-engineer-grand-theft-autos-raw-pc-source-code/
 
 # test_url: http://arstechnica.co.uk/science/2016/06/what-is-open-access-free-sharing-of-all-human-knowledge/
 # test_url: http://arstechnica.co.uk/information-technology/2016/05/eben-moglen-gpl-online-advertising-is-becoming-a-perfect-despotism/

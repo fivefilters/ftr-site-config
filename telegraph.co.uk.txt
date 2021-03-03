@@ -1,10 +1,8 @@
-body: //div[@class='byline' or @id='storyEmbSlide' or @id='mainBodyArea']
-strip: //p[@class='comments']
-strip: //div[@id='storyEmbSlide']//div[contains(@class, "hide")]
-strip: //div[@id='tmg-related-links' or @id='outbrain-related-links' or @id='onespot-related-links']
-strip: //p[@class='bbpTweet']/span[@class='timestamp']
-strip: //p[@class='bbpTweet']/span[@class='metadata']//img
-tidy: no
+author: //meta[@name="DCSext.author"]/@content
+date: //meta[@name="DCSext.articleFirstPublished"]/@content
+title: //meta[@property="og:title"]/@content
+body: //div[@itemprop="articleBody"]
+
 prune: no
 
-test_url: http://www.telegraph.co.uk/news/worldnews/europe/ireland/8663451/Is-Ireland-divorcing-from-the-Catholic-Church.html
+test_url: https://www.telegraph.co.uk/news/2021/02/16/covidlockdown-continue-cases-drop-1000-day/

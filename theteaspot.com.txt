@@ -1,0 +1,5 @@
+body: //main[@id='MainContent']
+
+prune: no
+
+test_url: https://www.theteaspot.com/pages/about-tea
