@@ -10,4 +10,6 @@ strip: //section[@id="imadeits"]
 strip: //section[contains(@class, 'recommendations')]
 strip: //section[@id="comments"]
 
+prune: no
+
 test_url: https://www.instructables.com/id/DIY-Induction-Stove/
