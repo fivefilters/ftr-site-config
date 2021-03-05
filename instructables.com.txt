@@ -8,6 +8,8 @@ replace_string:</div>
 # there's <noscript> but it still requires a script, might as well strip it :)
 strip_id_or_class: no-js-photoset
 
+strip_image_src: ajax_loader
+
 strip: //div[contains(@class, 'author-promo')]
 strip: //section[@id="imadeits"]
 strip: //section[contains(@class, 'recommendations')]
