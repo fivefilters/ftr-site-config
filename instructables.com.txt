@@ -1,9 +1,9 @@
 body: //div[contains(@class, 'main-content')]
 
-find_string:<noscript>
-replace_string:<div>
-find_string:</noscript>
-replace_string:</div>
+#find_string:<noscript>
+#replace_string:<div>
+#find_string:</noscript>
+#replace_string:</div>
 
 # there's <noscript> but it still requires a script, might as well strip it :)
 strip_id_or_class: no-js-photoset
