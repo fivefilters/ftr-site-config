@@ -16,6 +16,7 @@ strip_id_or_class: footer__main
 test_url: https://www.crikey.com.au/2021/03/05/nuclear-energy-australia-2021/
 test_url: https://www.crikey.com.au/2021/03/05/christian-porter-rule-of-law-2/
 
+prune: no
 
 # Wallabag-specific login directives (not supported in FTR):
 requires_login: yes
