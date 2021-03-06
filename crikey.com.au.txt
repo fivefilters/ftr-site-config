@@ -1,5 +1,6 @@
 # Article's title
 title: /html/head/title
+date: //meta[@property="article:published_time"]/@content
 
 # Article's main content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
