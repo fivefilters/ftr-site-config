@@ -1,9 +1,12 @@
 title: //h1[@class='entry-title']
-author: //h2/a[@class='fn']
-date: //time[@itemprop='datePublished']
+author: //main/article/header//span[@class='author vcard']
+date: //main/article/header//time[@class='entry-date published']
 
-body: //div[@itemprop='articleBody']
+body: //main/article//div[@class='entry-content']
 strip: //aside
+strip: //div[@class='aside-breaker']
+strip: //div[@class='ala-single-sidebar-wrapper']
+strip: //a[@class='subhead-anchor']
 strip: //footer
 strip: //div[@class="utility-side-bar"]
 strip_id_or_class: 'aside-breaker'
