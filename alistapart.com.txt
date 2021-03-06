@@ -1,13 +1,16 @@
-title: //h1[@class='entry-title']
-author: //h2/a[@class='fn']
-date: //time[@itemprop='datePublished']
+title: //meta[@property="og:title"]/@content
+author: //main/article/header//span[@itemprop="author"]
+date: //meta[@property="article:published_time"]/@content
 
-body: //div[@itemprop='articleBody']
+body: //main/article//div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
 strip: //aside
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ala-single-sidebar-wrapper ')]
+strip: //a[contains(@class, 'subhead-anchor')]
 strip: //footer
-strip: //div[@class="utility-side-bar"]
-strip_id_or_class: 'aside-breaker'
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' utility-side-bar ')]
+strip_id_or_class: aside-breaker
 
 prune: no
 test_url: http://www.alistapart.com/articles/organizing-mobile/
 test_url: https://alistapart.com/article/responsible-javascript-part-1
+test_contains: Modern layout engines like Flexbox and Grid
