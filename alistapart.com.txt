@@ -13,3 +13,4 @@ strip_id_or_class: aside-breaker
 prune: no
 test_url: http://www.alistapart.com/articles/organizing-mobile/
 test_url: https://alistapart.com/article/responsible-javascript-part-1
+test_contains: Modern layout engines like Flexbox and Grid
