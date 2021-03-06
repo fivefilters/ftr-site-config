@@ -1,15 +1,14 @@
-title: //h1[@class='entry-title']
-author: //main/article/header//span[@class='author vcard']
-date: //main/article/header//time[@class='entry-date published']
+title: //meta[@property="og:title"]/@content
+author: //main/article/header//span[@itemprop="author"]
+date: //meta[@property="article:published_time"]/@content
 
-body: //main/article//div[@class='entry-content']
+body: //main/article//div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
 strip: //aside
-strip: //div[@class='aside-breaker']
-strip: //div[@class='ala-single-sidebar-wrapper']
-strip: //a[@class='subhead-anchor']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ala-single-sidebar-wrapper ')]
+strip: //a[contains(@class, 'subhead-anchor')]
 strip: //footer
-strip: //div[@class="utility-side-bar"]
-strip_id_or_class: 'aside-breaker'
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' utility-side-bar ')]
+strip_id_or_class: aside-breaker
 
 prune: no
 test_url: http://www.alistapart.com/articles/organizing-mobile/
