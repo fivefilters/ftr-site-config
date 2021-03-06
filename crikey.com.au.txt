@@ -2,11 +2,12 @@
 title: /html/head/title
 
 # Article's main content
-body: /html/section/article/p
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 
 # Parts to strip in the content
-strip: /html/section/article/p[2]
-strip: /html/footer
+# [Not sure what the two lines below point to - @fivefilters]
+# strip: /html/section/article/p[2]
+# strip: /html/footer
 strip_id_or_class: footer__nav
 strip_id_or_class: container_12
 strip_id_or_class: footer__main
