@@ -9,9 +9,12 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 # [Not sure what the two lines below point to - @fivefilters]
 # strip: /html/section/article/p[2]
 # strip: /html/footer
-strip_id_or_class: footer__nav
-strip_id_or_class: container_12
-strip_id_or_class: footer__main
+
+strip: //footer
+
+# strip_id_or_class: footer__nav
+# strip_id_or_class: container_12
+# strip_id_or_class: footer__main
 
 # A test URL, e.g. the article you used to write the file
 test_url: https://www.crikey.com.au/2021/03/05/nuclear-energy-australia-2021/
