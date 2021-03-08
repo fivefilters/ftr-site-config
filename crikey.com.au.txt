@@ -1,0 +1,32 @@
+# Article's title
+title: /html/head/title
+date: //meta[@property="article:published_time"]/@content
+
+# Article's main content
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+# Parts to strip in the content
+# [Not sure what the two lines below point to - @fivefilters]
+# strip: /html/section/article/p[2]
+# strip: /html/footer
+
+strip: //footer
+
+# strip_id_or_class: footer__nav
+# strip_id_or_class: container_12
+# strip_id_or_class: footer__main
+
+# A test URL, e.g. the article you used to write the file
+test_url: https://www.crikey.com.au/2021/03/05/nuclear-energy-australia-2021/
+test_url: https://www.crikey.com.au/2021/03/05/christian-porter-rule-of-law-2/
+
+prune: no
+
+# Wallabag-specific login directives (not supported in FTR):
+requires_login: yes
+login_uri: https://www.crikey.com.au/wp-login.php
+login_username_field: user_login
+login_password_field: user_pass
+login_extra_fields: rememberme=1
+login_extra_fields: wp-submit=Connexion
+test_url: https://www.crikey.com.au/2021/03/05/nuclear-energy-australia-2021/

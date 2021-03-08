@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' contents_area ')]
+date: //div[contains(@class, 'title_area')]//span[@class="date"]
+title: //div[contains(@class, 'title_area')]//strong[@class="title"]
+
+prune: no
+
+test_url: https://www.naeu.playblackdesert.com/en-US/News/Detail?groupContentNo=451&countryType=en-US
