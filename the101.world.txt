@@ -1,0 +1,2 @@
+body: //div[contains(@class, "entry-content__main")]/*[not(div)]
+

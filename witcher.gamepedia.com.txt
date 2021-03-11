@@ -1,0 +1,25 @@
+body: //*[@id="mw-content-text"]
+
+strip: //table
+strip: //img
+strip: //a[contains(@href, "edit")]
+strip_id_or_class: infoboxtable
+
+strip_id_or_class: mw-gallery-traditional
+strip: //h2[text()="Gallery"]
+
+strip: //h2[contains(text(), "See also")]/following-sibling::ul
+strip: //h2[contains(text(), "See also")]
+
+strip_id_or_class: embedvideo
+strip: //h2[text()="Video"]
+
+strip: //h2[contains(text(), "Contents")]/parent::div/following-sibling::ul
+strip: //div[@class="toctitle"]/h2[contains(text(), "Contents")]
+
+replace_string([): <brst />
+replace_string(|): <brst />
+replace_string(]): <brst />
+
+prune: no
+tidy: yes

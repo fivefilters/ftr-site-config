@@ -1,0 +1,3 @@
+strip_id_or_class: meta
+strip_id_or_class: single-tags
+strip_id_or_class: seed-social

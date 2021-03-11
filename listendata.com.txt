@@ -1,0 +1,4 @@
+strip_id_or_class: related-box
+strip_id_or_class: emailBtn
+strip_id_or_class: related-post
+strip_id_or_class: c12

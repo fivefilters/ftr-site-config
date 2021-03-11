@@ -1,0 +1,4 @@
+body: //article[contains(@class, "post")]
+strip: //ul[contains(@class, "btns")]
+strip: //img[contains(@src, "nw-banner")]
+

@@ -1,0 +1,3 @@
+strip: //a[@href="#comments"]
+strip_id_or_class: pagi
+strip_id_or_class: title

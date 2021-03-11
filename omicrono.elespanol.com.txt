@@ -1,0 +1,6 @@
+title: //h1/a
+body: //div[@id='singlePostContent']
+
+strip: //blockquote
+
+test_url: https://omicrono.elespanol.com/2018/08/samsung-comienza-producir-discos-ssd-gran-capacidad-mucho-mas-baratos/

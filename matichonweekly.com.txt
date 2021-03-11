@@ -1,0 +1,1 @@
+strip_id_or_class: ud-article-info-table

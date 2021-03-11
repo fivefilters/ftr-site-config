@@ -1,0 +1,3 @@
+strip_id_or_class: post-date
+strip: //span[@class='post-date']
+

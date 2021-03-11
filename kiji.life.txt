@@ -1,0 +1,6 @@
+body: //div[contains(@class, "content")]
+strip_id_or_class: rest-option
+strip_id_or_class: rest-tag
+strip_id_or_class: related
+strip_id_or_class: post-writer
+strip_id_or_class: post-sharing

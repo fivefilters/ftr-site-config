@@ -1,0 +1,2 @@
+strip_id_or_class: md-adbox
+strip_id_or_class: authorbox

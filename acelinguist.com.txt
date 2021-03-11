@@ -1,0 +1,1 @@
+body: //div[@class='post-body entry-content']/*[not(div)]

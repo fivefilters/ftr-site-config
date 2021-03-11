@@ -1,0 +1,7 @@
+body: //div[@class="single-content__inner"]
+author: //a[@class="meta-author__name--link"]/text()
+strip_id_or_class: single-content__meta
+strip_id_or_class: single-content__title
+strip_id_or_class: hilights
+strip_id_or_class: single-content__tag
+strip_id_or_class: meta-author__wrapper

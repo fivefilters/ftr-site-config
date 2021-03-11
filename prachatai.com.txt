@@ -1,0 +1,13 @@
+#body: //div[@class='field-item even']/*
+#body: //div[@class='field-item even']/*[self::p or self::h3  or self::div]
+body: //*[contains(@id, 'node-report')]/div[1]/div[2]/div
+#body: //div[@class='field-items']
+body: //div[@class='poet-box']
+body: //article
+#body: //div[contains(@property, 'content')]
+
+strip_id_or_class: support-pay
+strip_id_or_class: ai:noinject
+strip_id_or_class: inline-ads-box
+strip_id_or_class: field-name-field-byline
+author: //div[contains(@class, "field-name-field-byline")]/div/div/p[1]
