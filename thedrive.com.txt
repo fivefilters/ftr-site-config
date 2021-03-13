@@ -1,5 +1,13 @@
-body: //div[@class='has-ad-column']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' has-ad-column ')]
 
 strip: //div[contains(@class, 'articleFragment') and not(contains(@class, 'paragraph'))]
 
-test_url: http://www.thedrive.com/new-cars/12579/why-this-4000-renault-is-as-disruptive-as-the-tesla-model-3
+# Template messed up on the site it seems, these tags are appearing around each content section in the article
+find_string: <html><head></head><body>
+replace_string: <!-- nothing here -->
+find_string: </body></html>
+replace_string: <!-- nothing here -->
+
+test_url: https://www.thedrive.com/new-cars/12579/why-this-4000-renault-is-as-disruptive-as-the-tesla-model-3
+test_url: https://www.thedrive.com/tech/39647/tesla-admits-current-full-self-driving-beta-will-always-be-a-level-2-system-emails
+test_contains: the world of self-driving is built on a hill of confusing semantics
