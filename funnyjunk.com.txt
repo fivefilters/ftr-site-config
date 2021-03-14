@@ -1,0 +1,7 @@
+body: //a[contains(concat(' ',normalize-space(@class),' '),' contentContainer ')]
+
+prune: no
+
+test_url: https://funnyjunk.com/Wary+dazzled+sleepy+kouprey/ofNyMbs/
+# feed
+test_url: https://funnyjunk.com/rss/most_popular.rss
