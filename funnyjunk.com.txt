@@ -1,5 +1,8 @@
 body: //*[contains(concat(' ',normalize-space(@class),' '),' contentContainer ')]
 
+find_string: data-original="
+replace_string: src="
+
 prune: no
 
 test_url: https://funnyjunk.com/Wary+dazzled+sleepy+kouprey/ofNyMbs/
