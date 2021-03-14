@@ -1,4 +1,4 @@
-body: //a[contains(concat(' ',normalize-space(@class),' '),' contentContainer ')]
+body: //*[contains(concat(' ',normalize-space(@class),' '),' contentContainer ')]
 
 prune: no
 
