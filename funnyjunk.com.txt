@@ -1,7 +1,7 @@
 body: //*[contains(concat(' ',normalize-space(@class),' '),' contentContainer ')]
 
-find_string: data-original="
-replace_string: src="
+find_string: type="video/mp4" data-original="
+replace_string: type="video/mp4" src="
 
 prune: no
 
