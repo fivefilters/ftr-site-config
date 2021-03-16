@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' default-layout-post ')]//div[contains(concat(' ',normalize-space(@class),' '),' body ')]
+
+strip_id_or_class: ad-tag
+strip_id_or_class: around-the-web
+
+test_url: https://www.protocol.com/enterprise/about/aws-targeted-by-elastic

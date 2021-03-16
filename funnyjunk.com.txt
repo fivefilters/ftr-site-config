@@ -1,0 +1,10 @@
+body: //*[contains(concat(' ',normalize-space(@class),' '),' contentContainer ')]
+
+find_string: type="video/mp4" data-original="
+replace_string: type="video/mp4" src="
+
+prune: no
+
+test_url: https://funnyjunk.com/Wary+dazzled+sleepy+kouprey/ofNyMbs/
+# feed
+test_url: https://funnyjunk.com/rss/most_popular.rss

@@ -1,0 +1,3 @@
+strip_id_or_class: inline-widget
+
+test_url: https://www.brookings.edu/blog/techtank/2019/06/26/why-data-ownership-is-the-wrong-approach-to-protecting-privacy/

@@ -1,0 +1,8 @@
+body: //main
+
+prune: no
+
+strip_id_or_class: elementor-widget-share-buttons
+
+test_url: https://spectrejournal.com/roundtable-on-china/
+test_contains: I know you write in pretty mainstream media
