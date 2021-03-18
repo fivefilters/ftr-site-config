@@ -5,6 +5,7 @@ strip_id_or_class: m-longread__blocks-footer
 strip_id_or_class: m-longread__team
 strip_id_or_class: m-post__blocks-footer
 strip_id_or_class: m-post__team
+strip_id_or_class: ph-info__group
 
 prune: no
 
