@@ -1,5 +1,4 @@
-body: //article
-body: //div[contains(concat(' ',normalize-space(@class),' '),' content__main ')]//div[contains(concat(' ',normalize-space(@class),' '),' gs-container ')]
+body: //figure[.//picture[@itemProp="contentUrl"]] | //div[contains(@class, 'article-body')]
 strip: //article//div[contains(@class, 'content__secondary-column')]
 strip: //article//aside
 strip: //article//div[contains(@class, 'block-share')]
@@ -20,6 +19,10 @@ strip: //div[starts-with(@id, "qanda-")]
 
 strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
 
+#2021
+strip_id_or_class: sign-in-gate
+strip_id_or_class: js-ad-slot
+
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: reveal-caption
 strip_id_or_class: readerquestions
@@ -29,6 +32,7 @@ strip_id_or_class: contributions__epic
 strip_id_or_class: youtube-media-atom__overlay
 
 strip: //figcaption
+strip: //svg
 
 
 title: //h1[@articleprop='headline']
