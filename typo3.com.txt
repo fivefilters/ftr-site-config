@@ -1,8 +1,10 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blogpage ')]
 date: //time[@itemprop="datepublished"]/@datetime
 
-strip_id_or_class: commentsform
-strip_id_or_class: post-meta-group-additional
+strip_id_or_class: c-blog-footer
+strip_id_or_class: c-blog-authors
+strip_id_or_class: c-blog-comments
+strip_id_or_class: c-blog-commentform
 strip: //form
 
 test_url: https://typo3.com/blog/interview-our-new-project-manager-markus-kamp
