@@ -4,6 +4,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
 date: //meta[@itemprop="datePublished"]/@content
 
 strip_id_or_class: newsrelated
+strip_id_or_class: news-single__categories
 
 prune: no
 
