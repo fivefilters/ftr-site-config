@@ -2,6 +2,8 @@
 # Place this file inside your site_config/custom/ folder
 # Source: http://siteconfig.fivefilters.org/grab.php?url=https%3A%2F%2Fthematter.co%2Fthinkers%2Fchicken-fried-politics%2F57575
 
-body: //div[@class="post_content_wrapper"]/*[self::h4 or self::p or self::blockquote or self::ul]
+#body: //div[@class="post_content_wrapper"]/*[self::h4 or self::p or self::blockquote or self::ul]
 #body: //div[@class="post_wrapper"]
-
+#body: //div[@id="page_content_wrapper"]
+#body: //div[@class="post_content_wrapper"]
+body: //div[contains(@class, "post")]
