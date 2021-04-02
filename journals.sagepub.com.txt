@@ -1,0 +1,5 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
+
+prune: no
+
+test_url: https://journals.sagepub.com/doi/10.1177/1559325816688527
