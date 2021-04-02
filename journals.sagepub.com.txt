@@ -1,3 +1,6 @@
+title: //meta[@name="dc.Title"]/@content
+author: //meta[@property="article:author"]/@content
+date: //meta[@name="dc.Date"]/@content
 body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
 
 prune: no
