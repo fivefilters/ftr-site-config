@@ -1,0 +1,3 @@
+body: //article
+strip_id_or_class: swp_social_panel
+strip_id_or_class: td-post-next-prev
