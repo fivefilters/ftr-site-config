@@ -6,4 +6,4 @@ strip: //aside
 prune: no
 
 test_url: https://truthout.org/articles/noam-chomsky-bidens-foreign-policy-is-largely-indistinguishable-from-trumps/
-test_contains: 
+test_contains: Cuba since independence in 1959 has been the target of unremitting U.S. violence and torture
