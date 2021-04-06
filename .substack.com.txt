@@ -8,6 +8,7 @@ strip_id_or_class: expanded-link-description
 strip_id_or_class: expanded-link-domain
 
 strip_id_or_class: subscribe-widget
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' button-wrapper ')]
 
 prune: no
 
