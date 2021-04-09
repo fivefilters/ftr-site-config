@@ -1,4 +1,4 @@
-body: //div[@id='article-body']
+body: //article//div[contains(@class, 'feed-header')] | //div[@id='article-body']
 author: //meta[@name="author"]/@content
 
 strip_id_or_class: related-stories
