@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+
+prune: no
+
+strip_id_or_class: social-share-container
+
+test_url: https://granta.com/having-and-being-had/
+test_url: https://granta.com/feed

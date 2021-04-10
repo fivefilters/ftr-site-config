@@ -1,0 +1,13 @@
+# JS required for the site
+
+body: //div[contains(@class, 'm-post__main') or contains(@class, 'm-longread__body')]
+strip_id_or_class: m-longread__blocks-footer
+strip_id_or_class: m-longread__team
+strip_id_or_class: m-post__blocks-footer
+strip_id_or_class: m-post__team
+strip_id_or_class: ph-info__group
+
+prune: no
+
+test_url: https://postnauka.ru/faq/6604
+test_url: https://postnauka.ru/longreads/155958

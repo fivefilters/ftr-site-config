@@ -1,6 +1,20 @@
-body: //div[@id='article-body']
+body: //article//div[contains(@class, 'feed-header')] | //div[@id='article-body']
+author: //meta[@name="author"]/@content
 
 strip_id_or_class: related-stories
+strip_id_or_class: arcad
+strip_id_or_class: arc-ad-wrapper
+
+strip: //div[@data-type="ad"]
+strip: //div[@data-type="interstitial_link"]
+strip: //div[contains(@class, 'card-content')][./div[contains(@class, 'recommender-header')]]
+
+find_string: height="2" width="3"
+replace_string: 
+
+prune: no
+
+single_page_link: //link[@rel="amphtml"]/@href
 
 test_url: https://www.inquirer.com/news/berks-detention-center-child-migrants-20191029.html
 test_contains: candidates running for Berks County

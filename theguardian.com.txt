@@ -1,10 +1,9 @@
-body: //article
-body: //div[contains(concat(' ',normalize-space(@class),' '),' content__main ')]//div[contains(concat(' ',normalize-space(@class),' '),' gs-container ')]
+body: //figure[.//picture[@itemProp="contentUrl"]] | //div[contains(@class, 'article-body')]
 strip: //article//div[contains(@class, 'content__secondary-column')]
-strip: //article//aside
+strip: //aside
 strip: //article//div[contains(@class, 'block-share')]
-strip: //article//div[@class='submeta']
-strip: //article//span[contains(@class, 'inline-expand-image')]
+strip: //div[@class='submeta']
+strip: //span[contains(@class, 'inline-expand-image')]
 strip: //article//div[@class='kindleWidget']
 strip: //article//div[@class='email-subscription']
 strip: //article//script
@@ -20,6 +19,11 @@ strip: //div[starts-with(@id, "qanda-")]
 
 strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
 
+#2021
+strip_id_or_class: sign-in-gate
+strip_id_or_class: js-ad-slot
+strip: //div[@data-print-layout="hide"]
+
 strip_id_or_class: hide-on-mobile
 strip_id_or_class: reveal-caption
 strip_id_or_class: readerquestions
@@ -29,6 +33,7 @@ strip_id_or_class: contributions__epic
 strip_id_or_class: youtube-media-atom__overlay
 
 strip: //figcaption
+strip: //svg
 
 
 title: //h1[@articleprop='headline']

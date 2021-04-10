@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' fusion-content-tb ')]
+
+strip_id_or_class: printfriendly
+
+prune: no
+
+test_url: https://longreads.tni.org/digital-colonialism-the-evolution-of-us-empire
+test_contains: Digital colonialism is rooted in the domination
