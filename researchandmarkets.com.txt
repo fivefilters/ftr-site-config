@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' order-description-container ')]
+
+prune: no
+
+test_url: https://www.researchandmarkets.com/reports/5264361/retail-point-of-sale-market-by-product-fixed
