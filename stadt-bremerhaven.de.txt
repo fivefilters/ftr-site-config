@@ -1,0 +1,13 @@
+body: //div[@class='entry-inner']
+
+# Remove lazy-loaded image tags, favouring image in <noscript> elements
+replace_string(<noscript>): <!-- noscript -->
+replace_string(</noscript>): <!-- /noscript -->
+strip: //img[contains(concat(" ", normalize-space(@class), " "), " jetpack-lazy-image ")]
+
+strip: //div[@class='aawp']
+strip_id_or_class: aawp-disclaimer
+
+test_url: https://stadt-bremerhaven.de/google-meet-laesst-sich-nun-auf-alle-cast-faehigen-geraete-streamen/
+test_url: https://stadt-bremerhaven.de/nanoleaf-essentials-a60-mit-thread-im-test/
+test_url: https://stadt-bremerhaven.de/facebook-stellt-heute-wohl-noch-neue-audio-loesungen-vor/
