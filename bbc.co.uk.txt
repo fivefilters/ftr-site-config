@@ -21,6 +21,8 @@ strip: //article//header
 strip: //div[contains(@class, "CommentsWrapper")]
 strip: //*[contains(@class, 'VisuallyHidden')]
 
+strip: //svg
+
 #strip: //div[@class="story-feature narrow"]
 #strip: //div[@class="story-feature wide"]
 #strip: //div[@class="story-feature dslideshow-enclosure"]

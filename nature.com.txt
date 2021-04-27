@@ -2,7 +2,7 @@ title: //meta[@property="og:title"]/@content
 date: //meta[@name="dc.date"]/@content
 date: //meta[@name="prism.publicationDate"]/@content
 author: //meta[@name='dc.creator']/@content
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article__body ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__body ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')] | //div[contains(@class, 'c-article-body')]
 
 strip: //div[contains(concat(' ',normalize-space(@id),' '),' further-reading-section ')]
 

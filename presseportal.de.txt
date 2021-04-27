@@ -1,9 +1,18 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' story-text ')]
+body: //article[contains(concat(' ',normalize-space(@class),' '),' story ')]
+title: //article[contains(concat(' ',normalize-space(@class),' '),' story ')]//h1
 
-strip_id_or_class: news-bodycopy
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' date ')]
+strip_id_or_class: story-sharing
 
-parser: html5php
-tidy: no
+# fix lazy loading
+find_string: src="/assets//img/highlight_ph.png"
+replace_string: 
+find_string: src="/assets/img/highlight_ph.png"
+replace_string:
+find_string: data-src="
+replace_string: src="
+
+prune: no
 
 test_url: http://www.presseportal.de/pm/103258/2930232/felix-neureuther-vor-der-ski-wm-ich-denke-von-rennen-zu-rennen
 test_url: http://www.presseportal.de/pm/66749/2933779/koelner-stadt-anzeiger-bahnmitarbeiter-werden-in-nrw-immer-haeufiger-angegriffen-zahl-der/rss

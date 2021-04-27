@@ -17,7 +17,9 @@ replace_string: '
 single_page_link: //link[@type='text/xml+oembed']
 
 # Correct User-Agent string needed to get the oembed URL
-http_header(user-agent): PHP/7.2
+http_header(user-agent): PHP/7.4
+# Skip cookie consent
+http_header(cookie): CONSENT=YES+srp.gws-20220606;
 
 prune: no
 tidy: no
