@@ -10,6 +10,11 @@ strip: //div[@class="gk__breadcrumb"]
 strip: //p[@class="ed__header__info--top"]
 strip: //div[contains(@class, "ed__review__article__header__price")]
 strip: //ul[contains(@class, 'js-preview-list')]
+strip: //div[@class="gk__text__container g2__o-hl-itm g2__vr--24 g2__vr--16--v-sm--mw"]
+strip: //h2[contains(@class, "ed__review__article__footer__user-reviews__title")]
+strip: //div[@class="row--nmrg"]
+strip: //div[contains(@class, 'ed__editorial__footer--light')]
+replace_string(<div class="numbers">): <div class="numbers">Note :
 replace_string(<footer>): <div>
 replace_string(</footer>): </div>
 replace_string(data-lazy): src
