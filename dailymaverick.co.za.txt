@@ -5,6 +5,17 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article-container
 strip: //p[contains(@class, 'image-caption')]
 strip_id_or_class: lightgallery-icon
 
+strip_id_or_class: subscribe-button
+strip_id_or_class: author-bio
+strip_id_or_class: addthis_tool
+strip_id_or_class: speechkit-container
+strip_id_or_class: lightgallery
+strip_id_or_class: comments
+strip_id_or_class: comments-area
+strip_id_or_class: top_article_poc-3
+strip_id_or_class: article-share
+strip_id_or_class: widget_top_article_poc
+
 prune: no
 
 test_url: https://www.dailymaverick.co.za/article/2020-08-28-revealed-the-cia-and-mi6s-secret-war-in-kenya/
