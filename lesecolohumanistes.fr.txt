@@ -1,0 +1,3 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' single ')]/*[not(self::figure)]
+
+test_url: https://lesecolohumanistes.fr/interdependance/
