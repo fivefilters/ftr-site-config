@@ -1,0 +1,9 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+date: //meta[@property="article:published_time"]/@content
+
+strip_id_or_class: s-share-buttons
+strip_id_or_class: s-share-w-c
+
+prune: no
+
+test_url: https://consortiumnews.com/2021/04/29/the-guardian-misinforms-on-uk-role-in-world/

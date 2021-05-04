@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+strip_id_or_class: tweet-box-footer
+
+prune: no
+
+test_url: https://twog.fr/quand-emmanuel-macron-papote-avec-selena-gomez
+test_url: https://www.twog.fr/category/comptwoirs/feed/

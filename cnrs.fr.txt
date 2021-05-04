@@ -1,0 +1,4 @@
+body: //div[contains(@class, "introduction")] | //div[contains(@class, 'field__items')]
+date: //div[contains(@class, 'main-column')]//time[contains(@class, "datetime")]/@datetime
+
+test_url: https://www.cnrs.fr/fr/cnrsinfo/lespace-au-quotidien
