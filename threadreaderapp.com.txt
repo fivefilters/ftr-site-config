@@ -1,4 +1,4 @@
-body: //div[@class='row t-tweet']
+body: //div[starts-with(@id, 'tweet_')]
 
 test_url: https://threadreaderapp.com/thread/1232407401678147586.html?refreshed=yes
-
+test_contains: I know better, trust me
