@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'everywhere-article-content')]
+
+strip_id_or_class: pullQuotes
+
+prune: no
+
+test_url: https://www.aarp.org/money/scams-fraud/info-2021/international-tech-support-scam-exposed.html
