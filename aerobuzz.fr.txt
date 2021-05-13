@@ -1,0 +1,3 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' chapo ')]
+
+test_url: https://www.aerobuzz.fr/depose-minute/aerodromes-de-proximite/
