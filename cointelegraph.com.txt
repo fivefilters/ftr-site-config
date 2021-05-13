@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]/article
+
+strip_id_or_class: visually-hidden
+strip_id_or_class: post-meta
+strip_id_or_class: post-actions
+
+test_url: https://cointelegraph.com/news/a-new-era-of-content-monetization-blockchain-tech-can-get-you-paid
