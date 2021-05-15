@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' Article ')]
+strip: //div[contains(@class, "-dfp-")]
+
+prune: no
+
+test_url: https://apnews.com/article/israel-west-bank-gaza-middle-east-israel-palestinian-conflict-7974cc0c03897b8b21e5fc2f8c7d8a79
+test_contains: Israeli airstrike on the Gaza City refugee camp was the deadliest
