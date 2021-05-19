@@ -9,6 +9,7 @@ strip: //h1[@class='post__title']
 strip_id_or_class: eyebrow
 strip_id_or_class: post__footer
 strip_id_or_class: social__list
+strip: //aside
 
 #ads
 strip_id_or_class: ad-wrapper
