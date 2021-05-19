@@ -10,6 +10,14 @@ strip_id_or_class: eyebrow
 strip_id_or_class: post__footer
 strip_id_or_class: social__list
 
+#ads
+strip_id_or_class: ad-wrapper
+strip_id_or_class: adInserts_0
+
+#lazyload
+find_string: data-src="
+replace_string: src="
+
 replace_string(<h2 class="post__deck">): <p>
 replace_string(</h2>): </p>   
 
