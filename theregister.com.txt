@@ -7,6 +7,15 @@ author: //div[@class='byline']/a[0]
 
 strip_id_or_class: promo_article
 
+# The Register embeds some quotes in a div with the class 'blockextract'.
+# Unfortunately Readability considers 'extract' as an indication that a node
+# should not be kept ("unlikely content")
+# find/replace here will prevent Readability from removing these quotes
+# wrap_in ensures that the div is wrapped in a blockquote tag
+find_string: class="blockextract"
+replace_string: class="blockquote"
+wrap_in(blockquote): //div[contains(@class, 'blockquote')]
+
 #multipage
 test_url: http://www.theregister.co.uk/2015/07/06/geeks_guide_spaceguard_center/
 #singlepage
