@@ -14,6 +14,7 @@ body: //ul[@id='imageSlide']//li[@class='firstSlide']//img | (//div[@class='txt_
 date: //meta[@itemprop="dateCreated"]/@content
 
 strip_id_or_class: insetFullBracket
+strip_id_or_class: newsletter-inset
 strip_id_or_class: insettipBox
 #strip_id_or_class: legacyInset
 strip_id_or_class: recipeACShopAndBuyText
