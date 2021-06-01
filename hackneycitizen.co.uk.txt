@@ -1,0 +1,17 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' fl-post-content ')]
+
+# handle lazy loading
+strip: //noscript
+find_string: src="data:image
+replace_string: disabled-src="data:image
+find_string: srcset="data:image
+replace_string: disabled-srcset="data:image
+find_string: data-pk-src="
+replace_string: src="
+
+strip_id_or_class: pk-share-buttons-wrap
+strip: //div[contains(@class, 'jetpack-search-filter')]
+
+prune: no
+
+test_url: https://www.hackneycitizen.co.uk/2021/05/24/town-hall-first-glimpse-hackney-central-station-upgrade/

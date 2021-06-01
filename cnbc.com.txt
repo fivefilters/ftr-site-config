@@ -5,6 +5,9 @@ title: //meta[@property="og:title"]/@content
 
 strip: //div[contains(@id, 'Placeholder-ArticleBody-Video')]
 
+strip_id_or_class: InlineImage-closeEnlargedImage
+strip: //svg
+
 prune: no
 
 test_url: https://www.cnbc.com/2020/08/20/former-trump-advisor-steve-bannon-arrested-on-charges-of-defrauding-donors-in-fundraising-scheme.html

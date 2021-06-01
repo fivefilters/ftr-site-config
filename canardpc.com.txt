@@ -1,22 +1,18 @@
-title: //h2[@class="article-title"]
-body: //div[@id="zenContent"] | //div[@id="block-articlenote"]
-author: //div[@class="article-author"]//a[@class="username"]
-author: //div[@class="block-author row"]//a[contains(@href, "membre")]
+title: //h1[@class="post-title"]
+body: //div[contains(@class, 'post-content')]
+author: //div[@class="post-informations"]//a[@class="highlight"]
 
-find_string: style="background-image: url('
-replace_string: ><img src="
-
-find_string: ');">
-replace_string: " /></a><a class="hide">
+strip: //div[@class="post-informations"]
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
 
-login_uri: https://www.canardpc.com/user/login
-login_username_field: name
-login_password_field: pass
-login_extra_fields: form_id=user_login_form
+login_uri: https://www.canardpc.com/se-connecter
+login_username_field: mail
+login_password_field: password
+login_extra_fields: _token=@=xpath("//form//input[@name='_token']", request_html(config.getLoginUri()))
+login_extra_fields: redirect="/"
 
-not_logged_in_xpath: //div[@class="messages--error"]
+not_logged_in_xpath: //div[@class="alert alert-danger"]
 
 test_url: https://www.canardpc.com/357/fouine-peaks-thimbleweed-park

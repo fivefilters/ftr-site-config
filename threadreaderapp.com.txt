@@ -1,4 +1,12 @@
-body: //div[@class='row t-tweet']
+body: //div[starts-with(@id, 'tweet_')]
+
+# fix lazy load
+find_string: src="/images/1px.png"
+replace_string: 
+find_string: data-src=
+replace_string: src=
 
 test_url: https://threadreaderapp.com/thread/1232407401678147586.html?refreshed=yes
+test_contains: I know better, trust me
 
+test_url: https://threadreaderapp.com/thread/1389650690683936770.html

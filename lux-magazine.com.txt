@@ -1,0 +1,10 @@
+date: //meta[@property="article:modified_time"]/@content
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+strip_id_or_class: wp-block-pullquote
+strip: //noscript
+
+prune: no
+
+test_url: https://lux-magazine.com/article/keeanga-yamahtta-taylor/
+test_url: https://lux-magazine.com/feed

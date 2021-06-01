@@ -1,0 +1,6 @@
+body: //div[@isleadart="true" or contains(concat(' ',normalize-space(@class),' '),' bdy--ctn ')]
+
+prune: no
+
+test_url: https://www.chicagotribune.com/entertainment/movies/michael-phillips/ct-mov-butch-sundance-anniversary-0709-20190711-7z56swetxve5fmogazonyzbdmy-story.html
+test_contains: Farrelly arranged for Steven Spielberg to see it.

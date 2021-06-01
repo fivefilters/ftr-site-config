@@ -1,6 +1,7 @@
 prune:yes
 
-body://div[@itemprop="articleBody"]
+body://div[@id="article-content"]
+title://div[contains(concat(' ',normalize-space(@class),' '),' article-titles ')]//h1
 
 strip_id_or_class: container_form_alert
 strip_id_or_class: spinner-container wide

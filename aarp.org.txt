@@ -1,0 +1,13 @@
+body: //div[contains(@class, 'everywhere-article-content')]
+date: //meta[@id="metaPublishDate"]/@content
+author: //meta[@id="metaAuthor"]/@content
+
+strip_id_or_class: pullQuotes
+strip: //noscript
+
+find_string: data-original-src=
+replace_string: src=
+
+prune: no
+
+test_url: https://www.aarp.org/money/scams-fraud/info-2021/international-tech-support-scam-exposed.html

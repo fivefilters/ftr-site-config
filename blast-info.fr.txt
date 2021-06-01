@@ -1,0 +1,9 @@
+title: //h2[1]
+body: //div[contains(@class, 'story-container')]
+author: //div[contains(@class, 'story-meta-author')]
+
+strip: //p[contains(@class, 'authors')]
+strip: //div[@class="story-tags"]
+strip: //div[@class="story-related"]
+
+test_url: https://www.blast-info.fr/articles/2021/quand-le-jeu-video-tire-a-droite-episode-1-pixels-et-culottes-courtes-k6uqgfpeTsasamW1-eYv7g

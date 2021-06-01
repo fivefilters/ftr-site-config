@@ -1,5 +1,4 @@
-strip_id_or_class: article-tools
-strip_id_or_class: pagenav
+author: //meta[@property="og:site_name"]/@content
 prune: no
-test_url: http://www.medialens.org/index.php/alerts/alert-archive/2012/713-the-illusion-of-democracy.html
+test_url: https://www.medialens.org/2012/the-illusion-of-democracy/
 test_contains: In an era of permanent war, economic meltdown
