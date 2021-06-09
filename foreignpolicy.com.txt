@@ -6,6 +6,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' post-inner ')]
 body: //div[@id="main"]
 
 strip_id_or_class: share-links
+strip_id_or_class: hide-desktop-alt
 
 prune: no
 
