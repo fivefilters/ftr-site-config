@@ -74,3 +74,5 @@ test_contains: Remember you will die
 test_contains: You have to have some faith.
 
 test_url: https://medium.com/@bfrancis/the-legacy-of-firefox-os-c58ec32d94f0
+
+strip_id_or_class: cw
