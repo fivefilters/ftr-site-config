@@ -1,0 +1,5 @@
+body: (//div[@data-elementor-type="wp-post"])[1]
+
+prune: no
+
+test_url: https://caseinterview.com/mece
