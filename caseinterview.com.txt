@@ -1,4 +1,5 @@
 body: (//div[@data-elementor-type="wp-post"])[1]
+strip: //footer
 
 prune: no
 
