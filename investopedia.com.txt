@@ -1,0 +1,15 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' toc ')]
+strip: //svg
+
+find_string: src="data:image
+replace_string: disabled-src="data:image
+
+find_string: data-src="
+replace_string: src="
+
+prune: no
+
+test_url: https://www.investopedia.com/terms/m/macd.asp
+test_contains: The MACD has a positive value
