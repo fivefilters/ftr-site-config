@@ -1,5 +1,7 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' lead-asset__content__media ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article__chunks ')]
 strip: //aside
 
+prune: no
+
 test_url: https://www.gq-magazine.co.uk/culture/article/adult-animation-boom
 test_contains: adult animation was already undergoing something
