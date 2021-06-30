@@ -1,4 +1,5 @@
 next_page_link: //link[@rel='next']
 body: //div[@id='main-content']
+strip: //noscript
 
 test_url: http://t3n.de/news/zukunftstag-2017-t3n-818436/
