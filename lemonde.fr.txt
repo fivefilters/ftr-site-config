@@ -48,6 +48,9 @@ replace_string: <input type="hidden" style="display:none;"
 # Remove some inline stylesheets
 strip: //link[@rel='stylesheet']
 
+# Remove footer CTA
+strip_id_or_class: message--register
+
 requires_login: yes
 
 login_uri: https://secure.lemonde.fr/sfuser/connexion
