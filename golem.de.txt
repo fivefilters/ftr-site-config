@@ -2,7 +2,7 @@
 # Rewrite of original template which fetched the printer-version without pictures
 
 # As of 2020, this cookie is required to fetch articles because of the GDPR cookie warning
-http_header(Cookie): golem_consent20=cmp|210127
+http_header(Cookie): golem_consent20=cmp|210630
 
 tidy: no
 prune: no
@@ -21,6 +21,9 @@ next_page_link: //a[@id='atoc_next']
 
 # Remove tracking and ads
 strip_id_or_class: iqadtile4
+strip_id_or_class: gbox_affiliate
+strip_id_or_class: seminars
+strip_id_or_class: supplementary
 
 # General Cleanup
 strip_id_or_class: list-jtoc

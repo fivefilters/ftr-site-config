@@ -1,0 +1,5 @@
+body: //article[@role="article"]
+prune: no
+
+test_url: https://www.soundonsound.com/people/massive-attacks-new-studio
+test_contains: We usually start with a few basic ideas

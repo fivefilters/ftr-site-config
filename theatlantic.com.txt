@@ -30,6 +30,7 @@ strip: //header
 strip: //gpt-ad
 strip: //div[contains(@class, 'ArticleBio_social')]
 strip: //*[contains(@class, 'ArticleRecirc')]
+strip: //*[contains(@class, 'ArticleRelatedContentModule')]
 
 strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]

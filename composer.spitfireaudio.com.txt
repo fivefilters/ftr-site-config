@@ -1,0 +1,13 @@
+body: //div[@id="app"]
+
+strip: //v-menu
+strip: //v-article
+
+strip_id_or_class: header-container
+strip_id_or_class: footer
+strip_id_or_class: header__hamburger
+strip_id_or_class: main-menu
+
+prune: no
+
+test_url: https://composer.spitfireaudio.com/en/articles/danny-elfman-on-the-evolution-of-midi-composing-ideas-on-voice-notes-tim-burton

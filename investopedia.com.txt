@@ -1,0 +1,19 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' toc ')]
+strip: //svg
+
+find_string: src="data:image
+replace_string: disabled-src="data:image
+
+find_string: data-src="
+replace_string: src="
+
+# <div id="mntl-sc-block-inlinevideo__video_1-0" class="comp lazyload mntl-sc-block-inlinevideo__video mntl-jwplayer mntl-block" data-bgset="https://i.investopedia.com/image/jpeg/1537372474586/macd.jpg" data-sizes="auto"></div>
+find_string: data-bgset="https://
+replace_string: ><img src="https://
+
+prune: no
+
+test_url: https://www.investopedia.com/terms/m/macd.asp
+test_contains: The MACD has a positive value
