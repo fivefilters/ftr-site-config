@@ -12,7 +12,7 @@ class FilesTest extends \PHPUnit\Framework\TestCase
         $this->assertGreaterThan(0, count($configFiles));
 
         foreach ($configFiles as $file) {
-            $this->assertContains('.txt', $file);
+            $this->assertStringContainsString('.txt', $file);
         }
     }
 }
