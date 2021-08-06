@@ -5,5 +5,6 @@ body: //div[contains(@class, 'post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
 strip: //aside
+prune: no
 
 test_url: https://gizmodo.com/the-new-bad-tick-is-going-to-take-over-half-the-united-1831079855
