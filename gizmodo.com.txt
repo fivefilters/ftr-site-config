@@ -1,10 +1,17 @@
 title: //head/title
 author: //meta[@name="author"]/@content
-body: //div[contains(concat(' ',normalize-space(@class),' '),' js_post-content ')]
 body: //div[contains(@class, 'post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
-strip: //aside
+strip_id_or_class: magnifier
+strip: //svg
+strip_id_or_class: js_commerce-inset-permalink
+strip_id_or_class: ad-commerce
+
+parser: libxml
+
 prune: no
+
+strip: //aside
 
 test_url: https://gizmodo.com/the-new-bad-tick-is-going-to-take-over-half-the-united-1831079855
