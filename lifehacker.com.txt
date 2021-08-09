@@ -1,11 +1,17 @@
-# Changes might need to be made to .lifehacker.com.txt too
+# Changes might need to be made to .lifehacker.com.txt, gizmodo.com.txt too
 
 title: //head/title
 author: //meta[@name="author"]/@content
 body: //div[contains(@class, 'post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
+strip_id_or_class: magnifier
+strip: //svg
 strip: //aside
+strip_id_or_class: js_commerce-inset-permalink
+strip_id_or_class: ad-commerce
+
+parser: libxml
 
 prune: no
 
