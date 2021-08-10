@@ -44,6 +44,7 @@ strip: //p[@class='themen_foren']
 strip: //style
 strip: //span[@class='source']
 strip: //figure[@class='printversion__logo']
+strip: //figure[@class='branding']
 strip: //a-ad
 strip: //footer
 
