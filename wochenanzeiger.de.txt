@@ -1,0 +1,6 @@
+strip_id_or_class: kleinertext
+strip: //h3[text() = 'Weiterlesen']
+strip: //div[starts-with(@class, 'box') and contains(@class, '_simple')]
+
+test_url: https://www.wochenanzeiger.de/article/238700.html
+
