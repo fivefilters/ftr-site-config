@@ -1,0 +1,9 @@
+body: //main
+
+strip_id_or_class: video-wrapper
+strip: //button
+
+prune: no
+
+test_url: https://www.texasmonthly.com/interactive/20-essential-texas-rap-tracks/
+test_url: https://www.texasmonthly.com/arts-entertainment/dennis-quaid-king-of-sports-movies/
