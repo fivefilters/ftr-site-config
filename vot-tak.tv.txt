@@ -1,4 +1,4 @@
 # prevent duplicated images
-strip: //amp-img
+strip: //img[@fallback]
 
 test_url: https://vot-tak.tv/novosti/16-08-2021-nevzlin-intervyu/
