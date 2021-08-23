@@ -2,6 +2,7 @@ body: //main
 
 strip_id_or_class: video-wrapper
 strip: //button
+strip: //aside
 
 prune: no
 
