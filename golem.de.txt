@@ -34,6 +34,7 @@ strip_id_or_class: comments
 strip_id_or_class: footer
 strip_id_or_class: job-market
 strip_id_or_class: tags
+strip_id_or_class: topictags
 strip: //div[contains(@class, 'authors--withsource')]
 strip: //div[@class='toc']
 strip: //li[not(.//text()[normalize-space()])][not(@class)]
