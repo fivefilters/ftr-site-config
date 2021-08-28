@@ -23,6 +23,7 @@ strip_id_or_class: icon-chevron
 
 strip: //h5[contains(., 'READ MORE:')]
 strip: //h5[contains(., 'Read more:')]
+strip: //div[contains(@id, 'playinc-article-component')]
 
 tidy: no
 test_url: http://www.independent.co.uk/news/world/middle-east/syria-could-face-human-rights-probe-2274326.html
