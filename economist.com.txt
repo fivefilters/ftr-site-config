@@ -9,6 +9,8 @@ strip_id_or_class: newsletter-form--inline
 strip_id_or_class: layout-article-links
 strip_id_or_class: layout-sticky-rail
 strip_id_or_class: article__aside
+strip_id_or_class: _newsletterContentPromo
+strip_id_or_class: article-audio-player__cta
 
 requires_login: yes
 
