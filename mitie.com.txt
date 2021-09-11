@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' m35 ')]
+strip: //aside
+
+prune: no
+
+test_url: https://www.mitie.com/shoppers-concerned-about-covid-safety-as-they-return-to-the-high-street-new-research-finds/
