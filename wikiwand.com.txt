@@ -1,0 +1,8 @@
+body: //div[@id="fullContent"]
+
+strip: //div[@data-aaad]
+
+prune: no
+
+test_url: https://www.wikiwand.com/en/Maslow%27s_hierarchy_of_needs
+test_contains: Personal security
