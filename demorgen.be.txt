@@ -1,11 +1,12 @@
 # get past the cookie wall
-http_header(cookie): pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
+http_header(cookie): authId=1; pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
 
 # grab the author and date
 author: //a[@class='artstyle__byline__author']
 date: //time[@class='artstyle__byline__datetime']
 
 # grab article body
+body: //header[@data-element-id="article-element-header"] | //section[contains(@class, 'artstyle__main--container')]
 body: //article[@class='artstyle fu--type-default artstyle--type-default']
 
 # strip category header
@@ -16,6 +17,8 @@ strip: //section[@data-element-id='article-element-authors']
 
 # strip the "Lees ook" part at the bottom
 strip: //aside[@class='artstyle__editorial-tips']
+
+prune: no
 
 test_url: https://www.demorgen.be/nieuws/helft-belgische-moslims-is-fundamentalist~b2344ae6/
 test_contains: Helft Belgische moslims is fundamentalist
