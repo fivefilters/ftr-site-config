@@ -54,8 +54,8 @@ strip_id_or_class: message--register
 requires_login: yes
 
 login_uri: https://secure.lemonde.fr/sfuser/connexion
-login_username_field: connection[mail]
-login_password_field: connection[password]
+login_username_field: email
+login_password_field: password
 
 login_extra_fields: connection[_token]=@=xpath("//form//input[@id='connection__token']", request_html(config.getLoginUri()))
 

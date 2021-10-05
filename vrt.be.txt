@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__intro ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article__par ')]
+
+strip_id_or_class: videoplayer
+strip_id_or_class: teaser
+
+prune: no
+
+test_url: https://www.vrt.be/vrtnws/nl/2021/09/18/zoektocht-naar-vermist-koppel-houdt-verenigde-staten-in-de-ban/
