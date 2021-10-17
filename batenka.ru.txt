@@ -1,0 +1,7 @@
+body: //section[@itemprop="articleBody"]
+
+strip: //section[contains(@class, 'hide-mobile')]
+
+prune: no
+
+test_url: https://batenka.ru/unity/sect/white-brotherhood/
