@@ -61,9 +61,10 @@ strip_id_or_class: a-pvgs
 strip_id_or_class: a-pvg__body
 strip_id_or_class: teaser_adliste
 strip_id_or_class: a-article-header__service
-strip_id_or_class: legacy-img
 strip_id_or_class: opinary-widget-embed
 strip_id_or_class: article-sidebar
+strip_id_or_class: a-box__header
+strip_id_or_class: a-article-teaser
 
 # Strip Ads
 strip_id_or_class: ad_
