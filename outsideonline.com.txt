@@ -1,4 +1,4 @@
-body: //main | //section
+body: //div[contains(@class, 'c-content-single-flexible-layout__body') or contains(@class, 'c-layout-text__body') or contains(@class, 'c-layout-image__container')]
 
 find_string: data-src="http
 replace_string: src="http
@@ -8,6 +8,8 @@ strip_id_or_Class: o-content-cta
 strip_id_or_class: tangent--show-text
 strip: //aside
 strip: //blockquote[contains(@class, 'pullquote')]
+
+prune: no
 
 test_url: https://www.outsideonline.com/culture/essays-culture/money-problems-outdoor-dirtbag-culture/
 test_url: https://www.outsideonline.com/health/running/mike-shattuck-running-bipolar/
