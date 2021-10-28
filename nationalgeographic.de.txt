@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'article-cntr')]
+
+prune: no
+
+strip_id_or_class: ng-inline_promo__container
+
+test_url: https://www.nationalgeographic.de/geschichte-und-kultur/2021/10/wie-ein-magischer-spiegel-der-azteken-an-den-hof-von-elisabeth-i-gelangte
