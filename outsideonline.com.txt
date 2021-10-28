@@ -1,11 +1,13 @@
-body: //div[contains(@class, 'c-content-single-flexible-layout__body')]
+body: //main | //section
 
 find_string: data-src="http
 replace_string: src="http
 
 strip_id_or_class: c-social-share
 strip_id_or_Class: o-content-cta
-strip: //a[@data-pin-custom="true"]
+strip_id_or_class: tangent--show-text
+strip: //aside
+strip: //blockquote[contains(@class, 'pullquote')]
 
 test_url: https://www.outsideonline.com/culture/essays-culture/money-problems-outdoor-dirtbag-culture/
 test_url: https://www.outsideonline.com/health/running/mike-shattuck-running-bipolar/
