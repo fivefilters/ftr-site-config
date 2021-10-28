@@ -1,0 +1,12 @@
+body: //div[contains(@class, 'article-content-data')]
+
+strip_id_or_class: article-action-buttons
+strip_id_or_class: partner_social_share_links
+strip_id_or_class: tags-section
+strip_id_or_class: for-hocal-ads
+strip_id_or_class: left_level_ad
+
+prune: no
+
+test_url: https://www.thehansindia.com/telangana/telangana-will-quota-system-in-liquor-policy-work-713008
+test_url: https://www.thehansindia.com/telangana/feed
