@@ -1,14 +1,11 @@
-body: //article[contains(@class, 'c-flex-article')]
-body: //article//div[contains(@clss, 'article__content')]
-date: //meta[@property="article:published_time"]/@content
-author: //meta[@name="author"]/@content
+body: //div[contains(@class, 'c-content-single-flexible-layout__body')]
 
-find_string: data-original="http
+find_string: data-src="http
 replace_string: src="http
 
-strip_id_or_class: block-recirc
-strip_id_or_class: social
+strip_id_or_class: c-social-share
+strip_id_or_Class: o-content-cta
 strip: //a[@data-pin-custom="true"]
 
-test_url: http://www.outsideonline.com/2108066/emerald-citys-velo-thieves-have-problem-bike-batman
-test_url: https://www.outsideonline.com/2412303/mike-shattuck-running-bipolar
+test_url: https://www.outsideonline.com/culture/essays-culture/money-problems-outdoor-dirtbag-culture/
+test_url: https://www.outsideonline.com/health/running/mike-shattuck-running-bipolar/
