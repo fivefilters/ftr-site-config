@@ -4,7 +4,7 @@ find_string: data-src="http
 replace_string: src="http
 
 strip_id_or_class: c-social-share
-strip_id_or_Class: o-content-cta
+strip_id_or_class: o-content-cta
 strip_id_or_class: tangent--show-text
 strip: //aside
 strip: //blockquote[contains(@class, 'pullquote')]
