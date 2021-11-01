@@ -1,0 +1,9 @@
+body: //div[contains(@class, 'article-page__middle-column')]
+
+prune: no
+
+strip_id_or_class: donation-cta-contenttop
+strip_id_or_class: donation-cta-contentbottom
+strip_id_or_class: blockquote__pull-quote-quotation
+
+test_url: https://www.opendemocracy.net/en/opendemocracyuk/6-government-policies-that-are-scarier-than-halloween/
