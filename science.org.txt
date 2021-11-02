@@ -1,0 +1,9 @@
+title: //h1[@class='news-article__hero__title']
+date: //span[@class='news-article__hero__date']
+# in case the span is removed
+date: //ul[contains(concat(' ',normalize-space(@class),' '),' news-article__hero__bottom-meta ')]/li[1]
+body: //article[@class='news-article-content']
+
+http_header(Cookie): cookiePolicy=iaccept; I2KBRCK=1
+
+test_url: https://www.science.org/content/blog-post/hiring-away

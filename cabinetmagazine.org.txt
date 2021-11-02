@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'blog-content')]
+
+prune: no
+
+test_url: https://www.cabinetmagazine.org/kiosk/komska_yuliya_4_march_2021.php

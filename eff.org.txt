@@ -1,3 +1,5 @@
 author: //meta[@name="author"]/@content
 
+wrap_in(blockquote): //p[contains(concat(' ',normalize-space(@class),' '),' pull-quote ')]
+
 test_url: https://www.eff.org/deeplinks/2018/02/john-perry-barlow-internet-pioneer-1947-2018
