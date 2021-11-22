@@ -1,0 +1,11 @@
+# This filter is tested on:
+# https://juejin.cn/post/7020590213361565726
+
+http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+author: //div[contains(@class, 'author-info-box')]//span[contains(@class, 'name')]
+title: //h1[contains(@class, "article-title")]
+
+prune: no
+
+test_url: https://juejin.cn/post/7020590213361565726
