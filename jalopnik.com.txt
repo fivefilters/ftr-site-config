@@ -1,6 +1,6 @@
 title: //head/title
 author: //meta[@name="author"]/@content
-body: //div[contains(@class, 'post-content')]
+body: //div[contains(@class, 'js_post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
 test_url: http://jalopnik.com/5892124/1955-porsche-550-spyder-sells-for-record-3685-million/

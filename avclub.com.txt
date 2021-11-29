@@ -2,7 +2,7 @@
 
 title: //head/title
 author: //meta[@name="author"]/@content
-body: //div[contains(@class, 'post-content')]
+body: //div[contains(@class, 'js_post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
 strip_id_or_class: magnifier

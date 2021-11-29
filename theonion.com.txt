@@ -1,6 +1,6 @@
 title: //head/title
 author: //meta[@name="author"]/@content
-body: //div[contains(@class, 'post-content')]
+body: //div[contains(@class, 'js_post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
 test_url: https://www.theonion.com/theresa-may-narrowly-manages-to-survive-parliamentary-f-1831077604
