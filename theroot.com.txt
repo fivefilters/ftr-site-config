@@ -1,6 +1,6 @@
 title: //head/title
 author: //meta[@name="author"]/@content
-body: //div[contains(@class, 'post-content')]
+body: //div[contains(@class, 'js_post-content')]
 strip: //div[contains(@class, 'content-summary')]
 
 test_url: https://verysmartbrothas.theroot.com/trashcan-lannister-tweets-about-border-wall-gets-dunke-1831074232
