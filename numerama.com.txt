@@ -13,6 +13,7 @@ strip: //p[contains(@class, 'humanoid-videos--title')]
 strip: //div[contains(@class, 'humanoid-videos')]
 strip: //a[contains(@class, 'humanoid-videos__video-title')]
 strip_id_or_class: js-cookies-bar
+strip_id_or_class: humanoid-videos
 
 test_url: http://www.numerama.com/sciences/243352-hubble-detecte-un-trou-noir-supermassif-propulse-hors-de-sa-galaxie.html
 test_url: http://www.numerama.com/tech/242703-free-mobile-et-la-4g-en-illimite-ce-quil-faut-savoir.html
