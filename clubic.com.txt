@@ -7,6 +7,7 @@ strip: //a[contains(text(),'Page précédente')]
 
 body: //div[@id='content']
 strip_id_or_class: breadcrumb
+strip_id_or_class: breadcrumbs-tags
 strip_id_or_class: kadmer-ad
 strip_id_or_class: slideshow-head
 strip_id_or_class: parse-shopper-resume-produit
