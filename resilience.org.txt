@@ -1,0 +1,5 @@
+# Article's main content
+body: //section[@class="post-content"]
+
+# A test URL, e.g. the article you used to write the file
+test_url: https://www.resilience.org/stories/2021-10-14/rural-resilience-all-in-good-time/
