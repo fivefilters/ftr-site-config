@@ -24,7 +24,7 @@ date://span[contains(@class,"pb-timestamp")]
 date://meta[@name="eomportal-lastUpdate"]/@content
 
 #GDPR cookies
-http_header(Cookie): wp_devicetype=0; rplpwabt4=1; devicetype=0; osfam=0; de=; client_region=0; wp_gdpr=1|1; rplmct=1; washpost_poe=true;
+http_header(Cookie): wp_devicetype=0; rplampr=0a|20181213; wp_ak_hpsw=0|20211124; wp_ak_v_ot=1; wp_ak_ot=1|20211012;
 
 strip://div[@class="relative primary-slot padding-top img-border gallery-container photo-wrapper"]
 strip://div[@id="wp-column six end"]
