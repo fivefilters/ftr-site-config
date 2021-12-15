@@ -62,6 +62,8 @@ strip_id_or_class: hidden
 strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
 strip_id_or_class: related-links-block
 
+http_header(user-agent): PHP/7.4
+
 prune: no
 tidy: no
 
