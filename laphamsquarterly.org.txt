@@ -1,5 +1,9 @@
 body: //article[contains(@class, 'content')]
 
+date: //header[contains(@class, 'content-header')]//p[contains(@class, 'pub-date')]
+
+strip: //style
+
 prune: no
 
 test_url: https://www.laphamsquarterly.org/roundtable/becoming-religion-book
