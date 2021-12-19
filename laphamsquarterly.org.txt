@@ -1,0 +1,6 @@
+body: //article[contains(@class, 'content')]
+
+prune: no
+
+test_url: https://www.laphamsquarterly.org/roundtable/becoming-religion-book
+test_contains: One consequence of the biblical texts
