@@ -1,5 +1,8 @@
 body: //article[contains(concat(' ',normalize-space(@class),' '),' entry__body ')]
 
+strip_id_or_class: entry__tags
+strip_id_or_class: entry__likes
+
 prune: no
 
 test_url: https://snob.ru/society/masony-v-lozhe-i-vokrug-nee-chast-1/
