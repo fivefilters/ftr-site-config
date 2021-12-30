@@ -1,0 +1,3 @@
+body: (//div[contains(concat(' ',normalize-space(@class),' '),' post_text ')])[1]
+
+test_url: https://narratively.com/the-one-eyed-african-queen-who-defeated-the-roman-empire/
