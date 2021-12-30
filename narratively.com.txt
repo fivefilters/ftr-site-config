@@ -1,5 +1,9 @@
 body: (//div[contains(concat(' ',normalize-space(@class),' '),' post_text ')])[1]
 
+strip_id_or_class: pressboard-ad-sponsorship-tag
+strip_id_or_class: pressboard-ad-sponsorship-msg
+strip_id_or_class: ol-banner
+
 prune: no
 
 test_url: https://narratively.com/the-one-eyed-african-queen-who-defeated-the-roman-empire/
