@@ -1,0 +1,10 @@
+# remove empty div that would otherwise cause readability to remove everything inside the body
+# I though the below does what's written above, but it doesn't. IDK why it works anyways
+find_string: <div>
+replace_string: 
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' text-intro ')]
+test_url: https://www.psu.edu/news/research/story/people-anxiety-may-strategically-choose-worrying-over-relaxing/
+test_url: https://www.psu.edu/news/administration/story/penn-state-names-neeli-bendapudi-next-president/
+test_url: https://www.psu.edu/news/administration/story/officials-monitoring-pandemic-conditions-spring-return-university-park/
+test_url: https://www.psu.edu/news/administration/story/how-states-investment-penn-state-pays-dividends-pennsylvania/
