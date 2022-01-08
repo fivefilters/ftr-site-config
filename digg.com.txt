@@ -1,0 +1,5 @@
+# Follow link posts
+single_page_link: //article[@itemprop="mainEntity"]//a[@itemprop="url" and contains(@data-href, "/longreads/redirect/")]
+if_page_contains: //link[@rel="canonical" and contains(@href, "https://digg.com/longreads/link/")]
+
+test_url: https://digg.com/longreads/link/i-have-moments-of-shame-i-cant-control-the-lives-ruined-by-explicit-collector-culture
