@@ -2,7 +2,12 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article__content 
 
 strip_id_or_class: paywall-container
 strip_id_or_class: paywall__container
+strip_id_or_class: newsletter-in-article
+strip_id_or_class: article__tools
 strip: //div[@data-access="limited"]
+strip: //div[@role="toolbar"]
+
+strip: //footer
 
 prune: no
 
