@@ -4,10 +4,11 @@ strip_id_or_class: paywall-container
 strip_id_or_class: paywall__container
 strip_id_or_class: newsletter-in-article
 strip_id_or_class: article__tools
-strip_id_or_class: author__info
+strip_id_or_class: author--top
 
 strip: //div[@data-access="limited"]
 strip: //div[@role="toolbar"]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]
 
 strip: //footer
 
