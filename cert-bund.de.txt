@@ -1,0 +1,1 @@
+body:   //div[@class='announcement-top information']|//div[@class='announcement revisionhistory']|//div[@class='announcement description']
