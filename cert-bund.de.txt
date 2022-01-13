@@ -1,0 +1,3 @@
+body: //div[@class='announcement-top information']|//div[@class='announcement revisionhistory']|//div[@class='announcement description']
+
+test_url: https://www.cert-bund.de/advisoryshort/CB-K18-1118%20UPDATE%205
