@@ -1,5 +1,7 @@
 body: //div[contains(concat(" ",normalize-space(@class)," ")," article-content ")]
 
+strip: //div[contains(concat(" ",normalize-space(@class)," ")," article-tag ")]
+
 prune: no
 
 test_url: https://www.hodinkee.com/articles/this-couple-is-putting-india-back-on-the-horological-map
