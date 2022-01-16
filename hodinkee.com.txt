@@ -1,0 +1,6 @@
+body: //div[contains(concat(" ",normalize-space(@class)," ")," article-content ")]
+
+prune: no
+
+test_url: https://www.hodinkee.com/articles/this-couple-is-putting-india-back-on-the-horological-map
+test_contains: quietly achieved incredible successes
