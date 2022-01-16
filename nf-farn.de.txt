@@ -1,0 +1,5 @@
+body: //article[contains(concat(" ",normalize-space(@class)," ")," view-mode-full ")]
+
+prune: no
+
+test_url: https://www.nf-farn.de/maer-ueberbevoelkerung
