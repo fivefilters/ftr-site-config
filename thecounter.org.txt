@@ -1,0 +1,7 @@
+body: //section[@id="main-article-content"]
+
+strip_id_or_class: article-pullquote
+
+prune: no
+
+test_url: https://thecounter.org/familiar-refrain-united-farm-workers-grapples-how-grow-ufw/
