@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content_blocks ')]
+
+prune: no
+
+test_url: https://www.thefader.com/2016/06/01/argentina-soccer-hooligan-murders-old-boys-barra-brava
+test_contains: ram themselves into supporters of other clubs
