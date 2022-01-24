@@ -1,0 +1,5 @@
+body: //div[@role="document"]
+
+prune: no
+
+test_url: https://thebulletin.org/2021/11/the-untold-story-of-the-worlds-biggest-nuclear-bomb/
