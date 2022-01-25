@@ -1,5 +1,9 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content_blocks ')]
 
+strip_id_or_class: custom_share_buttons_top 
+strip_id_or_class: new_socials_bottom
+strip: //div[contains(concat(" ",normalize-space(@class)," ")," ad ")]
+
 prune: no
 
 test_url: https://www.thefader.com/2016/06/01/argentina-soccer-hooligan-murders-old-boys-barra-brava
