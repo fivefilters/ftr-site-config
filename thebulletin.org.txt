@@ -1,6 +1,7 @@
 body: //div[@role="document"]
 
 strip_id_or_class: fl-visible-desktop-medium
+strip_id_or_class: comments-area
 
 prune: no
 
