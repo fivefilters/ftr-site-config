@@ -1,6 +1,7 @@
 body: //section[@id="main-article-content"]
 
 strip_id_or_class: article-pullquote
+strip_id_or_class: hide-on-amp
 
 prune: no
 
