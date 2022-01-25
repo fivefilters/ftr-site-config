@@ -25,6 +25,7 @@ strip_id_or_class: inset-left-component
 strip_id_or_class: recirc-most-popular
 strip_id_or_class: callout--has-top-border
 strip_id_or_class: newsletter-subscribe-form
+strip_id_or_class: iframe-embed
 
 strip: //div[@id="social"]
 strip: //img[contains(@alt, 'capital letter')]
