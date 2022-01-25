@@ -1,0 +1,5 @@
+body: (//div[contains(concat(" ",normalize-space(@class)," ")," content-unibas ")])[1]
+
+prune: no
+
+test_url: https://dg.philhist.unibas.ch/de/studium/werkzeugkasten-geschichte/wissenschaftliches-arbeiten/quellenanalyse/
