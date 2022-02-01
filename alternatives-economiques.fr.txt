@@ -2,17 +2,20 @@
 date: //header[contains(concat(' ',normalize-space(@class),' '),' o-page__content__head ')]//div[contains(concat(' ',normalize-space(@class),' '),' o-infos ')]//time[contains(concat(' ',normalize-space(@class),' '),' o-infos__date ')]
 
 # Author
-author: //header//a[contains(@href, '/users/')]
+author: //header//a[contains(@href, '/users/')] | //header//div[contains(@class, "c-portrait__infos")]
 
 # Content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' o-page ')]
 
 # Remove quotes and others
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' o-page__footer ')]
+strip: //noscript
 strip_id_or_class: c-same-subject
+strip_id_or_class: o-head
 strip_id_or_class: c-kiosk--single
 strip_id_or_class: o-page__footer
 strip_id_or_class: o-page__figure__trigger
+strip_id_or_class: o-view-more
 strip_id_or_class: c-comments
 strip_id_or_class: c-epigraph
 
