@@ -1,0 +1,9 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' hentry ')]
+
+strip_id_or_class: section--pullquote
+strip_id_or_class: hide-for--medium
+strip_id_or_class: c-social
+
+prune: no
+
+test_url: https://intern-mag.com/the-experience-vortex/
