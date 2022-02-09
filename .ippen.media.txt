@@ -1,1 +1,27 @@
 # Author: HolgerAusB
+#
+# ippen.media is a German newspaper network that operates about 60+ websites
+# with (local) news and magazines, all or mostly with the same CMS.
+#
+# as I can't maintain 60+ websites I will only do for the most largest ones (in my opionion)
+#
+#==========================
+#
+# If you host fultext-rss/wallabag on your own servers you may
+# a)
+# copy this file and name it for your domains e.g.:
+#        custom/hanauer.de.txt
+#        custom/ruhr23.de.txt
+#
+# or
+# b)
+# add a fingerprint per site to your custom_config.php, e.g.:
+#
+#    //Ippen Media Sites
+#    '<meta content="https://www.fr.de" property="og:site_name"/>' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
+#    '<meta content="https://www.fnp.de" property="og:site_name"/>' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
+#
+#==========================
+#
+# to get the source-feed add rssfeed.rdf to the category-URL e.g.
+#    https://www.fr.de/hessen/rssfeed.rdf
