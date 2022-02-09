@@ -103,7 +103,7 @@ strip_id_or_class: mmoObjectAsTeaserInArticle
 strip_id_or_class: additionalStylesAudioVideo
 strip_id_or_class: hideMMElements
 
-# Remove F+ paywall advert and more tidy-up ### by HolgerAusB
+# Remove F+ paywall adverts and more tidy-up ### by HolgerAusB
 strip_id_or_class: js-aco-ContentPayment_Content
 strip_id_or_class: js-aco-ContentPayment_Panel
 strip_id_or_class: aco-ContentPayment_Link
