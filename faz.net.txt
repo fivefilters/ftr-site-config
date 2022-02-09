@@ -103,9 +103,19 @@ strip_id_or_class: mmoObjectAsTeaserInArticle
 strip_id_or_class: additionalStylesAudioVideo
 strip_id_or_class: hideMMElements
 
+# Remove F+ paywall advert and more tidy-up ### by HolgerAusB
+strip_id_or_class: js-aco-ContentPayment_Content
+strip_id_or_class: js-aco-ContentPayment_Panel
+strip_id_or_class: aco-ContentPayment_Link
+strip_id_or_class: mm-adbox
+strip: //footer[@class='tsr-Base_ContentMeta']
+strip_id_or_class: aut-Teaser
+
 # Try it yourself
 test_url: http://www.faz.net/aktuell/feuilleton/zum-tod-von-margaret-thatcher-die-reizfigur-12141919.html#Drucken
 test_url: http://www.faz.net/aktuell/politik/inland/allensbach-analyse-im-namen-des-volkes-13106492.html
 test_url: http://www.faz.net/aktuell/feuilleton/kino/video-filmkritiken/video-filmkritik-when-animals-dream-zerrissene-jugend-13105772.html
 test_url: https://www.faz.net/aktuell/feuilleton/debatten/keine-smart-city-in-toronto-google-stadt-ist-abgesagt-16763217.html?GEPC=s5
 
+# F+ Article
+test_url: https://www.faz.net/aktuell/wirtschaft/wohnen/christian-voelkers-der-immobilienmakler-der-superreichen-17778869.html
