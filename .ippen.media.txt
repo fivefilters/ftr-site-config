@@ -11,15 +11,14 @@
 # a)
 # copy this file and name it for your domains e.g.:
 #        custom/hanauer.de.txt
-#        custom/ruhr23.de.txt
+#        custom/ruhr24.de.txt
 #
 # or
 # b)
-# add a fingerprint per site to your custom_config.php, e.g.:
+# add a fingerprint to the array in your custom_config.php, does most but not all sites e.g.:
 #
 #    //Ippen Media Sites
-#    '<meta content="https://www.fr.de" property="og:site_name"/>' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
-#    '<meta content="https://www.fnp.de" property="og:site_name"/>' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
+#    'var ippenErr = [], ippenPrevEH' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
 #
 #==========================
 #
@@ -51,6 +50,8 @@ test https://www.24rhein.de/rheinland-nrw/duisburg/duisburg-marxloh-raeuber-uebe
 test https://www.24vita.de/verbraucher/brauchen-herzschrittmacher-zu-neueren-iphones-mehr-abstand-zr-91338772.html
 test https://www.az-online.de/uelzen/stadt-uelzen/mehr-gaeste-in-der-uelzener-stadthalle-als-erlaubt-91282522.html
 test https://www.bgland24.de/bgland/region-berchtesgaden/bischofswiesen-ort28409/schoenau-am-koenigssee-wieder-grosses-interesse-bei-fit-durch-unser-gmoa-2022-91285772.html
+test https://www.bw24.de/baden-wuerttemberg/wolf-baden-wuerttemberg-sichtung-zollernalbkreis-spaziergaengerin-raubtier-nachweis-91297558.html
+test https://www.chiemgau24.de/chiemgau/chiemsee/gstadt-am-chiemsee-ort118608/gstadt-tourist-info-leiterin-berichtet-von-guter-auslastung-bei-gaestezahlen-trotz-corona-91288990.html
 test https://www.fnp.de/frankfurt/frankfurt-sachsenhausen-der-adlhochplatz-bekommt-einen-neuen-namen-91287869.html
 test https://www.fr.de/frankfurt/die-nfl-kommt-nach-frankfurt-91329620.html
 test https://www.hna.de/kassel/eigentuemer-sollen-sich-ruesten-91290102.html
