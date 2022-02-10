@@ -4,8 +4,6 @@
 # with (local) news and magazines, all or most of the newspaper sites with the same CMS.
 # magazine sites are not working yet.
 #
-# as I can't maintain 60+ websites I will only do for the most largest ones (in my opionion)
-#
 #==========================
 #
 # If you host fultext-rss/wallabag on your own servers you may
@@ -16,25 +14,29 @@
 #
 # or
 # b)
-# add a fingerprint to the array in your custom_config.php, does most but not all sites e.g.:
+# for fulltext-rss: add a fingerprint to the array in your custom_config.php:
 #
-#    //Ippen Media Sites
-#    'var ippenErr = [], ippenPrevEH' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
+# $options->fingerprints = array(
+#        //Ippen Media Newspaper Sites
+#        'var ippenErr = [], ippenPrevEH' => array('hostname'=>'fingerprint.ippen.media', 'head'=>true),
+#        // Posterous
+#        ...
+#        );
 #
 #==========================
 #
-# to get the source-feed add rssfeed.rdf to the category-URL e.g.
+# to get the source-feed add 'rssfeed.rdf' to the category-URL e.g.
 #    https://www.fr.de/hessen/rssfeed.rdf
 
-#body: //div[@id = 'id-Article-body']
 
-#strip author box and social media box
+# strip author box and social media box
+# these boxes sometimes prevented main picure to show up
 strip_id_or_class: idjs-simpletab-nav-item
 strip_id_or_class: idjs-simpletab-content-close
 strip_id_or_class: id-AuthorList
 strip_id_or_class: id-Article-content-item-copyright
 
-#strip adverts
+# strip adverts
 strip_id_or_class: id-Article-content-item.id-Article-advert.id-Article-advert--ad3
 strip_id_or_class: id-Article-advert.id-Article-content-item
 strip_id_or_class: id-Article-content-item.id-Article-advert
@@ -53,3 +55,4 @@ test https://www.fr.de/frankfurt/die-nfl-kommt-nach-frankfurt-91329620.html
 test https://www.hna.de/kassel/eigentuemer-sollen-sich-ruesten-91290102.html
 test https://www.kreis-anzeiger.de/lokales/wetteraukreis/mit-hoher-sicherheit-ein-wolf-91287739.html
 test https://www.kreiszeitung.de/lokales/bremen/bremen-wie-sich-osterholz-tenever-veraendert-hat-91304118.html
+test https://www.wetterauer-zeitung.de/wetterau/mahnwache-fuers-impfen-91318413.html
