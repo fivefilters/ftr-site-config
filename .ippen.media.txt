@@ -25,3 +25,19 @@
 #
 # to get the source-feed add rssfeed.rdf to the category-URL e.g.
 #    https://www.fr.de/hessen/rssfeed.rdf
+
+#body: //div[@id = 'id-Article-body']
+
+strip_id_or_class: idjs-simpletab-nav-item
+strip_id_or_class: idjs-simpletab-content-close
+strip_id_or_class: id-AuthorList
+strip_id_or_class: id-Article-content-item-copyright
+
+strip_id_or_class: id-Article-content-item.id-Article-advert.id-Article-advert--ad3
+strip_id_or_class: id-Article-advert.id-Article-content-item
+strip_id_or_class: id-Article-content-item.id-Article-advert
+strip_id_or_class: id-Article-advert--ad3
+strip_id_or_class: id-Article-advert
+
+tidy: yes
+prune: yes
