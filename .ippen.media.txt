@@ -47,6 +47,12 @@ prune: yes
 test https://www.24auto.de/tests/fahrbericht/dacia-jogger-test-auto-fahrbericht-preis-geld-renault-suv-crossover-siebensitzer-gas-mioveni-91265948.html
 test https://www.24garten.de/gartenkalender/aussaatkalender/gemuese-kraeuter-obst-februar-aussaatkalender-tomaten-paprika-garten-aussaat-ndr-90051093.html
 test https://www.24hamburg.de/hsv/dank-robert-glatzel-jetzt-ballert-sich-der-hsv-in-einen-aufstiegsrausch-91288931.html
+test https://www.24rhein.de/rheinland-nrw/duisburg/duisburg-marxloh-raeuber-ueberfaellt-36-jaehrigen-flucht-polizei-taetowierung-ohr-91234497.html
+test https://www.24vita.de/verbraucher/brauchen-herzschrittmacher-zu-neueren-iphones-mehr-abstand-zr-91338772.html
+test https://www.az-online.de/uelzen/stadt-uelzen/mehr-gaeste-in-der-uelzener-stadthalle-als-erlaubt-91282522.html
+test https://www.bgland24.de/bgland/region-berchtesgaden/bischofswiesen-ort28409/schoenau-am-koenigssee-wieder-grosses-interesse-bei-fit-durch-unser-gmoa-2022-91285772.html
 test https://www.fnp.de/frankfurt/frankfurt-sachsenhausen-der-adlhochplatz-bekommt-einen-neuen-namen-91287869.html
 test https://www.fr.de/frankfurt/die-nfl-kommt-nach-frankfurt-91329620.html
 test https://www.hna.de/kassel/eigentuemer-sollen-sich-ruesten-91290102.html
+test https://www.kreis-anzeiger.de/lokales/wetteraukreis/mit-hoher-sicherheit-ein-wolf-91287739.html
+test https://www.kreiszeitung.de/lokales/bremen/bremen-wie-sich-osterholz-tenever-veraendert-hat-91304118.html
