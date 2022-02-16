@@ -1,4 +1,4 @@
-title: //h2
+title: //h1[@class='title']
 
 strip: //div[ contains(@class, 'respond') ]  |  //h2  |  //h1
 strip_id_or_class: social
