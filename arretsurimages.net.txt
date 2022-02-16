@@ -1,16 +1,22 @@
-title://div[@id="titrage-contenu"]/h1[@class="title"]
-author: //div[@id="titrage-contenu"]//a[starts-with(@href,'/recherche.php?auteur_id=')]
-body: //div[@class="contenu-html"]/div[@class="page-pane"]
+title://div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]/h1
+author: //li[contains(concat(' ',normalize-space(@class),' '),' author-name ')]/a[contains(concat(' ',normalize-space(@class),' '),' name-link ')]
+date: //time[contains(concat(' ',normalize-space(@class),' '),' publication-date ')]/@datetime
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 
-strip: //aside[@class="article-aside-teaser"]
+strip: //aside
+
+strip_id_or_class: mobile-only
+strip_id_or_class: article-header
+strip_id_or_class: content-stamp-component
 
 # Wallabag-specific login directives (not supported in FTR)
-requires_login: yes
+# TODO(kdecherf): login is broken
+# requires_login: no
 
-login_uri: http://www.arretsurimages.net/forum/login.php
-login_username_field: username
-login_password_field: password
+# login_uri: http://www.arretsurimages.net/forum/login.php
+# login_username_field: username
+# login_password_field: password
 
-not_logged_in_xpath: //body[@class="not-logged-in"]
+# not_logged_in_xpath: //body[@class="not-logged-in"]
 
 test_url: http://www.arretsurimages.net/chroniques/2017-03-04/Mathilde-Larrere-aux-vraies-origines-du-8-mars-id9619
