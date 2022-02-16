@@ -1,0 +1,4 @@
+title: //h1
+author: //h2[@class="post-author__name"]
+
+test_url: https://ishadeed.com/article/cascade-layers/
