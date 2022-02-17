@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+prune: no
+
+test_url: https://carnegie.ru/commentary/86428
