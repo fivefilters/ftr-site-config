@@ -1,0 +1,7 @@
+title: //h1[@class='entry-title']
+author: //meta[@name='twitter:data1']@content
+date: //span[@class='entry-date']
+body: //div[@class='article-content']
+
+test_url: https://infovaticana.com/2018/05/12/cuando-agatha-christie-pidio-pablo-vi-mantener-la-misa-tradicional/
+test_url: https://infovaticana.com/2022/02/16/por-que-caemos-tan-mal/
