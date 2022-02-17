@@ -1,0 +1,5 @@
+body: //article
+strip: //svg
+prune: no
+
+test_url: https://www.riffreporter.de/de/wissen/klimakrise-artensterben-biodiversitaet-droht-sechstes-massenaussterben
