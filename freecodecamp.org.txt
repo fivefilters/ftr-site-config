@@ -1,0 +1,16 @@
+# Title
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' post-full-title ')]
+# Body
+body: //section[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
+# Date
+date: //time[contains(concat(' ',normalize-space(@class),' '),' post-full-meta-date ')]
+# Author
+author: //span[contains(concat(' ',normalize-space(@class),' '),' author-card-name ')]/a/text()
+# Don't prune. Seems to work bette with <pre> tags
+prune: no
+# Strip embeds
+strip_id_or_class: kg-embed-card
+
+# Test URL
+test_url: https://www.freecodecamp.org/news/how-to-manage-state-in-your-react-apps/
+test_url: https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/
