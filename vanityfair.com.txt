@@ -1,7 +1,6 @@
 title: //meta[@property="og:title"]/@content
 date: //article//time[contains(@class, "content-header__publish-date")]
 body: //article[contains(concat(' ',normalize-space(@class),' '),' main-content ')]
-author: //meta[@name="author"]/@content
 
 strip: //aside
 strip: //div[@data-testid="ContentHeaderTitleBlockWrapper"]
