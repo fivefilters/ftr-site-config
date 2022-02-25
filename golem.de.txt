@@ -3,6 +3,7 @@
 
 # As of 2020, this cookie is required to fetch articles because of the GDPR cookie warning
 http_header(Cookie): golem_consent20=cmp|220101
+http_header(user-agent): Googlebot
 
 tidy: no
 prune: no
