@@ -68,6 +68,7 @@ strip_id_or_class: a-article-teaser
 
 # Strip Ads
 strip_id_or_class: ad_
+strip_id_or_class: a-box
 
 # Strip related articles
 strip: //a-collapse
