@@ -3,5 +3,12 @@ body: //article//main
 date: //span[@itemprop='datePublished']/@content
 author: //a[@itemprop='author']/text()
 
+#remove embedded video
+strip: //figure[contains(@class, 'video')]
+#remove placeholder 'This content is hosted on an external platform, which will only display it if you accept targeting cookies. Please enable cookies to view.'
+strip: //div[contains(@class, 'onetrust-placeholder')]
+#remove "Will you support Eurogamer?" box
+strip: //div[contains(@class, 'supporter-article-promo')]
+
 test_url: http://www.eurogamer.net/articles/2014-08-20-bungie-ordered-to-return-shares-to-composer-marty-odonnell
 test_url: http://www.eurogamer.net/articles/2014-08-20-invisible-inc-does-espionage-justice
