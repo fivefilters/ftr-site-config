@@ -32,13 +32,14 @@ strip_id_or_class: ad-container
 #######################################
 
 single_page_link: //li[@class='article-pager__all']//a[@data-ct-label='all']
-
 author: //a[@class='byline__author']/span
 author: substring-after(//span[@class='metadata__source'], 'Quelle: ')
 
+body: //div[@class='summary' or contains(@class, 'article-body') or @class='byline']
 body: //main/article/div[@itemprop='articleBody']
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page ')]
 
+strip: //h2[@class='visually-hidden']
 strip: //a[@href='#']
 strip: //form[@id='newsletter-teaser-form']
 strip_id_or_class: 'article-pagination article__item'
