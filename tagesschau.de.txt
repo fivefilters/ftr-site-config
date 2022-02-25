@@ -8,7 +8,15 @@ strip_id_or_class: teaserImTeaser
 strip_id_or_class: Comments
 strip_id_or_class: mediaInfo
 strip: //div[contains(@class, 'mediaCon')]//iframe
+#remove embedded video
+strip: //div[contains(@class, 'copytext__video')]
+#remove embedded audio
+strip: //div[contains(@class, 'copytext__audio')]
+strip: //div[contains(@class, 'meldungsfooter')]
 strip_id_or_class: metablockwrapper
+
+#shrink reporter image to size used on source site
+replace_string(<img class="id-card__img"): <img class="id-card__img" width="128" height="128"
 
 prune: no
 
