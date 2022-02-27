@@ -4,7 +4,7 @@ author: //article//div[contains(@class, 'is-hidden-mobile')]//a[contains(@href, 
 # parser: html5lib
 replace_string("</div>"): "&lt;/div&gt;"
 
-body: //article[@class='post-content']
+body: //div[contains(@class, 'post-content')]
 
 strip: //span[@class='summary-entry']
 strip: //div[contains(@class, 'article-footer')]
