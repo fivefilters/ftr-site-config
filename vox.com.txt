@@ -4,5 +4,7 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' c-page-title ')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' c-entry-content ')]
 date: //time[contains(concat(' ',normalize-space(@class),' '),' c-byline__item ')]
-strip: //h3
+
+strip_id_or_class: c-read-more
+
 test_url: http://www.vox.com/policy-and-politics/2016/11/28/13728086/trump-literally-and-seriously
