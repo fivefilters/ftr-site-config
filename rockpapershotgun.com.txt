@@ -1,6 +1,8 @@
 title: //h1[@class='title']
 
 strip: //div[ contains(@class, 'respond') ]  |  //h2  |  //h1
+#remove embedded video
+strip: //div[ contains(@class, 'blue_billywig') ]
 strip_id_or_class: social
 strip_id_or_class: dd_post_share
 
