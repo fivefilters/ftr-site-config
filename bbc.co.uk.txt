@@ -54,6 +54,8 @@ strip_id_or_class: article-body__pull-quote
 
 strip: //aside[contains(@class, 'sp-pullout')]
 
+strip: //section[contains(@class, 'LinksWrapper')]
+
 strip_id_or_class: share-help
 strip_id_or_class: comments_module
 
