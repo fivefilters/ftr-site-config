@@ -1,0 +1,5 @@
+strip_id_or_class: related
+strip_id_or_class: related_content_module
+strip_id_or_class: multimedia_teaser
+
+test_url: https://exoplanets.nasa.gov/news/1672/discovery-alert-first-six-star-system-where-all-six-stars-undergo-eclipses/
