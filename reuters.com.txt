@@ -8,6 +8,9 @@ strip: //span[@class='articleLocation']
 prune: no
 tidy: no
 
+strip_id_or_class: related-container
+strip_id_or_class: share-in-article-container
+
 test_url: http://www.reuters.com/article/2011/04/08/us-ivorycoast-killings-idUSTRE73732A20110408
 test_url: http://www.reuters.com/investigates/special-report/usa-taser-experts/
 test_contains: Among the settlements examined by Reuters
