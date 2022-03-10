@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '), ' post_ctn ')]
+
+strip_id_or_class: yarpp-related
+
+test_url: https://www.touilleur-express.fr/2022/03/08/le-chiffrement-de-bout-en-bout-et-la-signature-denveloppe/
