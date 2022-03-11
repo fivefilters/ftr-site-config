@@ -1,0 +1,9 @@
+body: //article
+
+strip_id_or_class: article-ad
+strip_id_or_class: post-gallery
+strip_id_or_class: articleRelated
+
+prune: no
+
+test_url: https://wornandwound.com/a-g-shock-classic-gets-the-mr-g-treatment-with-the-mrgb5000/
