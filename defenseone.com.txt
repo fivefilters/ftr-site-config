@@ -2,6 +2,10 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' content-body ')]
 
 strip_id_or_class: privacy-bar
 strip_id_or_class: privacy-modal
+strip_id_or_class: related-articles-placeholder
+strip_id_or_class: related-articles
+
+strip: //svg
 
 prune: no
 
