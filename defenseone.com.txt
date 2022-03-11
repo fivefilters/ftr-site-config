@@ -1,0 +1,9 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-body ')]
+
+strip_id_or_class: privacy-bar
+strip_id_or_class: privacy-modal
+
+prune: no
+
+test_url: https://www.defenseone.com/threats/2022/03/naval-brief-nuclear-threats-deployment-funding-chinas-naval-modernization-and-more/363012/
+test_url: https://www.defenseone.com/rss/all/
