@@ -31,7 +31,7 @@ strip: //div[@id="social"]
 strip: //img[contains(@alt, 'capital letter')]
 
 # Trick to easily strip the bottom related stories section
-strip: //hr[last()]/following::*
+strip: (//hr)[last()]/following::*
 
 find_string: <noscript>
 replace_string: <!-- noscript -->
