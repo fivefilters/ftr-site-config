@@ -1,4 +1,4 @@
-# From wired.com.txt
+# From wired.com.txt (with some changes)
 
 title: //meta[@property="og:title"]/@content
 author: //meta[@name='Author']/@content
