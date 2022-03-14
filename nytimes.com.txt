@@ -45,6 +45,7 @@ strip: //aside
 strip: //div[@data-test-id="RecommendedNewsletter"]
 strip: //div[@data-test-id="share-tools"]
 strip: //div[@role="complementary"]
+strip: //section[contains(@role, "complementary")]
 strip: //video
 strip: //span/span[contains(text(), 'Credit')]
 strip: //span/span/span[contains(text(), 'Credit')]
@@ -96,3 +97,4 @@ test_url: http://www.nytimes.com/2013/08/15/nyregion/when-the-new-york-city-subw
 test_url: http://www.nytimes.com/2004/02/29/weekinreview/correspondence-class-consciousness-china-s-wealthy-live-creed-hobbes-darwin-meet.html
 test_url: http://www.nytimes.com/2014/06/19/opinion/gail-collins-romney-and-the-2016-contenders-huddle.html
 test_url: https://www.nytimes.com/interactive/2015/12/16/upshot/100000004092329.app.html?_r=2
+test_url: https://www.nytimes.com/2022/02/27/business/economy/price-increases-inflation.html
