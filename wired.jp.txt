@@ -44,3 +44,4 @@ strip_id_or_class: wpgallery
 prune: no
 
 test_url: https://wired.jp/article/10-most-read-stories-february-2022/
+test_contains: 07 Spotify
