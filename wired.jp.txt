@@ -1,0 +1,53 @@
+# From wired.com.txt
+
+title: //meta[@property="og:title"]/@content
+author: //meta[@name='Author']/@content
+date: //meta[@name='DisplayDate']/@content
+body: //div[@data-testid="ArticlePageChunks"]
+body: //div[contains(@class, 'article__chunks') or contains(@class, 'content-header__dek')]
+body: (//article[contains(@class, 'body-copy')])[1]
+body: (//article[contains(@class, 'article-body-component')])[1]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
+strip: //p[contains(., 'Pages:') and contains(., 'View All')]
+strip: //p[@class='caption']
+strip: //div[@class='desc' or @class='slide' or @id='slide-info']
+
+strip_id_or_class: full-bleed-ad
+strip_id_or_class: layout__aside
+#strip_id_or_class: callout
+strip: //*[contains(concat(' ',normalize-space(@class),' '),' callout ')]
+strip_id_or_class: pullquote
+strip_id_or_class: left_rail
+strip_id_or_class: related-container
+strip_id_or_class: radvert-caption-wrap
+strip_id_or_class: related
+strip_id_or_class: article-tags
+strip_id_or_class: visually-hidden
+strip_id_or_class: inset-left-component
+strip_id_or_class: recirc-most-popular
+strip_id_or_class: callout--has-top-border
+strip_id_or_class: newsletter-subscribe-form
+strip_id_or_class: iframe-embed
+
+strip: //div[@id="social"]
+strip: //img[contains(@alt, 'capital letter')]
+
+# Trick to easily strip the bottom related stories section
+strip: //hr[last()]/following::*
+
+find_string: <noscript>
+replace_string: <!-- noscript -->
+find_string: </noscript>
+replace_string: <!-- /noscript -->
+
+# Remove gallery?
+strip_id_or_class: wpgallery
+
+#strip: //text()[contains(., 'nextpage')]
+
+prune: no
+
+# 2017-07-27 No longer used it seems
+# single_page_link: //a[.='View All' and contains(@href, '/all/')]
+
+test_url: https://wired.jp/article/10-most-read-stories-february-2022/
