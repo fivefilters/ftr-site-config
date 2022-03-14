@@ -32,9 +32,6 @@ strip_id_or_class: iframe-embed
 strip: //div[@id="social"]
 strip: //img[contains(@alt, 'capital letter')]
 
-# Trick to easily strip the bottom related stories section
-strip: //hr[last()]/following::*
-
 find_string: <noscript>
 replace_string: <!-- noscript -->
 find_string: </noscript>
@@ -43,11 +40,7 @@ replace_string: <!-- /noscript -->
 # Remove gallery?
 strip_id_or_class: wpgallery
 
-#strip: //text()[contains(., 'nextpage')]
 
 prune: no
-
-# 2017-07-27 No longer used it seems
-# single_page_link: //a[.='View All' and contains(@href, '/all/')]
 
 test_url: https://wired.jp/article/10-most-read-stories-february-2022/
