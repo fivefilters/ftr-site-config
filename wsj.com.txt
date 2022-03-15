@@ -30,6 +30,8 @@ strip: //*[contains(@style, 'visibility: hidden;')]
 strip: //div[contains(@class, 'insetContent') and not(contains(@class, 'image'))]
 strip: //div[contains(@class, 'carousel')]
 strip: //div[div[contains(@class, 'media-object-rich-text') and h4 and ul[@class="articleList"]]]
+strip: //div[contains(@class, 'snippet')]
+strip: //div[contains(@class, 'media-object-video')]
 
 # see https://elaineou.com/2017/01/19/how-the-twitter-app-bypasses-paywalls/
 #http_header(user-agent): Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.1.32 (KHTML, like Gecko) Mobile/14C92 Twitter for iPhone
@@ -47,3 +49,4 @@ test_url: http://www.wsj.com/article/SB10001424052970204791104577110550376458164
 test_url: https://www.wsj.com/articles/what-the-world-will-speak-in-2115-1420234648
 test_url: https://www.wsj.com/articles/our-amazingly-plastic-brains-1423262095
 test_url: https://www.wsj.com/articles/the-biggest-money-mistakes-we-makedecade-by-decade-1477275181
+test_url: https://www.wsj.com/articles/russia-figure-skating-world-championships-11646143414
