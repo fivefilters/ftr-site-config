@@ -1,10 +1,12 @@
 #copied from nymag.com.txt
 
-title: //h2[contains(@class, 'primary')]
+title: //h1[contains(@class, 'headline-primary')]
 body: //*[@itemprop="articleBody"]
 body: //div[@id='story']
 author: //*[@class='by']/a
 date: substring-after(//*[@class='date'], 'Published')
+prune: no
+strip: //aside[contains(@class, "related")]
 
 #Skip GDPR warning
 http_header(Cookie): nymuc=11111111111
@@ -16,3 +18,4 @@ next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
 test_url: http://www.vulture.com/2018/06/damsel-review.html
 test_contains: after her favorite candy
+test_url: https://www.vulture.com/article/best-podcasts-of-2022.html
