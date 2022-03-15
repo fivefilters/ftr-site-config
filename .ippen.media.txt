@@ -8,7 +8,7 @@
 #
 # If you host fultext-rss/wallabag on your own servers you may
 # a)
-# copy this file and name it for your domains e.g.:
+# copy or symlink this file and name it for your domains e.g.:
 #        custom/hanauer.de.txt
 #        custom/ruhr24.de.txt
 #
