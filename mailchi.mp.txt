@@ -1,0 +1,13 @@
+# Mailchimp uses tables a lot in its email templates
+replace_string(<table): <div
+replace_string(</table): </div
+replace_string(<tbody): <div
+replace_string(</tbody): </div
+replace_string(<tr): <div
+replace_string(</tr): </div
+replace_string(<td): <div
+replace_string(</td): </div
+
+body: //div[@id="bodyTable"]
+
+prune: no
