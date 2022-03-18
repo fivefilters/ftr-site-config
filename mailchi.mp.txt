@@ -10,4 +10,9 @@ replace_string(</td): </div
 
 body: //div[@id="bodyTable"]
 
+strip_id_or_class: templatePreheader
+strip_id_or_class: mcnShareBlock
+strip_id_or_class: templateFooter
+strip_id_or_class: mcnFollowBlock
+
 prune: no
