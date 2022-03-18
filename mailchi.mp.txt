@@ -16,3 +16,5 @@ strip_id_or_class: templateFooter
 strip_id_or_class: mcnFollowBlock
 
 prune: no
+
+# Test URL needs to be something that doesn't reveal a subscriber's email address
