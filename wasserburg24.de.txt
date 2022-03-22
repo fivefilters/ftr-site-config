@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.wasserburg24.de/bayern/landkreis-berchtesgadener-land/berchtesgaden-naturschuetzer-stellen-sich-gegen-fussweg-bei-baustelle-91427485.html

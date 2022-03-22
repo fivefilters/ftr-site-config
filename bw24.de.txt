@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.bw24.de/baden-wuerttemberg/wolf-baden-wuerttemberg-sichtung-zollernalbkreis-spaziergaengerin-raubtier-nachweis-91297558.html

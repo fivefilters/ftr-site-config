@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.deichstube.de/news/werder-bremen-trotzt-problemen-was-der-sieg-gegen-sv-darmstadt-98-alles-aussagt-trainer-ole-werner-2-bundesliga-aufstieg-zr-91423406.html

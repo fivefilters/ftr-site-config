@@ -1,9 +1,33 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' lp_article_content ')]
+# Author: HolgerAusB  |  Version: 2022-03-22
+#
+# to get a source-feed, try to add 'rssfeed.rdf' to the category-URL e.g.
+#    https://www.example.com/hessen/rssfeed.rdf
+#
+#==========================
 
-prune: no
+# strip author box and social media box
+# these boxes sometimes prevented main picure to show up
+strip_id_or_class: idjs-simpletab-nav-item
+strip_id_or_class: idjs-simpletab-content-close
+strip_id_or_class: id-AuthorList
+strip_id_or_class: id-Article-content-item-copyright
+strip_id_or_class: id-DonaldBreadcrumb
+strip_id_or_class: id-StoryElement-timestamp
+strip_id_or_class: id-StoryElement-authors
+strip_id_or_class: id-StoryElement-interactionBar
+strip_id_or_class: id-StoryElement-image-caption
+strip_id_or_class: id-Mediabox-info-el
+strip_id_or_class: id-Recommendation
+strip_id_or_class: id-js-relatedStory
 
-strip_id_or_class: id-Mediabox-info
-strip_id_or_class: id-Mediabox-media-copyright
-strip_id_or_class: id-Mediabox-zoom
+# strip adverts
+strip_id_or_class: id-Article-content-item.id-Article-advert.id-Article-advert--ad3
+strip_id_or_class: id-Article-advert.id-Article-content-item
+strip_id_or_class: id-Article-content-item.id-Article-advert
+strip_id_or_class: id-Article-advert--ad3
+strip_id_or_class: id-Article-advert
 
-test_url: https://www.tz.de/reise/in-italien-drohen-streiks-bei-bahn-fliegern-und-schiffen-zr-12847211.html
+tidy: yes
+prune: yes
+
+test_url: https://www.tz.de/muenchen/stadt/meunchen-sirenen-wegen-krieg-in-der-ukraine-neue-debatte-um-sirenen-in-muenchen-wie-warnt-die-stadt-im-ernstfall-zr-91423000.html

@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.chiemgau24.de/chiemgau/chiemsee/gstadt-am-chiemsee-ort118608/gstadt-tourist-info-leiterin-berichtet-von-guter-auslastung-bei-gaestezahlen-trotz-corona-91288990.html
