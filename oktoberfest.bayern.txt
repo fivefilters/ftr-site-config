@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.oktoberfest.bayern/wiesn/oktoberfest-2020-coronavirus-riesenrad-chef-ueber-wiesn-absage-ein-trauerspiel-zr-13717682.html

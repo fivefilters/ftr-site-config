@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.innsalzach24.de/innsalzach/holzland/toeging-am-inn-ort61987/toeging-inn-nistkaesten-fuer-mauersegler-am-rathausturm-91426965.html

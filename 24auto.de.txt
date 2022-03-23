@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.24auto.de/news/adac-panne-elektro-auto-starterbatterie-akku-wachstum-verbrenner-tuev-wartung-muenchen-starthilfe-91426845.html

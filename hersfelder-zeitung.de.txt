@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.hersfelder-zeitung.de/lokales/philippsthal-heringen/philippsthal-ort473874/alpaka-hengst-cosmo-tot-aufgefunden-91425061.html

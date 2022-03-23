@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.bgland24.de/bgland/region-berchtesgaden/bischofswiesen-ort28409/schoenau-am-koenigssee-wieder-grosses-interesse-bei-fit-durch-unser-gmoa-2022-91285772.html

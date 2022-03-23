@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.extratipp.com/tv/dsds/quoten-desaster-bei-dsds-setzt-rtl-die-castingshow-mit-florian-silbereisen-ab-91270865.html?trafficsource=idTopBox

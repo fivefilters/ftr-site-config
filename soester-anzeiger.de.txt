@@ -30,4 +30,4 @@ strip_id_or_class: id-Article-advert
 tidy: yes
 prune: yes
 
-test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+test_url: https://www.soester-anzeiger.de/lokales/kreis-soest/corona-virus-kreis-soest-inzidenz-booster-omikron-nrw-heute-dienstag-22-03-2022-daten-aktuell-regeln-zahlen-impfen-news-ticker-tot-impf-stoff-91372172.html
