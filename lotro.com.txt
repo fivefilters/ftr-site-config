@@ -1,0 +1,25 @@
+# author: HolgerAusB
+#
+# Lord of The Rings Online (Game)
+#
+# This is only for the info-feed shown up in the game launcher.
+#
+# subsribe to launcher feed:
+# https://www.lotro.com/en/launcher-feed.xml
+#
+# you may change the /en/ to
+#
+#  /de/   Deutsch (german)
+#  /fr/   Français (french)
+#
+
+body: //div[contains(@class, 'article-body')]
+
+strip_id_or_class: legal-and-language
+strip_id_or_class: footer-download
+strip_id_or_class: footer
+
+test_url: https://www.lotro.com/news/lotro-producer-letter-march-2022-de?locale=de_DE
+test_url: https://www.lotro.com/en/launcher-feed.xml
+test_url: https://www.lotro.com/de/launcher-feed.xml
+test_url: https://www.lotro.com/fr/launcher-feed.xml
