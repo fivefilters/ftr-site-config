@@ -3,12 +3,13 @@ date: substring-before(//p[@class='articletime'],'|')
 body: //div[@id='articletext']
 strip: //div[@class='inlineDiashow']
 
+# strip generic text images for articles without photos/images
 find_string: https://www.diepresse.com/assets_v2/images/
 replace_string:
 
+# replace image path to strip the text overlay on photos/images
 find_string: /social_diepresse_nachrichten/images/
 replace_string: /images/
-
 find_string: /social_diepresse_magazin_paid/images/
 replace_string: /images/
 
