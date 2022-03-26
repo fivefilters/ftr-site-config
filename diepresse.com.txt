@@ -46,4 +46,4 @@ replace_string: /images/
 
 test_url: http://diepresse.com/home/politik/aussenpolitik/701905/TibeterProteste_Nonne-verbrennt-sich-selbst?_vl_backlink=/home/politik/index.do
 test_url: https://www.diepresse.com/6115784/omikron-ba2-wann-infizierte-hoch-ansteckend-sind
-test_url: https://www.diepresse.com/rss/wien
+test_url: https://www.diepresse.com/rss/Wien
