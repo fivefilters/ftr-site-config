@@ -1,17 +1,48 @@
+# choose your source feeds at
+# https://www.diepresse.com/105106/rss
+
 title: //div[@class='article']/h1
 date: substring-before(//p[@class='articletime'],'|')
 body: //div[@id='articletext']
 strip: //div[@class='inlineDiashow']
 
-# strip generic text images for articles without photos/images
+# Strip Parameter from Link in item-links of feed
+# just in case...
+
+find_string: ?from=rss
+replace_string:
+
+# strip gerneric text images when there is no article photo/image
+
 find_string: https://www.diepresse.com/assets_v2/images/
 replace_string:
 
-# replace image path to strip the text overlay on photos/images
+# 'data-src' sometimes prevents images to load, replaced with 'src'
+
+find_string: class="figure__image lazyload" data-src=
+replace_string: class="figure__image lazyload" src=
+
+#################
+# change path for images to get rid of the text overlays
+
+find_string: /social_diepresse_nachrichten_paid/images/
+replace_string: /images/
+
 find_string: /social_diepresse_nachrichten/images/
 replace_string: /images/
+
 find_string: /social_diepresse_magazin_paid/images/
 replace_string: /images/
+
+find_string: /social_diepresse_magazin/images/
+replace_string: /images/
+
+find_string: /social_diepresse_meinung_paid/images/
+replace_string: /images/
+
+find_string: /social_diepresse_meinung/images/
+replace_string: /images/
+#################
 
 test_url: http://diepresse.com/home/politik/aussenpolitik/701905/TibeterProteste_Nonne-verbrennt-sich-selbst?_vl_backlink=/home/politik/index.do
 test_url: https://www.diepresse.com/6115784/omikron-ba2-wann-infizierte-hoch-ansteckend-sind
