@@ -12,7 +12,7 @@ strip_id_or_class: media-action
 
 # fix lazy loading
 find_string: src="/assets//img/highlight_ph.png"
-replace_string:.
+replace_string: 
 find_string: src="/assets/img/highlight_ph.png"
 replace_string:
 find_string: data-src="
