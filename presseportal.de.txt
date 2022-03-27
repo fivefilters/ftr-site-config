@@ -1,8 +1,14 @@
+# Press releases from police and companies are published on presseportal.de
+
 body: //article[contains(concat(' ',normalize-space(@class),' '),' story ')]
 title: //article[contains(concat(' ',normalize-space(@class),' '),' story ')]//h1
 
 strip: //p[contains(concat(' ',normalize-space(@class),' '),' date ')]
 strip_id_or_class: story-sharing
+
+strip_id_or_class: date
+strip_id_or_class: customer
+strip_id_or_class: media-action
 
 # fix lazy loading
 find_string: src="/assets//img/highlight_ph.png"
@@ -12,9 +18,12 @@ replace_string:
 find_string: data-src="
 replace_string: src="
 
+# strip gerneric image when there is no article photo/image
+find_string: https://www.presseportal.de/some-default.jpg
+replace_string:
+
 prune: no
 
 test_url: http://www.presseportal.de/pm/103258/2930232/felix-neureuther-vor-der-ski-wm-ich-denke-von-rennen-zu-rennen
 test_url: http://www.presseportal.de/pm/66749/2933779/koelner-stadt-anzeiger-bahnmitarbeiter-werden-in-nrw-immer-haeufiger-angegriffen-zahl-der/rss
-test_contains: kleineren Bahnhöfen installieren und erhofft
 test_url: http://www.presseportal.de/rss/presseportal.rss2
