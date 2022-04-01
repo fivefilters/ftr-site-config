@@ -2,6 +2,10 @@ next_page_link: //link[@rel='next']
 body: //div[@id='main-content']
 strip: //noscript
 
+strip_id_or_class: c-native-newsletterbox
+strip_id_or_class: c-crosslinks
+strip_id_or_class: tg-crosslinks
+
 http_header(user-agent): PHP/7.4
 http_header(cookie): _sp_v1_consent=1!0:-1:-1:-1:-1:-1; t3n_consent=5
 
