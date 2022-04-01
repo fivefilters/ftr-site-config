@@ -3,5 +3,6 @@ body: //div[@id='main-content']
 strip: //noscript
 
 http_header(user-agent): PHP/7.4
+http_header(cookie): _sp_v1_consent=1!0:-1:-1:-1:-1:-1; t3n_consent=5
 
 test_url: http://t3n.de/news/zukunftstag-2017-t3n-818436/
