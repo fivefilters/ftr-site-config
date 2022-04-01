@@ -2,5 +2,10 @@ title: //h1
 body: //p[contains(concat(' ',normalize-space(@class),' '), ' intro ')] | //div[contains(concat(' ',normalize-space(@class),' '), ' longText ')]
 author: //meta[@name='author']/@content
 
+strip_id_or_class: slideshow
+strip_id_or_class: gallery
+
 test_url: https://www.dw.com/de/wie-sieht-die-zukunft-von-fridays-for-future-aus/a-50436506
 test_contains: Sie protestieren nun schon seit Monaten für den weltweiten
+# slideshow
+test_url: https://www.dw.com/ru/mat-soldata-iz-rf-pogibshego-v-ukraine-tam-prosto-mesivo/a-61263854
