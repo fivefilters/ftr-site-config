@@ -17,6 +17,11 @@ strip_id_or_class: reader-comments
 strip_id_or_class: most-watched
 strip_id_or_class: most-read
 
+# Uses text from within the article, essentially a pull quote
+strip_id_or_class: imageCaption
+
+strip: //div[contains(@class, 'viewGalleryText')]
+
 strip: //noscript
 strip: //div[@itemprop="video"]
 
