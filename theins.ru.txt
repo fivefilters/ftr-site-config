@@ -1,0 +1,9 @@
+body: //div[@id="articleContainer"]
+
+strip_id_or_class: NpaId
+strip_id_or_class: remove
+
+prune: no
+
+test_url: https://theins.ru/confession/249947
+test_contains: Но там остались родители
