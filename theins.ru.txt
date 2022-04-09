@@ -3,6 +3,8 @@ body: //div[@id="articleContainer"]
 strip_id_or_class: NpaId
 strip_id_or_class: remove
 
+strip: //div[starts-with(@id, 'via_')]
+
 prune: no
 
 test_url: https://theins.ru/confession/249947
