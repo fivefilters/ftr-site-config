@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'article-texte')]
+
+prune: no
+
+test_url: https://renverse.co/infos-locales/article/rejoignez-la-zad-du-geissberg-3486
