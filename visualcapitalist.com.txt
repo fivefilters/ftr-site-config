@@ -1,0 +1,6 @@
+title: //h1
+body: //div[@id='mvp-content-main'] | //article//header
+
+strip_id_or_class: mvp-post-cat
+
+test_url: https://www.visualcapitalist.com/from-greek-to-latin-visualizing-the-evolution-of-the-alphabet/
