@@ -1,7 +1,7 @@
 author: //meta[@property="article:author"]/@content
 date: //meta[@name="dcterms.Date"]/@content
 
-body: //div[contains(@class, 'o-titleBar-summary') or contains(concat(' ',normalize-space(@class),' '),' c-userContent ') or contains(concat(' ',normalize-space(@class),' '),' c-auxContent ')]
+body: //div[contains(@class, 'o-titleBar-summary') or contains(concat(' ',normalize-space(@class),' '),' c-userContent ') or contains(concat(' ',normalize-space(@class),' '),' c-auxContent ') or contains(concat(' ',normalize-space(@class),' '),' c-assetStack-media ')]
 
 prune: no
 
