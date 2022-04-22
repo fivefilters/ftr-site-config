@@ -19,6 +19,7 @@ strip_id_or_class: split-screen-content-header__rubric
 strip_id_or_class: split-screen-content-header__rubric-issue-date
 
 prune: no
+tidy: no
 
 test_url: https://www.newyorker.com/magazine/2016/02/08/mothers-day-fiction-george-saunders
 test_url: https://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
