@@ -1,5 +1,7 @@
 # Copy changes between medium.com.txt and .medium.com.txt
 
+http_header(user-agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+
 title: //meta[@property="og:title"]/@content
 title: //h1
 body: //article

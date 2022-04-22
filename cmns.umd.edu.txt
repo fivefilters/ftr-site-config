@@ -1,0 +1,6 @@
+title: //h1
+body: //div[@id='block-system-main']
+date: //span[@class='date-display-single']/@content
+
+test_url: https://cmns.umd.edu/news-events/features/4506
+test_contains: Internet censorship by authoritarian governments prohibits free and open access to information
