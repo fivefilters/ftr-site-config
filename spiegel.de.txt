@@ -12,10 +12,15 @@ body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loo
 strip_id_or_class: jwplayer
 strip: //div[@data-component="JWPlayer"]
 
-# Remove lazy-loaded image tags, favouring image in <noscript> elements
-replace_string(<noscript>): <!-- noscript -->
-replace_string(</noscript>): <!-- /noscript -->
-strip: //img[contains(concat(" ", normalize-space(@class), " "), " lazyload ")]
+# Remove lazy-loaded imags (old method)
+#replace_string(<noscript>): <!-- noscript -->
+#replace_string(</noscript>): <!-- /noscript -->
+#strip: //img[contains(concat(" ", normalize-space(@class), " "), " lazyload ")]
+
+# New method
+replace_string(src="data): data-src-disabled="data
+replace_string(data-src="): src="
+strip: //picture/following-sibling::noscript[1]
 
 strip_id_or_class: pointer-events-none
 strip_id_or_class: border-separator-b
