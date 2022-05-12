@@ -9,7 +9,7 @@ strip: //div[@data-component="RelatedArticleBlock"]
 find_string: <source media="(min-width: 0px)" srcSet="
 replace_string: <img src="
 find_string: ?resize=20:*
-replace_string: 
+replace_string: ?resize=1200:*
 
 prune: no
 
