@@ -8,6 +8,8 @@ strip: //div[@data-component="RelatedArticleBlock"]
 # Fix images
 find_string: <source media="(min-width: 0px)" srcSet="
 replace_string: <img src="
+find_string: <source media="(min-width: 0px)" srcset="
+replace_string: <img src="
 find_string: ?resize=20:*
 replace_string: ?resize=1200:*
 find_string: <img class="responsive-image__img"
