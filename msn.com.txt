@@ -1,1 +1,7 @@
 http_header(user-agent): curl/7.54.0
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' articlecontent ')]/div[contains(concat(' ',normalize-space(@class),' '),' richtext ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' articlecontent ')]/div[contains(concat(' ',normalize-space(@class),' '),' richtext ')]/div[not(contains(concat(' ',normalize-space(@class),' '),' e-image '))]
+
+test_url: https://www.msn.com/en-us/news/technology/followers-are-a-valuable-currency-who-should-own-them/ar-AAXfrUU
