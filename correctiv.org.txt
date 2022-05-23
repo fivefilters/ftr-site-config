@@ -2,8 +2,8 @@
 # Place this file inside your site_config/custom/ folder
 # Source: http://siteconfig.fivefilters.org/grab.php?url=https%3A%2F%2Fcorrectiv.org%2Fruhr%2F2019%2F10%2F11%2Fdie-co2-wende-vor-der-haustuer
 
+body: (//article[contains(@class, 'detail--post')])[1]
 body: (//main//section)[2]//div/div/div/div[contains(@class, 'elementor-column-wrap')]/div[contains(@class, 'elementor-widget-wrap')]
-body: (//article)[1]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' detail__share ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' list__bar ')]
 
