@@ -7,6 +7,9 @@ body: (//article)[1]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' detail__share ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' list__bar ')]
 
+strip_id_or_class: elementor-hidden-mobile
+
 prune: no
 
 test_url: https://correctiv.org/ruhr/2019/10/11/die-co2-wende-vor-der-haustuer
+test_url: https://correctiv.org/aktuelles/klimawandel/2022/05/04/greenwashing-agrarkonzern-plant-solaranlage-und-will-dafuer-wald-roden/?utm_source=pocket-newtab-global-de-DE
