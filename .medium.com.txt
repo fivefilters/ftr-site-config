@@ -9,6 +9,7 @@ author: //meta[@name="author"]/@content
 date: //meta[@property="article:published_time"]/@content
 
 strip: //button
+strip: //header[contains(@class, 'pw-post-byline-header')]
 # Remove low quality images
 strip: //article//img[contains(@src, '?q=20') or contains(@src, 'max/34/')]
 # Remove empty images (width attribute but no src attribute)
