@@ -1,3 +1,9 @@
+body: //article[@id="article"]
+
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' object ')]//div[contains(concat(' ',normalize-space(@class),' '),' data ')]
+strip: //settings
+strip_id_or_class: color-changer
+
+prune: no
 
 test_url: https://theblueprint.ru/culture/history/parad-pobedi
