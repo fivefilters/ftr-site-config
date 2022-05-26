@@ -34,7 +34,7 @@ strip_id_or_class: youtube-media-atom__overlay
 
 strip: //figcaption
 strip: //svg
-
+strip: //gu-island
 
 title: //h1[@articleprop='headline']
 author: //a[@rel='author']
