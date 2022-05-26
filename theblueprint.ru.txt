@@ -1,3 +1,3 @@
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' data ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' object ')]//div[contains(concat(' ',normalize-space(@class),' '),' data ')]
 
 test_url: https://theblueprint.ru/culture/history/parad-pobedi
