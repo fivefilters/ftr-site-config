@@ -3,7 +3,6 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' innerArticle__con
 author: //div[contains(concat(' ',normalize-space(@class),' '),' authorSignature ')]
 date: //span[contains(concat(' ',normalize-space(@class),' '),' dateTime__created ')]
 
-
 prune: no
 
 strip: //section[contains(@class, 'inTextNews')]
