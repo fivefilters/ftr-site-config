@@ -1,11 +1,11 @@
-title: //h1[@class='landscapePhotoFull__title']
-body: //div[@class='landscapePhotoFull__photoSide'] | //div[@class='newsType__content']
-author: //a[@class='authorSignature__link']
-date: //time[@datetime]/@datetime
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' landscapePhotoFull__title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' innerArticle__content ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' authorSignature ')]
+date: //span[contains(concat(' ',normalize-space(@class),' '),' dateTime__created ')]
 
 prune: no
 
 strip: //section[contains(@class, 'inTextNews')]
 strip: //img[@class='lqip__placeholder']
 
-test_url: http://www.elconfidencial.com/tecnologia/2017-02-06/microsoft-windows-google-chrome_1327589/
+test_url: https://www.elconfidencial.com/economia/2022-06-05/julian-ariza-ccoo-carrillo-marcelino-camacho-franco-dictadura-carcel-sindicatos-pce-transicion-ruiz-gimenez-carabanchel-top-23-f-clase-obrera_3436368/
