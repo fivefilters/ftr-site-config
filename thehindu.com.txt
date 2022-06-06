@@ -5,6 +5,7 @@ find_string: src="https://www.thehindu.com/theme/images/th-online/1x1_spacer.png
 replace_string: 
 find_string: data-src-template="
 replace_string: src="
+strip_image_src: 1x1_spacer.png
 
 prune: no
 
