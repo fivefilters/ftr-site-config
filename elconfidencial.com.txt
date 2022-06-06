@@ -7,5 +7,6 @@ prune: no
 
 strip: //section[contains(@class, 'inTextNews')]
 strip: //img[@class='lqip__placeholder']
+strip_id_or_class: shareBar
 
 test_url: https://www.elconfidencial.com/economia/2022-06-05/julian-ariza-ccoo-carrillo-marcelino-camacho-franco-dictadura-carcel-sindicatos-pce-transicion-ruiz-gimenez-carabanchel-top-23-f-clase-obrera_3436368/
