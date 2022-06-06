@@ -4,7 +4,7 @@ replace_string:
 find_string: data-src-template="
 replace_String: src="
 
-body: //div[contains(@class, 'lead-img-cont')] | //div[contains(@class, 'leadtext')] | div[contains(@id, 'content-body-')]
+body: //div[contains(@class, 'lead-img-cont')] | //div[contains(@class, 'leadtext')] | //div[contains(@id, 'content-body-')]
 
 prune: no
 
