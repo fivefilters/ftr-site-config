@@ -1,8 +1,9 @@
 body: //article[contains(@class, 'main-content')]
 body: //div[@id='articleBody']
 
-author: //meta[@name="author"]/@content
+author: //meta[@property="article:author"]/@content
 
+date: //meta[@property="article:published_time"]/@content
 date: //article//time[contains(@class, 'content-header__publish-date')]
 
 strip_id_or_class: content-header__title-block
