@@ -14,6 +14,7 @@ strip: //div[@id='contentSub']
 strip: //table[contains(@class, 'metadata')]
 strip: //*[contains(@class, 'noprint')]
 strip: //span[@class='noexcerpt']
+strip: //math
 
 http_header(user-agent): Mozilla/5.2
 
