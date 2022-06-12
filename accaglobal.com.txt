@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'article-container')]
+
+prune: no
+
+test_url: https://www.accaglobal.com/gb/en/student/exam-support-resources/professional-exams-study-resources/p5/technical-articles/economic-value-added-part1.html
