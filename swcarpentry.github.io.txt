@@ -1,0 +1,5 @@
+body: //article
+
+prune: no
+
+test_url: https://swcarpentry.github.io/shell-novice/02-filedir/index.html
