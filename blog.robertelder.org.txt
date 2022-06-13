@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-article ')]
+
+strip: //table[@class='leads-table']
+
+test_url: https://blog.robertelder.org/detect-keyup-event-linux-terminal/
