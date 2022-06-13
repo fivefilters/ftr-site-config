@@ -5,6 +5,13 @@ body: //article
 
 strip_id_or_class: post-content-more
 strip_id_or_class: category-wrapper
+strip_id_or_class: inline-newsletter-signup
+strip_id_or_class: notification-prompt-container
+strip_id_or_class: post-content-category
+strip_id_or_class: post-content-more
+strip_id_or_class: post-content-bottom
+strip_id_or_class: the-refresh-player-wrapper
+strip_id_or_class: ad-close-icon
 
 strip: //div[contains(@class, "post-sidebar")]
 strip: //div[@id='related-links']
