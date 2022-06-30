@@ -1,5 +1,5 @@
 body: //*[@class='article-full']
-title: //h3
+title: //p[@class='headline__title']
 strip: //header[@class='group']
 #body: //p[@class='lead']
 #move_into(//p[@class='lead']): //*[@class='article-full']/figure
@@ -9,4 +9,4 @@ strip: //div[@class='advertisement']
 strip: //div[@class='infobox']
 strip: //div[@id='articleComments']
 
-test_url: http://www.nzz.ch/wissen/wissenschaft/sonnenschutz-fuer-die-erde-1.17282213
+test_url: https://www.nzz.ch/zuerich/gender-sprache-an-hochschulen-in-zuerich-drohen-punkteabzuege-ld.1679640
