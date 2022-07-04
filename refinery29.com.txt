@@ -1,0 +1,8 @@
+body: //div[@id="editorial-content"]
+
+strip_id_or_class: section-pull-quote
+
+prune: no
+
+test_url: https://www.refinery29.com/en-gb/burnout-culture
+test_contains: On the plus side, it looks like women
