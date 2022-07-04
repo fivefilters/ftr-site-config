@@ -1,6 +1,7 @@
 body: //div[@id="editorial-content"]
 
 strip_id_or_class: section-pull-quote
+strip_id_or_class: section-ad
 
 prune: no
 
