@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' Artivent__content ')]
+
+prune: no
+
+test_url: https://bdaily.co.uk/articles/2022/07/06/bupa-launches-new-paralympicsgb-partnership-at-salford-hq
