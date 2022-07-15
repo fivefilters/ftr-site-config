@@ -1,0 +1,3 @@
+strip_id_or_class: embed-pullquote
+
+test_url: https://www.altaonline.com/dispatches/a40395942/the-beach-rats/
