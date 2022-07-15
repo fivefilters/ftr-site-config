@@ -1,0 +1,3 @@
+strip_id_or_class: wp-block-pullquote
+
+test_url: https://thereader.mitpress.mit.edu/a-master-perfumers-reflections-on-patchouli-and-vetiver/
