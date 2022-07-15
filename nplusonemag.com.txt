@@ -1,6 +1,5 @@
-title: /html/body/div[3]/div/div/h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
 
-body: //*[@id="article-body"]
+prune: no
 
-
-test_url: http://nplusonemag.com/the-outskirts-of-progress
+test_url: https://www.nplusonemag.com/online-only/online-only/the-outskirts-of-progress/
