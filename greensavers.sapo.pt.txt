@@ -1,0 +1,5 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' single-post-title ')]//span[contains(concat(' ',normalize-space(@class),' '),' post-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' continue-reading-content ')]
+date: //time[contains(concat(' ',normalize-space(@class),' '),' post-published ')]//b
+author: //time[contains(concat(' ',normalize-space(@class),' '),' post-author-name ')]//b
+test_url: https://greensavers.sapo.pt/gigabateria-do-tamega/
