@@ -1,0 +1,4 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+test_url: http://mysqlblog.fivefarmers.com/2012/08/16/understanding-mysql_config_editors-security-aspects/
+
