@@ -3,7 +3,6 @@ body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view 
 strip: //aside
 strip: //header
 strip_id_or_class: article-meta
-strip_id_or_class: sidebar
 
 # Reuters news - https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
 body: //div[contains(@class, 'article-body__content__')]
