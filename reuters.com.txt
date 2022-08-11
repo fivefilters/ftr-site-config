@@ -8,6 +8,7 @@ strip_id_or_class: sidebar
 # Reuters news - https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
 body: //div[contains(@class, 'article-body__content__')]
 # body: //div[contains(concat(' ',normalize-space(@class),' '),' paywall-article ')]
+strip: //div[contains(@data-testid, 'gallery')]
 
 body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='article-text'] | //div[@class='pageNavigation']
 body: //article[@itemtype="http://schema.org/NewsArticle"]
