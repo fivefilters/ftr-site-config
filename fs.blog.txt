@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+prune: no
+
+test_url: https://fs.blog/inside-a-miracle/
