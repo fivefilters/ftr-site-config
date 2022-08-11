@@ -1,0 +1,9 @@
+body: //article
+strip: //section[contains(@class,'Review')]
+strip: //div[contains(@class,'Newsletter')]
+strip: //div[contains(@class,'MoreStories')]
+find_string: class="container
+replace_string: class="
+
+test_url: https://interestingengineering.com/transportation/axle-steering-angles-80-degrees
+
