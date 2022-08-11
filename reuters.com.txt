@@ -1,6 +1,14 @@
 title: //h1[@class='headline3']
 author: substring-after(//p[@class="byline"], 'By ')
 date: //meta[@name="REVISION_DATE"]/@content
+
+# Reuters investigates - https://www.reuters.com/investigates/adoption/#article/part1
+body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view ')]
+strip: //aside
+strip: //header
+strip_id_or_class: article-meta
+strip_id_or_class: sidebar
+
 body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='article-text'] | //div[@class='pageNavigation']
 body: //article[@itemtype="http://schema.org/NewsArticle"]
 strip: //li[@class='next']
