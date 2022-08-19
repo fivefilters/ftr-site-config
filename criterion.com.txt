@@ -1,0 +1,10 @@
+body: //article
+
+strip_id_or_class: pk-footnote__container
+strip_id_or_class: pk-c-related-article
+
+strip: //aside
+
+prune: no
+
+test_url: https://www.criterion.com/current/posts/7893-the-mancini-touch
