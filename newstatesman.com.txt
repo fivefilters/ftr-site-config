@@ -1,8 +1,15 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' c-article-content__container ')]
 
+strip: //aside
+
+strip: //div[contains(@class, '-newsletter')]
+
 strip_id_or_class: newsletter-inner-container
 strip_id_or_class: c-sponsored-article
 strip_id_or_class: c-share
+strip_id_or_class: c-sidebar
+strip_id_or_class: c-related-articles
+strip_id_or_class: newsletter-pop-up
 
 prune: no
 
