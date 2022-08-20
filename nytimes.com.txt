@@ -51,6 +51,11 @@ strip: //span/span[contains(text(), 'Credit')]
 strip: //span/span/span[contains(text(), 'Credit')]
 strip: //img[contains(@class, 'post-screenshot')]
 
+# August 2022
+strip_id_or_class: sponsor-wrapper
+strip: //*[@aria-hidden="true"]
+strip: //*[@data-testid="share-tools"]
+
 # If HTML parsed by JS... 
 # let's remove duplicate images
 strip: //div[contains(@style, "visibility: hidden")]//picture
