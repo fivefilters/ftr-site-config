@@ -1,0 +1,5 @@
+body: //div[@id="content"]
+
+prune: no
+
+test_url: https://www.optimizesmart.com/how-to-set-up-conversion-tracking-in-google-analytics-4/
