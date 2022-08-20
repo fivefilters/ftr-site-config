@@ -5,4 +5,4 @@ strip: //aside
 
 prune: no
 
-test_url: 
+test_url: https://reactjs.org/docs/uncontrolled-components.html
