@@ -1,0 +1,8 @@
+body: //article
+
+strip: //header
+strip: //aside
+
+prune: no
+
+test_url: 
