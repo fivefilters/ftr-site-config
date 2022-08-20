@@ -55,6 +55,7 @@ strip: //img[contains(@class, 'post-screenshot')]
 strip_id_or_class: sponsor-wrapper
 strip: //*[@aria-hidden="true"]
 strip: //*[@data-testid="share-tools"]
+strip: //*[contains(@id, '-recirc')]
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
