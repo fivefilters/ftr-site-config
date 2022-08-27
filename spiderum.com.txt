@@ -1,0 +1,5 @@
+body: //new-post//div[contains(concat(' ',normalize-space(@class),' '),' editor ')]
+
+prune: no
+
+test_url: https://spiderum.com/bai-dang/Dung-luot-mang-xa-hoi-trong-thoi-gian-ranh-nua-Hay-lam-5-dieu-nay-PvXeTJ9tAR3D
