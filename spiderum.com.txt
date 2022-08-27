@@ -1,4 +1,4 @@
-body: //new-post//div[contains(concat(' ',normalize-space(@class),' '),' editor ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' editor ')]
 
 prune: no
 
