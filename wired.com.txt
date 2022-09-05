@@ -9,6 +9,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
 strip: //p[contains(., 'Pages:') and contains(., 'View All')]
 strip: //p[@class='caption']
 strip: //div[@class='desc' or @class='slide' or @id='slide-info']
+strip: //div[contains(@class, 'RecircMostPopularWrapper')]
 
 strip_id_or_class: full-bleed-ad
 strip_id_or_class: layout__aside
