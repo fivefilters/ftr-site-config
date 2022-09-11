@@ -1,2 +1,7 @@
 body: //div[contains(@class, "entry-content__main")]/*[not(div)]
+strip_id_or_class: rp4wp-related-posts
+strip_id_or_class: tags-links
+strip_id_or_class: entry-print
+strip_id_or_class: entry-share
+strip_id_or_class: entry-authors
 
