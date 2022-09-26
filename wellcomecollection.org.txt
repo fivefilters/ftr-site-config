@@ -1,5 +1,13 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' basic-body ')]
 
+strip: //button
+strip: //img[@src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"]
+
+find_string: <noscript>
+replace_string: <div>
+find_string: </noscript>
+replace_string: </div>
+
 prune: no
 
 test_url: https://wellcomecollection.org/articles/YgUhHxMAACAALrtl
