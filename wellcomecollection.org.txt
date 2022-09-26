@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' basic-body ')]
+
+prune: no
+
+test_url: https://wellcomecollection.org/articles/YgUhHxMAACAALrtl
