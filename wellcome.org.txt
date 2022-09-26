@@ -3,6 +3,8 @@ body: //div[@id='page-sections']
 strip_id_or_class: c-social-share
 strip_id_or_class: c-audio-player
 strip_id_or_class: c-date-and-time__flag
+strip_id_or_class: c-media__credit
+strip_id_or_class: c-media__licence
 
 prune: no
 
