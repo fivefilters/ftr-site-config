@@ -1,5 +1,11 @@
 body: (//section//div[contains(@class, 'elementor-widget-wrap')])[1]
 
+strip_id_or_class: comments
+strip_id_or_class: elementor-widget-post-navigation
+
+find_string: srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+replace_string: 
+
 prune: no
 
 test_url: https://ostprog.de/der-neoliberale-john-snow/
