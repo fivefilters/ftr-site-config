@@ -1,0 +1,5 @@
+body: (//section//div[contains(@class, 'elementor-widget-wrap')])[1]
+
+prune: no
+
+test_url: https://ostprog.de/der-neoliberale-john-snow/
