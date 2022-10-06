@@ -3,4 +3,13 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]
 author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]/a[1]
 next_page_link: //div[@id='content-bg']/div/div[@id='main-wrap']/div/article/div[@class="foot"]/div/a[@title="Go To Next Page"]
 
+find_string: <script language="javascript" src="https://openbenchmarking.org
+replace_string: <img src="https://openbenchmarking.org
+
+find_string: <script src="//openbenchmarking.org
+replace_string: <img src="https://openbenchmarking.org
+
+find_string: &p=0" type="text/javascript"></script>
+replace_string: " />
+
 test_url: https://www.phoronix.com/scan.php?page=article&item=clear-fall-2020&num=8
