@@ -65,6 +65,7 @@ strip_id_or_class: opinary-widget-embed
 strip_id_or_class: article-sidebar
 strip_id_or_class: a-box__header
 strip_id_or_class: a-article-teaser
+strip_id_or_class: a-u-inline
 
 # Strip Ads
 strip_id_or_class: ad_
