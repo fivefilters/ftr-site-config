@@ -14,7 +14,7 @@ replace_string: ></iframe>
 find_string: &quot;
 replace_string: '
 
-single_page_link: //link[@type='text/xml+oembed']
+single_page_link: //link[@type='text/xml+oembed']/@href
 
 # Correct User-Agent string needed to get the oembed URL
 http_header(user-agent): PHP/7.4
