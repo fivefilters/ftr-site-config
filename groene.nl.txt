@@ -1,0 +1,10 @@
+# wallabag-specific login directives (not supported in FTR)
+requires_login: yes
+login_uri: https://www.groene.nl/accounts/inloggen
+login_username_field: customer[email]
+login_password_field: customer[password]
+login_extra_fields: authenticity_token=@=xpath("//form//input[@name='_authenticity_token']", request_html(config.getLoginUri()))
+
+not_logged_in_xpath: //body[contains(@class,'closed-article')]
+
+test_url: https://www.groene.nl/artikel/het-laatste-restje-civil-society
