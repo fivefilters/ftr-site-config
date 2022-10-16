@@ -1,0 +1,8 @@
+body: //main[@id="content"]
+body: //main
+
+strip_id_or_class: dont-print
+
+prune: no
+
+test_url: https://www.gov.uk/government/news/government-update-on-corporation-tax
