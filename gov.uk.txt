@@ -3,6 +3,7 @@ body: //main
 
 strip_id_or_class: dont-print
 strip_id_or_class: gem-c-title
+strip_id_or_class: gem-c-metadata
 
 prune: no
 
