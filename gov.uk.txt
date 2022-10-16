@@ -4,6 +4,8 @@ body: //main
 strip_id_or_class: dont-print
 strip_id_or_class: gem-c-title
 strip_id_or_class: gem-c-metadata
+strip_id_or_class: full-publication-update-history
+strip_id_or_class: gem-c-related-navigation
 
 prune: no
 
