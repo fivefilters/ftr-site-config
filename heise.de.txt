@@ -65,7 +65,9 @@ strip_id_or_class: opinary-widget-embed
 strip_id_or_class: article-sidebar
 strip_id_or_class: a-box__header
 strip_id_or_class: a-article-teaser
-strip_id_or_class: a-u-inline
+
+# 2022-10-16: Is there a reason we strip these? It also strips images in articles like this: https://www.heise.de/hintergrund/James-Bond-im-Kino-60-Jahre-007-Autos-und-verrueckte-Gadgets-7288360.html?view=print
+# strip_id_or_class: a-u-inline
 
 # Strip Ads
 strip_id_or_class: ad_
