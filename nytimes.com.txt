@@ -53,7 +53,8 @@ strip: //img[contains(@class, 'post-screenshot')]
 
 # August 2022
 strip_id_or_class: sponsor-wrapper
-strip: //*[@aria-hidden="true"]
+# Preserve figcaptions, which can also have aria-hidden="true" inside
+strip: //*[@aria-hidden="true" and not(parent::figcaption)]
 strip: //*[@data-testid="share-tools"]
 strip: //*[contains(@id, '-recirc')]
 
