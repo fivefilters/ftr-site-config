@@ -76,6 +76,12 @@ strip_id_or_class: a-box
 # Strip related articles
 strip: //a-collapse
 
+# Fix lazy-loaded images (even after JS processing)
+# Test URL: https://www.heise.de/hintergrund/James-Bond-im-Kino-60-Jahre-007-Autos-und-verrueckte-Gadgets-7288360.html?seite=all
+replace_string(<a-img): <div class="ff-a-img"><img data-ff-replacement="1"
+replace_string(</a-img>): </img></div>
+strip: //div[@class="ff-a-img"]//img[not(@data-ff-replacement)]
+
 # Some optimizations
 replace_string(<h5>): <h2>
 replace_string(</h5>): </h2>
