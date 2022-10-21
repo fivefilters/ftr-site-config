@@ -8,4 +8,11 @@ strip: //aside
 strip: //footer
 strip_id_or_class: twitter-tweet
 
+find_string: data-src="
+replace_string: data-src="https://images.motorsport-magazin.com/images
+find_string: srcset="
+replace_string: notneededsrcset="
+
 test_url: https://www.motorsport-magazin.com/dtm/news-246125-dtm-2018-rahmenprogramm-klassik-tourenwagen/
+test_url: https://www.motorsport-magazin.com/formel1/news-279920-formel-1-sebastian-vettel-niemand-wird-sich-an-mich-erinnern/
+
