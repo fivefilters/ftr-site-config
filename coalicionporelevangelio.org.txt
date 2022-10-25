@@ -1,0 +1,5 @@
+body: //div[@id="section"]
+
+prune: no
+
+test_url: https://www.coalicionporelevangelio.org/curso/el-dinero/
