@@ -1,0 +1,8 @@
+body: (//main//article)[1]
+
+strip_id_or_class: breadcrumb
+strip: //div[@data-component="index"]
+
+prune: no
+
+test_url: https://www.bbva.es/finanzas-vistazo/aprendemos-juntos/juan-antonio-madrid.html
