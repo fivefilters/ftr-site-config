@@ -1,0 +1,11 @@
+body: //header//p[contains(@class, 'heading_excerpt')] | //header//div[contains(@class, 'heading_image')] | //section[@id="article-body"]
+
+strip_id_or_class: adsninja-ad-zone
+strip: //div[contains(@class, '-ad-zone')]
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+
+prune: no
+
+test_url: https://www.xda-developers.com/samung-one-ui-5-galaxy-z-flip-and-zflip-5g/
+test_contains: Samsung's One UI 5 beta is based on Android 13
