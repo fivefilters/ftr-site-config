@@ -9,3 +9,5 @@ prune: no
 
 test_url: https://www.xda-developers.com/samung-one-ui-5-galaxy-z-flip-and-zflip-5g/
 test_contains: Samsung's One UI 5 beta is based on Android 13
+
+test_url: https://www.xda-developers.com/feed/
