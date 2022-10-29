@@ -1,0 +1,6 @@
+title: //h1
+body: //article
+
+strip: //div[@class='compartir-post']
+
+test_url: https://www.microsiervos.com/archivo/espacio/pequeno-vistazo-interior-edificio-ensamblado-vehiculos-chino.html
