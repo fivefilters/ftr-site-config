@@ -15,9 +15,10 @@ strip_id_or_class: info_relacionada
 strip_id_or_class: m-kiosko
 strip_id_or_class: info_complementa
 
-strip: //div[starts-with(@id, 'sumario') and contains(., 'más información')]
+strip: //section[starts-with(@id, 'sumario')]
 strip: //div[@id='coment' or @id='foros_not']
 strip: //picture//source
 
-test_url: http://economia.elpais.com/economia/2012/02/07/actualidad/1328611790_342868.html
-test_url: http://internacional.elpais.com/internacional/2012/02/07/actualidad/1328602145_448315.html
+test_url: https://economia.elpais.com/economia/2012/02/07/actualidad/1328611790_342868.html
+test_url: https://internacional.elpais.com/internacional/2012/02/07/actualidad/1328602145_448315.html
+test_url: https://cincodias.elpais.com/cincodias/2018/01/26/midinero/1516972102_136260.html
