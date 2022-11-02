@@ -1,0 +1,9 @@
+title: //h1//span
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+
+strip_id_or_class: desvio-container
+strip_id_or_class: article-links
+
+replace_string(sf-src): src
+
+test_url: https://www.xatakamovil.com/mercado/telecos-usuarios-se-juegan-bruselas-que-remedies-como-afectaran-al-futuro-fusiones
