@@ -2,5 +2,7 @@ title: //header/h1
 body: //div[@id='article-body-content']
 
 strip: //section[@class='rel-news']
+strip_id_or_class: follow-topics-title
+strip_id_or_class: follow-container
 
 test_url: https://www.elespanol.com/omicrono/hardware/20180807/samsung-comienza-producir-discos-ssd-capacidad-masa/328468284_0.html
