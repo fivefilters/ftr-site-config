@@ -2,7 +2,7 @@ title: //h1[@class='entry-title']
 body: //article
 
 strip: //div[@class='io-word-count']
-strip: //ol[@class='breadcrumb']
 strip: //aside
+strip_id_or_class: breadcrumb
 
 test_url: https://www.adslzone.net/2017/12/19/xiaomi-sneaky-santa-17/
