@@ -1,0 +1,3 @@
+strip_id_or_class: ss-button-facebook
+strip_id_or_class: ss-button-linkedin
+strip_id_or_class: saboxplugin-wrap
