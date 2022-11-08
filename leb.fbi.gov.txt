@@ -1,0 +1,5 @@
+body: //section[@id="main-content"]
+
+prune: no
+
+test_url: https://leb.fbi.gov/articles/featured-articles/current-state-of-interview-and-interrogation
