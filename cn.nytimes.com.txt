@@ -1,0 +1,8 @@
+body: //figure[contains(concat(' ',normalize-space(@class),' '),' article-span-photo ')] | //section[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+strip_id_or_class: article-body-aside
+strip_id_or_class: big_ad
+
+prune: no
+
+test_url: https://cn.nytimes.com/asia-pacific/20221108/taiwan-bomb-shelters-keelung/
