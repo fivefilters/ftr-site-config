@@ -1,0 +1,5 @@
+body: //div[@itemprop="articleBody"]
+
+prune: no
+
+test_url: https://caravanmagazine.in/politics/leicester-violence-south-asian-diaspora-muslim-hindu-swayamsevak-sangh-partition
