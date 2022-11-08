@@ -1,4 +1,5 @@
 body: //section[@id="main-content"]
+body: //div[@id="main-content-container"]
 
 prune: no
 
