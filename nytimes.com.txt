@@ -32,6 +32,7 @@ strip_id_or_class:related-coverage
 strip_id_or_class:ad-header
 strip_id_or_class:bottom-ad
 strip_id_or_class:advert_item
+strip_id_or_class:burst-app
 strip://a[contains(@href, 'nytimes.com/adx/')]
 strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
