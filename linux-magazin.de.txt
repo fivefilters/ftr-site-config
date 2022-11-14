@@ -1,6 +1,8 @@
-next_page_link: //link[@rel="next"]
-replace_string(<style ): <!--
-replace_string(</style>): -->
+body: //div[@class='post-content']
+next_page_link: //a[contains(concat(' ',normalize-space(@class),' '),' next ')]
+strip_id_or_class: pagination
+strip_id_or_class: post-tags
+
 
 test_url: https://www.linux-magazin.de/ausgaben/2019/10/interview-2/
 test_contains: eine solche Durchschlagskraft gewonnen
