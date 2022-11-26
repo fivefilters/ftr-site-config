@@ -1,0 +1,15 @@
+# Author: HolgerAusB  |  Version: 2022-11-26
+#
+# to get a source-feed, try to add '/feed/' to the category-URL e.g.
+#    https://dodgersway.com/feed/
+#    https://dodgersway.com/la-dodgers-news/feed/
+#    https://dodgersway.com/la-dodgers-news/mookie-betts/feed/
+#
+#==========================
+
+# site seems to be parsed very nice with standard configs.
+# so just edded supprt for multipage articles
+
+next_page_link: //link[@rel="next"]
+
+test_url: https://dodgersway.com/2022/11/18/dodgers-3-destinations-cody-bellinger-non-tender-yankees-mets-cubs/
