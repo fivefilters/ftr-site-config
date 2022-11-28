@@ -11,7 +11,7 @@ login_uri: https://www.canardpc.com/se-connecter
 login_username_field: mail
 login_password_field: password
 login_extra_fields: _token=@=xpath("//form//input[@name='_token']", request_html(config.getLoginUri()))
-login_extra_fields: redirect="/"
+login_extra_fields: redirect=https://www.canardpc.com/
 
 not_logged_in_xpath: //div[@class="alert alert-danger"]
 
