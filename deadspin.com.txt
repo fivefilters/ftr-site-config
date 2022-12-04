@@ -6,7 +6,9 @@ strip_id_or_class: js_related-stories-inset
 strip_id_or_class: js_ad-mobile-dynamic
 strip_id_or_class: ad-mobile-dynamic
 strip_id_or_class: movable-ad
+strip_id_or_class: ad-uni
 strip_id_or_class: js_newsletter-form-inline
+strip_id_or_class: js_commerce-inset-permalink
 
 #TODO investigate why HTML5-PHP doesn't work
 parser: libxml
