@@ -9,3 +9,4 @@ strip_id_or_class: movable-ad
 strip_id_or_class: js_newsletter-form-inline
 
 test_url: https://deadspin.com/everythings-going-great-with-the-skins-why-do-you-ask-1831070342
+test_url: https://deadspin.com/rss
