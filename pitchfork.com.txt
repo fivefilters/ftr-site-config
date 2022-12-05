@@ -1,6 +1,7 @@
 body: //article[contains(@class, 'main-content')]
 body: //div[contains(@class, 'blocks-area')]
 body: //div[contains(@class, 'ArticlePageChunks')]
+body: //main[@id="main-content"]
 author: //meta[@property="article:author"]/@content
 author: //meta[@name="author"]/@content
 author: //a[@class="authors-detail__display-name"]
