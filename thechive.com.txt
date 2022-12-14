@@ -1,6 +1,0 @@
-body: //*[@itemprop="articleBody"]
-
-prune: no
-
-# Feed
-test_url: https://feeds.feedburner.com/feedburner/ZdSV
