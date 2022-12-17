@@ -1,6 +1,10 @@
 title: //div[@id='content-header']/h1
-author: //span[@class='author']
-body: //div[@id='objectContent']
+author: //div[@class='article-origins']
+body: //article[@class='story-article']
+
+strip_id_or_class: article-kicker
+strip_id_or_class: article-title
+strip: //nav
 strip: //ul[@class='lookupLinksArtikel']
 
 strip: //meta
