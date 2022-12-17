@@ -18,6 +18,8 @@ strip: //li[@class='empty']
 strip: //ul[@class='lookup-links']
 strip: //p[@class='article-pubdate']
 strip: //aside[@data-type='supplemental']
+strip: //div[@class='article-byline']
+strip: //div[@class='article-meta']
 
 http_header(Cookie): DSGVO_ZUSAGE_V1=true
 
