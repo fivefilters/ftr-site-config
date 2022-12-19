@@ -1,3 +1,6 @@
+body: (//div[contains(@class, 'feature-container')]//article[starts-with(@id, 'post-')])[1]
+body: (//div[contains(concat(' ',normalize-space(@class),' '),' standard-article-body ')])[1]
+# Fallback
 body: (//article[starts-with(@id, 'post-')])[1]
 
 strip: //*[contains(@class, 'sidebar')]
@@ -5,6 +8,9 @@ strip: //*[contains(@class, 'symbol')]
 
 strip_id_or_class: social-media-buttons
 strip_id_or_class: article-footer
+strip_id_or_class: article-aside
+strip_id_or_class: single-topic-wrapper
+strip_id_or_class: upper-title-tag
 
 # Handle weird embedded iframed content like this: https://torontolife.com/memoir/i-spent-five-years-in-a-white-power-gang-inside-the-twisted-world-of-torontos-white-supremacist-movement/
 single_page_link: //article[contains(@class, 'post-')]//iframe[contains(@src, 'elementor.contentlabs.ca')]/@src
