@@ -1,6 +1,13 @@
+# choose your feed here:
+# https://about.derstandard.at/newsletter/rss-feeds/
+
 title: //div[@id='content-header']/h1
-author: //span[@class='author']
-body: //div[@id='objectContent']
+author: //div[@class='article-origins']
+body: //article[@class='story-article']
+
+strip_id_or_class: article-kicker
+strip_id_or_class: article-title
+strip: //nav
 strip: //ul[@class='lookupLinksArtikel']
 
 strip: //meta
@@ -18,13 +25,15 @@ strip: //li[@class='empty']
 strip: //ul[@class='lookup-links']
 strip: //p[@class='article-pubdate']
 strip: //aside[@data-type='supplemental']
+strip: //div[@class='article-byline']
+strip: //div[@class='article-meta']
 
 http_header(Cookie): DSGVO_ZUSAGE_V1=true
 
 prune: no
 tidy: no
 
-test_url: http://derstandard.at/1318726018343/Breitband-LTE-Was-bringt-die-neue-Mobilfunk-Generation
+test_url: http://derstandard.at/rss
 test_url: http://derstandard.at/2000033602592/40-Jahre-fuer-einen-der-nicht-gemeinsam-leben-wollte
 test_url: http://derstandard.at/2000017141382/Feature-Format
 test_url: http://derstandard.at/2000031826169/Die-Mittagspause-ist-den-meisten-heilig
