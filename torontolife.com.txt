@@ -4,9 +4,13 @@ body: //article[starts-with(@id, 'post-')]
 strip: //*[contains(@class, 'sidebar')]
 strip: //*[contains(@class, 'symbol')]
 
+strip_id_or_class: social-media-buttons
+strip_id_or_class: article-footer
+
 prune: no
 
 # Requires JS
 test_url: https://torontolife.com/memoir/i-spent-five-years-in-a-white-power-gang-inside-the-twisted-world-of-torontos-white-supremacist-movement/
+# No JS required
 test_url: https://torontolife.com/city/the-50-most-influential-torontonians-of-2022/
 test_contains: clothing and concerts remain a side hustle
