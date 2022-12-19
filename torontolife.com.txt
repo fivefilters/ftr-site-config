@@ -1,5 +1,5 @@
 body: //div[@data-elementor-type="wp-page"]
-body: //article[starts-with(@id, 'post-')]
+body: (//article[starts-with(@id, 'post-')])[1]
 
 strip: //*[contains(@class, 'sidebar')]
 strip: //*[contains(@class, 'symbol')]
