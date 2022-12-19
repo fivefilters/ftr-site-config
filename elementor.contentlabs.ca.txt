@@ -1,0 +1,7 @@
+body: //div[@data-elementor-type="wp-page"]
+
+prune: no
+
+test_url: https://elementor.contentlabs.ca/white-lies-sf
+# Content above is actually loaded by in an iframe here:
+# https://torontolife.com/memoir/i-spent-five-years-in-a-white-power-gang-inside-the-twisted-world-of-torontos-white-supremacist-movement/
