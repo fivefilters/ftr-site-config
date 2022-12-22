@@ -30,10 +30,11 @@ strip: //nav
 
 # General cleanup
 strip: //time
-#strip: //header
+strip: //h1[@class='article__heading']
 strip: //h4[@class='author']
 strip: //div[@class='gallery compact']/h3
 strip: //div[@class='gallery compact']/figcaption
+strip: //div[@class='publish-info']
 strip: //p[@class='news_datum']
 strip: //p[@class='artikel_datum']
 strip: //p[@class='news_navi']
