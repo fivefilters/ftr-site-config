@@ -1,14 +1,25 @@
-# Author: cirnod@gmail.com
+# author: HolgerAusB    version 2022-12-25
+#
 
-tidy: no
-prune: no
+# choose your feed at:
+# https://www.tagesanzeiger.ch/rss-246604588745
 
-body: //div[@id="article"]/h3 | //*[@id="mainContent"]
+# cleanup
 
-# General Cleanup
-#strip_id_or_class: info_panel 
+strip: //h2[contains(@class,'ContentHead_title')]
+strip: //span[contains(@class,'ContentHead_text')]
+strip: //div[contains(@class,'ContentMetaInfo')]
+strip: //div[contains(@class,'ArticleContainer_related')]
+strip: //button
+
+# for paywall-articles:
+# to just strip the link for subscibing/login, activate the first 'strip'-line only
+# for stripping the text-hint too, remove the # on the second strip-line:
+
+strip: //div[contains(@id,'piano-premium')]/div/div/a
+#strip: //div[contains(@id,'piano-premium')]
 
 
-# Try yourself
-test_url: http://www.tagesanzeiger.ch/zuerich/stadt/Nach-spektakulaerer-Abseilaktion-verhaftet/story/18039895
-test_url: http://www.tagesanzeiger.ch/ausland/naher-osten-und-afrika/IS-zerstoert-auch-das-antike-Hatra/story/19865699
+# examples (external feed publisher tamedia.ch as promoted at tagesanzeiger.ch/rss-246604588745)
+test_url: http://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/startseite
+test_url: https://www.tagesanzeiger.ch/wie-sich-facebook-in-regierungswahlen-einmischt-288495638056
