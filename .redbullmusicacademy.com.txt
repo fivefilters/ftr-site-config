@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' body ')]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' headline-main ')]
+
+test_url: https://daily.redbullmusicacademy.com/2014/11/pizzicato-five-feature
+
