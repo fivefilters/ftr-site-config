@@ -30,6 +30,7 @@ strip_id_or_class: l-col__sidebar
 strip_id_or_class: c-river
 strip_id_or_class: chorus-ad-placement
 strip_id_or_class: c-related-list
+strip_id_or_class: sr-only
 
 #2017
 strip_id_or_class: e-image__meta
