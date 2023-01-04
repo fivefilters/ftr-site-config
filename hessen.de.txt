@@ -1,0 +1,29 @@
+# author: HolgerAusB   version 2023-01-04
+#
+# weekly newsletter of the State of Hesse (Germany)
+#
+# There html style is very messy. This also makes my
+# cleanup very upgly, more kinda pragmatic
+
+
+body: //div[@class='outer']
+
+# strip title 'Newsletter nnn' from text
+strip: //td/h2[contains(@style, 'color: #16191f')]
+
+# strip some info boxes
+strip: //td/h2[contains(text(), 'Der nächste Newsletter')]
+strip: //td/h2[contains(text(), 'erscheint am')]
+strip: //table[contains(@style, 'background-color:#eef2ee;')]
+
+strip: //div[@class='sidebar']
+
+# more cleanups
+strip_id_or_class: paragraph--type--cp-box-tile
+strip_id_or_class: spacer
+strip_id_or_class: footer
+
+prune: no
+
+test_url: https://www.hessen.de/newsletter-feed
+test_url: https://hessen.de/node/10963/newsletter-preview
