@@ -6,6 +6,7 @@ strip_id_or_class: followUs
 strip_id_or_class: readmore
 strip_id_or_class: refurbStoreList
 strip_id_or_class: lastVideoList
+strip_id_or_class: similar
 
 body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]//div[contains(concat(' ',normalize-space(@class),' '),' content ')]
 
