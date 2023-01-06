@@ -72,7 +72,7 @@ strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
 strip_id_or_class: related-links-block
 strip_id_or_class: g-LABELS
 
-http_header(user-agent): PHP/7.4
+http_header(user-agent): curl/7.83.1
 
 prune: no
 tidy: no
