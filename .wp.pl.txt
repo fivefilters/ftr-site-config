@@ -1,0 +1,9 @@
+body: (//article)[1]
+
+strip: //*[contains(@class, 'subjectsList')]
+strip: //div[contains(@data-st-area="article-header")]
+strip: //svg
+
+prune: no
+
+test_url: https://wiadomosci.wp.pl/spedzil-dwa-miesiace-w-podziemiach-azowstalu-mowili-ze-mozemy-jezdzic-po-calej-ukrainie-a-i-tak-nas-dopadna-6769475637812128a
