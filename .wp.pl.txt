@@ -1,7 +1,7 @@
 body: (//article)[1]
 
 strip: //*[contains(@class, 'subjectsList')]
-strip: //div[contains(@data-st-area="article-header")]
+strip: //div[@data-st-area="article-header"]//*[contains(@class, 'article--title')]
 strip: //svg
 
 prune: no
