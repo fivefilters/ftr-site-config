@@ -8,9 +8,9 @@ strip: //svg
 # instead you can #comment this out and activate the following 3 strips
 # which left the date+time back in the body (ugly)
 strip: //div[@data-st-area="article-header"]
-#strip: //div[@data-st-area="article-header"]//*[contains(@class, 'article--title')]
-#strip: //div[@data-st-area="article-header"]//ul/li
-#strip: //div[@data-st-area="article-header"]//ul
+strip: //div[@data-st-area="article-header"]//*[contains(@class, 'article--title')]
+strip: //div[@data-st-area="article-header"]//ul/li
+strip: //div[@data-st-area="article-header"]//ul
 
 
 # strip adverts. Assuming class-length is allways the same: <div class="1234567 1234567"
