@@ -3,6 +3,9 @@ body: //article[contains(@class, 'main-content')]
 
 strip: //*[contains(@class, 'AdWrapper-')]
 
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
+
 strip_id_or_class: full-bleed-ad
 strip_id_or_class: row-mid-content-ad
 strip_id_or_class: grid-layout__aside
