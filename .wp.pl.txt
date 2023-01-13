@@ -7,15 +7,15 @@ strip: //svg
 # first line eliminates complete header incl. photo
 # instead you can #comment this out and activate the following 3 strips
 # which left the date+time back in the body (ugly)
-strip: //div[@data-st-area="article-header"]
+# strip: //div[@data-st-area="article-header"]
 strip: //div[@data-st-area="article-header"]//*[contains(@class, 'article--title')]
 strip: //div[@data-st-area="article-header"]//ul/li
 strip: //div[@data-st-area="article-header"]//ul
 
 
 # strip adverts. Assuming class-length is allways the same: <div class="1234567 1234567"
-# this might be very unreliable
-strip: //div[string-length(@class) = 15]
+# this might be very unreliable.
+# strip: //div[string-length(@class) = 15]
 
 # strip article-title from body
 strip: //h1[contains(@class, 'article--title')]
