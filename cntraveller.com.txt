@@ -10,6 +10,7 @@ strip_id_or_class: full-bleed-ad
 strip_id_or_class: row-mid-content-ad
 strip_id_or_class: grid-layout__aside
 strip_id_or_class: ad--in-content
+strip_id_or_class: caption__credit
 
 prune: no
 
