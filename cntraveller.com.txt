@@ -1,7 +1,7 @@
 body: //div[@data-attribute-verso-pattern="article-body"]
 body: //article[contains(@class, 'main-content')]
 
-strip: //*[contains(@class, '-adrail') or contains(@class, 'AdWrapper-')]
+strip: //*[contains(@class, 'AdWrapper-')]
 
 strip_id_or_class: full-bleed-ad
 strip_id_or_class: row-mid-content-ad
