@@ -1,0 +1,17 @@
+# author: HolgerAusB   version 2023-01-14
+#
+# no native feed, try:
+# https://createfeed.fivefilters.org/mergefeeds.php?url%5B0%5D=https%3A%2F%2Fcreatefeed.fivefilters.org%2Fextract.php%3Furl%3Dhttps%253A%252F%252Fwww.knoten-stadion.de%252Fmeldungen.html%26item%3Ddiv.layout_latest%26item_date%3Dtime%26max%3D5%26order%3Ddocument%26guid%3D0%26strip_if_url%255B0%255D%3Dbaustellen-journal&url%5B1%5D=https%3A%2F%2Fcreatefeed.fivefilters.org%2Fextract.php%3Furl%3Dhttps%253A%252F%252Fwww.knoten-stadion.de%252Fbaustellen-journal.html%26item%3Ddiv.col12%26item_title%3Dh3%26item_date%3Dtime%26max%3D5%26order%3Ddocument%26guid%3D0&max=5&order=feed
+# (meldungen.html contains a link to a sub-index-page baustellen-journal.html
+#  FeedCreator makes two feeds from these and merge them together)
+
+body: //div[@class='mod_newsreader block']
+
+# strip title and date from body
+strip: //h1[@itemprop='name']
+strip: //p[@class='info']
+
+# cleanup
+strip: //p[@class='back']/a
+
+test_url: https://www.knoten-stadion.de/aktuelles-reader/spatenstich-fuer-zusaetzliche-gleise-und-neue-mainbruecke-im-knoten-frankfurt-stadion.html
