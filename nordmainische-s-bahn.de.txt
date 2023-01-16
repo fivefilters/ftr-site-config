@@ -1,8 +1,8 @@
-# author: HolgerAusB   version 2023-01-14
+# author: HolgerAusB   version 2023-01-16
 #
 # no native feed, try:
-# https://createfeed.fivefilters.org/index.php?url=https%3A%2F%2Fwww.nordmainische-s-bahn.de%2Faktuelles.html&item=div.news&item_title=h2&item_date=time&max=5&order=document&guid=0
-#
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.nordmainische-s-bahn.de%2Faktuelles.html&item=div.news&item_title=h2&item_desc=p%5B2%5D&item_date=time&max=5&order=document&guid=0
+
 
 body: //div[@class='layout_full block']
 
