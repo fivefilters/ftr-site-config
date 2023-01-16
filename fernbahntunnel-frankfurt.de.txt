@@ -1,0 +1,14 @@
+# author: HolgerAusB   version 2023-01-16
+#
+# no native feed, try:
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.fernbahntunnel-frankfurt.de%2Fmeldungen.html&item=div.layout_latest&item_title=h3&item_desc=div.teaser&item_date=time&feed_title=Fernbahntunnel+Frankfurt&max=5&order=document&guid=0
+
+body: //div[@class='layout_full block']
+
+# strip date from body
+strip: //p[@class='info']
+
+# fix source-links of images
+replace_string(tunnel-frankfurt.de/aktuell/files/img/): tunnelfrankfurt.de/files/img/
+
+test_url: https://www.fernbahntunnel-frankfurt.de/meldungen-reader/dialog-zum-fernbahntunnel-gestartet-deutsche-bahn-informiert-ueber-stand-des-frankfurter-knotenprojektes.html
