@@ -11,6 +11,14 @@ body: //div[@class='mod_newsreader block']
 strip: //h1[@itemprop='name']
 strip: //p[@class='info']
 
+#replace embedded video with link to video:
+prune: no
+replace_string(<figure class="video_container">): <div>
+replace_string(<video): <div
+replace_string(<source type="video/mp4" src): <a href
+replace_string(</video>): Link zum Video</a></div>
+replace_string(</figure>): </div>
+
 # cleanup
 strip: //p[@class='back']/a
 
