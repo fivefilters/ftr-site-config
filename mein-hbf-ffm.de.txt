@@ -1,0 +1,24 @@
+# author: HolgerAusB   version 2023-01-16
+#
+# no native feed, try:
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.mein-hbf-ffm.de%2Faktuelle-meldungen.html&item=div.layout_latest&item_title=h2&item_desc=div.ce_tex
+http_header(cookie): dse_cookie=1-0-0
+
+body: //div[@class='mod_newsreader block']
+
+# strip title and date from body
+strip: //p[@class='info']
+
+#replace embeded video with link to video:
+prune: no
+replace_string(<figure class="video_container">): <div>
+replace_string(<video): <div
+replace_string(<source type="video/mp4" src): <a href
+replace_string(</video>): Link zum Video</a></div>
+replace_string(</figure>): </div>
+
+# cleanup
+strip: //p[@class='back']/a
+
+
+test_url: https://www.mein-hbf-ffm.de/aktuelles-reader/db-informiert-zum-geplanten-fernbahntunnel.html
