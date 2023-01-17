@@ -2,11 +2,13 @@
 #
 # no native feed, try:
 # https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.mein-hbf-ffm.de%2Faktuelle-meldungen.html&item=div.layout_latest&item_title=h2&item_desc=div.ce_tex
+
 http_header(cookie): dse_cookie=1-0-0
 
 body: //div[@class='mod_newsreader block']
 
 # strip title and date from body
+strip: //div[@class='layout_full block']/h1
 strip: //p[@class='info']
 
 #replace embeded video with link to video:
