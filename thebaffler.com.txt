@@ -1,0 +1,5 @@
+body: //div[@id='pico']
+
+strip_id_or_class: wp-block-pullquote
+
+test_url: https://thebaffler.com/latest/hong-kong-literatures-growing-pains-chu
