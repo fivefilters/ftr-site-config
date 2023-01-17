@@ -6,6 +6,10 @@ strip: //aside
 strip_id_or_class: related-issue-tout
 strip_id_or_class: aria-font-adjusts
 strip_id_or_class: component-share-buttons
+strip_id_or_class: after-post-content
+strip_id_or_class: component-newsletter-signup
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' title-header ')]
 
 prune: no
 
