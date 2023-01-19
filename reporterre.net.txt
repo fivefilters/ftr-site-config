@@ -1,0 +1,3 @@
+strip: //div[contains(@class, 'noprint')]
+
+test_url: https://reporterre.net/Les-milliardaires-n-en-finissent-plus-de-s-enrichir
