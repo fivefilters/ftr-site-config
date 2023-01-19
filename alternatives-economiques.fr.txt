@@ -2,7 +2,7 @@
 date: //header[contains(concat(' ',normalize-space(@class),' '),' o-page__content__head ')]//div[contains(concat(' ',normalize-space(@class),' '),' o-infos ')]//time[contains(concat(' ',normalize-space(@class),' '),' o-infos__date ')]
 
 # Author
-author: //header//a[contains(@href, '/users/')] | //header//div[contains(@class, "c-portrait__infos")]
+author: //div[contains(@class, 'o-page__content__body')]//a[contains(@href, '/users/')] | //header//div[contains(@class, "o-page__content__who")]//a | //article//a[contains(@href, '/users/')]
 
 # Content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' o-page ')]
@@ -18,6 +18,8 @@ strip_id_or_class: o-page__figure__trigger
 strip_id_or_class: o-view-more
 strip_id_or_class: c-comments
 strip_id_or_class: c-epigraph
+strip: //div[contains(@class, 'o-page__content__who')]
+strip: //div[contains(@class, 'c-kiosk--single__body')]
 
 # Strip optional [removed because clearer like this
 #strip_id_or_class: o-page__content__head
