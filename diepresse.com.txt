@@ -4,7 +4,15 @@
 title: //div[@class='article']/h1
 date: substring-before(//p[@class='articletime'],'|')
 body: //div[@id='articletext']
+
+# ticker 'articles' aren't really working, even with this
+body: //div[@id='article-body']
+
+
 strip: //div[@class='inlineDiashow']
+strip: //div[@class='meta__date']
+strip: //div[@class='meta__authors']
+strip: //div[@class='article__actions']
 
 # Strip Parameter from Link in item-links of feed
 # just in case...
