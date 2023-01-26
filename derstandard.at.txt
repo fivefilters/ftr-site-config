@@ -27,6 +27,7 @@ strip: //p[@class='article-pubdate']
 strip: //aside[@data-type='supplemental']
 strip: //div[@class='article-byline']
 strip: //div[@class='article-meta']
+strip: //footer[starts-with(text(), 'Foto:')]
 
 http_header(Cookie): DSGVO_ZUSAGE_V1=true
 
