@@ -1,7 +1,13 @@
-# Author: HolgerAusB  |  Version: 2022-03-25
+# Author: HolgerAusB  |  Version: 2023-01-26
 #
+# to get your feed, add '/feed/' to your categorie-link, e.g.:
+# https://www.digitalfernsehen.de/news/feed/
+# https://www.digitalfernsehen.de/tests/feed/
 
 strip_id_or_class: wp-caption-text
 strip_id_or_class: isc_image_list_box
+strip_id_or_class: td-adspot-title
+strip: //button
 
 test_url: https://www.digitalfernsehen.de/news/inhalte/fernsehen/der-bachelor-hat-seine-letzte-rose-verteilt-592095/
+test_url: https://www.digitalfernsehen.de/feed/
