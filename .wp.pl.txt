@@ -13,9 +13,8 @@ strip: //div[@data-st-area="article-header"]//ul/li
 strip: //div[@data-st-area="article-header"]//ul
 
 
-# strip adverts. Assuming class-length is allways the same: <div class="1234567 1234567"
-# this might be very unreliable.
-# strip: //div[string-length(@class) = 15]
+# strip adverts placeholder image
+strip: //img[@width='56' and @height='45']
 
 # strip article-title from body
 strip: //h1[contains(@class, 'article--title')]
