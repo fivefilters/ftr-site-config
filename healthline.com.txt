@@ -1,0 +1,9 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+strip_id_or_class: affiliate-disclaimer
+strip: //button
+strip: //aside
+
+prune: no
+
+test_url: https://www.healthline.com/health-news/what-types-of-music-help-you-fall-asleep-the-easiest#Possible-explanations-for-selections-of-sleeping-music
