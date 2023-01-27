@@ -1,5 +1,8 @@
 body: //article[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 
+replace_string(<lazy-image ): <img 
+replace_string(</lazy-image>): </img>
+
 strip_id_or_class: affiliate-disclaimer
 strip: //button
 strip: //aside
