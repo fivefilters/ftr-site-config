@@ -7,7 +7,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' b_single_e ')]//p
 
 requires_login: yes
 
-login_uri: https://predplatne.denikn.cz/
+login_uri: https://predplatne.denikn.cz/sign/in/
 login_username_field: email
 login_password_field: password
 
