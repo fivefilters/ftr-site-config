@@ -1,3 +1,5 @@
+prune: no
+tidy: no
 title: //div[contains(concat(' ',normalize-space(@class),' '),' se-title-text ')]
 body: //div[@id='viewTypeSelector']
 date: //p[contains(concat(' ',normalize-space(@class),' '),' blog_date ')]
