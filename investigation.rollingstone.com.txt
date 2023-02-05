@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'Level1Content_contentContainer_')]
+
+strip: //*[contains(@class, 'Pullquote') or contains(@class, 'pullquote')]
+
+prune: no
+
+test_url: https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/
