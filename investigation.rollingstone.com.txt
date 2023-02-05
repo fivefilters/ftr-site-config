@@ -4,6 +4,8 @@ strip: //*[contains(@class, 'Pullquote') or contains(@class, 'pullquote')]
 strip: //*[contains(@class, 'CoachMarks')]
 strip: //*[contains(@class, 'InfoButton')]
 strip: //*[contains(@class, 'EntryPointL')]
+strip: //*[contains(@class, 'ExploreBanner')]
+strip: //*[contains(@class, 'NewPhotosReveal')]
 strip: //svg
 
 strip: //img[starts-with(@src, 'data:')]
