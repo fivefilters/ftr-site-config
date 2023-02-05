@@ -1,6 +1,12 @@
 body: //div[contains(@class, 'Level1Content_contentContainer_')]
 
 strip: //*[contains(@class, 'Pullquote') or contains(@class, 'pullquote')]
+strip: //*[contains(@class, 'CoachMarks')]
+
+strip: //img[starts-with(@src, 'data:')]
+
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
 
 prune: no
 
