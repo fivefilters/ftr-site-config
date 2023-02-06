@@ -1,0 +1,16 @@
+# autor: HolgerAusB  |  version 2023-02-06
+
+body: //div[@class='site-content']
+
+strip: //nav
+strip_id_or_class: elementor-post-info
+strip: //h3[contains(@class, 'elementor-heading-title')]
+strip_id_or_class: elementor-widget-post-comments
+strip: //div[contains(@class, 'elementor-grid')]
+strip: //div[@class='elementor-widget-container']/p[text()='Source:']
+strip: //div[@class='elementor-widget-container']/h3/strong[text()='Comments:']
+
+prune: no
+
+test_url: https://sun-connect.org/opportunities-of-second-life-batteries-in-the-renewable-and-energy-storage-industries/
+test_url: https://sun-connect.org/solar-and-wind-power-waste-the-elephant-in-the-green-energy-room/
