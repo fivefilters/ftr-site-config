@@ -1,0 +1,5 @@
+# author: HolgerAusB  |  version 2023-02-06
+
+body: //div[@class='itemBody']
+
+test_url: https://www.aps.dz/algerie/151377-communique-du-conseil-des-ministres
