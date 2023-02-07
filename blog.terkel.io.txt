@@ -1,0 +1,11 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-content-container ') or contains(@class, 'post-featured-image')]
+
+find_string: src="data:image
+replace_string: disabled-src="data:image
+
+find_string: nitro-lazy-src="
+replace_string: src="
+
+prune: no
+
+test_url: https://blog.terkel.io/what-is-the-best-way-to-improve-your-content/
