@@ -10,7 +10,9 @@ date: substring-after(//*[@class='date'], 'Published')
 #Skip GDPR warning
 http_header(Cookie): nymuc=11111111111
 
-parser: html5php
+strip_id_or_class: article-toc
+
+prune: no
 tidy: no
 
 strip: //button
