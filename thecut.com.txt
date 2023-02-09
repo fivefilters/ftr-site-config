@@ -16,6 +16,7 @@ prune: no
 tidy: no
 
 strip: //button
+strip: //aside
 
 next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
