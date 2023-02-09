@@ -3,6 +3,7 @@
 title: //h2[contains(@class, 'primary')]
 body: //*[@itemprop="articleBody"]
 body: //div[@id='story']
+body: //section[@class='body']
 author: //*[@class='by']/a
 date: substring-after(//*[@class='date'], 'Published')
 
@@ -11,6 +12,8 @@ http_header(Cookie): nymuc=11111111111
 
 parser: html5php
 tidy: no
+
+strip: //button
 
 next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
