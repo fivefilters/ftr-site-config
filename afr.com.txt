@@ -3,4 +3,10 @@
 # Source: https://siteconfig.fivefilters.net/grab.php?url=https%3A%2F%2Fwww.afr.com%2Fcompanies%2Ffinancial-services%2Funion-says-sector-wide-bargaining-would-force-cba-and-anz-to-table-20220905-p5bfep
 
 body: //article[@id='content']
+
+strip: //button
+strip: //div[contains(@class, '_1kPGP')]
+strip: //div[contains(@data-testid, 'ArticleTags')]
+strip: //div[contains(@data-testid; 'PreFooter')]
+
 test_url: https://www.afr.com/companies/financial-services/union-says-sector-wide-bargaining-would-force-cba-and-anz-to-table-20220905-p5bfep
