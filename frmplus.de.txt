@@ -1,0 +1,27 @@
+# author: HolgerAusB   version 2023-02-12
+#
+# no native feed, try:
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.frmplus.de%2Faktuelles.html&item=div.layout_latest&item_title=h2&item_desc=div.teaser&item_date=time&feed_title=FRM-Plus&max=5&order=document&guid=0
+
+prune: no
+
+body: //div[@id='main']
+
+# strip title and date from body
+strip: //div[contains(@class, 'ce_text')]/h3
+strip: //p[@class='info']
+
+# transform image galery to single images
+strip: //ol[@class='carousel-indicators']
+
+find_string: <div class="bsc_spic" style="background: url('
+replace_string: <img src='
+
+replace_string(&nbsp;):
+
+# general clean-up
+strip: //p[@class='back']
+
+# tests
+test_url: https://www.frmplus.de/aktuelles-reader/naechste-etappe-fuer-den-deutschlandtakt-spatenstich-fuer-zusaetzliche-gleise-und-neue-mainbruecke-im-knoten-frankfurt-stadion.html
+test_url: https://www.frmplus.de/aktuelles-reader/homburger-damm-in-betrieb-genommen-zusaetzliches-gleis-zum-hauptbahnhof-fertiggestellt.html
