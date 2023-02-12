@@ -1,0 +1,14 @@
+# author: HolgerAusB   version 2023-02-12
+
+body: //div[@id='main']
+
+strip: //p[@class='info']
+strip: //p[@class='back']
+strip: //h1[@itemprop='name']
+
+strip_id_or_class: ytelement
+strip_id_or_class: YTPrevPict
+
+
+test_url: https://www.regionaltangente-west.de/baustellenblog-reader/vollsperrung-des-forstwegs-an-der-gehespitz.html
+test_url: https://www.regionaltangente-west.de/baustellenblog-reader/bauarbeiten-im-pfa-sued-1-schreiten-voran.html
