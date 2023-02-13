@@ -12,6 +12,11 @@ http_header(Cookie): nymuc=11111111111
 
 strip_id_or_class: article-toc
 
+# prevent a line-break in numbered subhedings between the number and the sub-heading-text
+# the closing </p> is automatically transformed to </span>
+find_string: <p class="list-item-text">
+replace_string: <span>
+
 prune: no
 tidy: no
 
@@ -22,3 +27,6 @@ next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
 test_url: https://www.thecut.com/2018/06/trump-administration-says-it-has-a-family-reunification-plan.html
 test_contains: back to their home country
+
+#example with numbered sub-headings:
+test_url: https://www.thecut.com/article/tipping-rules-etiquette-rules.html
