@@ -49,6 +49,7 @@ strip: //figure[@class='branding']
 strip: //a-ad
 strip: //footer
 strip: //div/header/h3[contains(text(), 'Lesen Sie auch')]/ancestor::div
+strip: //div/header/h3[contains(text(), 'Weiter im Thema')]/ancestor::div
 
 
 strip_id_or_class: comments
