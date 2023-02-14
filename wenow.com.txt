@@ -1,0 +1,6 @@
+title: //article//h1
+
+strip: //a[@class="post-previous"]
+strip: //aside
+
+test_url: https://www.wenow.com/2021/06/07/empreinte-carbone-de-la-viande/
