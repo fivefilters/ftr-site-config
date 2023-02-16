@@ -1,5 +1,6 @@
 http_header(Cookie): CONSENT=YES+
 
+single_page_link: //c-wiz[starts-with(., 'Opening http')]/a
 single_page_link: //div[starts-with(., 'Opening http')]/a
 
 test_url: https://news.google.com/articles/CAIiEG9tncWT7SgrXyAgSTzT-SkqGQgEKhAIACoHCAowqOXeCjDQ5dYBMI3U0QM?uo=CAUiANIBAA&hl=en-US&gl=US&ceid=US:en
