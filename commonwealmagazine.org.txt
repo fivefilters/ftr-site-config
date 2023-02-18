@@ -1,0 +1,7 @@
+body: //article//div[contains(@class, 'paragraphs-items-full')]
+
+strip_id_or_class: paragraphs-item-pullquote
+
+prune: no
+
+test_url: https://www.commonwealmagazine.org/albert-schweitzer-racism-africa-medicine-Lambarene
