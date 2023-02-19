@@ -1,8 +1,15 @@
-# author: HolgerAusB  |  version 2023-02-18
+# author: HolgerAusB  |  version 2023-02-19
 
 body: //div[@id='article']
 
-strip: //img [@class='itemNewsImg']
+strip: //img[@class='itemNewsImg']
+strip: //div[@class='pages']
+strip: //div[@class='pagenumber']
+strip: //br[@class='clear']
+
+next_page_link: //a[@class='a_next']
 
 test_url: https://www.goldseiten.de/rss/newsfeed.xml
 test_url: https://www.goldseiten.de/artikel/569744--Goldpreis~-Test-dieser-wichtigen-Unterstuetzung.html
+# two pages:
+test_url: https://www.goldseiten.de/artikel/569668--Im-Zeichen-des-Zinses-Teil-1~-Friedrich-Nietzsches-Umwertung-aller-Werte---und-was-das-mit-dem-Zins-zu-tun-hat.html
