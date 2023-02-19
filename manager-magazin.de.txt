@@ -1,4 +1,14 @@
-# one page:
+# author: HolgerAusB  |  version 2023-02-19
+
+body: //article
+
+strip: //time
+strip: //section[@data-app-hidden='']
+strip: //button
+strip: //div[contains(@class, 'mt-8')]
+strip: //svg[@id='mmo-mmplus-flag-l']
+strip: //aside[@aria-label='Artikel zum Hören']
+
+test_url: https://www.manager-magazin.de/finanzen/index.rss
 test_url: https://www.manager-magazin.de/unternehmen/autoindustrie/continental-mit-milliardenverlust-a-1305227.html
-# two pages:
 test_url: https://www.manager-magazin.de/politik/weltwirtschaft/coronavirus-was-der-lockdown-in-italien-gegen-covid-19-bringt-und-kostet-a-1305338.html
