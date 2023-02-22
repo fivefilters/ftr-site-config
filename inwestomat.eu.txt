@@ -1,0 +1,25 @@
+body: //article
+title: //h1[@itemprop='headline']
+
+strip: //h1[@itemprop='headline']
+strip: //span[@class='owp-tag-text']
+strip: //ul[contains(@class, 'meta')]
+strip: //div[contains(@class, 'post-tags')]
+
+# Remove banners and ads 
+strip_id_or_class: elementor-shortcode
+
+# Remove comments section
+strip_id_or_class: comments
+
+# Remove related posts
+strip_id_or_class: related-posts
+
+# Remove previous / next post
+strip: //nav[@aria-label='artykuły']
+
+
+prune: no
+
+test_url: https://inwestomat.eu/feed/
+test_url: https://inwestomat.eu/ile-naprawde-kosztuje-przeplacanie-prowizji-maklerskiej/
