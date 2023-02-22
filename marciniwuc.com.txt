@@ -1,0 +1,12 @@
+body: //article
+
+strip: //div[@class='entry-meta entry-meta-divider-vline']
+strip_id_or_class: comment-count
+strip_id_or_class: powerpress_player
+strip_id_or_class: powerpress_links
+strip_id_or_class: powerpress_embed_box
+strip_id_or_class: powerpress_links powerpress_subscribe_links
+
+prune: no
+
+test_url: https://marciniwuc.com/startujemy-z-fincrafters-co-to-jest/
