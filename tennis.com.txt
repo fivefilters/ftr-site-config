@@ -1,5 +1,10 @@
 body: //article[contains(@class, 'article')]
 
+strip: //nav
+strip: //svg
+strip_id_or_class: oc-c-article__adv
+strip_id_or_class: d3-l-adv-row
+
 prune: no
 
 test_url: https://www.tennis.com/news/articles/no-rafael-nadal-until-clay-season-withdraws-from-indian-wells-top-10-streak
