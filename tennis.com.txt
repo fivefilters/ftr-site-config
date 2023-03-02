@@ -1,5 +1,7 @@
 body: //article[contains(@class, 'article')]
 
+title: //h1[contains(@class, 'oc-c-article__title')]
+
 strip: //nav
 strip: //svg
 strip_id_or_class: oc-c-article__adv
