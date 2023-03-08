@@ -1,6 +1,8 @@
 body: //section[contains(@class, 'body-text')]
 
 strip_id_or_class: highlights
+strip_id_or_class: video-inline_carousel
+strip_id_or_class: video-inline_carousel__wrapper
 
 # Avoid redirecting to 'unsupported browser' page
 find_string: <meta http-equiv="refresh"
