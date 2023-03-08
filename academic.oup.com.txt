@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' wi-article-title ')]
+#body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' widget-ArticleFulltext ')]//div[contains(concat(' ',normalize-space(@class),' '),' module-widget ')]//div[contains(concat(' ',normalize-space(@class),' '),' widget-items ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' al-authors-list ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' citation-date ')]
+strip_id_or_class: toolbar-wrap
