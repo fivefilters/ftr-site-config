@@ -1,0 +1,7 @@
+title: //article[contains(concat(' ',normalize-space(@class),' '),' markdown-body ')]//h1
+author: //a[contains(concat(' ',normalize-space(@class),' '),' fn ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' Details ')]//relative-time
+body: //div[contains(concat(' ',normalize-space(@class),' '),' Box-body ')]
+skip_id_or_class: BorderGrid-cell
+skip_id_or_class: js-repo-nav
+skip_id_or_class: Layout-sidebar
