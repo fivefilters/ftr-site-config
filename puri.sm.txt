@@ -1,7 +1,12 @@
-title: //h1[@class="entry-title"]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' p-name ')]
 author: //h3[@class="fn name"]
 date: //time[contains(@class, "published")]/@datetime
-body: //div[@class="entry-content"]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' e-content ')]
 strip: //div[@class="abh_box abh_box_up abh_box_business"]
+strip_id_or_class: tablepress-table-name
+strip_id_or_class: tablepress
+strip_id_or_class: tablepress-table-description
 
 test_url: https://puri.sm/posts/introducing-the-librem-key/
+test_url: https://puri.sm/posts/purism-usb-c-type-universal-chargers/
+test_url: https://puri.sm/posts/fosdem-2023-event-report/
