@@ -7,6 +7,7 @@ strip: //img[contains(concat(" ", normalize-space(@class), " "), " jetpack-lazy-
 
 strip: //div[@class='aawp']
 strip_id_or_class: aawp-disclaimer
+strip_id_or_class: su-posts
 
 test_url: https://stadt-bremerhaven.de/google-meet-laesst-sich-nun-auf-alle-cast-faehigen-geraete-streamen/
 test_url: https://stadt-bremerhaven.de/nanoleaf-essentials-a60-mit-thread-im-test/
