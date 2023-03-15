@@ -9,6 +9,8 @@ strip: //div[@class='aawp']
 strip_id_or_class: aawp-disclaimer
 strip_id_or_class: su-posts
 
+prune: no
+
 test_url: https://stadt-bremerhaven.de/google-meet-laesst-sich-nun-auf-alle-cast-faehigen-geraete-streamen/
 test_url: https://stadt-bremerhaven.de/nanoleaf-essentials-a60-mit-thread-im-test/
 test_url: https://stadt-bremerhaven.de/facebook-stellt-heute-wohl-noch-neue-audio-loesungen-vor/
