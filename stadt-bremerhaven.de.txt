@@ -8,6 +8,7 @@ strip: //img[contains(concat(" ", normalize-space(@class), " "), " jetpack-lazy-
 strip: //div[@class='aawp']
 strip_id_or_class: aawp-disclaimer
 strip_id_or_class: su-posts
+strip_id_or_class: wp-embedded-content
 
 prune: no
 
