@@ -1,6 +1,13 @@
-# author: HolgerAusB   version 2023-02-12
+# author: HolgerAusB   version 2023-03-16
+#
+# Blog feed:
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.regionaltangente-west.de%2Fbaustellenblog.html&item=div.layout_latest&item_title=h2&item_desc=div.ce_text&item_date=time&feed_title=RTW+Blog&max=5&order=document&guid=0
+#
+# News Feed:
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.regionaltangente-west.de%2Faktuelles.html&item=div.col8&item_title=h3&item_desc=div.teaser&item_date=time&feed_title=RTW+Aktuelles&max=5&order=document&guid=0
 
 body: //div[@id='main']
+prune: no
 
 strip: //p[@class='info']
 strip: //p[@class='back']
@@ -8,6 +15,14 @@ strip: //h1[@itemprop='name']
 
 strip_id_or_class: ytelement
 strip_id_or_class: YTPrevPict
+
+# transform image galery to single images
+strip: //ol[@class='carousel-indicators']
+
+find_string: <div class="bsc_spic" style="background: url('
+replace_string: <img src='
+
+replace_string(&nbsp;):
 
 test_url: https://www.regionaltangente-west.de/baustellenblog-reader/vollsperrung-des-forstwegs-an-der-gehespitz.html
 test_url: https://www.regionaltangente-west.de/baustellenblog-reader/bauarbeiten-im-pfa-sued-1-schreiten-voran.html
