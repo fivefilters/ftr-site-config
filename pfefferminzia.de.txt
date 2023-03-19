@@ -1,0 +1,17 @@
+# author: HolgerAusB  |  version 2023-03-19
+#
+# choose your feed here:
+# https://www.pfefferminzia.de/rss-infos/
+
+body: //div[@class='artical-outer']
+author: //div[@class='artical-author-info']/p/strong
+
+next_page_link: //link[@rel='next']
+
+strip_id_or_class: mehr-zum-thema-outer
+strip_id_or_class: artical-download
+strip_id_or_class: reading-time-ad-word
+strip_id_or_class: artical-author-outer
+
+test_url: https://www.pfefferminzia.de/strategie-diese-fehler-in-der-altersvorsorge-sollten-sie-vermeiden/
+test_url: https://www.pfefferminzia.de/feed
