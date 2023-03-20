@@ -1,0 +1,11 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article-container ')]
+author: //article//span[@itemprop="author"]
+date: //article//span[@itemprop="datePublished"]/@content
+
+strip_id_or_class: share
+strip_id_or_class: shareList
+strip_id_or_class: article-actions
+
+prune: no
+
+test_url: https://answersresearchjournal.org/gypsies-darwinian-eugenic-holocaust/
