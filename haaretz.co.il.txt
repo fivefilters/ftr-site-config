@@ -1,0 +1,5 @@
+http_header(user-agent): facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+
+strip: //ul[contains(@data-test, "relatedArticles")]
+
+test_url: https://www.haaretz.co.il/gallery/television/tv-review/2023-03-23/ty-article/.premium/00000187-0aa4-d26b-a5f7-dbfc2e6e0000
