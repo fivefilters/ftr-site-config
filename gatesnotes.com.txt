@@ -1,0 +1,38 @@
+# author: HolgerAusB  |  version 2023-03-24
+
+body: //div[@class='TGN_site_Article']
+author: //span[@class='article_top_bylinebold']
+date: //div[@class='article_top_dateline']
+
+prune: no
+
+strip_id_or_class: article_top_head
+strip_id_or_class: article_top_subhead
+strip_id_or_class: article_top_byline
+strip_id_or_class: article_top_dateline
+strip_id_or_class: article_top_chim
+strip_id_or_class: article_top_metric_readtime
+strip_id_or_class: icon-dot
+strip_id_or_class: TGN_site_Innercollumn
+strip_id_or_class: InfoLinksALPixel
+strip_id_or_class: TGN_CH_BO_C_InlineByline
+strip_id_or_class: TGN_CH_BO_HeroHolder
+strip_id_or_class: TGN_site_Article_readnext
+strip_id_or_class: TGN_site_Article_cta
+strip_id_or_class: TGN_site_Article_comments
+
+strip: //div[starts-with(@id, 'TGN_CH_BO_Menu')]
+strip: //div[starts-with(@class, 'TGN_CH_BO_ChapterholderTop')]
+
+# for multiplatform-images convert 'data-src' to 'src'
+# and replace the placeholdert-png 'src' with 'dummy'
+replace_string(DMT_Image" src=): DMT_Image" dummy=
+replace_string(HF_IMG" src=): HF_IMG" dummy=
+replace_string(" data-src=): "  src=
+
+strip: //script
+strip: //canvas
+strip: //iframe
+
+test_url: https://www.gatesnotes.com/The-Age-of-AI-Has-Begun?WT.mc_id=20230321100000_Artificial-Intelligence_BG-TW_&WT.tsrc=BGTW
+test_url: https://www.gatesnotes.com/My-trip-to-India-in-pictures
