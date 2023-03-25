@@ -24,6 +24,8 @@ strip_id_or_class: TGN_site_Article_comments
 strip: //div[starts-with(@id, 'TGN_CH_BO_Menu')]
 strip: //div[starts-with(@class, 'TGN_CH_BO_ChapterholderTop')]
 
+strip: //div[contains(@data-module-name, 'pullquote')]
+
 # for multiplatform-images convert 'data-src' to 'src'
 # and replace the placeholdert-png 'src' with 'dummy'
 replace_string(DMT_Image" src=): DMT_Image" dummy=
