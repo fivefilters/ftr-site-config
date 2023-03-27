@@ -1,0 +1,4 @@
+next_page_link: //link[@rel='next']/@href
+test_url: https://community.openstreetmap.org/t/lidar-mapping-of-roads/97100
+test_contains: Roadroid had an app since 2011, so we are probably the longest lasting app for the issue
+
