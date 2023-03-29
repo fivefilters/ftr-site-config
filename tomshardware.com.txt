@@ -1,3 +1,5 @@
+# Similar to techradar.com
+
 body: //section[contains(concat(' ',normalize-space(@class),' '),' content-wrapper ')]
 strip: //aside
 strip: //svg
