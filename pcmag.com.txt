@@ -8,6 +8,7 @@ replace_string: src="http
 
 strip_id_or_class: comments
 strip: //aside
+strip: //svg
 
 prune: no
 
