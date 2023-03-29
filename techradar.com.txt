@@ -5,6 +5,8 @@ strip: //aside
 strip: //svg
 strip_id_or_class: ad-unit
 strip_id_or_class: table__instruction
+# Image src not available in these
+strip_id_or_class: imageGallery-wrapper
 
 # Fix JS-only images
 find_string: src="https://vanilla.futurecdn.net/techradar/media/img/missing-image.svg"
