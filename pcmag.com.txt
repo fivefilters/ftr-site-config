@@ -9,6 +9,7 @@ replace_string: src="http
 strip_id_or_class: comments
 strip: //aside
 strip: //svg
+strip: //div[contains(@x-data, 'newsletters') or contains(@x-data, 'FeedbackModal')]
 
 prune: no
 
