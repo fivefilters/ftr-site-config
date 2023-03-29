@@ -1,10 +1,14 @@
-prune:yes
+body: //article[@id='article']
 
-date://*[contains(@class,'date')]
+# Fix lazy loading
+find_string: src="data:image
+replace_string: old-src="data:image
+find_string: data-image-loader="http
+replace_string: src="http
 
-body://div[contains(@id,'content')]
+strip_id_or_class: comments
+strip: //aside
 
-next_page_link://a[contains(.,'Next >')]
+prune: no
 
-strip_id_or_class:sponsors
-test_url: http://www.pcmag.com/article2/0,2817,2401676,00.asp
+test_url: https://www.pcmag.com/how-to/what-is-discord-and-how-do-you-use-it
