@@ -1,8 +1,14 @@
-tidy: no
-title: //title
-author: //a[@itemprop = 'author']
-date: //time[@itemprop = 'datePublished']
-body: //div[@id = 'intelliTXT']
+body: //section[contains(concat(' ',normalize-space(@class),' '),' content-wrapper ')]
+strip: //aside
+strip: //svg
+strip_id_or_class: ad-unit
+strip_id_or_class: table__instruction
 
-next_page_link: //link[@rel='next']/@href
-test_url: http://www.tomshardware.com/reviews/gaming-graphics-card-review,3107.html
+# Fix JS-only images
+find_string: src="https://vanilla.futurecdn.net/tomshardware/media/img/missing-image.svg"
+replace_string: old-src="https://vanilla.futurecdn.net/tomshardware/media/img/missing-image.svg"
+find_string: data-original-mos="http
+replace_string: src="http
+
+test_url: https://www.tomshardware.com/reviews/best-gpus,4380.html
+test_url: https://www.tomshardware.com/reviews/drop-sense75
