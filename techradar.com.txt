@@ -1,12 +1,15 @@
-# Title without news/reviews etc. appended
-title: //div[@id='subColumn1Pad']/div[1][@class='article']/div[1][@class='articleHead']/h1
+# Similar to tomshardware.com
 
-# Remove home link
-strip: //div[@id='page_logo']/a
+body: //section[contains(concat(' ',normalize-space(@class),' '),' content-wrapper ')]
+strip: //aside
+strip: //svg
+strip_id_or_class: ad-unit
+strip_id_or_class: table__instruction
 
-# Remove utilities
-strip: //*[(@id = "utilities")]
+# Fix JS-only images
+find_string: src="https://vanilla.futurecdn.net/techradar/media/img/missing-image.svg"
+replace_string: old-src="https://vanilla.futurecdn.net/techradar/media/img/missing-image.svg"
+find_string: data-original-mos="http
+replace_string: src="http
 
-# Remove comments link
-strip: //div[@id='subColumn1Pad']/div[1][@class='article']/div[1][@class='articleHead']/p[@class='tiny']
-test_url: http://www.techradar.com/news/television/sky-to-rebrand-living-as-sky-living-903105
+test_url: https://www.techradar.com/reviews/xiaomi-13
