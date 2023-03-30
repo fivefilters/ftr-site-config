@@ -1,0 +1,9 @@
+body: //article
+
+strip_id_or_class: blog-item-top-wrapper
+replace_string(noscript>): div>
+
+prune: no
+
+test_url: https://www.alexmurrell.co.uk/articles/the-age-of-average
+test_url: https://www.alexmurrell.co.uk/articles/the-forecasting-fallacy
