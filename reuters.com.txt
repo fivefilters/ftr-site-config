@@ -21,6 +21,7 @@ strip_id_or_class: related-container
 strip_id_or_class: share-in-article-container
 
 strip: //div[contains(@class, 'registration-prompt')]
+strip: //*[@data-testid="toolbar-container"]
 
 test_url: https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
 
