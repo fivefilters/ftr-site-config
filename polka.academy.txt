@@ -1,0 +1,32 @@
+body: //main/div/div[1]
+
+prune: no
+
+# strip footer, doesn't work yet:
+#strip: //main/div[1]/div[2]
+# strip header:
+strip: //main/div[1]/div[1]/div[1]
+
+strip: //button
+strip_id_or_class: '_2D19b'
+strip: //svg
+
+replace_string(<section): <div
+replace_string(<article): <div
+
+#rewrite imgage urls
+find_string: <div class="lWOEI" style="background-image:url(
+replace_string: <img class="lWOEI" src="
+
+#strip ')' and </div> at end of image url for .jpg, .jpeg, .png, .*g
+find_string: g)"></div>
+replace_string: g">
+
+#strip ')' and </div> at end of image url for .gif, .tiff, .*f
+find_string: f)"></div>
+replace_string: f">
+
+replace_string(/thumb_image-): /regular_image-
+
+
+test_url: https://polka.academy/materials/917
