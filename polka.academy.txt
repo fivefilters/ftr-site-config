@@ -1,15 +1,24 @@
-body: //main/div/div[1]
+body: //main/div/div
 
 prune: no
 
-# strip footer, doesn't work yet:
-#strip: //main/div[1]/div[2]
 # strip header:
 strip: //main/div[1]/div[1]/div[1]
 
+strip: //svg
 strip: //button
 strip_id_or_class: '_2D19b'
-strip: //svg
+
+# strip footer in 'materials' and 'lists' section
+strip: //div[@class='_1AXbp _2QZGT'][last()]/div[@class='_2ezKP _1Abfj _3AP5M'][last()]
+
+#strip footer in 'books'
+strip_id_or_class: '_2ezKP _1TFtF _3AP5M'
+
+#strip social sharing and comments:
+strip_id_or_class: 'X5T8H'
+strip_id_or_class: 'HygOp TVAk2'
+strip_id_or_class: '_3vVVr TVAk2'
 
 replace_string(<section): <div
 replace_string(<article): <div
