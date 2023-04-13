@@ -1,0 +1,16 @@
+# get feed by
+# https://createfeed.fivefilters.org/extract.php?url=ticket.interpark.com%2Fwebzine%2Fpaper%2FTPNoticeList_iFrame.asp&item=tbody+tr&item_title=%3Aempty&item_date=.date&item_date_format=y.m.d%2A+H%3Ai&unique_title=0&strip=&keep_qs_params=
+
+# and add this to feed-url of fulltext-rss:
+#     &use_extracted_title
+
+body: //div[@class='board']
+title: //div[@class='info']/h3
+
+strip: //div[@class='info']/ul
+strip: //div[@class='detail_top']/h2[1]
+
+strip_id_or_class: btn
+strip_id_or_class: btn_top
+
+test_url: http://ticket.interpark.com/webzine/paper/TPNoticeView.asp?no=46769
