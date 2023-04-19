@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'complexe-content')]
+
+prune: no
+
+test_url: https://forbiddenstories.org/story-killers/gauri-lankesh-in-the-age-of-false-news/
