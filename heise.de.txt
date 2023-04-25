@@ -13,7 +13,7 @@ author: //div[@class="article__author"]
 body: //article[contains(@class, 'printversion')]
 
 # regular
-body: //article[@id="meldung"] | //div[@class='meldung_wrapper'] | //section[@id='artikel_text']
+body: //article[@id="meldung"] | //div[@class='meldung_wrapper'] | //section[@id='artikel_text'] | //article[contains(@class, 'xp__article')]
 # TODO: Try to preserve lede (currently stripped by strip: //header)
 # https://www.heise.de/select/ct/2020/3/1580493780857147
 # //article//p[contains(@class, 'article__description')]
