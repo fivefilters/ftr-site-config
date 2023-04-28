@@ -48,7 +48,7 @@ strip: //figure[@class='printversion__logo']
 strip: //figure[@class='branding']
 strip: //a-ad
 strip: //footer
-strip: //div/section[@data-component='TeaserList']/ancestor::div
+strip: //div/section[@data-component='TeaserList']/ancestor::div[1]
 
 
 strip_id_or_class: comments
