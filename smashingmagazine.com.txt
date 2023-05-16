@@ -1,5 +1,5 @@
 title: //h1
-author: substring-before(substring-after(//a[@class='show-more-link'],"More about "), " …")
+author: //a[@class="author-post__author-title"]
 date: //meta[@property="DC.date.issued"]/@content
 
 strip_id_or_class: lt
