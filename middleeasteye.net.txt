@@ -1,3 +1,6 @@
 strip_id_or_class: mee-readmore
 
+# Strip newsletter
+strip: //div[starts-with(@style, 'display: flex; align-items: center; justify-content: center;')]
+
 test_url: https://www.middleeasteye.net/opinion/how-top-labour-officials-plotted-bring-down-corbyn
