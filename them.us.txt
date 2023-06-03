@@ -1,8 +1,8 @@
 title: //h1
 
-# comment out the first body declaration if you're using adblock because then
+# Comment out the first body declaration if you're using adblock because then
 # it will only return part of the article stopping when it hits the first element with a class of 'ad'
-# falling back to the second body declaration has the side effect of not displaying any images though.
+# Falling back to the second body declaration has the side effect of not displaying any images though.
 
 body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
 body: //div[@class='body__inner-container']
