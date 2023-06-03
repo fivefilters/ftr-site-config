@@ -1,6 +1,5 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image']
 
 test_url: https://www.insuedthueringen.de/inhalt.weltfahrradtag-wie-gut-laesst-sich-suhl-mit-dem-fahrrad-erkunden.222e08c6-76f1-48b4-a695-47b5ffe59724.html
 test_contains: Ende als attraktiver und lebenswerter empfunden
 
-# vim: set nowrap
