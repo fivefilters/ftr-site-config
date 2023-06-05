@@ -1,0 +1,27 @@
+title: //h1
+
+# Comment out the first body declaration if you're using adblock because then
+# it will only return part of the article stopping when it hits the first element with a class of 'ad'
+# Falling back to the second body declaration has the side effect of not displaying any images though.
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
+body: //div[@class='body__inner-container']
+
+author: //a[contains(concat(' ',normalize-space(@class),' '),' byline__name-link ')]
+date: //time
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' callout--has-top-border ')] 
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' content-header__accreditation ')]
+strip: //aside[contains(concat(' ',normalize-space(@class),' '),' persistent-aside ')]
+strip: //a[contains(concat(' ',normalize-space(@class),' '),' rubric__link ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' grid-layout__aside ')]
+
+# As of 03/06/23 '.ad' elements are blank and skipping them directly causes the formatting to break
+# this is a more targeted skip
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ad__slot ')]
+
+tidy: no
+prune: no
+
+test_url: https://www.them.us/story/gigi-gorgeous-gottmik-the-t-guide-interview
+test_contains: Before, it was just about not knowing who I was. Now I’m actually dealing with me as a person, my soul.
