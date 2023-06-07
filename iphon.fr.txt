@@ -4,6 +4,7 @@ strip_id_or_class: mvp-content-bot
 strip_id_or_class: comp-vgrid
 strip_id_or_class: comp-box
 strip_id_or_class: mvp-post-soc-list
+strip_id_or_class: mvp-post-bot-ad
 
 body: //div[@class="mvp-post-main-in"]
 
