@@ -14,6 +14,7 @@ strip_id_or_class: 'articleTeaser'
 strip_id_or_class: 'article-header'
 
 replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
 replace_string( - Neue Presse Coburg):
 
 test_url: https://www.np-coburg.de/inhalt.messerstiche-tat-vor-den-augen-der-hofer-polizei.921b9bce-9656-48f4-a2c8-ece56d6a6747.html
