@@ -1,6 +1,8 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup restricted-area']
 author: //a[@itemprop='author']
 
+prune: no
+strip: //noscript
 strip: //div[contains(@data-b-title, 'Sharing Button')]
 
 strip_id_or_class: 'badges'
@@ -20,3 +22,4 @@ test_contains: Ende als attraktiver und lebenswerter empfunden
 
 # example for short teaser with paywall:
 test_url: https://www.insuedthueringen.de/inhalt.wartburgkreis-rettung-in-letzter-sekunde.4cc32802-5770-46e8-aa37-a5c2b1a7c775.html
+
