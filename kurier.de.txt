@@ -14,6 +14,7 @@ strip_id_or_class: 'articleTeaser'
 strip_id_or_class: 'article-header'
 
 replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
 replace_string( - Nordbayerischer Kurier):
 
 test_url: https://www.kurier.de/inhalt.verkehr-verfassungsgerichtshof-entscheidet-ueber-rad-volksbegehren.20066552-5dde-437a-a437-1469c14a6e3b.html
