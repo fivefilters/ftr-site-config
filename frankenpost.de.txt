@@ -2,7 +2,6 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //im
 author: //a[@itemprop='author']
 
 prune: no
-strip: //noscript
 strip: //div[contains(@data-b-title, 'Sharing Button')]
 
 strip_id_or_class: 'badges'
