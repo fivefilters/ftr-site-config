@@ -14,6 +14,7 @@ strip_id_or_class: 'articleTeaser'
 strip_id_or_class: 'article-header'
 
 replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
 replace_string( - Frankenpost):
 
 test_url: https://www.frankenpost.de/inhalt.foerderverein-schloss-erkersreuth-joscha-geyer-neu-im-vorstand.4f8d62cb-3f78-4ff8-9881-ef4d639a2353.html
