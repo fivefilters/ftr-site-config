@@ -14,6 +14,7 @@ strip_id_or_class: 'articleTeaser'
 strip_id_or_class: 'article-header'
 
 replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
 
 test_url: https://www.schwarzwaelder-bote.de/inhalt.vor-einem-jahr-wie-die-zeit-vergeht-bundespraesident-steinmeier-zu-besuch-in-rottweil.0dcbb492-352a-4a2a-aa02-00fa7563ac39.html
 
