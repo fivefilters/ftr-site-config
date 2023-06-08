@@ -1,5 +1,6 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' ltx_page_content ')]
 body: //article
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' ltx_title ')]
 
 prune: no
 
