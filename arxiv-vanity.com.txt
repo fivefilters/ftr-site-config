@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' ltx_page_content ')]
+body: //article
+
+prune: no
+
+test_url: https://www.arxiv-vanity.com/papers/2303.13881/
