@@ -15,6 +15,7 @@ strip_id_or_class: 'articleTeaser'
 strip_id_or_class: 'article-header'
 
 replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
 replace_string( - inSüdthüringen):
 
 test_url: https://www.insuedthueringen.de/inhalt.weltfahrradtag-wie-gut-laesst-sich-suhl-mit-dem-fahrrad-erkunden.222e08c6-76f1-48b4-a695-47b5ffe59724.html
