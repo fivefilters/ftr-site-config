@@ -1,0 +1,20 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //article
+author: //div[@itemprop='author']
+
+prune: no
+strip: //div[contains(@data-b-title, 'Sharing Button')]
+
+strip_id_or_class: 'badges'
+strip_id_or_class: 'read-more'
+strip_id_or_class: 'paywall'
+strip_id_or_class: 'mod-paywall'
+strip_id_or_class: 'rsCaption'
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+strip_id_or_class: 'details'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+
+test_url: https://www.stuttgarter-zeitung.de/inhalt.offene-gaerten-in-der-region-einblicke-in-private-kleinode.25816108-f775-4ee8-94f0-67c74362b66a.html
