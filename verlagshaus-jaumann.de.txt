@@ -1,0 +1,18 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup body']
+
+prune: no
+strip: //div[@data-hidden-print="yes"]
+strip: //div[@data-noprint="true"]
+
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'image-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+strip_id_or_class: 'article-bottom'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+replace_string( - Verlagshaus Jaumann):
+
+test_url: https://www.verlagshaus-jaumann.de/inhalt.weil-am-rhein-verfahren-ist-technisch-sehr-aufwaendig.19dd834a-7c72-4a63-a6de-86aaf3ac7205.html
+test_url: https://www.verlagshaus-jaumann.de/inhalt.basel-fotogalerie-basel-tattoo-2022.5c81778e-1ef0-4761-a958-f4b4d126e132.html
