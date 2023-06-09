@@ -1,0 +1,23 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup restricted-area']
+author: //a[@itemprop='author']
+
+prune: no
+strip: //div[contains(@data-b-title, 'Sharing Button')]
+
+strip_id_or_class: 'badges'
+strip_id_or_class: 'read-more'
+strip_id_or_class: 'paywall'
+strip_id_or_class: 'mod-paywall'
+strip_id_or_class: 'rsCaption'
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+replace_string( - Nordbayerischer Kurier):
+
+test_url: https://www.kurier.de/inhalt.verkehr-verfassungsgerichtshof-entscheidet-ueber-rad-volksbegehren.20066552-5dde-437a-a437-1469c14a6e3b.html
+
+# example for short teaser with paywall:
+test_url: https://www.kurier.de/inhalt.durch-klimawandel-tigermuecke-im-anmarsch.774653c6-d0d3-4b7c-941d-2428cfd014fc.html

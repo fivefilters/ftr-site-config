@@ -1,0 +1,23 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup restricted-area']
+author: //a[@itemprop='author']
+
+prune: no
+strip: //div[contains(@data-b-title, 'Sharing Button')]
+
+strip_id_or_class: 'badges'
+strip_id_or_class: 'read-more'
+strip_id_or_class: 'paywall'
+strip_id_or_class: 'mod-paywall'
+strip_id_or_class: 'rsCaption'
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+replace_string( - Neue Presse Coburg):
+
+test_url: https://www.np-coburg.de/inhalt.messerstiche-tat-vor-den-augen-der-hofer-polizei.921b9bce-9656-48f4-a2c8-ece56d6a6747.html
+
+# example for short teaser with paywall:
+test_url: https://www.np-coburg.de/inhalt.teuschnitz-ein-buergermeister-auf-augenhoehe.2d4aef10-9f69-456b-a39e-8f3562245e3b.html

@@ -1,0 +1,23 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup restricted-area']
+author: //a[@itemprop='author']
+
+prune: no
+strip: //div[contains(@data-b-title, 'Sharing Button')]
+
+strip_id_or_class: 'badges'
+strip_id_or_class: 'read-more'
+strip_id_or_class: 'paywall'
+strip_id_or_class: 'mod-paywall'
+strip_id_or_class: 'rsCaption'
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+replace_string( - Frankenpost):
+
+test_url: https://www.frankenpost.de/inhalt.foerderverein-schloss-erkersreuth-joscha-geyer-neu-im-vorstand.4f8d62cb-3f78-4ff8-9881-ef4d639a2353.html
+
+# example for short teaser with paywall:
+test_url: https://www.frankenpost.de/inhalt.vor-gericht-landwirt-scheitert-mit-hunde-klage.4b82a266-f72e-40e6-a1a8-87f8f0c91aba.html

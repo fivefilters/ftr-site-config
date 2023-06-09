@@ -1,0 +1,22 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup restricted-area']
+author: //a[@itemprop='author']
+
+prune: no
+strip: //div[contains(@data-b-title, 'Sharing Button')]
+
+strip_id_or_class: 'badges'
+strip_id_or_class: 'read-more'
+strip_id_or_class: 'paywall'
+strip_id_or_class: 'mod-paywall'
+strip_id_or_class: 'rsCaption'
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+
+test_url: https://www.schwarzwaelder-bote.de/inhalt.vor-einem-jahr-wie-die-zeit-vergeht-bundespraesident-steinmeier-zu-besuch-in-rottweil.0dcbb492-352a-4a2a-aa02-00fa7563ac39.html
+
+# example for short teaser with paywall:
+test_url: https://www.schwarzwaelder-bote.de/inhalt.hunde-in-donaueschingen-das-sollte-alles-in-den-napf-kommen.3cf247ab-acd9-4d62-b5ad-b31d22fe4224.html
