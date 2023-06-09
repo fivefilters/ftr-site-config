@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' _inner_1oida_1 ')]
+
+prune: no
+
+strip: //div[@data-component="cards-related-content"]
+strip: //svg
