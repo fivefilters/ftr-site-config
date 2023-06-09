@@ -1,0 +1,25 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]/p | //img[@id='article-image'] | //div[@class='brickgroup restricted-area']
+author: //a[@itemprop='author']
+
+prune: no
+strip: //div[contains(@data-b-title, 'Sharing Button')]
+
+strip_id_or_class: 'badges'
+strip_id_or_class: 'read-more'
+strip_id_or_class: 'paywall'
+strip_id_or_class: 'mod-paywall'
+strip_id_or_class: 'rsCaption'
+strip_id_or_class: 'gallery-count'
+strip_id_or_class: 'articleTeaser'
+strip_id_or_class: 'article-header'
+
+replace_string(data-src=): src=
+replace_string(srcset=): notneeded=
+replace_string( - inSüdthüringen):
+
+test_url: https://www.insuedthueringen.de/inhalt.weltfahrradtag-wie-gut-laesst-sich-suhl-mit-dem-fahrrad-erkunden.222e08c6-76f1-48b4-a695-47b5ffe59724.html
+test_contains: Ende als attraktiver und lebenswerter empfunden
+
+# example for short teaser with paywall:
+test_url: https://www.insuedthueringen.de/inhalt.wartburgkreis-rettung-in-letzter-sekunde.4cc32802-5770-46e8-aa37-a5c2b1a7c775.html
+
