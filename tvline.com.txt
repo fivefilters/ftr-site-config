@@ -1,9 +1,13 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' _inner_1oida_1 ')]
+body: //div[contains(@class, '_main_')]
 
 prune: no
 
 strip: //div[@data-component="cards-related-content"]
 strip: //svg
+strip: //div[contains(@class, '_articleHeader_')]
+strip: //div[contains(@class, '_socialMedia_')]
+strip: //div[contains(@class, '_articleFooter_')]
+strip: //div[contains(@class, '_footerWrapper_')]
 
 test_url: https://tvline.com/casting-news/cruel-intentions-tv-series-cast-amazon-sean-patrick-thomas-1234994461/
 test_url: https://tvline.com/feed/
