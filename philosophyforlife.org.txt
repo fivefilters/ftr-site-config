@@ -1,0 +1,4 @@
+body: //article
+replace_string(data-src=):src=
+
+test_url: https://www.philosophyforlife.org/blog/mind-palaces-the-art-of-psycho-technics-or-soul-craft
