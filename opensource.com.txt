@@ -1,0 +1,14 @@
+body: //article
+prune: no
+strip_id_or_class: visually-hidden
+strip_id_or_class: block-field-blocknodearticlefield-tags
+strip_id_or_class: block-views-blockauthor-info-author-info
+strip_id_or_class: block-field-blocknodearticlefield-comments
+strip_id_or_class: related-articles
+strip_id_or_class: author__list
+strip_id_or_class: rate-widget
+strip_id_or_class: embedded-resource-list
+strip: //footer
+
+test_url: https://opensource.com/article/23/2/manage-openstack-using-terraform-and-gitlab
+
