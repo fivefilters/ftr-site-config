@@ -5,5 +5,8 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-content ')]
 title: //h1[@class="entry-title"]
 strip_id_or_class: fusion-post-medium
-next_page_link: //link[contains(@rel, 'next')]/@href
+next_page_link: //a[contains(@class, 'next')]/@href
+
 test_url: http://www.linux-community.de/ausgaben/linuxuser/2012/08/ahnenforschung-mit-der-genealogie-software-gramps/
+test_url: https://www.linux-community.de/ausgaben/linuxuser/2016/01/fundamental/
+
