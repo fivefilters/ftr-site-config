@@ -1,0 +1,4 @@
+body: //div[@class='card-body']
+
+test_url: https://dr-b.io/post/Synology-DSM-7-with-Lets-Encrypt-and-DNS-Challenge
+
