@@ -1,0 +1,4 @@
+strip_id_or_class: elf-call-out-ssg
+strip_id_or_class: cta-box
+
+test_url: https://www.elfster.com/content/secret-santa-rules/
