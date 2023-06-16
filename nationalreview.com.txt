@@ -1,13 +1,5 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
-date: //meta[@property="article:published_time"]/@content
-author: //meta[@name="sailthru.author"]/@content
-title: //meta[@name="sailthru.title"]/@content
-
-strip: //aside
-strip_id_or_class: ad-unit
-strip_id_or_class: article-header__remixd-player
-strip_id_or_class: author-module-ad-container
-strip_id_or_class: article-social-comment
-strip: //footer
+single_page_link: //link[@rel='amphtml']
 
 test_url: https://www.nationalreview.com/2020/09/reminiscences-of-a-middle-class-radical/
+test_url: https://www.nationalreview.com/magazine/2023/05/01/conformity-inequity-and-exclusion/
+
