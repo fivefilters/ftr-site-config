@@ -1,3 +1,4 @@
+body: //article
 single_page_link: //link[@rel='amphtml']
 
 test_url: https://www.nationalreview.com/2020/09/reminiscences-of-a-middle-class-radical/
