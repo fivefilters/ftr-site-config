@@ -1,0 +1,6 @@
+body: //section[contains(concat(' ',normalize-space(@class),' '),' page-content-wrap ')]
+strip_id_or_class: social-sharing-wrap
+strip_id_or_class: current-edition-title-date
+
+test_url: https://nextdraft.com/archives/n20221208/
+
