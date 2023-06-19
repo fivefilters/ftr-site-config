@@ -1,0 +1,4 @@
+single_page_link: //link[@rel='amphtml']
+
+test_url: https://www.retro-games.fr/shadow-hearts-ps2-7476
+
