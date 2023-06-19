@@ -1,0 +1,10 @@
+body: //div[@id='main-wrapper']
+strip_id_or_class: block-usenix-donate
+strip_id_or_class: login-v2-discussion
+strip_id_or_class: field-type-taxonomy-term-reference
+strip_id_or_class: field-pseudo-field--author-list
+strip_id_or_class: field-type-user-reference
+strip_id_or_class: field-name-field-authors
+
+test_url: https://www.usenix.org/publications/loginonline/transcending-posix-end-era
+
