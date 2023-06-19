@@ -1,3 +1,7 @@
+body: //article
+author: //div[@class='content__author']
+date: //li[@class="item content__meta__date"]
+
 find_string: </noscript>
 replace_string: </div>
 find_string: <noscript
@@ -6,5 +10,8 @@ replace_string: <div
 strip_id_or_class: hide-for-print
 strip_id_or_class: breadcrumbs
 strip_id_or_class: content__meta
+strip_id_or_class: content__author
+
+strip: //header/h2
 
 test_url: https://www.spektrum.de/news/europas-vernichtende-jahrtausendduerre/1584414
