@@ -1,0 +1,10 @@
+body: //main
+
+strip_id_or_class: col-right
+strip: //h2[text()='Das könnte Sie auch interessieren']
+
+# wallabg strips the teaser without this:
+find_string: class="views-field-field-teaser-value"
+replace_string:
+
+test_url: https://www.stadtpost.de/frankfurter-wochenblatt-mitte/rock-ages-begeistert-zuschauer-id101185.html
