@@ -1,3 +1,5 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' ArticlePageContentBackGround-cNiFNN ')]
+strip: //button
+
 test_url: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
 test_contains: they are good to their users
