@@ -1,3 +1,5 @@
 body: //article
 
+strip_id_or_class: page-header
+
 test_url: https://www.thinkwithgoogle.com/intl/de-de/zukunft-des-marketings/datenschutz-und-nutzervertrauen/wertvollste-kunden-ansprechen-ga4-vbb-sa360/
