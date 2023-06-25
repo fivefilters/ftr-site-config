@@ -1,0 +1,16 @@
+title: //h1
+body: //*[@*='ogm-article-perex'] | //*[@*='ogm-article-layout']
+author: //span[@*='mol-author-names']
+
+# Strip redundant string "Článek"
+strip: //h6[@id='accessibility-article']
+
+# Strip cards with recommended articles
+strip_id_or_class: mol-post-card__body
+
+# Strip embedded media (maps etc.)
+strip: //*[@*='mol-embed']
+
+test_url: https://www.seznamzpravy.cz/clanek/zahranicni-rusko-se-zasadne-meni-analytik-hodnoti-prigozinovu-rebelii-233151
+test_url: https://www.seznamzpravy.cz/clanek/zahranicni-stredni-evropa-zelena-energie-na-ukor-lesa-v-bavorsku-resi-dilema-s-vetrniky-232669
+test_url: https://www.seznamzpravy.cz/clanek/tech-svet-je-cim-dal-horsi-shodli-se-vsichni-ale-vedci-ukazuji-ze-jde-o-iluzi-232933
