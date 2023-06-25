@@ -2,6 +2,11 @@ title: //h1
 body: //*[@*='ogm-article-perex'] | //*[@*='ogm-article-layout']
 author: //span[@*='mol-author-names']
 
+# Fix bold text (class name may change arbitrarily
+find_string: <span class="e_ac"
+replace_string: <strong
+tidy: no
+
 # Strip redundant string "Článek"
 strip: //h6[@id='accessibility-article']
 
