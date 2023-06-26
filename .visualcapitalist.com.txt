@@ -1,0 +1,14 @@
+title: //h1
+body: //article | //div[@id='mvp-content-main']
+author: //span[@class='author-name']
+
+strip: //header/h3
+strip: //div[contains(@class, 'mvp-author-info')]
+
+strip_id_or_class: mvp-post-cat
+strip_id_or_class: mvp-post-add-box
+strip_id_or_class: mvp-related-posts
+strip_id_or_class: mvp-content-bot
+strip_id_or_class: mvp-post-more-wrap
+
+test_url: https://elements.visualcapitalist.com/the-solar-power-duck-curve-explained/
