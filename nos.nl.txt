@@ -1,0 +1,14 @@
+body: //main
+
+prune: no
+
+strip: //div/p[contains(text(), "Deel artikel:")]/parent::div
+strip: //div/h4[contains(text(), "Advertentie via")]/parent::div
+strip: //button/parent::div
+strip: //div[@data-testid='linkcontainer']/parent::div
+strip: //ul[contains(@class, 'dKUHFa')]/parent::div
+strip: //ul[contains(@class, 'ianNyL')]/parent::div
+strip: //time/parent::div
+strip: //h1
+
+test_url: https://nos.nl/artikel/2469555-inflatie-daalt-sterk-naar-4-4-procent-laagste-cijfer-in-anderhalf-jaar
