@@ -1,0 +1,22 @@
+http_header(User-agent): Mozilla/5.0 (iPad; CPU OS 12_0_1 like Mac OS X)
+
+body: //article
+author: //span[contains(@class, 'Post__authorName')]
+date: //span[contains(@class, 'publishedDate')]
+
+strip: //div[contains(@class, 'Post__kickerTags')]
+strip: //h1[contains(@class, 'Post__headline')]
+strip: //div[contains(@class, 'Post__readerInteraction')]
+strip: //div[contains(@class, 'PublishByline')]
+strip: //div[contains(@class, 'Post__kicker')]
+strip: //div[contains(@class, 'StaticRating')]
+strip: //div[contains(@class, 'Post__recipeActionOptions')]
+strip: //div[contains(@class, 'SitePostActions__actions')]
+strip: //div[contains(@class, 'jumpTo')]
+strip: //div[contains(@class, 'button')]
+strip: //div[contains(@class, 'interactions')]
+strip: //div[contains(@class, 'Raiting')]
+strip: //div[contains(@class, 'button')]
+strip: //button
+
+test_url: https://www.thekitchn.com/how-to-make-kombucha-tea-at-home-cooking-lessons-from-the-kitchn-173858#post-recipe-11770
