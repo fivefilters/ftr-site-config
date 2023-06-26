@@ -1,0 +1,11 @@
+body: //div[@class='app-body']
+author: //span[@itemprop='author']/a
+date: //span[@itemprop='datePublished']/@content
+
+prune: no
+
+strip_id_or_class: table-of-contents-outside
+strip_id_or_class: recommendation_page-block-prices
+strip_id_or_class: recommendation_page-banner
+
+test_url: https://www.rtings.com/tv/reviews/best/by-size/80-83-85-inch
