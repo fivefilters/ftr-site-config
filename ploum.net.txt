@@ -1,8 +1,6 @@
-body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+author: //p[@class="subtitle"]//a
+date: //meta[@property='og:article:published_time']/@content
 
-strip_id_or_class: readoffline-embed
-strip_id_or_class: fasteasysocialsharing
-strip_id_or_class: entry-tags
-strip_id_or_class: entry-author-bottom
+strip: //p[@class="subtitle"]
 
 test_url: https://ploum.net/sunrise-le-calendrier-du-futur/
