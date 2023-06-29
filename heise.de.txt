@@ -87,6 +87,7 @@ replace_string(</a-img>): </img></div>
 strip: //div[@class="ff-a-img"]//img[not(@data-ff-replacement)]
 
 # Some optimizations
+replace_string(<h2 class="printversion__untertitel"></h2>):
 replace_string(<h5>): <h2>
 replace_string(</h5>): </h2>
 replace_string(<title>Druckversion - ): <title>
