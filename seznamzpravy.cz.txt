@@ -1,20 +1,31 @@
 title: //h1
-body: //*[@*='ogm-article-perex'] | //*[@*='ogm-article-layout']
+body: //div[@data-dot="ogm-article-author"]/parent::section | //*[@*='ogm-article-perex'] | //*[@*='ogm-article-layout']
 author: //span[@*='mol-author-names']
+
+tidy: no
 
 # Fix bold text (class name may change arbitrarily
 find_string: <span class="e_ac"
 replace_string: <strong
-tidy: no
+# same for first sub-heading
+find_string: <p class="e_bj c_g3
+replace_string: <strong class="e_bj c_g3
 
-# Strip redundant string "Článek"
-strip: //h6[@id='accessibility-article']
-
-# Strip cards with recommended articles
-strip_id_or_class: mol-post-card__body
-
-# Strip embedded media (maps etc.)
+#strip fringe
+strip: //svg
+strip: //noscript
+strip: //aside
+strip: //h1
+strip: //nav
+strip: //div[@data-dot="ogm-date-of-publication"]
+strip: //div[@data-dot="ogm-article-author"]/div
+strip: //div[contains(@class, "ogm-breadcrumb-navigation-wrapper")]
+strip: //span[@data-dot="atm-media-item-image-caption"]
+strip: //article/h6[@id="accessibility-article"]
+strip: //div[@data-dot="ogm-related-documents"]
+strip: //div[@data-dot="ogm-related-tags"]
 strip: //*[@*='mol-embed']
+strip: //div[contains(@class, 'mol-post-card')]
 
 test_url: https://www.seznamzpravy.cz/clanek/zahranicni-rusko-se-zasadne-meni-analytik-hodnoti-prigozinovu-rebelii-233151
 test_url: https://www.seznamzpravy.cz/clanek/zahranicni-stredni-evropa-zelena-energie-na-ukor-lesa-v-bavorsku-resi-dilema-s-vetrniky-232669
