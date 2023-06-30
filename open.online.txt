@@ -1,0 +1,11 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' single-news ')]
+author: //div[@class="news__author"]/a
+
+# strip everything after the read-later heading
+strip: //h3[contains(text(), 'Leggi anche')]/following-sibling::* | //h3[contains(text(), 'Leggi anche')]/self::*
+
+strip_id_or_class: continualeggereopen
+strip: //button
+
+test_url: https://www.open.online/2022/11/10/usa-aiuti-militari-ucraina-difesa-antiaerea/
+test_url: https://www.open.online/2023/06/30/ministero-cultura-colosseo-scontro-musk-zuckerberg/
