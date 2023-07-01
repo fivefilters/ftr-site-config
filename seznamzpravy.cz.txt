@@ -13,7 +13,6 @@ replace_string: <strong class="e_bj c_g3
 
 #strip fringe
 strip: //svg
-strip: //noscript
 strip: //aside
 strip: //h1
 strip: //nav
@@ -26,6 +25,12 @@ strip: //div[@data-dot="ogm-related-documents"]
 strip: //div[@data-dot="ogm-related-tags"]
 strip: //*[@*='mol-embed']
 strip: //div[contains(@class, 'mol-post-card')]
+strip: //section/h6[contains(text(), 'Postranní panel')]/parent::section
+
+# image handling for Fulltext-RSS and preventing double img for Wallabag
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
+strip: //figure/div/div/div/img
 
 test_url: https://www.seznamzpravy.cz/clanek/zahranicni-rusko-se-zasadne-meni-analytik-hodnoti-prigozinovu-rebelii-233151
 test_url: https://www.seznamzpravy.cz/clanek/zahranicni-stredni-evropa-zelena-energie-na-ukor-lesa-v-bavorsku-resi-dilema-s-vetrniky-232669
