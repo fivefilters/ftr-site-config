@@ -1,0 +1,5 @@
+title:  //header/div/h1[1]
+author: //header/div/ul/li/a
+date: //header/div/div/span[starts-with(text(), '0') or starts-with(text(), '1') or starts-with(text(), '2') or starts-with(text(), '3')]
+
+test_url: https://www.wienerzeitung.at/a/die-moeglichkeit-einer-wiese
