@@ -1,0 +1,18 @@
+body: //article
+
+strip: //aside
+strip: //header
+strip: //div[contains(@class, 'metro-email-signup')]
+
+strip_id_or_class: metro-email-signup-recpatcha_text
+strip_id_or_class: metro-email-signup-news-sub-heading
+
+# re-writing image-adresses
+replace_string(data-src="): src="
+
+# strip aditional footer without own <tag>,
+# needed for Wallabag because of its span-stripping
+strip: //div[@id='article-below-content']/following-sibling::text() | //div[@id='article-below-content']/following-sibling::* | //div[@id='article-below-content']/self::*
+
+test_url: https://metro.co.uk/2022/07/21/depression-is-not-caused-by-a-chemical-imbalance-in-the-brain-17036945/
+test_url: https://metro.co.uk/2023/07/02/wwe-triple-h-give-promising-wrestlemania-in-london-update-19050905/?ico=trending-module_tag_london_item-5
