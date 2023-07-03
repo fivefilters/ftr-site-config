@@ -10,6 +10,7 @@
 # https://bahnblogstelle.com/category/bahnverkehr/feed/
 
 body: //main[@id='main']
+title: //h1[@class="entry-title"]
 
 # user agent needed to strip an extra line 'zuerst veröffentlicht' / 'first posted on' bahnblogstelle.com
 http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; rv:103.0) Gecko/20100101 Firefox/115.0
