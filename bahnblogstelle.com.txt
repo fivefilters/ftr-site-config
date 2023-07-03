@@ -1,7 +1,7 @@
 # Bahnblogstelle.com
 # German language railway news, mostly short stories
 #
-# author: HolgerAusB version 2023-01-26
+# author: HolgerAusB version 2023-07-03
 
 # get complete site feed with:
 # https://bahnblogstelle.com/feed/
@@ -9,9 +9,10 @@
 # get feed for just one theme/category (German: Rubrik), e.g. 'Bahnverkehr':
 # https://bahnblogstelle.com/category/bahnverkehr/feed/
 
+body: //main[@id='main']
 
 # user agent needed to strip an extra line 'zuerst veröffentlicht' / 'first posted on' bahnblogstelle.com
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; rv:103.0) Gecko/20100101 Firefox/103.0
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; rv:103.0) Gecko/20100101 Firefox/115.0
 
 # strip article source / citation /adv paceholder text
 strip: //p/span[@style='font-size: small;']
@@ -22,9 +23,9 @@ strip: //div[contains(@class, 'vlp-link-container')]
 strip_id_or_class: post-navigation
 strip_id_or_class: wp-embedded-content
 
-# strip horizontal lines
+# common cleanup
 strip: //hr
-
+strip: //header
 
 #################
 
