@@ -1,0 +1,7 @@
+body: //article | //div[contains(@class, 'content-body')]
+
+author: //div[@class="media-body"]/p[@class="details break-word"]
+date: substring-before(//span[@class="time"], ' — ')
+
+test_url: https://lifeclub.org/p/happiness
+test_url: https://lifeclub.org/books/against-empathy-paul-bloom-review-summary
