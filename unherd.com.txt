@@ -1,3 +1,26 @@
+body: //article
+
 strip_id_or_class: ref-ar
+strip: //div[@class='code-block code-block-4']
+strip: //div[@class="metabox"]/parent::div
+strip_id_or_class: article-image mobile
+strip: //div[contains(@class, 'author-side')]
+strip://div[@class="comment-break"]/parent::div
+strip://div[@class="featured_caption"]/a
+
+find_string: style="background-image: url('
+replace_string: ><img src="
+
+find_string: .jpg');">
+replace_string: .jpg">
+
+find_string: .png');">
+replace_string: .png">
+
+find_string: .gif');">
+replace_string: .gif">
+
+prune: no
+tidy: no
 
 test_url: https://unherd.com/2019/09/labours-brexit-shambles/
