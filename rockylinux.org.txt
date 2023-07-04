@@ -1,0 +1,2 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-content ')]
+test_url: https://rockylinux.org/news/keeping-open-source-open/
