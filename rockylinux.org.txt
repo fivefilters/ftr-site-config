@@ -1,2 +1,6 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-content ')]
+
+# works for years starting with century 20xx or 21xx
+date: //h1/span[contains(concat(' ',normalize-space(@class),' '),' text-center ') and (contains(text(), ', 20') or contains(text(), ', 21'))]
+
 test_url: https://rockylinux.org/news/keeping-open-source-open/
