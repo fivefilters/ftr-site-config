@@ -1,0 +1,14 @@
+body: //div[contains(@class, 'body-content')]
+
+# strip buy-buttons and ads
+strip_id_or_class: prnme
+strip_id_or_class: prbtn
+
+# image fixing:
+find_string: src="data:image
+replace_string: foo-src"data:image
+find_string: data-src="http
+replace_string: src="http
+
+test_url: https://germangirlinamerica.com/german-beer-coasters-or-bierdeckel/
+test_url: https://germangirlinamerica.com/what-is-the-difference-between-a-burg-and-a-schloss/
