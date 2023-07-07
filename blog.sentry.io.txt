@@ -1,0 +1,8 @@
+body: //article
+author: //aside/a[contains(@href, '/authors/')]/span
+
+strip: //article/div[1]
+strip: //article/ul[1]
+strip: //aside
+
+test_url: https://blog.sentry.io/gdpr-sentry-and-you/
