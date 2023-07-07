@@ -2,6 +2,7 @@ title://div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]/
 author: //li[contains(concat(' ',normalize-space(@class),' '),' author-name ')]/a[contains(concat(' ',normalize-space(@class),' '),' name-link ')]
 date: //time[contains(concat(' ',normalize-space(@class),' '),' publication-date ')]/@datetime
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
 strip: //aside
 
