@@ -5,3 +5,22 @@ strip: //img[@class='icon smiley']
 strip_id_or_class: pageId
 
 test_url: https://sebsauvage.net/wiki/doku.php?id=microsoft
+body: //main
+body: //body
+
+strip: //div[contains(@class, '_toc')]
+strip: //img[@class='icon smiley']
+strip: //img[contains(@src, 'comprendre.gif')]/ancestor::table
+strip: //td/child::*[contains(text(), 'Le contenu de cette page est')]/ancestor::table
+strip_id_or_class: footer
+strip_id_or_class: pageId
+strip_id_or_class: noprint
+strip_id_or_class: sidebar
+strip_id_or_class: sidebar_bottom
+strip_id_or_class: depuis1999
+
+prune: no
+tidy: no
+
+test_url: https://sebsauvage.net/wiki/doku.php?id=microsoft
+test_url: https://sebsauvage.net/comprendre/firewall/index.html
