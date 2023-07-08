@@ -1,11 +1,4 @@
 body: //main
-
-strip: //div[contains(@class, '_toc')]
-strip: //img[@class='icon smiley']
-strip_id_or_class: pageId
-
-test_url: https://sebsauvage.net/wiki/doku.php?id=microsoft
-body: //main
 body: //body
 
 strip: //div[contains(@class, '_toc')]
