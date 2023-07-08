@@ -1,0 +1,18 @@
+body: //article
+body: //div[@id='canvas']
+
+strip: //header
+strip: //footer
+strip: //nav
+strip: //div[contains(@class, 'newsletter-block')]/parent::div
+
+strip_id_or_class: mobileNav
+strip_id_or_class: mobileMenuLink
+#replace_string(<noscript>):<div>
+
+replace_string(data-src=):src=
+
+prune: no
+
+test_url: https://noidea.dog/blog/how-many-vacation-days-does-it-take-to-change-a-lightbulb
+test_url: https://noidea.dog/glue
