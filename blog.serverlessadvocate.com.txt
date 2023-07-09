@@ -14,6 +14,12 @@ find_string: source srcSet="http
 replace_string: img src="http
 find_string: .png 640w,
 replace_string: .png"><foo bar="
+find_string: .jpg 640w,
+replace_string: .jpg"><foo bar="
+find_string: .jpeg 640w,
+replace_string: .jpeg"><foo bar="
+find_string: .gif 640w,
+replace_string: .gif"><foo bar="
 strip: //img[@alt=""]
 
 tidy: no
