@@ -20,7 +20,7 @@ find_string: .jpeg 640w,
 replace_string: .jpeg"><foo bar="
 find_string: .gif 640w,
 replace_string: .gif"><foo bar="
-strip: //img[@alt=""]
+strip: //img[contains(concat(' ',normalize-space(@class),' '),' bg ')]
 
 tidy: no
 prune: no
