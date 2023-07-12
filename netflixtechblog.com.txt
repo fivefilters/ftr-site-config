@@ -1,0 +1,28 @@
+# website-engine: medium.com
+http_header(user-agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+
+body: //article
+
+strip: //h1[contains(@class, 'pw-post-title')]
+strip_id_or_class: speechify-ignore
+strip: //a[@rel='noopener  ugc nofollow']/parent::div
+strip: //p[contains(text(), 'You may also be interested in')]/self::p | //p[contains(text(), 'You may also be interested in')]/following-sibling::*
+strip: //footer/self::footer | //footer/following-sibling::*
+
+# rewrite image-links to plain html
+find_string: source srcSet="http
+replace_string: img src="http
+find_string: .png 640w,
+replace_string: .png"><foo bar="
+find_string: .jpg 640w,
+replace_string: .jpg"><foo bar="
+find_string: .jpeg 640w,
+replace_string: .jpeg"><foo bar="
+find_string: .gif 640w,
+replace_string: .gif"><foo bar="
+strip: //img[contains(concat(' ',normalize-space(@class),' '),' bg ')]
+
+tidy: no
+prune: no
+
+test_url: https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72
