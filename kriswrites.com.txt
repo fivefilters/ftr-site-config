@@ -1,0 +1,11 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+body: //div[contains(@class, 'post-content')]/div[@class='container']
+author: //*[contains(@class, 'author_name')]
+
+strip_id_or_class: sidebar
+strip: //h3[@class='entry-title']
+
+tidy: no
+
+test_url: https://kriswrites.com/2023/07/05/business-musings-a-few-benefits-of-niche-marketing-niche-marketing-part-3/
