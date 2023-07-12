@@ -1,4 +1,10 @@
 body: //div[@class='row pageheaderAnlauf'] | //div[@class='row tt-content-layout-0']
+
 strip: //div[@class='content_7']
 
-test_url: https://www.pharmazeutische-zeitung.de/54-apotheken-weniger-in-2019/
+single_page_link: //div[@class='paginierung_inhaltsverzeichnis_seite']/a[contains(text(), 'uf einer Seite lesen')]
+
+prune: no
+tidy: no
+
+test_url: https://www.pharmazeutische-zeitung.de/bfarm-will-fehlalarmen-nachgehen-119232/
