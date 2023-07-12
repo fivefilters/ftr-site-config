@@ -1,0 +1,13 @@
+body: //div[@class='content-container']
+
+strip_id_or_class: post-metadata
+strip_id_or_class: toc
+strip: //h1[contains(@class, 'post-title')]
+
+strip: //div[@id='subscribe-block']/parent::div
+strip: //ul[@class='pagination']/parent::div
+
+prune: no
+tidy: no
+
+test_url: https://dafoster.net/articles/2021/02/16/building-web-apps-with-vue-and-django-the-ultimate-guide/
