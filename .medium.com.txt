@@ -18,6 +18,9 @@ strip: //article//img[not(@src)]
 replace_string(<noscript>): <div class="ftr-noscript">
 replace_string(</noscript>): </div>
 
+# Remove "More from" footer
+strip: //article[@class]
+
 # Only the first - h1 can appear later in an article
 # e.g. https://medium.com/the-shape-of-things-to-come/facilitating-communities-of-practice-from-individual-to-ecosystem-learning-outcomes-bf7b54660b08
 strip: (//h1)[1]
