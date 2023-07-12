@@ -5,6 +5,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
 strip: //aside
+strip: //svg[@tooltip=""]
 
 strip_id_or_class: mobile-only
 strip_id_or_class: article-header
