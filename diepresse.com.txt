@@ -1,24 +1,24 @@
-# choose your source feeds at
-# https://www.diepresse.com/105106/rss
+# complete feed:
+# https://www.diepresse.com/rss
+
+# or add a category, e.g.:
+# https://www.diepresse.com/rss/kultur/kunst
+
 
 title: //div[@class='article']/h1
 date: substring-before(//p[@class='articletime'],'|')
-body: //div[@id='articletext']
+author: //div[@class='author']/descendant::a
+body: //article | //div[@id='articletext'] | //div[@id='article-body']
 
-# ticker 'articles' aren't really working, even with this
-body: //div[@id='article-body']
-
-
-strip: //div[@class='inlineDiashow']
 strip: //div[@class='meta__date']
 strip: //div[@class='meta__authors']
-strip: //div[@class='article__actions']
+strip: //h1[@class='article__title']
+strip: //div[contains(@class, 'fm-relation')]
 
-# Strip Parameter from Link in item-links of feed
-# just in case...
+strip_id_or_class: skyline
+strip_id_or_class: article__actions
+strip_id_or_class: article__byline
 
-find_string: ?from=rss
-replace_string:
 
 # strip gerneric text images when there is no article photo/image
 
@@ -30,28 +30,34 @@ replace_string:
 find_string: class="figure__image lazyload" data-src=
 replace_string: class="figure__image lazyload" src=
 
+find_string: <gallery-inline
+replace_string: <div
+
 #################
 # change path for images to get rid of the text overlays
 
-find_string: /social_diepresse_nachrichten_paid/images/
-replace_string: /images/
+find_string: /alternates/DPR_SOCIAL_NACHRICHTEN_PAID/
+replace_string: /alternates/ORIGINAL/
 
-find_string: /social_diepresse_nachrichten/images/
-replace_string: /images/
+find_string: /alternates/DPR_SOCIAL_NACHRICHTEN/
+replace_string: /alternates/ORIGINAL/
 
-find_string: /social_diepresse_magazin_paid/images/
-replace_string: /images/
+find_string: /alternates/DPR_SOCIAL_MAGAZIN_PAID/
+replace_string: /alternates/ORIGINAL/
 
-find_string: /social_diepresse_magazin/images/
-replace_string: /images/
+find_string: /alternates/DPR_SOCIAL_MAGAZIN/
+replace_string: /alternates/ORIGINAL/
 
-find_string: /social_diepresse_meinung_paid/images/
-replace_string: /images/
+find_string: /alternates/DPR_SOCIAL_MEINUNG_PAID/
+replace_string: /alternates/ORIGINAL/
 
-find_string: /social_diepresse_meinung/images/
-replace_string: /images/
+find_string: /alternates/DPR_SOCIAL_MEINUNG/
+replace_string: /alternates/ORIGINAL/
+
 #################
 
-test_url: http://diepresse.com/home/politik/aussenpolitik/701905/TibeterProteste_Nonne-verbrennt-sich-selbst?_vl_backlink=/home/politik/index.do
+prune: no
+
+test_url: https://www.diepresse.com/701905/tibeter-proteste-nonne-verbrennt-sich-selbst
 test_url: https://www.diepresse.com/6115784/omikron-ba2-wann-infizierte-hoch-ansteckend-sind
-test_url: https://www.diepresse.com/rss/Wien
+test_url: https://www.diepresse.com/rss/panorama/wien
