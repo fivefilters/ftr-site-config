@@ -1,5 +1,4 @@
-# Copy changes between medium.com.txt and .medium.com.txt
-
+# website-engine: medium.com
 http_header(user-agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
 
 title: //meta[@property="og:title"]/@content
@@ -9,7 +8,8 @@ author: //meta[@name="author"]/@content
 date: //meta[@property="article:published_time"]/@content
 
 strip: //button
-strip: //header[contains(@class, 'pw-post-byline-header')]
+strip: //svg
+
 # Remove low quality images
 strip: //article//img[contains(@src, '?q=20') or contains(@src, 'max/34/')]
 # Remove empty images (width attribute but no src attribute)
@@ -18,10 +18,14 @@ strip: //article//img[not(@src)]
 replace_string(<noscript>): <div class="ftr-noscript">
 replace_string(</noscript>): </div>
 
-# Only the first - h1 can appear later in an article
-# e.g. https://medium.com/the-shape-of-things-to-come/facilitating-communities-of-practice-from-individual-to-ecosystem-learning-outcomes-bf7b54660b08
-strip: (//h1)[1]
-strip: //svg
+# Remove parts of header
+strip: //header[contains(@class, 'pw-post-byline-header')]
+strip: //h1[contains(@class, 'pw-post-title')]
+strip_id_or_class: speechify-ignore
+strip: //a[@rel='noopener  ugc nofollow']/parent::div
+
+# Remove footer and everything below
+strip: //footer/self::footer | //footer/following-sibling::*
 
 # remove duplicate images in this form... <img><noscript><img></noscript>
 # handled above, but if browser HTML is submitted, the above rules won't apply
@@ -32,5 +36,26 @@ strip: //article//img[@src]/following-sibling::*[1][self::div and @class='ftr-no
 tidy: no
 prune: no
 
+###  selfhosters may uncomment this to have images in their articles.
+###  rewrites image-links to plain html
+#find_string: source srcSet="http
+#replace_string: img src="http
+#find_string: source srcset="http
+#replace_string: img src="http
+#find_string: .png 640w
+#replace_string: .png"><foo bar="
+#find_string: .jpg 1400w
+#replace_string: .jpg"><foo bar="
+#find_string: .jpg 640w
+#replace_string: .jpg"><foo bar="
+#find_string: .jpeg 1400w
+#replace_string: .jpeg"><foo bar="
+#find_string: .jpeg 640w
+#replace_string: .jpeg"><foo bar="
+#find_string: .gif 640w
+#replace_string: .gif"><foo bar="
+
+test_url: sec://dougshapiro.medium.com/how-will-the-disruption-of-hollywood-play-out-42f724c921e1
+test_contains: you consider the costs for talent
 test_url: https://elemental.medium.com/the-dark-side-of-fitness-tracking-9b218989bc47
 test_contains: Apps have turned movement and mindfulness
