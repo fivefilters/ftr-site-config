@@ -55,7 +55,7 @@ prune: no
 #find_string: .gif 640w
 #replace_string: .gif"><foo bar="
 
-test_url: sec://dougshapiro.medium.com/how-will-the-disruption-of-hollywood-play-out-42f724c921e1
+test_url: https://dougshapiro.medium.com/how-will-the-disruption-of-hollywood-play-out-42f724c921e1
 test_contains: you consider the costs for talent
 test_url: https://elemental.medium.com/the-dark-side-of-fitness-tracking-9b218989bc47
 test_contains: Apps have turned movement and mindfulness
