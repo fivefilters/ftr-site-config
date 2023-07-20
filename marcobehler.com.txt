@@ -1,0 +1,8 @@
+body: //main/div[1]
+
+strip: //nav
+strip: //form[contains(@class, 'newsletterSignupForm')]/parent::div
+strip: //div[@id='share-bottom']/self::* | //div[@id='share-bottom']/following-sibling::*
+strip_id_or_class: col-md-2
+
+test_url: https://www.marcobehler.com/guides/java-microservices-a-practical-guide
