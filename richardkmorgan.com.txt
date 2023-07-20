@@ -1,0 +1,6 @@
+http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0
+
+body: //article/descendant::div[contains(@class, 'entry-content')]
+author: //meta[@name='author']/@content
+
+test_url: https://www.richardkmorgan.com/2023/07/gone-but-not-forgotten/
