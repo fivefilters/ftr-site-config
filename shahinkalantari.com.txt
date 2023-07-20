@@ -1,0 +1,7 @@
+body: //main
+
+# force right-to-left text orientation, needed for wallabag
+find_string: <main
+replace_string: <main dir="rtl"
+
+test_url: https://shahinkalantari.com/%D9%86%D8%AB%D8%B1%D9%87%D8%A7%DB%8C-%DB%8C%D9%88%D9%85%DB%8C%D9%87-09/
