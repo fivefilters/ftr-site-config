@@ -1,0 +1,5 @@
+body: //article[contains(@class, 'article-content')]
+
+strip_id_or_class: book-info-container
+
+test_url: https://www.dummies.com/article/technology/information-technology/networking/general-networking/network-administration-linux-nsswitch-conf-file-183710/
