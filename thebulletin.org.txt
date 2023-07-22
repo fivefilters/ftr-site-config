@@ -1,3 +1,6 @@
+# See https://thebulletin.org/premium/2023-07/an-extended-interview-with-christopher-nolan-director-of-oppenheimer/?ref=thebrowser.com
+body: //div[@id="body-copy"]
+# See https://thebulletin.org/2021/11/the-untold-story-of-the-worlds-biggest-nuclear-bomb/
 body: //div[@role="document"]
 
 strip_id_or_class: fl-visible-desktop-medium
@@ -6,3 +9,4 @@ strip_id_or_class: comments-area
 prune: no
 
 test_url: https://thebulletin.org/2021/11/the-untold-story-of-the-worlds-biggest-nuclear-bomb/
+test_url: https://thebulletin.org/premium/2023-07/an-extended-interview-with-christopher-nolan-director-of-oppenheimer/
