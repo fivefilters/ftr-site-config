@@ -1,0 +1,32 @@
+body: //div[contains(@class, 'news-normal')]
+
+strip: //svg
+strip: //nav
+strip: //br
+strip: //h1[1]
+strip: //div[contains(@class, 'entry-breadcrumb')]
+strip_id_or_class: entry-share
+strip_id_or_class: title-related
+
+# strip related articles is tricky
+strip: (//div[contains(@class, 'body-adv')])[last()]/self::* | (//div[contains(@class, 'body-adv')])[last()]/following-sibling::text() | (//div[contains(@class, 'body-adv')])[last()]/following-sibling::*
+
+# remove fixed img width of 100x100 pixels
+find_string: <img width="100" height="100"
+replace_string: <img
+find_string: <img class="img-expand" width="100" height="100"
+replace_string: <img class="img-expand"
+
+# prevent wallabag to set a box arround <article>
+replace_string(<article): <foobar
+replace_string(</article): </foobar
+
+# [wallabag] strip anything below </article>
+strip: //article/following-sibling::*
+# [FTR] strip anything below </article> prevously renamed to </foobar>
+strip: //foobar/following-sibling::*
+
+
+prune: no
+
+test_url: https://www.clarin.com/deportes/tokio-2020-santiago-lange-cecilia-carranza-confirmaron-fin-dupla-gano-oro-rio-2016_0_0fmE5_TFc.html
