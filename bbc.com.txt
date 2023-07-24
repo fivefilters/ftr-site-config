@@ -1,20 +1,28 @@
 body: //article[contains(@class, "-ArticleWrapper")]
 body: (//div[contains(@class, 'article__body-content')])[1]
 body: (//div[@id="story-body"])[1]
+
 # for video entries
+# 2023-07-24 - Marking line below for removal (can't see these attributes any more)
 body: //div[contains(@class, "videoInStory") or @id="meta-information"]
+# Remove video block without iframe (which appears after JS processing) - see video entry test URLs
+strip: //div[contains(@class, 'MediaPlayerWrapper') and not(.//iframe)]
+
 title: //meta[@property="og:title"]/@content
 title: //h1[@class="story-header"]
 
 date: //article//div[contains(@class, 'author-unit__container')]//span
 date: //span[@class="story-date"]/span[@class='date']
+
 # for sport site
+# 2023-07-24 - Marking for removal (can't see this attributes any more)
 date: //meta[@name='DCTERMS.created']/@content
 
 author: //meta[@name="author"]/@content
 author: //div[@id='headline']//span[@class='byline-name']
 
 # recipes, e.g. http://www.bbc.co.uk/food/recipes/mymincepies_71055
+# 2023-07-24 - Marking for removal (can't see these attributes any more)
 body: //div[contains(@class, 'hrecipe')]//div[@id='subcolumn-1']
 
 strip: //article//header
@@ -98,3 +106,5 @@ test_url: http://feeds.bbci.co.uk/news/rss.xml
 test_url: http://feeds.bbci.co.uk/sport/0/football/rss.xml?edition=int
 # video entry
 test_url: http://www.bbc.com/news/world-asia-22056933
+# video entry 2
+test_url: https://www.bbc.com/news/world-middle-east-66259886
