@@ -1,7 +1,13 @@
 title: //h1[@class='entry-title']
-author: //a[@ref='author']
+author: //a[@rel='author']
 date: //span[@class='entry-date']
-body: //div[@class='entry-content']
-strip_id_or_class: netzpolitik-cta
+body: //article
 
-test_url: http://netzpolitik.org/2011/buch-generation-facebook/
+strip_id_or_class: netzpolitik-cta
+strip: //footer
+strip: //article[contains(@class, 'teaser')]
+strip: //article[contains(@class, 'comment')]
+
+test_url: https://netzpolitik.org/2011/buch-generation-facebook/
+test_url: https://netzpolitik.org/2023/staatstrojaner-keine-normalisierung-von-schadsoftware-mehr/
+test_url: https://netzpolitik.org/2021/schadsoftware-pegasus-die-branche-der-staatshacker-aechten/
