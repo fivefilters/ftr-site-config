@@ -1,5 +1,3 @@
-# Copy changes between medium.com.txt and .medium.com.txt
-
 # website-engine: medium.com
 http_header(user-agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
 
@@ -56,6 +54,16 @@ prune: no
 #replace_string: .jpeg"><foo bar="
 #find_string: .gif 640w
 #replace_string: .gif"><foo bar="
+
+### VERY BRAVE self-hosters may try to acticate this block INSTEAD
+### helps to show also images with no filename extension.
+#find_string: source srcSet="http
+#replace_string: img src="http
+#find_string: source srcset="http
+#replace_string: img src="http
+#replace_string( 1400w,): "><foo bar="
+#replace_string( 720w,): "><foo bar="
+#replace_string( 640w,): "><foo bar="
 
 test_url: https://medium.com/@savolai/kaytettavyyden-haasteet-keskustelukulttuurista-2-3-6844c0d7893b
 test_contains: Jos käytettävyysongelmat ovat kerran niin tyypillisiä
