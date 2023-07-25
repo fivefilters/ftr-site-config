@@ -1,0 +1,26 @@
+# works with Fivefilter's Fulltext-RSS without images (scripting)
+# for Wallabg: use browser-plugin 'wallabagger' for Firefox, Chrome or Opera
+# with activated 'Content fetching from the browser'
+
+body: //article
+author: //meta[@name="author"]/@content
+
+# remove ads
+strip: //shipment
+strip_id_or_class: shipment
+
+# remove header/side/footer things
+strip_id_or_class: articleDetail-category-tag
+strip_id_or_class: articleDetail-heading
+strip_id_or_class: articleDetail-title
+strip_id_or_class: articleDetail-articleAttribution
+strip_id_or_class: assetUserBadge
+
+# remove common fringe:
+strip: //button
+strip_id_or_class: ng-hide
+
+prune: no
+tidy: no
+
+test_url: https://merkurist.de/mainz/hauptbahnhof-muensterplatz-strassenbahn-entgleist-verspaetungen-im-mainzer-oepnv_NaM
