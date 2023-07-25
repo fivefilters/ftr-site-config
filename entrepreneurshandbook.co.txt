@@ -1,28 +1,68 @@
 # website-engine: medium.com
 http_header(user-agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
 
+title: //meta[@property="og:title"]/@content
+title: //h1
 body: //article
+author: //meta[@name="author"]/@content
+date: //meta[@property="article:published_time"]/@content
 
+strip: //button
+strip: //svg
+
+# Remove low quality images
+strip: //article//img[contains(@src, '?q=20') or contains(@src, 'max/34/')]
+# Remove empty images (width attribute but no src attribute)
+strip: //article//img[not(@src)]
+# Use the high-quality copies in <noscript> elements
+replace_string(<noscript>): <div class="ftr-noscript">
+replace_string(</noscript>): </div>
+
+# Remove parts of header
+strip: //header[contains(@class, 'pw-post-byline-header')]
 strip: //h1[contains(@class, 'pw-post-title')]
 strip_id_or_class: speechify-ignore
 strip: //a[@rel='noopener  ugc nofollow']/parent::div
-strip: //p[contains(text(), 'You may also be interested in')]/self::p | //p[contains(text(), 'You may also be interested in')]/following-sibling::*
+
+# Remove footer and everything below
 strip: //footer/self::footer | //footer/following-sibling::*
 
-# rewrite image-links to plain html
-find_string: source srcSet="http
-replace_string: img src="http
-find_string: .png 640w,
-replace_string: .png"><foo bar="
-find_string: .jpg 640w,
-replace_string: .jpg"><foo bar="
-find_string: .jpeg 640w,
-replace_string: .jpeg"><foo bar="
-find_string: .gif 640w,
-replace_string: .gif"><foo bar="
-strip: //img[contains(concat(' ',normalize-space(@class),' '),' bg ')]
+# remove duplicate images in this form... <img><noscript><img></noscript>
+# handled above, but if browser HTML is submitted, the above rules won't apply
+strip: //article//img[@src]/following-sibling::*[1][self::div and @class='ftr-noscript']
+# less accurate...
+# strip: //article//img[@src]/following-sibling::div[@class="ftr-noscript"]
 
 tidy: no
 prune: no
+
+###  selfhosters may uncomment this to have images in their articles.
+###  rewrites image-links to plain html
+find_string: source srcSet="http
+replace_string: img src="http
+find_string: source srcset="http
+replace_string: img src="http
+find_string: .png 640w
+replace_string: .png"><foo bar="
+find_string: .jpg 1400w
+replace_string: .jpg"><foo bar="
+find_string: .jpg 640w
+replace_string: .jpg"><foo bar="
+find_string: .jpeg 1400w
+replace_string: .jpeg"><foo bar="
+find_string: .jpeg 640w
+replace_string: .jpeg"><foo bar="
+find_string: .gif 640w
+replace_string: .gif"><foo bar="
+
+### VERY BRAVE self-hosters may try to acticate this block INSTEAD
+### helps to show also images with no filename extension.
+#find_string: source srcSet="http
+#replace_string: img src="http
+#find_string: source srcset="http
+#replace_string: img src="http
+#replace_string( 1400w,): "><foo bar="
+#replace_string( 720w,): "><foo bar="
+#replace_string( 640w,): "><foo bar="
 
 test_url: https://entrepreneurshandbook.co/the-bang-with-friends-story-under-the-covers-77f757bdb822
