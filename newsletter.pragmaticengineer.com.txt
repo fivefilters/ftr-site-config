@@ -1,0 +1,21 @@
+## for paywall articles use browser-plugin "wallabagger", available for Firefox, Chrome, Opera
+## and activate "Content fetching from the browser" in the plugin's settings.
+##
+## You need a subscription though
+
+body: //article
+
+# remove common fringe
+strip: //div[@role='dialog']
+strip_id_or_class: post-header
+strip_id_or_class: visibility-check
+strip_id_or_class: post-footer
+strip: //svg
+
+# remove subsribe text and widget
+strip: //*[contains(text(), 're not a subscriber, you missed the issue on')]/ancestor::p
+strip_id_or_class: subscribe-widget
+
+prune: no
+
+test_url: https://newsletter.pragmaticengineer.com/p/developer-productivity-a-new-framework
