@@ -1,0 +1,10 @@
+body: //main/div/article[1]
+
+strip: //svg
+strip: //canvas
+
+replace_string(<noscript): <div
+replace_string(</noscript>): </div>
+
+test_url: https://www.theplayerstribune.com/posts/kolten-wong-milwaukee-brewers-mlb-baseball-playoffs
+test_url: https://www.theplayerstribune.com/posts/jordan-whittington-ncaa-football-texas-longhorns
