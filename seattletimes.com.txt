@@ -1,6 +1,21 @@
-body: //div[@id="article-content"]
+# user-agent nned to prevent a timeout with wallabag
+http_header(user-agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
 
+body: //article
+author: //a[@rel='author']
+
+strip: //header
 strip_id_or_class: ad-container
+strip_id_or_class: article-byline
+
+# rewriting image-links
+find_string: <link rel="preload" as="image" href="
+replace_string: <img src="
+
+prune: no
 
 test_url: https://www.seattletimes.com/nation-world/nation/ex-cia-engineer-tells-judge-hes-incarcerated-like-an-animal/
 test_contains: horrified by the conditions in which he has to live daily
+
+test_url: https://www.seattletimes.com/seattle-news/homeless/57-people-from-one-seattle-homeless-encampment-got-hotel-rooms-last-year-more-than-1-3-likely-went-back-to-the-streets/
+test_contains: collaboration among the nonprofit programs
