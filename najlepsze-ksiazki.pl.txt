@@ -1,0 +1,5 @@
+body: //article
+
+strip: //footer
+
+test_url: https://najlepsze-ksiazki.pl/najlepsze-ksiazki-science-fiction/
