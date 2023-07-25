@@ -14,6 +14,8 @@ replace_string: <img src="
 
 prune: no
 
+http_header(user-agent): curl/7.83.1
+
 test_url: https://www.seattletimes.com/nation-world/nation/ex-cia-engineer-tells-judge-hes-incarcerated-like-an-animal/
 test_contains: horrified by the conditions in which he has to live daily
 
