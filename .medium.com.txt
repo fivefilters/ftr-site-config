@@ -55,6 +55,16 @@ prune: no
 #find_string: .gif 640w
 #replace_string: .gif"><foo bar="
 
+### VERY BRAVE self-hosters may try to acticate this block INSTEAD
+### helps to show also images with no filename extension.
+#find_string: source srcSet="http
+#replace_string: img src="http
+#find_string: source srcset="http
+#replace_string: img src="http
+#replace_string( 1400w,): "><foo bar="
+#replace_string( 720w,): "><foo bar="
+#replace_string( 640w,): "><foo bar="
+
 test_url: https://dougshapiro.medium.com/how-will-the-disruption-of-hollywood-play-out-42f724c921e1
 test_contains: you consider the costs for talent
 test_url: https://elemental.medium.com/the-dark-side-of-fitness-tracking-9b218989bc47
