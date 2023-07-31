@@ -16,3 +16,5 @@ prune: no
 
 test_url: https://taibbi.substack.com/p/glenn-greenwald-on-his-resignation
 test_contains: Greenwald, by then furious, noted that neither Maass nor Reed had identified a factual inaccuracy
+test_url: https://jonathancook.substack.com/p/why-the-western-media-is-afraid-of
+test_contains: The goal of the corporate media is not unearthing truth
