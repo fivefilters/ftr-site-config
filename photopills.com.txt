@@ -1,0 +1,8 @@
+title: //h2
+body: //article[contains(@class, 'post')]
+author: //p[@class="author"]//a
+
+strip: //p[@class="tags"]
+strip: //div[@class="freebie"]
+
+test_url: https://www.photopills.com/articles/depth-of-field-guide
