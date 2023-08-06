@@ -1,18 +1,27 @@
-body: //article
+body: //article | //div[@class='thepostinner']
 
 strip_id_or_class: ref-ar
 strip: //div[@class='code-block code-block-4']
 strip: //div[@class="metabox"]/parent::div
 strip_id_or_class: article-image mobile
 strip: //div[contains(@class, 'author-side')]
-strip://div[@class="comment-break"]/parent::div
+
+## strip footer / comments
+strip://div[@class="comment-break"]
+strip://div[@class="uhcomments"]
 strip://div[@class="featured_caption"]/a
+
+## strip header with category+time
+strip: //div[@class='time']/self::div | //div[@class='time']/preceding-sibling::* | //div[@class='time']/following-sibling::h2[1]
 
 find_string: style="background-image: url('
 replace_string: ><img src="
 
 find_string: .jpg');">
 replace_string: .jpg">
+
+find_string: .jpeg');">
+replace_string: .jpeg">
 
 find_string: .png');">
 replace_string: .png">
@@ -24,3 +33,4 @@ prune: no
 tidy: no
 
 test_url: https://unherd.com/2019/09/labours-brexit-shambles/
+test_url: https://unherd.com/thepost/could-britains-green-debate-become-the-new-brexit/
