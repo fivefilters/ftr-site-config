@@ -1,29 +1,28 @@
-# author: HolgerAusB   version 2023-01-04
+# author: HolgerAusB   version 2023-08-11
 #
 # weekly newsletter of the State of Hesse (Germany)
-#
-# There html style is very messy. This also makes my
-# cleanup very upgly, more kinda pragmatic
-
 
 body: //div[@class='outer']
+date: //div[@class='sidebar']/div/div/span
+author: 'Hessische Landesregierung'
 
-# strip title 'Newsletter nnn' from text
-strip: //td/h2[contains(@style, 'color: #16191f')]
+# strip header
+strip: (//div[@class='sidebar'])[1]
+strip: //h2[contains(text(), 'Newsletter')]/ancestor::table[1]
 
-# strip some info boxes
-strip: //td/h2[contains(text(), 'Der nächste Newsletter')]
-strip: //td/h2[contains(text(), 'erscheint am')]
-strip: //table[contains(@style, 'background-color:#eef2ee;')]
-
-strip: //div[@class='sidebar']
-
-# more cleanups
-strip_id_or_class: paragraph--type--cp-box-tile
-strip_id_or_class: spacer
+# strip footer modules
+strip_id_or_class: topic-module
+strip_id_or_class: contact-module
 strip_id_or_class: footer
 
+# more cleanups
+strip: //img[contains(@src, '/mail/icon_link')]
+strip: //table[@class="link-tile"]/@height
+strip: //table[@class="link-tile"]/@style
+strip_id_or_class: spacer
+
 prune: no
+tidy: no
 
 test_url: https://www.hessen.de/newsletter-feed
 test_url: https://hessen.de/node/10963/newsletter-preview
