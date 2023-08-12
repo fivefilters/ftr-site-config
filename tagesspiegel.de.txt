@@ -1,19 +1,12 @@
-# Title
-title: //div[@class='ts-title']
-
-# Set author
-author: //a[@rel='author']
-
-# Set date
-date: //time[@class='ts-time']
-
 # Fetch full multipage articles
 single_page_link: //a[contains(@class, 'ts-one-page')]
 
 # Content is here
-body: //article[@class='ts-article']
+body: //article
 
 # General cleanup
+strip: //nav
+strip: //button
 strip: //iframe
 strip_id_or_class: hcf-hidden
 strip_id_or_class: ts-user-quote
@@ -21,8 +14,16 @@ strip_id_or_class: ts-abo-link
 strip_id_or_class: ts-homepage-link
 strip_id_or_class: ts-recommendation
 strip_id_or_class: newsletter
+strip: //div[@element-type='embedWrapper']
+
+# strip related-articles, pubDate, footer
+strip: //aside
+strip: //time/parent::p
+strip: //a[@data-gtm-class='article-home-link']/parent::p/self::* | //a[@data-gtm-class='article-home-link']/parent::p/following-sibling::*
 
 # Fix pictures and captions
+strip: //picture/source
+strip: //img/@srcset
 replace_string(<a class="ts-gallery): <p class="ts-gallery
 replace_string(<figcaption class="ts-caption">): <br><small><em>
 replace_string(</figcaption>): </em></small>
