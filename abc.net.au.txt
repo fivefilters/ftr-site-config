@@ -1,23 +1,16 @@
-title: //div[@class='article section']//h1
-author: //div[@class="byline"]/a
-date: //span[@class="timestamp"]
-body: //div[@class="page section"]
+body: //article/div[@data-component="ArticleWeb"]
 
-strip: //a[@class="inline-caption"]
-strip: //p[@class="ticker section noprint"]
-strip: //p[@class="topics"]
-strip: //h1
-strip: //div[@class="byline"]
-strip: //p[@class="published"]
-strip: //div[contains(@class,"featured-scroller")]
-strip_id_or_class: footer
+strip: //aside
+strip: //button
+strip: //header/div[contains(@class, 'Headline_meta')]
+strip: //div[contains(@class, 'ArticleWeb_publishedDate')]
+strip: //div[contains(@class, 'ArticleWeb_shareBottom')]/self::div | //div[contains(@class, 'ArticleWeb_shareBottom')]/following-sibling::*
+strip: //div[contains(@aria-label, 'media') and contains(@aria-label, 'embed')]
 
-tidy: no
+prune: no
 
-test_url: http://www.abc.net.au/news/2013-03-27/open-speed-highways-change-clp-giles/4597892
-test_url: http://www.abc.net.au/news/2013-04-30/credit-growth-remains-subdued/4660054?section=business
+test_url: https://www.abc.net.au/news/2013-04-30/credit-growth-remains-subdued/4660054
+test_url: https://www.abc.net.au/news/2013-03-27/open-speed-highways-change-clp-giles/4597892
 
-title: //h1
-body: //div[@id="body"]
 test_url: https://www.abc.net.au/news/2023-06-16/fact-check-jacinta-nampijinpa-price-secret-documents-niaa/102485040
 test_contains: widespread but bogus claim about a list of secret "demands" linked to the Voice referendum
