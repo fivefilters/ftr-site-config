@@ -1,0 +1,6 @@
+body: //div[@class='post']
+date: //div[@class='info']/a
+author: //meta[@name="author"]/@content
+title: //div[@class="title"]/h1/a
+ 
+test_url: https://jpmens.net/2023/08/14/using-events-to-drive-ansible/
