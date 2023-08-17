@@ -1,12 +1,27 @@
-# Author: HolgerAusB  |  Version: 2022-03-22
+# Author: HolgerAusB  |  Version: 2023-08-17
 #
 # to get a source-feed, try to add 'rssfeed.rdf' to the category-URL e.g.
 #    https://www.example.com/hessen/rssfeed.rdf
 #
+# @ippen.media site
 #==========================
 
-# strip author box and social media box
-# these boxes sometimes prevented main picure to show up
+body: //article
+author: substring-after(//p[contains(@class, 'id-Story-authors')] , 'on:')
+author: //div[contains(@class, 'id-AuthorList')]/descendant::*[contains(@class, 'id-Link')]
+date: //p[contains(@class, 'id-Story-timestamp')]/descendant::time/@datetime
+
+strip_id_or_class: id-Article-dateActionboxCombo
+strip_id_or_class: id-Article-kicker
+strip_id_or_class: id-Article-headline
+strip_id_or_class: id-AuthorList
+strip_id_or_class: id-StoryElement-inArticleReco
+strip_id_or_class: id-Comments
+strip_id_or_class: id-Story-timestamp
+strip_id_or_class: id-Story-authors
+strip_id_or_class: id-Story-interactionBar
+strip: //a[@title='Bilderzoom']
+
 strip_id_or_class: idjs-simpletab-nav-item
 strip_id_or_class: idjs-simpletab-content-close
 strip_id_or_class: id-AuthorList
@@ -27,7 +42,6 @@ strip_id_or_class: id-Article-content-item.id-Article-advert
 strip_id_or_class: id-Article-advert--ad3
 strip_id_or_class: id-Article-advert
 
-tidy: yes
-prune: yes
-
+tidy: no
+prune: no
 test_url: https://www.24garten.de/mein-garten/basilikum-trocknen-einlegen-haltbarkeit-ernte-kraeuter-pesto-einfrieren-rosmarin-muenchen-zr-91424291.html
