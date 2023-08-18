@@ -1,0 +1,13 @@
+body: //div[@class='wsite-content']
+
+strip: //h2[@class='wsite-content-title']
+strip_id_or_class: commentArea
+strip: //div[contains(@class, 'wsite-search-element')]
+
+# a blank og:image was inserted (for FTR) from the meta-tag which cause a high space
+find_string: <meta property="og:image" content="https://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png"
+replace_string: <invalid
+
+prune: no
+
+test_url: https://www.readingthechinadream.com/sun-liping-on-overproduction.html
