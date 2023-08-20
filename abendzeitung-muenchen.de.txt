@@ -1,0 +1,22 @@
+body: //article
+
+strip_id_or_class: teaserbox
+strip_id_or_class: aufmacherbox
+strip_id_or_class: mehrzumthema
+strip_id_or_class: artdetail_time
+strip_id_or_class: artdetail_social
+strip_id_or_class: artdetail_desc
+
+strip: //footer
+
+# needed for wallabag:
+strip: //picture/source
+
+# strip additional text within figure after caption
+# wallabag/f43.me shows here double captions
+# see second image at
+# https://www.abendzeitung-muenchen.de/muenchen/wahlkampf-in-bayern-soeder-und-aiwanger-ringen-um-die-bierzelt-herrschaft-art-921576
+strip: //figure/figcaption/following-sibling::text() | //figure/figcaption/following-sibling::p
+
+test_url: https://www.abendzeitung-muenchen.de/muenchen/mvg-fast-alle-fahrschein-automaten-in-muenchen-kommen-weg-art-921634
+test_url: https://www.abendzeitung-muenchen.de/muenchen/wahlkampf-in-bayern-soeder-und-aiwanger-ringen-um-die-bierzelt-herrschaft-art-921576
