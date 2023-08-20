@@ -1,0 +1,26 @@
+body: (//article[contains(concat(' ',normalize-space(@class),' '),' post ')])[1]
+author: //meta[@name='author']/@content
+
+# strip (parts) of header, footer, boxes
+strip: //header/h1 | //header/div[1]
+strip: //article/div[contains(@class, '-mt-3 text-center')]
+strip: //dt[contains(text(), 'Auteur')]/ancestor::div[1]
+strip: //a[contains(@class, 'share')]/parent::div
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' dive ')]
+strip_id_or_class: 'comment-block hidden'
+strip_id_or_class: modal_notes
+strip_id_or_class: wider-side
+strip_id_or_class: special-side
+
+# iframes are oversized
+strip: //iframe/@width
+strip: //iframe/@height
+
+# for right-to-left languages
+find_string: class="has-text-align-right"
+replace_string: dir="rtl"
+
+prune: no
+
+test_url: https://legrandcontinent.eu/fr/2023/08/03/jai-eu-des-doutes-deux-conversations-avec-robert-oppenheimer/
+test_url: https://legrandcontinent.eu/fr/2023/08/17/la-force-de-la-poesie-contre-la-guerre-une-conversation-et-trois-poemes-inedits-de-mostafa-hazara/
