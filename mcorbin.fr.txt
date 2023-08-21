@@ -1,0 +1,3 @@
+title: //div[contains(concat(' ',normalize-space(@class),' '),' post-header ')]//h2
+body: //div[@id="post"]/div[2]
+test_url: https://www.mcorbin.fr/posts/2023-07-04-metriques/
