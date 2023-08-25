@@ -1,0 +1,4 @@
+strip: //footer[@id='footer']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' savoir-plus ')]
+
+test_url: https://lesprosdelapetiteenfance.fr/eveil-activites/ateliers-pedagogiques-et-fiches-activites/maquillage-et-pate-modeler-5-recettes-bio
