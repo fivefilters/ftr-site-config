@@ -9,6 +9,6 @@ strip_id_or_class: td-post-sharing-top
 
 strip: //footer/self::* | //footer/following-sibling::*
 
-test_url: https://www.report-k.de/es-ist-sommerzeit-in-den-koelner-galerien/
+test_url: https://www.report-k.de/deutzer-drehbruecke-wird-fuer-kfz-verkehr-freigegeben/
 test_url: https://www.report-k.de/feed/
 test_url: https://www.report-k.de/nordrhein-westfalen/nrw-politiknachrichten/feed/
