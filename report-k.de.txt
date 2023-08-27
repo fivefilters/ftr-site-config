@@ -1,0 +1,14 @@
+## add /feed/ to your category to get the feed, e.g.
+## https://www.report-k.de/koeln/feed/
+
+body: //article
+author: //div[@class='td-post-author-name']/a
+
+strip_id_or_class: td-post-header
+strip_id_or_class: td-post-sharing-top
+
+strip: //footer/self::* | //footer/following-sibling::*
+
+test_url: https://www.report-k.de/deutzer-drehbruecke-wird-fuer-kfz-verkehr-freigegeben/
+test_url: https://www.report-k.de/feed/
+test_url: https://www.report-k.de/nordrhein-westfalen/nrw-politiknachrichten/feed/
