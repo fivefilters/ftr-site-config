@@ -1,3 +1,6 @@
+http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+http_header(referer): https://feedblitz.com
+
 ## Use AMP version
 single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'))
 if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/') )]
@@ -8,20 +11,24 @@ if_page_contains: //link[@rel="canonical" and not( contains(substring-after(subs
 single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'), '/'))
 if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
 
-body: //main
 body: //article
+body: //main
 
-## needed for non-amp-version and wallabagger with wsj -subscription
-strip: //div[@id='cx-snippet-overlay']/parent::div
+## neededed for non-amp-version and wallabagger with wsj-subscription
 strip_id_or_class: article-body-tools
 strip_id_or_class: print-header
 strip_id_or_class: controls-container
+strip_id_or_class: category
+strip: //div[contains(@class, 'ribbon-container')]/parent::div
+strip: //div[contains(@class, 'AuthoringContainer')]
+strip: //div[@data-inset_type='newsletterinset']
 strip: //div[@class='audioplayer' and @id='articlereader']
 strip: //picture/@source
 strip: //button
 strip: //nav
 strip: //main/div/article//section[last()]/following-sibling::*
 
+author: //a[contains(@class, 'AuthorLink')]
 
 body: //main[@id="main"]//div[@itemprop="articleLead" or @itemprop="articleBody" or contains(concat(' ',normalize-space(@class),' '),' articleBody ')]
 
