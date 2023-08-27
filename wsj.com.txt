@@ -1,10 +1,29 @@
-# Use AMP version
-# rel="amphtml" doesn't appear in when accessed from a US server
-# single_page_link: //link[@rel="amphtml"]/@href
-single_page_link: concat('https://www.wsj.com/amp/', substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'))
-if_page_contains: //link[@rel="canonical" and starts-with(@href, 'https://www.wsj.com/articles')]
-body: //main[@id="main"]//div[@itemprop="articleLead" or @itemprop="articleBody" or contains(concat(' ',normalize-space(@class),' '),' articleBody ')]
+## Use AMP version
+single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'))
+if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/') )]
 
+single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'))
+if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
+
+single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'), '/'))
+if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
+
+body: //main
+body: //article
+
+## needed for non-amp-version and wallabagger with wsj -subscription
+strip: //div[@id='cx-snippet-overlay']/parent::div
+strip_id_or_class: article-body-tools
+strip_id_or_class: print-header
+strip_id_or_class: controls-container
+strip: //div[@class='audioplayer' and @id='articlereader']
+strip: //picture/@source
+strip: //button
+strip: //nav
+strip: //main/div/article//section[last()]/following-sibling::*
+
+
+body: //main[@id="main"]//div[@itemprop="articleLead" or @itemprop="articleBody" or contains(concat(' ',normalize-space(@class),' '),' articleBody ')]
 
 title: //meta[@property="og:title"]/@content
 body: //div[@id='wsj-article-wrap']
