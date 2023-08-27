@@ -1,5 +1,5 @@
 http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
-http_header(referer): https://feedblitz.com
+http_header(referer): https://www.wsj.com
 
 ## Use AMP version
 single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'))
