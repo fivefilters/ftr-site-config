@@ -1,10 +1,21 @@
-# Author: HolgerAusB  |  Version: 2022-08-29
+# Author: HolgerAusB  |  Version: 2023-08-26
 #
 # to get a source-feed by replacing index.html with index.rss, e.g.
 #    https://www.hessenschau.de/index.rss
 #    https://www.hessenschau.de/rheinmain/index.rss
 #
 #==========================
+
+body: //main
+
+prune: no
+tidy: no
+
+# strip some standard element
+strip: //header
+strip: //footer
+strip: //button
+strip: //form
 
 # strip some navigation clutter
 strip_id_or_class: c-contentHeader__author
@@ -14,12 +25,17 @@ strip_id_or_class: additionalInfo
 strip_id_or_class: contentFooter
 strip_id_or_class: region--appendix
 strip_id_or_class: unbreakable
+strip_id_or_class: o-box
+strip_id_or_class: u-content-spacer
+
+strip: //aside[contains(@class, 'dontPrint')]
+strip: //blockquote[contains(@class, 'dontPrint')]
+
 
 # as this is a television and radio channel site, tidy up embedded video and audio
 strip_id_or_class: hideCompletely
 strip_id_or_class: c-form__button
 strip_id_or_class: img.image.imageSimple.ar__content
-strip_id_or_class: audioElement
 
 find_string: <span aria-label="zum Video"><
 replace_string: <span aria-label="zum Video">zum Video: <
@@ -27,6 +43,18 @@ replace_string: <span aria-label="zum Video">zum Video: <
 find_string: <span aria-label="Audioseite"><
 replace_string: <span aria-label="Audioseite">zur Audioseite: <
 
+# show related articles as blockquote (wallabag)
+replace_string(<aside): <blockquote
+replace_string(</aside): </blockquote
+
+# needed for wallabag
+find_string: >Formular <
+replace_string: ><
+find_string: >Ende des Formulars <
+replace_string: ><
+
+
 ##############
 test_url: https://www.hessenschau.de/rheinmain/index.rss
 test_url: https://www.hessenschau.de/panorama/weltkriegsbombe-im-frankfurter-osthafen-entschaerft,bombenfund-frankfurt-ostend-100.html
+test_url: https://www.hessenschau.de/panorama/beschaedigte-bahn-bruecke-in-frankfurt-bleibt-noch-weitere-zwei-monate-dicht-v1,bahn-bruecke-reparatur-100.html
