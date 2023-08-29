@@ -13,4 +13,4 @@ strip_id_or_class: paywall-portal-article-footer
 
 prune: no
 
-test_url: https://www.thetimes.co.uk/article/c1ee434c-86c8-11ec-9c9e-c5f8451b297
+test_url: https://www.thetimes.co.uk/article/c1ee434c-86c8-11ec-9c9e-c5f8451b2970
