@@ -49,7 +49,16 @@ strip: //div[contains(@style,'margin')]
 strip: //figure[contains(@id,'gvideo')]
 strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
 
+# Golem Plus Paywall
+http_header(Cookie): golem_multipage=single                   
+requires_login: yes                                           
+login_uri: https://account.golem.de/user/login                
+login_username_field: email                                   
+login_password_field: password                                
+not_logged_in_xpath: //button[contains(@class, 'golem_login')]
+
 
 # Try yourself
 test_url: http://www.golem.de/news/intel-core-i7-5960x-im-test-die-pc-revolution-beginnt-mit-octacore-und-ddr4-1408-108893.html
 test_url: http://www.golem.de/news/test-infamous-first-light-neonbunter-actionspass-1408-108914.html
+test_url: https://www.golem.de/news/ressourcenschonend-programmieren-so-wurden-spiele-fuer-den-commodore-64-und-atari-entwickelt-2307-175508.html
