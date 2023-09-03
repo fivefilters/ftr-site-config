@@ -1,0 +1,10 @@
+body: //div[@id='main']/div[@id='app_body']
+
+strip_id_or_class: application
+strip_id_or_class: apply_button
+
+prune: no
+tidy: no
+
+test_url: https://boards.greenhouse.io/aescape/jobs/4251039006
+test_url: https://boards.greenhouse.io/unqork/jobs/6828021002
