@@ -1,3 +1,5 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
 body: //*[@class='article-full']
 title: //p[@class='headline__title']
 strip: //header[@class='group']
