@@ -1,0 +1,19 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+http_header(referer): https://www.oltnertagblatt.ch
+
+body: //div[@class='article']
+
+strip_id_or_class: headline__meta
+strip_id_or_class: progressbar__wrapper
+strip_id_or_class: pageelement--top-articles
+
+strip: //section[@componenttype='moreToSubject']
+strip: //p[@class='premium-subtitle']/parent::div
+strip: //div[contains(@class, '--comment')]
+strip: //svg
+
+# remove text-badge/watermark from image-ink
+find_string: wmark=aboplus
+replace_string: 
+
+test_url: https://www.oltnertagblatt.ch/solothurn/thal-gaeu/bauprojekt-mit-dem-velo-oder-zu-fuss-vom-bahnhof-egerkingen-direkt-in-die-haerkinger-industrie-ueber-die-autobahn-wird-eine-bruecke-gebaut-ld.2507631
