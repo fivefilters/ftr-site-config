@@ -1,9 +1,18 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' lead-asset__content__media ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article__chunks ')]
-strip: //aside
+body: //article[contains(@class,'article')]
 
+strip: //aside
 strip_id_or_class: grid-layout__aside
+
+strip: //div[contains(@class, 'ContentHeaderHedAccreditationWrapper')]
+strip: //div[contains(@class, 'TwitterEmbedContainer')]
+strip: //div[contains(@class, 'AdWrapper-')]
+
+find_string: data-src="https://www.youtube-nocookie.com/embed/
+replace_string: src="https://www.youtube-nocookie.com/embed/
 
 prune: no
 
 test_url: https://www.gq-magazine.co.uk/culture/article/adult-animation-boom
 test_contains: adult animation was already undergoing something
+
+test_url: https://www.gq-magazine.co.uk/article/ai-films-and-tv-shows
