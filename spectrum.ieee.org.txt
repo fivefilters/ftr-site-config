@@ -17,10 +17,11 @@ strip_id_or_class: social-date
 strip_id_or_class: article__comments
 strip_id_or_class: read_also_posts
 strip_id_or_class: tags__item
+strip_id_or_class: cta-membership
+strip_id_or_class: custom-field-lightbox-img-shortcode-ids
 
 strip: //i
 strip: //div[@class='popular_widget']
-strip: (//div[@class='non_member_follow'])[last()]
 
 find_string: data-runner-src="
 replace_string: data-src="
