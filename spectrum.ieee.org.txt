@@ -1,5 +1,39 @@
+body: //div[contains(@class, 'main')]
+
+strip_id_or_class: hide-tablet-and-desktop
+strip_id_or_class: hidden
+strip_id_or_class: main-menu-wrapper
+strip_id_or_class: menu-overlay
+strip_id_or_class: topbar
+strip_id_or_class: huge-menu
+strip_id_or_class: gated-popup
+strip_id_or_class: lightbox-popup
+strip_id_or_class: widget__shares
+strip_id_or_class: all-related-sections
+strip_id_or_class: widget__headline
+strip_id_or_class: time-to-read
+strip_id_or_class: social-author
+strip_id_or_class: social-date
+strip_id_or_class: article__comments
+strip_id_or_class: read_also_posts
+strip_id_or_class: tags__item
+strip_id_or_class: cta-membership
+strip_id_or_class: custom-field-lightbox-img-shortcode-ids
+
+strip: //i
+strip: //div[@class='popular_widget']
+
 find_string: data-runner-src="
 replace_string: data-src="
 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article_post ')]
+# embed YT video
+find_string: data-runner-src="https://www.youtube.com/embed/
+replace_string: src="https://www.youtube.com/embed/
+find_string: data-src="https://www.youtube.com/embed/
+replace_string: src="https://www.youtube.com/embed/
+replace_string( width="100%">):  
+
+prune: no
+
 test_url: https://spectrum.ieee.org/raspberry-pi-cluster-computer
+test_url: https://spectrum.ieee.org/egypts-massive-18gw-benban-solar-park-nears-completion
