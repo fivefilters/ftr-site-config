@@ -5,6 +5,8 @@ strip_id_or_class: comp-vgrid
 strip_id_or_class: comp-box
 strip_id_or_class: mvp-post-soc-list
 strip_id_or_class: mvp-post-bot-ad
+strip_id_or_class: mvp-related-posts
+strip_id_or_class: mvp-cont-read-wrap
 
 body: //div[@class="mvp-post-main-in"]
 
