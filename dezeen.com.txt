@@ -1,0 +1,11 @@
+body: //article[contains(@class, 'main-article')]
+
+strip: //aside
+strip: //iframe
+strip: //div[contains(@class, 'ad')]
+strip: //div[@id='newsletter-form']
+strip: //h1
+strip: //div[@class='author-info']
+strip: //div[@class='article-body-sharing-wrap']
+
+test_url: https://www.dezeen.com/2022/08/03/ascent-tower-milwaukee-worlds-tallest-timber-building/
