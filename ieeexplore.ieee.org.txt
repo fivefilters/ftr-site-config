@@ -1,0 +1,30 @@
+# ieeexplore.ieee.org uses JavaScript and/or api calls :-( so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[contains(@class, 'document-main')]
+
+# title and author doesn't work atm
+title: //h1[contains(@class, 'document-title')]/span
+author: //*[@class='authors-info']
+
+strip_id_or_class: document-main-leaderboard-ad
+strip_id_or_class: document-main-header
+strip_id_or_class: doc-actions-mobile-expand-button
+strip_id_or_class: document-main-subheader
+strip_id_or_class: document-main-left-trail
+strip_id_or_class: hide-desktop
+strip_id_or_class: read-more-link-container
+
+# strip footer with Authors, Figures, ... Metrics
+# while they are empty in wallabag anyway
+strip: //xpl-accordian-section
+
+prune: no
+tidy: no
+
+test_url: https://ieeexplore.ieee.org/document/9924563
