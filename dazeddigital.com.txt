@@ -1,0 +1,9 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body-container ')]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' title ')]
+author: //h2[contains(concat(' ',normalize-space(@class),' '),' contributor-name ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' show-when-aside-content-hides ')]//time[contains(concat(' ',normalize-space(@class),' '),' timestamp ')]
+
+strip: //div[contains(@class, "show-when-aside-content-hides")]
+strip: //div[contains(@class, "read-more-items")]
+
+test_url: https://www.dazeddigital.com/beauty/article/60860/1/we-were-never-supposed-to-see-our-faces-this-much-social-media-zoom
