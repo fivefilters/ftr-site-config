@@ -1,7 +1,7 @@
 # FTR works including images
 # wallabag works WITHOUT images, due to hardcoded autostrip of textless <span>
 
-body: //article[@class='main-article']
+body: (//article[@class='main-article'])[1]
 title: normalize-space( //meta[@property='og:title']/@content )
 author: //a[@class='contributor-name']
 date: //time[@class='timestamp']/@datetime
