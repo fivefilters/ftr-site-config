@@ -5,7 +5,9 @@ date: //article//p[contains(@class, 'post__info')]//time/@datetime
 find_string: &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;&lt;title&gt;
 replace_string: <!--
 find_string: &lt;/title&gt;&lt;/head&gt;&lt;body&gt;
-replace_string -->
+replace_string: -->
+find_string: &lt;/body&gt;&lt;/html&gt;
+replace_string: <!-- removed -->
   
 strip_id_or_class: cookieModal
 
