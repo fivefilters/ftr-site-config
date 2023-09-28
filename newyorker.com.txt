@@ -19,6 +19,8 @@ strip_id_or_class: social-icons
 strip_id_or_class: split-screen-content-header__rubric
 strip_id_or_class: split-screen-content-header__rubric-issue-date
 
+strip: //button[@id="bookmark"]
+
 prune: no
 tidy: no
 
