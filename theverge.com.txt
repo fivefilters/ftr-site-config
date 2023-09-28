@@ -36,6 +36,18 @@ strip_id_or_class: sr-only
 strip_id_or_class: e-image__meta
 replace_string(<strong> </strong>): <!-- nothing -->
 
+# 2023
+# Categories
+strip: //*[@id="content"]/div[1]/ul
+# Author blurb
+strip_id_or_class: duet--article--date-and-comments
+strip_id_or_class: duet--article--disclaimer
+strip_id_or_class: duet--article--article-byline
+# Header divider
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' grow ')]
+# Fix double images
+strip: //div[contains(@class, 'duet--media--content-warning')]/img
+
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
 
