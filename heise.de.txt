@@ -60,6 +60,9 @@ strip_id_or_class: article-header
 strip_id_or_class: a-box__target
 strip_id_or_class: printversion__untertitel
 
+# strip opt-in-question to load external content (Youtube, Twitter, Mastodon)
+strip: //a-opt-in
+
 # Strip Ads
 strip_id_or_class: ad_
 strip_id_or_class: a-box
