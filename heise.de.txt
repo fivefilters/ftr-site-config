@@ -1,6 +1,3 @@
-# Template should work well with either desktop or mobile version (m.heise.de)
-# 2023-10-03 is m.heise.de still in use
-
 prune: no
 tidy: no
 
@@ -31,7 +28,7 @@ strip: //p[@class='news_datum']
 strip: //p[@class='artikel_datum']
 strip: //p[@class='news_navi']
 strip: //p[@class='printversion']
-strip: //a[contains(@href, 'mailto')]
+strip: //a[contains(@href, 'mailto')]/@href
 strip: //div[@class='gallery compact']/h2
 strip: //p[@class='themen_foren']
 strip: //style
@@ -77,8 +74,6 @@ replace_string(</a-img>): </img></div>
 strip: //div[@class="ff-a-img"]//img[not(@data-ff-replacement)]
 
 # Some optimizations
-replace_string(<h5>): <h2>
-replace_string(</h5>): </h2>
 replace_string(<title>Druckversion - ): <title>
 replace_string( | heise online</title>): </title>
 replace_string( | c't Magazin</title>): </title>
