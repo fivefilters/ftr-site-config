@@ -1,7 +1,5 @@
-# Author: zinnober
-# Template should work well with either desktop or mobile version (m.heise.de)
-
 prune: no
+tidy: no
 
 date: //article//time[@itemprop="datePublished"]/@datetime
 date: //p[@class='news_datum']
@@ -14,21 +12,12 @@ body: //article[contains(@class, 'printversion')]
 
 # regular
 body: //article[@id="meldung"] | //div[@class='meldung_wrapper'] | //section[@id='artikel_text'] | //article[contains(@class, 'xp__article')]
-# TODO: Try to preserve lede (currently stripped by strip: //header)
-# https://www.heise.de/select/ct/2020/3/1580493780857147
-# //article//p[contains(@class, 'article__description')]
 
-requires_login: yes
-
-login_uri: https://www.heise.de/sso/login/login
-login_username_field: username
-login_password_field: password
-
-not_logged_in_xpath: //a[@id='heiselogin-link-login']
-
-strip: //nav
+# for heise.de/select (e-paper)
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
 
 # General cleanup
+strip: //nav
 strip: //time
 strip: //h1[@class='article__heading']
 strip: //h4[@class='author']
@@ -39,7 +28,7 @@ strip: //p[@class='news_datum']
 strip: //p[@class='artikel_datum']
 strip: //p[@class='news_navi']
 strip: //p[@class='printversion']
-strip: //a[contains(@href, 'mailto')]
+strip: //a[contains(@href, 'mailto')]/@href
 strip: //div[@class='gallery compact']/h2
 strip: //p[@class='themen_foren']
 strip: //style
@@ -71,8 +60,8 @@ strip_id_or_class: article-header
 strip_id_or_class: a-box__target
 strip_id_or_class: printversion__untertitel
 
-# 2022-10-16: Is there a reason we strip these? It also strips images in articles like this: https://www.heise.de/hintergrund/James-Bond-im-Kino-60-Jahre-007-Autos-und-verrueckte-Gadgets-7288360.html?view=print
-# strip_id_or_class: a-u-inline
+# strip opt-in-question to load external content (Youtube, Twitter, Mastodon)
+strip: //a-opt-in
 
 # Strip Ads
 strip_id_or_class: ad_
@@ -88,16 +77,12 @@ replace_string(</a-img>): </img></div>
 strip: //div[@class="ff-a-img"]//img[not(@data-ff-replacement)]
 
 # Some optimizations
-replace_string(<h5>): <h2>
-replace_string(</h5>): </h2>
 replace_string(<title>Druckversion - ): <title>
 replace_string( | heise online</title>): </title>
 replace_string( | c't Magazin</title>): </title>
 replace_string( | Telepolis</title>): </title>
 replace_string( | heise Security</title>): </title>
 replace_string( | heise Autos</title>): </title>
-# this line breaks the parser
-#replace_string(<span class="bild_rechts" style="width:): <p "
 replace_string(<div class="heisebox">): <blockquote>
 
 single_page_link: //a[contains(@href, '?view=print')]
@@ -108,11 +93,21 @@ next_page_link: //a[@class='next' and not(contains(text(), 'Artikel'))]
 next_page_link: //a[@title='vor']
 next_page_link: //a[@rel='next']
 
+#
+# for wallabag only. Do NOT set your credentials here, do this in wallabag's UI:
+#
+requires_login: yes
+
+login_uri: https://www.heise.de/sso/login/login
+login_username_field: username
+login_password_field: password
+
+not_logged_in_xpath: //a[@id='heiselogin-link-login']
+
+
 test_url: https://www.heise.de/select/ct/2020/3/1580493780857147
-test_url: http://www.heise.de/open/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
-test_url: http://m.heise.de/open/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
-test_url: http://www.heise.de/newsticker/meldung/Ueberwachungstechnik-Die-globale-Handy-Standortueberwachung-2301494.html
-test_url: http://www.heise.de/newsticker/meldung/Bodenradar-fuer-selbstfahrende-Autos-horcht-unter-die-Strasse-3273941.html
-test_url: http://www.heise.de/tp/artikel/49/49473/1.html
-test_url: http://www.heise.de/ct/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
-test_url: http://heise.de/-3527918
+test_url: https://www.heise.de/news/Ueberwachungstechnik-Die-globale-Handy-Standortueberwachung-2301494.html
+test_url: https://www.heise.de/news/Bodenradar-fuer-selbstfahrende-Autos-horcht-unter-die-Strasse-3273941.html
+test_url: https://www.heise.de/tp/artikel/49/49473/1.html
+test_url: https://www.heise.de/ct/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
+test_url: https://heise.de/-3527918
