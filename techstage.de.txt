@@ -1,4 +1,6 @@
 body: //section[@id="article_content"]
+body: //div[@class='article-gallery'] | //div[@id='lead'] | //div[@id='article-content-body']
+
 author: //meta[@name="author"]/@content
 date: //article//time[@datetime]/@datetime
 
@@ -15,5 +17,13 @@ strip_id_or_class: comments_container
 strip: //a-tabs
 strip: //section[contains(@class, 'teaser')]
 
+# strip heading and description for image galeries, which would
+# be shown UNDER the whole bunch of images instead
+strip_id_or_class: ring-mini-gallery-title
+strip_id_or_class: ring-mini-gallery-desc
+
+prune: no
+
 test_url: https://www.techstage.de/ratgeber/Android-One-Smartphones-Diese-Handys-sind-verfuegbar-4156945.html
 test_url: https://www.techstage.de/ratgeber/Kaufberatung-Mit-Koepfchen-zum-passenden-Fahrradhelm-4872243.html
+test_url: https://www.techstage.de/test/e-scooter-egret-one-im-test-viel-reichweite-starker-motor-hohe-qualitaet/17p6zpz
