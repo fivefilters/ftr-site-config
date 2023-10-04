@@ -3,8 +3,6 @@ title: normalize-space( //meta[@property='og:title']/@content )
 author: //a[@class='contributor-name']
 date: //time[@class='timestamp']/@datetime
 
-wrap_in('<section>'): //h2
-
 strip: //aside
 strip: //h1[@class='title']
 
