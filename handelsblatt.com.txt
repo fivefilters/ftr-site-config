@@ -1,12 +1,12 @@
 # without bot as user-agent: totally NO content (FTR/wallabag UI)
 # with bot as user agent: content is cut for longer articles (FTR/wallabag UI)
 #
-# to full-article in wallabag use wallabagger browser-plugin with activated
+# to get full-content in wallabag use wallabagger browser-plugin with activated
 # option 'Retrieve content from the browser' in it's settings
 
 http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
-body: //article
+body: //article[1]
 author: //meta[@name="vr:author"]/@content
 date: //span[@itemprop="datePublished"]/@content
 title: //h2[@class='headline']
@@ -28,6 +28,6 @@ strip: //app-storyline-related-topics
 prune: no
 
 # Fix picture captions
-#wrap_in(small): //div[@class="hcf-caption"]
+# wrap_in(small): //div[@class="hcf-caption"]
 test_url: https://www.handelsblatt.com/dpa/eu-kommission-macht-sich-fuer-bessere-radwege-stark/29427222.html
 test_url: https://www.handelsblatt.com/politik/deutschland/flughafen-berlin-brandenburg-vier-milliarden-euro-mehr-neun-jahre-zu-spaet-die-wichtigsten-fakten-zum-start-des-ber/26205178.html
