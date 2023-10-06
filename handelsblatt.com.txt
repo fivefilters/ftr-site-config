@@ -1,15 +1,33 @@
-body: //div[@itemprop="articleBody"]
+# without bot as user-agent: totally NO content (FTR/wallabag UI)
+# with bot as user agent: content is cut for longer articles (FTR/wallabag UI)
+#
+# to full-article in wallabag use wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+body: //article
 author: //meta[@name="vr:author"]/@content
 date: //span[@itemprop="datePublished"]/@content
-title: //meta[@property="og:title"]/@content
+title: //h2[@class='headline']
 
 # fix image lazy loading
 find_string: data-src="
 replace_string: src="
 
+#2023:
+strip_id_or_class: authors
+strip_id_or_class: source
+strip_id_or_class: kicker
+strip_id_or_class: headline
+strip: //app-toolbar
+strip: //button
+strip: //app-storyline-related-topics
+
+
 prune: no
 
 # Fix picture captions
-# wrap_in(small): //div[@class="hcf-caption"]
-test_url: http://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-zum-emissionshandel-kurskorrekturen-fuehren-zum-kentern/8044326.html
+#wrap_in(small): //div[@class="hcf-caption"]
+test_url: https://www.handelsblatt.com/dpa/eu-kommission-macht-sich-fuer-bessere-radwege-stark/29427222.html
 test_url: https://www.handelsblatt.com/politik/deutschland/flughafen-berlin-brandenburg-vier-milliarden-euro-mehr-neun-jahre-zu-spaet-die-wichtigsten-fakten-zum-start-des-ber/26205178.html
