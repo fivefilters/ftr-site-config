@@ -1,15 +1,18 @@
+# This config is also used for fingerprint-matches with blogspot.com or blogger.com besed websites
+# e.g. in wallabag or Fulltext-RSS
+
 date: //*[contains(@class, 'date-header')]
 title://*[contains(@class,'post-title')]
 body://div[contains(@class,'post-body')]
 body://div[contains(@class,'entry-content')]
+
 strip_comments:no
+
 prune:no
+tidy: no
 
-replace_string(<noscript>): <div>
-replace_string(</noscript>): </div>
-
-# Tidy cleans away the json-ld content
-# tidy:yes
+replace_string(noscript>): div>
 
 test_url: http://themerryone.blogspot.com/2010/08/new-move-new-blog.html
 test_url: http://strobist.blogspot.com/2012/01/qa-down-phase-one-rabbit-hole.html
+test_url: https://security.googleblog.com/2023/09/scaling-rust-adoption-through-training.html
