@@ -39,6 +39,7 @@ replace_string(<strong> </strong>): <!-- nothing -->
 # 2023
 # Categories
 strip: //*[@id="content"]/div[1]/ul
+strip: //li[contains(concat(' ',normalize-space(@class),' '),' inline ')]
 # Author blurb
 strip_id_or_class: duet--article--date-and-comments
 strip_id_or_class: duet--article--disclaimer
@@ -47,6 +48,16 @@ strip_id_or_class: duet--article--article-byline
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' grow ')]
 # Fix double images
 strip: //div[contains(@class, 'duet--media--content-warning')]/img
+strip: //div[@aria-label="Zoom"]/img
+replace_string(<div role="button"): <div
+# Related list
+strip_id_or_class: duet--recirculation--related-list
+# Pull quote
+strip_id_or_class: duet--article--article-pullquote
+# Indented article
+replace_string(<div id="content" class="clearfix">): <div>
+# Rating disclosures
+strip: //a[contains(@href, '/pages/how-we-rate')]
 
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
