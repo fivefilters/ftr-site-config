@@ -40,6 +40,9 @@ prune: no
 
 # wallabag only:
 wrap_in(blockquote): //div[contains(@class, 'quoteWrapper')]
+# prevents wallabag to show image galery as overlay above article text
+find_string: class="contentWrapper slider
+replace_string: class="contentWrapper foo
 
 # don't remove this line! Site belongs to de_VRM group
 
