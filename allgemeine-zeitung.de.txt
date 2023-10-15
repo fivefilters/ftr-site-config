@@ -48,4 +48,4 @@ wrap_in(blockquote): //div[contains(@class, 'quoteWrapper')]
 # Using the feed should present valid output
 
 #test_url: https://www.allgemeine-zeitung.de/lokales/rheinhessen/zum-start-der-herbstferien-vollsperrung-der-l426-ab-montag-2937196
-test_url: https://www.allgemeine-zeitung.de/rss/
+test_url: https://www.allgemeine-zeitung.de/rss/lokales/hessen/
