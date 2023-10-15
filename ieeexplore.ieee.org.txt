@@ -6,11 +6,12 @@
 # This only works with wallabagger browser-plugin with activated
 # option 'Retrieve content from the browser' in it's settings
 
-body: //div[contains(@class, 'document-main')]
+body: //div[contains(@class, 'abstract-text')] | //div[contains(@class, 'ArticlePage')] | //div[contains(@class, 'document-full-text-content')]
+#body: //div[contains(@class, 'document-main')]
 
-# title and author doesn't work atm
 title: //h1[contains(@class, 'document-title')]/span
 author: //*[@class='authors-info']
+date: //div[contains(@class, 'doc-abstract-pubdate')]/strong[text()='Date of Publication:']/following-sibling::text()[1]
 
 strip_id_or_class: document-main-leaderboard-ad
 strip_id_or_class: document-main-header
@@ -21,10 +22,18 @@ strip_id_or_class: hide-desktop
 strip_id_or_class: read-more-link-container
 
 # strip footer with Authors, Figures, ... Metrics
-# while they are empty in wallabag anyway
+# while they are empty anyway
 strip: //xpl-accordian-section
+
+# Fix lazy loading issue
+replace_string(src=""): invalid=""
+replace_string(data-src-img=): src=
+
+# Strip out this id
+replace_string(id="article"):
 
 prune: no
 tidy: no
 
 test_url: https://ieeexplore.ieee.org/document/9924563
+test_url: https://ieeexplore.ieee.org/document/9508471
