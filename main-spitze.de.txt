@@ -1,5 +1,5 @@
 # chose your source feed from:
-# https://www.echo-online.de/rss/
+# https://www.main-spitze.de/rss/
 
 # site has paywall, if you are using wallabag try to use
 # wallabagger browser-plugin with activated option
@@ -50,5 +50,5 @@ replace_string: class="contentWrapper foo
 # the full article. There is a time-based paywall 
 # Using the feed should present valid output
 
-#test_url: https://www.echo-online.de/lokales/darmstadt/austausch-fuer-psychisch-erkrankte-in-darmstadt-2945125
-test_url: https://www.echo-online.de/rss/lokales/darmstadt/
+#test_url: https://www.main-spitze.de/lokales/kreis-main-taunus/hochheim-kreis-main-taunus/a671-mainbruecke-nach-vollsperrung-bei-hochheim-wieder-offen-2938263
+test_url: https://www.main-spitze.de/rss/lokales/hessen/

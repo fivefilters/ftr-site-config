@@ -1,5 +1,5 @@
 # chose your source feed from:
-# https://www.echo-online.de/rss/
+# https://www.lampertheimer-zeitung.de/rss/lokales/hessen/
 
 # site has paywall, if you are using wallabag try to use
 # wallabagger browser-plugin with activated option
@@ -50,5 +50,5 @@ replace_string: class="contentWrapper foo
 # the full article. There is a time-based paywall 
 # Using the feed should present valid output
 
-#test_url: https://www.echo-online.de/lokales/darmstadt/austausch-fuer-psychisch-erkrankte-in-darmstadt-2945125
-test_url: https://www.echo-online.de/rss/lokales/darmstadt/
+#test_url: https://www.lampertheimer-zeitung.de/lokales/hessen/trotz-demoverbots-anti-israelische-proteste-in-frankfurt-2943654
+test_url: https://www.lampertheimer-zeitung.de/rss/lokales/hessen/
