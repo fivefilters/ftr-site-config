@@ -1,9 +1,12 @@
 # chose your source feed from:
 # https://www.echo-online.de/rss/
 
+# site has paywall, if you are using wallabag try to use
+# wallabagger browser-plugin with activated option
+# 'Retrieve content from the browser' in it's settings
+
 http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 http_header(referer): https://www.echo-online.de/
-
 
 body: //article
 author: //meta[@name='twitter:creator']/@content
