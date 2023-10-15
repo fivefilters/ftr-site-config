@@ -41,6 +41,8 @@ prune: no
 # wallabag only:
 wrap_in(blockquote): //div[contains(@class, 'quoteWrapper')]
 
+# don't remove this line! Site belongs to de_VRM group
+
 # The first URL will at some point no longer show 
 # the full article. There is a time-based paywall 
 # Using the feed should present valid output
