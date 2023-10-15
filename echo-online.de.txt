@@ -1,25 +1,46 @@
-# Author: Marvin Dickhaus
-# 2014-10-08
+# chose your source feed from:
+# https://www.echo-online.de/rss/
 
-#Tidy just messes up the DOM
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+http_header(referer): https://www.echo-online.de/
+
+
+body: //article
+author: //meta[@name='twitter:creator']/@content
+title: normalize-space(//meta[@property='og:title']/@content)
+date: //time/@datetime
+
+strip: //path
+strip: //script
+strip: //footer
+strip: //div[contains(@class, 'recommendations')]
+strip: //div[@data-testid='storyline-intro-authors']
+strip: //aside[contains(@data-testid, 'linkbox')]
+strip: //svg
+
+strip_id_or_class: recommendations__topStories
+strip_id_or_class: recommendations__cceWidget
+strip_id_or_class: storyElementWrapper__paywallContainer
+strip_id_or_class: storylineIntro__dateAndReadingTime
+strip_id_or_class: loadingBanner
+strip_id_or_class: adSlot
+strip_id_or_class: storylineHeader
+
+replace_string(,"value":): ,"invalid":
+replace_string(,"storylineText":): ,"value":
+
+# prevent the 'echo' logo to show, if article has no image
+insert_detected_image: no
+
 tidy: no
+prune: no
 
-title: //h1
-body: //h2 | //div[@id='artikelteaser'] | //div[@id='artikeltext']
+# wallabag only:
+wrap_in(blockquote): //div[contains(@class, 'quoteWrapper')]
 
-#Strip 
-strip_image_src: artikel_a_merken.gif
-strip: //div[@class='zusatzinfo']
+# The first URL will at some point no longer show 
+# the full article. There is a time-based paywall 
+# Using the feed should present valid output
 
-#Author: substring is used to remove the " Von " prefix.
-author: substring(//li[@class='artikelautor'], 5)
-
-date: //li[@class='artikeldatum']
-
-#The first two URLs will at some point no longer show 
-#the full article. There is a time-based paywall 
-#installed. Using the feed should present valid output
-#test_url: http://www.echo-online.de/art1231,5503063
-#test_url: http://www.echo-online.de/art1168,5502598
-test_url: http://www.echo-online.de/lokales/darmstadt/index.rss
-
+#test_url: https://www.echo-online.de/lokales/darmstadt/austausch-fuer-psychisch-erkrankte-in-darmstadt-2945125
+test_url: https://www.echo-online.de/rss/lokales/darmstadt/
