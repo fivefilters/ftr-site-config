@@ -1,4 +1,4 @@
-# test_url: http://...# chose your source feed from:
+# chose your source feed from:
 # https://www.mittelhessen.de/rss/
 
 # site has paywall, if you are using wallabag try to use
