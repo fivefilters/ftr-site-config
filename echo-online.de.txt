@@ -32,7 +32,7 @@ strip_id_or_class: storylineHeader
 replace_string(,"value":): ,"invalid":
 replace_string(,"storylineText":): ,"value":
 
-# prevent the 'echo' logo to show, if article has no image
+# prevent the site logo to show, if article has no image
 insert_detected_image: no
 
 tidy: no
