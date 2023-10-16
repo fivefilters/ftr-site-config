@@ -18,6 +18,10 @@ date: //meta[@name='date']/@content
 
 strip: //span[@class='figure__copyright']
 strip: //aside
+strip: //nav
+
+# prevent using 'zeit' logo if article has no image
+insert_detected_image: no
 
 # Self advertisements
 strip: //figure[@class='figure-stamp']
@@ -32,10 +36,12 @@ strip_id_or_class: ad-container
 #######################################
 
 single_page_link: //li[@class='article-pager__all']//a[@data-ct-label='all']
+next_page_link: //a[contains(@class, 'article-pagination') and @data-ct-label='Nächste Seite']
+
 author: //a[@class='byline__author']/span
 author: substring-after(//span[@class='metadata__source'], 'Quelle: ')
 
-body: //div[@class='summary' or contains(@class, 'article-body') or @class='byline']
+body: //header//img | //div[@class='summary' or contains(@class, 'article-body') or @class='byline']
 body: //main/article/div[@itemprop='articleBody']
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page ')]
 
@@ -46,6 +52,16 @@ strip_id_or_class: 'article-pagination article__item'
 strip_id_or_class: js-videoplayer
 strip: //figure[@data-video-provider="brightcove"]
 strip: //a[contains(concat(' ',normalize-space(@class),' '),' faq-link ')]
+strip_id_or_class: embed-wrapper__inner
+strip_id_or_class: article-footer
+strip: //footer
+
+# needed for wallabag, without that, everything after
+# the embedded content is missing. And now you have youtube inside ;-)
+# https://www.zeit.de/politik/ausland/2023-10/israel-hamas-gaza-reaktionen-usa-eu-scholz
+find_string: <script class="raw__source"
+replace_string: <div
+
 
 test_url: http://www.zeit.de/kultur/film/2012-12/Kurzfilmtag
 test_contains: In drei Minuten die Welt erobern
