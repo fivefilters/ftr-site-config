@@ -1,0 +1,4 @@
+title: //header//h2
+author: //div[contains(concat(' ',normalize-space(@class),' '),' publish-date-author ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]
+test_url: https://blog.rust-lang.org/inside-rust/2023/10/06/polonius-update.html
