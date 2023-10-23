@@ -1,12 +1,33 @@
-# Author: HolgerAusB  |  Version: 2022-03-27
+# Author: HolgerAusB  |  Version: 2023-10-23
 #
+
+body: //article[1]
+author: //a[contains(@class, 'editorNameLink')]
 
 strip_id_or_class: innerArticleModule
 strip_id_or_class: tagAndSocialFrame
 strip_id_or_class: video-container
 strip_id_or_class: vidOverlayFrame
+strip_id_or_class: linkToHomePage
+strip_id_or_class: articleTitle
+strip_id_or_class: ame-hide
+strip_id_or_class: ame-text
+strip_id_or_class: editorPortrait
+strip_id_or_class: articleTitle
 
+strip: //aside
+strip: //a[@href='/']
+
+# activate embedded youtube (FTR also needs -> tidy: yes)
+find_string: <div class="ame-container " data-url="https://www.youtube.com/watch?v=
+replace_string: <div class="ame-container "><iframe width="480" height="360" src="https://www.youtube.com/embed/
+
+find_string: <div class="ame-container " data-url="https://youtu.be/
+replace_string: <div class="ame-container "><iframe width="480" height="360" src="https://www.youtube.com/embed/
+
+prune: no
+tidy: yes
 
 test_url: https://www.buffed.de/feed.cfm?product=34802
-test_url: https://www.buffed.de/Der-Herr-der-Ringe-Online-Die-Schatten-von-Angmar-Spiel-21221/News/Brawler-Neue-Klasse-1379286/
+test_url: https://www.buffed.de/Der-Herr-der-Ringe-Online-Die-Schatten-von-Angmar-Spiel-21221/News/HdRODie-Korsaren-von-Umbar-alle-wichtigen-Infos-zur-neuen-Erweiterung-1430729/
 test_url: https://www.buffed.de/World-of-Warcraft-Spiel-42971/News/Burning-Crusade-Classic-Server-Populationen-Maerz-2022-1391508/
