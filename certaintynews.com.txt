@@ -1,0 +1,11 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content_left ')]
+
+strip_id_or_class: subcategories-wrapper
+strip_id_or_class: w-script
+strip_id_or_class: article_next-up-block
+strip_id_or_class: newsletter_wrapper
+strip_id_or_class: embed_newsletter
+
+prune: no
+
+test_url: https://www.certaintynews.com/article/influence-with-uru-navigating-business-relationships-and-challenges
