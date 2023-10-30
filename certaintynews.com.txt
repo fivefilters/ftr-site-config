@@ -5,6 +5,8 @@ strip_id_or_class: w-script
 strip_id_or_class: article_next-up-block
 strip_id_or_class: newsletter_wrapper
 strip_id_or_class: embed_newsletter
+strip_id_or_class: img_author-headshot-bottom-wrapper
+strip_id_or_class: img_author-headshot-bottom
 
 replace_string(<div class="text-author-name-big">By</div>):<span class="text-author-name-big">By </span>
 
