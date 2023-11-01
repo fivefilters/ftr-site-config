@@ -1,4 +1,6 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content_left ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' text-style-author-date ')]
+author: //a[contains(concat(' ',normalize-space(@class),' '),' link_author-name-blue ')]
 
 strip_id_or_class: subcategories-wrapper
 strip_id_or_class: w-script
