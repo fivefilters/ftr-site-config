@@ -1,0 +1,19 @@
+body: //main[1]
+author: //h1/following-sibling::ul[@aria-label='Authors']/li/*
+date: //ul[@aria-label='Authors']/following-sibling::p
+
+insert_detected_image: no
+
+strip: //nav
+strip: //button
+strip: //form
+strip: //aside
+strip: //h2[contains(@class, 'h6') and starts-with(text(), 'Filter by')]
+strip: //h2[contains(@class, 'h4') and contains(text(), 'Share this page')]/parent::div
+
+strip_id_or_class: blog_sidebar
+strip_id_or_class: ms-3
+
+
+test_url: https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-01.html
+test_url: https://www.ietf.org/blog/ietf117-highlights/
