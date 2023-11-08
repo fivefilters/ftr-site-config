@@ -2,9 +2,6 @@ http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gec
 
 body: //main
 
-strip: //button/parent::div
-strip: //h1[1]
-
 ## option 1
 ## prefixing 'Q' for question and 'ChatGPT' for answer
 #replace_string(<svg stroke): <b>Q:</b><invalid stroke
@@ -21,6 +18,10 @@ replace_string(<svg width): <invalid width
 ## common clean-up
 
 strip: //invalid
+strip: //button/parent::div
+strip: //h1[1]
+
+strip: //div[contains(text(), 'Is this conversation helpful so far?')]/parent::div
 
 prune: no
 tidy: no
