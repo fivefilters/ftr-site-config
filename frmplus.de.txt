@@ -1,11 +1,10 @@
-# author: HolgerAusB   version 2023-02-12
+# author: HolgerAusB   version 2023-10-11
 #
 # no native feed, try:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.frmplus.de%2Faktuelles.html&item=div.layout_latest&item_title=h2&item_desc=div.teaser&item_date=time&feed_title=FRM-Plus&max=5&order=document&guid=0
-
-prune: no
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.frmplus.de%2Faktuelles.html&item=div.layout_latest&item_title=h2&item_url=h2+a&item_desc=div.teaser&item_date=time&feed_title=FRM-Plus&max=5&order=document&guid=0
 
 body: //div[@id='main']
+date: //time/@datetime
 
 # strip title and date from body
 strip: //div[contains(@class, 'ce_text')]/h3
@@ -21,6 +20,8 @@ replace_string(&nbsp;):
 
 # general clean-up
 strip: //p[@class='back']
+
+prune: no
 
 # tests
 test_url: https://www.frmplus.de/aktuelles-reader/naechste-etappe-fuer-den-deutschlandtakt-spatenstich-fuer-zusaetzliche-gleise-und-neue-mainbruecke-im-knoten-frankfurt-stadion.html
