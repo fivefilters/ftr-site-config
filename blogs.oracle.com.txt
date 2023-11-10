@@ -1,0 +1,13 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/120.0
+
+body: //section
+date: //meta[@name='publish_date']/@content
+author: //meta[@name='author']/@content
+
+strip_id_or_class: cpad
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' social ')]
+strip: //div[contains(@class, 'zoomui')]
+
+prune: no
+
+test_url: https://blogs.oracle.com/linux/post/backporting-patches-using-git
