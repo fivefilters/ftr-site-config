@@ -1,11 +1,12 @@
-# author: HolgerAusB   version 2023-01-16
+# author: HolgerAusB   version 2023-10-11
 #
 # no native feed, try:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.mein-hbf-ffm.de%2Faktuelle-meldungen.html&item=div.layout_latest&item_title=h2&item_desc=div.ce_tex
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.mein-hbf-ffm.de%2Faktuelle-meldungen.html&item=div.layout_latest&item_title=h2&item_url=h2+a&item_desc=.ce_text&item_date=time
 
 http_header(cookie): dse_cookie=1-0-0
 
 body: //div[@class='mod_newsreader block']
+date: //time/@datetime
 
 # strip title and date from body
 strip: //div[@class='layout_full block']/h1
@@ -22,5 +23,6 @@ replace_string(</figure>): </div>
 # cleanup
 strip: //p[@class='back']/a
 
+prune: no
 
 test_url: https://www.mein-hbf-ffm.de/aktuelles-reader/db-informiert-zum-geplanten-fernbahntunnel.html
