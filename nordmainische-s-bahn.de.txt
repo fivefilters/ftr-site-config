@@ -1,15 +1,18 @@
-# author: HolgerAusB   version 2023-07-03
+# author: HolgerAusB   version 2023-11-10
 #
 # no native feed, try:
 # https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.nordmainische-s-bahn.de%2Faktuelles.html&item=div.news&item_title=h2&item_desc=p%5B2%5D&item_date=time&max=5&order=document&guid=0
 
 
 body: //div[@class='layout_full block']
+date: //time/@datetime
 
 # strip date from body
 strip: //p[@class='info']
 
 # fix source-links of images
 replace_string(s-bahn.de/aktuell/files/img/): s-bahn.de/files/img/
+
+prune: no
 
 test_url: https://www.nordmainische-s-bahn.de/aktuell/die-nordmainische-s-bahn-stellt-sich-vor-der-ingenieur-fuer-hanau.html
