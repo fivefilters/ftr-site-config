@@ -1,0 +1,21 @@
+# author: HolgerAusB   version 2023-11-10
+#
+# no native feed, try:
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.hanau-wuerzburg-fulda.de%2Fmeldungen.html&item=.layout_latest&item_title=h3&item_url=h3+a&item_desc=.teaser&item_date=time&feed_title=FRM-Plus&max=5&order=document&guid=0
+
+body: //div[@class='layout_full block']
+date: //time/@datetime
+
+# strip date from body
+strip: //p[@class='info']
+
+# fix source-links of images for wallabag
+find_string: src="files/img/
+replace_string: src="/files/img/
+
+# strip literal image-url from caption
+strip_id_or_class: imgSrc
+
+prune: no
+
+test_url: https://www.hanau-wuerzburg-fulda.de/aktuelles-reader/erste-Projekte-zur-Kompensation-des-Streckenausbaus-Hanau-Gelnhausen.html
