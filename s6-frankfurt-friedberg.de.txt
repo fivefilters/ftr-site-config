@@ -1,18 +1,16 @@
-# author: HolgerAusB   version 2023-01-19
+# author: HolgerAusB   version 2023-11-10
 #
 # no native feed, try:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.s6-frankfurt-friedberg.de%2Faktuelle-meldungen.html&item=div.layout_full&item_title=h2&item_desc=p&feed_title=Ausbau+S6+Frankfurt-Friedberg&max=5&order=document&guid=0
-
-prune: no
+# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.s6-frankfurt-friedberg.de%2Fmeldungen.html&item=.layout_latest&item_title=h3&item_desc=.teaser&item_date=time+%40datetime&max=5&order=document&guid=0
 
 body: //div[@class='layout_full block']
-date: //p[@class='info']/time
+date: //time/@datetime
 
 # strip title and date from body
 strip: //div[@class='layout_full block']/h1
 strip: //p[@class='info']
 
+prune: no
+
 # tests
-test_url: https://www.s6-frankfurt-friedberg.de/nachrichtenleser/baubedingte-fahrplanaenderungen-der-s6.html
-test_url: https://www.s6-frankfurt-friedberg.de/nachrichtenleser/eigene-gleise-fuer-die-s6-zuege-zwischen-frankfurt-west-und-bad-vilbel-fahren-vom-21-bis-31-oktober-eingeschraenkt.html
-test_url: https://www.s6-frankfurt-friedberg.de/nachrichtenleser/planfeststellungsverfahren-neubau-s-bahn-haltepunkt-frankfurt-ginnheim.html
+test_url: https://www.s6-frankfurt-friedberg.de/newsreader/die-nidda-nach-der-brueckenerneuerung-besserer-lebensraum-fuer-rotauge-barbe-nase-und-schneider.html
