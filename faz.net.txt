@@ -56,6 +56,7 @@ strip_id_or_class: RelatedLinkBox
 strip_id_or_class: MultimediaNavigation
 strip_id_or_class: IndexTitel
 strip_id_or_class: cbx-Author-is-in-article-container-info
+strip_id_or_class: BigBox
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
