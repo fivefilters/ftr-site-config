@@ -4,6 +4,7 @@ date: //p[@class='last-modified-date']/time/@datetime
 
 strip: //header
 strip: //aside
+strip: //button
 
 # for wallabag
 wrap_in(blockquote): //div[@class='notecard note']
