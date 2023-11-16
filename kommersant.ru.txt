@@ -12,10 +12,6 @@ strip: //footer
 prune: no
 tidy: no
 
-find_string: src="data
-replace_string: foo="data
-
-find_string: data-lazyimage-src="http
-replace_string: src="http
+replace_string(noscript>): div>
 
 test_url: https://www.kommersant.ru/doc/3669956
