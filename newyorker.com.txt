@@ -1,31 +1,43 @@
-body: //article[contains(@class, 'main-content')]
-body: //div[@id='articleBody']
+# Emphasize lead paragraph (replace needs to be done before parsing body)
+find_string: <header
+replace_string: <em
+
+body: //em[@data-testid='SplitScreenContentHeaderWrapper'] | //div[@class='body__inner-container']
 
 author: //meta[@property="article:author"]/@content
 
 date: //meta[@property="article:published_time"]/@content
 date: //article//time[contains(@class, 'content-header__publish-date')]
 
-strip_id_or_class: content-header__title-block
-strip_id_or_class: content-header__accreditation
-strip_id_or_class: grid-layout__aside
 strip_id_or_class: full-bleed-ad
-strip_id_or_class: consumer-marketing-unit
-strip_id_or_class: ad--in-content
-strip_id_or_class: ad--rail
-strip_id_or_class: article__social-share
-strip_id_or_class: cne-interlude-embed
-strip_id_or_class: social-icons
-strip_id_or_class: split-screen-content-header__rubric
-strip_id_or_class: split-screen-content-header__rubric-issue-date
 
 strip: //button[@id="bookmark"]
+
+# Clean up header
+strip: //div[@data-testid="ResponsiveClipVideoContainer"]
+strip: //div[@data-testid="ContentHeaderRubric"]
+strip: //h1
+strip: //div[@data-testid="BylinesWrapper"]
+strip: //time
+strip: //ul[@data-testid="socialIconslist"]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' caption ')]
+
+# Clean up body
+strip: //div[@data-testid="GenericCallout"]
+strip: //figure[@data-testid="IframeEmbed"]
+
+# Strip unrelated cartoons
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' responsive-cartoon ')]
 
 prune: no
 tidy: no
 
+# Bypass "1 free article" paywall with random cookie value
+http_header(Cookie): pay_ent_msmp=1
+
 test_url: https://www.newyorker.com/magazine/2016/02/08/mothers-day-fiction-george-saunders
 test_url: https://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
 test_url: https://www.newyorker.com/reporting/2013/04/22/130422fa_fact_bilger?currentPage=all&mobify=0
+test_url: https://www.newyorker.com/magazine/2023/11/20/a-coder-considers-the-waning-days-of-the-craft
 # Cartoons
 test_url: https://www.newyorker.com/cartoons/blitts-kvetchbook/a-man-of-substance
