@@ -1,0 +1,17 @@
+title: //meta[@property="og:title"]/@content
+author: //div[contains(concat(' ', normalize-space(@class), ' '), ' post-author ')]/p/a
+date: //meta[@property="article:published_time"]/@content
+body: //div[@class="content-container"]/article
+
+find_string: <div class="ending-byline"
+replace_string: <strong
+
+strip: //div[@class="featured-image"]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' post-author ')]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' newsletter-wrapper ')]
+strip: //div[@class="related-articles"]
+strip: //div[@class="sponsored-content"]
+
+test_url: https://forward.com/opinion/415250/from-the-river-to-the-sea-doesnt-mean-what-you-think-it-means/
+test_url: https://forward.com/news/568289/jewish-on-campus-college-conflict-israel-hamas-gaza-war/
+test_url: https://forward.com/culture/568817/baal-shem-tov-dovbush-ukraine-luzer-twersky/
