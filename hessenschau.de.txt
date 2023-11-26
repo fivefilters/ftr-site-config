@@ -1,4 +1,4 @@
-# Author: HolgerAusB  |  Version: 2023-08-26
+# Author: HolgerAusB  |  Version: 2023-11-26
 #
 # to get a source-feed by replacing index.html with index.rss, e.g.
 #    https://www.hessenschau.de/index.rss
@@ -31,7 +31,6 @@ strip_id_or_class: u-content-spacer
 strip: //aside[contains(@class, 'dontPrint')]
 strip: //blockquote[contains(@class, 'dontPrint')]
 
-
 # as this is a television and radio channel site, tidy up embedded video and audio
 strip_id_or_class: hideCompletely
 strip_id_or_class: c-form__button
@@ -46,6 +45,10 @@ replace_string: <span aria-label="Audioseite">zur Audioseite: <
 # show related articles as blockquote (wallabag)
 replace_string(<aside): <blockquote
 replace_string(</aside): </blockquote
+
+# remove subscription to WhatsApp Channel
+strip: //a[@href='https://whatsapp.com/channel/0029VaDcqVJAu3aJgJtKhX25']/parent::aside
+strip: //a[@href='https://whatsapp.com/channel/0029VaDcqVJAu3aJgJtKhX25']/parent::blockquote
 
 # needed for wallabag
 find_string: >Formular <
