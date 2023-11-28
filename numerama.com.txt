@@ -4,6 +4,17 @@ author: //article//div[contains(@class, 'is-hidden-mobile')]//a[contains(@href, 
 # parser: html5lib
 replace_string("</div>"): "&lt;/div&gt;"
 
+find_string: w,https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/
+replace_string: w, https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/
+find_string: resize=928, 522
+replace_string: resize=928,522
+find_string: resize=768, 432
+replace_string: resize=768,432
+find_string: resize=480, 270
+replace_string: resize=480,270
+find_string: resize=512, 288
+replace_string: resize=512,288
+
 body: //div[contains(@class, 'post-content')]
 
 strip: //span[@class='summary-entry']
