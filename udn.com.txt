@@ -1,0 +1,8 @@
+title: //h1[@class='article-content_title']
+author: //span[@class='article-content_author']
+date: //time[@class='article-content_time']
+body: //article[@class='article-content']
+
+strip: //figure[@class='article-content_cover']
+
+test_url: https://udn.com/news/story/123475/7600512
