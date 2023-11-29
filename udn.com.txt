@@ -1,8 +1,8 @@
-title: //h1[@class='article-content_title']
-author: //span[@class='article-content_author']
-date: //time[@class='article-content_time']
-body: //article[@class='article-content']
+title: //h1[@class='article-content__title']
+author: //span[@class='article-content__author']
+date: //time[@class='article-content__time']
+body: //section[@class='article-content__editor']
 
-strip: //figure[@class='article-content_cover']
+strip: //figure[@class='article-content__cover']
 
 test_url: https://udn.com/news/story/123475/7600512
