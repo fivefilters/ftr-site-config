@@ -1,7 +1,7 @@
 title: //h1[@class='article-content__title']
-author: //span[@class='article-content__author']
+author: //span[normalize-space(@class)='article-content__author']
 date: //time[@class='article-content__time']
-body: //section[@class='article-content__editor']
+body: //section[contains(@class, 'article-content__editor')]/p
 
 strip: //figure[@class='article-content__cover']
 
