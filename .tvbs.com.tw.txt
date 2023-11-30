@@ -1,7 +1,15 @@
 title: //h1[@class='title']
 body: //div[@class='article_content']
+
 strip: //div[@class='guangxuan']
 strip: //p[contains(text(),'👉')]
 strip: //span[@class='endtext']
+
+#activating images
+find_string: " src="https://cc.tvbs.com.tw/img/
+replace_string: " foosrc="https://cc.tvbs.com.tw/img/
+
+find_string: data-original="https://cc.tvbs.com.tw/img/
+replace_string: x src="https://cc.tvbs.com.tw/img/
 
 test_url: https://news.tvbs.com.tw/world/2321803
