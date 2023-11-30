@@ -9,6 +9,10 @@ strip_id_or_class: newsletter_wrapper
 strip_id_or_class: embed_newsletter
 strip_id_or_class: img_author-headshot-bottom-wrapper
 strip_id_or_class: img_author-headshot-bottom
+# Ads
+strip_id_or_class: arcticle-ad-block-wrapper
+strip_id_or_class: article_marketplace-ad
+strip_id_or_class: randomized_ads-list-wrapper
 
 replace_string(<div class="text-author-name-big">By</div>):<span class="text-author-name-big">By </span>
 
