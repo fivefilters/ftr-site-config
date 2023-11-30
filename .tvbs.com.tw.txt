@@ -1,0 +1,7 @@
+title: //h1[@class='title']
+body: //div[@class='article_content']
+strip: //div[@class='guangxuan']
+strip: //p[contains(text(),'👉')]
+strip: //span[@class='endtext']
+
+test_url: https://news.tvbs.com.tw/world/2321803
