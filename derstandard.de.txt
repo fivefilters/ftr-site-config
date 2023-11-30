@@ -2,6 +2,7 @@
 ##  derstandard.at.txt  and  derstandard.de.txt
 ##              ^^                       ^^
 
+# for sub-feeds you need to use the .at instead of .de version
 # choose your feed here:
 # https://about.derstandard.at/newsletter/rss-feeds/
 
@@ -43,8 +44,5 @@ http_header(Cookie): DSGVO_ZUSAGE_V1=true
 prune: no
 tidy: no
 
-test_url: http://derstandard.at/rss
-test_url: http://derstandard.at/2000033602592/40-Jahre-fuer-einen-der-nicht-gemeinsam-leben-wollte
-test_url: http://derstandard.at/2000031826169/Die-Mittagspause-ist-den-meisten-heilig
-test_url: http://derstandard.at/2000032076109/Fordern-wir-die-totale-Ueberwachung
-test_url: https://www.derstandard.at/jetzt/livebericht/2000135273905/uno-generalsekretaer-guterres-trifft-in-kiew-und-am-donnerstag-selenskyj?responsive=false
+test_url: https://derstandard.de/rss
+test_url: https://www.derstandard.de/story/3000000196781/comeback-der-kinderarbeit-in-den-usa-nach-schulschluss-gehts-ins-kuehlhaus
