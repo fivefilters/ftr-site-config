@@ -1,3 +1,7 @@
+## if you change anything, make shure you copy this between
+##  derstandard.at.txt  and  derstandard.de.txt
+##              ^^                       ^^
+
 # choose your feed here:
 # https://about.derstandard.at/newsletter/rss-feeds/
 
