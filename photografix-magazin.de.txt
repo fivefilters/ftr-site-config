@@ -1,0 +1,2 @@
+next_page_link: //link[@rel='next']
+
