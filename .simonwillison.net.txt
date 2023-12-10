@@ -4,6 +4,9 @@ body: //body/section[1]
 
 strip: //body/section[1]/h1[1]
 
+# needed for FTR to prevent loading a preview screenshot image of the article
+insert_detected_image: no
+
 prune: no
 tidy: no
 
