@@ -1,4 +1,6 @@
 title: //div[contains(@class,'woman_article')][1]/h1
+body: //div[contains(@class,'woman_article')][1]
+body: //article[@class='break-words'][1]
 author: //span[@aria-label='article author'][1]
 date: //span[@aria-label='publish time'][1]
 
