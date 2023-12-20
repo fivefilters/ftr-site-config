@@ -1,0 +1,16 @@
+title: //h1
+
+find_string: class="wp-block-heading"
+replace_string: class="wb_foo"
+
+requires_login: yes
+
+login_uri: https://next.ink/wp-admin/admin-ajax.php
+login_username_field: username
+login_password_field: password
+
+login_extra_fields: action=ajaxlogin
+login_extra_fields: security=@=xpath('//input[@name="security"]', request_html('https://next.ink/login/'))
+
+not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' content-form-account-paywall ')]
+
