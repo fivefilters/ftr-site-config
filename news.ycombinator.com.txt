@@ -1,5 +1,12 @@
+body: //table[@class='comment-tree']
+date: substring-after(//a[contains(@href, 'item?id=')] , 'on ')
+
 strip_comments: no
 strip: //a[. = 'reply']
+
 replace_string("comment"): "commdiv"
 next_page_link: //a[@class='morelink']
-test_url: http://news.ycombinator.com/item?id=1516461
+
+prune: no
+
+test_url: https://news.ycombinator.com/item?id=1516461
