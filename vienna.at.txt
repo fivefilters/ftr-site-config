@@ -1,0 +1,22 @@
+body: //div[@class='vodl-region-article']/div[1]
+
+strip_id_or_class: vodl-region-article__category-label
+strip_id_or_class: vodl-region-article__title-wrapper
+strip_id_or_class: vodl-region-article__author-box-wrapper
+strip_id_or_class: vodl-region-article__content-bottom
+
+strip: //svg
+strip: //button
+
+strip: //div[@data-type='embed']
+strip: //div[@data-type='video']
+
+prune: no
+tidy: no
+
+# activate lead image for wallabag
+strip: //picture/source
+strip: //picture/img/@srcset
+
+test_url: https://www.vienna.at/s-bahn-ring-mit-zwei-linien-in-wien-plane-nehmen-form-an/8464186
+test_url: https://www.vienna.at/erste-e-busse-der-wiener-linien-in-der-stadt-unterwegs/8455546
