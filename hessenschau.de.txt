@@ -1,4 +1,4 @@
-# Author: HolgerAusB  |  Version: 2023-11-26
+# Author: HolgerAusB  |  Version: 2023-12-27
 #
 # to get a source-feed by replacing index.html with index.rss, e.g.
 #    https://www.hessenschau.de/index.rss
@@ -16,6 +16,7 @@ strip: //header
 strip: //footer
 strip: //button
 strip: //form
+strip: //svg
 
 # strip some navigation clutter
 strip_id_or_class: c-contentHeader__author
@@ -24,7 +25,6 @@ strip_id_or_class: dataPolicySettings__description
 strip_id_or_class: additionalInfo
 strip_id_or_class: contentFooter
 strip_id_or_class: region--appendix
-strip_id_or_class: unbreakable
 strip_id_or_class: o-box
 strip_id_or_class: u-content-spacer
 
