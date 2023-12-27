@@ -1,3 +1,5 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/123.0
+
 # July 2020 redesign
 
 tidy: no
@@ -7,6 +9,9 @@ title: //article[@data-area="article"]/@aria-label
 author: //meta[@name="author"]/@content
 date: //meta[@name="date"]/@content
 body: //article[@data-area="article"]//header//div[contains(@class, 'leading-loose')] | //div[@data-article-el="body"]
+
+# Remove subscription advertiser
+strip: //div[@data-area='paywall']
 
 # Remove video with lots of inner tags
 strip_id_or_class: jwplayer
