@@ -1,0 +1,10 @@
+body: //div[@itemprop="articleBody"]
+
+strip: //div[@itemprop="articleBody"]//h1
+strip: //div[@id="table-of-contents"]
+strip: //a[contains(concat(' ',normalize-space(@class),' '),' headerlink ')]
+
+prune: no
+
+test_url: https://docs.opnsense.org/manual/firewall_generic.html
+test_url: https://docs.opnsense.org/manual/dhcp.html
