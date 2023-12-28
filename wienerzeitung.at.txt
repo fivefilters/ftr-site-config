@@ -1,13 +1,21 @@
+body: //body/div[contains(@class, 'w-full')]
 title:  //header/div/h1[1]
 author: //header/div/ul/li/a
-date: //header/div/div/span[starts-with(text(), '0') or starts-with(text(), '1') or starts-with(text(), '2') or starts-with(text(), '3')]
-body: //body/div[contains(@class, 'w-full')]
+date: //time
 
 prune: no
 
-strip: //h2[text()='Andere Inhalte']/parent::section
 strip: //nav/parent::div
 strip: //header
 strip: //footer
+strip: //svg
+
+# strip links to unrelated topics, newsletter
+strip: //h2[text()='Andere Inhalte']/parent::section
+strip: //a[contains(@href, '/newsletter')]/parent::div
+
+# activating images for wallabag
+strip_attr: //img/@srcset
 
 test_url: https://www.wienerzeitung.at/a/die-moeglichkeit-einer-wiese
+test_url: https://www.wienerzeitung.at/a/immer-weniger-schulreisen-warum-das-ein-problem-ist
