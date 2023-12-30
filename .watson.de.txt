@@ -1,6 +1,7 @@
-# Author: HolgerAusB  |  Version: 2023-12-30
+# Author: HolgerAusB  |  Version: 2023-12-31
 #
-# please copy all changes between .watson.de.txt and watson.de.txt
+# PLEASE COPY all changes between  watson.de.txt  and  .watson.de.txt
+#                             and  watson.ch.txt  and
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' watson-story__content ')]
 title: //div[contains(concat(' ',normalize-space(@class),' '),' watson-story__content ')]//h2[1]
@@ -16,6 +17,7 @@ strip_id_or_class: watson-autocontext__stories
 strip_id_or_class: watson-autocontext
 strip_id_or_class: watson-infobox-editorial
 strip_id_or_class: watson-navigation__sidelink
+strip_id_or_class: watson-poll
 strip_id_or_class: watson-snippet__authorbox
 strip_id_or_class: watson-snippet__authorbox-container
 strip_id_or_class: watson-snippet__shareBubbles
