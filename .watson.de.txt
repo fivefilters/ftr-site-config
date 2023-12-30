@@ -20,6 +20,7 @@ strip_id_or_class: watson-navigation__sidelink
 strip_id_or_class: watson-poll
 strip_id_or_class: watson-snippet__authorbox
 strip_id_or_class: watson-snippet__authorbox-container
+strip_id_or_class: watson-snippet__authors
 strip_id_or_class: watson-snippet__shareBubbles
 strip_id_or_class: watson-snippet__shareBubbles__updated
 strip_id_or_class: watson-snippet__uppertitle
