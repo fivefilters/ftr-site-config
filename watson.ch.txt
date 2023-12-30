@@ -1,0 +1,35 @@
+# Author: HolgerAusB  |  Version: 2023-12-31
+#
+# PLEASE COPY all changes between  watson.de.txt  and  .watson.de.txt
+#                             and  watson.ch.txt  and
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' watson-story__content ')]
+title: //div[contains(concat(' ',normalize-space(@class),' '),' watson-story__content ')]//h2[1]
+author: substring-before(substring-after(//script[@id='datalayer'] , 'storyAuthor":"') , '","storyDate')
+date: substring-before(substring-after(//script[@id='datalayer'] , 'modifiedDate":"') , '","')
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' watson-story__content ')]//h2[1]
+
+strip_id_or_class: table-of-contents
+strip_id_or_class: watson-autocontext__stack
+strip_id_or_class: watson-autocontext__stories__title
+strip_id_or_class: watson-autocontext__stories
+strip_id_or_class: watson-autocontext
+strip_id_or_class: watson-infobox-editorial
+strip_id_or_class: watson-navigation__sidelink
+strip_id_or_class: watson-poll
+strip_id_or_class: watson-snippet__authorbox
+strip_id_or_class: watson-snippet__authorbox-container
+strip_id_or_class: watson-snippet__authors
+strip_id_or_class: watson-snippet__shareBubbles
+strip_id_or_class: watson-snippet__shareBubbles__updated
+strip_id_or_class: watson-snippet__uppertitle
+strip_id_or_class: insert.side.watson-autocontext.de-DE
+
+tidy: no
+prune: no
+
+test_url: https://www.watson.ch/api/1.0/rss.xml?tag=EU
+test_url: https://www.watson.ch/api/1.0/rss.xml?tag=Schweiz
+test_url: https://www.watson.ch/wissen/schweiz/457641772-gallisch-und-lateinisch-im-mittelland
+test_url: https://www.watson.ch/fr/international/animaux/740907649-les-autorites-americaines-veulent-abattre-500-000-chouettes
