@@ -29,7 +29,7 @@ strip_id_or_class: insert.side.watson-autocontext.de-DE
 tidy: no
 prune: no
 
-test_url: https://www.watson.de/api/1.0/rss.xml?tag=EU
-test_url: https://www.watson.de/api/1.0/rss.xml?tag=Deutschland
-test_url: https://www.watson.de/deutschland/exklusiv/662037048-silvester-2023-das-hat-deutschlands-spitzenpolitik-zum-laecheln-gebracht
-test_url: https://www.watson.de/nachhaltigkeit/gute%20nachricht/379030872-projekt-in-australien-will-seltene-seepferdchen-retten
+test_url: https://www.watson.ch/api/1.0/rss.xml?tag=EU
+test_url: https://www.watson.ch/api/1.0/rss.xml?tag=Schweiz
+test_url: https://www.watson.ch/wissen/schweiz/457641772-gallisch-und-lateinisch-im-mittelland
+test_url: https://www.watson.ch/fr/international/animaux/740907649-les-autorites-americaines-veulent-abattre-500-000-chouettes
