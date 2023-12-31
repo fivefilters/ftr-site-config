@@ -1,0 +1,4 @@
+next_page_link: //a[contains(text(), 'Fortsetzung auf Seite')]
+
+test_url: https://www.digitalkamera.de/Testbericht/Fujifilm_X-T5_im_Test/13386.aspx
+
