@@ -1,0 +1,11 @@
+body: //div[@id='ctl00_ctl00_ctl00_ContentCenterObenMain_ContentCenter_ContentCenter_divLangMeldung']
+
+strip_id_or_class: infobox
+
+next_page_link: //a[contains(text(), 'Fortsetzung auf Seite')]
+
+# preventing wallabag to strip teaser section
+find_string: class="teaser"
+replace_string: class="wb_foo"
+
+test_url: https://www.digitalkamera.de/Testbericht/Fujifilm_X-T5_im_Test/13386.aspx
