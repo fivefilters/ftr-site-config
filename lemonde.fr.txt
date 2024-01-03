@@ -41,6 +41,9 @@ strip: //p[@class='article__quote']/parent::blockquote
 strip: //ul[contains(@class, 'meta__social')]
 strip: //a[contains(@class, 'Header__offer')]
 
+# Remove gift modal
+strip_id_or_class: article__gift-modal
+
 # Remove the insane "conjugaison.lemonde.fr" links:
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
 replace_string: <input type='hidden' style='display:none;' 
