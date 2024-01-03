@@ -44,4 +44,4 @@ strip_id_or_class: id-Article-advert
 
 tidy: no
 prune: no
-test_url: https://www.oberhessische-zeitung.de/hessen/zugausfaelle-zwischen-frankfurt-und-fulda-wegen-bauarbeiten-zr-92755411.html
+test_url: https://www.lauterbacher-anzeiger.de/hessen/zugausfaelle-zwischen-frankfurt-und-fulda-wegen-bauarbeiten-zr-92755411.html
