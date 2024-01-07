@@ -1,0 +1,6 @@
+body: //main
+
+strip: //svg
+
+test_url: https://www.pandemicequityinitiative.com/hold-misinformation-lies-betrayal
+test_contains: Here’s the truth: the pandemic is not over
