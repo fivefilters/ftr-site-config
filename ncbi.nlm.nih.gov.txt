@@ -3,18 +3,14 @@
 # Source: http://siteconfig.fivefilters.org/grab.php?url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC4157320%2F
 
 author: //div[contains(concat(' ',normalize-space(@class),' '),' fm-author ')]/a
-body: //div[@id='maincontent']
-
-
+body: //article
 
 prune: no
+
 strip_id_or_class: fm-sec
 strip_id_or_class: pmc-page-banner
 
 test_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4157320/
 test_contains: Infectious diseases continue to pose a tremendous burden of disease worldwide
-
-body: //article
-
 test_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10222767/
 test_contains: Less than a year after the global emergence of the coronavirus SARS-CoV-2
