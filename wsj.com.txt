@@ -39,6 +39,8 @@ strip: //div[contains(@class, 'article-byline')]/parent::div
 strip: //h1[1]
 strip: //div[@aria-label='Sponsored Offers']
 strip: //div[@aria-label='What to Read Next']
+strip: //div[@aria-label='Utility Bar']
+strip: //div[@data-type='inset']
 
 author: //a[contains(@class, 'AuthorLink')]
 
