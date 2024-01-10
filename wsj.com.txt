@@ -1,5 +1,5 @@
 http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
-http_header(referer): https://www.wsj.com
+http_header(referer): https://www.drudgereport.com
 
 # WSJ uses paywall. If you have a subscription, you can use
 # the browser plugin 'wallabagger' to fetch complete article for wallabag if
