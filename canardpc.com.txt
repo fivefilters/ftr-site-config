@@ -3,6 +3,7 @@ body: //div[contains(@class, 'post-content')]
 author: //div[@class="post-informations"]//a[@class="highlight"]
 
 strip: //div[@class="post-informations"]
+strip: //div[contains(@class, 'slick-cloned')]
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
