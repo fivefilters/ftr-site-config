@@ -1,0 +1,8 @@
+body: //div[@class='entry-content']
+strip_id_or_class: bcac-item
+strip_id_or_class: crp_related
+strip_id_or_class: optin-after-content
+strip: //h2
+
+test_url: https://journal.markusthoma.com/gegenlicht-fotografie/
+
