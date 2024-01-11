@@ -1,0 +1,12 @@
+title: //h1
+author: //author
+date: //date
+body: //div[contains(concat(' ',normalize-space(@class),' '),' cb_picture ')] | //div[contains(concat(' ',normalize-space(@class),' '),' cb_textelement ')] | //div[contains(concat(' ',normalize-space(@class),' '),' cb_tabelle ')]
+strip_id_or_class: bcac-item
+strip: //div[contains(text(), "Lesetipp:")]/parent::div
+prune: no
+tidy: no
+
+test_url: https://www.elektroautomobil.com/newsbeitrag/erste-fahrt-porsche-macan-electric/
+test_url: https://www.elektroautomobil.com/newsbeitrag/vorstellung-lucid-gravity/
+
