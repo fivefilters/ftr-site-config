@@ -26,6 +26,9 @@ strip: //p[contains(@class, 'humanoid-videos--title')]
 strip: //a[contains(@class, 'humanoid-videos__video-title')]
 strip: //div[contains(@class, 'embed-consent-overlay')]
 strip: //div[contains(@class, "user-options")]
+strip: //aside[contains(@class, 'premium-promo-alert')]
+strip: //div[contains(@class, 'premium-promo-alert')]
+
 strip_id_or_class: js-cookies-bar
 # Here we strip a malformed menu they insert sometimes that breaks tidying and pruning
 strip_id_or_class: index-menu
