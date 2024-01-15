@@ -21,6 +21,10 @@ replace_string(&nbsp;):
 # general clean-up
 strip: //p[@class='back']
 
+# fix missing trailing slash in image url
+find_string: src="files/img/
+replace_string: src="/files/img/
+
 prune: no
 
 # tests
