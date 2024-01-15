@@ -1,0 +1,4 @@
+strip_id_or_class: bcac-item
+
+test_url: https://www.china-gadgets.de/blitzwolf-bw-v7-beamer/
+
