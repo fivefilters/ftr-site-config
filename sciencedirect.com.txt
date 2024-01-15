@@ -1,0 +1,26 @@
+# sciencedirect is a java script only site. At the moment there
+# is no way to catch full text with FTR or with wallabag's UI
+#
+# however you can catch full text with wallbag when using the
+# browser plugin 'wallabagger' with activated option:
+# 'Content fetching from the browser'
+
+body: //article[1]
+
+# title, author, date are not handled when using wallabager, at the moment.
+title: //meta[@property='og:title']/@content
+author: //button[@data-xocs-content-type='author']
+date: //meta[@name='citation_online_date']/@content
+date: //meta[@name='citation_publication_date']/@content
+
+strip_id_or_class: screen-reader-main-title
+strip_id_or_class: banner
+strip_id_or_class: LicenseInfo
+strip_id_or_class: issue-navigation
+strip_id_or_class: related-content-links
+strip_id_or_class: u-hide-from-md
+
+prune: no
+
+test_url: https://www.sciencedirect.com/science/article/pii/S2667239122000077
+test_url: https://www.sciencedirect.com/science/article/pii/S2667239123000187
