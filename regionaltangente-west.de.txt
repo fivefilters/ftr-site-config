@@ -24,6 +24,10 @@ replace_string: <img src='
 
 replace_string(&nbsp;):
 
+# fix missing trailing slash in image url
+find_string: src="files/img/
+replace_string: src="/files/img/
+
 prune: no
 
 test_url: https://www.regionaltangente-west.de/baustellenblog-reader/vollsperrung-des-forstwegs-an-der-gehespitz.html
