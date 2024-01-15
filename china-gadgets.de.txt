@@ -1,0 +1,4 @@
+strip_id_or_class: bcac-item
+strip_id_or_class: ez-toc-container
+
+test_url: https://www.china-gadgets.de/blitzwolf-bw-v7-beamer/
