@@ -51,6 +51,7 @@ strip: //video
 strip: //span/span[contains(text(), 'Credit')]
 strip: //span/span/span[contains(text(), 'Credit')]
 strip: //img[contains(@class, 'post-screenshot')]
+strip: //section[@data-testid="inline-interactive"]
 
 # August 2022
 strip_id_or_class: sponsor-wrapper
