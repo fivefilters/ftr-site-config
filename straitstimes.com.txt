@@ -1,0 +1,23 @@
+body: //div[@id='main']
+author: //div[@class='field-byline']/p
+author: //a[contains(@href, "/authors/")]
+
+strip_id_or_class: paywall-container
+strip_id_or_class: cx_paywall_area
+strip_id_or_class: group-byline-info
+
+strip: //header
+strip: //div[@class='group-story-timestamp']/parent::div
+strip: //div[contains(@class, '-twig-fieldnode-')]
+
+# fix iframe with youtube
+find_string: <iframe src="/media/oembed?url=https%3A//www.youtube.com
+replace_string: <iframe src="https://www.straitstimes.com/media/oembed?url=https%3A//www.youtube.com
+strip: //iframe/@width
+strip: //iframe/@height
+
+prune: no
+tidy: no
+
+test_url: https://www.straitstimes.com/asia/east-asia/new-mature-look-of-kim-jong-un-s-daughter-said-to-set-stage-for-possible-succession
+test_url: https://www.straitstimes.com/singapore/what-s-ahead-for-singapore-in-2024
