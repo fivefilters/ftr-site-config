@@ -1,0 +1,22 @@
+# nitter.net is blocking non-human crawlers, so 
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/123.0
+http_header(referer): https://nitter.net/
+
+body: //div[@class='conversation']
+body: //div[@class='timeline']
+
+strip_id_or_class: tweet-stats
+
+prune: no
+tidy: no
+
+# no real test_url due to privacy
+test_url: https://nitter.net/Username
+test_url: https://nitter.net/Username/status/1234567890123456789
