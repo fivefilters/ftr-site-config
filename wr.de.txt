@@ -33,6 +33,5 @@ native_ad_clue: //h2[contains(@class, 'article__header__headline') and contains(
 prune: no
 tidy: no
 
-test_url: https://www.wp.de/rss
-test_url: https://www.wp.de/region/sauer-und-siegerland/kommunen-kritisieren-gehackte-sit-verstaendnis-nimmt-ab-id240777190.html
-test_url: https://www.wp.de/region/sauer-und-siegerland/retter-fuer-obdachlose-ich-brauche-das-um-leben-zu-koennen-id241471470.html
+test_url: https://www.wr.de/rss
+test_url: https://www.wr.de/region/rhein-und-ruhr/kaelte-in-nrw-das-waren-die-frostigsten-winter-aller-zeiten-id234256243.html
