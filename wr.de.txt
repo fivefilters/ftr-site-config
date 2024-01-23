@@ -1,0 +1,37 @@
+# @funke_nrw site
+
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+http_header(referer): https://www.wp.de/
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
+
+strip: //time/parent::div
+strip: //div[@id='offer_below_article']/self::div | //div[@id='offer_below_article']/following-sibling::*
+strip: //a/strong[contains(text(), 'Newsletter')]/ancestor::aside
+strip: //h3[contains(text(), 'Mehr zum Thema')]/self::h3 | //h3[contains(text(), 'Mehr zum Thema')]/following-sibling::div
+strip: //h3[contains(text(), 'Lesen Sie auch')]/self::h3 | //h3[contains(text(), 'Lesen Sie auch')]/following-sibling::div
+strip: //div[@class='video-autoplay']/parent::figcaption
+
+strip: //figcaption/div[@class='rights']
+strip_id_or_class: hero-img__credits
+strip_id_or_class: content--teaser--container
+strip_id_or_class: hero-img__caption-toggle
+strip_id_or_class: newsletter-cleverreach
+
+
+# activating image galary ('carousel')
+find_string: data-srcset="https
+replace_string: srcset="https
+
+# Prevent FTR to load generic image when article has no images inside
+insert_detected_image: no
+
+# Prevent FTR from loading advertisement-articles, which are seperate items in rss feed
+native_ad_clue: //article[contains(@class, 'subtype-sales')]
+native_ad_clue: //h2[contains(@class, 'article__header__headline') and contains(text(), 'Apotheken-Notdienst')]
+
+prune: no
+tidy: no
+
+test_url: https://www.wr.de/rss
+test_url: https://www.wr.de/region/rhein-und-ruhr/kaelte-in-nrw-das-waren-die-frostigsten-winter-aller-zeiten-id234256243.html
