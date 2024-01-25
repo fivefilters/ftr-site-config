@@ -42,6 +42,10 @@ replace_string:
 
 http_header(Cookie): DSGVO_ZUSAGE_V1=true
 
+# wallabagger only: enlarge embeded video
+find_string: <iframe data-ratio="16:9"
+replace_string: <iframe width="640" height="360" data-ratio="16:9"
+
 prune: no
 tidy: no
 
