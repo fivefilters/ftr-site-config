@@ -13,6 +13,10 @@ http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.goo
 # so get rid of the noscript tag altogether.
 replace_string(<noscript): <foo
 
+# figures sometimes have multiple versions due to theming (I think), selected by JavaScript
+# strip all image variants, but the first one
+strip:  //div[@class='g-artboard']/parent::div/div[position() > 1]
+
 title: //meta[@property='og:title']/@content
 date: //meta[@name='date']/@content
 
@@ -43,6 +47,7 @@ author: substring-after(//span[@class='metadata__source'], 'Quelle: ')
 
 body: //header//img | //div[@class='summary' or contains(@class, 'article-body') or @class='byline']
 body: //main/article/div[@itemprop='articleBody']
+body: //main/article[1]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page ')]
 
 strip: //h2[@class='visually-hidden']
@@ -54,6 +59,7 @@ strip: //figure[@data-video-provider="brightcove"]
 strip: //a[contains(concat(' ',normalize-space(@class),' '),' faq-link ')]
 strip_id_or_class: embed-wrapper__inner
 strip_id_or_class: article-footer
+strip_id_or_class: zplus-badge
 strip: //footer
 
 # needed for wallabag, without that, everything after
@@ -95,3 +101,4 @@ test_url: http://www.zeit.de/zeit-magazin/2015/52/cyberstalking-internet-stalker
 test_url: http://www.zeit.de/zeit-magazin/2017/46/harald-martenstein-ddr-toastbrot
 test_url: https://www.zeit.de/wissen/gesundheit/2020-10/corona-mundschutz-alltag-maske-infektionsschutz-hygiene-ratgeber-faq
 test_contains: Die bisherigen Hygieneregeln in Restaurants
+test_url: https://www.zeit.de/2024/04/landwirtschaft-indien-oeko-duenger-zukunft/komplettansicht
