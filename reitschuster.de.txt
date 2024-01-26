@@ -1,0 +1,15 @@
+body: //main[@id='main']
+author: //meta[@name='author']/@content
+
+strip_id_or_class: elementor-widget elementor-widget-sidebar
+strip_id_or_class: elementor-widget-post-comments
+strip_id_or_class: elementor-widget-shortcode
+strip_id_or_class: elementor-widget-post-info
+strip_id_or_class: elementor-widget-theme-post-title
+
+# remove everything after the article
+strip: //a[contains(@href, 'https://buy.stripe.com/')]/ancestor::div[contains(@class,'message-box')]/self::* | //a[contains(@href, 'https://buy.stripe.com/')]/ancestor::div[contains(@class,'message-box')]/following-sibling::text() | //a[contains(@href, 'https://buy.stripe.com/')]/ancestor::div[contains(@class,'message-box')]/following-sibling::*
+
+prune: no
+
+test_url: https://reitschuster.de/feed/
