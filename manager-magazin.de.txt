@@ -1,4 +1,5 @@
-# author: HolgerAusB  |  version 2023-02-19
+# author: HolgerAusB  |  version 2024-01-26
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/123.0
 
 body: //article
 
@@ -8,6 +9,8 @@ strip: //button
 strip: //div[contains(@class, 'mt-8')]
 strip: //svg[@id='mmo-mmplus-flag-l']
 strip: //aside[@aria-label='Artikel zum Hören']
+
+strip: //div[@data-target-id='paywall']
 
 test_url: https://www.manager-magazin.de/finanzen/index.rss
 test_url: https://www.manager-magazin.de/unternehmen/autoindustrie/continental-mit-milliardenverlust-a-1305227.html
