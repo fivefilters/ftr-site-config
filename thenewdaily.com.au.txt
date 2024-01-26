@@ -1,0 +1,11 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/120.0
+
+title: //h1[contains(concat(' ', normalize-space(@class), ' '), ' text-article-title ')]
+author: //span[contains(concat(' ', normalize-space(@class), ' '), ' underline ')]
+body: //main//p[contains(concat(' ', normalize-space(@class), ' '), ' text-article-body ')] | //main//img[contains(concat(' ', normalize-space(@class), ' '), ' w-full ')]
+
+# get rid of the more links, very brittle
+strip: //main/div[5]
+
+test_url: https://www.thenewdaily.com.au/news/politics/2024/01/10/stage-three-tax-cuts-2024
+test_contains: As Prime Minister Anthony Albanese refuses
