@@ -13,3 +13,4 @@ find_string: \varvec{
 replace_string: {
 
 test_url: https://link.springer.com/article/10.1007/s42113-023-00193-2
+test_url: https://link.springer.com/article/10.1007/s41884-023-00119-8
