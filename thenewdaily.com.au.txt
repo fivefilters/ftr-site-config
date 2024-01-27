@@ -1,5 +1,6 @@
 # Website uses techniques to prevent bots from getting content
-# this works only with 'Wallabagger', an extension for desktop browser
+# if this is effecting you, please try to use
+# 'Wallabagger', an extension for desktop browsers
 # with activated option 'Content fetching from the browser'
 
 http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/123.0
