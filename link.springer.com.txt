@@ -9,7 +9,7 @@ strip: //section[contains(@class, 'article-recommendations')]
 strip: //section[@aria-labelledby='article-info']
 
 # remove non-standard MathJax Symbol '/vertec'
-find_string: class="mathjax-tex">\(\varvec{
-replace_string: class="mathjax-tex">\({
+find_string: \varvec{
+replace_string: {
 
 test_url: https://link.springer.com/article/10.1007/s42113-023-00193-2
