@@ -1,0 +1,8 @@
+titl: //h1
+author: //div[contains(@class, 'topic__label--author')]
+// XXX: can't get the h2 header to be captured
+body: //article | //h2[contains(@class, 'topic__header--section')]
+strip_id_or_class: hide-on-print
+
+test_url: https://www.msdvetmanual.com/toxicology/food-hazards/raisin-and-grape-toxicosis-in-dogs
+test_contains: Xylitol toxicosis occurs in dogs after ingestion of xylitol
