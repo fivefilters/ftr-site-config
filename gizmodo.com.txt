@@ -7,11 +7,18 @@ strip_id_or_class: magnifier
 strip: //svg
 strip_id_or_class: js_commerce-inset-permalink
 strip_id_or_class: ad-commerce
+strip_id_or_class: ad-unit
+strip_id_or_class: ad-mobile
+strip_id_or_class: ad-container
+strip_id_or_class: js_ad-dynamic
+strip_id_or_class: js_ad-mobile-dynamic
+strip_id_or_class: ad-mobile-dynamic
+strip_id_or_class: advertisement
 
-parser: libxml
-
-prune: no
+tidy: yes
 
 strip: //aside
 
 test_url: https://gizmodo.com/the-new-bad-tick-is-going-to-take-over-half-the-united-1831079855
+test_url: https://gizmodo.com/iphone-apps-can-harvest-data-from-notifications-1851194537
+test_contains: This story has been updated with additional comments from LinkedIn.
