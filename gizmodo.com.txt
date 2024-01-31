@@ -15,6 +15,16 @@ strip_id_or_class: js_ad-mobile-dynamic
 strip_id_or_class: ad-mobile-dynamic
 strip_id_or_class: advertisement
 
+# [FTR] Stripping normally script-hidden div to prevent cutting article after 1st paragraph
+strip: //div[contains(@class,'sc-1needdh-')]
+
+# activate embeded youtube
+find_string: data-src="https://gizmodo.com/embed/inset/iframe?id=youtube-video-
+replace_string: src="https://www.youtube.com/embed/
+find_string: &amp;start=
+replace_string: " foo="
+
+prune: no
 tidy: yes
 
 strip: //aside
