@@ -1,0 +1,14 @@
+body: //main[1] | //div[@id='page-features']
+
+author: //attribute[@name='author']/@value
+author: //div[contains(@class, 'byline')]//div[@class='name']
+date: //attribute[@name='date']/@value
+date: //div[contains(@class, 'byline')]//div[@class='dates']/text()
+
+strip_id_or_class: join-community
+
+strip: //div [contains(@class, 'byline')]/ancestor::section[1]
+strip: //section[@class='subscribe-section']/self::section | //section[@class='subscribe-section']/following-sibling::section
+
+test_url: https://www.mercatornet.com/hosing_down_the_biggest_moral_panic_in_canadian_history
+test_url: https://www.mercatornet.com/europe_new_digital_identity_wallet
