@@ -4,12 +4,13 @@ strip_id_or_class: blog-item-top-wrapper
 strip_id_or_class: eapps-social-share-buttons-container
 strip_id_or_class: sqs-gallery-thumbnails
 strip_id_or_class: newsletter-form-wrapper
-strip_id_or_class: thumb-image
+
 strip_id_or_class: blog-item-author-profile-wrapper
 strip_id_or_class: blog-item-comments
 
-# need to show images in FTR
-replace_string(noscript>): div>
+# images from galery
+find_string: data-src="https://
+replace_string: src="https://
 
 prune: no
 
