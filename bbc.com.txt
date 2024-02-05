@@ -33,6 +33,7 @@ strip: //*[@data-analytics_group_name='More' or @data-analytics_group_name='Rela
 strip_image_src: grey-placeholder.png
 
 strip: //svg
+strip: //button
 
 #strip: //div[@class="story-feature narrow"]
 #strip: //div[@class="story-feature wide"]
