@@ -28,6 +28,9 @@ body: //div[contains(@class, 'hrecipe')]//div[@id='subcolumn-1']
 strip: //article//header
 strip: //div[contains(@class, "CommentsWrapper")]
 strip: //*[contains(@class, 'VisuallyHidden')]
+strip: //*[@data-testid='byline-role' or @data-testid='drawer-background' or @data-testid='main-footer']
+strip: //*[@data-analytics_group_name='More' or @data-analytics_group_name='Related']
+strip_image_src: grey-placeholder.png
 
 strip: //svg
 
