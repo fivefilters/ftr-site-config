@@ -1,14 +1,22 @@
-body: //body/div[contains(@class, 'w-full')]
+# concat main-article | lead image | h1 from second page (sources)
+body: //main[1] | //main[1]/preceding-sibling::div/figure | //header[1]/h1
+
 title:  //header/div/h1[1]
-author: //header/div/ul/li/a
+author: //meta[@name='author']/@content
 date: //time
 
 prune: no
 
 strip: //nav/parent::div
-strip: //header
 strip: //footer
 strip: //svg
+
+strip: //ul[contains(@class, 'scrollbar-hide')]/parent::div
+strip: //button[contains(text(), 'Cookie Einstellungen')]/ancestor::div[1]
+
+# load sources and additional infos for article
+strip: //a[substring(@href, string-length(@href) - string-length('/transparenz') + 1)  = '/transparenz']
+next_page_link: //a[substring(@href, string-length(@href) - string-length('/transparenz') + 1)  = '/transparenz']
 
 # strip links to unrelated topics, newsletter
 strip: //h2[text()='Andere Inhalte']/parent::section
