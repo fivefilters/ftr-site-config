@@ -22,3 +22,5 @@ tidy: no
 
 test_url: https://www.watchlist-internet.at/news/e-mail-von-dns-eu-ist-betruegerisch/
 test_url: https://www.watchlist-internet.at/news/unserioese-dirndl-shops-drohen-mit-anzeige-ignorieren-sie-die-nachrichten/
+# feed
+test_url: https://www.watchlist-internet.at/rss/
