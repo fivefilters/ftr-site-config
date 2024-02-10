@@ -1,0 +1,24 @@
+body: //article[1]//div[@id='content']//section[@class='content-wrapper'] | //header//p[@class='strapline']
+
+strip_id_or_class: after-article-tags
+strip_id_or_class: ad-unit
+strip_id_or_class: desktop-in-article
+strip_id_or_class: mobile-in-article
+strip_id_or_class: van_vid_carousel
+
+strip: //svg
+strip: //div[contains(@id, 'container-newsletterForm')]
+strip: //div[contains(@id, 'container-authorBio')]
+strip: //div[contains(@id, 'container-moreAbout')]
+
+# activate external images (unfortunately not galleries/carousels)
+find_string: data-original-mos="https://cdn.mos
+replace_string: src="https://cdn.mos
+
+prune: no
+tidy: no
+
+test_url: https://www.androidcentral.com/rss.xml
+test_url: https://www.androidcentral.com/apps-software/what-does-gemini-mean-for-google-assistant
+# galleries/caraousel don't work due to JavaScript, but wallabagger works:
+test_url: https://www.androidcentral.com/apps-software/myradar-android-auto-weather-app-launch
