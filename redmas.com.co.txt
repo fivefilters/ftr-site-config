@@ -1,0 +1,3 @@
+http_header(user-agent): Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0
+
+test_url: https://redmas.com.co/tecnologia/Clientes-prepago-pospago-y-hogar-de-Claro-tendran-acceso-sin-costo-a-100-GB-en-la-nube-20231004-0032.html
