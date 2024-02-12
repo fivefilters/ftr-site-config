@@ -1,6 +1,7 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content-block-regular ')]
 strip_id_or_class: adsninja-ad-zone
 strip_id_or_class: ad-zone-size-container
+strip: //div[contains(@class, 'article-card') and ./div/span[@data-field="label"]/text() = "Related"]
 http_header(user-agent): PHP/8.3
 
 test_url: https://www.androidpolice.com/2020/04/09/google-play-music-subscriptions-are-failing-to-auto-renew-for-some/
