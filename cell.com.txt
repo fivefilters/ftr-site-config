@@ -1,0 +1,21 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[@class='article__body']
+
+prune: no
+tidy: no
+
+strip: //button
+
+strip_id_or_class: left-side-nav
+strip_id_or_class: dropBlock__holder
+strip_id_or_class: accordion
+
+test_url: https://www.cell.com/cell/fulltext/S0092-8674(23)01349-1
+test_url: https://www.cell.com/cell/fulltext/S0092-8674(22)01377-0
