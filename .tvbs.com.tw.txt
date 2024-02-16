@@ -1,8 +1,11 @@
 title: //h1[@class='title']
 body: //div[@class='article_content']
-
+tidy: yes
+prune: yes
 strip: //div[@class='guangxuan']
 strip: //p[contains(text(),'👉')]
+strip: //div[@class='nolazydiv']
+strip: //div[@class='lazydiv']
 strip: //span[@class='endtext']
 
 #activating images
@@ -12,4 +15,4 @@ replace_string: " foosrc="https://cc.tvbs.com.tw/img/
 find_string: data-original="https://cc.tvbs.com.tw/img/
 replace_string: x src="https://cc.tvbs.com.tw/img/
 
-test_url: https://news.tvbs.com.tw/world/2321803
+test_url: https://news.tvbs.com.tw/life/2396562
