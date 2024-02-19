@@ -14,6 +14,7 @@ strip_id_or_class: aside
 strip_id_or_class: comment-widget
 strip_id_or_class: share-mobile
 strip_id_or_class: paywall
+strip_id_or_class: list-link-internal
 
 prune: no
 tidy: no
@@ -38,3 +39,5 @@ not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' co
 
 ###
 test_url: https://next.ink/120832/le-reseau-interministeriel-de-letat-rie-fete-ses-10-ans-et-se-modernise/
+test_url: https://next.ink/127657/edito-limportance-de-bien-citer-et-verifier-ses-sources/
+
