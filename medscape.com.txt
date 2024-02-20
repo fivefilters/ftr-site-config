@@ -1,0 +1,10 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__main-content ')]
+title: //h1[@class='article__title']
+author: //p[@class='meta__author-name']
+date: //p[@class='meta__date']
+
+prune: false
+tidy: true
+
+test_url: https://www.medscape.com/viewarticle/new-evidence-suggests-long-covid-could-be-brain-injury-2024a10002v0?form=fpf
+test_contains: Brain fog is one of the most common, persistent complaints in patients with long COVID.
