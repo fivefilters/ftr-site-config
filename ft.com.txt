@@ -11,6 +11,8 @@ strip_id_or_class: shareArt
 strip_id_or_class: promobox
 strip_id_or_class: n-content-pullquote__content
 strip_id_or_class: in-article-advert
+strip_id_or_class: flourish-disclaimer
+
 strip: //aside
 strip: //experimental
 
