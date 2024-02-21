@@ -1,4 +1,5 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article__content-body ')]
+body: //article[@id='article-body'] | //div[@class='main-image']
 body: //div[@id='storyContent']
 date: //meta[@property="article:published_time"]/@content
 author: //p[contains(@class, 'article-info__byline')]
@@ -6,6 +7,7 @@ author: //meta[@property="article:author"]/@content
 title: //meta[@property="og:title"]/@content
 
 prune: no
+tidy: no
 
 strip_id_or_class: shareArt
 strip_id_or_class: promobox
@@ -13,6 +15,7 @@ strip_id_or_class: n-content-pullquote__content
 strip_id_or_class: in-article-advert
 strip_id_or_class: flourish-disclaimer
 
+strip: //a[contains(@href, '/newsletter')]/ancestor::*[@class='n-content-layout']
 strip: //aside
 strip: //experimental
 
