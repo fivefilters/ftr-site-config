@@ -29,10 +29,6 @@ strip_id_or_class: div-block-135
 # newsletter overlay
 strip_id_or_class: div-block-501
 
-# removing space bevore question marks in subheadings. Which sometimes causes to have a
-# linebreak just before the '?'. See 2nd test_url
-replace_string( ?</h):?</h
-
 prune: no
 
 test_url: https://www.axiocap.com/blog/digitalisation-entreprises-reussir-transformation-ere-numerique
