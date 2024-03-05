@@ -43,6 +43,7 @@ strip: //a[contains(@class, 'Header__offer')]
 
 # Remove gift modal
 strip_id_or_class: article__gift-modal
+strip_id_or_class: reuse__content
 
 # Remove the insane "conjugaison.lemonde.fr" links:
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
@@ -78,3 +79,5 @@ test_url: http://www.lemonde.fr/big-browser/article/2017/10/27/assassinat-de-ken
 test_url: https://www.lemonde.fr/pixels/article/2018/07/14/douze-jeux-video-pour-s-amuser-a-plusieurs_5331269_4408996.html
 test_url: https://www.lemonde.fr/sante/video/2016/04/07/diabete-pourquoi-une-telle-progression-de-l-epidemie_4898147_1651302.html
 test_url: https://www.lemonde.fr/pixels/article/2023/12/20/manettes-de-playstation-sony-condamne-a-13-5-millions-d-euros-d-amende-pour-des-pratiques-anticoncurrentielles_6206941_4408996.html
+test_url: https://www.lemonde.fr/planete/article/2024/02/29/contre-le-frelon-asiatique-les-apiculteurs-appellent-a-la-mobilisation-generale_6219215_3244.html
+
