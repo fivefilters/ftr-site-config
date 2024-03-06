@@ -1,0 +1,16 @@
+body: //p[@class='article-details__description'] | //article/main
+author: substring-after( //p[@class='article-details__author-by']/text() , 'By: ')
+
+strip_id_or_class: article-details__bar
+strip_id_or_class: article-details__display-tag
+strip_id_or_class: article-details__title
+strip_id_or_class: article-details__author-by
+strip_id_or_class: article-details__icons
+strip_id_or_class: research-layout-divider
+
+strip: //sidebar
+
+prune: no
+
+test_url: https://www.trendmicro.com/en_us/research/24/c/unveiling-earth-kapre-aka-redcurls-cyberespionage-tactics-with-t.html
+test_url: https://www.trendmicro.com/en_us/research/17/c/winnti-abuses-github.html
