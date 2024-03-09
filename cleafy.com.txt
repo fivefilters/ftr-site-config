@@ -1,4 +1,5 @@
 body: //div[contains(@class, 'full blog')]
+title: //h1[@class='clabtitle']
 
 strip_id_or_class: author-block
 
