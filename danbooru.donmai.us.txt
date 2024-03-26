@@ -1,0 +1,30 @@
+http_header(user-agent): curl/7.83.1
+prune: no
+tidy: no
+
+body: //section[@id='content']
+title: substring-before( //title , ' | Danbooru')
+
+strip_id_or_class: post-notice-search
+strip_id_or_class: mark-as-translated-section
+strip_id_or_class: recommended
+strip_id_or_class: unhide-comment-link
+
+strip: //menu
+strip: //form
+strip: //a[contains(text(), 'Comments')]/parent::li/parent::*
+
+# activating video in wallabag, as <video> ist stripped
+find_string: data-source="https://www.youtube.com/watch?v=
+replace_string: ><iframe width="960" height="540" src="https://www.youtube.com/embed/
+
+find_string: data-file-url="
+replace_string: ></iframe><div foo="
+
+# [FTR] preventing to show the video twice
+strip: //video
+
+# [wallabag]
+wrap_in(blockquote): //div[@id='artist-commentary']
+
+test_url: https://danbooru.donmai.us/posts/7369941
