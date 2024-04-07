@@ -1,4 +1,6 @@
 body: //main
+date: //meta[@name='date']/@content
+author: //meta[@name='author']/@content
 
 next_page_link: //a[@title='Eine Seite vor']
 
@@ -8,6 +10,7 @@ strip: //div[@class='list list--mb']
 strip: //nav[@class='pagination']/following-sibling::* | //nav[@class='pagination']/self::nav
 strip_id_or_class: article__header
 strip: //em[contains(text(), 'Fortsetzung des Artikels')]/preceding-sibling::hr | //em[contains(text(), 'Fortsetzung des Artikels')]/following-sibling::hr[1] | //em[contains(text(), 'Fortsetzung des Artikels')]/self::em
+strip: //h3[@class='article__heading-related']/self::h3 | //h3[@class='article__heading-related']/preceding-sibling::hr | //h3[@class='article__heading-related']/following-sibling::*
 
 # rewrite images
 find_string: <source media="
