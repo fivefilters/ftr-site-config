@@ -1,0 +1,6 @@
+body: //article
+body: //div[contains(concat(' ',normalize-space(@class),' '),' co-project-display-name ')]
+date: //time
+prune: no
+strip_id_or_class: co-comment-box
+strip_id_or_class: co-thread-footer
