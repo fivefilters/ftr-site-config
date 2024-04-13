@@ -1,0 +1,14 @@
+body: //div[@id='content']
+
+strip_id_or_class: ad-unit
+strip_id_or_class: bordeaux-slot
+strip_id_or_class: slice-container-newsletterForm
+strip_id_or_class: author
+strip_id_or_class: slice-container-moreAbout
+strip_id_or_class: disqus_thread
+strip_id_or_class: jump-to-comments
+strip_id_or_class: related-articles
+strip_id_or_class: after-article-tags
+
+test_url: https://www.pcgamer.com/valves-unusual-corporate-structure-causes-its-problems-report-suggests/#article-comments
+test_contains: People Make Games' video report is over 45 minutes long

@@ -1,0 +1,25 @@
+http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+strip_id_or_class: comments
+strip_id_or_class: upgrade_panel
+strip_id_or_class: kfds-lyt-between
+strip_id_or_class: kfds-lyt-between-end
+strip_id_or_class: recentPostsContainerDiv
+strip_id_or_class: postId
+strip_id_or_class: lbModal
+strip_id_or_class: checkoutModal
+strip_id_or_class: checkout-modal-skeleton
+
+title: //div[contains(concat(' ',normalize-space(@class),' '),' article-title ')]
+author: //name[contains(concat(' ',normalize-space(@class),' '),' post-name-row ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' feeditem-time ')]
+# XXX: fails due to a #shadow-root inserted by the JS code...
+# When hacking the DOM in the browser to move the content of the shadow root as its sibling, 
+# Wallabager can then push a workable content to Wallabag
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+prune: yes
+tidy: yes
+
+test_url: https://ko-fi.com/post/Preparing-for-the-Spread-of-Avian-Influenza-H5N1-W7W4WFVW3
+test_contains: Ok, I know we've been here before, but let's go over the basics on preparedness for another pandemic.
