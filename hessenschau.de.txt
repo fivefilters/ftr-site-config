@@ -1,4 +1,4 @@
-# Author: HolgerAusB  |  Version: 2023-12-27
+# Author: HolgerAusB  |  Version: 2024-04-13
 #
 # to get a source-feed by replacing index.html with index.rss, e.g.
 #    https://www.hessenschau.de/index.rss
@@ -6,6 +6,7 @@
 #
 #==========================
 
+body: //article[@class='page']
 body: //main
 
 prune: no
