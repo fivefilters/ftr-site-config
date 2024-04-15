@@ -3,6 +3,7 @@ body: //article[contains(concat(' ',normalize-space(@class),' '),' content-conta
 strip: //aside
 strip: //header
 strip: //footer
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' notice-header ')]
 
 prune: no
 
