@@ -6,7 +6,8 @@ strip_id_or_class: article-meta
 strip_id_or_class: related-items
 
 # Reuters news - https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
-body: //div[contains(@class, 'article-body__content__')]
+body: //div[contains(@class, 'article-body__container_')]
+body: //div[contains(@class, 'article-body__content_')]
 # body: //div[contains(concat(' ',normalize-space(@class),' '),' paywall-article ')]
 strip: //div[contains(@data-testid, 'gallery')]
 
