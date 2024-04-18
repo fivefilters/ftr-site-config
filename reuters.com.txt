@@ -25,6 +25,7 @@ strip: //div[contains(@class, 'registration-prompt')]
 strip: //*[@data-testid="toolbar-container" or @data-testid="ArticleToolbar" or @data-testid="LicenceContentButton"]
 strip: //svg
 strip: //a//span[contains(., 'opens new tab')]
+strip: //a[contains(@class, 'caption__license')]
 
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
