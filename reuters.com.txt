@@ -22,11 +22,12 @@ strip_id_or_class: related-container
 strip_id_or_class: share-in-article-container
 
 strip: //div[contains(@class, 'registration-prompt')]
-strip: //*[@data-testid="toolbar-container" or @data-testid="ArticleToolbar" or @data-testid="LicenceContentButton"]
+strip: //*[@data-testid="toolbar-container" or @data-testid="ArticleToolbar" or @data-testid="LicenceContentButton" or @data-testid="promo-box"]
 strip: //svg
 strip: //a//span[contains(., 'opens new tab')]
 strip: //a[contains(@class, 'caption__license')]
 strip: //div[contains(@class, 'author-bio__')]
+strip: //p[contains(@class, '_promo-box_')]
 
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
