@@ -25,6 +25,9 @@ strip: //*[@data-testid="toolbar-container"]
 strip: //svg
 strip: //a//span[contains(., 'opens new tab')]
 
+replace_string(<noscript>): <!-- noscript -->
+replace_string(</noscript>): <!-- /noscript -->
+
 test_url: https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
 
 test_url: https://www.reuters.com/investigates/special-report/usa-taser-experts/
