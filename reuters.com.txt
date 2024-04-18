@@ -26,6 +26,7 @@ strip: //*[@data-testid="toolbar-container" or @data-testid="ArticleToolbar" or 
 strip: //svg
 strip: //a//span[contains(., 'opens new tab')]
 strip: //a[contains(@class, 'caption__license')]
+strip: //div[contains(@class, 'author-bio__')]
 
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
