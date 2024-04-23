@@ -6,6 +6,9 @@ title: //h1[contains(concat(' ',normalize-space(@class),' '),' post-hero__title 
 strip_id_or_class: kg-product-card-description
 strip_id_or_class: kg-product-card-button
 strip_id_or_class: kg-callout-emoji
+strip_id_or_class: outpost-pub-container
+strip_id_or_class: subscribe
+strip_id_or_class: post-author
 
 prune:no
 
