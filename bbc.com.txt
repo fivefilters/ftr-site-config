@@ -1,3 +1,21 @@
+##  some parts of BBC is JavaScript only, you'll need wallabager browser
+##  plugin to catch those articles for wallabag
+
+body: //main[1]//article[1]
+body: //main[1]
+
+strip: //section[@data-component='headline-block']
+strip: //section[@data-component='byline-block']
+
+strip: //section[@data-component='links-block']
+strip: //section[@data-component='tags']/self::* | //section[@data-component='tags']/following-sibling::*
+
+strip_id_or_class: dotcom-mpu_mid
+strip: //main[1]//header[1]
+strip: //nav
+
+##
+
 body: //article[contains(@class, "-ArticleWrapper")]
 body: //article[@class='article__body'] | (//div[contains(@class, 'article__body-content')])[1]
 body: (//div[@id="story-body"])[1]
