@@ -1,0 +1,18 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-article ')] | //div[contains(concat(' ',normalize-space(@class),' '),' post-main ')]//div[not(contains(concat(' ',normalize-space(@class),' '),' post-article '))]//img[1]
+
+date: //meta[@name='parsely-pub-date']/@content
+# 1st or only author has double meta info in html
+author: (//meta[@name='parsely-author'])[position()>1]/@content
+
+strip_id_or_class: wp-block-san-app-download
+strip_id_or_class: wp-block-san-core-content-header
+strip_id_or_class: wp-block-san-san-author
+strip_id_or_class: wp-block-san-toggle-transcript
+strip_id_or_class: next-video
+
+strip: //div[contains(@class, '-newsletter-signup')]
+strip: //iframe
+
+prune: no
+
+test_url: https://san.com/cc/armed-drone-on-drone-violence-documented-in-ukraine/
