@@ -1,0 +1,6 @@
+// author-getting doesn't work, but would be too brittle anyway
+//author: //div/div[2]/a[1]/div/span[2]
+body: //div[contains(concat(' ',normalize-space(@class)), ' posts ')]
+
+test_url: https://mastoreader.io/?url=https%3A%2F%2Fmstdn.social%2F%40mcnado%2F112341127859271581
+test_contains: If bird flu starts transmitting between people, what will that look like in the US?
