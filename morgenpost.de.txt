@@ -7,4 +7,4 @@ strip: //hgroup
 strip: //time/parent::div
 strip: //section[@aria-label='Newsletter Anmeldung']/parent::div
 
-test_url: https://www.wr.de/politik/article242220498/Richter-droht-Donald-Trump-unmissverstaendlich-mit-Gefaengnis.html
+test_url: https://www.morgenpost.de/politik/article242220498/Richter-droht-Donald-Trump-unmissverstaendlich-mit-Gefaengnis.html
