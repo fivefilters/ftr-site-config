@@ -6,5 +6,4 @@ strip: //address
 strip: //hgroup
 strip: //time/parent::div
 
-test_url: https://www.abendblatt.de/hamburg/hamburg-nord/article242221334/Vegane-Restaurants-in-Hamburg-schliessen-alles-zu-viel.html
 test_url: https://www.abendblatt.de/politik/article242220498/Richter-droht-Donald-Trump-unmissverstaendlich-mit-Gefaengnis.html
