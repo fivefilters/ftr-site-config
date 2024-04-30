@@ -1,3 +1,5 @@
+# @funkemedien site
+
 body: //main/article[1]
 
 strip: //address
