@@ -14,6 +14,8 @@ strip_id_or_class: feed-articles-aside
 strip_id_or_class: article-signature
 strip_id_or_class: article-header__breadcrumb
 strip_id_or_class: tags-container
+strip_id_or_class: newsletter-container
+strip_id_or_class: to-read
 
 src_lazy_load_attr: data-full-src
 
