@@ -14,6 +14,7 @@ strip_id_or_class: parse-shopper-resume-produit
 strip_id_or_class: NlTitle
 strip_id_or_class: NlSubTitle
 strip_id_or_class: AuthorBox
+strip_id_or_class: txtcenter
 prune: no
 
 body: //article
