@@ -20,14 +20,21 @@ strip_id_or_class: authors
 strip_id_or_class: source
 strip_id_or_class: kicker
 strip_id_or_class: headline
+app-storyline-teaser
 strip: //app-toolbar
 strip: //button
 strip: //app-storyline-related-topics
-
+#2024
+strip: //app-storyline-teaser
+strip: //app-header-content-kicker
+strip: //app-header-content-headline
+strip: //app-header-content-authors
+strip: //app-vg-wort
+strip: //app-detail-page-content-footer
 
 prune: no
+tidy: no 
 
-# Fix picture captions
-# wrap_in(small): //div[@class="hcf-caption"]
-test_url: https://www.handelsblatt.com/dpa/eu-kommission-macht-sich-fuer-bessere-radwege-stark/29427222.html
+
+test_url: https://www.handelsblatt.com/meinung/kommentare/kommentar-fti-uebernahme-lindner-vernebelt-subvention-fuer-us-finanzfirma/100036646.html
 test_url: https://www.handelsblatt.com/politik/deutschland/flughafen-berlin-brandenburg-vier-milliarden-euro-mehr-neun-jahre-zu-spaet-die-wichtigsten-fakten-zum-start-des-ber/26205178.html
