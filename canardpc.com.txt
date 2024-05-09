@@ -3,6 +3,7 @@ body: //div[contains(@class, 'post-content')]
 author: //div[@class="post-informations"]//a
 
 strip: //div[contains(@class, 'slick-cloned')]
+strip_id_or_class: locomotive-navigation
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
@@ -15,4 +16,6 @@ login_extra_fields: redirect=https://www.canardpc.com/
 
 not_logged_in_xpath: //div[@class="alert alert-danger"]
 
-test_url: https://www.canardpc.com/357/fouine-peaks-thimbleweed-park
+###
+test_url: https://www.canardpc.com/jeu-video/dossier-jeu-video/comment-lucasarts-a-invente-le-pointnclick-2/
+test_url: https://www.canardpc.com/jeu-video/test-jeu-video/the-last-of-us-part-i/
