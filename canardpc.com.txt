@@ -1,8 +1,7 @@
-title: //h1[@class="post-title"]
+title: //div[contains(@class, 'main-article-titre')]
 body: //div[contains(@class, 'post-content')]
-author: //div[@class="post-informations"]//a[@class="highlight"]
+author: //div[@class="post-informations"]//a
 
-strip: //div[@class="post-informations"]
 strip: //div[contains(@class, 'slick-cloned')]
 
 # wallabag-specific login directives (not supported in FTR)
