@@ -1,0 +1,26 @@
+body: //body
+title: //p[@class='TitelText']
+
+# sometimes the title <p> has the wrong class="Author"
+title: //div[@class='WordSection1']/p[1]
+author: (//p[@class='Author'])[last()]
+
+# site uses iframe to display its own content
+single_page_link: //iframe/@src
+if_page_contains: //iframe[contains(@src, 'triple-c.at/index.php/tripleC/article/download/')]
+
+prune: no
+tidy: no
+
+# wallabag needs removing these placeholder/comments, otherwise they got literal into the text
+find_string: <![if !supportLists]>
+replace_string:
+
+find_string: <![endif]>
+replace_string: &nbsp;
+
+find_string: <![if !supportFootnotes]>
+replace_string:
+
+test_url: https://www.triple-c.at/index.php/tripleC/article/view/1498/1543
+test_url: https://www.triple-c.at/index.php/tripleC/article/view/1483/1507
