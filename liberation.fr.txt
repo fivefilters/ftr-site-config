@@ -1,7 +1,14 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' width-padded-left ')]
-strip_id_or_class: article-rel-item
-author: //div[@class='article-head-metas']/a
-date: //span[@class='date']/time
+body: //div[contains(concat(' ',normalize-space(@class),' '),' default__Main')]
+strip_id_or_class: closed
+strip: //figcaption
+strip_id_or_class: display_block
+strip_id_or_class: tag-container
+strip_id_or_class: mailmunch-giftarticle
+strip_id_or_class: flex-chain
+strip_id_or_class: c2
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' default__OutbrainWrapper')]
+strip: //h1[contains(concat(' ',normalize-space(@class),' '),' styled__CardTitle')]
+strip: //button
+prune: no
 
-test_url: http://www.liberation.fr/elections-presidentielle-legislatives-2017/2017/04/14/pas-assez-enthousiastes-ils-se-font-virer-d-un-meeting-de-fillon_1562897
-test_contains: Alors comment expliquer
+test_url: https://www.liberation.fr/economie/transports/le-nombre-de-francais-qui-se-deplacent-regulierement-a-velo-a-augmente-de-48-en-cinq-ans-20240514_MCTAGIHEWVC63H56OAY4NPXT4M/
