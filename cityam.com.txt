@@ -5,6 +5,9 @@ strip: //header
 strip: //footer
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' notice-header ')]
 
+# HTML5-PHP parsing issue?
+parser: libxml
+
 prune: no
 
 test_url: https://www.cityam.com/uk-to-reveal-social-media-ban-plans-for-under-16s-within-weeks/
