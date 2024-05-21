@@ -1,0 +1,23 @@
+# This website delivers only a few paragraphs in pure HTML, the rest is loaded via JavaScript.
+# Neither FTR nor Wallabag UI can receive this part.
+# With 'Wallabagger' browser plugin you can read the whole content.
+
+# copy any changes in this config to (notice the leading dot):
+# wyborcza.pl.txt    and   .wyborcza.pl.txt     and
+# wyborcza.biz.txt   and   .wyborcza.biz.txt
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0
+
+body: //div[contains(@class, 'article--content')] | //div[contains(@class, 'text--lead')] | //div[contains(@class, 'article--image ')] | //section[contains(@class, 'article-lead')]
+
+strip: //div[contains(@class, 'text--related')]/parent::div
+
+strip: //svg
+strip_id_or_class: related-image__meta
+
+prune: no
+tidy: no
+
+test_url: https://wyborcza.pl/7,75398,30983486,sondaz-pracowni-opinia24-dla-wyborczej.html
+test_url: https://kalisz.wyborcza.pl/kalisz/7,181359,30978259,marcin-bosacki-widzi-rosyjski-mianownik-w-zamachu-na-slowacji.html
+test_url: https://wyborcza.biz/biznes/7,159911,30968869,sondaze-wyborcze-od-kuchni-ankieterzy-czekaja-na-pieniadze.html
