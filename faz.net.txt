@@ -21,7 +21,12 @@ date: //span[@class='Datum'],/span
 single_page_link: //a[contains(@href, 'printPagedArticle')]
 
 # Content is here
+
+body: //article[@class='storytelling']
+body: //article[@class='article']//div[contains(@class,'body-elements')] | (//div[contains(@class,'header-teaser__image')])[1] | (//div[contains(concat(' ',normalize-space(@class),' '),' header-teaser ')])[last()]
+body: //article[1]
 body: //div[@class='Artikel']
+
 
 # Tidy up before article
 strip: //div[@id='FAZHeaderNeu']
@@ -29,14 +34,21 @@ strip: //h2[@itemprop='headline']
 strip: //span[@class='Datum']
 strip: //span[@class='Autor']
 strip_id_or_class: ArticlePagerTop
+strip_id_or_class: header-detail
+strip_id_or_class: intro-text
+strip: //button[contains(@class,'image-toggle')]
 
 # General cleanup
 strip: //div[@class='clear']
 strip: //a[@title='Zur Homepage FAZ.NET']
-strip: //iframe
+#strip: //iframe
 replace_string( ·  ):
 strip_id_or_class: TeaserMore
 strip_id_or_class: plista_alternativ
+strip_id_or_class: paywall
+#strip: //button
+strip_id_or_class: header-teaser__image-details
+strip_id_or_class: tik4-sharing
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
@@ -57,6 +69,7 @@ strip_id_or_class: MultimediaNavigation
 strip_id_or_class: IndexTitel
 strip_id_or_class: cbx-Author-is-in-article-container-info
 strip_id_or_class: BigBox
+strip_id_or_class: upper-toolbar
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
@@ -113,10 +126,10 @@ strip: //footer[@class='tsr-Base_ContentMeta']
 strip_id_or_class: aut-Teaser
 
 # Try it yourself
+test_url: https://www.faz.net/aktuell/feuilleton/bilder-und-zeiten/lord-byron-in-venedig-als-pilger-popstar-und-poet-19648440.html
+test_url: https://www.faz.net/aktuell/politik/europawahl/europawahl-2024-wer-in-die-eu-einzahlt-und-wer-mittel-erhaelt-19707069.html
 test_url: http://www.faz.net/aktuell/feuilleton/zum-tod-von-margaret-thatcher-die-reizfigur-12141919.html#Drucken
 test_url: http://www.faz.net/aktuell/politik/inland/allensbach-analyse-im-namen-des-volkes-13106492.html
 test_url: http://www.faz.net/aktuell/feuilleton/kino/video-filmkritiken/video-filmkritik-when-animals-dream-zerrissene-jugend-13105772.html
 test_url: https://www.faz.net/aktuell/feuilleton/debatten/keine-smart-city-in-toronto-google-stadt-ist-abgesagt-16763217.html?GEPC=s5
-
-# Article with F+ Advert
 test_url: https://www.faz.net/aktuell/wirtschaft/wohnen/christian-voelkers-der-immobilienmakler-der-superreichen-17778869.html
