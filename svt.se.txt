@@ -1,12 +1,13 @@
-body: //article//div[@itemprop='description' or @itemprop='articleBody']
+body: //article//div[@itemProp='description' or @itemProp='articleBody']
 strip: //aside
-replace_string(<noscript>): <div>
-replace_string(</noscript>): </div>
-strip_id_or_class: svtHide-No-Js
+replace_string(<noscript): <div
+replace_string(</noscript): </div
 strip_id_or_class: aside
-strip_id_or_class: Aside
 strip_id_or_class: hidden
 strip_id_or_class: Share
+strip: //div[contains(@class, 'VideoPlaylist')]
+strip: //section[contains(@class, 'InlineTagBox')]
+
 tidy: no
 prune: no
 
