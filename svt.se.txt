@@ -1,5 +1,4 @@
-title: //article[@role='main']//h1
-body: //article[@role='main']
+body: //article//div[@itemprop='description' or @itemprop='articleBody']
 strip: //aside
 replace_string(<noscript>): <div>
 replace_string(</noscript>): </div>
@@ -11,5 +10,5 @@ strip_id_or_class: Share
 tidy: no
 prune: no
 
-test_url: http://www.svt.se/nyheter/het-debatt-mellan-borg-och-andersson
+test_url: https://www.svt.se/nyheter/het-debatt-mellan-borg-och-andersson
 test_contains: Anders Borg (M) började med
