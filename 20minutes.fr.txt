@@ -1,4 +1,11 @@
-title: //h1[contains(concat(' ',normalize-space(@class),' '),' nodeheader-title ')]
-body: //div[contains(concat(' ',normalize-space(@class),' '),' lt-endor-body ') and (contains(concat(' ',normalize-space(@class),' '),' content '))]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' o-lt-show__main ')]
+body: //div[contains(concat(' ',normalize-space(@id),' '),' page-content ')]
+
+strip: //aside
+strip: //address
+strip_id_or_class: c-carousel
+strip_id_or_class: c-read-also
+# strip read also at the bottom of the content
+strip_id_or_class: direction-column@xs
 
 test_url: https://www.20minutes.fr/medias/4030082-20230328-canal-chaine-condamnee-indemniser-maitena-biraben-plus-3-4-millions-euros
