@@ -16,6 +16,8 @@ strip_id_or_class: article-header__breadcrumb
 strip_id_or_class: tags-container
 strip_id_or_class: newsletter-container
 strip_id_or_class: to-read
+strip_id_or_class: article-header-breadcrumb
+strip_id_or_class: article-infos
 
 src_lazy_load_attr: data-full-src
 
