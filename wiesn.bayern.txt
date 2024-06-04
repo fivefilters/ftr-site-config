@@ -50,4 +50,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.fuldaerzeitung.de/fulda/blitzeinschlag-stromausfall-unwetter-einsaetze-fulda-hessen-vogelsberg-polizei-92464943.html
+test_url: https://www.wiesn.bayern/wiesn/news/muenchen-oktoberfest-bekannteste-fahrgeschaefte-wiesn-uebersicht-fotostrecke-92413217.html
