@@ -1,18 +1,48 @@
-# author: HolgerAusB   version 2023-11-10
+# author: HolgerAusB   version 2024-06-05
 #
-# no native feed, try:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.nordmainische-s-bahn.de%2Faktuelles.html&item=div.news&item_title=h2&item_desc=p%5B2%5D&item_date=time&max=5&order=document&guid=0
+# @infrago.de site
 
+# no native feed, try to generate feed:
+# https://createfeed.fivefilters.org/
+# with item=       .pgSlide  or  .aktuelles  or  .featured
+#      item_title= h3  or  h2
+#      item_date=  time
 
-body: //div[@class='layout_full block']
+body: //div[@id='main']//div[contains(@id, 'article-')]
 date: //time/@datetime
+
+strip_id_or_class: copytxt
+strip_id_or_class: imgSrc
+strip_id_or_class: back
+
+strip: //h1[1]
+strip: //div[@id='right']
 
 # strip date from body
 strip: //p[@class='info']
 
-# fix source-links of images
-replace_string(s-bahn.de/aktuell/files/img/): s-bahn.de/files/img/
+# fix source-links of images [wallabag]
+find_string: src="files/
+replace_string: src="/files/
+find_string: href="files/
+replace_string: href="/files/
+
+#replace embeded video with link to video:
+replace_string(<figure class="video_container">): <div>
+replace_string(<video): <div
+replace_string(<source type="video/mp4" src): <a href
+replace_string(</video>): Link zum Video</a></div>
+
+# don't show article with timeline, which is an article that only shows teasers to other articles
+native_ad_clue: //div[contains(@id, 'loadTreeLine')]
+
+# transform image galery to single images
+strip: //ol[@class='carousel-indicators']
+
+find_string: <div class="bsc_spic" style="background: url('
+replace_string: <img src='
 
 prune: no
+tidy: no
 
-test_url: https://www.nordmainische-s-bahn.de/aktuell/die-nordmainische-s-bahn-stellt-sich-vor-der-ingenieur-fuer-hanau.html
+test_url: https://www.nordmainische-s-bahn.de/newsreader/schnueffeln-fuer-eine-schnelle-planung-2.html

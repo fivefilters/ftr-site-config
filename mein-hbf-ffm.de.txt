@@ -1,28 +1,48 @@
-# author: HolgerAusB   version 2023-10-11
+# author: HolgerAusB   version 2024-06-05
 #
-# no native feed, try:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.mein-hbf-ffm.de%2Faktuelle-meldungen.html&item=div.layout_latest&item_title=h2&item_url=h2+a&item_desc=.ce_text&item_date=time
+# @infrago.de site
 
-http_header(cookie): dse_cookie=1-0-0
+# no native feed, try to generate feed:
+# https://createfeed.fivefilters.org/
+# with item=       .pgSlide  or  .aktuelles  or  .featured
+#      item_title= h3  or  h2
+#      item_date=  time
 
-body: //div[@class='mod_newsreader block']
+body: //div[@id='main']//div[contains(@id, 'article-')]
 date: //time/@datetime
 
-# strip title and date from body
-strip: //div[@class='layout_full block']/h1
+strip_id_or_class: copytxt
+strip_id_or_class: imgSrc
+strip_id_or_class: back
+
+strip: //h1[1]
+strip: //div[@id='right']
+
+# strip date from body
 strip: //p[@class='info']
 
+# fix source-links of images [wallabag]
+find_string: src="files/
+replace_string: src="/files/
+find_string: href="files/
+replace_string: href="/files/
+
 #replace embeded video with link to video:
-prune: no
 replace_string(<figure class="video_container">): <div>
 replace_string(<video): <div
 replace_string(<source type="video/mp4" src): <a href
 replace_string(</video>): Link zum Video</a></div>
-replace_string(</figure>): </div>
 
-# cleanup
-strip: //p[@class='back']/a
+# don't show article with timeline, which is an article that only shows teasers to other articles
+native_ad_clue: //div[contains(@id, 'loadTreeLine')]
+
+# transform image galery to single images
+strip: //ol[@class='carousel-indicators']
+
+find_string: <div class="bsc_spic" style="background: url('
+replace_string: <img src='
 
 prune: no
+tidy: no
 
-test_url: https://www.mein-hbf-ffm.de/aktuelles-reader/db-informiert-zum-geplanten-fernbahntunnel.html
+test_url: https://www.mein-hbf-ffm.de/aktuelles-reader/street-art-kuenstler-jaune-verschoenert-vision-hub-masterplan-frankfurt.html
