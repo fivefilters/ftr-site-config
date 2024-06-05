@@ -4,8 +4,8 @@
 
 # no native feed, try to generate feed:
 # https://createfeed.fivefilters.org/
-# with item=       .pgSlide  or  .aktuelles
-#      item_title= h3
+# with item=       .pgSlide  or  .aktuelles  or  .featured
+#      item_title= h3  or  h2
 #      item_date=  time
 
 body: //div[@id='main']//div[contains(@id, 'article-')]
