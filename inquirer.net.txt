@@ -1,0 +1,10 @@
+# also on newsinfo.inquirer.net.txt
+
+strip_id_or_class: article_disclaimer
+strip_id_or_class: article-new-featured
+strip_id_or_class: billboard_article
+strip_id_or_class: article-new-featured
+
+strip: //strong[starts-with(., 'READ:')][./a]
+
+test_url: https://www.inquirer.net/405941/china-ship-rams-boat-carrying-sick-philippines-soldier/
