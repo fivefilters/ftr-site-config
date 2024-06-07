@@ -4,6 +4,8 @@ strip_id_or_class: article_disclaimer
 strip_id_or_class: article-new-featured
 strip_id_or_class: billboard_article
 strip_id_or_class: article-new-featured
+strip_id_or_class: sib-form-container-bc
+strip_id_or_class: sib-form
 
 strip: //strong[starts-with(., 'READ:')][./a]
 
