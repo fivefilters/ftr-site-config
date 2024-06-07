@@ -1,5 +1,10 @@
+# also on inquirer.net.txt
+
 strip_id_or_class: article_disclaimer
 strip_id_or_class: article-new-featured
 strip_id_or_class: billboard_article
+strip_id_or_class: article-new-featured
+
+strip: //strong[starts-with(., 'READ:')][./a]
 
 test_url: https://newsinfo.inquirer.net/1948632/abante-says-drug-war-victims-kin-should-attend-hearings-and-not-give-in-to-fear
