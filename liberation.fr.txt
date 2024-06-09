@@ -6,6 +6,7 @@ strip_id_or_class: tag-container
 strip_id_or_class: mailmunch-giftarticle
 strip_id_or_class: flex-chain
 strip_id_or_class: c2
+strip_id_or_class: article-dossier
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' default__OutbrainWrapper')]
 strip: //h1[contains(concat(' ',normalize-space(@class),' '),' styled__CardTitle')]
 strip: //button
