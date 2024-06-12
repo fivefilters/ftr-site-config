@@ -1,0 +1,25 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent
+# bots from content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+
+# [wallabag]: prevent that article is stacked into two boxes
+find_string: <div id="article"
+replace_string: <div id="fooarticle"
+
+body: //div[@id='fooarticle']
+
+strip_id_or_class: no-para
+strip_id_or_class: amorce-renvoi
+strip_id_or_class: hiddendiv
+strip_id_or_class: annotator-hide
+strip_id_or_class: btn
+
+prune: no
+
+test_url: https://www.cairn.info/revue-internationale-de-politique-comparee-2001-1-page-59.htm
