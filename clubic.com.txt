@@ -18,6 +18,7 @@ strip_id_or_class: txtcenter
 strip_id_or_class: marty-embed-card
 strip_id_or_class: flex-container
 strip_id_or_class: card__author
+strip_id_or_class: marty-product-card-large
 prune: no
 
 body: //article
