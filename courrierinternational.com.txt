@@ -6,11 +6,10 @@ author: //div[@class='author-name-short']
 # Publication date
 date: //time[@itemprop='datePublished']/@datetime
 
-body: //div[@id='article-content']
+body: //div[@class='article-content'] | //p[@class='article-lede']
 
 strip_id_or_class: article-aside
 strip_id_or_class: article-headlines
-strip_id_or_class: article-header
 strip_id_or_class: article-subject-readmore
 strip_id_or_class: article-secondary
 strip_id_or_class: box-reserved-abo
@@ -18,6 +17,7 @@ strip_id_or_class: action-zen-off-top
 strip_id_or_class: action-zen-off-bottom
 
 strip: //aside
+strip: //details
 
 prune: no
 
