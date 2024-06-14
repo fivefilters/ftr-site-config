@@ -1,7 +1,15 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page__body ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' page ')]
 
+strip: //header
+strip_id_or_class: cmp-disclaimer__text
+strip_id_or_class: article__share
+strip_id_or_class: sidecol
+strip_id_or_class: pre_footer
+strip_id_or_class: highlights
 strip_id_or_class: advertising
 strip_id_or_class: node__media-article
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]/section
+
 strip_id_or_class: article__affiliated-content
 strip_id_or_class: latino-600b
 strip_id_or_class: article__author
