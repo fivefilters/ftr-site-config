@@ -16,6 +16,7 @@ strip_id_or_class: a-grid
 strip_id_or_class: comments_container
 strip: //a-tabs
 strip: //section[contains(@class, 'teaser')]
+strip: //div[contains(@class, 'guenstiger')]
 
 # strip heading and description for image galeries, which would
 # be shown UNDER the whole bunch of images instead
