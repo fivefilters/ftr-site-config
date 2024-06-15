@@ -15,6 +15,7 @@ strip: //div[@class='meta__authors']
 strip: //h1[@class='article__title']
 strip: //div[contains(@class, 'fm-relation')]
 strip: //svg
+strip: //div[@class='vued']
 
 strip_id_or_class: skyline
 strip_id_or_class: article__actions
