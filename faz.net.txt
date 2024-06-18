@@ -112,7 +112,7 @@ strip_id_or_class: Teaser620
 strip_id_or_class: TeaserMultimedia
 strip_id_or_class: VideoBox
 
-# Remove as soon as Wallabag maight be able to embed flash video
+# Remove as soon as wallabag might be able to embed flash video
 strip_id_or_class: mmoObjectAsTeaserInArticle
 strip_id_or_class: additionalStylesAudioVideo
 strip_id_or_class: hideMMElements
@@ -124,6 +124,7 @@ strip_id_or_class: aco-ContentPayment_Link
 strip_id_or_class: mm-adbox
 strip: //footer[@class='tsr-Base_ContentMeta']
 strip_id_or_class: aut-Teaser
+strip_id_or_class: related-articles
 
 # Try it yourself
 test_url: https://www.faz.net/aktuell/feuilleton/bilder-und-zeiten/lord-byron-in-venedig-als-pilger-popstar-und-poet-19648440.html
