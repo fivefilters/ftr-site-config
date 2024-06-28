@@ -1,0 +1,8 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article-full ')]
+
+strip_id_or_class: article__tag
+strip_id_or_class: article-full__infos
+strip_id_or_class: btn
+strip_id_or_class: article-full__author
+
+test_url: https://www.rugbyrama.fr/2024/06/28/finale-top-14-toulouse-en-champion-le-pronostic-de-stade-toulousain-bordeaux-begles-12046360.php
