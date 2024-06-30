@@ -51,6 +51,7 @@ strip_id_or_class: tooltip
 strip_id_or_class: powa-wrapper
 strip_id_or_class: powa-blurb-wrapper
 strip_id_or_class: hide-for-print
+strip_id_or_class: sr-only
 
 strip: //svg
 
