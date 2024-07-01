@@ -1,4 +1,6 @@
-# Seems to be redirecting to articles.washingtonpost.com for many users - still true?
+# most images are loaded by client side JavaScript, so they don't show up, when using
+# Fulltext-RSS or wallabag UI
+# you may use wallabagger browser plugin instead
 
 body: //div[contains(@class, 'meteredContent')]
 body: //div[contains(@class, 'article-body')]
@@ -50,12 +52,18 @@ strip_id_or_class: module
 strip_id_or_class: tooltip
 strip_id_or_class: powa-wrapper
 strip_id_or_class: powa-blurb-wrapper
-strip_id_or_class: hide-for-print
 strip_id_or_class: sr-only
 
-strip: //svg
+# if stripping all 'hide-for-print', wallabagger and pushtokindle
+# browser plugins won't load images
+#strip_id_or_class: hide-for-print
+strip: //div[contains(@class, 'hide-for-print')]/div[@data-qa='inline-magnet']/parent::div
 
-# prune: no
+strip: //svg
+strip: //button
+
+prune: no
+tidy: no
 
 # Change gJQAwdJG4U_story.html to gJQAwdJG4U_print.html
 single_page_link: concat(substring-before(//link[@rel="canonical"]/@href, "_story.html"), "_print.html?noredirect=on")
