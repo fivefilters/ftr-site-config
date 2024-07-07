@@ -1,5 +1,24 @@
-strip: //a[contains(text(), "RELATED:")]
-author: //div[@class="info"]//span[@class="association printer-source"]
-author: //div[@class="info"]//span[@class="stamp printer-date"]
+# same a yahoo.com.txt
+
+title: //meta[@property="og:title"]/@content
+body: //article[@itemprop="articleBody"]
+body: //div[contains(@class, 'caas-img-container')] | //div[@class='caas-body']
+
+strip_id_or_class: img-mask
+strip_id_or_class: StretchedBox
+#strip_image_src: spaceball.gif
+strip: //button
+
+find_string: itemprop="url" style="background-image:url( 
+replace_string: itemprop="url" src="
+find_string: );" src="https://s.yimg.com/g/images/spaceball.gif"
+replace_string: "
+
+# imidiate instead lazy load images
+find_string: data-src=http
+replace_string: src=http
+
+prune: no
 
 test_url: https://au.news.yahoo.com/a/31334394/brave-subway-employee-fights-off-masked-robber-using-her-bare-hands/
+test_url: https://au.news.yahoo.com/three-aussie-photographers-celebrated-in-united-states-for-jaw-dropping-images-053812249.html
