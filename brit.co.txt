@@ -1,0 +1,26 @@
+body: //div[contains(@class, 'main-content-column')]//article[1]
+
+strip: //svg
+strip: //div[contains(@class, 'post-tags')]/self::div | //div[contains(@class, 'post-tags')]/following-sibling::*
+strip: //a[contains(@href, 'mailchi.')]/ancestor::p[1] | //a[contains(@href, 'mailchi.')]/ancestor::p[1]/following-sibling::p
+
+strip_id_or_class: headline-container
+strip_id_or_class: post-author-list
+strip_id_or_class: post-date
+strip_id_or_class: share-media-panel
+strip_id_or_class: tool-tip
+strip_id_or_class: ecom_shop_btn
+strip_id_or_class: around-the-web
+strip_id_or_class: post-pager
+
+# activate images
+find_string: src="data:image/
+replace_string: foo="data:image/
+
+find_string: data-runner-src="http
+replace_string: src="http
+
+
+prune: no
+
+test_url: https://www.brit.co/new-reformation-dresses/
