@@ -1,11 +1,10 @@
 # changes to this file should also be made to .yahoo.com.txt
 title: //meta[@property="og:title"]/@content
 body: //article[@itemprop="articleBody"]
+body: //div[@class='caas-img-container'] | //div[@class='caas-body']
 
 strip_id_or_class: img-mask
 strip_id_or_class: StretchedBox
-strip_id_or_class: module-spotIm
-strip_id_or_class: module-moreStories
 #strip_image_src: spaceball.gif
 strip: //button
 
