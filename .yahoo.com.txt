@@ -1,3 +1,5 @@
+# same a yahoo.com.txt
+
 title: //meta[@property="og:title"]/@content
 body: //article[@itemprop="articleBody"]
 body: //div[@class='caas-img-container'] | //div[@class='caas-body']
@@ -11,6 +13,10 @@ find_string: itemprop="url" style="background-image:url(
 replace_string: itemprop="url" src="
 find_string: );" src="https://s.yimg.com/g/images/spaceball.gif"
 replace_string: "
+
+# imidiate instead lazy load images
+find_string: data-src=http
+replace_string: src=http
 
 prune: no
 
