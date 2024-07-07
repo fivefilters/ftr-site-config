@@ -13,6 +13,9 @@ replace_string: itemprop="url" src="
 find_string: );" src="https://s.yimg.com/g/images/spaceball.gif"
 replace_string: "
 
+# imidiate instead lazy load images
+find_string: data-src=http
+replace_string: src=http
 prune: no
 
 test_url: https://www.yahoo.com/news/amazon-just-accidentally-leaked-details-145441439.html
