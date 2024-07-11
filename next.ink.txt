@@ -24,6 +24,9 @@ strip_id_or_class: go-to-comments-button
 strip_id_or_class: dropdown-button
 strip_id_or_class: dropdown-content-signalement
 strip_id_or_class: article-option
+strip_id_or_class: wp-block-video
+strip_id_or_class: article-info-left
+strip_id_or_class: article-info-right
 
 prune: no
 tidy: no
@@ -50,4 +53,5 @@ not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' co
 test_url: https://next.ink/120832/le-reseau-interministeriel-de-letat-rie-fete-ses-10-ans-et-se-modernise/
 test_url: https://next.ink/127657/edito-limportance-de-bien-citer-et-verifier-ses-sources/
 test_url: https://next.ink/136362/les-ecrans-du-temps-perdu-pour-les-enfants/
+test_url: https://next.ink/143136/planete-9-son-absence-serait-statistiquement-impossible/
 
