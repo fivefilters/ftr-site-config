@@ -24,6 +24,7 @@ strip_id_or_class: go-to-comments-button
 strip_id_or_class: dropdown-button
 strip_id_or_class: dropdown-content-signalement
 strip_id_or_class: article-option
+strip_id_or_class: wp-block-video
 strip_id_or_class: article-info-left
 strip_id_or_class: article-info-right
 
