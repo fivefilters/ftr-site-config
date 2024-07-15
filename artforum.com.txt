@@ -5,6 +5,11 @@ strip: //button
 strip: //div[contains(@class, '_eyebrow_')]
 strip: //div[contains(@class, '_socialMedia_')]
 strip: //div[@data-component="article-footer"]
+strip: //div[@data-alias="byline__swingout-ui"]
+strip: //div[@data-component="cards-related-content"]
+strip: //div[@data-component="ad-unit-gallery"]
+
+strip_id_or_class: wp-block-pullquote
 
 prune: no
 
