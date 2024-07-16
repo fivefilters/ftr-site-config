@@ -1,6 +1,7 @@
 title: //div[contains(@class, 'main-article-titre')]
 body: //div[contains(@class, 'post-content')]
 author: //div[@class="post-informations"]//a[contains(@href, 'https://www.canardpc.com/auteur/')]
+date: //meta[@property="article:published_time"]/@content
 
 strip: //div[contains(@class, 'slick-cloned')]
 strip_id_or_class: locomotive-navigation
