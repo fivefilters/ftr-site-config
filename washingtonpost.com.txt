@@ -47,6 +47,9 @@ strip: //div[@data-testid="core-carousel-container" or @aria-roledescription="ca
 find_string: .jpg&amp;w=32"
 replace_string: .jpg&amp;w=916"
 
+find_string: <b> </b>
+replace_string: <!--b--> <!--/b-->
+
 strip_id_or_class: carousel
 strip_id_or_class: toolbar
 strip_id_or_class: module
