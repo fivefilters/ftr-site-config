@@ -42,6 +42,7 @@ strip: //strong[contains(., 'Read more tech advice and analysis from')]
 strip: //strong[contains(., 'Read more:')]
 strip: //strong[contains(., 'More from PostEverything:')]
 strip: //em[contains(., 'You might also like:')]
+strip: //div[@data-testid="core-carousel-container" or @aria-roledescription="carousel"]
 
 find_string: .jpg&amp;w=32"
 replace_string: .jpg&amp;w=916"
