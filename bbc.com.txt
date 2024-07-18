@@ -100,8 +100,10 @@ replace_string: http://ichef.bbci.co.uk/news/660/
 
 replace_string({width}{hidpi}): 624
 
-replace_string(<noscript>): <div>
-replace_string(</noscript>): </div>
+# These can now contain 'Media playback is not available on your device', rather than alternative images
+# Do we have an example article where we want to use the noscript content instead?
+#replace_string(<noscript): <div
+#replace_string(</noscript): </div
 
 native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
 
