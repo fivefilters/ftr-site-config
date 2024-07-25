@@ -2,7 +2,7 @@ body: //main[@id="main"]
 body: //main
 
 author: //main//p[contains(@class, 'story-meta__authors')]
-date: //main//p[contains(@class, 'story-meta__timestamp']//time/@datetime
+date: //main//p[contains(@class, 'story-meta__timestamp')]//time/@datetime
 
 strip_id_or_class: hide-under-small
 strip_id_or_class: hide-under-medium
