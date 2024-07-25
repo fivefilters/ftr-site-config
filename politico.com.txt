@@ -6,6 +6,10 @@ strip_id_or_class: hide-under-medium
 strip_id_or_class: below-article-section
 strip: //div[@aria-label="Advertisement"]
 strip: //*[@aria-hidden="true"]
+strip: //script
+strip: //dialog
+
+prune: no
 
 test_url: https://www.politico.com/news/2024/07/24/biden-bows-out-speech-00171046
 test_contains: While Biden framed his decision
