@@ -8,6 +8,7 @@ strip: //div[@aria-label="Advertisement"]
 strip: //*[@aria-hidden="true"]
 strip: //script
 strip: //dialog
+strip: //aside
 
 prune: no
 
