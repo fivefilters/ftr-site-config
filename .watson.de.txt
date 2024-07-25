@@ -25,6 +25,7 @@ strip_id_or_class: watson-snippet__shareBubbles
 strip_id_or_class: watson-snippet__shareBubbles__updated
 strip_id_or_class: watson-snippet__uppertitle
 strip_id_or_class: insert.side.watson-autocontext.de-DE
+strip_id_or_class: watson-contextTeaser
 
 tidy: no
 prune: no
