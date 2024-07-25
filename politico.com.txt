@@ -8,6 +8,9 @@ date: //main//p[contains(@class, 'story-meta__timestamp')]//time/@datetime
 strip_id_or_class: hide-under-small
 strip_id_or_class: hide-under-medium
 strip_id_or_class: below-article-section
+strip_id_or_class: video-object
+strip_id_or_class: video-player
+strip: //video
 strip: //div[@aria-label="Advertisement"]
 strip: //*[@aria-hidden="true"]
 strip: //script
