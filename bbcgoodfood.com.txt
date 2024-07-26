@@ -9,7 +9,9 @@ strip_id_or_class: author-link
 
 strip: //svg
 strip: //button
+strip: //div[@data-feature='NextRead']
 
 prune: no
 
 test_url: https://www.bbcgoodfood.com/recipes/moussaka
+test_url: https://www.bbcgoodfood.com/howto/guide/health-benefits-coffee
