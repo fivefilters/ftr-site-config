@@ -8,10 +8,12 @@ strip_id_or_class: pocket
 strip_id_or_class: author-link
 
 strip: //svg
-strip: //button
+# show video still image, but the video won't play within wallabag
+strip: //button[not(contains(@class, 'image__container'))]
 strip: //div[@data-feature='NextRead']
 
 prune: no
+tidy: no
 
 test_url: https://www.bbcgoodfood.com/recipes/moussaka
 test_url: https://www.bbcgoodfood.com/howto/guide/health-benefits-coffee
