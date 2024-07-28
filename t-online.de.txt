@@ -1,0 +1,26 @@
+body: //article[1]/div[1]
+body: //article[1]
+author: //a[contains(@href, '/author/')]
+
+strip: //header/parent::section
+strip: //header
+
+strip: //form[contains(@aria-label, 'teilen')]/ancestor::section
+strip: //div[contains(@data-testid, '.Companion')]
+strip: //div[contains(@data-testid, 'ArticleBottom')]
+strip: //svg[contains(@aria-labelledby, 'embed-placeholder')]/parent::div
+strip: //label
+strip: //input
+
+find_string: <p class="font-bold
+replace_string: <strong class="
+
+# prevent micro images e.g.: 16px X 9px
+strip_attr: //img/@width
+strip_attr: //img/@height
+
+prune: no
+tidy: no
+
+test_url: https://www.t-online.de/nachrichten/ausland/usa/id_100447198/supreme-court-oberster-us-richter-gastierte-wohl-in-putin-palast.html
+test_url: https://www.t-online.de/region/frankfurt-am-main/id_100246402/frankfurt-dieses-unvergleichliche-naturwunder-erwartet-sie-am-stadtrand.html
