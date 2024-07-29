@@ -1,0 +1,3 @@
+strip: //table[@id="trinity-audio-table"]
+
+test_url: https://bonpote.com/le-bonheur-a-quel-prix-pour-lenvironnement/
