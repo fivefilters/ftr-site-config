@@ -17,6 +17,9 @@ strip: //div[contains(@class, 'alert') and contains(text(), 'Info Icon') ]/text(
 find_string: <div class="container
 replace_string: <div class="foocontainer
 
+# general clean-up
+strip_id_or_class: article-nav
+
 prune: no
 tidy: no
 
