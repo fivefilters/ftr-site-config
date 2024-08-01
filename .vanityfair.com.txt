@@ -1,0 +1,13 @@
+body: //div[contains(@class, '_article_body')] | //div[contains(@class, 'bndwgt__info')]
+title: substring-before(//meta[@property="og:title"]/@content , ' | Vanity Fair')
+
+strip_id_or_class: bnd_artpg_hero_wrap
+strip_id_or_class: bndwgt__swiper-strip
+strip_id_or_class: bndwgt__section
+strip_id_or_class: bndwgt__headline
+strip_id_or_class: bndwgt__meta
+
+prune: no
+tidy: no
+
+test_url: https://archive.vanityfair.com/article/1985/9/fatal-charm-part-two
