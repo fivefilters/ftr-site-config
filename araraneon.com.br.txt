@@ -1,0 +1,15 @@
+body: //article[contains(@class, 'blog-post-page-font')]
+
+strip_id_or_class: BL3dva
+
+strip: //br[@role="presentation"]
+strip: //svg
+
+prune: no
+tidy: no
+
+# use real images instead of their blured mini versions
+find_string: /v1/fill/w_
+replace_string: " foo="
+
+https://www.araraneon.com.br/post/franz-liszt-tudo-sobre-mais-um-pouco-e-muito-mais
