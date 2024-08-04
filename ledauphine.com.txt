@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' col_main ')]//div[contains(concat(' ',normalize-space(@class),' '),' content ')]
+
+strip_id_or_class: relatedContentDetail
+strip_id_or_class: consentModule
+
+test_url: https://www.ledauphine.com/faits-divers-justice/2024/06/08/femme-enceinte-de-sept-mois-tuee-devant-son-mobil-home-des-chasseurs-interpelles

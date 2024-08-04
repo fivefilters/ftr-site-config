@@ -1,0 +1,3 @@
+single_page_link: //a[starts-with(@href, 'http') and contains(., 'Leer noticia completa')]
+
+test_url: https://lado.mx/noticia.php?id=15249243

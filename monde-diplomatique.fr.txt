@@ -1,3 +1,4 @@
+http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
 title: //h1[@class="h1"]
 body: //div[contains(@class, 'contenu-principal')]
 author: //meta[@property='article:author']/@content
@@ -7,16 +8,16 @@ strip: //div[contains(@class, 'dates_auteurs')]
 
 requires_login: yes
 
-login_uri: https://lecteurs.mondediplo.net?page=connexion_sso 
+login_uri: https://www.monde-diplomatique.fr/sso/connexion/
 login_username_field: email
 login_password_field: mot_de_passe
+login_extra_fields: valider=Valider
+login_extra_fields: session_remember=oui
+login_extra_fields: formulaire_action=identification_lecteur_ws
+login_extra_fields: retour=https://www.monde-diplomatique.fr/
 
-login_extra_fields: page=connexion
-login_extra_fields: formulaire_action=identification_sso
 login_extra_fields: formulaire_action_args=@=xpath("//form//input[@name='formulaire_action_args']", request_html(config.getLoginUri()))
-login_extra_fields: retour=http://www.monde-diplomatique.fr/
-login_extra_fields: site_distant=http://www.monde-diplomatique.fr/
-login_extra_fields: valider=valider
+login_extra_fields: _jeton=@=xpath("//form//input[@name='_jeton']", request_html(config.getLoginUri()))
 
 not_logged_in_xpath: //div[@id="paywall"]
 

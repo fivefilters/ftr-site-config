@@ -1,0 +1,23 @@
+title: //h1[@class='title']
+body: //div[@class='article_content'] | //div[@class='img_box']
+
+tidy: yes
+prune: yes
+
+strip: //div[@class='guangxuan']
+strip: //p[contains(text(),'👉')]
+strip: //div[@class='nolazydiv']
+strip: //div[@class='lazydiv']
+strip: //span[@class='endtext']
+
+strip_id_or_class: xx
+
+#activating images
+find_string: " src="https://cc.tvbs.com.tw/img/
+replace_string: " foosrc="https://cc.tvbs.com.tw/img/
+
+find_string: data-original="https://cc.tvbs.com.tw/img/
+replace_string: x src="https://cc.tvbs.com.tw/img/
+
+test_url: https://news.tvbs.com.tw/life/2396562
+https://news.tvbs.com.tw/world/2321803

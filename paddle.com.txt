@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'article-section_as__main')]
+author: //div[contains(@class, 'author-byline')]//a[contains(@href, '/author/')]
+date: //div[contains(@class, 'meta-data')]//span[contains(@class, 'date_d')]
+
+test_url: https://www.paddle.com/blog/how-quality-data-powers-pricing-success

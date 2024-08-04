@@ -1,0 +1,54 @@
+# chose your source feed from:
+# https://www.lampertheimer-zeitung.de/rss/lokales/hessen/
+
+# site has paywall, if you are using wallabag try to use
+# wallabagger browser-plugin with activated option
+# 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+http_header(referer): https://www.echo-online.de/
+
+body: //article
+author: //meta[@name='twitter:creator']/@content
+title: normalize-space(//meta[@property='og:title']/@content)
+date: //time/@datetime
+
+strip: //path
+strip: //script
+strip: //footer
+strip: //div[contains(@class, 'recommendations')]
+strip: //div[@data-testid='storyline-intro-authors']
+strip: //aside[contains(@data-testid, 'linkbox')]
+strip: //svg
+
+strip_id_or_class: recommendations__topStories
+strip_id_or_class: recommendations__cceWidget
+strip_id_or_class: storyElementWrapper__paywallContainer
+strip_id_or_class: storylineIntro__dateAndReadingTime
+strip_id_or_class: loadingBanner
+strip_id_or_class: adSlot
+strip_id_or_class: storylineHeader
+
+replace_string(,"value":): ,"invalid":
+replace_string(,"storylineText":): ,"value":
+
+# prevent the site logo to show, if article has no image
+insert_detected_image: no
+
+tidy: no
+prune: no
+
+# wallabag only:
+wrap_in(blockquote): //div[contains(@class, 'quoteWrapper')]
+# prevents wallabag to show image galery as overlay above article text
+find_string: class="contentWrapper slider
+replace_string: class="contentWrapper foo
+
+# don't remove this line! Site belongs to de_VRM group
+
+# The first URL will at some point no longer show 
+# the full article. There is a time-based paywall 
+# Using the feed should present valid output
+
+#test_url: https://www.lampertheimer-zeitung.de/lokales/hessen/trotz-demoverbots-anti-israelische-proteste-in-frankfurt-2943654
+test_url: https://www.lampertheimer-zeitung.de/rss/lokales/hessen/

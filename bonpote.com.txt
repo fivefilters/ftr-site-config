@@ -1,0 +1,18 @@
+body: //div[contains(@class, 'elementor-widget-theme-post-content')] | //div[contains(@class, 'post-featured-image')]
+author: //meta[@name='author']/@content
+
+strip: //table[@id="trinity-audio-table"]
+strip: //svg
+
+strip_id_or_class: elementor-hidden-desktop
+
+# subheadings missing in wallabag
+replace_string(class="wp-block-heading"): class="foo-wpbh"
+replace_string(<h2): <h3
+replace_string(</h2>): </h3>
+
+prune: no
+tidy: no
+
+test_url: https://bonpote.com/le-bonheur-a-quel-prix-pour-lenvironnement/
+test_url: https://bonpote.com/decroissance-et-prejuges/

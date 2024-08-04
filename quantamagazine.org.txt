@@ -1,4 +1,24 @@
-body: //div[contains(@class, 'post__content__section')]
+body: //div[@id='postBody']
+
+author: //div[contains(@class,'post__title__author-date')]/a
+title: //h1[contains(@class, 'post__title__title')]
+
+strip_id_or_class: screen-reader-text
+strip_id_or_class: hide-on-print
+strip_id_or_class: bookmark-button
+strip_id_or_class: post__title__actions
+strip_id_or_class: post__title__author-date
+strip_id_or_class: post__title__title
+strip_id_or_class: post__title__kicker
+
+strip: //figcaption//div[contains(@class, 'attribution theme__anchors')]
+strip: //aside[contains(@class, 'post__sidebar hide')]
+
+prune: no
+tidy: no
+
+# wallabag only:
+wrap_in(blockquote): //aside[contains(@class, 'post__aside')]
 
 test_url: https://www.quantamagazine.org/a-path-less-taken-to-the-peak-of-the-math-world-20170627/
 test_contains: Mathematicians are interested in the following

@@ -1,5 +1,23 @@
+##  some parts of BBC is JavaScript only, you'll need wallabager browser
+##  plugin to catch those articles for wallabag
+
+body: //main[1]//article[1]
+body: //main[1]
+
+strip: //section[@data-component='headline-block']
+strip: //section[@data-component='byline-block']
+
+strip: //section[@data-component='links-block']
+strip: //section[@data-component='tags']/self::* | //section[@data-component='tags']/following-sibling::*
+
+strip_id_or_class: dotcom-mpu_mid
+strip: //main[1]//header[1]
+strip: //nav
+
+##
+
 body: //article[contains(@class, "-ArticleWrapper")]
-body: (//div[contains(@class, 'article__body-content')])[1]
+body: //article[@class='article__body'] | (//div[contains(@class, 'article__body-content')])[1]
 body: (//div[@id="story-body"])[1]
 
 # for video entries
@@ -28,8 +46,12 @@ body: //div[contains(@class, 'hrecipe')]//div[@id='subcolumn-1']
 strip: //article//header
 strip: //div[contains(@class, "CommentsWrapper")]
 strip: //*[contains(@class, 'VisuallyHidden')]
+strip: //*[@data-testid='byline-role' or @data-testid='drawer-background' or @data-testid='main-footer']
+strip: //*[@data-analytics_group_name='More' or @data-analytics_group_name='Related']
+strip_image_src: grey-placeholder.png
 
 strip: //svg
+strip: //button
 
 #strip: //div[@class="story-feature narrow"]
 #strip: //div[@class="story-feature wide"]
@@ -78,8 +100,10 @@ replace_string: http://ichef.bbci.co.uk/news/660/
 
 replace_string({width}{hidpi}): 624
 
-replace_string(<noscript>): <div>
-replace_string(</noscript>): </div>
+# These can now contain 'Media playback is not available on your device', rather than alternative images
+# Do we have an example article where we want to use the noscript content instead?
+#replace_string(<noscript): <div
+#replace_string(</noscript): </div
 
 native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
 

@@ -1,0 +1,10 @@
+# @funkemedien site
+
+body: //main/article[1]
+
+strip: //address/ancestor::div[1]
+strip: //hgroup
+strip: //time/parent::div
+strip: //section[@aria-label='Newsletter Anmeldung']/parent::div
+
+test_url: https://www.wp.de/politik/article242220498/Richter-droht-Donald-Trump-unmissverstaendlich-mit-Gefaengnis.html

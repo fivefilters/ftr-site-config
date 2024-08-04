@@ -1,3 +1,12 @@
-body: //section[@itemprop="articleSection"]
+# This website delivers only a few paragraphs in pure HTML, the rest is loaded via JavaScript.
+# Neither FTR nor Wallabag UI can receive this part.
+# With 'Wallabagger' browser plugin you can read the whole content.
 
-test_url: https://www.wysokieobcasy.pl/wysokie-obcasy/7,53664,25805103,milosc-w-zwiazku-to-nie-namietnosc-sprawia-ze-ludzie-czuja.html
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+
+body: //div[@id='wo_article_body'] | //section[@class='article-lead'] | //div[@role='headline'] | //div[@class='article--image']
+
+prune: no
+tidy: no
+
+test_url: https://www.wysokieobcasy.pl/Instytut/7,186310,30887675,joanna-flis-pamietamy-zdarzenia-tak-by-stanowily.html

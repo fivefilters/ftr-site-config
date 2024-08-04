@@ -1,0 +1,17 @@
+body: //article[contains(@class, 'doc')]
+author: //article[contains(@class, 'doc')]/@data-analytics-authors
+
+strip_id_or_class: crumbs
+strip_id_or_class: doc_header__time
+strip_id_or_class: iconbox
+strip_id_or_class: js-social
+
+strip: //header/h1
+strip: //footer
+
+prune: no
+tidy: no
+
+replace_string(noscript>): div>
+
+test_url: https://www.kommersant.ru/doc/3669956

@@ -1,0 +1,16 @@
+title: //h1[@class='article-content__title']
+author: //span[normalize-space(@class)='article-content__author']
+date: //time[@class='article-content__time']
+body: //section[contains(@class, 'article-content__editor')]/p
+
+strip: //header[@class='header']
+strip: //figure[@class='article-content__cover']
+strip: //div[contains(@class, 'udn-ads')]
+strip: //footer[@class='footer']/div/section
+
+next_page_link: substring-before(substring-after(//section[@class='article-content__wrapper']/p/script, 'window.location.href="'), '?";')
+
+test_url: https://udn.com/news/story/123475/7600512
+test_url: https://udn.com/news/story/7241/8064274
+test_url: https://udn.com/news/story/6837/8063743?
+test_url: https://udn.com/news/story/6809/7597673?from=udn-ch1_breaknews-1-0-news

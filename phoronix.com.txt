@@ -1,6 +1,8 @@
 title: //meta[@name="og:title"]/@content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]
 author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]/a[1]
+date: substring-before(substring-after(//div[contains(concat(' ',normalize-space(@class),' '),' author ')], ' on '), ' at')
+date: substring-before(substring-after(//div[contains(concat(' ',normalize-space(@class),' '),' author ')], ' on '), '.')
 next_page_link: //div[@id='content-bg']/div/div[@id='main-wrap']/div/article/div[@class="foot"]/div/a[@title="Go To Next Page"]
 
 find_string: <script language="javascript" src="https://openbenchmarking.org
@@ -13,3 +15,4 @@ find_string: &p=0" type="text/javascript"></script>
 replace_string: " />
 
 test_url: https://www.phoronix.com/scan.php?page=article&item=clear-fall-2020&num=8
+test_url: https://www.phoronix.com/news/Linux-6.7-sysctl

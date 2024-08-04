@@ -4,6 +4,17 @@ author: //article//div[contains(@class, 'is-hidden-mobile')]//a[contains(@href, 
 # parser: html5lib
 replace_string("</div>"): "&lt;/div&gt;"
 
+find_string: w,https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/
+replace_string: w, https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/
+find_string: resize=928, 522
+replace_string: resize=928,522
+find_string: resize=768, 432
+replace_string: resize=768,432
+find_string: resize=480, 270
+replace_string: resize=480,270
+find_string: resize=512, 288
+replace_string: resize=512,288
+
 body: //div[contains(@class, 'post-content')]
 
 strip: //span[@class='summary-entry']
@@ -13,6 +24,11 @@ strip: //noscript
 strip: //div[@class="embedded-tag-container"]
 strip: //p[contains(@class, 'humanoid-videos--title')]
 strip: //a[contains(@class, 'humanoid-videos__video-title')]
+strip: //div[contains(@class, 'embed-consent-overlay')]
+strip: //div[contains(@class, "user-options")]
+strip: //aside[contains(@class, 'premium-promo-alert')]
+strip: //div[contains(@class, 'premium-promo-alert')]
+
 strip_id_or_class: js-cookies-bar
 # Here we strip a malformed menu they insert sometimes that breaks tidying and pruning
 strip_id_or_class: index-menu

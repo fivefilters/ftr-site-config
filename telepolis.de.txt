@@ -1,0 +1,23 @@
+# parts taken over from heise.de.txt
+# while telepolis.de does not need that much tweaking
+
+author: //meta[@name='author']/@content
+
+strip_id_or_class: printversion__back-to-article
+strip_id_or_class: printversion__logo
+
+strip: //nav
+
+# use image from noscript-part
+strip: //a-img
+replace_string(noscript>): div>
+
+single_page_link: //a[contains(@href, '?view=print')]
+single_page_link: //a[contains(@title, 'Druck')]
+single_page_link: //a[contains(@href, '?seite=all')]/@href
+
+# prevent wallabag from stripping <h3 class="subheading">
+find_string: class="subheading"
+replace_string: class="wb-foo"
+
+test_url: https://www.telepolis.de/features/Der-unprovozierte-Krieg-Wenn-Stoltenberg-und-Co-die-Wahrheit-ueber-die-Nato-Erweiterung-sagen-9314024.html

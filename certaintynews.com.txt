@@ -1,0 +1,21 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content_left ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' text-style-author-date ')]
+author: //a[contains(concat(' ',normalize-space(@class),' '),' link_author-name-blue ')]
+
+strip_id_or_class: subcategories-wrapper
+strip_id_or_class: w-script
+strip_id_or_class: article_next-up-block
+strip_id_or_class: newsletter_wrapper
+strip_id_or_class: embed_newsletter
+strip_id_or_class: img_author-headshot-bottom-wrapper
+strip_id_or_class: img_author-headshot-bottom
+# Ads
+strip_id_or_class: arcticle-ad-block-wrapper
+strip_id_or_class: article_marketplace-ad
+strip_id_or_class: randomized_ads-list-wrapper
+
+replace_string(<div class="text-author-name-big">By</div>):<span class="text-author-name-big">By </span>
+
+prune: no
+
+test_url: https://www.certaintynews.com/article/influence-with-uru-navigating-business-relationships-and-challenges

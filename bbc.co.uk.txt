@@ -90,3 +90,11 @@ test_url: http://feeds.bbci.co.uk/news/rss.xml
 test_url: http://feeds.bbci.co.uk/sport/0/football/rss.xml?edition=int
 # video entry
 test_url: http://www.bbc.co.uk/news/world-asia-22056933
+
+# bbcthree long articles / gel (?) articles?
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' LongArticle-headline ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' LongArticle-body ')]
+author: //span[contains(concat(' ',normalize-space(@class),' '),' Info-authorName ')]
+date: //time[contains(concat(' ',normalize-space(@class),' '),' Info-timestamp ')]
+test_url: https://www.bbc.co.uk/bbcthree/article/991ea351-1e67-46dc-824d-a13033526ca6
+test_contains: In essence, Professor Rippon believes that our 'male' and 'female' behaviour is not innate but learned as we develop.

@@ -1,0 +1,26 @@
+# piped.video uses JavaScript :-( so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[@class='w-full']
+# this title-extraction doesn't work:
+title: substring-before( //title/text() , ' - Piped' )
+
+strip_id_or_class: mb-3
+strip_id_or_class: mt-2
+strip_id_or_class: gap-1
+
+strip: //label[@for='chkAutoLoop']/self::* | //label[@for='chkAutoLoop']/following-sibling::*
+strip: //label[@for='chkAutoPlay']/self::* | //label[@for='chkAutoPlay']/following-sibling::*
+
+strip: //label[@for='showChapters']
+
+strip: //hr
+strip: //button
+strip: //footer
+
+test_url: https://piped.video/watch?v=3aIcO0vrrQE

@@ -1,0 +1,21 @@
+# due to JavaScript, you'll need wallabagger browser plugin to get articles
+# for this site
+
+body: //article[1]
+title: //div[@class='core-container']/h1
+
+strip: //button
+strip: //div[@class='core-container']/div[@class='meta-panel']
+strip: //div[@class='core-container']/h1
+strip: //div[@data-core-nav='header']
+strip: //aside[@data-core-aside='right-rail']
+
+strip_id_or_class: to-authors-affiliations
+strip_id_or_class: info-panel
+strip_id_or_class: core-collateral
+strip_id_or_class: quick-take
+
+prune: no
+
+test_url: https://www.nejm.org/doi/full/10.1056/NEJMoa2401479
+test_url: https://www.nejm.org/doi/full/10.1056/NEJMoa2309003

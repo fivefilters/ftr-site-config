@@ -1,0 +1,14 @@
+title: //div[contains(@class,'woman_article')][1]/h1
+body: //div[contains(@class,'woman_article')][1]
+body: //article[@class='break-words'][1]
+author: //span[@aria-label='article author'][1]
+date: //span[@aria-label='publish time'][1]
+
+strip: //aside
+strip: //section[@aria-label='advertise section']
+strip: //section[@aria-label='extend reading']
+strip: //section[@id='articleInfo']
+strip: //span[@class='endtext']
+
+test_url: https://woman.tvbs.com.tw/entertainment/41893
+test_url: https://woman.tvbs.com.tw/fashion/44205

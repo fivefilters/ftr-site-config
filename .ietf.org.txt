@@ -1,0 +1,10 @@
+body: //div[@id='content']
+date: //time/@datetime
+
+insert_detected_image: no
+
+strip_id_or_class: pilcrow
+
+prune: no
+
+test_url: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-sd-jwt-vc-01

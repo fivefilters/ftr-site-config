@@ -1,0 +1,18 @@
+title: //h1[contains(concat(' ', normalize-space(@class), ' '), ' title ')]
+date: //time/@datetime
+author: //div[contains(concat(' ', normalize-space(@class), ' '), ' author-title ')]
+body: //strong[contains(concat(' ', normalize-space(@class), ' '), ' subtitle ')] | //div[@class='article-body']
+
+strip: //time
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' article-more-from ')]
+
+# Format lead paragraph differently from rest of body
+find_string: <div class="article-subtitle
+replace_string: <strong class="article-subtitle
+
+tidy: no
+prune: no
+
+test_url: https://www.al-monitor.com/originals/2021/03/ukrainians-held-hostage-pkk-militants-iraqi-kurdistan-over-arms-trafficking-scam
+test_url: https://www.al-monitor.com/originals/2023/11/turkeys-parliament-debate-swedens-nato-bid-erdogan-eyes-biden-invite
+test_url: https://www.al-monitor.com/originals/2023/11/proof-life-video-russian-israeli-scholar-suggests-iraqi-captors-want-negotiate

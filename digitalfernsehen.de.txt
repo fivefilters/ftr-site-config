@@ -1,13 +1,25 @@
-# Author: HolgerAusB  |  Version: 2023-01-26
+# Author: HolgerAusB  |  Version: 2023-10-20
 #
 # to get your feed, add '/feed/' to your categorie-link, e.g.:
 # https://www.digitalfernsehen.de/news/feed/
 # https://www.digitalfernsehen.de/tests/feed/
 
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/120.0
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]/div[contains(@class, 'td-post-content')]
+author: //meta[@name='author']/@content
+
 strip_id_or_class: wp-caption-text
 strip_id_or_class: isc_image_list_box
 strip_id_or_class: td-adspot-title
+strip_id_or_class: wp-block-buttons
+strip_id_or_class: embed-privacy-overlay
+
 strip: //button
+strip: //footer
+
+prune: no
 
 test_url: https://www.digitalfernsehen.de/news/inhalte/fernsehen/der-bachelor-hat-seine-letzte-rose-verteilt-592095/
+test_url: https://www.digitalfernsehen.de/kommentar/killers-of-the-flower-moon-kritik-martin-scorsese-apple-tv-1104619/
 test_url: https://www.digitalfernsehen.de/feed/

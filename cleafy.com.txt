@@ -1,0 +1,6 @@
+body: //div[contains(@class, 'full blog')]
+title: //h1[@class='clabtitle']
+
+strip_id_or_class: author-block
+
+test_url: https://www.cleafy.com/cleafy-labs/on-device-fraud-on-the-rise-exposing-a-recent-copybara-fraud-campaign

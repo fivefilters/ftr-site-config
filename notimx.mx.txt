@@ -1,0 +1,5 @@
+# actual URL is blogspot
+# <frame src="https://agencianotimx.blogspot.mx/2023/10/pone-en-marcha-alcalde-adolfo-cerqueda.html" title="notimx.mx" frameborder="0" noresize="noresize"/>
+single_page_link: //frame[contains(@src, 'notimx')]/@src
+
+test_url: https://notimx.mx/2023/10/pone-en-marcha-alcalde-adolfo-cerqueda.html

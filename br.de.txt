@@ -1,0 +1,16 @@
+body: //article[1]
+
+strip: //aside
+strip: //svg
+strip: //footer
+
+strip: //section[contains(@class, 'ArticleModuleTeaser_meta__')]
+strip: //h2[contains(@class, 'ArticleModuleTeaser_title__')]
+strip: //div[contains(@class, 'SocialMediaSharer')]
+strip: //div[contains(@class, 'ArticleBreadcrumb_breadcrumb__')]
+strip: //div[contains(@class, 'ArticleModuleTeaser_authorSection__')]
+strip: //*[contains(@class, 'ArticleSectionSourceOrigin_')]
+
+prune: no
+
+test_url: https://www.br.de/nachrichten/deutschland-welt/faktenfuchs-bevoelkerungswachstum-nicht-schuld-am-klimawandel,TPWXLMU

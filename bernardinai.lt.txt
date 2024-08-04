@@ -1,0 +1,16 @@
+body: //main//div[contains(@class, 'full-content')]
+author: //meta[@name='author']/@content
+
+strip_id_or_class: article-foot__links
+strip_id_or_class: donate-block
+strip_id_or_class: ads-donation-block-mobile
+strip_id_or_class: list-newsletter
+strip_id_or_class: related-articles
+strip_id_or_class: article-foot
+
+strip: //svg
+
+prune: no
+
+test_url: https://www.bernardinai.lt/politologai-apie-rinkimus-skaiciai-logiski-rezultatas-nestebina/
+test_url: https://www.bernardinai.lt/maestro-s-domarkas-dziaugiuosi-kad-85-meciui-dar-galiu-surengti-koncerta-repetuoti-su-orkestru/

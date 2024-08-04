@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'current-post')]//div[contains(@class, 'body-description')] | //article[1]//div[@class='widget__head']/picture
+author: //div[contains(@class, 'post-author')]
+
+test_url: https://heatmap.news/technology/sublime-carbon-cement-electrolyzer
+test_contains: Our process is true zero

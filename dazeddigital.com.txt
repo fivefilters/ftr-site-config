@@ -1,0 +1,26 @@
+body: (//article[@class='main-article'])[1]
+title: normalize-space( //meta[@property='og:title']/@content )
+author: //a[@class='contributor-name']
+date: //time[@class='timestamp']/@datetime
+
+strip: //aside
+strip: //h1[@class='title']
+
+strip_id_or_class: pin-btn
+strip_id_or_class: pin-hover
+strip_id_or_class: show-when-aside-content-hides
+strip_id_or_class: read-more
+strip_id_or_class: advert-container
+strip_id_or_class: hidden-desktop
+
+find_string: data-src="https://www.youtube.com/embed/
+replace_string: src="https://www.youtube.com/embed/
+
+find_string: <figure class="inline-img
+replace_string: <img class="inline-img
+
+prune: no
+tidy: no
+
+test_url: https://www.dazeddigital.com/beauty/article/60860/1/we-were-never-supposed-to-see-our-faces-this-much-social-media-zoom
+test_url: https://www.dazeddigital.com/beauty/article/60926/1/why-the-70s-cool-girl-beauty-of-dazed-and-confused-still-resonates-today

@@ -1,0 +1,28 @@
+# no native feed, try to generate feed:
+# https://createfeed.fivefilters.org/
+# with   item=         .dmnc_generic-cards-card-module__FcjA3
+#        item_title=   h2
+# e.g.   URL=          https://www.dallasnews.com/news/
+# or     URL=          https://www.dallasnews.com/espanol/al-dia/mexico/
+
+body: //div[@id='fusion-app']/section[1]/div[1]
+
+strip_id_or_class: dmnc_generic-article-byline-byline-module__4T6-C
+strip_id_or_class: dmnc_features-article-author-author-module__0hBFH
+strip_id_or_class: dmnc_generic-share-bar-share-bar-module__C7Mzo
+
+strip: //div[contains(@class, '-ads-arc')]
+strip: //div[contains(@class, '-cta-social')]
+strip: //div[contains(@class, 'features-article-body-embeds')]
+strip: //article[contains(@id, 'related-story')]
+
+# spanish edition "al día", <b> for FTR, and <strong> for wallabag:
+strip: //b[starts-with(text(), 'Lea aquí:')]/ancestor::p[1]
+strip: //strong[starts-with(text(), 'Lea aquí:')]/ancestor::p[1]
+strip: //b[starts-with(text(), 'Lea también:')]/ancestor::p[1]
+strip: //strong[starts-with(text(), 'Lea también:')]/ancestor::p[1]
+strip: //a[contains(@href, '/newsletter')]/ancestor::p[1]
+strip: //a[contains(@href, '//t.me/')]/ancestor::p[1]
+
+test_url: https://www.dallasnews.com/arts-entertainment/architecture/2024/07/02/a-look-inside-late-dallas-architect-ron-wommacks-aia-award-winning-shelter-near-oak-lawn/
+test_url: https://www.dallasnews.com/espanol/al-dia/mlb-texas-rangers/2024/07/16/juego-de-estrellas-mexicanos-mlb-isaac-paredes-andres-munoz-beisbol/

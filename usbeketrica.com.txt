@@ -1,5 +1,32 @@
+body: //main/article[1]
 author: //*[@id="author_header"]
 
-body: //article//div[contains(concat(' ',normalize-space(@class),' '),' text-primary ')] | //article//div[contains(concat(' ',normalize-space(@class),' '),' rich-text ')]
+strip_id_or_class: tags
+strip_id_or_class: author-event
+strip_id_or_class: author_date_header
+
+strip: //h1[1]
+strip: //div[@id='author_header']/parent::div/parent::div
+
+# strip social-links including parent div
+strip: //svg/parent::a/parent::div/parent::div
+
+find_string: src="data:image
+replace_string: foo="data:image
+
+find_string: data-srcset="
+replace_string: src="
+
+find_string: data-src="
+replace_string: src="
+
+# prevent wallabag to set text-color to white, which makes it invisible on light theme
+# due to same class name in css wich is: .text-primary{color:#fff}
+find_string: text-primary
+replace_string: Text-primary
+
+prune: no
+tidy: no
 
 test_url: https://usbeketrica.com/fr/article/open-source-logiciel-libre-inclusion
+test_url: https://usbeketrica.com/fr/article/jean-baptiste-fressoz

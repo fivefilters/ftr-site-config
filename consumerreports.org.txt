@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' cda-article__main-content ')]
+strip_id_or_class: rel-article-wrapper
+strip_id_or_class: md-social-share-holder
+
+prune: no
+
+test_url: https://www.consumerreports.org/cars/buying-a-car/leasing-vs-buying-a-new-car-a9135602164/

@@ -1,0 +1,18 @@
+# Very ugly web page. The article is wrapped in <blockquote>, that causes wallabag to
+# mark all conent as quoted, due to its css style sheets. So we need the /* to get only things inside
+# the blockquote-tag, but without the tag itself
+body: //body/blockquote/*
+
+strip: //img[contains(@src, '/logo.gif')]
+
+prune: no
+tidy: no
+
+# site uses a wrapper page with iframe to embed content but
+# we want to use the content from the iframe-src directly
+single_page_link: //iframe[contains(@src, 'firstmonday.org/ojs/index.php/fm/article/download')]/@src
+
+# iframe-page...
+test_url: https://firstmonday.org/ojs/index.php/fm/article/view/13181/11383
+# ...results in
+test_url: https://firstmonday.org/ojs/index.php/fm/article/download/13181/11383?inline=1

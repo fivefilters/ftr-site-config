@@ -1,0 +1,10 @@
+title: //meta[@property="og:title"]/@content
+author: //meta[@name="author"]/@content
+date: //meta[@property="article:published_time"]/@content
+
+strip: //img[@class="featured-image"]
+strip: //div[@data-app="share_buttons"]
+strip: //aside
+
+test_url: https://www.dice.com/career-advice/would-technologists-work-for-an-unethical-company
+test_url: https://www.dice.com/career-advice/a-place-for-women-in-cybersecurity

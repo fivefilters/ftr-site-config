@@ -1,0 +1,16 @@
+title: //h1[@data-alias="article-header__headline"]
+body: //div[@data-component="template-article"]//div[contains(@class,'_main_')]
+strip: //svg
+strip: //button
+strip: //div[contains(@class, '_eyebrow_')]
+strip: //div[contains(@class, '_socialMedia_')]
+strip: //div[@data-component="article-footer"]
+strip: //div[@data-alias="byline__swingout-ui"]
+strip: //div[@data-component="cards-related-content"]
+strip: //div[@data-component="ad-unit-gallery"]
+
+strip_id_or_class: wp-block-pullquote
+
+prune: no
+
+test_url: https://www.artforum.com/features/dan-nadel-on-the-art-of-christina-ramberg-237540/

@@ -1,0 +1,13 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/120.0
+
+body: //body/section[1]
+
+strip: //body/section[1]/h1[1]
+
+# needed for FTR to prevent loading a preview screenshot image of the article
+insert_detected_image: no
+
+prune: no
+tidy: no
+
+test_url: https://til.simonwillison.net/python/pyproject

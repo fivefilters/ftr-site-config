@@ -1,9 +1,14 @@
-title: //h1[@class='mainContentTitle']
-date: //span[@class='publication']/time/@datetime
+http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
-body: //div[@class='articleText']
-strip_id_or_class: rekommenderade
-strip_id_or_class: disqus
-strip_id_or_class: annonser
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' ap-Title ')]
+date: //meta[contains(concat(' ',normalize-space(@class),' '),' cXenseParse:recs:publishtime ')]@content
+body: //article[contains(concat(' ',normalize-space(@class),' '),' ap-Story ')]
 
-test_url: http://www.lalibre.be/actu/international/emmanuelle-mignon-l-ex-directrice-de-cabinet-de-sarkozy-mise-en-examen-56b10c9d3570b1fc10e24f20
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ap-StoryHeader-topbar ')]
+strip: //footer
+
+strip_id_or_class: ap-StoryAuthor
+strip_id_or_class: ap-StoryInterstitialLink
+strip_id_or_class: ux-PaywallPianoFallback
+
+test_url: https://www.lalibre.be/belgique/2024/01/28/les-inscriptions-en-premiere-secondaire-commencent-ce-lundi-OLPGVZ6DVFGMPDMAAWH42K2SWY/

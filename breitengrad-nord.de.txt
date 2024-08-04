@@ -1,0 +1,19 @@
+body: //div[@id='ajax-content-wrap']
+author: //meta[@name='author']/@content
+
+strip: //div[contains(@class, 'blog_next_prev_buttons')]/parent::div
+
+strip_id_or_class: blog-title
+strip_id_or_class: slide-out-widget-area
+strip_id_or_class: single-below-header
+strip_id_or_class: lwptoc
+strip_id_or_class: before-footer
+strip_id_or_class: footer-outer
+
+# Prevents Wallabag from indenting text
+replace_string(class="container):class="foocontainer
+
+prune: no
+tidy: no
+
+test_url: https://breitengrad-nord.de/chromatische-aberration-entfernen/#ajax-content-wrap

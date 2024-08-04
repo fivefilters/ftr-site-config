@@ -1,0 +1,11 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]
+title: //header//h2
+date: substring-before(//div[contains(concat(' ',normalize-space(@class),' '),' publish-date-author ')], ' · ')
+author: substring-before(substring-after(//div[contains(concat(' ',normalize-space(@class),' '),' publish-date-author ')], ' · '), 'on behalf of' )
+author: substring-after(//div[contains(concat(' ',normalize-space(@class),' '),' publish-date-author ')], ' · ')
+
+# prevent FTR to use generic site logo, when article has no image
+insert_detected_image: no
+
+test_url: https://blog.rust-lang.org/inside-rust/2023/10/06/polonius-update.html
+test_url: https://blog.rust-lang.org/2023/09/25/Increasing-Apple-Version-Requirements.html

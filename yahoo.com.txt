@@ -1,11 +1,10 @@
 # changes to this file should also be made to .yahoo.com.txt
 title: //meta[@property="og:title"]/@content
 body: //article[@itemprop="articleBody"]
+body: //div[@class='caas-img-container'] | //div[@class='caas-body']
 
 strip_id_or_class: img-mask
 strip_id_or_class: StretchedBox
-strip_id_or_class: module-spotIm
-strip_id_or_class: module-moreStories
 #strip_image_src: spaceball.gif
 strip: //button
 
@@ -14,6 +13,9 @@ replace_string: itemprop="url" src="
 find_string: );" src="https://s.yimg.com/g/images/spaceball.gif"
 replace_string: "
 
+# imidiate instead lazy load images
+find_string: data-src=http
+replace_string: src=http
 prune: no
 
 test_url: https://www.yahoo.com/news/amazon-just-accidentally-leaked-details-145441439.html

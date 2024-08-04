@@ -1,0 +1,19 @@
+# also on inquirer.net.txt
+
+strip_id_or_class: article_disclaimer
+strip_id_or_class: article-new-featured
+strip_id_or_class: billboard_article
+strip_id_or_class: article-new-featured
+strip_id_or_class: sib-form-container-bc
+strip_id_or_class: sib-form
+strip_id_or_class: view-comments
+strip_id_or_class: lsmr-mostread
+strip_id_or_class: lsmr-latest
+strip_id_or_class: rn-2023
+strip_id_or_class: rn-2024
+strip_id_or_class: mgid-desk
+strip_id_or_class: mgid-mob
+
+strip: //strong[starts-with(., 'READ:')][./a]
+
+test_url: https://newsinfo.inquirer.net/1948632/abante-says-drug-war-victims-kin-should-attend-hearings-and-not-give-in-to-fear

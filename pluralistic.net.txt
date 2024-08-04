@@ -1,0 +1,5 @@
+title: //h1[@class='entry-title']
+
+author: //a[@class='url fn n']
+
+test_url: https://pluralistic.net/2023/07/31/seize-the-means-of-computation/

@@ -1,0 +1,23 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/126.0
+
+body: //div[@class='post-content']
+
+
+# rewrite <iframe> @src to show content of
+# vimeo, youtube
+
+find_string: data-src="https://player
+replace_string: src="https://player
+
+find_string: data-src="https://www.youtube
+replace_string: src="https://www.youtube
+
+find_string: data-src="https://youtu
+replace_string: src="https://youtu
+
+# prevent FTR from using a generic image or a (ugly) still image from iframed video
+insert_detected_image: no
+
+test_url: https://alicewalkersgarden.com/2023/03/theyre-trying-to-burn-the-wrong-witch-the-witch-trials-of-j-k-rowling-redacted-news/
+test_url: https://alicewalkersgarden.com/2024/03/you-have-to-lead-yourself-vote-for-you-a-teaching-using-tik-tok/
+test_url: https://alicewalkersgarden.com/2024/04/archie-roach-eternal-brother-never-a-goodbye/

@@ -1,0 +1,4 @@
+body: //article[@class="prose"]
+
+test_url: https://labs.ripe.net/author/kathleen_moriarty/the-llm-misinformation-problem-i-was-not-expecting/
+test_contains: The problems around vetting AI results won't be going away anytime soon.

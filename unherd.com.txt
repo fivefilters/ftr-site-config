@@ -7,9 +7,14 @@ strip_id_or_class: article-image mobile
 strip: //div[contains(@class, 'author-side')]
 
 ## strip footer / comments
-strip://div[@class="comment-break"]
-strip://div[@class="uhcomments"]
-strip://div[@class="featured_caption"]/a
+strip: //div[@class="comment-break"]
+strip: //div[@class="uhcomments"]
+strip: //div[@class="featured_caption"]/a
+
+# strip email signup and surrounding <hr>
+strip: //a[@id='ad-sign-in']/ancestor::div[2]/self::div
+strip: //div[contains(@id, 'div-gpt-ad')]/preceding-sibling::hr | //div[contains(@id, 'div-gpt-ad')]/following-sibling::hr
+strip: //div[contains(@class, 'code-block')]/hr
 
 ## strip header with category+time
 strip: //div[@class='time']/self::div | //div[@class='time']/preceding-sibling::* | //div[@class='time']/following-sibling::h2[1]

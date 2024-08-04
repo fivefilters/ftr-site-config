@@ -1,7 +1,10 @@
-http_header(user-agent): curl/7.54.0
+http_header(user-agent): Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' articlecontent ')]/div[contains(concat(' ',normalize-space(@class),' '),' richtext ')]
+body: //*[@class='article-body']
 
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' articlecontent ')]/div[contains(concat(' ',normalize-space(@class),' '),' richtext ')]/div[not(contains(concat(' ',normalize-space(@class),' '),' e-image '))]
+strip_id_or_class: continue-reading-slot
 
-test_url: https://www.msn.com/en-us/news/technology/followers-are-a-valuable-currency-who-should-own-them/ar-AAXfrUU
+prune: no
+tidy: no
+
+test_url: https://www.msn.com/en-us/news/us/mass-casualty-incident-at-us-mexico-border/ar-BB1jice0

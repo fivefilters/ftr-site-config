@@ -1,0 +1,13 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' content-container__single ')]
+body: //article[contains(concat(' ',normalize-space(@class),' '),' content-container ')]
+strip: //aside
+strip: //header
+strip: //footer
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' notice-header ')]
+
+# HTML5-PHP parsing issue?
+parser: libxml
+
+prune: no
+
+test_url: https://www.cityam.com/uk-to-reveal-social-media-ban-plans-for-under-16s-within-weeks/

@@ -1,0 +1,35 @@
+body: //body/div[starts-with(@class, 'section-')]
+author: //div[@class='text-block-134']
+
+title: //meta[@property='og:title' and substring(@content, string-length(@content) - 9) != ' - Axiocap']/@content
+title: substring-before( //meta[@property='og:title']/@content , ' - Axiocap')
+title: //div[contains(@class, 'div-block-header')]//h1
+
+strip: (//body/div[starts-with(@class, 'section-')])[last()]
+strip: (//body/div[starts-with(@class, 'section-')])[1]/div[not(contains(@class, 'div-block-header'))]
+strip: (//body/div[starts-with(@class, 'section-')])[1]//h1
+
+# back link
+strip_id_or_class: text-block-234
+strip_id_or_class: collection-list-wrapper
+
+# section names
+strip_id_or_class: div-block-131
+
+# date/author lines
+strip_id_or_class: div-block-142
+
+# TOC:
+strip_id_or_class: div-block-144
+
+# footer
+strip_id_or_class: div-block-326
+strip_id_or_class: div-block-135
+
+# newsletter overlay
+strip_id_or_class: div-block-501
+
+prune: no
+
+test_url: https://www.axiocap.com/blog/digitalisation-entreprises-reussir-transformation-ere-numerique
+test_url: https://www.axiocap.com/blog/actionnariat-salarie-entreprise

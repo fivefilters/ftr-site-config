@@ -1,0 +1,5 @@
+title: //h1
+body: //div[@id="doc-wrapper"]
+
+test_url: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/monitoring_and_managing_system_status_and_performance/assembly_using-systemd-to-manage-resources-used-by-applications_monitoring-and-managing-system-status-and-performance
+test_contains: RHEL 9 moves the resource management settings from the process level to the application level by binding the system of cgroup hierarchies with the systemd unit tree

@@ -1,3 +1,20 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //article[1]
+
 strip: //div[contains(@class, 'noprint')]
+strip_id_or_class: glibelle
+strip_id_or_class: article_info
+
+# sometimes images has two identical captions, removes one. See 3rd test_url
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' legende_logo ')]/following-sibling::p[contains(@class, 'legende_logo_')] | //p[contains(concat(' ',normalize-space(@class),' '),' legende_logo ')]/preceding-sibling::p[contains(@class, 'legende_logo_')]
 
 test_url: https://reporterre.net/Les-milliardaires-n-en-finissent-plus-de-s-enrichir
+test_url: https://reporterre.net/Aller-en-festival-a-velo-le-nouveau-defi-des-fetards-ecolos
+test_url: https://reporterre.net/Le-brame-du-cerf-raconte-par-les-biches

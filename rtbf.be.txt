@@ -1,0 +1,11 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+title: substring-before(substring-after(//script, 'datePublished":"') , '","')[0]
+date: substring-before(substring-after(//script[@id='__NEXT_DATA__'] , 'updatedAt":"') , '","')[0]
+body: //div[@id="content"]
+
+# Prevents wallabag from indenting the complete text
+find_string: <div class="container
+replace_string: <div class="foocontainer
+
+test_url: https://www.rtbf.be/article/limportance-du-marquage-au-sol-dans-la-securite-des-cyclistes-11319232

@@ -1,0 +1,15 @@
+body: //main/article[1]
+title: //header/h1
+date: //p[@class='last-modified-date']/time/@datetime
+
+strip: //header
+strip: //aside
+strip: //button
+
+# for wallabag
+wrap_in(blockquote): //div[@class='notecard note']
+
+prune: no
+
+test_url: https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
+test_url: https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API

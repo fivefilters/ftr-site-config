@@ -9,6 +9,7 @@ body: (//article)[1]
 
 strip_id_or_class: hydra-latest-news-page-short-news__meta
 strip_id_or_class: hydra-latest-news-page-short-news__a11y
+strip_id_or_class: hydra-latest-news-page__short-news-list
 
 prune: no
 tidy: no

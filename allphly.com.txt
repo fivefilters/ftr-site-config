@@ -1,0 +1,14 @@
+body: //article[contains(concat(' ',normalize-space(@id),' '),' post ')]
+author: //div[not(contains(@class, 'avatar'))]/a[contains(@href, 'allphly.com/author/')]
+title: substring-before( //title , ' - PHLY' )
+
+strip_id_or_class: gspb-dynamic-post-title
+strip_id_or_class: gspb_meta
+
+strip: //svg
+strip: //div[contains(@class, 'wp-block-avatar')]/parent::div
+strip: //div[contains(@class, 'gspb_svgBox-id-gsbp')] | //div[contains(@class, 'gspb_svgBox-id-gsbp')]/following-sibling::*
+
+prune: no
+
+test_url: https://allphly.com/sixers-news-analysis-joel-embiid-needs-to-score-less/

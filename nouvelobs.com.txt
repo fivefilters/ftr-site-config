@@ -1,0 +1,18 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' page ')]
+
+strip: //header
+strip_id_or_class: cmp-disclaimer__text
+strip_id_or_class: article__share
+strip_id_or_class: sidecol
+strip_id_or_class: pre_footer
+strip_id_or_class: highlights
+strip_id_or_class: advertising
+strip_id_or_class: node__media-article
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]/section
+
+strip_id_or_class: article__affiliated-content
+strip_id_or_class: latino-600b
+strip_id_or_class: article__author
+strip_id_or_class: article__share
+
+test_url: https://www.nouvelobs.com/politique/20240526.OBS88893/cannes-2024-le-tweet-transphobe-de-marion-marechal-apres-le-prix-decerne-a-karla-sof-a-gascon.html

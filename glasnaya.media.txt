@@ -1,0 +1,20 @@
+body: //main
+date: //meta[@property='og:updated_time']/@content
+author: //li[@itemprop='author']
+
+#strip header, meta-data
+strip: //div[starts-with(@data-widget_type, 'heading')]
+strip: //div[starts-with(@data-widget_type, 'theme-post-title')]
+strip: //div[starts-with(@data-widget_type, 'post-info')]
+
+# strip social media, telegram-link, navigation
+strip: //a[@href='https://t.me/glasnaya_media']/ancestor::section[1]
+strip: //div[starts-with(@data-widget_type, 'post-navigation')]/self::div | //div[starts-with(@data-widget_type, 'post-navigation')]/following-sibling::* 
+strip: //button[starts-with(text(), 'Подписаться')]/ancestor::form[1]/ancestor::section[1]/parent::div
+
+# strip related articles
+strip: //article
+
+prune: no
+
+test_url: https://glasnaya.media/2023/09/11/vse-byli-privyazany/

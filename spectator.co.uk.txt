@@ -1,0 +1,21 @@
+# paywall site
+# for wallabag you may want to use browser plugin wallabagger with
+# activated option 'Retrieve content from the browser' in it's settings
+
+body: //main
+
+strip_id_or_class: entry-header__heading
+strip_id_or_class: entry-meta
+strip_id_or_class: most-popular
+strip_id_or_class: paywall
+strip_id_or_class: comments-container
+strip_id_or_class: related-articles
+
+strip: //nav
+strip: //footer
+
+prune: no
+tidy: no
+
+test_url: https://www.spectator.co.uk/article/the-diversity-trap-2/
+test_url: https://www.spectator.co.uk/article/i-regret-not-having-more-children/

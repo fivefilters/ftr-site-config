@@ -1,0 +1,36 @@
+# official feed (sometimes doen't work):
+# https://www.vienna.at/news/wien/rss
+#
+# alternativly use https://createfeed.fivefilters.org/  with
+# url=https://www.vienna.at/news/wien/
+# item=.vodl-news-river__item-inner
+# item_title=h2
+# item_desc=span
+# strip=strong
+
+body: //div[@class='vodl-region-article']/div[1]
+
+strip_id_or_class: vodl-region-article__category-label
+strip_id_or_class: vodl-region-article__title-wrapper
+strip_id_or_class: vodl-region-article__author-box-wrapper
+strip_id_or_class: vodl-region-article__content-bottom
+
+strip: //svg
+strip: //button
+
+strip: //div[@data-type='embed']
+strip: //div[@data-type='video']
+
+prune: no
+tidy: no
+
+# Some articles contain illegal characters with byte value 0x02
+# as conditional hyphenator. This causes an XML parsing error in FTR.
+replace_string():
+
+# activate lead image for wallabag
+strip: //picture/source
+strip: //picture/img/@srcset
+
+test_url: https://www.vienna.at/s-bahn-ring-mit-zwei-linien-in-wien-plane-nehmen-form-an/8464186
+test_url: https://www.vienna.at/erste-e-busse-der-wiener-linien-in-der-stadt-unterwegs/8455546

@@ -1,0 +1,16 @@
+# for crawlers that catches the pre-interpreted JS-generated code (e.g. wallabagger):
+body: //div[contains(@class, 'page-scroll')]
+# for crawlers that catches without interpreting JS (wallabag UI, FTR):
+body: (//img[contains(@src, '/tpt-white-trans.png')])[last()]/following-sibling::*
+
+
+strip: //img[contains(@src, '/round-shadow.png')]
+strip: //img[contains(@src, '/gradientlayer.png')]
+strip: //div[contains(@aria-label, "Video Player")]
+strip: //div[contains(@class, 'shape')]
+
+strip_id_or_class: mask-group
+
+prune: no
+
+test_url: https://projects.theplayerstribune.com/dusty-baker-mlb-baseball/p/1

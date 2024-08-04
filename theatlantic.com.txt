@@ -1,9 +1,5 @@
 title: //meta[@property='og:title']/@content
 
-#title: //div[contains(@class, 'articleHead')]//h1
-
-# single_page_link: //link[contains(@href, '/amp/article/')]
-
 body: //article[@id='main-article']
 body: //div[@id='main-article']
 body: //article[contains(@class, 'ArticleLayout_article')]
@@ -31,6 +27,7 @@ strip: //gpt-ad
 strip: //div[contains(@class, 'ArticleBio_social')]
 strip: //*[contains(@class, 'ArticleRecirc')]
 strip: //*[contains(@class, 'ArticleRelatedContentModule')]
+strip: //aside[contains(@class, 'Pullquote')]
 
 strip: //div[@class='moreOnBoxWithImages']
 strip: //p[contains(., 'This article available online at:')]
@@ -38,8 +35,6 @@ strip: //p[contains(., 'This article available online at:')]/following::*
 strip: //div[@class='earthbox']
 strip: //aside[@role="complementary"]
 strip: //p[contains(@id, 'injected-recirculation-link')]
-
-#single_page_link: //div[contains(@class, 'article-tools')]//a[contains(@class, 'print')]
 
 native_ad_clue: //meta[@property="og:url" and contains(@content, '/sponsored/')]
 

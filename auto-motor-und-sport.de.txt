@@ -1,0 +1,25 @@
+body: //article
+
+date: //meta[@name='article:published_time']/@content
+date: //meta[@name='date']/@content
+
+strip: //svg
+strip_id_or_class: va-barometer
+strip_id_or_class: va-subnav-container
+strip_id_or_class: va-article-slider
+strip_id_or_class: va-related-article
+strip_id_or_class: va-button
+strip_id_or_class: va-article-meta
+strip_id_or_class: va-article-date
+strip: //div[contains(text(), "Die aktuelle Ausgabe")]/parent::div
+# strip h2 because that is the title of the article
+strip: //h2[1]
+
+# do not prune to fetch the article images
+prune: no
+
+test_url: https://www.auto-motor-und-sport.de/tech-zukunft/alternative-antriebe/bosch-wasserstoff-h2-verbrennungsmotor/
+test_url: https://www.auto-motor-und-sport.de/sportwagen/karma-gyesera-kaveya-elektrisch/
+test_url: https://www.auto-motor-und-sport.de/rss/alle
+test_url: https://www.auto-motor-und-sport.de/rss/sport
+test_url: https://www.auto-motor-und-sport.de/rss/oldtimer

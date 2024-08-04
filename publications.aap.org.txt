@@ -1,0 +1,10 @@
+titl: //h1
+body: //div[contains(concat(' ', normalize-space(@class), ' '), ' article-body ')]
+author: //div[contains(concat(' ', normalize-space(@class), ' '), ' al-authors-list ')]
+date: //span[contains(concat(' ', normalize-space(@class), ' '), ' article-date ')]
+
+prune: false
+tidy: false
+
+test_url: https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2023-062570/196606/Postacute-Sequelae-of-SARS-CoV-2-in-Children?autologincheck=redirected
+test_contains: The coronavirus disease 2019 (COVID-19) pandemic has caused unprecedented devastating medical, social, and economic impacts

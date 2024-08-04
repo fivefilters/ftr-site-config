@@ -1,0 +1,5 @@
+http_header(referer): https://utcc.utoronto.ca/~cks/space/blog/
+
+title: //div[@class='wikitext titlehack']
+
+test_url: https://utcc.utoronto.ca/~cks/space/blog/web/BasicAuthAndURLHierarchy

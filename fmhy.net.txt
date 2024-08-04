@@ -1,0 +1,11 @@
+body: //main[@class='main']
+
+strip: //h1[1]
+
+prune: no
+
+# for wallabag
+wrap_in(blockquote): //div[@class='tip custom-block']
+wrap_in(blockquote): //div[@class='warning custom-block']
+
+test_url: https://fmhy.net/unsafesites

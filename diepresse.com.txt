@@ -14,10 +14,13 @@ strip: //div[@class='meta__date']
 strip: //div[@class='meta__authors']
 strip: //h1[@class='article__title']
 strip: //div[contains(@class, 'fm-relation')]
+strip: //svg
+strip: //div[@class='vued']
 
 strip_id_or_class: skyline
 strip_id_or_class: article__actions
 strip_id_or_class: article__byline
+strip_id_or_class: article__breadcrumbs
 
 
 # strip gerneric text images when there is no article photo/image
@@ -59,5 +62,5 @@ replace_string: /alternates/ORIGINAL/
 prune: no
 
 test_url: https://www.diepresse.com/701905/tibeter-proteste-nonne-verbrennt-sich-selbst
-test_url: https://www.diepresse.com/6115784/omikron-ba2-wann-infizierte-hoch-ansteckend-sind
+test_url: https://www.diepresse.com/18570374/all-eyes-on-kate-royale-rueckkehr-bei-koenig-charles-geburtstagsparade
 test_url: https://www.diepresse.com/rss/panorama/wien

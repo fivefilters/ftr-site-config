@@ -1,3 +1,5 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
 body: //*[@class='article-full']
 title: //p[@class='headline__title']
 strip: //header[@class='group']
@@ -8,5 +10,6 @@ strip: //div[@id='social-media-floater']
 strip: //div[@class='advertisement']
 strip: //div[@class='infobox']
 strip: //div[@id='articleComments']
+strip: //section[@componenttype='moreToSubject']
 
 test_url: https://www.nzz.ch/zuerich/gender-sprache-an-hochschulen-in-zuerich-drohen-punkteabzuege-ld.1679640

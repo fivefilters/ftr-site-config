@@ -1,0 +1,10 @@
+author: //a[@class='herald-author-name']
+
+next_page_link: //link[@rel='next']
+
+strip_id_or_class: su-spoiler
+strip_id_or_class: herald-link-pages
+strip_id_or_class: meta-tags
+
+test_url: https://www.photografix-magazin.de/sony-a7c-r-test/
+test_contains: Sowohl das Display als auch der Sucher bleiben hinter den Erwartungen zurück, die man im Jahr 2023 an eine Kamera für fast 4.000 Euro stellen kann.

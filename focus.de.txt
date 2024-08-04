@@ -1,10 +1,9 @@
-title: //h1
-
-author: //div[@class='articleContent small']/div[@class='textBlock']//span[@class='created']
-
-date: //div[@class='articleHead']/span[@class='created']
-
+body: //article[@id='article']//div[contains(@class, 'mediaBlock')] | //article[@id='article']//div[contains(@class, 'leadIn')] | //article[@id='article']//div[contains(@class, 'textBlock')]
 body: //div[@id='article']
+
+title: //h1
+author: //div[@class='articleContent small']/div[@class='textBlock']//span[@class='created']
+date: //div[@class='articleHead']/span[@class='created']
 
 strip: //span[@class='markerText']
 strip: //div[@class='articleContent small']/div[@class='textBlock']//span[@class='created']
@@ -16,4 +15,12 @@ strip: //div[@id='commentSent']
 strip: //div[@id='comments']
 strip: //div[@class='similarityBlock']
 
+#remove related article ads
+strip: //p[@class='noads']/parent::*
+replace_string(&nbsp;): 
+
+prune: no
+tidy: no
+
 test_url: http://www.focus.de/politik/ausland/ein-jahr-nach-bombenanschlag-u-bahn-attentaeter-von-minsk-hingerichtet_aid_724958.html
+test_url: https://www.focus.de/auto/gebrauchtwagen/oldtimer/immer-mehr-elektronik-die-oldtimer-von-morgen-bekommen-ein-erhebliches-ersatzteil-problem_id_260032988.html

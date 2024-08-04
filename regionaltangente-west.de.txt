@@ -1,20 +1,40 @@
-# author: HolgerAusB   version 2023-03-16
+# author: HolgerAusB   version 2024-06-05
 #
-# Blog feed:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.regionaltangente-west.de%2Fbaustellenblog.html&item=div.layout_latest&item_title=h2&item_desc=div.ce_text&item_date=time&feed_title=RTW+Blog&max=5&order=document&guid=0
-#
-# News Feed:
-# https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.regionaltangente-west.de%2Faktuelles.html&item=div.col8&item_title=h3&item_desc=div.teaser&item_date=time&feed_title=RTW+Aktuelles&max=5&order=document&guid=0
+# @infrago.de site
 
-body: //div[@id='main']
-prune: no
+# no native feed, try to generate feed:
+# https://createfeed.fivefilters.org/
+# with item=       .pgSlide  or  .aktuelles  or  .featured
+#      item_title= h3  or  h2
+#      item_date=  time
 
+body: //div[@id='main']//div[contains(@id, 'article-')]
+date: //time/@datetime
+
+strip_id_or_class: copytxt
+strip_id_or_class: imgSrc
+strip_id_or_class: back
+
+strip: //h1[1]
+strip: //div[@id='right']
+
+# strip date from body
 strip: //p[@class='info']
-strip: //p[@class='back']
-strip: //h1[@itemprop='name']
 
-strip_id_or_class: ytelement
-strip_id_or_class: YTPrevPict
+# fix source-links of images [wallabag]
+find_string: src="files/
+replace_string: src="/files/
+find_string: href="files/
+replace_string: href="/files/
+
+#replace embeded video with link to video:
+replace_string(<figure class="video_container">): <div>
+replace_string(<video): <div
+replace_string(<source type="video/mp4" src): <a href
+replace_string(</video>): Link zum Video</a></div>
+
+# don't show article with timeline, which is an article that only shows teasers to other articles
+native_ad_clue: //div[contains(@id, 'loadTreeLine')]
 
 # transform image galery to single images
 strip: //ol[@class='carousel-indicators']
@@ -22,7 +42,8 @@ strip: //ol[@class='carousel-indicators']
 find_string: <div class="bsc_spic" style="background: url('
 replace_string: <img src='
 
-replace_string(&nbsp;):
+prune: no
+tidy: no
 
 test_url: https://www.regionaltangente-west.de/baustellenblog-reader/vollsperrung-des-forstwegs-an-der-gehespitz.html
 test_url: https://www.regionaltangente-west.de/baustellenblog-reader/bauarbeiten-im-pfa-sued-1-schreiten-voran.html

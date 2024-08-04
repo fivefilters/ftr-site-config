@@ -1,0 +1,32 @@
+# Website uses techniques to prevent bots from getting content
+# if this is effecting you, please try to use
+# 'Wallabagger', an extension for desktop browsers
+# with activated option 'Content fetching from the browser'
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/123.0
+
+title: //h1[contains(concat(' ', normalize-space(@class), ' '), ' text-article-title ')]
+author: //span[contains(concat(' ', normalize-space(@class), ' '), ' underline ')]
+
+body: (//main/div[contains(concat(' ', normalize-space(@class), ' '), ' foocontainer ')])
+body: (//main/div[contains(concat(' ', normalize-space(@class), ' '), ' container ')])
+
+# get rid of the more links
+strip: //div[@data-ad-id='bottom-01']/following-sibling::*
+
+strip_id_or_class: tnd-article-categories
+
+strip: //div[contains(@class, 'grid-in-side')]
+strip: //div[contains(@class, 'text-article-meta')]/parent::div/parent::div
+strip: //div[text()='You Might Like']/parent::div
+strip: //button
+
+# 'container' is also an internal class of wallabag, so this has to be renamed
+find_string: div class="container 
+replace_string: div class="foocontainer 
+
+prune: no
+tidy: no
+
+test_url: https://www.thenewdaily.com.au/news/politics/2024/01/10/stage-three-tax-cuts-2024
+test_contains: As Prime Minister Anthony Albanese refuses

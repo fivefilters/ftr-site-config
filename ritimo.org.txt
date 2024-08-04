@@ -1,0 +1,12 @@
+strip: //aside
+strip_id_or_class: liste-articles
+author: //span[@class='authors']
+title: //h1
+body: //div[@class='main']
+date: //p[@class='publication']/time
+
+tidy: false
+prune: false
+
+test_url: https://www.ritimo.org/Guide-de-survie-des-aventures-sur-internet-10313
+test_contains: Une surveillance abusive est à craindre, qu’elle soit ciblée ou massive

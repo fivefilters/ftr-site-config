@@ -1,0 +1,13 @@
+body: //div[@class='post-main-content']
+title: //div[@class='post-main-content']/h3[1]
+author: //ul[@class='post-meta']//a[contains(@href, 'ispatguru.com/author/')]
+date: //ul[@class='post-meta']//i[contains(@class, 'fa-calendar-alt')]/parent::a
+
+strip: //div[@class='post-main-content']/h3[1]
+strip: //p/br
+
+strip_id_or_class: post-meta
+
+prune: no
+
+test_url: https://www.ispatguru.com/process-control-instruments-and-their-classification/

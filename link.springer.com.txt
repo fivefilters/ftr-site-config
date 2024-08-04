@@ -1,0 +1,16 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+http_header(referer): https://link.springer.com/
+
+body: //article[@id='main']/div[1]
+author: //meta[@name='dc.creator']/@content
+date: //meta[@name='dc.date']/@content
+
+strip: //section[contains(@class, 'article-recommendations')]
+strip: //section[@aria-labelledby='article-info']
+
+# remove non-standard MathJax Symbol '/vertec'
+find_string: \varvec{
+replace_string: {
+
+test_url: https://link.springer.com/article/10.1007/s42113-023-00193-2
+test_url: https://link.springer.com/article/10.1007/s41884-023-00119-8

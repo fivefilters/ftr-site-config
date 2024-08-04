@@ -1,0 +1,29 @@
+body: //main[1]/div[contains(@class, 'frame')]
+title: //h1[contains(@class, 'inner-intro__title')]
+date: //*[@class='news-info__date']
+# for wallabag
+date: substring-after(//div[@class='news-info'], 'online seit')
+
+# remove <button> | and parent <h2> if it is an expand/collapse button (content will stay visible)
+strip: //button/self::* | //button/parent::h2[contains(@class, 'accordion')]
+
+# remove alt-text 'info icon' [FTR]
+strip_id_or_class: visually-hidden
+# remove alt-text 'info icon' [wallabag] due to auto-stripping <span>
+strip: //div[contains(@class, 'alert') and contains(text(), 'info icon') ]/text()
+strip: //div[contains(@class, 'alert') and contains(text(), 'Info Icon') ]/text()
+
+# prevents wallabag from indenting the entire text (use of same classname 'container')
+find_string: <div class="container
+replace_string: <div class="foocontainer
+
+# general clean-up
+strip_id_or_class: article-nav
+
+prune: no
+tidy: no
+
+test_url: https://www.watchlist-internet.at/news/e-mail-von-dns-eu-ist-betruegerisch/
+test_url: https://www.watchlist-internet.at/news/unserioese-dirndl-shops-drohen-mit-anzeige-ignorieren-sie-die-nachrichten/
+# feed
+test_url: https://www.watchlist-internet.at/rss/

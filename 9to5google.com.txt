@@ -1,0 +1,19 @@
+body: //main[@id='main']//div[contains(@class, 'post-content')]
+author: //meta[@name='author']/@content
+
+strip: //button
+
+# strip everything after the article content
+strip: //div[contains(@class, 'is-layout-constrained')]/self::* | //div[contains(@class, 'is-layout-constrained')]/following-sibling::*
+
+# prevent that images are shown 3 times each
+strip_id_or_class: wp-lightbox-overlay
+
+prune: no
+
+# 'container' is also an internal class of wallabag, so this has to be renamed
+find_string: div class="container 
+replace_string: div class="foocontainer
+
+test_url: https://9to5google.com/2024/01/26/calculating-calculator-critiques-android-iphone/
+test_url: https://9to5google.com/2024/01/15/google-apps-apple-vision-pro/

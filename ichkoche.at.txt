@@ -1,0 +1,23 @@
+# for use with wallabag
+
+body: //main[@class='main_content']
+
+strip_id_or_class: breadcrumbs
+strip_id_or_class: photo_by
+strip_id_or_class: recipe_items
+strip_id_or_class: hashtags
+strip_id_or_class: themenwhelten_wrap
+strip_id_or_class: slider_arrow
+strip_id_or_class: user_avatar
+strip_id_or_class: utensils_slider
+strip_id_or_class: utensils_notice
+strip_id_or_class: recipe_actions
+strip_id_or_class: quickPoll
+
+strip: //div[contains(@class, 'teaser_list')]/parent::section
+strip: //div[starts-with(@class, 'advert')]
+
+prune: no
+tidy: no
+
+test_url: https://www.ichkoche.at/hascheehoernchen-rezept-191005

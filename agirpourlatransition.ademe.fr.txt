@@ -1,0 +1,5 @@
+body: //article
+
+strip: //div[@class="o-block-projet-content-avis"]
+
+test_url: https://agirpourlatransition.ademe.fr/particuliers/maison/sante/pourquoi-conseille-daerer-logement-tous-jours

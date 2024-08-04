@@ -1,0 +1,16 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; rv:107.0) Gecko/20100101 Firefox/107.0
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post__content ')]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' post-hero__title ')]
+
+strip_id_or_class: kg-product-card-description
+strip_id_or_class: kg-product-card-button
+strip_id_or_class: kg-callout-emoji
+strip_id_or_class: outpost-pub-container
+strip_id_or_class: subscribe
+strip_id_or_class: post-author
+
+prune:no
+
+test_url: https://www.404media.co/mta-will-disable-omny-trip-history-feature-abuse/
+test_url: https://www.404media.co/how-and-why-to-get-into-film-photography/

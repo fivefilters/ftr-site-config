@@ -1,0 +1,14 @@
+body: //div[@id='page']
+
+strip: //button
+
+strip: //a[@data-test-id='side-banner-ad-link']/parent::div
+strip: //a[@data-test-id='recipe-cta-button']/parent::div/parent::div
+strip: //a[contains(@data-test-id, '-ad-link')]/parent::div/parent::div
+strip: //div[@data-test-id='recipe-details-breadcrumbs']
+
+
+prune: no
+tidy: no
+
+test_url: https://www.hellofresh.de/recipes/asiatische-hahnchenbrust-mit-edamame-609135de690cc71eea1fc4c9

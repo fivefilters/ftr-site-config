@@ -1,0 +1,5 @@
+body: //main[contains(concat(' ',normalize-space(@class),' '),' relative ')]
+
+strip: //div[contains(@class, 'js-banner-promoted')]
+
+test_url: https://www.maritimedanmark.dk/nkts-nye-kabelskib-kan-operere-pa-metanol

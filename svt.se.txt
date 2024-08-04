@@ -1,15 +1,15 @@
-title: //article[@role='main']//h1
-body: //article[@role='main']
+body: //article//div[@itemProp='description' or @itemProp='articleBody']
 strip: //aside
-replace_string(<noscript>): <div>
-replace_string(</noscript>): </div>
-strip_id_or_class: svtHide-No-Js
+replace_string(<noscript): <div
+replace_string(</noscript): </div
 strip_id_or_class: aside
-strip_id_or_class: Aside
 strip_id_or_class: hidden
 strip_id_or_class: Share
+strip: //div[contains(@class, 'VideoPlaylist')]
+strip: //section[contains(@class, 'InlineTagBox')]
+
 tidy: no
 prune: no
 
-test_url: http://www.svt.se/nyheter/het-debatt-mellan-borg-och-andersson
+test_url: https://www.svt.se/nyheter/het-debatt-mellan-borg-och-andersson
 test_contains: Anders Borg (M) började med

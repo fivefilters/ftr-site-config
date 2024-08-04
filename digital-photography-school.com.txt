@@ -5,4 +5,6 @@ body: //section[@class='content']
 strip: //div[@class='post-meta']
 strip: //div[contains(@class, 'topics-list')]
 
+replace_string(wp-block-heading): 
+
 test_url: http://www.digital-photography-school.com/10-ways-to-develop-yourself-photographically

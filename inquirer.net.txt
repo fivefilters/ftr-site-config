@@ -1,0 +1,19 @@
+# also on newsinfo.inquirer.net.txt
+
+strip_id_or_class: article_disclaimer
+strip_id_or_class: article-new-featured
+strip_id_or_class: billboard_article
+strip_id_or_class: article-new-featured
+strip_id_or_class: sib-form-container-bc
+strip_id_or_class: sib-form
+strip_id_or_class: view-comments
+strip_id_or_class: lsmr-mostread
+strip_id_or_class: lsmr-latest
+strip_id_or_class: rn-2023
+strip_id_or_class: rn-2024
+strip_id_or_class: mgid-desk
+strip_id_or_class: mgid-mob
+
+strip: //strong[starts-with(., 'READ:')][./a]
+
+test_url: https://www.inquirer.net/405941/china-ship-rams-boat-carrying-sick-philippines-soldier/
