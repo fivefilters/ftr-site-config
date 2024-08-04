@@ -1,0 +1,2 @@
+title: //h1
+body: //div[@class="blog-post"]
