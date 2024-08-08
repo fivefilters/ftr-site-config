@@ -1,0 +1,12 @@
+# This website uses anti-bot technologies. FTR and wallabag UI can therefore not load the content.
+# As unfortunately it is also checked whether a bot is at work when images are loaded, even the
+# browser plugin 'wallabagger' can only grab the text. :-(
+
+
+# prevent wallabag to strip subheadings
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+prune: no
+
+test_url: https://freemovement.org.uk/a-step-by-step-guide-to-applying-for-an-evisa
