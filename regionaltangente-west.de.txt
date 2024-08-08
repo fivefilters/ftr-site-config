@@ -1,4 +1,4 @@
-# author: HolgerAusB   version 2024-06-05
+# author: HolgerAusB   version 2024-08-08
 #
 # @infrago.de site
 
@@ -27,6 +27,11 @@ replace_string: src="/files/
 find_string: href="files/
 replace_string: href="/files/
 
+find_string: src="assets/
+replace_string: src="/assets/
+find_string: href="assets/
+replace_string: href="/assets/
+
 #replace embeded video with link to video:
 replace_string(<figure class="video_container">): <div>
 replace_string(<video): <div
@@ -45,5 +50,4 @@ replace_string: <img src='
 prune: no
 tidy: no
 
-test_url: https://www.regionaltangente-west.de/baustellenblog-reader/vollsperrung-des-forstwegs-an-der-gehespitz.html
 test_url: https://www.regionaltangente-west.de/baustellenblog-reader/bauarbeiten-im-pfa-sued-1-schreiten-voran.html
