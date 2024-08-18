@@ -1,3 +1,5 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/130.0
+
 # concat main-article | lead image | h1 from second page (sources)
 body: //main[1] | //main[1]/preceding-sibling::div/figure | //header[1]/h1
 
@@ -7,12 +9,15 @@ date: //time
 
 prune: no
 
+strip_id_or_class: not-prose
+
 strip: //nav/parent::div
 strip: //footer
 strip: //svg
 
 strip: //ul[contains(@class, 'scrollbar-hide')]/parent::div
 strip: //button[contains(text(), 'Cookie Einstellungen')]/ancestor::div[1]
+strip: //a[contains(@href, 'mailto:feedback@')]/ancestor::section[1]/self::section | //a[contains(@href, 'mailto:feedback@')]/ancestor::section[1]/preceding-sibling::hr[1] | //a[contains(@href, 'mailto:feedback@')]/ancestor::section[1]/following-sibling::hr[1]
 
 # load sources and additional infos for article
 strip: //a[substring(@href, string-length(@href) - string-length('/transparenz') + 1)  = '/transparenz']
@@ -25,5 +30,15 @@ strip: //a[contains(@href, '/newsletter')]/parent::div
 # activating images for wallabag
 strip_attr: //img/@srcset
 
+# [FTR, wallabag UI] can't load external (iframe) content, due to JavaScript
+find_string: <!--astro:end--></astro-island>
+replace_string: </article><blockquote><strong>&rArr; Externer inhalt </strong>konnte nicht geladen werden!</blockquote><!--foo:bar--></astro-island>
+
+
+# [wallabagger] enlarge embedded iframe content
+find_string: <iframe title="
+replace_string: <iframe width="700" height="525" title="
+
 test_url: https://www.wienerzeitung.at/a/die-moeglichkeit-einer-wiese
 test_url: https://www.wienerzeitung.at/a/immer-weniger-schulreisen-warum-das-ein-problem-ist
+test_url: https://www.wienerzeitung.at/a/die-entwicklung-des-wahlvolkes
