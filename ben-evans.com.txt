@@ -1,0 +1,16 @@
+body: //article[1]
+title: substring-before(//meta[@property='og:title' and contains(@content, ' — Benedict Evans')]/@content , ' — Benedict Evans')
+title: substring-before(//meta[@property='og:title' and contains(@content, ' &mdash; Benedict Evans')]/@content , ' &mdash; Benedict Evans')
+title: //meta[@property='og:title']/@content
+
+strip_id_or_class: Blog-meta-item
+strip: //*[contains(@class, 'visually-hidden')]
+
+# activating images
+replace_string(data-src="): src="
+
+prune: no
+tidy: no
+
+test_url: https://www.ben-evans.com/benedictevans/2024/8/19/competing-in-search
+test_url: https://www.ben-evans.com/benedictevans/2023/6/15/vision-pro
