@@ -1,0 +1,22 @@
+body: //article[1]
+author: //meta[@name="author"]/@content
+date: //time/@datetime 
+
+strip_id_or_class: main-page-title
+strip_id_or_class: kicker
+strip_id_or_class: support
+strip_id_or_class: table-of-contents
+strip_id_or_class: only-print
+strip_id_or_class: revision-history
+strip_id_or_class: signoff
+strip_id_or_class: floating-nav
+strip_id_or_class: floating-toc
+
+strip: //img[@aria-hidden="true"]
+
+# [wallabag] Highlight Spoilers
+wrap_in(blockquote): //aside//*[contains(text(), 'Spoiler')]/ancestor::aside
+
+prune: no
+
+test_url: https://www.leereamsnyder.com/hades-build-guide
