@@ -1,0 +1,15 @@
+body: //article
+
+strip: //header
+strip: //footer
+strip: //aside
+
+# strip player overlay
+strip: //iframe[contains(@src, 'videoplayer')]
+
+# prevents wallabag from higlighting links in red background color
+strip_attr: //a/@class
+
+prune: no
+
+test_url: https://www.chip.de/news/Strategiewechsel-bei-VW-Warum-Neuwagen-Verkaeufe-jetzt-nicht-mehr-im-Fokus-stehen_185428008.html
