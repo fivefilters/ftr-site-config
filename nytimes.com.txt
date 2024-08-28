@@ -11,6 +11,9 @@ body://div[@id="article"]
 body://*[@itemprop="articleBody"]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' g-body-article-container ')]
 body: //article[@id='story']
+body: //article[1]
+
+strip: //*[@data-scp="removed"]
 strip_id_or_class:articleTools
 strip_id_or_class:readerscomment
 #strip://div[contains(@class, "articleInline runaroundLeft")]
