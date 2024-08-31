@@ -11,12 +11,11 @@ strip_id_or_class: newsletter-form-wrapper
 strip_id_or_class: blog-item-author-profile-wrapper
 strip_id_or_class: blog-item-comments
 
-
 # images from galery
 find_string: data-src="https://
 replace_string: src="https://
 find_string: <noscript>
-replace_string: <div class="wp-block-heading" style="display:none;">
+replace_string: <div style="display:none;">
 find_string: </noscript>
 replace_string: </div>
 
