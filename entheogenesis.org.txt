@@ -2,8 +2,8 @@
 
 body: //article[1]
 
-title: substring-before(//meta[@property='og:title' and contains(@content, ' — MatthewBall.')]/@content , ' — MatthewBall.')
-title: substring-before(//meta[@property='og:title' and contains(@content, ' &mdash; MatthewBall.')]/@content , ' &mdash; MatthewBall.')
+title: substring-before(//meta[@property='og:title' and contains(@content, ' — Entheogenesis Australis')]/@content , ' — Entheogenesis Australis')
+title: substring-before(//meta[@property='og:title' and contains(@content, ' &mdash; Entheogenesis Australis')]/@content , ' &mdash; Entheogenesis Australis')
 
 strip_id_or_class: blog-item-top-wrapper
 strip_id_or_class: eapps-social-share-buttons-container
@@ -23,6 +23,6 @@ replace_string: </div>
 
 prune: no
 tidy: no
-  
-test_url: https://www.matthewball.co/all/applevision2024
-test_url: https://www.matthewball.co/all/zztmetaverse
+
+test_url: https://www.entheogenesis.org/articles-1/melbournes-forgotten-era-the-dawn-of-psychedelic-assisted-therapy-research-and-hallucinogenic-experimentation-1
+test_url: https://www.entheogenesis.org/articles-1/wood-lover-paralysis-symon-beck
