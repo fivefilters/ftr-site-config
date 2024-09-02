@@ -1,3 +1,5 @@
+# site generator: @squarespace
+
 body: //article[1]
 
 title: substring-before(//meta[@property='og:title' and contains(@content, ' — MatthewBall.')]/@content , ' — MatthewBall.')
