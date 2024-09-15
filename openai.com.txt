@@ -1,0 +1,7 @@
+body: //main
+strip: //nav
+strip: //*[@aria-hidden="true"]
+
+prune: no
+
+test_url: https://openai.com/index/learning-to-reason-with-llms/
