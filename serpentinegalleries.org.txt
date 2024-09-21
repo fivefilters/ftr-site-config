@@ -1,0 +1,22 @@
+body: //article[1] | //main[1]/div[contains(@class, 'simple-banner')] | //section[contains(@class, 'feed--gallery')] | //main[1]/div[2]/div[contains(@class, 'grid-container')]
+
+author: //div[@class='content__author-date']/p/span[1]
+date:   //div[@class='content__author-date']/p/span[2]
+title: //h1[@class='heading__title']
+
+strip_id_or_class: block--heading
+strip_id_or_class: content__author-date
+strip_id_or_class: banner__content
+strip_id_or_class: controls__nav
+
+strip: //svg
+
+replace_string(<button): <div
+replace_string(</button): </div
+
+prune: no
+tidy: no
+
+test_url: https://www.serpentinegalleries.org/art-and-ideas/a-mapping-of-the-bottom-dimension-on-the-agents-ethical-question/
+test_url: https://www.serpentinegalleries.org/whats-on/yayoi-kusama/
+test_url: https://www.serpentinegalleries.org/whats-on/atta-kwami-maria-lassnig-prize-mural/
