@@ -1,5 +1,18 @@
+body: //article[1]
 title: //h1[@class='entry-title']
-
 author: //a[@class='url fn n']
+date: //time[1]/@datetime
+
+strip: //header
+strip: //footer
+# strip lead image, as it is quite the same as first article image
+strip: //article[1]/div[1]/p[1]/br[1]/parent::p
+
+# strip CC-BY image and everything below
+strip: //img[contains(@src, 'images/by.svg.png')]/parent::p | //img[contains(@src, 'images/by.svg.png')]/parent::p/preceding-sibling::hr[1] | //img[contains(@src, 'images/by.svg.png')]/parent::p/following-sibling::*
+# just in case, the previous strip did not work, remove self-advertising block
+strip: //h1[contains(text(), 'How to get Pluralistic')]/self::* | //h1[contains(text(), 'How to get Pluralistic')]/following-sibling::*
+
+prune: no
 
 test_url: https://pluralistic.net/2023/07/31/seize-the-means-of-computation/
