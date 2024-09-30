@@ -1,0 +1,36 @@
+body: //article[@id='postContent'] | //article[contains(@id, 'comment-')] | (//a[contains(@class, 'person-listing')]/parent::div)[1] | //div[not(contains(@class, 'mobile-thumbnail'))]/button[contains(@class, 'thumbnail')]/picture
+author: (//a[contains(@class, 'person-listing')])[1]
+
+strip: //svg
+strip: //a[contains((concat(' ',normalize-space(@class),' '),' btn ')]
+strip: //a[contains(@class, 'person-listing')]/following-sibling::text() | //a[contains(@class, 'person-listing')]/following-sibling::*
+strip: //button[contains(concat(' ',normalize-space(@class),' '),' btn ')]
+
+strip_attr: //div[contains(@class, 'small')]/@class
+
+strip_id_or_class: me-lg-5
+
+# limit size of user avatar
+find_string: pictrs-image object-fit-cover img-icon
+replace_string: foo" height="50" width="50" bar="
+
+# enlarge main image
+find_string: ?format=webp
+replace_string: " foo="
+
+find_string: ?format=img
+replace_string: " foo="
+
+# completing URL, else the gernic user avatar would missing
+find_string: srcSet="/static/
+replace_string: srcset="https://lemmy.ml/static/
+
+# add a little gap between user avatar and username
+replace_string(</picture>): </picture>&nbsp;
+
+prune: no
+tidy: no
+
+
+test_url: https://lemmy.ml/post/20354434
+test_url: https://lemmy.ml/post/20439215
