@@ -1,0 +1,7 @@
+// the summary contains the full first post, but that's as good as it gets; let's get the first paragraph
+title: //summary/p[1]
+author: //span[@id="author-name"]
+body: //article//section
+
+test_url: https://mastoreader.io/?url=https%3A%2F%2Fmstdn.social%2F%40mcnado%2F112341127859271581
+test_contains: If bird flu starts transmitting between people, what will that look like in the US?
