@@ -1,0 +1,13 @@
+body: //article[1]/div/div[@class='content'] | //figure[contains(@class, 'file-image')]
+date: //article[1]//time/@datetime
+author: //p[@class='authors']/i
+
+strip_id_or_class: element-invisible
+
+strip: //a[contains(@href, 'https://steadyhq.com/')]/parent::*
+
+prune: no
+tidy: no
+
+test_url: https://hpd.de/artikel/mythos-thule-22499
+test_url: https://hpd.de/artikel/schaffen-affengehirne-auch-links-17728
