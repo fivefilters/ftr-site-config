@@ -11,6 +11,9 @@ strip: //h1[1]
 strip: //img[contains(@src, '/14/')]
 replace_string(noscript>): div>
 
+# remove blank in meta>og:image>content, which resulted in an empty preview image in wallabag
+replace_string(.jpeg "): .jpeg"
+
 prune: no
 tidy: no
 
