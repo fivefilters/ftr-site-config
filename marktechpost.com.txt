@@ -1,0 +1,16 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+
+body: //article[1]/div[contains(@class, 'td-post-content')]
+author: (//meta[@name='author']/@content)[1]
+
+strip_id_or_class: swp_social_panel
+strip_id_or_class: td-a-rec-id-content_bottom
+
+strip: //a[contains(text(), '(Promoted)')]/ancestor::p[1]
+strip: //div[contains(@id, 'mab-')]
+strip: //a[contains(@href, 'marktechpost-newsletter.beehiiv.com')]/parent::*
+strip: //hr[last()]
+
+prune: no
+
+test_url: https://www.marktechpost.com/2024/10/12/lightrag-a-dual-level-retrieval-system-integrating-graph-based-text-indexing-to-tackle-complex-queries-and-achieve-superior-performance-in-retrieval-augmented-generation-systems/
