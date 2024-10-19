@@ -1,0 +1,19 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')] | //div[contains(@class, 'page-banner-inner')]
+title: //meta[@name='twitter:title']/@content
+author: //div[contains(@class, 'entry-meta')]//a[contains(@href, '/author/')]
+date: //time/@datetime
+
+strip: //header
+strip: //footer
+strip: //svg
+
+strip: //div[contains(@class, 'rmp-widgets-container')]/self::div | //div[contains(@class, 'rmp-widgets-container')]/preceding-sibling::hr[1] | //div[contains(@class, 'rmp-widgets-container')]/following-sibling::*
+
+strip_id_or_class: rmp-results-widget
+strip_id_or_class: rmp-rating-widget
+strip_id_or_class: rmp-feedback-widget
+strip_id_or_class: sydney-post-sharing
+
+prune: no
+
+test_url: https://kuemmerle.name/zeit-fuer-ein-gedicht-26
