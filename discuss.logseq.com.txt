@@ -1,0 +1,11 @@
+# [Fulltext-RSS] needs this to catch page 2+
+http_header(user-agent): curl/7.83.1
+
+body: //div[contains(@id, 'post_')]
+
+next_page_link: //link[@rel='next']/@href
+
+prune: no
+tidy: no
+
+test_url: https://discuss.logseq.com/t/concerns-on-db-version-and-future-state-from-a-3-year-user/29225
