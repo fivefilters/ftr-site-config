@@ -17,6 +17,9 @@ strip_id_or_class: mcnShareBlock
 strip_id_or_class: templateFooter
 strip_id_or_class: mcnFollowBlock
 
+# strip hint for browser edition
+strip: (//div[contains(@class, 'mj-outlook-group-fix')])[1]
+
 prune: no
 
 
