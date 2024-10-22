@@ -1,0 +1,9 @@
+body: //div[@class='content-inner ']
+
+strip: //strong[contains(text(), 'Hol dir Vorfreude in deinen Kalender')]/parent::h2 | //strong[contains(text(), 'Hol dir Vorfreude in deinen Kalender')]/parent::h2/following-sibling::*
+
+prune: no
+tidy: no
+
+test_url: https://universe.shelfd.com/mubi-neustarts-kalender/
+test_url: https://universe.shelfd.com/feed/
