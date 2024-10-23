@@ -1,0 +1,15 @@
+http_header(User-agent):  PHP/7.4
+http_header(referer): https://scheuch.de/
+
+body: //article[1] | //div[@class='mg-blog-post-box']/img
+title: //h1[contains(@class, 'title')]
+author: (//h4[@class='media-heading']/a)[1]
+
+# prevent wallabag from removing twitter content
+find_string: class="twitter-tweet
+replace_string: class="foobar
+
+prune: no
+tidy: no
+
+test_url: https://scheuch.de/vorsicht-hetze/
