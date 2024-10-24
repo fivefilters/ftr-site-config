@@ -1,0 +1,15 @@
+body: //div[@class='article-body'] | //div[@class='article-rider'] | //main[@id='main']/div[@class='footainer']//img[1]
+title: substring-before( //meta[@property='og:title']/@content , ' - Superuser')
+
+
+strip_id_or_class: ssbp-wrap
+strip_id_or_class: abh_box_down
+strip_id_or_class: sidebar
+
+replace_string(container grid): footainer grid
+replace_string(class="container): class="footainer
+
+prune: no
+tidy: no
+
+test_url: https://superuser.openinfra.dev/articles/build-it-yourself-how-a-small-team-deployed-openstack/
