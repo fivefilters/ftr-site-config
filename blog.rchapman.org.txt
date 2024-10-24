@@ -1,0 +1,12 @@
+body: //article[@class='post-container']
+title: //h1[@class='post-title']
+author: 'Ryan A. Chapman'
+date: substring-after(//article[@class='post-container']/header/text() , 'Published')
+
+strip: //header
+strip: //footer/self::* | //footer/following-sibling::*
+
+prune: no
+tidy: no
+
+test_url: https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/
