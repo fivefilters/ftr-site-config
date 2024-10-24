@@ -1,0 +1,14 @@
+# works with 'Fulltext-RSS' and 'wallabagger' browser plugin
+# works NOT with wallabag UI (last checked with vers. 2.6.9)
+
+body: //main[@class='main']//article[1]
+title: normalize-space(//main[@class='main']//header//h2)
+author: //meta[@name='author']/@content
+date: //time/@datetime
+
+strip: //header
+
+prune: no
+tidy: no
+
+test_url: https://sulek.fr/index.php?article60/configuration-ipv6-pour-une-dedibox-sous-centos-7
