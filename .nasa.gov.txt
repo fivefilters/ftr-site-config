@@ -1,0 +1,14 @@
+body: //article[1]/section[1]/div[contains(@class, 'grid-container')]
+title: substring-before( //meta[@property='og:title']/@content , ' - NASA Science')
+author: //div[contains(@class, 'SideboxAuthor')]//p[contains(@class, 'hds-meta-subheading')]
+author: //div[contains(@class, 'SideboxAuthor')]//p[contains(@class, 'hds-meta-heading')]
+date: //meta[@name='parsely-pub-date']/@content
+
+strip_id_or_class: article-header
+
+strip: //aside
+
+prune: no
+tidy: no
+
+test_url: https://science.nasa.gov/missions/hubble/new-clues-to-trappist-1-planet-compositions-atmospheres
