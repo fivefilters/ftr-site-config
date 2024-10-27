@@ -1,0 +1,12 @@
+body: //div[contains(@class, 'post-entry')]
+title: substring-before( //meta[@property='og:title']/@content , ' | Antigone XXI')
+
+strip: //span[text()='*']
+strip: //p[text()='*']
+
+strip_id_or_class: post-tags
+
+prune: no
+tidy: no
+
+test_url: https://antigone21.com/2014/04/03/falafels-hummus-maison-vegan-sans-gluten/
