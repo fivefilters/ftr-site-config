@@ -4,24 +4,25 @@
 # or add a category, e.g.:
 # https://www.diepresse.com/rss/kultur/kunst
 
-
+title: //article/h1[1]
 title: //div[@class='article']/h1
 date: substring-before(//p[@class='articletime'],'|')
+author: //meta[@name='cXenseParse:author']/@content
 author: //div[@class='author']/descendant::a
 body: //article | //div[@id='articletext'] | //div[@id='article-body']
 
 strip: //div[@class='meta__date']
 strip: //div[@class='meta__authors']
-strip: //h1[@class='article__title']
+strip: //article/h1[1]
 strip: //div[contains(@class, 'fm-relation')]
-strip: //svg
 strip: //div[@class='vued']
+strip: //svg
+strip: //button
 
 strip_id_or_class: skyline
 strip_id_or_class: article__actions
 strip_id_or_class: article__byline
 strip_id_or_class: article__breadcrumbs
-
 
 # strip gerneric text images when there is no article photo/image
 
