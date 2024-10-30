@@ -11,6 +11,7 @@ strip: //svg
 strip_id_or_class: view-comments
 strip_id_or_class: pswp-caption-content
 strip_id_or_class: related-stories
+strip_id_or_class: text-settings-dropdown-story
 
 
 prune: no
