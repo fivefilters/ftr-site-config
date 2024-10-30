@@ -1,0 +1,6 @@
+body: //div[@class='entry-content']
+
+prune: no
+tidy: no
+
+test_url: https://www.derekseaman.com/2019/09/how-to-pi-hole-plus-dnscrypt-setup-on-raspberry-pi-4.html
