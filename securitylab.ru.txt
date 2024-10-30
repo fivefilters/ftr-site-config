@@ -1,0 +1,18 @@
+body: //div[@class='articl-text']
+body: //sape_index
+author: //meta[@name="author"]/@content
+date: //meta[@name="article:published_time"]/@content
+
+strip: //div[@itemprop='headline']
+strip: //div[@itemprop='author']
+strip: //time[@itemprop='datePublished']
+strip: //time[@itemprop='dateCreated']
+strip: //div[@itemprop='articleSection']
+
+strip_id_or_class: telegram-block
+strip_id_or_class: share-block
+
+
+prune: no
+
+test_url: https://www.securitylab.ru/news/553434.php
