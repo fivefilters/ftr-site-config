@@ -1,0 +1,28 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+
+body: //div[@class='articleBody'] | //div[contains(@class, 'featured-media')]
+title: normalize-space(//h1[@class='title-primary'])
+
+strip_id_or_class: collection
+strip_id_or_class: post-tags
+strip_id_or_class: keystone-voep-widget-3
+strip_id_or_class: hidden-md
+strip_id_or_class: hidden-lg
+
+
+# rewrite image parameters to show images in wallabag and FTR
+
+strip_attr: //img/@data-srcset
+
+find_string: data-processed src="https://
+replace_string: foo="" bar="https://
+
+find_string: data-src="https://
+replace_string: dummy="" src="https://
+
+
+prune: no
+tidy: no
+
+test_url: https://www.countrylife.co.uk/food-drink/curious-questions-how-did-the-tea-bag-take-over-from-loose-leaf-tea-219407
+test_url: https://www.countrylife.co.uk/architecture/ptolemy-dean-the-magic-that-happens-when-you-stop-to-draw-a-place-instead-of-just-taking-a-photograph-274700
