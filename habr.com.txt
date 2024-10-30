@@ -1,6 +1,8 @@
+body: //div[@id='post-content-body']
 body: //div[contains(@class, 'post__body')]
 
 strip: //section[@class='article__infopanel']
+strip: //script
 
 prune: no
 tidy: no
