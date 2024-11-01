@@ -1,0 +1,15 @@
+body: //main[1]
+
+strip: //nav
+strip: //button
+strip: //address/following-sibling::ul
+strip: //main//h1[1]
+
+strip_id_or_class: disclosure-box
+strip_id_or_class: show_more_related_book_lists_more_button
+
+
+prune: no
+
+test_url: https://shepherd.com/best-books/science-fiction-that-you-should-definitely-read
+test_url: https://shepherd.com/book/project-hail-mary
