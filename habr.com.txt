@@ -1,5 +1,17 @@
+body: //div[@id='post-content-body']
 body: //div[contains(@class, 'post__body')]
+
 strip: //section[@class='article__infopanel']
+strip: //script
+
+prune: no
+tidy: no
+
+replace_string(<details): <div
+replace_string(</details>): </div>
+
+# wallabag only:
+wrap_in(blockquote): //div[@class='spoiler']
 
 test_url: https://habr.com/ru/post/293962/
 test_url: https://habr.com/ru/article/480152/

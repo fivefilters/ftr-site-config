@@ -1,0 +1,14 @@
+body: //div[@id='contenu']
+
+strip: //div[@id='contenu']/h1[1]
+strip: //form
+
+# strip 'Commentaires' block if loaded by UI (no comments due to JavaSctipt)
+# use wallabagger to include comments
+strip: //div[@id='div_load_aff_comm']/ancestor::div[@id='blocommentaires']
+
+
+prune: no
+tidy: yes
+
+test_url: https://www.symphozik.info/schumann-analyse-des-dichterliebe-les-amours-du-poete,107,dossier.html

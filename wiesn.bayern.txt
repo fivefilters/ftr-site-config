@@ -1,4 +1,4 @@
-# Author: HolgerAusB  |  Version: 2024-06-04
+# Author: HolgerAusB  |  Version: 2024-08-24
 #
 # to get a source-feed, try to add 'rssfeed.rdf' to the category-URL e.g.
 #    https://www.example.com/hessen/rssfeed.rdf
@@ -27,6 +27,7 @@ strip_id_or_class: idjs-simpletab-content-close
 strip_id_or_class: id-AuthorList
 strip_id_or_class: id-Article-content-item-copyright
 strip_id_or_class: id-DonaldBreadcrumb
+strip_id_or_class: id-StoryElement-factBox
 strip_id_or_class: id-StoryElement-timestamp
 strip_id_or_class: id-StoryElement-authors
 strip_id_or_class: id-StoryElement-interactionBar
@@ -41,6 +42,9 @@ strip_id_or_class: id-Article-advert.id-Article-content-item
 strip_id_or_class: id-Article-content-item.id-Article-advert
 strip_id_or_class: id-Article-advert--ad3
 strip_id_or_class: id-Article-advert
+strip_id_or_class: id-TBeepSlot
+
+strip: //a[contains(@href, '/newsletter-anmeldung')]/ancestor::section[1]
 
 # strip (un)related articles [Fiery Feeds]
 strip_id_or_class: ECR-IN_ARTICLE

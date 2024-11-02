@@ -1,11 +1,15 @@
+# site generator: @squarespace
+
 body: //article[1]
+
+title: substring-before(//meta[@property='og:title' and contains(@content, ' — MatthewBall.')]/@content , ' — MatthewBall.')
+title: substring-before(//meta[@property='og:title' and contains(@content, ' &mdash; MatthewBall.')]/@content , ' &mdash; MatthewBall.')
 
 strip_id_or_class: blog-item-top-wrapper
 strip_id_or_class: eapps-social-share-buttons-container
 strip_id_or_class: eapps-social-share-buttons-all-inner
 strip_id_or_class: sqs-gallery-thumbnails
 strip_id_or_class: newsletter-form-wrapper
-
 strip_id_or_class: blog-item-author-profile-wrapper
 strip_id_or_class: blog-item-comments
 
@@ -18,6 +22,7 @@ find_string: </noscript>
 replace_string: </div>
 
 prune: no
-
-test_url: https://www.matthewball.vc/all/gaming2024?utm_campaign=mb&utm_medium=newsletter&utm_source=morning_brew
-test_url: https://www.matthewball.vc/all/digitalthemeparkplatforms
+tidy: no
+  
+test_url: https://www.matthewball.co/all/applevision2024
+test_url: https://www.matthewball.co/all/zztmetaverse

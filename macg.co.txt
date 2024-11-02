@@ -1,14 +1,5 @@
-date: //time[@itemprop="datePublished"]/@datetime
-
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' plusLoin ')]
-strip: //select
+body: //div[contains(concat(' ',normalize-space(@class),' '),' print:shadow-none ')]//article
+strip: //footer
 strip_id_or_class: comments
-strip_id_or_class: smart-paging-pager
-strip_id_or_class: megaUne
-strip_id_or_class: pas
-strip_id_or_class: field-name-field-pour-aller-plus-loin
 
-next_page_link: //div[contains(concat(' ',normalize-space(@class),' '),' smart-paging-pager ')]//a[@title='Aller à la page suivante']
-
-body: //section[contains(concat(' ',normalize-space(@class),' '),' corps ')]
-test_url: http://www.macg.co/aapl/2015/09/tim-cook-rassure-sur-lavenir-du-mac-90957
+test_url: https://www.macg.co/ailleurs/2024/10/microsoft-donne-des-yeux-et-une-voix-lia-de-copilot-146279

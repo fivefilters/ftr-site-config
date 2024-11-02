@@ -1,5 +1,22 @@
-date: //li[@class='date']
-author: (//h4[@itemprop='name'])[1]
+body: //article[1]
 
+strip_id_or_class: tzi-bottom-container
+strip_id_or_class: author-container
+strip_id_or_class: meta-data-container
+strip_id_or_class: is-hidden
+
+strip: //h1[1]
+
+# replace micro-img with noscipt-img
+strip: //img[contains(@src, '/14/')]
+replace_string(noscript>): div>
+
+# remove blank in meta>og:image>content, which resulted in an empty preview image in wallabag
+replace_string(.jpeg "): .jpeg"
+
+prune: no
+tidy: no
+
+test_url: https://taz.de/Italienische-Comicneuheiten/!6041889/
 test_url: https://www.taz.de/!5504959/
 test_url: https://taz.de/!5708122

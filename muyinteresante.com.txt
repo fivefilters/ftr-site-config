@@ -1,0 +1,18 @@
+body: //main[@id='main']/article[1]
+
+strip_id_or_class: categories
+strip_id_or_class: article-header__title
+strip_id_or_class: article-share
+strip_id_or_class: article-meta
+
+strip: //aside/parent::div[contains(@class, 'post-picker')]
+
+# rename <header> tag to prevent wallabag from stripping lead text and lead image
+replace_string(<header): <div
+replace_string(</header): </div
+
+
+prune: no
+tidy: no
+
+test_url: https://www.muyinteresante.com/historia/7-sucesos-historicos-que-ocurrieron-en-halloween.html

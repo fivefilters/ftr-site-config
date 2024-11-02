@@ -1,5 +1,5 @@
 body:  //div[@id='article-single']
-title: //h1
+title: //h1[@id='single-article-title']
 author: //meta[@name='author']/@content
 
 strip: //div[contains(@class, 'thumbnail-mobile')]

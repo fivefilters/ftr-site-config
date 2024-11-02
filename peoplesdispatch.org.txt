@@ -1,0 +1,13 @@
+body: //main[@id='main']/article[1]/div[1]
+title: //h1[@class='entry-title']
+author: //meta[@name='author']/@content
+
+strip: //footer
+
+strip_id_or_class: entry-title
+strip_id_or_class: apss-social-share
+
+prune: no
+
+test_url: https://peoplesdispatch.org/2024/08/06/the-streets-have-become-the-key-battleground-between-chavismo-and-the-far-right-opposition/
+test_url: https://peoplesdispatch.org/2024/06/06/regarding-the-pain-of-others-as-our-own/

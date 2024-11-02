@@ -1,0 +1,9 @@
+# <head> contains a condition redirect via <meta http-equiv="refresh" ...>
+# to /oldie/
+# following line deactivates this for FTR and wallabagger browser extension
+# but unfortunately NOT for wallabag UI
+
+replace_string(http-equiv="refresh"): foo="bar"
+
+
+test_url: https://callistaenterprise.se/blogg/teknik/2016/05/27/building-a-microservice-with-golang/

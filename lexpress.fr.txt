@@ -1,0 +1,10 @@
+body: //article[1] | //*[contains(@class, 'article__lead')] | //div[@class='article__image']
+
+replace_string(<h2): <h4
+replace_string(</h2>): </h4>
+
+prune: no
+tidy: no
+
+test_url: https://www.lexpress.fr/idees-et-debats/abel-quentin-le-climat-est-une-question-de-vie-ou-de-mort-pas-les-toilettes-non-genrees-2ZQAOWQ46JEE5I654A5IXI43WQ/
+test_url: https://www.lexpress.fr/economie/high-tech/les-reverse-etl-la-solution-pour-activer-vos-donnees-clients-IL63BDTD3ZBVLIEDWVBDNM2FAM/

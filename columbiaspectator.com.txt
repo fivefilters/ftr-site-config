@@ -1,0 +1,13 @@
+# site does not work with Fulltext-RSS but with wallabag
+
+date: //p[@class='pub-date']
+
+# strip many literal '\n' from text
+replace_string(\n):
+
+# the backslash in img src=\"https... caused images not to load. Strip it
+replace_string(\"): "
+
+prune: no
+
+test_url: https://www.columbiaspectator.com/news/2024/09/12/inside-columbias-surveillance-and-disciplinary-operation-for-student-protesters-3/

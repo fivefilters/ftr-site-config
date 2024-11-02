@@ -1,0 +1,18 @@
+http_header(user-agent): PHP/7.4
+
+body: (//div[@class='content'])[1]
+date: //time/@datetime
+author: //span[@class='user-name']//a
+# and for wallabag
+author: //div[@class='avatar']/following-sibling::a
+
+strip_id_or_class: toc
+
+# remove large gaps between <p>
+find_string: ">&nbsp;</p
+replace_string: "></p
+
+prune: no
+tidy: no
+
+test_url: https://community.element14.com/technologies/test-and-measurement/b/blog/posts/building-solderable-in-circuit-oscilloscope-probes

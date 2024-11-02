@@ -1,0 +1,28 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+
+strip_id_or_class: ad__section-border
+strip_id_or_class: article-meta
+strip_id_or_class: visually-hidden
+strip_id_or_class: article-comment
+
+strip: //header[contains(@class, 'identity-intro')]/parent::*
+strip: //section[@class='more-topic']
+strip: //section[contains(@class, 'newsletter-widget')]/parent::div
+strip: //nav
+
+
+# making images visible
+
+replace_string(<source): <invalid
+
+strip_attr: //img/@data-srcset
+strip_attr: //source/@data-srcset
+
+find_string: ?quality=5
+replace_string: ?quality=90" foo="x
+
+
+prune: no
+tidy: no
+
+test_url: https://nationalpost.com/news/canada/u-s-secretly-tested-carcinogen-in-western-canada-during-the-cold-war-researcher-discovers

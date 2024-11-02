@@ -9,12 +9,18 @@ replace_string(<td): <div
 replace_string(</td): </div
 
 body: //div[@id="bodyTable"]
+body: //body[1]
 
+strip_id_or_class: awesomewrap
 strip_id_or_class: templatePreheader
 strip_id_or_class: mcnShareBlock
 strip_id_or_class: templateFooter
 strip_id_or_class: mcnFollowBlock
 
+# strip hint for browser edition
+strip: (//div[contains(@class, 'mj-outlook-group-fix')])[1]
+
 prune: no
+
 
 # Test URL needs to be something that doesn't reveal a subscriber's email address

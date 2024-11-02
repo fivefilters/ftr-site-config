@@ -1,0 +1,17 @@
+# First catch with wallbag sometimes fails,
+# just reload article within wallabag then
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+
+body: //article[1]
+
+strip_id_or_class: blh_share_cont
+strip_id_or_class: comments
+strip_id_or_class: tags
+strip_id_or_class: article-bottom
+
+prune: no
+tidy: no
+
+test_url: https://passport.blog.hu/2020/03/13/a_cia_lopott_muholdja
+test_url: https://mpt-it.blog.hu/2024/10/27/_itt_van_a_varos_vagyunk_lakoi

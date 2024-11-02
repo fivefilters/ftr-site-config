@@ -1,0 +1,10 @@
+body: //main
+strip: //nav
+strip: //*[@aria-hidden="true"]
+
+# strip additional header-line in text
+strip: //main/text()
+
+prune: no
+
+test_url: https://openai.com/index/learning-to-reason-with-llms/

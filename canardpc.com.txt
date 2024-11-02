@@ -1,11 +1,17 @@
 title: //div[contains(@class, 'main-article-titre')]
 body: //div[contains(@class, 'post-content')]
-author: //div[@class="post-informations"]//a[contains(@href, 'https://www.canardpc.com/auteur/')]
+author: //div[contains(@class, "post-informations")]//a[contains(@href, 'https://www.canardpc.com/auteur/')]
 date: //meta[@property="article:published_time"]/@content
 
 strip: //div[contains(@class, 'slick-cloned')]
 strip_id_or_class: locomotive-navigation
 strip: //div[contains(@class, "encarts")]//div[contains(@class, "layout-framed")]
+#strip: //div[contains(@class, "post-row desktop")]
+strip: //div[contains(@class, "post-row mobile")]
+strip_id_or_class: main-cartouche
+strip: //div[contains(@class, 'post-informations')]/span
+
+prune: no
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
