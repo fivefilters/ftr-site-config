@@ -1,0 +1,7 @@
+title: //tr[1]//table[4]//h1
+body: //td[@class="container"]/table[@align="center"]
+
+prune: no
+
+# no test_url, as these could be personalized
+test_url: https://example.com
