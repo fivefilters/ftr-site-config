@@ -1,4 +1,5 @@
 title://h1[@class="title"]
+body: //main[1]
 body://main[@class="global-wrapper"]
 
 date: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//time/@datetime
@@ -8,15 +9,20 @@ single_page_link: //link[@rel="canonical"]
 
 strip: //aside
 
+strip_id_or_class: news__body__right
+strip_id_or_class: paywall-login
+strip_id_or_class: paywall-message
+
 requires_login: yes
 
-login_uri: https://www.mediapart.fr/login_check
+login_uri: //meta[@property="og:url"]/@content
 login_username_field: email
 login_password_field: password
 
-login_extra_fields: formulaire_action="/login_check"
-login_extra_fields: op=Se+connecter
+login_extra_fields: action="/login_check"
+login_extra_fields: novalidate="novalidate"
+login_extra_fields: accept-charset="UTF-8"
 
-not_logged_in_xpath: //body[contains(@class,"not-logged-in")]
+not_logged_in_xpath: //div[contains(@class,"paywall-login")]
 
 test_url: https://www.mediapart.fr/journal/france/170116/le-site-slatefr-est-passe-entre-les-mains-du-cac-40
