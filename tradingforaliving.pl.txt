@@ -1,0 +1,15 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article__post ')]
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article__post--encyklopedia ')]
+
+strip: //figure[contains(concat(' ',normalize-space(@class),' '),' post__thumbnail--desktop ')]
+
+strip_id_or_class: post__next
+strip_id_or_class: post__related-header
+strip_id_or_class: post__related-posts
+strip_id_or_class: article__post--encyklopedia__nav
+
+# activating images for FTR
+replace_string(data-src=): src=
+
+test_url: https://www.tradingforaliving.pl/ekonomia-behawioralna-richard-thaler/
+test_url: https://www.tradingforaliving.pl/encyklopedia/bank-run/
