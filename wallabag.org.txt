@@ -1,0 +1,3 @@
+date: //meta[@name="date"]/@content
+
+test_url: https://wallabag.org/news/20241103-new-release-wallabag-2610/
