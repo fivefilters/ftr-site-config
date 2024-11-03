@@ -1,0 +1,32 @@
+# long articles are cut by JavaScript on the source side
+# These parts could not be fetched by wallabag UI or FTR
+# You may use 'wallabager' browser extension, to fetch everything
+
+# please sync any changes between  vogue.com.txt  and  vogue.co.uk.txt
+
+body: //article[1]
+
+
+strip: //button
+strip: //aside
+strip: //header/div[1]/div[1]
+
+strip_id_or_class: grid-layout__aside
+
+
+# reduce too high audio widget
+find_string: IframeEmbedContent" height="300px"
+replace_string: IframeEmbedContent"
+
+# activating images
+find_string: noscript>
+replace_string: div>
+
+find_string: <div class="PullQuoteEmbedContent
+replace_string: <h2><div class="PullQuoteEmbedContent
+
+prune: no
+tidy: no
+
+test_url: https://www.vogue.co.uk/gallery/gaby-novogratz-and-zach-spohler-wedding
+test_url: https://www.vogue.co.uk/beauty/article/psilocybin-microdosing-retreat
