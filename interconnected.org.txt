@@ -1,0 +1,10 @@
+body: //article[1]
+date: //meta[@property="og:updated_time"]/@content
+
+strip: //h2[1]
+strip: //h5[1]
+
+prune: no
+tidy: no
+
+test_url: https://interconnected.org/home/2020/09/10/streak
