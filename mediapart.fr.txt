@@ -14,6 +14,10 @@ strip_id_or_class: engagement-bar-wrapper
 strip_id_or_class: read-also
 strip_id_or_class: newsletter-form
 
+strip_id_or_class: paywall-login
+strip_id_or_class: paywall-message
+strip_id_or_class: paywall_no_variance
+
 strip: //button
 
 # prevent wallabag from tinyfying paragraphs
