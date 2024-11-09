@@ -1,0 +1,13 @@
+body: //div[contains(@class, 'article-content')]
+date: //meta[@property='og:article:published_time']/@content
+
+strip: //a[starts-with(@href, '#')]
+
+## activating this, would permanently open the collapsed part behind the <summary> arrow
+#replace_string(<details): <div
+#replace_string(</details>): </div>
+
+prune: no
+tidy: no
+
+test_url: https://matija.suklje.name/persistent-copyright-licensing-information-in-client-side-javascript-css-and-similar-a-proposal-call-for-help
