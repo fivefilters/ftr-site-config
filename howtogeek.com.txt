@@ -6,7 +6,7 @@ http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gec
 body: //main[1]/article[1]/section[@id='article-body'] | //header/div[contains(concat(' ',normalize-space(@class),' '),' heading_image ')]
 
 strip: //button
-
+strip: //a[contains(@href, 'ref=ad_removal')]
 
 ## prior 2024/11
 
