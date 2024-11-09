@@ -1,4 +1,14 @@
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/122.0
+## If article contains an image gallery, use 'wallabagger' to get all images
+## wallabag UI or FullText-RSS can't fetch them, because of JavaScript
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+
+body: //main[1]/article[1]/section[@id='article-body'] | //header/div[contains(concat(' ',normalize-space(@class),' '),' heading_image ')]
+
+strip: //button
+
+
+## prior 2024/11
 
 body: //article[1]
 
@@ -16,5 +26,6 @@ prune: no
 find_string: data-img-url="https:
 replace_string: src="https:
 
+test_url: https://www.howtogeek.com/mac-pro-3d-print-mac-mini-case/
 test_url: https://www.howtogeek.com/how-to-see-who-is-stalking-your-facebook-profile/
 test_url: https://www.howtogeek.com/feed/
