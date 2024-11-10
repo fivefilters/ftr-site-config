@@ -1,8 +1,20 @@
+body: //div[@data-tag="post-card"]
 body: //div[@data-tag="post-content"]
 title: //span[@data-tag="post-title"]
 date: substring-before(//a[@data-tag="post-published-at"], ' at ')
 
-prune: no
+strip: //button
+strip: //div[contains(@class, 'sc-a8c5af79-0')]/parent::div
 
-test_url: https://www.patreon.com/posts/switch-between-40339561
-test_contains: Browser-retrieved content is the default
+strip_id_or_class: sc-661b5c1a-5
+strip_id_or_class: sc-c54e49fb-3
+
+# add horizontal line before comments area
+find_string: class="sc-dc35f3ae-0">
+replace_string: class="sc-dc35f3ae-0" foo="bar"><hr />
+
+prune: no
+tidy: no
+
+test_url: https://www.patreon.com/posts/texas-chow-chow-6143718
+test_url: https://www.patreon.com/posts/upcoming-ambient-112497601
