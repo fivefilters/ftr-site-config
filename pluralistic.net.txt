@@ -5,17 +5,18 @@ date: //time[1]/@datetime
 
 strip: //header
 strip: //footer
-# strip lead image, as it is quite the same as first article image
-strip: //article[1]/div[1]/p[1]/br[1]/parent::p
-# strip title from body
-strip: (//div[@class='entry-content']/h1[not(@class='toch1')])[1]
-# strip 1st <hr> and 2nd <hr> and everything below 2nd <hr>
-strip: //div[@class='entry-content']/hr[1] | //div[@class='entry-content']/hr[2] | //div[@class='entry-content']/hr[2]/following-sibling::*
+# strip TOC (Today's links section)
+strip: //div[@class='entry-content']/hr[1]/preceding-sibling::ol | //div[@class='entry-content']/hr[1]/preceding-sibling::ul | //div[@class='entry-content']/hr[1]/preceding-sibling::h1
+# strip CC-BY image and everything below
+strip: //img[contains(@src, 'images/by.svg.png')]/parent::p | //img[contains(@src, 'images/by.svg.png')]/parent::p/preceding-sibling::hr[1] | //img[contains(@src, 'images/by.svg.png')]/parent::p/following-sibling::*
+# just in case, the previous strip did not work, remove self-advertising block
+strip: //h1[contains(text(), 'How to get Pluralistic')]/self::* | //h1[contains(text(), 'How to get Pluralistic')]/following-sibling::*
 
-strip_id_or_class: toch1
-strip_id_or_class: toc
-
+replace_string(>permalink</a>): >#</a>
 
 prune: no
 
 test_url: https://pluralistic.net/2023/07/31/seize-the-means-of-computation/
+test_url: https://pluralistic.net/2020/02/19/pluralist-19-feb-2020/
+test_url: https://pluralistic.net/2024/11/06/brazilian-blowout/
+test_url: https://pluralistic.net/2021/10/28/clintons-ghost/
