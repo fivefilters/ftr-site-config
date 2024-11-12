@@ -1,0 +1,10 @@
+body: //div[contains(@class, 'article-page')]
+author: //div[@class='author-row']//a
+
+strip_id_or_class: category
+strip_id_or_class: info-share-banner-wrapper
+
+prune: no
+tidy: no
+
+test_url: https://www.alternator.science/sl/daljse/novi-grofje-celjski-in-dvorec-novo-celje/
