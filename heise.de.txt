@@ -86,7 +86,6 @@ replace_string( | heise Autos</title>): </title>
 replace_string(<div class="heisebox">): <blockquote>
 
 single_page_link: //a[contains(@href, '?view=print')]
-single_page_link: //a[contains(@title, 'Druck')]
 single_page_link: //a[contains(@href, '?seite=all')]/@href
 
 next_page_link: //a[@class='next' and not(contains(text(), 'Artikel'))]
