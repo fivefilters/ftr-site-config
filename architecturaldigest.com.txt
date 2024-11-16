@@ -1,0 +1,26 @@
+body: //article[1]
+
+strip_id_or_class: ContentHeaderHedAccreditationWrapper-GFiQf
+strip_id_or_class: article-body__footer
+strip_id_or_class: social-icons--overlay
+strip_id_or_class: ad__slot
+
+strip: //button
+strip: //div[contains(@class, 'RecircMostPopularWrapper')]
+strip: //div[contains(@class, 'ContentFooterWrapper-')]
+strip: //figure/p[text()='Trending Video']/parent::figure/parent::div
+
+## fixing wallabag's unreasonable behavior of cutting the article after some point
+strip_attr: //div[contains(@class, 'AdWrapper-')]/@class
+strip_attr: //div[contains(@class, '-content-ad')]/@class
+strip_attr: //div[contains(@class, 'ad--in-content')]/@class
+strip_attr: //div[contains(@class, 'click-to-toggle')]/@class
+
+## activate images
+replace_string(noscript>): div>
+
+prune: no
+tidy: no
+
+test_url: https://www.architecturaldigest.com/story/affordable-housing-crisis-in-america
+test_url: https://www.architecturaldigest.com/gallery/best-castle-hotels#intcid=_architectural-digest-right-rail_3f371479-54ab-4ca7-bf02-50218c22a041_popular4-1
