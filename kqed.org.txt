@@ -1,0 +1,14 @@
+## some articles using initials at section start, that causes a line break after first letter
+## I don't know, if that is fixable at the moment.
+
+title: //h1[contains(@class, 'Post-Title')]
+
+strip: //div[contains(@class, 'Shortcode__aside')]
+strip: //div[contains(@class, '_mpost_Info')]
+strip: //div[contains(@class, '_mpost_Title')]
+
+prune: no
+tidy: no
+
+test_url: https://www.kqed.org/arts/13951914/dungeness-crab-garlic-noodles-san-bruno-late-night
+test_url: https://www.kqed.org/arts/13900855/garlic-noodles-sf-bay-area-iconic-foods-thanh-long-smellys
