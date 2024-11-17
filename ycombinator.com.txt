@@ -1,0 +1,17 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //section[1]/div[1]/div[1]/div[position()>1]
+author: //a[contains(@href, '/blog/author/')]
+
+strip_attr: //img/@srcset
+
+prune: no
+tidy: no
+
+test_url: https://www.ycombinator.com/blog/the-reddits
