@@ -1,0 +1,13 @@
+body: //article[1]/div[contains(@class, 'post-entry')] | //article[1]/div[contains(@class, 'post-image')]
+title: substring-before( //meta[@property='og:title']/@content , ' - BESABINE')
+
+strip_id_or_class: post-tags
+
+strip: //style
+strip: //a/em[text()='Photo credits']/parent::a/parent::p
+
+
+prune: no
+tidy: no
+
+test_url: https://www.besabine.com/en/travel-transmilenio-public-transport-bogota/
