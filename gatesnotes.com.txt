@@ -1,10 +1,14 @@
-# author: HolgerAusB  |  version 2023-03-24
+# if you change anything, please check ALL test_urls !!!
+# specially with wallabag, this tends to print literal scripting code
+# due to mixing up parts of hidden <script> nodes
 
-body: //div[@class='TGN_site_Article']
+body: //div[@class='TGN_Article_ReadTimeSection']/div | //div[@id='TGN_site_Article_body']//p | //div[@id='TGN_site_Article_body']//img | //div[@class='TGN_Article_ReadTimeSection']/p | //div[@class='article_top_description'] | //div[@class='article_top_articlehero']
+
 author: //span[@class='article_top_bylinebold']
 date: //div[@class='article_top_dateline']
 
 prune: no
+tidy: no
 
 strip_id_or_class: article_top_head
 strip_id_or_class: article_top_subhead
@@ -20,6 +24,7 @@ strip_id_or_class: TGN_CH_BO_HeroHolder
 strip_id_or_class: TGN_site_Article_readnext
 strip_id_or_class: TGN_site_Article_cta
 strip_id_or_class: TGN_site_Article_comments
+strip_id_or_class: suspendedCTA
 
 strip: //div[starts-with(@id, 'TGN_CH_BO_Menu')]
 strip: //div[starts-with(@class, 'TGN_CH_BO_ChapterholderTop')]
@@ -27,14 +32,16 @@ strip: //div[starts-with(@class, 'TGN_CH_BO_ChapterholderTop')]
 strip: //div[contains(@data-module-name, 'pullquote')]
 
 # for multiplatform-images convert 'data-src' to 'src'
-# and replace the placeholdert-png 'src' with 'dummy'
-replace_string(DMT_Image" src=): DMT_Image" dummy=
-replace_string(HF_IMG" src=): HF_IMG" dummy=
-replace_string(" data-src=): "  src=
+# and remove the placeholder-png
+find_string: src="https://www.gatesnotes.com/media/GNIN/gray_4x6.png" data-src=
+replace_string: src=
+
 
 strip: //script
+strip: //style
 strip: //canvas
 strip: //iframe
 
 test_url: https://www.gatesnotes.com/The-Age-of-AI-Has-Begun?WT.mc_id=20230321100000_Artificial-Intelligence_BG-TW_&WT.tsrc=BGTW
 test_url: https://www.gatesnotes.com/My-trip-to-India-in-pictures
+test_url: https://www.gatesnotes.com/Digital-public-infrastructure
