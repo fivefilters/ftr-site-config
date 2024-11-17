@@ -1,0 +1,7 @@
+body: //article[1]/div[contains(@class, 'td-post-content')]
+title: //h1[@class='entry-title']
+author: //div[contains(@class, 'td-post-author-name')]//a
+
+prune: no
+
+test_url: https://thecitypaperbogota.com/culture/rock-al-parque-a-bogota-icon-celebrates-30-years-with-legendary-concerts/
