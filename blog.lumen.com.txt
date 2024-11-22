@@ -1,0 +1,12 @@
+body: //div[contains(@class, 'post_header single')] | //div[contains(@class, 'post_img static')]
+title: //div[@class='post_header_title']/h1
+
+strip_id_or_class: social_share_counter
+strip_id_or_class: social_share_button_wrapper
+strip_id_or_class: post_share_center
+
+
+prune: no
+tidy: no
+
+test_url: https://blog.lumen.com/one-sock-fits-all-the-use-and-abuse-of-the-nsocks-botnet/
