@@ -1,0 +1,14 @@
+body: //div[@id='content']
+author: //meta[@name='author']/@content
+date: //div[@class='post-date']
+
+
+strip_id_or_class: post-date
+strip_id_or_class: post-title
+strip_id_or_class: taglist
+strip_id_or_class: comments
+
+
+prune: no
+
+test_url: https://bastibe.de/2019-02-24-what-i-learned-about-amateur-photography.html
