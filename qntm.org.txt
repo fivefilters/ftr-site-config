@@ -1,0 +1,17 @@
+# if you don't like the comments, remove the part after the first closing suqare bracket:  ]
+body: //div[contains(@class, 'page__content')] | //div[contains(@class, 'page--when-checked')]
+
+author: substring-after(normalize-space( //div[@class='page__dateline']),' by ')
+date: substring-before(normalize-space( //div[@class='page__dateline']),' by ')
+
+strip: //form
+strip: //input
+
+strip_id_or_class: page--when-unchecked
+strip_id_or_class: page__comments-no-more
+strip_id_or_class: page__button
+
+prune: no
+
+test_url: https://qntm.org/vhitaos
+test_url: https://qntm.org/mmacevedo
