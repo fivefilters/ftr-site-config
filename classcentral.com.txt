@@ -1,0 +1,20 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with wallabag UI
+
+# This works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+# Surprisingly this works with ftr.fivefilters.net (FTR|Fulltext-RSS)
+
+
+body: //article[1]//section[1] | //article/header/div[1]
+title: //article[1]/header/h1
+author: //article[1]/header//a[contains(@href, '/author/')]
+
+strip: //aside
+
+prune: no
+tidy: no
+
+test_url: https://www.classcentral.com/report/duolingo-vs-coursera-udemy-worth-comparison/
