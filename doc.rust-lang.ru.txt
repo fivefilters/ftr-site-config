@@ -1,0 +1,6 @@
+body: //main
+
+test_url: https://doc.rust-lang.ru/book/ch10-03-lifetime-syntax.html
+
+prune: no
+tidy: no
