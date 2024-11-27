@@ -1,3 +1,5 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
+
 title: //meta[@property="og:title"]/@content
 date: //meta[@name="dc.date"]/@content
 date: //meta[@name="prism.publicationDate"]/@content
@@ -12,6 +14,7 @@ replace_string: src="
 strip: //noscript
 
 prune: no
+tidy: no
 
 test_url: https://www.nature.com/articles/d41586-019-01307-2
 test_url: https://www.nature.com/npp/journal/v42/n11/full/npp201786a.html
