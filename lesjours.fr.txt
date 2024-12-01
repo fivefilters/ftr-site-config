@@ -1,6 +1,8 @@
 title://h1[@class="h2"]
 body: //div[@class="article-holder"]
 
+strip: //a[contains(@class, 'btn-')]/parent::div
+
 # Wallabag-specific login directives (not supported in FTR)
 requires_login: yes
 
