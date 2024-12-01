@@ -1,0 +1,17 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //article[1]//section[1] | //div[contains(@class, 'FullBleedWrapper')]
+
+strip: //*[@aria-hidden="true"]
+
+prune: no
+tidy: no
+
+test_url: https://www.barrons.com/articles/60-40-portfolio-bond-yield-inflation-fddb9c4b?st=MKL2je
+test_url: https://www.barrons.com/articles/ai-evs-nuclear-energy-electricity-a4198583
