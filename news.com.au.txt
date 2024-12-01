@@ -1,4 +1,26 @@
-body: //div[@class='story-body']
+http_header(User-Agent): curl/7.83.1
+
+body: //article[@id='story']
+body: //article[1]
+title: //meta[@name="title"]/@content
+
+strip: //aside
+strip: //button
+strip_attr: //img/@srcset
+
+strip_id_or_class: source
+strip_id_or_class: story-headline
+strip_id_or_class: story-byline
+strip_id_or_class: vjs-ima3-ad-container
+strip_id_or_class: vms-player
+strip_id_or_class: story-secondary
+strip_id_or_class: ad-custom
+strip_id_or_class: nca-et-embed
+strip_id_or_class: more-coverage
+strip_id_or_class: more-coverage-v1
+strip_id_or_class: more-coverage-v2
+strip_id_or_class: poster
+
 prune: no
 tidy: no
 
