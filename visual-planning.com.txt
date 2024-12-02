@@ -1,5 +1,8 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' et_pb_column_0 ')]
 
 prune: no
+replace_string(data-lazy-src=):src=
+strip_attr: //img/@data-old-src
+strip: //noscript
 
 test_url: https://www.visual-planning.com/documentation/frv9/accueil/agencement-et-visualisation/vue-evenements/vue-evenements-utilisation
