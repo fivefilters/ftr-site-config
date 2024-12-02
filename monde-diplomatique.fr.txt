@@ -20,6 +20,7 @@ author: //meta[@property='article:author']/@content
 
 strip: //div[contains(@class, 'bandeautitre')]
 strip: //div[contains(@class, 'dates_auteurs')]
+strip: //div[@class='cartouche']/h1
 
 prune: no
 tidy: no
