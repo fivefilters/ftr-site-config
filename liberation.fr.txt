@@ -1,6 +1,12 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' default__Main')]
 strip_id_or_class: closed
 strip: //figcaption
+
+# Removing the duplicated title
+strip: //div[contains(@class, 'TypologyArticle__BlockHeadline')]
+# Removing the empty lead image
+strip://figure[@class="lead-art-wrapper"]
+
 strip_id_or_class: display_block
 strip_id_or_class: tag-container
 strip_id_or_class: mailmunch-giftarticle
