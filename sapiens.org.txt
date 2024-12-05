@@ -1,0 +1,19 @@
+body: //div[@class='c-article-content']
+
+
+strip_id_or_class: c-article-notifications
+strip_id_or_class: c-article-tax
+strip_id_or_class: p-header-article__title
+strip_id_or_class: p-header-article__author-date
+strip_id_or_class: m-authors
+strip_id_or_class: c-article-sticky-buttons
+strip_id_or_class: c-notifications
+
+# activate images
+replace_string(srcset=): foo=
+replace_string(data-src=): src=
+
+prune: no
+tidy: no
+
+test_url: https://www.sapiens.org/language/color-perception/
