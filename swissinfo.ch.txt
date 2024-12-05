@@ -1,0 +1,12 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-main ')]
+
+strip_id_or_class: article-meta-row
+strip_id_or_class: teaser-card-carousel
+strip_id_or_class: comment-disabled-notice
+strip_id_or_class: jti-certification
+strip_id_or_class: widget-container
+strip_id_or_class: infobox
+
+prune: no
+
+test_url: https://www.swissinfo.ch/eng/international-geneva/switzerland-to-host-middle-east-conference-on-international-humanitarian-law/88448703
