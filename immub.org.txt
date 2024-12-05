@@ -1,0 +1,19 @@
+# known issue with [wallabag]:
+# images are shown as literal: <img src="data:image/png;base64,abc...VERY LONG...>
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
+a
+
+#due to JavaScript the real conent is found with a different URL:
+next_page_link: concat( substring-before( substring-after ( (//script[contains(text(), 'bucket_domain =')]/text()) , "bucket_domain = '") , "'") , substring-before( substring-after ( (//script[contains(text(), 'sarquivo_pt =')]/text()) , "sarquivo_pt = '") , "'") )
+
+strip_id_or_class: article-header
+strip_id_or_class: article-footer
+strip_id_or_class: visible-xs
+
+prune: no
+tidy: no
+
+test_url: https://immub.org/noticias/tambor-de-crioula-do-piaui-a-africa-brasileira
