@@ -1,0 +1,14 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+author: //meta[@name='author']/@content
+
+strip: //header
+
+strip_id_or_class: cm-below-entry-meta
+
+prune: no
+tidy: no
+
+test_url: https://www.kingstonist.com/news/board-of-health-votes-to-merge-with-neighbours-to-become-south-east-public-health/
+test_url: https://www.kingstonist.com/culture/lifestyle/how-to-enjoy-the-fall-colours-in-and-around-kingston/
