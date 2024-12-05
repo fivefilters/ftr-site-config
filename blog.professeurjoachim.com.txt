@@ -1,0 +1,5 @@
+date: //section[contains(@class, 'article')]//time[@pubdate='pubdate']/@datetime
+
+strip: //section[contains(@class, 'article')]//time[@pubdate='pubdate']
+
+test_url: https://blog.professeurjoachim.com/billet/2023-03-31-aller-voir-les-aurores-boreales-en-train
