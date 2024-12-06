@@ -1,7 +1,12 @@
 title://h1[@class="h2"]
-body: //div[@class="article-holder"]
+body: //div[contains(@class, "article-holder")] | //header/div[@itemprop='image'] | //header//h2[@itemprop='description']
 
 strip: //a[contains(@class, 'btn-')]/parent::div
+
+strip_attr: //img/@srcset
+
+prune: no
+tidy: no
 
 # Wallabag-specific login directives (not supported in FTR)
 requires_login: yes
