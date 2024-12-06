@@ -11,8 +11,10 @@ strip_id_or_class: screen-reader-text
 
 strip_id_or_class: teaser-hero
 strip: //p[.="Read the full investigation below:"]
-strip: //*[contains(@class, 'teaser-wide-card')]
+strip: //*[contains(@class, 'teaser-wide')]
 strip: //nav[contains(@class, 'links-list')]
+strip: //svg
+strip: //button
 
 prune: no
 
