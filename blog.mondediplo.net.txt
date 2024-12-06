@@ -1,0 +1,18 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+
+title: //h1[contains(@class,"h1")]
+body: //div[contains(@class, 'contenu-principal')]
+author: //meta[@property='article:author']/@content
+
+strip: //div[contains(@class, 'bandeautitre')]
+strip: //div[contains(@class, 'dates_auteurs')]
+strip: //div[@class='cartouche']/h1
+
+strip_id_or_class: abo_us
+strip_id_or_class: tags
+strip_id_or_class: partage
+
+prune: no
+tidy: no
+
+test_url: https://blog.mondediplo.net/le-charles-de-gaulle-a-la-conquete-de-l-indo
