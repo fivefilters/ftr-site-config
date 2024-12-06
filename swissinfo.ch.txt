@@ -1,11 +1,14 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-main ')]
 
+strip_id_or_class: article-meta-list
 strip_id_or_class: article-meta-row
 strip_id_or_class: teaser-card-carousel
 strip_id_or_class: comment-disabled-notice
 strip_id_or_class: jti-certification
 strip_id_or_class: widget-container
 strip_id_or_class: infobox
+strip: //p[.="Read the full investigation below:"]
+strip: //*[contains(@class, 'teaser-wide-card')]
 
 prune: no
 
