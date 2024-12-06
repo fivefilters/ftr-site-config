@@ -3,7 +3,17 @@ body: //div[contains(@class, "article-holder")] | //header/div[@itemprop='image'
 
 strip: //a[contains(@class, 'btn-')]/parent::div
 
-strip_attr: //img/@srcset
+
+# activate graphics:
+
+find_string: srcset="
+replace_string: fooset="
+
+find_string: src="data:image
+replace_string: foo="data:image
+
+find_string: data-src="
+replace_string: src="
 
 prune: no
 tidy: no
@@ -18,3 +28,4 @@ login_password_field: password
 not_logged_in_xpath: //body[@class="not-logged-in"]
 
 test_url: https://lesjours.fr/obsessions/pole-financier/ep12-marcel-campion/
+test_url: https://lesjours.fr/obsessions/vie-jours/ep157-newsletter-60/
