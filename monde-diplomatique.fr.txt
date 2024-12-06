@@ -1,14 +1,36 @@
-http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
-title: //h1[@class="h1"]
+# if you have timing problems with wallabag's login feature
+# use either wallabagger brwoser plugin or
+# increase the timeout in app/config/config.yml to something > 30 (seconds):
+
+# httplug:
+#    clients:
+#        wallabag_core:
+#            factory: Wallabag\CoreBundle\Helper\HttpClientFactory
+#            config:
+#                defaults:
+#                    timeout: 10
+
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+http_header(referer): https://www.monde-diplomatique.fr
+
+title: //h1[contains(@class,"h1")]
 body: //div[contains(@class, 'contenu-principal')]
 author: //meta[@property='article:author']/@content
 
 strip: //div[contains(@class, 'bandeautitre')]
 strip: //div[contains(@class, 'dates_auteurs')]
+strip: //div[@class='cartouche']/h1
+
+prune: no
+tidy: no
+
+# wallabag only
+# do not set you credentials here, you have to do this in wallabag's UI
 
 requires_login: yes
 
-login_uri: https://www.monde-diplomatique.fr/sso/connexion/
+login_uri: https://www.monde-diplomatique.fr/connexion/
 login_username_field: email
 login_password_field: mot_de_passe
 login_extra_fields: valider=Valider
