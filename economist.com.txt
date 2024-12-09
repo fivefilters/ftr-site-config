@@ -1,10 +1,24 @@
+body: //main[@id='content']/article[1]
 body: //div[@itemprop="text"]
 body: //div[@class='main-content']
 body: //article[contains(@class, 'resp-node')]
 date: //time[@class='date-created']
-strip: //aside
-prune: no
 
+strip: //aside
+
+strip: //section[contains(@class, 'css-u7urgs')]/div
+strip: //section[contains(@class, 'css-u7urgs')]/h1
+strip: //section[contains(@class, 'css-1sh6d1o')]/div
+strip: //section[contains(@class, 'css-1sh6d1o')]/h1
+strip: //time/parent::div/parent::div
+strip: //*[@id='article-tags']/parent::div | //*[@id='article-tags']/parent::div/following-sibling::*
+strip: //div[@data-optimizely='related-articles-section']
+strip: //div[@data-test-id="sharing-modal"]/parent::div
+
+prune: no
+tidy: no
+
+strip_id_or_class: tp-regwall
 strip_id_or_class: newsletter-form--inline
 strip_id_or_class: layout-article-links
 strip_id_or_class: layout-sticky-rail
@@ -21,7 +35,4 @@ login_password_field: pass
 not_logged_in_xpath: //*[@id="user-login-masthead"]/div[@class='login-form']
 
 test_url: http://www.economist.com/node/21528429
-
-test_url: http://www.economist.com/news/essays/21623373-which-something-old-and-powerful-encountered-vault
-test_contains: the calfskin pages are smooth
-test_contains: Books will evolve online and off
+test_url: https://www.economist.com/briefing/2024/12/05/gambling-is-growing-like-gangbusters-in-america
