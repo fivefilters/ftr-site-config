@@ -1,0 +1,12 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' QXFFR ')]
+body: //article[1]
+
+strip: //svg
+strip_id_or_class: post-footer
+
+# activate the real images instead of the blured ones
+find_string: data-pin-media="https
+replace_string: src="https
+
+test_url: https://www.makramayache.com/post/a-different-conversation-a-turning-point-in-my-understanding-of-the-palestinian-struggle
+test_url: https://www.makramayache.com/post/can-we-talk-about-the-transphobic-sized-elephant-in-the-harry-potter-theatre
