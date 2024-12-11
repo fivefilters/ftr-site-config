@@ -27,7 +27,8 @@ login_uri: https://lesjours.fr/connexion
 login_username_field: login-mail
 login_password_field: login-password
 
-not_logged_in_xpath: //div[contains(@data-content-name, "CTA - Paywall")]
+not_logged_in_xpath: //*[@id='account']//a[@href='#login']
+#not_logged_in_xpath: //div[contains(@data-content-name, "CTA - Paywall")]
 
 test_url: https://lesjours.fr/obsessions/pole-financier/ep12-marcel-campion/
 test_url: https://lesjours.fr/obsessions/vie-jours/ep157-newsletter-60/
