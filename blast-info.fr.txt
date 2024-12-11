@@ -1,11 +1,30 @@
-title: //h1
-body: //div[contains(@class, 'story-container')]
-author: //div[contains(@class, 'story-meta-author')]
-date: //aside[contains(@class, 'story-meta-right')]//time/@datetime
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
 
-strip: //p[contains(@class, 'authors')]
-strip: //div[@class="story-tags"]
-strip: //div[@class="story-related"]
-strip: //header//div[contains(@class, 'btag')]
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' bg-body ')]
+title: //h1
+author: //a[contains(@href, '/auteurs/')]/figcaption
+date: //time/@datetime
+
+
+strip: //header
+strip: //footer
+strip: //aside
+strip: //a[contains(@href, '/tags/')]/ancestor::h2[1]
+
+strip_attr: //img/@srcset
+
+find_string: class="container
+replace_string: class="foo-cntnr
+
+prune: no
+tidy: no
 
 test_url: https://www.blast-info.fr/articles/2021/quand-le-jeu-video-tire-a-droite-episode-1-pixels-et-culottes-courtes-k6uqgfpeTsasamW1-eYv7g
