@@ -1,34 +1,19 @@
-title: //head/title
 author: //meta[@name="author"]/@content
-body: //div[contains(@class, 'js_post-content')]
-strip: //div[contains(@class, 'content-summary')]
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
 
-strip_id_or_class: magnifier
+strip: //header
 strip: //svg
-strip_id_or_class: js_commerce-inset-permalink
-strip_id_or_class: ad-commerce
-strip_id_or_class: ad-unit
-strip_id_or_class: ad-mobile
-strip_id_or_class: ad-container
-strip_id_or_class: js_ad-dynamic
-strip_id_or_class: js_ad-mobile-dynamic
-strip_id_or_class: ad-mobile-dynamic
-strip_id_or_class: advertisement
+strip: //aside
 
-# [FTR] Stripping normally script-hidden div to prevent cutting article after 1st paragraph
-strip: //div[contains(@class,'sc-1needdh-')]
+strip_id_or_class: byline
+strip_id_or_class: post-bottom
+strip_id_or_class: print:hidden
 
-# activate embeded youtube
-find_string: data-src="https://gizmodo.com/embed/inset/iframe?id=youtube-video-
-replace_string: src="https://www.youtube.com/embed/
-find_string: &amp;start=
-replace_string: " foo="
+#prevents FTR to load the gizmodo-logo if article has no image
+insert_detected_image: no 
 
 prune: no
 tidy: yes
 
-strip: //aside
-
 test_url: https://gizmodo.com/the-new-bad-tick-is-going-to-take-over-half-the-united-1831079855
-test_url: https://gizmodo.com/iphone-apps-can-harvest-data-from-notifications-1851194537
-test_contains: This story has been updated with additional comments from LinkedIn.
+test_url: https://gizmodo.com/apple-iphone-16-review-2000500097
