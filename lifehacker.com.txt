@@ -1,18 +1,14 @@
-# Changes might need to be made to .lifehacker.com.txt, gizmodo.com.txt too
+body: //section[@data-ga-module="content-body"]
 
-title: //head/title
-author: //meta[@name="author"]/@content
-body: //div[contains(@class, 'js_post-content')]
-strip: //div[contains(@class, 'content-summary')]
-
-strip_id_or_class: magnifier
+strip: //time/parent::div
+strip: //section[@data-ga-module="content-body"]/article/following-sibling::*
+strip: //img[contains(@src, '/authors/')]/ancestor::div[contains(@class, 'w-full')]/parent::div
 strip: //svg
 strip: //aside
-strip_id_or_class: js_commerce-inset-permalink
-strip_id_or_class: ad-commerce
 
-parser: libxml
+#prevents FTR to load the lifehacker-logo if article has no image
+insert_detected_image: no
 
 prune: no
 
-test_url: https://lifehacker.com/find-the-cheapest-destinations-for-that-last-minute-tri-1831047448
+test_url: https://lifehacker.com/health/how-much-stretching-it-takes-to-make-you-more-flexible
