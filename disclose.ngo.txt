@@ -1,0 +1,21 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[@class='content']
+
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+strip_id_or_class: interstice-donate
+strip_id_or_class: interstice_support
+strip_id_or_class: newsletter_form
+
+strip: //a[contains(@href, '/newsletter')]/parent::div
+
+test_url: https://disclose.ngo/fr/article/reconnaissance-faciale-la-police-desactive-le-logiciel-briefcam-apres-lenquete-de-disclose
+test_url: https://disclose.ngo/fr/article/secret-des-sources-la-journaliste-de-disclose-ariane-lavrilleux-convoquee-par-la-justice
