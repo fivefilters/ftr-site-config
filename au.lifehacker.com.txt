@@ -1,0 +1,13 @@
+body: //div[@id='content']
+
+strip_id_or_class: sidebar
+strip_id_or_class: id_title
+strip_id_or_class: block-info
+
+#prevents FTR to load the lifehacker-logo if article has no images
+insert_detected_image: no 
+
+prune: no
+tidy: no
+
+test_url: https://au.lifehacker.com/fitness/112236/feature/how-much-stretching-it-takes-to-make-you-more-flexible-according-to-science
