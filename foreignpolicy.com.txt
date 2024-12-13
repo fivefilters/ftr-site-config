@@ -1,17 +1,24 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' feature-hed ')]
 author: substring-after(//p[contains(concat(' ',normalize-space(@class),' '),' feature-byline ')], 'BY ')
 date: //div[contains(concat(' ',normalize-space(@class),' '),' timestamp ')]//time
-body: //div[contains(concat(' ',normalize-space(@class),' '),' feature-body ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-gated--main-article ')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' post-inner ')]
 body: //div[@id="main"]
 
 strip_id_or_class: share-links
 strip_id_or_class: hide-desktop-alt
-
+strip_id_or_class: hide-desktop-900
+strip_id_or_class: comment-count
+strip_id_or_class: myfp-article
+strip_id_or_class: comments-container
+strip_id_or_class: post-content--after
+strip_id_or_class: in-article-subscribe-container
+strip: //div[contains(@class, 'related_posts') or contains(@class, 'related-articles')]
+strip: //*[contains(@style, "height:0;opacity:0;")]
+strip: //nav
+strip: //svg
+strip: //button
 prune: no
 
-test_url: http://www.foreignpolicy.com/articles/2014/07/22/the_end_game_in_gaza_netanyahu_hamas
-test_url: http://www.foreignpolicy.com/articles/2011/08/01/a_murderers_manifesto_and_me
-test_url: http://www.foreignpolicy.com/articles/2012/02/29/five_years_in_damascus
-test_url: http://foreignpolicy.com/2016/04/26/fear-this-man-cyber-warfare-hacking-team-david-vincenzetti/
-test_url: https://foreignpolicy.com/2020/04/22/climate-change-security-poverty-food-water-fragile-states-peacegames/
+test_url: https://foreignpolicy.com/2014/07/22/the-endgame-in-gaza/
+test_url: https://foreignpolicy.com/2024/11/15/chomsky-foreign-policy-book-review-american-idealism/
