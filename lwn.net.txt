@@ -35,8 +35,8 @@ strip: //table[@class='Form']
 requires_login: yes
 
 login_uri: https://lwn.net/Login/
-login_username_field: Username
-login_password_field: Password
+login_username_field: uname
+login_password_field: pword
 
 not_logged_in_xpath: /html/body/div[3]/div[1]/form[@class="loginform"]
 
