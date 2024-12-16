@@ -1,0 +1,13 @@
+body: //main//div[contains(@class, 'article-text')] | //p[@class='article-subhead']
+
+author: //meta[@name='dc.creator']/@content
+date: //meta[@name='dc.date']/@content
+
+strip: //aside
+
+strip_id_or_class: newsletter-promo-item
+
+prune: no
+tidy: no
+
+test_url: https://knowablemagazine.org/content/article/mind/2024/genetics-of-people-who-need-little-sleep
