@@ -1,0 +1,29 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+author: //meta[@name="author"]/@content
+title: //meta[@property="og:title"]/@content
+body: //article[1]//div[position()<3]/div[1]
+
+strip_id_or_class: subscription-widget-wrap
+strip_id_or_class: profile-hover-card-target
+
+# Clean Twitter embeds
+strip: //div[contains(@class, 'tweet-footer')]//span
+strip_id_or_class: expanded-link-description
+strip_id_or_class: expanded-link-domain
+
+strip_id_or_class: header-anchor-widget
+
+strip_id_or_class: subscribe-widget
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' button-wrapper ')]
+
+
+prune: no
+
+test_url: https://substack.com/home/post/p-152931025
