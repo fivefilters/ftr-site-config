@@ -1,31 +1,29 @@
-title://h1[@class="h2"]
-body: //div[contains(@class, "article-holder")] | //header/div[@itemprop='image'] | //header//h2[@itemprop='description']
+http_header(User-Agent): Wallabag-Test
 
-strip: //a[contains(@class, 'btn-')]/parent::div
-
-
-# activate graphics:
-
-find_string: srcset="
-replace_string: fooset="
-
-find_string: src="data:image
-replace_string: foo="data:image
-
-find_string: data-src="
-replace_string: src="
+title: //h1[@class="h2"]
+body: //div[@class="article-holder"]
 
 prune: no
 tidy: no
 
+# Clean the body
+strip: //*[@id="bulletpoints"]
+strip: //div[@class="episode-extra-container"]
+
+# Activate graphics:
+find_string: src="data
+replace_string: foo="data
+find_string: data-src="
+replace_string: src="
+
 # Wallabag-specific login directives (not supported in FTR)
 requires_login: yes
 
-login_uri: https://lesjours.fr/session
-login_username_field: mail
-login_password_field: password
+login_uri: https://lesjours.fr/connexion
+login_username_field: login-mail
+login_password_field: login-password
 
-not_logged_in_xpath: //body[@class="not-logged-in"]
+not_logged_in_xpath: //*[@id="account"]//a[@href="#login"]
 
 test_url: https://lesjours.fr/obsessions/pole-financier/ep12-marcel-campion/
 test_url: https://lesjours.fr/obsessions/vie-jours/ep157-newsletter-60/
