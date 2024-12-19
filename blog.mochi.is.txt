@@ -1,0 +1,15 @@
+body: //article[1]
+
+strip_id_or_class: post-header
+strip_id_or_class: share-dialog 
+strip_id_or_class: visibility-check
+strip_id_or_class: post-end-cta-full
+strip_id_or_class: post-footer
+
+strip: //button
+
+prune: no
+tidy: no
+
+test_url: https://blog.mochi.is/p/important-update-changes-to-feed
+test_url: https://blog.mochi.is/feed
