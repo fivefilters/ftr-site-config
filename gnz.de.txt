@@ -1,0 +1,22 @@
+body: //div[@id='contentMain']//article/div[position()>1] | //header[contains(@class, 'ArticleHead')]
+author: //meta[@name='author']/@content
+
+strip: //nav
+strip: //button
+strip: //input
+strip: //label
+strip: //svg
+strip: //div[contains(@class, 'Overlinestyled__')]
+strip: //h2[contains(@class, 'Headline-sc')]
+strip: //div[contains(@class, '__ArticleHeadDetails')]
+strip: //div[@data-testid='more-items-block']
+strip: //div[contains(@id, 'mad_d_incontent-')]
+strip: //div[contains(@id, 'mad_m_incontent-')]
+
+# adding teasered image galery to the end of article
+next_page_link: //div[contains(@class, '__MediaTeaserContainer')]/a
+
+prune: no
+
+test_url: https://www.gnz.de/lokales/main-kinzig-kreis/stadt-hanau/groesstes-infrastruktur-projekt-seit-jahrzehnten-bruecke-ueber-hanauer-hauptbahnhof-wird-abgerissen-GYEITEZLZVFDXO3UI2KTCSEA6Y.html
+test_url: https://www.gnz.de/lokales/main-kinzig-kreis/bad-orb/alea-school-in-bad-orb-strauss-plant-gruene-architektur-palmenaula-und-tiefgarage-O7YDMOXY6NCMDCDUFSJESUT3JA.html
