@@ -7,7 +7,10 @@ body: //article[contains(concat(' ',normalize-space(@class),' '),' paper__text '
 author: //ul[@class='paper__meta']/li[1]
 date: //ul[@class='paper__meta']/li[2]
 
+strip_id_or_class: c1
+
+prune: no
+tidy: no
+
 test_url: https://papertohtml.org/paper?id=d4685c38dbf463a0d6398eafb9944a056af3b0a8
 test_contains: Normal access to a safe or vault is via a door
-
-strip_id_or_class: c1
