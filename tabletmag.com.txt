@@ -1,5 +1,7 @@
-body: //div[contains(@class, 'story-text')]
+body: //div[contains(@class, 'article-content-container')]
+body: //article
 
-strip_id_or_class: related
+strip_id_or_class: DonateButton__container
+strip_id_or_class: PullQuote
 
-test_url: http://www.tabletmag.com/jewish-news-and-politics/181181/mossberg-parallel-states?all=1
+test_url: https://www.tabletmag.com/feature/rapid-onset-political-enlightenment
