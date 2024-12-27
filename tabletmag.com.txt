@@ -4,4 +4,6 @@ body: //article
 strip_id_or_class: DonateButton__container
 strip_id_or_class: PullQuote
 
+prune: no
+
 test_url: https://www.tabletmag.com/feature/rapid-onset-political-enlightenment
