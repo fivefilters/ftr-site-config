@@ -1,0 +1,15 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+### The excerpt is UGLY anyway because of pre-defined lines and line-brakes and multiple different designs
+### ... consider to download the PDF instead
+
+body: //div[@id='pdf-html-reader'] | //h2[contains(text(), 'Abstract')]/parent::div/parent::div
+
+prune: no
+tidy: no
