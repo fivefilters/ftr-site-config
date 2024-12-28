@@ -11,5 +11,8 @@
 
 body: //div[@id='pdf-html-reader'] | //h2[contains(text(), 'Abstract')]/parent::div/parent::div
 
+# don't show preview-image of first PDF page
+insert_detected_image: no 
+
 prune: no
 tidy: no
