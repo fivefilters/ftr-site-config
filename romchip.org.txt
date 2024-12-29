@@ -1,0 +1,15 @@
+body: //div[@class='main_entry']
+title: normalize-space(//h1[@class='page_title'])
+author: normalize-space(//h3[@class='authors'])
+date: //meta[@name="DC.Date.created"]/@content
+
+strip_id_or_class: page_title
+strip_id_or_class: authors
+
+# [wallabag] prevent links (in footnotes) to be shown as buttons
+strip_attr: //a[contains(@class, 'btn')]/@class
+
+prune: no
+
+test_url: https://www.romchip.org/index.php/romchip-journal/article/view/204
+test_url: https://bag.ha88.de/view/6216
