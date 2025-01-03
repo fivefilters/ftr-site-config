@@ -1,0 +1,11 @@
+title: //h1
+body: //article
+author: //address[@rel="author"]/span
+author: //address[@rel="author"]
+date: //time/@datetime
+
+strip: //svg
+
+prune: no
+
+test_url: https://vincent.jousse.org/blog/fr/tech/configurer-neovim-comme-ide-a-partir-de-zero-tutoriel-guide/
