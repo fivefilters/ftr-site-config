@@ -1,6 +1,7 @@
-author: //p[@class="subtitle"]//a
-date: //meta[@property='og:article:published_time']/@content
+title: //h1
+body: //article
+author: //article/p[@class="subtitle"]/a/text()
+date: substring-after(//article/p[@class="subtitle"]/text()[2],"le ")
 
-strip: //p[@class="subtitle"]
-
+test_url: https://ploum.net/2024-08-26-luddites-technophiles.html
 test_url: https://ploum.net/sunrise-le-calendrier-du-futur/
