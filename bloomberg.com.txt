@@ -1,3 +1,11 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
 title: //meta[@property="og:title"]/@content
 
 date: //meta[@name="iso-8601-publish-date"]/@content
@@ -7,7 +15,7 @@ date: //*[@itemprop='datePublished']/@datetime
 author: //meta[@name="sailthru.author"]/@content
 author: //meta[@name="parsely-author"]/@content
 
-body: //div[contains(@class, 'body-copy')]
+body: //article[1]
 
 strip_id_or_class: inline-newsletter
 strip_id_or_class: terminal-tout-container
@@ -15,13 +23,32 @@ strip_id_or_class: lede
 strip_id_or_class: postr-recirc
 strip_id_or_class: left-column
 strip_id_or_class: touts-v2
+strip_id_or_class: eyebrow
+strip_id_or_class: social-share
+strip_id_or_class: icon-button
+strip_id_or_class: outlined-button
+
+strip: //div[contains(@class, 'Byline_bylineWrapper')]
+strip: //div[contains(@class, 'gridLayout_topContent_')]
+strip: //div[contains(@class, 'gridLayout_leftContent_')]
+strip: //div[contains(@class, 'gridLayout_rightContent_')]
+strip: //div[contains(@class, 'styles_bookmarkSpeech_')]
+strip: //div[contains(@class, 'Image_imageOverlay')]
+strip: //div[contains(@class, 'loatingCopyLink')]
+strip: //div[contains(@class, 'AuthorBio_')]
+strip: //div[contains(@class, 'styles_bookmarkBottom_')]
+strip: //div[contains(@class, 'styles_shareFeedbackWrapper_')]
+strip: //div[contains(@class, 'styles_toutWrapper_')]
+strip: //div[contains(@class, 'InlineRecirc_')]
+
+strip: //h3[contains(text(), 'ore from Bloomberg')] | //h3[contains(text(), 'ore from Bloomberg')]/following-sibling::*
 
 # repeats
 strip_id_or_class: first-paragraph-image__credit
-
 strip: //aside
-
 skip_json_ld: yes
+
+prune: no
 
 test_url: http://www.bloomberg.com/news/articles/2015-12-30/will-your-job-disappear-by-2024-
 test_contains: Every week, hosts Tori Stilwell
