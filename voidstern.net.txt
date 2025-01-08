@@ -1,0 +1,22 @@
+# for changelog
+body: //main[1]/following-sibling::div[1]
+# for other pages and blog
+body: //div[contains(@class, 'entry-content')] | //figure[contains(@class, 'wp-block-post-featured-image')]/parent::div
+
+
+title: //h1[contains(@class, 'wp-block-post-title')]
+author: //p[contains(@class, 'wp-block-post-author__name')]
+date: //time/@datetime
+
+strip: //a[contains(@href, 'apps.apple.com')]/ancestor::div[1]
+strip: //a[@rel='tag']/parent::div
+
+# load all pages of changelog 
+next_page_link: //a[@class='wp-block-query-pagination-next']
+
+# prevent wallabag from stripping subheadings
+strip_attr: //*[contains(@class, 'wp-block-heading')]/@class
+
+prune: no
+
+test_url: https://voidstern.net/archives/3703
