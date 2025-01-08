@@ -1,5 +1,6 @@
 title: //h1
 body: //article
+body: //main/div[@class="list"]
 author: //address[@rel="author"]/span
 author: //address[@rel="author"]
 date: //time/@datetime
@@ -9,3 +10,6 @@ strip: //svg
 prune: no
 
 test_url: https://vincent.jousse.org/blog/fr/tech/configurer-neovim-comme-ide-a-partir-de-zero-tutoriel-guide/
+test_contains: automatique de code
+test_url: https://vincent.jousse.org/blog/fr/
+test_contains: Lire la suite
