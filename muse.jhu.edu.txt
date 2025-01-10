@@ -1,0 +1,25 @@
+test_url: https://muse.jhu.edu/article/947886
+
+# default handling breaks a number of things
+prune: no
+tidy: no
+
+title: //meta[@name="citation_title"]/@content
+author: //meta[@name="citation_author"]/@content
+body: //div[@id="article"]
+strip: //div[@class="card row"]
+
+# remove inserted "end of page" notes in text
+strip: //strong[contains(text(),"End Page ")]
+
+# format figures a bit better
+find_string: class="figure"
+replace_string: class="container figure"
+
+# enlarge images
+find_string: ?format=thumb
+replace_string:
+
+# removing hint and link to full size image
+strip: //div[@class='thumbnail']/text()
+strip: //div[@class='thumbnail']/a[2]
