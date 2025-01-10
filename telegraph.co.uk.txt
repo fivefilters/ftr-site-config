@@ -1,8 +1,21 @@
+# needed for wallabag
+http_header(User-Agent): PHP/8.4
+
 author: //meta[@name="DCSext.author"]/@content
 date: //meta[@name="DCSext.articleFirstPublished"]/@content
 title: //meta[@property="og:title"]/@content
+
 body: //div[@itemprop="articleBody"]
+body: //div[@data-js="article-body"] | //div[@data-test="article-lead-asset"]
+
+
+# activate images
+find_string: <source srcset="
+replace_string: <img src="
+# use only the first img in picture node, which hopefully should be the highest resolution
+strip: //picture/img[position()>1]
 
 prune: no
+tidy: no
 
 test_url: https://www.telegraph.co.uk/news/2021/02/16/covidlockdown-continue-cases-drop-1000-day/
