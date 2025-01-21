@@ -1,0 +1,11 @@
+http_header(User-Agent): Mastodon/4.3.2 (http.rb/5.2.0)
+
+body: //article[1]
+
+strip_attr: //*[contains/@class, 'wp-block-heading')]/@class
+strip_id_or_class: post-title
+strip_id_or_class: post-byline
+
+prune: no
+
+test_url: https://info.signal-arnaques.com/encyclopedie-des-arnaques/10-arnaqueurs-celebres/
