@@ -1,0 +1,13 @@
+# Basic DOM parsing rules for Europresse articles read via "Bibliothèque Nationale de France" membership
+title: //div[contains(@class, 'titreArticle')]
+body: //div[contains(@class, 'DocText')]
+author: //span[contains(@class, 'DocPublicationName')]
+
+requires_login:	true
+
+# Remove unwanted <mark> tags
+find_string: <mark>
+replace_string:
+
+find_string: </mark>
+replace_string:
