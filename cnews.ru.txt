@@ -11,5 +11,6 @@ strip_id_or_class: other-news-note
 strip_id_or_class: event_list.list
 strip_id_or_class: article_date
 strip_id_or_class: article-menu_base
+strip_id_or_class: right_side
 
 test_url: https://www.cnews.ru/news/top/2025-01-17_sozdana_absolyutno_besplatnaya
