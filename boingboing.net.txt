@@ -1,13 +1,19 @@
-# This is far from perfect, but so is BoingBoing's markup
-title: //h2[@class="headline"]
-single_page_link: //h2[@class="headline"]/a
-#date: //p[@class="byline"]
-body: //div[@id="story"]
+body: //article[contains(@id, 'post-')]//section[contains(@class, 'entry-content')] | //div[contains(@class, 'featured-image')] | //iframe/ancestor::div[1]
+author: //meta[@name="author"]/@content
+
+strip: //article/div[1]/div[1]
+strip: //a[@href='https://premium.boingboing.net']/parent::div
 
 strip_id_or_class: shareMe
 strip_id_or_class: authorbox
 strip_id_or_class: byline
 strip_id_or_class: share
 strip_id_or_class: separator
+strip_id_or_class: next-post-list-container
+strip_id_or_class: share-comments-container
+
+prune: no
+insert_detected_image: no 
 
 test_url: http://boingboing.net/2011/10/23/understanding-the-hyperrich-through-the-lens-of-tomorrows-history.html
+test_url: https://boingboing.net/2018/12/04/learn-how-to-spot-a-fake-paint.html
