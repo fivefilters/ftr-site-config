@@ -3,7 +3,17 @@ title: //meta[@name='title']/@content
 author: //span[@class='sign']//a[@class='journaliste']
 author: //meta[@name='author']/@content
 
-body: //article[@id='fig-article']/div
+body: //div[contains(concat(' ',normalize-space(@class),' '),' fig-main ')]//article
+
+strip_id_or_class: fig-wrapper-follow-button
+strip_id_or_class: fig-premium-mark-article
+strip_id_or_class: fig-tags
+strip_id_or_class: fig-sharebar
+strip_id_or_class: fig-premium-paywall
+strip_id_or_class: a11y-hidden
+strip_id_or_class: fig-crosslinking
+strip_id_or_class: fig-body-link
+
 date: //li[contains(concat(' ',normalize-space(@class),' '),' fig-date-pub ')]//time
 
 prune: no
