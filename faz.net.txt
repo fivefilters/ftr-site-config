@@ -1,7 +1,3 @@
-# Author: zinnober
-# Complete rewrite of the faz.net template as the standard one is broken
-# I tried to consider as many page variants as possible, which was some serious work
-
 tidy: no
 prune: no
 
@@ -18,12 +14,12 @@ date: //span[@class='Datum']
 date: //span[@class='Datum'],/span
 
 # Fetch full multipage articles
-single_page_link: //a[contains(@href, 'printPagedArticle')]
+#single_page_link: //a[contains(@href, 'printPagedArticle')]
 
 # Content is here
 
 body: //article[@class='storytelling']
-body: //article[@class='article']//div[contains(@class,'body-elements')] | (//div[contains(@class,'header-teaser__image')])[1] | (//div[contains(concat(' ',normalize-space(@class),' '),' header-teaser ')])[last()]
+body: //article[contains(@class='article')]//div[contains(@class,'body-elements')] | (//div[contains(@class,'header-teaser__image')])[1] | (//div[contains(concat(' ',normalize-space(@class),' '),' header-teaser ')])[last()]
 body: //article[1]
 body: //div[@class='Artikel']
 
@@ -46,9 +42,11 @@ replace_string( ·  ):
 strip_id_or_class: TeaserMore
 strip_id_or_class: plista_alternativ
 strip_id_or_class: paywall
-#strip: //button
+strip: //button
 strip_id_or_class: header-teaser__image-details
 strip_id_or_class: tik4-sharing
+strip: //aside[contains(concat(' ',normalize-space(@class),' '),' btn ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' meta2 ')]
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
@@ -90,6 +88,7 @@ replace_string: removed-src=''
 replace_string(data-retina-src=): src= 
 
 # Remove clutter after article
+strip_id_or_class: article-footer
 strip_id_or_class: ArticlePagerBottom
 strip_id_or_class: backToHome
 strip_id_or_class: ArtikelAbbinder
