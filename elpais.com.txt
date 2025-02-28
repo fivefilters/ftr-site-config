@@ -1,5 +1,3 @@
-insert_detected_image: no 
-
 title: //meta[@name='DC.title']/@content
 title: //div[contains(@class, 'cabecera_noticia')]//h1
 date: //meta[@name='DC.date']/@content
