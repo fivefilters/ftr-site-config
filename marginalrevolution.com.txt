@@ -1,0 +1,16 @@
+## website is using techniques to prevent bots from fetching
+## currently (03/2025) it works with one of these two user-agents:
+
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+#http_header(User-Agent): Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+
+## graphics might not be loaded, because there is another test of a bot there
+
+body: //article[1]/div[@class='entry-content']
+title: //article[1]/header/h1
+author: //meta[@name='author']/@content
+
+prune: no
+tidy: no
+
+test_url: https://marginalrevolution.com/marginalrevolution/2025/03/personality-traits-and-gender-gaps.html
