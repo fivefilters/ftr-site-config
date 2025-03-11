@@ -1,0 +1,12 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0
+
+author: //meta[@name='author']/@content
+body: //div[contains(@class, 'articulo__body')] | //div[contains(@class, 'articulo__destacado')] | //p[contains(@class, 'section__body')]
+
+strip: //a[contains(@href, '/suscripciones/')]/parent::*
+strip_id_or_class: articulo__body_unsuscribers
+
+prune: no
+tidy: no
+
+test_url: https://ctxt.es/es/20250201/Politica/48565/Elena-de-Sus-entrevista-Wim-Vanderbauwhede-IA-deepseek-medioambiente.htm
