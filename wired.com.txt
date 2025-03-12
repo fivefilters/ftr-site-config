@@ -3,6 +3,7 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' ArticlePageContentBackGround-cNiFNN ')]
 body: //div[@id='container']
 strip: //button
+strip: //div[contains(@class, 'RecircMostPopularWrapper')]
 
 # [wallabag]: activate sub-headings
 prune: no
