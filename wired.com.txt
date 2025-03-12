@@ -1,6 +1,12 @@
+# Images are not loaded, because they are not relative to www.wired.com as claimed in src field of <img>
+
 body: //div[contains(concat(' ',normalize-space(@class),' '),' ArticlePageContentBackGround-cNiFNN ')]
+body: //div[@id='container']
 strip: //button
 strip: //div[contains(@class, 'RecircMostPopularWrapper')]
+
+# [wallabag]: activate sub-headings
+prune: no
 
 test_url: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
 test_contains: they are good to their users
