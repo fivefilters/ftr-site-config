@@ -1,0 +1,16 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' tdi_47 ')]
+author: (//meta[@itemprop='name'])[position()<last()]/@content
+
+strip_id_or_class: jp-relatedposts
+strip_id_or_class: comments
+strip_id_or_class: td-post-sharing
+strip_id_or_class: tdb_single_tags
+
+# prevent wallabag from striping sub-headings
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+prune: no
+tidy: no
+
+test_url: https://zwiftinsider.com/cryo-gen-zrl-highlights/
