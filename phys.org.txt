@@ -1,1 +1,4 @@
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+http_header(User-Agent): Mastodon/4.3.2 (http.rb/5.2.0; +https://mastodon.social/) Bot
+
+test_url: https://phys.org/news/2025-03-dark-universe-telescope.html
+test_url: https://phys.org/rss-feed/breaking/space-news/
