@@ -1,0 +1,27 @@
+body: //main[@class='article']
+title: //meta[@name="search-title"]/@content
+author: //div[@class='ts-article-contributor']/strong/a
+
+# prevent FTR to use website logo if there is no article image
+insert_detected_image: no 
+
+# stripping some fringe
+strip_id_or_class: module-socials
+strip_id_or_class: show-mobile
+strip_id_or_class: ts-article-title
+strip_id_or_class: ts-article-rubric
+strip_id_or_class: ts-article-tags
+strip_id_or_class: search-noindex
+
+# prevent wallabag from hiding class 'tabs'
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' tabs ')]/@class
+
+# adding a horizontal line <hr> above the orginal language text, to make this border more visible
+find_string: <div class="navigation ts-article-toolkit">
+replace_string: <hr><div class="xx navigation ts-article-toolkit">
+
+prune: no
+# tidy=yes needed by wallabag to prevent doubling the orginal language block
+tidy: yes
+
+test_url: https://wordswithoutborders.org/read/article/2023-12/a-childs-smile-jadd-hilal-lara-vergnaud/
