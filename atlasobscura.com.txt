@@ -1,0 +1,27 @@
+body: //div[@id='article-container']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' aon-grid ')]/article[1] | //div[contains(@class, '-image-carousel-')]
+
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' hidden ')]/@class
+strip_attr: //img/@loading
+
+strip_id_or_class: ArticleLeftRail
+strip_id_or_class: ArticleStickyRail
+strip_id_or_class: ArticleStickyRailTrack
+strip_id_or_class: ItemEndRow
+strip_id_or_class: btf-nav
+strip_id_or_class: inline-ad-container
+
+strip: //button
+strip: //nav
+strip: //template
+strip: //picture/source
+strip: //a[contains(@href, '/newsletter')]/ancestor::p[1]
+strip: //div[@data-aon--image-carousel-component-target="caption"]
+strip: //a[@class='aon-pill-badge-component']/parent::div | //a[@class='aon-pill-badge-component']/parent::div/preceding-sibling::h3
+
+prune: no
+## wallabag needs 'tidy' for showing all images of a carousel, so don't use 'tidy: no'
+
+test_url: https://www.atlasobscura.com/feeds/latest
+test_url: https://www.atlasobscura.com/articles/los-angeles-breakfast-club
+test_url: https://www.atlasobscura.com/places/cat-head-delta-blues-folk-art
