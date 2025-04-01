@@ -1,0 +1,18 @@
+body: //main[1]
+author: //header/h3/a[contains(@href, 'authors/')]
+
+strip_id_or_class: article-outro
+strip_id_or_class: editors_picks
+strip_id_or_class: field_metafield
+strip_id_or_class: pub_date
+
+strip: //header/h1
+strip: //header/h3
+
+# [wallabag] uncommon use of <nav> resultet in red background, because of css
+replace_string(<nav): <div
+replace_string(</nav>): </div>
+
+prune: no
+
+test_url: https://theflaw.org/articles/whos-boring-now/
