@@ -1,0 +1,16 @@
+body: //main/article[1]
+
+strip: //aside
+strip: //picture/source
+
+# [wallabag] prevent showing alt-text "image" for <img src="denied:data:image...
+# which in fact, is just a bullet originally
+strip: //p[contains(@class, 'bullet')]/img[contains(@src, 'data:image')]
+
+strip_id_or_class: mt-75
+strip_id_or_class: youtube-embed
+strip_id_or_class: solar-ads
+strip_id_or_class: solar-comment
+strip_id_or_class: article-footer-action
+
+test_url: https://www.uol.com.br/splash/noticias/2025/04/05/melhores-filmes-segundo-tarantino.htm
