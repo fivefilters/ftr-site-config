@@ -1,0 +1,5 @@
+title: //h1
+body: //div[contains(@class, "column")]/section/p | //div[contains(@class, "column")]/*[self::p or self::h2]
+strip_id_or_class: banner-content
+
+test_url: https://oko.press/czy-da-sie-przewidziec-zawal-serca
