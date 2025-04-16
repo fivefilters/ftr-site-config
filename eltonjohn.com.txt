@@ -1,0 +1,17 @@
+body: //div[@class='stories']
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' headline ')]
+date: //div[@class='stories__header']/span
+# as wallabag unwraps span nodes:
+date: //div[@class='stories__header']/text()
+
+strip_id_or_class: stories__header
+
+# I wanted to keep the ads, but it destroyed the readablity (too large)
+strip: //a[contains(@href, 'store.eltonjohn.com')]/parent::div
+
+# wallabag is using 'container' class for own purpose, so it must be removed
+strip_attr: //*[contains(@class,'container')]/@class
+
+prune: no
+
+test_url: https://www.eltonjohn.com/stories/who-believes-in-angels-song-by-song
