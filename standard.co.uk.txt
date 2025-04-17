@@ -34,6 +34,7 @@ strip_id_or_class: sc-doohEh
 strip_id_or_class: readMoreVariants
 
 # [PushToKindle] lead image failed to load when: height="100vh"
+strip_attr: //img[contains(@height, '100vh') and contains(@width, 'auto')]/@width
 strip_attr: //img[contains(@height, '100vh')]/@height
 
 prune: no
