@@ -1,4 +1,5 @@
 body: //figure[.//picture[@itemProp="contentUrl"]] | //div[contains(@class, 'article-body')]
+
 strip: //article//div[contains(@class, 'content__secondary-column')]
 strip: //aside
 strip: //article//div[contains(@class, 'block-share')]
@@ -19,6 +20,16 @@ strip: //div[starts-with(@id, "qanda-")]
 
 strip: //figure[contains(@data-spacefinder-type, "NewsletterSignup")]
 strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
+
+# [wallabag] can't diplay the typographic quotation marks, this replaces them:
+find_string: ‘
+replace_string: '
+find_string: ’
+replace_string: '
+find_string: “
+replace_string: "
+find_string: ”
+replace_string: "
 
 #2021
 strip_id_or_class: sign-in-gate
