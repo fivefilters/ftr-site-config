@@ -14,8 +14,8 @@ replace_string: <img
 find_string: </bpb-picture>
 replace_string: 
 
-find_string: <bpb-lightbox
-replace_string: <div class="bpb-lightbox"
+find_string: <bpb-lightbox>
+replace_string: <div class="bpb-lightbox">
 find_string: </bpb-lightbox>
 replace_string: </div>
 
