@@ -18,9 +18,8 @@ strip: //footer
 #replace_string: <figcapture slot="description">
 
 # prevent double-pictures and captions in PushToKindle
-strip: //bpb-picture/figure
-strip: //figure/figure
-strip: //img[contains(@src, '_galerie_lightbox_box_')]/self::* | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::a  | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::figcaption
+strip: //figure/bpb-lightbox
+#strip: //img[contains(@src, '_galerie_lightbox_box_')]/self::* | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::a  | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::figcaption
 
 
 # remove download-links on images in galery
