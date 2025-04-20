@@ -1,0 +1,17 @@
+body: //main/article[1]
+
+strip: //header
+strip: //footer
+
+# activate images
+find_string: <bpb-picture
+replace_string: <img
+
+find_string: </bpb-picture>
+replace_string: 
+
+
+prune: no
+tidy: no
+
+test_url: https://www.bpb.de/themen/nationalsozialismus-zweiter-weltkrieg/der-zweite-weltkrieg/199397/der-weg-in-den-krieg/
