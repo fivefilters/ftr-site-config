@@ -6,7 +6,7 @@ strip: //footer
 #strip: //a[contains(@text(), 'Interner Link:')]
 #strip_id_or_class: a-visually-hidden
 #strip_id_or_class: styled-link--internal
-strip_id_or_class: bpb-lightbox
+#strip_id_or_class: bpb-lightbox
 
 # activate images
 find_string: <bpb-picture
@@ -23,7 +23,7 @@ replace_string: </div>
 #replace_string: <figcapture slot="description">
 
 # prevent double-pictures and captions in PushToKindle
-strip: //figure/bpb-lightbox
+#strip: //figure/bpb-lightbox
 #strip: //img[contains(@src, '_galerie_lightbox_box_')]/self::* | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::a  | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::figcaption
 
 
