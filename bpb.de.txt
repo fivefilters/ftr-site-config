@@ -5,11 +5,13 @@ strip: //footer
 
 # activate images
 find_string: <bpb-picture
-replace_string: <img
-
+replace_string: <img foo="bpb-picture"
 find_string: </bpb-picture>
 replace_string: 
 
+# prevent double-pictures in PushToKindle
+find_string: <img src=
+replace_string: <foobar dummy=
 
 prune: no
 tidy: no
