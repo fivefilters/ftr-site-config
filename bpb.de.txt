@@ -24,16 +24,12 @@ replace_string: <div class="bpb-lightbox-gallery" id
 find_string: </bpb-lightbox-gallery>
 replace_string: </div>>
 
-strip: //figure//div[@class='bpb-lightbox']
-strip: //div[@class='bpb-lightbox-gallery']
-
-#find_string: <template slot="description">
-#replace_string: <figcapture slot="description">
+find_string: <template slot="description">
+replace_string: <figcapture slot="description">
 
 # prevent double-pictures and captions in PushToKindle
-#strip: //figure/bpb-lightbox
-#strip: //img[contains(@src, '_galerie_lightbox_box_')]/self::* | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::a  | //img[contains(@src, '_galerie_lightbox_box_')]/following-sibling::figcaption
-
+strip: //figure//div[@class='bpb-lightbox']
+strip: //div[@class='bpb-lightbox-gallery']
 
 # remove download-links on images in galery
 strip_id_or_class: scroller-gallery__link-interactive
