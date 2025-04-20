@@ -20,7 +20,7 @@ find_string: </bpb-lightbox>
 replace_string: </div>
 
 find_string: <bpb-lightbox-gallery id
-replace_string: <div class='<bpb-lightbox-gallery' id
+replace_string: <div class="bpb-lightbox-gallery" id
 find_string: </bpb-lightbox-gallery>
 replace_string: </div>>
 
