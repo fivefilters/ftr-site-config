@@ -6,12 +6,21 @@ strip: //footer
 # activate images
 find_string: <bpb-picture
 replace_string: <img foo="bpb-picture"
+
 find_string: </bpb-picture>
 replace_string: 
 
+find_string: <template slot="description">
+replace_string: <figcapture slot="description">
+
 # prevent double-pictures in PushToKindle
 find_string: <img src=
-replace_string: <foobar dummy=
+replace_string: <img dummy=
+
+# remove download-links on images in galery
+strip_id_or_class: scroller-gallery__link-interactive
+strip: //a[@rel='license']/self::a | //a[@rel='license']/preceding-sibling::text()
+
 
 prune: no
 tidy: no
