@@ -4,6 +4,7 @@ strip: //header
 strip: //footer
 
 strip: //a[contains(@text(), 'Interner Link:')]
+strip: //a[contains(@class, 'styled-link--internal')]
 strip_id_or_class: a-visually-hidden
 strip_id_or_class: styled-link--internal
 
