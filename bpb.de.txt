@@ -8,14 +8,14 @@ strip: //footer
 #strip_id_or_class: styled-link--internal
 
 # activate images
-find_string: <bpb-picture
-replace_string: <img
+#find_string: <bpb-picture
+#replace_string: <img
 
-find_string: </bpb-picture>
-replace_string: 
+#find_string: </bpb-picture>
+#replace_string: 
 
-find_string: <template slot="description">
-replace_string: <figcapture slot="description">
+#find_string: <template slot="description">
+#replace_string: <figcapture slot="description">
 
 # prevent double-pictures and captions in PushToKindle
 strip: //bpb-picture/figure
