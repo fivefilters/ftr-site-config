@@ -6,13 +6,18 @@ strip: //footer
 #strip: //a[contains(@text(), 'Interner Link:')]
 #strip_id_or_class: a-visually-hidden
 #strip_id_or_class: styled-link--internal
+strip_id_or_class: bpb-lightbox
 
 # activate images
-#find_string: <bpb-picture
-#replace_string: <img
+find_string: <bpb-picture
+replace_string: <img
+find_string: </bpb-picture>
+replace_string: 
 
-#find_string: </bpb-picture>
-#replace_string: 
+find_string: <bpb-lightbox
+replace_string: <div class="bpb-lightbox"
+find_string: </bpb-lightbox>
+replace_string: </div>
 
 #find_string: <template slot="description">
 #replace_string: <figcapture slot="description">
