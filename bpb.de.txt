@@ -3,6 +3,10 @@ body: //main/article[1]
 strip: //header
 strip: //footer
 
+strip: //a[contains(@text(), 'Interner Link:')]
+strip_id_or_class: a-visually-hidden
+strip_id_or_class: styled-link--internal
+
 # activate images
 find_string: <bpb-picture
 replace_string: <img
