@@ -18,7 +18,14 @@ find_string: <bpb-lightbox>
 replace_string: <div class="bpb-lightbox">
 find_string: </bpb-lightbox>
 replace_string: </div>
+
+find_string: <bpb-lightbox-gallery id
+replace_string: <div class='<bpb-lightbox-gallery' id
+find_string: </bpb-lightbox-gallery>
+replace_string: </div>>
+
 strip: //figure//div[@class='bpb-lightbox']
+strip_id_or_class: bpb-lightbox-gallery
 
 #find_string: <template slot="description">
 #replace_string: <figcapture slot="description">
