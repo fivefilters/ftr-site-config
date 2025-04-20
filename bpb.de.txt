@@ -22,7 +22,7 @@ replace_string: </div>
 find_string: <bpb-lightbox-gallery id
 replace_string: <div class="bpb-lightbox-gallery" id
 find_string: </bpb-lightbox-gallery>
-replace_string: </div>>
+replace_string: </div>
 
 find_string: <template slot="description">
 replace_string: <figcapture slot="description">
