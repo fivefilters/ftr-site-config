@@ -1,0 +1,11 @@
+body: //main/article[1] | //header
+title: //h1[1]
+date: substring-before(//time/@datetime, '(Coordinated')
+
+strip: //button
+
+strip: //a[starts-with(@href, '#')]
+
+insert_detected_image: no
+
+test_url: https://nerdy.dev/ex-googler
