@@ -1,0 +1,14 @@
+author: //div[contains(@class, "Head_author_")]
+
+# Strip call-to-action sections
+strip: //div[contains(@class, "_ctaWrapper_")]
+
+# Strip gallery arrows
+strip: //div[contains(@class, "Gallery_arrow")]
+
+# Strip recommendation tiles below article
+strip: //article[contains(@class, "ArticleTile_")]
+
+test_url: https://pagenotfound.cz/clanek/nova-piratska-vlna-nebo-boj-o-moc
+test_url: https://pagenotfound.cz/clanek/zkouska-zivota-pro-celou-rodinu-aneb-prijimacky-jako-hunger-games
+test_url: https://pagenotfound.cz/clanek/krestanska-influencerka-lady-zika-ma-jasno-pro-boha-je-laska-ke-stejnemu-pohlavi-hrich-jako-kazdy-jiny
