@@ -1,0 +1,24 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[@class='PostStream']
+
+strip: //aside
+strip: //footer
+strip: //button
+
+strip_id_or_class: item-edited
+
+# add horizontal line before each post to seperate each comment
+find_string: <header class="Post-header">
+replace_string: <hr /><header class=" foo Post-header">
+
+prune: no
+tidy: no
+
+test_url: https://community.readeck.org/d/53-is-there-plans-for-a-koreader-plugin
