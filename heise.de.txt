@@ -1,3 +1,5 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+
 prune: no
 tidy: no
 
@@ -12,11 +14,13 @@ body: //article[contains(@class, 'printversion')]
 
 # regular
 body: //article[@id="meldung"] | //div[@class='meldung_wrapper'] | //section[@id='artikel_text'] | //article[contains(@class, 'xp__article')]
+body: //div[contains(@data-content-type, 'Story')]//div[contains(@class, 'gridBox box_middle')]
 
 # for heise.de/select (e-paper)
 body: //article[contains(concat(' ',normalize-space(@class),' '),' article ')]
 
 # General cleanup
+strip: //a-gift
 strip: //nav
 strip: //time
 strip: //h1[@class='article__heading']
@@ -86,7 +90,10 @@ replace_string( | heise Autos</title>): </title>
 replace_string(<div class="heisebox">): <blockquote>
 
 single_page_link: //a[contains(@href, '?view=print')]
-single_page_link: //a[contains(@href, '?seite=all')]/@href
+single_page_link: //a[contains(@id, 'pagination-all-on-one-page')]
+
+# following makes problems with in-article links to other articles, that have the query in URI
+#single_page_link: //a[contains(@href, '?seite=all')]/@href
 
 next_page_link: //a[@class='next' and not(contains(text(), 'Artikel'))]
 next_page_link: //a[@title='vor']
@@ -103,10 +110,9 @@ login_password_field: password
 
 not_logged_in_xpath: //a[@id='heiselogin-link-login']
 
-
+test_url: https://www.heise.de/bestenlisten/testsieger/top-10-der-beste-guenstige-mini-pc-im-test/flxjgm9
 test_url: https://www.heise.de/select/ct/2020/3/1580493780857147
 test_url: https://www.heise.de/news/Ueberwachungstechnik-Die-globale-Handy-Standortueberwachung-2301494.html
 test_url: https://www.heise.de/news/Bodenradar-fuer-selbstfahrende-Autos-horcht-unter-die-Strasse-3273941.html
-test_url: https://www.heise.de/tp/artikel/49/49473/1.html
 test_url: https://www.heise.de/ct/artikel/Die-Neuerungen-von-Linux-3-15-2196231.html
 test_url: https://heise.de/-3527918
