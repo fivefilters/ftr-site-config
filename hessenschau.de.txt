@@ -1,9 +1,3 @@
-# to get a source-feed, replace index.html with index.rss, e.g.
-#    https://www.hessenschau.de/index.rss
-#    https://www.hessenschau.de/rheinmain/index.rss
-#
-#==========================
-
 body: //main/div/article[1]
 body: //main
 
@@ -33,6 +27,9 @@ strip: //aside[contains(@class, 'dontPrint')]
 strip: //blockquote[contains(@class, 'dontPrint')]
 strip: //div[contains(@x-data, 'socialSharing')]
 
+# strip placeholder images
+strip_attr: //img[contains(@src, 'data:image/gif')]/@src
+
 # as this is a television and radio channel site, tidy up embedded video and audio
 strip_id_or_class: hideCompletely
 strip_id_or_class: c-form__button
@@ -48,15 +45,21 @@ replace_string: <span aria-label="Audioseite">zur Audioseite: <
 replace_string(<aside): <blockquote
 replace_string(</aside): </blockquote
 
-# remove subscription to WhatsApp Channel
+# remove subscription adverts
 strip: //a[@href='https://whatsapp.com/channel/0029VaDcqVJAu3aJgJtKhX25']/parent::aside
 strip: //a[@href='https://whatsapp.com/channel/0029VaDcqVJAu3aJgJtKhX25']/parent::blockquote
+strip: //div[@id='formWrapper']/parent::div
+
+# common cleanup
+strip: //main/div/article[1]//article
 
 # needed for wallabag
 find_string: >Formular <
 replace_string: ><
 find_string: >Ende des Formulars <
 replace_string: ><
+
+wrap_in(blockquote): //figure[contains(@class, 'print:hidden')]
 
 
 ##############
