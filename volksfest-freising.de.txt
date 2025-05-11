@@ -59,4 +59,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.az-online.de/uelzen/stadt-uelzen/mehr-gaeste-in-der-uelzener-stadthalle-als-erlaubt-91282522.html
+test_url: https://www.volksfest-freising.de/mittendrin/halbzeitbilanz-beim-freisinger-volksfest-2024-mieses-festwetter-aber-alle-machen-das-beste-daraus-93294594.html
