@@ -12,7 +12,10 @@ body: //article[@class='story-article'] | //div[@id='A']
 strip_id_or_class: article-kicker
 strip_id_or_class: article-title
 strip_id_or_class: toolbar
+strip_id_or_class: article-actions
 strip: //nav
+strip: //button
+
 strip: //ul[@class='lookupLinksArtikel']
 
 strip: //meta
