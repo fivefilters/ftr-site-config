@@ -48,6 +48,7 @@ strip_id_or_class: tik4-sharing
 strip: //aside[contains(concat(' ',normalize-space(@class),' '),' btn ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' meta2 ')]
 strip: //footer
+strip: //aside[@data-external-selector='related-articles']
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
