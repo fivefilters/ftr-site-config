@@ -27,8 +27,33 @@ strip: //aside[contains(@class, 'dontPrint')]
 strip: //blockquote[contains(@class, 'dontPrint')]
 strip: //div[contains(@x-data, 'socialSharing')]
 
-# strip placeholder images
-strip_attr: //img[contains(@src, 'data:image/gif')]/@src
+# special IMAGE handling to work in FTR, wallabag and FreshRSS
+#
+
+find_string: <source
+replace_string: <img
+
+strip: //picture/source[contains(@media, '47.')]
+strip: //picture/img[contains(@media, '47.')]
+
+find_string: src="data:image/gif
+replace_string: foo1="data:image/gif
+
+find_string: 480w, http
+replace_string: 480w, "src="http
+
+find_string: 640w, http
+replace_string: "foo2="http
+
+find_string: 720w, http
+replace_string: "foo3="http
+
+find_string: 960w, http
+replace_string: "foo4="http
+
+find_string: .jpg "
+replace_string: .jpg"
+
 
 # as this is a television and radio channel site, tidy up embedded video and audio
 strip_id_or_class: hideCompletely
