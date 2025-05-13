@@ -7,8 +7,21 @@
 #
 # This only works with wallabagger browser-plugin with activated
 # option 'Retrieve content from the browser' in it's settings
+#
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
 
-body: //ul[contains(@class, 'thread-list')]
+## self-hosters may copy 'cf_clearance' cookie from their browser into the following line
+## remove the '#' to activate. The cookie seems to be valid for one year.
+## additionally you hav to change the URL: after forums.php it must be `?key=value` and not `#/key=value`
+## Then catch works with wallabag UI and FTR
+
+#http_header(cookie): cf_clearance=abc...very.long...xyz
+
+
+title: //div[@id='topic-title']/@title
+# walabag needs the /ul in body selector, it doesn't load anything with just the div
+body: //div[@class='forums-thread']/ul
+
 
 strip_id_or_class: info
 strip_id_or_class: empty
@@ -19,8 +32,11 @@ strip_id_or_class: karma
 strip_id_or_class: last-act
 strip_id_or_class: empty-prop
 strip_id_or_class: report
+strip_id_or_class: tooltip
+strip_id_or_class: topic-title
 
 strip: //div[contains(@class, 'honor-text-wrap')]/img/following-sibling::text()
 
+next_page_link: (//div[contains(@class, 'pagination')]/a[not(contains(@class, 'page-number'))])[2]
 
-test_url: https://www.torn.com/forums.php#/p=threads&f=61&t=16348846&b=0&a=0
+test_url: https://www.torn.com/forums.php?p=threads&f=61&t=16348846&b=0&a=0
