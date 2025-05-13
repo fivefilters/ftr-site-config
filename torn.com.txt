@@ -19,12 +19,11 @@ http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gec
 
 
 title: //div[@id='topic-title']/@title
-# walabag needs the /ul in body selector, it doesn't load anything with just the div
-body: //div[@class='forums-thread']/ul
+body: //div[@class='forums-thread']/ul/li/div
 
-
+strip_id_or_class: topic-title
 strip_id_or_class: info
-strip_id_or_class: empty
+
 strip_id_or_class: stats
 strip_id_or_class: level
 strip_id_or_class: posts
@@ -33,10 +32,23 @@ strip_id_or_class: last-act
 strip_id_or_class: empty-prop
 strip_id_or_class: report
 strip_id_or_class: tooltip
-strip_id_or_class: topic-title
+strip_id_or_class: confirm-wrap
+strip_id_or_class: copy-post-link
 
 strip: //div[contains(@class, 'honor-text-wrap')]/img/following-sibling::text()
 
 next_page_link: (//div[contains(@class, 'pagination')]/a[not(contains(@class, 'page-number'))])[2]
+
+# change some class names, that are used by wallabag
+
+find_string: class="thread-list cont-gray bottom-round"
+replace_string: class="foobar-cntnt"
+
+find_string: left"
+replace_string: foobar-l"
+
+find_string: class="poster white-grad">
+replace_string: class="poster white-grad hr"><hr>
+
 
 test_url: https://www.torn.com/forums.php?p=threads&f=61&t=16348846&b=0&a=0
