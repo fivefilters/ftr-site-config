@@ -1,0 +1,26 @@
+# for www.torn.com/forums
+
+# domain is protected with Cloudflare's bot-or-human challenge
+#
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+#
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //ul[contains(@class, 'thread-list')]
+
+strip_id_or_class: info
+strip_id_or_class: empty
+strip_id_or_class: stats
+strip_id_or_class: level
+strip_id_or_class: posts
+strip_id_or_class: karma
+strip_id_or_class: last-act
+strip_id_or_class: empty-prop
+strip_id_or_class: report
+
+strip: //div[contains(@class, 'honor-text-wrap')]/img/following-sibling::text()
+
+
+test_url: https://www.torn.com/forums.php#/p=threads&f=61&t=16348846&b=0&a=0
