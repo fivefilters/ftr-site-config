@@ -1,8 +1,19 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' content-block-regular ')]
+http_header(user-agent): PHP/8.3
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-block-regular ')] | //header/div[contains(concat(' ',normalize-space(@class),' '),' heading_image ')]
+
 strip_id_or_class: adsninja-ad-zone
 strip_id_or_class: ad-zone-size-container
-strip: //div[contains(@class, 'article-card') and ./div/span[@data-field="label"]/text() = "Related"]
-http_header(user-agent): PHP/8.3
+strip_id_or_class: article-card
+strip_id_or_class: gallery-lightbox
+strip_id_or_class: gallery-thumbnails
+strip_id_or_class: w-gallery-carousel-fullscreen
+
+strip: //button
+#strip: //div[contains(@class, 'article-card') and ./div/span[@data-field="label"]/text() = "Related"]
+
+prune: no
+tidy: no
 
 test_url: https://www.androidpolice.com/2020/04/09/google-play-music-subscriptions-are-failing-to-auto-renew-for-some/
 test_url: http://www.androidpolice.com/2015/12/07/32-new-and-notable-android-games-from-the-last-2-weeks-112415-12715/
