@@ -1,0 +1,14 @@
+body: //article[@data-hook="post"]
+
+strip: //header
+strip: //button[@data-hook="image-expand-button"]
+
+
+# remove blured images and activate the real image source
+strip_attr: //img[contains(@src, ',blur_')]/@src
+
+find_string: data-pin-media="https://static.wixstatic
+replace_string: src="https://static.wixstatic
+
+
+test_url: https://www.fromreformationtoreformation.com/post/lampe-on-church-history-the-church-from-the-principate-of-the-maccabees-to-the-birth-of-christ
