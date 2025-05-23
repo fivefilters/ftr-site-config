@@ -1,4 +1,5 @@
 body: //div[@id='product-main']
+author: //div[@class='author-info']/a
 
 strip: //svg
 strip: //form
