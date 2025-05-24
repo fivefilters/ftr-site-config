@@ -1,0 +1,5 @@
+# re-base images [wallabag]
+find_string: src="assets/
+replace_string: src="/assets/
+
+test_url: https://espanol.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit/uhrzeit#a-nuetzliche-fragen
