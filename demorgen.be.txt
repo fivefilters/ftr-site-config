@@ -1,25 +1,14 @@
-# get past the cookie wall
-http_header(cookie): authId=1; pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
+http_header(User-Agent): PHP/8.4
 
-# grab the author and date
-author: //a[@class='artstyle__byline__author']
-date: //time[@class='artstyle__byline__datetime']
+# get past the cookie wall [seems not to needed any more, as of 2025-05]
+#http_header(cookie): authId=1; pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
 
-# grab article body
-body: //header[@data-element-id="article-element-header"] | //section[contains(@class, 'artstyle__main--container')]
-body: //article[@class='artstyle fu--type-default artstyle--type-default']
+body: //main[@id='main']/article[1]/section[1]/div[1] | //header/figure | //header/p
 
-# strip title
-strip: //h1[@data-element-id="article-element-headertitle"]
-
-# strip category header
-strip: //h4[@class='artstyle__labels']
-
-# strip author, date and timestamp metadata
-strip: //section[@data-element-id='article-element-authors']
-
-# strip the "Lees ook" part at the bottom
+strip: //iframe
+strip: //svg
 strip: //aside
+
 
 prune: no
 
