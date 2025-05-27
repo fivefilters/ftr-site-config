@@ -1,3 +1,5 @@
 find_string: data-src="
 replace_string: src="
+find_string: "visibility: hidden"
+replace_string: "visibility: visible"
 test_url: https://mp.weixin.qq.com/s/FAeiC7XX6MBxjSFKBNXhaQ
