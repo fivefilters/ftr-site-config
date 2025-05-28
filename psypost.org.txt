@@ -1,0 +1,11 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //div[contains(@class, 'jeg_featured')] | //div[contains(@class, 'content-inner')]
+
+strip: //div[contains(@class, 'psypo-before-content')]
+strip: //div[contains(@class, 'psypo-within-content')]
+strip: //div[contains(@class, 'psypo-after-content')]
+
+prune: no
+
+test_url: https://www.psypost.org/too-much-chatgpt-study-ties-ai-reliance-to-lower-grades-and-motivation/
