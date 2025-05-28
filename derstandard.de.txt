@@ -14,6 +14,8 @@ strip_id_or_class: article-kicker
 strip_id_or_class: article-title
 strip_id_or_class: toolbar
 strip_id_or_class: article-actions
+strip_id_or_class: story-tool
+
 strip: //nav
 strip: //button
 
