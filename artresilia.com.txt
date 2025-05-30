@@ -1,0 +1,24 @@
+body: //main[@id='theme-main']
+title: substring-before(//meta[@property='og:title']/@content ,' - ArtResilia')
+author: //h1/strong[text()='Author']/parent::h1/following-sibling::p
+author: //h2[text()='Author']/following-sibling::p
+
+strip_attr: //img/@loading
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+strip: //div[@class='entry-categories']/parent::div
+
+# [wallabag] author name was stripped, if the author selector (above) matches; weird; so stripping author-heading and author-name
+strip: //h1/strong[text()='Author']/parent::h1 | //h1/strong[text()='Author']/parent::h1/following-sibling::p
+strip: //h2[text()='Author']/self::h2 | //h2[text()='Author']/following-sibling::p
+
+# [wallabag] prevents indentation of the entire article
+find_string: class="container
+replace_string: class="foo-cntnr
+
+prune: no
+tidy: no
+
+test_url: https://www.artresilia.com/iot-series-iv-debugging-with-gdb-ghidra-zero-day/
+test_url: https://www.artresilia.com/iot-series-iii-firmware-testing-in-qemu/
