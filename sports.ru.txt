@@ -1,0 +1,4 @@
+title: //meta[@property="twitter:title"]/@content
+date: //time/@datetime
+
+test_url: https://www.sports.ru/football/blogs/3326825.html
