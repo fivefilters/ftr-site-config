@@ -10,10 +10,15 @@ title: //div[@id='content-header']/h1
 author: //div[@class='article-origins']
 body: //article[@class='story-article'] | //div[@id='A']
 
+# [wallabag] need this to find author
+skip_json_ld: yes
+
 strip_id_or_class: article-kicker
 strip_id_or_class: article-title
 strip_id_or_class: toolbar
 strip_id_or_class: article-actions
+strip_id_or_class: story-tool
+
 strip: //nav
 strip: //button
 

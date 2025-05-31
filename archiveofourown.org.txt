@@ -3,6 +3,10 @@
 # Exclude: header, footer, navigation, comments.
 # Notes: User is a newbie with XPaths.
 
+# if first catch didn't work, try to re-fetch
+
+http_header(User-Agent): PHP/8.4
+
 body: //div[@id="workskin"]
 
 prune: no

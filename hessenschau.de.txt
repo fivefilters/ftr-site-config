@@ -10,7 +10,6 @@ strip: //footer
 strip: //button
 strip: //form
 strip: //svg
-strip: //aside
 strip: //nav
 
 # strip some navigation clutter
@@ -77,6 +76,7 @@ strip: //div[@id='formWrapper']/parent::div
 
 # common cleanup
 strip: //main/div/article[1]//article
+strip: //div[@class='self-center']/parent::div
 
 # needed for wallabag
 find_string: >Formular <

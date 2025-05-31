@@ -1,3 +1,5 @@
+http_header(User-Agent): curl/7.83.1
+
 body: //main[@id="main"]
 body: //main
 title: //main//h2[@class="headline"]
@@ -10,16 +12,26 @@ strip_id_or_class: hide-under-medium
 strip_id_or_class: below-article-section
 strip_id_or_class: video-object
 strip_id_or_class: video-player
+strip_id_or_class: social-tools
+strip_id_or_class: headline
+
 strip: //video
 strip: //div[@aria-label="Advertisement"]
 strip: //*[@aria-hidden="true"]
 strip: //script
 strip: //dialog
-strip: //aside
 strip: //header[contains(@class, 'summary-header')]
+# DO NOT globaly 'strip: //aside' as this prevents images to be fetched
+
+
+# [wallabag] Prevents indentation of the entire article
+find_string: class="container
+replace_string: class="foo-cntnr
+
 
 # For older articles, e.g. https://www.politico.com/story/2012/07/7-points-that-could-tip-the-election-078105
 strip: //div[contains(@class, "story-text")]//p/a[contains(., "Also on POLITICO:")]/..
+
 
 prune: no
 

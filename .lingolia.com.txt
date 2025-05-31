@@ -1,0 +1,26 @@
+body: //div[@id='content']
+
+
+strip_id_or_class: page-toc
+strip_id_or_class: lingolia-plus-adv
+
+strip: //button
+
+# [wallabag] wrap infoboxes in blockquotes to emphasize them
+wrap_in(blockquote): //div[contains(@class, 'box-info')]
+
+# [wallabag] exercises in <nav> shown in red box, now normalized
+
+find_string: <nav
+replace_string: <div
+
+find_string: </nav>
+replace_string: </div>
+
+# [wallabag] re-base images
+find_string: src="assets/
+replace_string: src="/assets/
+
+prune: no
+
+test_url: https://espanol.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit/uhrzeit#a-nuetzliche-fragen
