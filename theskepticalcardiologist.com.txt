@@ -1,0 +1,10 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //div[@data-widget_type="theme-post-content.default"]/div | //div[@data-widget_type="theme-post-featured-image.default"]/div
+
+strip_id_or_class: jp-relatedposts
+
+prune: no
+tidy: no
+
+test_url: https://theskepticalcardiologist.com/2017/03/04/treatment-of-palpitations-due-to-benign-pvcs-potassium-magnesium-and-lifestyle-adjustment/
