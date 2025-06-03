@@ -1,0 +1,9 @@
+body: //article[1]
+date: //time/@datetime
+
+strip: //hgroup
+strip: //picture/source
+
+prune: no
+
+test_url: https://alexwlchan.net/2025/personal-archive-of-the-web/
