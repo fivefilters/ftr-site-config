@@ -1,0 +1,20 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //article[1]
+title: //h1[contains(@class, 'article-title')]
+author: //a[@type="author"]
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
+
+strip: //nav
+
+strip_id_or_class: article-title
+strip_id_or_class: mobile-post-info
+strip_id_or_class: single-notizie-correlate
+strip_id_or_class: share-container
+strip_id_or_class: catpills
+
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' center ')]/@class
+
+prune: no
+
+test_url: https://www.ilsoftware.it/focus/airtag-android-cosa-sono-e-come-si-utilizzano/
