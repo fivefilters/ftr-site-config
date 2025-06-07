@@ -2,6 +2,8 @@ http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gec
 
 body: //article[1]
 title: //h1[contains(@class, 'article-title')]
+author: //a[@type="author"]
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
 
 strip: //nav
 
