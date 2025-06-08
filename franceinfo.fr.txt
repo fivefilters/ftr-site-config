@@ -1,0 +1,21 @@
+body: //main/div[1]/article[1]
+
+strip: //section[@class='social-zone']/self::* | //section[@class='social-zone']/following-sibling::*
+
+strip_id_or_class: if-header-video__title-wrapper
+strip_id_or_class: if-header-video__wrapper-signature
+strip_id_or_class: embed-link
+strip_id_or_class: c-title
+strip_id_or_class: c-time
+#strip_id_or_class: media-info__wrapper
+
+# use images from noscript node, because this is the only source for diagrams
+find_string: <noscript>
+replace_string: <div class="noscript">
+find_string: </noscript>
+replace_string: </div>
+strip_id_or_class: lazyload
+
+prune: no
+
+test_url: https://www.franceinfo.fr/environnement/biodiversite/protection-des-oceans/unoc-conference-sur-l-ocean/reportage-merous-par-centaines-dialogue-avec-les-pecheurs-la-reserve-marine-de-banyuls-cerbere-un-modele-a-suivre-pour-proteger-la-mer_7273257.html
