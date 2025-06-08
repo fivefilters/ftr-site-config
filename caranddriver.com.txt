@@ -1,0 +1,23 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //main[1]//div[contains(concat(' ',normalize-space(@class),' '),' article-container ')]
+author: //address/span
+author: //address/text()
+
+strip_id_or_class: pinterest
+strip_id_or_class: css-it8c6v
+
+strip: //img[contains(@src, '/profile_photos/')]/ancestor::div[2]
+
+prune: no
+tidy: no
+
+test_url: https://www.caranddriver.com/features/columns/a15127687/john-phillips-a-whole-bunch-of-what-not-to-write-column/
