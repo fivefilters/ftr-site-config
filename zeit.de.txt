@@ -39,9 +39,8 @@ strip_id_or_class: ad-container
 # ZEIT:
 #######################################
 
-single_page_link: //li[@class='article-pager__all']//a[@data-ct-label='all']
-next_page_link: //a[contains(@class, 'article-pagination') and @data-ct-label='Nächste Seite']
-
+single_page_link: //a[contains(@class, 'article-pagination__all-pages')] 
+next_page_link: //a[contains(@class, 'article-pagination__button')]
 author: //a[@class='byline__author']/span
 author: substring-after(//span[@class='metadata__source'], 'Quelle: ')
 
