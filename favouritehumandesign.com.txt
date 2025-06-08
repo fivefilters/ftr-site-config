@@ -1,0 +1,12 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+
+strip: //header
+strip: //aside
+
+strip_id_or_class: comments
+
+prune: no
+
+test_url: https://favouritehumandesign.com/2020/06/14/pebble-2-buttons-fitting-instructions/
