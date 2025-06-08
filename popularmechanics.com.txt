@@ -1,8 +1,34 @@
-next_page_link: //div[@id='longPagination']/a[@class='next']
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
 
 title: //div[@id='contentHeader']//h1
+body: //main[@id='main-content']//div[contains(concat(' ',normalize-space(@class),' '),' article-container ')] | //header//h1/following-sibling::div[1]/p
 
-body: //div[@id='articleBody']
-# this is so sad
-body: //div[@id='intelliTXT']
+strip: //aside
+strip: //svg
+strip: //img[contains(@src, '.svg?')]
+strip: //img[contains(@src, '/profile_photos/')]/ancestor::div[2]
+strip: //div[@data-embed="embed-product"]
+strip: //img[contains(@src, '.svg')]
+
+strip_attr: //div[@data-theme-key="collapsible-section-text"]/@hidden
+
+find_string: <button
+replace_string: <div
+
+find_string: </button>
+replace_string: </div> 
+
+next_page_link: //div[@id='longPagination']/a[@class='next']
+
+prune: no
+tidy: no
+
 test_url: http://www.popularmechanics.com/technology/aviation/crashes/what-really-happened-aboard-air-france-447-6611877
