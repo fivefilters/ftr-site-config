@@ -8,18 +8,25 @@
 
 http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
 
-next_page_link: //div[@id='longPagination']/a[@class='next']
-
 title: //div[@id='contentHeader']//h1
-
 body: //main[@id='main-content']//div[contains(concat(' ',normalize-space(@class),' '),' article-container ')] | //header//h1/following-sibling::div[1]/p
 
-strip: //button
 strip: //aside
 strip: //svg
 strip: //img[contains(@src, '.svg?')]
 strip: //img[contains(@src, '/profile_photos/')]/ancestor::div[2]
 strip: //div[@data-embed="embed-product"]
+strip: //img[contains(@src, '.svg')]
+
+strip_attr: //div[@data-theme-key="collapsible-section-text"]/@hidden
+
+find_string: <button
+replace_string: <div
+
+find_string: </button>
+replace_string: </div> 
+
+next_page_link: //div[@id='longPagination']/a[@class='next']
 
 prune: no
 tidy: no
