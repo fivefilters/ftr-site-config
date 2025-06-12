@@ -1,0 +1,17 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article-hero__h1 ')]
+date: //p[contains(concat(' ',normalize-space(@class),' '),' article-meta__published-at ')]
+author: //meta[@name="article-author"]/@content
+author: //div[contains(concat(' ',normalize-space(@class),' '),' article-meta__author-name ')]
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' uni-content ')] | //div[@class='article-image-hero']
+
+find_string: .width-100.format-
+replace_string: .width-1000.format-
+
+find_string: .width-200.format-
+replace_string: .width-2200.format-
+
+prune: no
+tidy: no
+
+test_url: https://blog.google/products/android/android-16/
