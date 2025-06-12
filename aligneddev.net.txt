@@ -1,0 +1,8 @@
+title: //h1
+
+body: //div[@class='panel-body']
+
+#remove related post
+strip: //div[@class='related-posts']
+
+test_url: https://www.aligneddev.net/blog/2025/functional-programming-overview/
