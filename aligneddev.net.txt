@@ -1,0 +1,16 @@
+title: //h1
+
+body: //div[@class='panel-body']
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished": "'), '\u')
+author: //meta[@name='author']/@content
+
+#remove related post
+strip: //div[@class='related-posts']
+
+prune: no
+
+# [FTR] prevent to load generic site logo as image, if article does not contain an image
+insert_detected_image: no
+
+test_url: https://www.aligneddev.net/blog/2025/functional-programming-overview/
+test_url: https://www.aligneddev.net/blog/2025/azuredevops-ssis-pipeline/
