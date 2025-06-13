@@ -3,6 +3,8 @@ body: //p[@class='TexteChronique']
 body: //div[@class='src-content']
 
 author: //span[contains(concat(' ',normalize-space(@class),' '),'group-hover/signature:underline')]
+author: substring-before((//a[contains(@href, '/profil/')])[1]/@title , ' (')
+date: //time/@datetime
 
 strip: //header
 strip: //figure
