@@ -2,12 +2,23 @@ body: //article
 body: //p[@class='TexteChronique']
 body: //div[@class='src-content']
 
+author: //span[contains(concat(' ',normalize-space(@class),' '),'group-hover/signature:underline')]
+author: substring-before((//a[contains(@href, '/profil/')])[1]/@title , ' (')
+date: //time/@datetime
+
 strip: //header
 strip: //figure
 strip: //div[@class='framed']
 strip: //form
 strip: //div[contains(@class, 'newsstory-share-social-layout-wrapper')]
 strip: //article[contains(@class, 'card-style')]
+
+#play audio
+strip: //label[contains(concat(' ',normalize-space(@class),' '),'group')]
+replace_string(La version audio de cet article est générée par la synthèse vocale, une technologie basée sur l’intelligence artificielle.): <br />
+
+# les plus populaire
+strip: //div[contains(concat(' ',normalize-space(@class),' '),'lbZquO')]
 
 test_url: http://ici.radio-canada.ca/nouvelle/1003322/lexique-mots-neige-hiver-guy-bertrand
 test_url: http://ici.radio-canada.ca/tele/deuxieme-chance/inscription/
