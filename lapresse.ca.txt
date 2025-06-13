@@ -1,5 +1,7 @@
 body: //div[@class='article-page']//p[@class='amorce'] | //div[@class='article-page']//div[contains(@class, 'entry')]
 author: //div[@class='infosAuteur']  | //span[contains(@class,'authorModule__name')]
+# [wallabag] can't match on span nodes
+author: substring-before(//div[contains(concat(' ',normalize-space(@class),' '),' author ')] , ' LA PRESSE')
 
 strip: //ul[@class='stories']
 
