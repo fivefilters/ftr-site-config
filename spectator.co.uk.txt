@@ -2,6 +2,8 @@
 # for wallabag you may want to use browser plugin wallabagger with
 # activated option 'Retrieve content from the browser' in it's settings
 
+skip_json_ld: yes
+
 body: //main//article[contains(concat(' ',normalize-space(@class),' '),' post ')]/header/figure | //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
 body: //main
 
