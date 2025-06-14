@@ -1,0 +1,14 @@
+title: //h1[@class='entry-title']
+
+body: //div[@class='entry-content']
+
+# remove 'similaire' section
+strip: //div[@id='jp-relatedposts']
+
+# remove 'En savoir plus' section
+strip: //p[contains(text(), 'Subscribe to get the latest posts sent to your email.')]/parent::div
+
+# remove 'info podcast' section
+strip: //p[contains(., "Tous les jours de la semaine, du lundi au vendredi, Bruno Guglielminetti vous propose un regard sur l’essentiel de l’actualité numérique avec") and .//em[contains(text(), "120 secondes de tech")]]
+
+test_url: https://moncarnet.com/2025/06/11/a-vivatech-jensen-huang-fait-de-lia-une-nouvelle-infrastructure-industrielle/
