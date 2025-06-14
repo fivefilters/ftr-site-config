@@ -1,0 +1,13 @@
+title: //h1[@class='amp-post-title']
+title: //h1[@class='post-title']
+
+author: //a[@class='post-author']/text()
+
+# remove ads section
+strip: //div[contains(@class, 'blog-ads-field')]
+
+# remove 'related blog' section
+strip: //div[@id='related-blogs-section']
+
+test_url: https://www.syncfusion.com/blogs/post/net-maui-high-performance-apps/amp
+test_url: https://www.syncfusion.com/blogs/post/net-maui-high-performance-apps
