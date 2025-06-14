@@ -10,6 +10,14 @@ strip_id_or_class: imageGallery-wrapper
 strip_id_or_class: author__avatar-block
 strip_id_or_class: slice-container-newsletterForm
 
+strip_id_or_class: article-sponsored-post
+
+# remove deal section
+strip_id_or_class: hawk-base
+
+# remove more from tom's guide section
+strip_id_or_class: section-more-from-tom-s-guide
+
 # Fix JS-only images
 find_string: src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg"
 replace_string: old-src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg"
@@ -17,3 +25,4 @@ find_string: data-original-mos="http
 replace_string: src="http
 
 test_url: https://www.tomsguide.com/news/chatgpt-explained
+test_url: https://www.tomsguide.com/ai/claude-4-is-one-of-the-best-chatbots-yet-heres-the-only-prompt-youll-ever-need-for-it
