@@ -1,0 +1,17 @@
+title: substring-before(//meta[@property="og:title"]/@content , ' — overreacted')
+author: 'Dan Abramov'
+
+[FTR] Don't show generic site logo within article
+insert_detected_image: no
+
+# common cleanup
+strip: //svg
+
+# remove links from headings
+find_string: <a target="_self" class="linked-heading
+replace_string: <invalid class="linked-heading
+
+
+prune: no
+
+test_url: https://overreacted.io/impossible-components/
