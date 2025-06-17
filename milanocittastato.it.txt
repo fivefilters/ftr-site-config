@@ -1,0 +1,19 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+title: substring-before(//meta[@property='og:title']/@content , ' - Milano Citt')
+
+strip: //header/h1
+strip: //a[contains(@href, '=banner')]/parent::div
+
+strip_id_or_class: td-category
+strip_id_or_class: td-module-meta-info
+strip_id_or_class: td-post-source-tags
+strip_id_or_class: td-post-sharing-bottom
+strip_id_or_class: td-post-next-prev
+strip_id_or_class: author-box-wrap
+strip_id_or_class: the_champ_sharing_container
+strip_id_or_class: the_champ_horizontal_sharing
+
+prune: no
+tidy: no
+
+test_url: https://www.milanocittastato.it/milano/le-5-fermate-della-metro-dove-costa-meno-andare-in-affitto-edizione-2025/
