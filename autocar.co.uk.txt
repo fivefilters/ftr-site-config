@@ -1,6 +1,8 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | Autocar')
 title: //div[@class='col-center']/h1
 author: //div[@class='personality']/a
 date: //div[@class='personality-date']
+body: //div[contains(@class, 'article-section')]
 body: //div[@class='content'] | //div[@class='lower-content-region'] | //div[contains(@class,'article-body')] | //div[contains(@class,'main-article')]
 
 next_page_link: //div[@id='review-link']/a
@@ -10,6 +12,22 @@ strip: //p//iframe[contains(@src,'signup')]/preceding::p[1]
 strip: //div[@class='signup-block']
 strip: //div[@class='content']/h3/a[contains(@href,'#comment')]/parent::h3
 strip: //div[@class='content']/div[contains(@class,'comment')]
+strip: //div[contains(@class, 'block-author-information')] | //div[contains(@class, 'block-author-information')]/following-sibling::*
+
+strip_id_or_class: sitewide-carousel
+strip_id_or_class: sitewide-carousel0
+strip_id_or_class: close-gallery
+strip_id_or_class: content--author-region
+strip_id_or_class: block-related-news
+strip_id_or_class: block-mobile-car-review-sidebar
+strip_id_or_class: col-left
+strip_id_or_class: col-right
+strip_id_or_class: col-right-desktop
+strip_id_or_class: promo-panel
+strip_id_or_class: car-review-nav
+
+prune: no
+tidy: no
 
 test_url: http://www.autocar.co.uk/car-review/volkswagen/golf
 test_url: http://www.autocar.co.uk/car-news/pebble-beach/saleen-unveils-performance-electric-vehicle-based-tesla-model-s
