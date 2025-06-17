@@ -1,0 +1,22 @@
+body: //article[@role='article']/div[@class='content']
+author: //meta[@name="cXenseParse:author" and not(@content="")]/@content
+date: //meta[@name="cXenseParse:recs:publishtime"]/@content
+
+strip_id_or_class: content-detail__category
+strip_id_or_class: h1--page-title
+strip_id_or_class: layout__region--second
+strip_id_or_class: referenced-card
+strip_id_or_class: newsletter-widget-subscription-main
+strip_id_or_class: ubscription-newspick
+strip_id_or_class: hidden
+
+strip: //section[contains(@data-title, 'Text to speech')]
+strip: //div[contains(@data-title, 'Byline')]
+strip: //div[contains(@data-title, 'share and bookmark')]
+strip: //section[contains(@data-title, 'Mediacorp Fast Button')]
+strip: //section[contains(@data-title, 'Article page Newsletter')]
+
+prune: no
+tidy: no
+
+test_url: https://www.channelnewsasia.com/world/jetstar-asia-closure-broome-singapore-only-international-flight-australia-5184726
