@@ -1,0 +1,11 @@
+title: //h1[@class='page-title']
+
+author: //div[contains(@class, 'author') and contains(@class, 'exp--author')]//a/text()
+
+date: //div[contains(@class, 'time') and contains(@class, 'exp--time')]/text()
+
+# remove section "abonnez-vous a l'infolettre"
+strip: //div[@id='newsletter-popup']
+strip: //h2[@class="h4 mt-0"]/parent::div
+
+test_url: https://www.sciencepresse.qc.ca/actualite/2025/05/22/guerre-opportunite-affaires-pour-gafam
