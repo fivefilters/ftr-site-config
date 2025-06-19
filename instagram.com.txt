@@ -1,0 +1,22 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+# AND you have to activate local image storage in wallabag!
+
+# for videos, you have to wait for the end, when the still image is shown, then hit the wallabagger
+# icon to fetch. You will never get the video but the image then.
+
+body: //main/div[1]/div[1] | //main/div[1]/div[1]//div[@class='_aagv'] | //main/div[1]/div[1]//div[@class='x1i10hfl'] 
+
+strip_id_or_class: _aa1y
+
+strip: //button
+
+prune: no
+tidy: no
+
+test_url: https://www.instagram.com/reel/DKuCMn0uOCj/?igsh=xyz==
