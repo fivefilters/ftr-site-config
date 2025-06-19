@@ -1,0 +1,22 @@
+body: //main/article
+title: //h1[@class='page-title']
+author: //div[contains(@class, 'author') and contains(@class, 'exp--author')]//a/text()
+
+# remove section "abonnez-vous a l'infolettre"
+strip: //div[@id='newsletter-popup']
+strip: //h2[@class="h4 mt-0"]/parent::div
+
+# common clean-up
+strip_id_or_class: right-col
+strip: //div[@class='left-col']//div[@class='node__content']/following-sibling::*
+strip: //div[contains(@class, 'social-media-sharing')] | //div[contains(@class, 'social-media-sharing')]/following-sibling::*
+
+
+# [wallabag] prevent indentation
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]/@class
+
+prune: no
+tidy: yes
+
+
+test_url: https://www.sciencepresse.qc.ca/actualite/2025/05/22/guerre-opportunite-affaires-pour-gafam
