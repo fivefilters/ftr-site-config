@@ -1,0 +1,29 @@
+body: //main[not(@type="default")]/div[contains(@class, 'sc-47ae43d2-0 dzddMJ')] | //main//header/following-sibling::div[1]
+title: substring-before(//meta[@property='og:title']/@content , ' - SensCritique')
+
+strip_id_or_class: sc-fa13c750-6
+strip_id_or_class: sc-76ff2b96-3
+
+strip: //svg
+strip: //img[contains(@src, 'data:image/')]
+strip: //div[@data-testid="product-actions"]/parent::div/parent::div
+strip: //div[@data-testid="stats"]
+ 
+# add missing new-lines in /details table
+find_string: <span class="sc-92d1b6c1-5
+replace_string: <br /><span class="foo sc-92d1b6c1-5
+
+# get images
+find_string: noscript>
+replace_string: div>
+
+# append details page
+next_page_link: //a[@data-testid="link" and contains(@href, '/details')]
+
+# [wallabag] keep book rankings opically together
+wrap_in(blockquote): //div[contains(@class,'sc-741c0dcd-4') and @data-testid="item-wrapper"]
+
+prune: no
+tidy: no
+
+test_url: https://www.senscritique.com/livre/les_fiances_de_l_hiver/8864846/details
