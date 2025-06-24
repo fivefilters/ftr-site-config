@@ -1,6 +1,12 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')] | //header/div[contains(@class, 'subheadline')] | //div[contains(@class, 'post-thumbnail')]
+
 title: //h1[@class="entry-title"]
+
+author: //div[contains(@class, 'entry-meta')]//a[contains(@href, '/author/')]
+author: substring-after( //div[contains(@class, 'entry-meta')]//div[contains(@class, 'meta-text-top')] , 'By ') 
 author: //div[@class="author-name"]/a[1]
-body: //div[@class="entry-content"]
+
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
 date: //time[contains(concat(' ',normalize-space(@class), ' '), ' entry-date ')]/@datetime
 
 # remove 'From the Lab' and 'Recent posts' text
@@ -17,4 +23,12 @@ strip: //div[@class="department"]
 #strip product cap links
 strip: //div[@class="cap-main"]
 strip: //div[@id="compare-lede"]
+
+# activate images from external sources
+find_string: data-src="https
+replace_string: src="https
+
+prune: no
+
 test_url: https://www.pcworld.com/article/262034/are-printer-companies-gouging-us-on-laser-toner-pricing.html
+test_url: https://www.pcworld.com/article/2799246/9-mundane-tasks-chatgpt-can-handle-for-you-in-seconds-saving-hours.html
