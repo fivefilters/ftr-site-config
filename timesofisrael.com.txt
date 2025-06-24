@@ -1,0 +1,4 @@
+strip_id_or_class: banner-placeholder
+strip_id_or_class: newsletter-article
+
+test_url: https://www.timesofisrael.com/in-foul-mouthed-tirade-trump-fumes-at-israel-for-striking-iran-violating-ceasefire/
