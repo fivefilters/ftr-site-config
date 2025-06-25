@@ -1,4 +1,4 @@
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; rv:107.0) Gecko/20100101 Firefox/107.0
+http_header(user-agent): Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:140.0) Gecko/20100101 Firefox/140.0
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' post__content ')]
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' post-hero__title ')]
