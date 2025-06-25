@@ -1,7 +1,5 @@
 title: //meta[@property="og:title"]/@content
-body: //div[contains(@class, 'postBody')]
-date: //div[@id='nameAndTime']/time
-author: //div[@id='nameAndTime']/span[@class='author']
+body: //article
 
 strip_id_or_class: image-credit
 strip_id_or_class: noAutolink
@@ -13,8 +11,5 @@ strip_id_or_class: collections-topics-and-tags
 prune: no
 tidy: no
 
-# early end
-replace_string(Download today's podcast</a>): Download today's podcast</a></div></body></html>
-
-test_url: http://www.cnet.com/8301-13952_1-57367607-81/the-404-981-where-the-world-is-a-vampire-podcast/
-test_url: http://www.cnet.com/news/firefox-maker-mozilla-we-dont-need-googles-money-anymore/
+test_url: https://www.cnet.com/tech/services-and-software/lots-more-americans-are-using-chatgpt-but-a-surprising-number-say-they-havent-heard-of-it/
+test_url: https://www.cnet.com/tech/services-and-software/best-ai-image-generators/
