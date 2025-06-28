@@ -1,21 +1,14 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings.
+# Scroll down to the bottom of article before clicking on the wallabagger icon!
+
 http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0
 http_header(referer): https://www.wsj.com
-
-# WSJ uses paywall. If you have a subscription, you can use
-# the browser plugin 'wallabagger' to fetch complete article for wallabag if
-# 'Content fetching from the browser' is activaeted in plugin settings
-
-
-## Use AMP version ## DOES NOT WORK ANY LONGER ! ##
-
-#single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'))
-#if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/') )]
-
-#single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'))
-#if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
-
-#single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'), '/'))
-#if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
 
 body: //main//article/div[contains(concat(' ',normalize-space(@class),' '),' crawler ')] | //main//div[contains(@class, 'article-header')]
 body: //main
@@ -55,6 +48,7 @@ strip_id_or_class: jw-shortcuts-tooltip
 strip_id_or_class: jw-controlbar
 strip_id_or_class: jw-text
 strip_id_or_class: jw-rightclick
+strip: //div[contains(@class, '_hoverText_')]
 replace_string(<textarea): <a
 replace_string(</textarea>): </a>
 strip: //textarea[contains(text(), 'video-api.wsj.com/')]
@@ -64,6 +58,17 @@ strip: //a[contains(text(), 'video-api.wsj.com/')]
 ### old ???
 
 body: //main[@id="main"]//div[@itemprop="articleLead" or @itemprop="articleBody" or contains(concat(' ',normalize-space(@class),' '),' articleBody ')]
+
+## Use AMP version ## DOES NOT WORK ANY LONGER ! ##
+
+#single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'))
+#if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/') )]
+
+#single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'))
+#if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
+
+#single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'), '/'))
+#if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
 
 title: //meta[@property="og:title"]/@content
 body: //div[@id='wsj-article-wrap']
