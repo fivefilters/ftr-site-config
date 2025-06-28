@@ -1,4 +1,4 @@
-http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0
+http_header(User-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0
 http_header(referer): https://www.wsj.com
 
 # WSJ uses paywall. If you have a subscription, you can use
@@ -17,8 +17,11 @@ http_header(referer): https://www.wsj.com
 #single_page_link: concat('https://www.wsj.com/amp/articles/', substring-after(substring-after(substring-after(substring-after(//link[@rel="canonical"]/@href, 'https://www.wsj.com/'), '/'), '/'), '/'))
 #if_page_contains: //link[@rel="canonical" and not( contains(substring-after(substring-after(substring-after(@href, 'https://www.wsj.com/'), '/'), '/'), '/') )]
 
+body: //main//article/div[contains(concat(' ',normalize-space(@class),' '),' crawler ')] | //main//div[contains(@class, 'article-header')]
 body: //main
 body: //article
+
+author: //a[contains(@class, 'AuthorLink')]
 
 ## neededed for non-amp-version and wallabagger with wsj-subscription
 strip_id_or_class: article-body-tools
@@ -26,6 +29,8 @@ strip_id_or_class: print-header
 strip_id_or_class: controls-container
 strip_id_or_class: category
 strip_id_or_class: aside-container
+strip_id_or_class: uds-ad-container
+
 strip: //div[contains(@class, 'ribbon-container')]/parent::div
 strip: //div[contains(@class, 'AuthoringContainer')]
 strip: //div[@data-inset_type='newsletterinset']
@@ -41,10 +46,22 @@ strip: //div[@aria-label='Sponsored Offers']
 strip: //div[@aria-label='What to Read Next']
 strip: //div[@aria-label='Utility Bar']
 strip: //div[@data-type='inset']
+strip: //iframe
 
-author: //a[contains(@class, 'AuthorLink')]
 
-##
+# video will not be shown, but we can show the URL to the video as text
+strip_id_or_class: jw-hidden-accessibility
+strip_id_or_class: jw-shortcuts-tooltip
+strip_id_or_class: jw-controlbar
+strip_id_or_class: jw-text
+strip_id_or_class: jw-rightclick
+replace_string(<textarea): <a
+replace_string(</textarea>): </a>
+strip: //textarea[contains(text(), 'video-api.wsj.com/')]
+strip: //a[contains(text(), 'video-api.wsj.com/')]
+
+
+### old ???
 
 body: //main[@id="main"]//div[@itemprop="articleLead" or @itemprop="articleBody" or contains(concat(' ',normalize-space(@class),' '),' articleBody ')]
 
