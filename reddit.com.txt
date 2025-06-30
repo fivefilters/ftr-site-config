@@ -1,20 +1,38 @@
-# This setup grabs the text from a Reddit self post. It ignores all comments etc.
+# This setup grabs the text from a Reddit self post. It ignores all comments etc. because they
+# are injected by JavaScript. [wallabag UI, FTR]
 
+# When using wallabagger with activated option 'Retrieve content from browser', the comments
+# are also fetched for wallabag.
+
+title: //shreddit-title/@title
+title: //h1[@slot="title"]
 title: //p[@class="title"]/a/text()
 
+author: //a[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
 author: //div[@class="top-matter"]/p[contains(concat(' ',normalize-space(@class),' '),'tagline ')]/a/text()
 
-# this doesn't work for some reason...?
-date: //p[@class="tagline"]//@datetime
+date: //shreddit-post/@created-timestamp
 
+body: //div[@slot="text-body"] | //shreddit-comment-tree
 body: //div[contains(concat(' ',normalize-space(@class),' '),' expando ')]
 
 strip_id_or_class: tagline
 strip_id_or_class: unvotable-message
 strip_id_or_class: buttons
 
+strip: //button
+strip: //svg
+strip: //faceplate-hovercard/div
+strip: //a[@slot='more-comments-permalink']
+strip: //div[@slot="commentAvatar"]
+strip: //faceplate-tracker//faceplate-screen-reader-content
+strip: //shreddit-post/h1
+
 # follow the posted link (unless it's a self post - relative URL, no http://)
 single_page_link: //p[@class="title"]/a[contains(@href, 'http://')]
+
+prune: no
+tidy: no
 
 test_url: http://www.reddit.com/r/truegaming/comments/wfe7r/i_wrote_about_the_problems_i_honestly_feel_that/
 test_url: http://www.reddit.com/r/worldnews/comments/1as37r/twelve_north_korean_soldiers_attempting_to_defect/
