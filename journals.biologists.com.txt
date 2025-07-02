@@ -1,0 +1,38 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+strip_id_or_class: fig-modal
+strip_id_or_class: original-slide
+strip_id_or_class: hide
+strip_id_or_class: empty-target
+strip_id_or_class: copyright-year
+
+# The citation area looked ugly, the class 'inline-block' we inject here, is defined in wallabag 1.6+
+# in material.css but that might change in later versions
+
+replace_string(class="surname"): class="inline-block surname"
+replace_string(class="given-names"): class="inline-block given-names"
+replace_string(class="year"): class="inline-block year"
+replace_string(class="article-title"): class="inline-block article-title"
+replace_string(class="source"): class="inline-block source"
+replace_string(class="volume"): class="inline-block volume"
+replace_string(class="fpage"): class="inline-block fpage"
+replace_string(class="lpage"): class="inline-block lpage"
+replace_string(class="pub-id-doi"): class="inline-block pub-id-doi"
+
+replace_string(<div class="google-scholar-ref-link): <div class="inline-block google-scholar-ref-link
+replace_string(<div class="crossref-doi): &nbsp;&nbsp;&middot;&nbsp;&nbsp;<div class="inline-block crossref-doi
+replace_string(<div class="pub-id):  &nbsp;&nbsp;&middot;&nbsp;&nbsp;<div class="inline-block pub-id
+
+prune: no
+tidy: no
+
+test_url: https://journals.biologists.com/jeb/article/228/13/jeb251026/368435/
+test_url: https://journals.biologists.com/bio/article/14/3/bio061939/367435/Alveolar-epithelial-paxillin-in-postnatal-lung
