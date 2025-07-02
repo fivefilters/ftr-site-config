@@ -1,9 +1,10 @@
 title: //article[contains(concat(' ',normalize-space(@class),' '),' markdown-body ')]//h1
 author: //a[contains(concat(' ',normalize-space(@class),' '),' fn ')]
 date: //div[contains(concat(' ',normalize-space(@class),' '),' Details ')]//relative-time
+
+body: //div[@id='wiki-body']
 body: //div[contains(concat(' ',normalize-space(@class),' '),' Box-body ')]
 body: //article[1]
-body: //div[@id='wiki-body']
 
 skip_id_or_class: BorderGrid-cell
 skip_id_or_class: js-repo-nav
