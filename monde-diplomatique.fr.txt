@@ -21,9 +21,12 @@ author: //meta[@property='article:author']/@content
 strip: //div[contains(@class, 'bandeautitre')]
 strip: //div[contains(@class, 'dates_auteurs')]
 strip: //div[@class='cartouche']/h1
+strip: //div[@class='cartouche']/p[contains(@class, 'surtitre')]
+
+replace_string(chapo"><p>): chapo"><h5>
 
 prune: no
-tidy: no
+tidy: yes
 
 # wallabag only
 # do not set you credentials here, you have to do this in wallabag's UI
