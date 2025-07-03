@@ -10,6 +10,7 @@ strip: //div[contains(@class, 'social-media-share')]
 strip: //div[contains(@id, 'related-articles')]/parent::div/parent::div
 
 strip_id_or_class: article-info
+strip_id_or_class: mobile
 
 prune: no
 tidy: no
