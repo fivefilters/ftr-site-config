@@ -26,7 +26,7 @@ strip: //div[@class='cartouche']/p[contains(@class, 'surtitre')]
 replace_string(chapo"><p>): chapo"><h5>
 
 prune: no
-tidy: yes
+tidy: no
 
 # wallabag only
 # do not set you credentials here, you have to do this in wallabag's UI
