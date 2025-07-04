@@ -1,0 +1,9 @@
+body: //article[1]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' item ')]
+title: //h1[@class='entry-title']
+
+## [wallabag] prevent indentation
+strip_attr: //div[contains(@class, 'container')]/@class
+
+test_url: https://stiftung-gegm.de/feed/
+test_url: https://stiftung-gegm.de/lokales-wissen-globale-wirkung/
