@@ -1,0 +1,11 @@
+title: //h1[contains(@class, 'header-title')]
+author: //div[contains(@class, 'author-info')]/a
+
+# date is not in a parseable form, so the 2nd part is moving this into the body
+body: //article[1] | //div[@class='date-info']
+
+strip: //nav
+
+prune: no
+
+test_url: https://www.ufu.de/praxisleitfaeden-fuer-schulen-und-kommunen-gemeinsam-aktiv-fuer-die-klimaneutrale-stadt/
