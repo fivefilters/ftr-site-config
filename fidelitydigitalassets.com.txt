@@ -3,9 +3,9 @@ body: //article[1]
 author: //hero//p[contains(@class, 'coh-style-paragraph-small')]//a
 date: substring-before(//p[contains(@class, 'article-info')] , '•')
 
-strip: //header
 strip: //hero
 strip: //button
+strip: //header/self::* | //header/preceding-sibling::*
 strip: //div[contains(@class, 'social-media-share')]
 strip: //div[contains(@id, 'related-articles')]/parent::div/parent::div
 
