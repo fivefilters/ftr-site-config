@@ -1,0 +1,31 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //main[1]
+
+strip: //header
+strip: //button
+strip: //*[contains(@id, 'troy-teaser-container')]
+strip: //*[contains(@id, 'feedback-container')]
+strip: //*[contains(@class, 'Teaser_ingredientBadge')]
+
+strip_id_or_class: sub-nav
+strip_id_or_class: delicious-container
+strip_id_or_class: index
+strip_id_or_class: recipe-review
+strip_id_or_class: footer-section-container
+strip_id_or_class: footer-mesos
+
+## [wallabag] prevent indentation
+strip_attr: //div[contains(@class, 'container')]/@class
+
+prune: no
+tidy: no
+
+test_url: https://www.rewe.de/rezepte/bratwurst-gefuellt/
+test_url: https://www.rewe.de/ernaehrung/essen-an-heissen-tagen/
