@@ -6,4 +6,12 @@ date: //following::div[@class='PDate2']/strong
 body: //div[@class='ArTexte']
 body: //div[@id='prod_txt_b']
 body: //div[@class='ArPhotoP']
+
+#remove pub
+strip: //div[contains(@class, 'ln__a-dp')]
+
+# alire aussi
+strip: //aside[contains(@class, 'ed__m-frmd')]
+
 test_url: http://www.lesnumeriques.com/disque-dur-multimedia/popcorn-hour-300-p12231/test.html
+test_url: https://www.lesnumeriques.com/vpn/echapper-au-fingerprinting-comment-un-vpn-peut-vraiment-faire-la-difference-a237361.html
