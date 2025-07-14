@@ -18,6 +18,7 @@ strip: //footer
 strip: //form
 strip: //div[starts-with(@id, "qanda-")]
 strip: //button
+strip: //div[contains(@class, 'ad-slot-container')]
 
 strip: //figure[contains(@data-spacefinder-type, "NewsletterSignup")]
 strip: //figure[@data-atom-type="qanda" or @data-atom-type="profile"]
