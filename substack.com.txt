@@ -25,6 +25,9 @@ strip: //button
 strip: //svg
 strip: //p[contains(concat(' ',normalize-space(@class),' '),' button-wrapper ')]
 
+# [wallabag] setting tweets into blockquotes
+wrap_in(blockquote): //div[@class='tweet']
+
 
 prune: no
 
