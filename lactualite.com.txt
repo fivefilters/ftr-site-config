@@ -1,0 +1,8 @@
+title: //h1[@class='entry-title']
+
+body: //p[@class='entry-lead'] | //div[contains(@class,'entry-content')]
+
+# a lire aussi
+strip: //aside[contains(@class, 'suggested-link')]
+
+test_url: https://lactualite.com/sante-et-science/les-dangers-detre-esclave-de-son-gps/
