@@ -1,11 +1,58 @@
-title: //h1
-author: //div[@id='byline']
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
 
-body: //div[@id='printBody']
+# This works WELL with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
 
-single_page_link: concat('http://www.esquire.com/print-this/', substring-after(//link[@rel='canonical']/@href, 'esquire.com/'))
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0
+
+body: //main[@id='main-content']/div
+title: //meta[@name="title"]/@content
+author: date: substring-before(substring-after(//script[@type="application/ld+json"], '"author":{"name":"'), '",')
+date: date: substring-before(substring-after(//script[@type="application/ld+json"], '"created_at":"'), '",')
+
+## Printer friendly page version seems not to exist any longer
+#body: //div[@id='printBody']
+#single_page_link: concat('https://www.esquire.com/print-this/', substring-after(//link[@rel='canonical']/@href, 'esquire.com/'))
+
+
+strip: //section[@data-embed="editorial-link"]
+strip: //main[@id='main-content']/div/section
+strip: //div[@id='module-recommended'] | //div[@id='module-recommended']/following-sibling::*
+
+# hoped this helps wallabag to prevent error, but did not work yet
+strip: //template
+strip: //next-route-announcer
+strip_id_or_class: gpt-leaderboard-ad
+strip_id_or_class: page-settings
+
+# Reduce image size for author images and social media icons
+find_string: class="css-o0wq4v
+replace_string: width="60px" class="foo-o0wq4v
+
+find_string: class="css-z9v6vy
+replace_string: width="125px" class="foo-z9v6vy
+
+find_string: class="css-kbb80j
+replace_string: height="30px" width="30px" class="foo-kbb80j
+
+find_string: class="css-1msakm2
+replace_string: width="80px" class="foo-1msakm2
+
+find_string: width="100%" height="100%"
+replace_string: 
+
+find_string: width="100%" height="auto"
+replace_string: 
+
+find_string: height="auto" width="auto"
+replace_string: 
+
 
 prune: no
+tidy: no
 
-test_url: http://www.esquire.com/features/impossible/price-is-right-perfect-bid-0810
-test_url: http://www.esquire.com/blogs/politics/police-getting-leftover-armoured-iraq-trucks-112513
+test_url: https://www.esquire.com/features/impossible/price-is-right-perfect-bid-0810
+test_url: https://www.esquire.com/blogs/politics/police-getting-leftover-armoured-iraq-trucks-112513
