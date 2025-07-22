@@ -3,9 +3,7 @@ title: //h1/following::span[@class='fn']
 author: //following::div[@class='PDate2']
 date: //following::div[@class='PDate2']/strong
 
-body: //div[@class='ArTexte']
-body: //div[@id='prod_txt_b']
-body: //div[@class='ArPhotoP']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' ed__p-artc__artcl__bdy ')]
 
 #remove pub
 strip: //div[contains(@class, 'ln__a-dp')]
