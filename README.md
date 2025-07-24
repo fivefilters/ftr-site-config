@@ -11,19 +11,15 @@ We run automated tests on these files to detect issues. If you'd like to help ke
 
 We chose GitHub for this set of files because they offer one feature which we hope will make contributing changes easier: [file editing](https://github.com/blog/844-forking-with-the-edit-button) through the web interface. 
 
-You can now make changes to any of our site config files and request that your changes be pulled into the main set we maintain. This is what GitHub calls the Fork and Pull model:
+You can now make changes to any of our site config files and request that your changes be pulled into the main set we maintain. When we receive a pull request we'll review the changes and if everything's okay we'll update our copy.
 
-> The Fork & Pull Model lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer. This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.
-
-When we receive a pull request we'll review the changes and if everything's okay we'll update our copy.
-
-If a site is not in our set, you can create a file for it in the same way. See [Creating files on GitHub](https://github.com/blog/1327-creating-files-on-github).
+If a site is not in our set, you can create a file for it in the same way. See [Creating files on GitHub](https://github.blog/news-insights/the-library/creating-files-on-github/).
 
 ### How to write a site config file
 
 The quickest and simplest way is to use our [point-and-click interface](http://siteconfig.fivefilters.org). It's a simple tool only intended to create a rule to extract the correct content block. 
 
-For further refinements, e.g. selecting the title, stripping elements, dealing with multi-page articles, please see our [help page](http://help.fivefilters.org/customer/portal/articles/223153-site-patterns).
+For further refinements, e.g. selecting the title, stripping elements, dealing with multi-page articles, please see our [help page](https://help.fivefilters.org/full-text-rss/site-patterns.html).
 
 ### File naming
 
@@ -47,13 +43,13 @@ Note: `.example.com.txt` will _not_ match `www.example.com` or `example.com`
 
 ### Instapaper
 
-When we introduced site patterns, we chose to adopt the [same format](http://blog.instapaper.com/post/730281947) used by Instapaper. This allows us to make use of the existing extraction rules contributed by Instapaper users. 
+When we introduced site patterns, we chose to adopt the [same format](http://blog.instapaper.com/post/730281947) used by Instapaper. This allowed us to make use of the extraction rules contributed by Instapaper users. 
 
 Marco, Instapaper's creator, graciously opened up the database of contributions to everyone:
 
 > And, recognizing that your efforts could be useful to a wide range of other tools and services, I'll make the list of all of these site-specific configurations available to the public, free, with no strings attached.
 
-Most of the extraction rules in our set are borrowed from Instapaper. You can see the list maintained by Instapaper at [instapaper.com/bodytext/](http://instapaper.com/bodytext/) (no longer available since Instapaper was sold).
+~~You can see the list maintained by Instapaper at [instapaper.com/bodytext/](http://instapaper.com/bodytext/)~~ (no longer available since Instapaper was sold).
 
 ### Testing site config files
 
