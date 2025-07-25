@@ -6,6 +6,9 @@ author: //div[contains(@class, 'author') and contains(@class, 'exp--author')]//a
 strip: //div[@id='newsletter-popup']
 strip: //h2[@class="h4 mt-0"]/parent::div
 
+#remove section "a lire egalement"
+strip: //div[contains(@class, 'articles-suggestions')]
+
 # common clean-up
 strip_id_or_class: right-col
 strip: //div[@class='left-col']//div[@class='node__content']/following-sibling::*
@@ -20,3 +23,4 @@ tidy: yes
 
 
 test_url: https://www.sciencepresse.qc.ca/actualite/2025/05/22/guerre-opportunite-affaires-pour-gafam
+test_url: https://www.sciencepresse.qc.ca/actualites-scientifiques/2025/07/24/garcon-fille-toujours-50-chances
