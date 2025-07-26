@@ -1,17 +1,24 @@
-title: //h1/following::span[@class='fn']
-# Author: should stop parsing until <br> reached, but I don't know how to do this.
-author: //following::div[@class='PDate2']
-date: //following::div[@class='PDate2']/strong
-
-body: //div[@class='ArTexte']
-body: //div[@id='prod_txt_b']
-body: //div[@class='ArPhotoP']
+body: //p[contains(@class,'ed__bdy__l')] | //div[contains(@class, '__artcl__bdy ')] | //section[contains(@class,'__hdr')]//figure
 
 #remove pub
 strip: //div[contains(@class, 'ln__a-dp')]
 
-# alire aussi
+# strip: alire aussi / à lire également
 strip: //aside[contains(@class, 'ed__m-frmd')]
+strip: //a/article/ancestor::div[@class='ed__cntnr']
+
+# common clean-up
+strip: //button
+
+# re-writing images to work without JavaScript [wallabag]
+strip_attr: //img[contains(@src,'data:image/svg+xml')]/@src
+find_string: data-srcset="https
+replace_string: srcset="https
+
+
+prune: no
+tidy: no
 
 test_url: http://www.lesnumeriques.com/disque-dur-multimedia/popcorn-hour-300-p12231/test.html
 test_url: https://www.lesnumeriques.com/vpn/echapper-au-fingerprinting-comment-un-vpn-peut-vraiment-faire-la-difference-a237361.html
+test_url: https://www.lesnumeriques.com/cine-svod/apple-tv-prix-abonnements-catalogue-tout-savoir-sur-la-plateforme-de-streaming-n240180.html
