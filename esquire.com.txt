@@ -8,7 +8,7 @@
 
 http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0
 
-body: //main[@id='main-content']/div
+body: //main[@id='main-content']/div | //main[@id='main-content']/header
 title: //meta[@name="title"]/@content
 author: date: substring-before(substring-after(//script[@type="application/ld+json"], '"author":{"name":"'), '",')
 date: date: substring-before(substring-after(//script[@type="application/ld+json"], '"created_at":"'), '",')
@@ -17,16 +17,22 @@ date: date: substring-before(substring-after(//script[@type="application/ld+json
 #body: //div[@id='printBody']
 #single_page_link: concat('https://www.esquire.com/print-this/', substring-after(//link[@rel='canonical']/@href, 'esquire.com/'))
 
-
+strip: //nav
+strip: //address
+strip: //header//h1
+strip: //template
+strip: //next-route-announcer
+strip: //button | //button/following-sibling::ul
 strip: //section[@data-embed="editorial-link"]
 strip: //main[@id='main-content']/div/section
 strip: //div[@id='module-recommended'] | //div[@id='module-recommended']/following-sibling::*
+strip: //div[@data-embed="watch-next"]
+strip: //div[@data-ad-exclude="true"]
 
-# hoped this helps wallabag to prevent error, but did not work yet
-strip: //template
-strip: //next-route-announcer
 strip_id_or_class: gpt-leaderboard-ad
 strip_id_or_class: page-settings
+strip_id_or_class: pinterest
+strip_id_or_class: content-header-actions
 
 # Reduce image size for author images and social media icons
 find_string: class="css-o0wq4v
