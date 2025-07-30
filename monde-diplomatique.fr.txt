@@ -23,7 +23,7 @@ strip: //div[contains(@class, 'dates_auteurs')]
 strip: //div[@class='cartouche']/h1
 strip: //div[@class='cartouche']/p[contains(@class, 'surtitre')]
 
-replace_string(chapo"><p>): chapo"><h5>
+replace_string(chapo"><p>): chapo"><h6>
 
 prune: no
 tidy: no
