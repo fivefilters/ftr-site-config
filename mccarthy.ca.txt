@@ -1,0 +1,8 @@
+body: //div[contains(@class, 'right-content')]
+strip: //div[contains(@class, 'ArticleTemplate_information')]
+strip: //hr[contains(@class, 'Spacer_line')]
+strip: //section[contains(@class, 'SubscriptionCTA')]
+strip: //*[contains(@class, 'sr-only')]
+prune: no
+
+test_url: https://www.mccarthy.ca/en/insights/blogs/ma-and-private-equity-perspectives/the-next-frontier-of-fundraising
