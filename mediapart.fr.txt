@@ -18,6 +18,15 @@ strip_id_or_class: paywall-login
 strip_id_or_class: paywall-message
 strip_id_or_class: paywall_no_variance
 
+strip_id_or_class:  screen-reader-only
+
+# self-hosters of wallabag may activate following line to prevent doubled word at regulart text start (problem with initial)
+# as this is causing problem with other products, standard is de-activated
+#replace_string(<span class="screen-reader-only">): <span class="screen-reader-only"
+
+# [wallabag] inject class 'hljs-strong' to emphasise the lead paragraph
+replace_string(<p class="news__heading__top__intro): <p class="hljs-strong news__heading__top__intro
+
 strip: //button
 
 # prevent wallabag from tinyfying paragraphs
