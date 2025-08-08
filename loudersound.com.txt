@@ -1,0 +1,8 @@
+title: //h1
+
+body: //p[contains(concat(' ',normalize-space(@class),' '),' strapline ')] | //section[contains(concat(' ',normalize-space(@class),' '),' content-wrapper ')]
+
+strip_id_or_class: border-b
+
+test_url: https://www.loudersound.com/bands-artists/i-formed-this-band-for-gods-sake-and-i-helped-roger-a-hell-of-a-lot-because-he-wasnt-a-musician-when-we-started-the-lost-richard-wright-interview
+test_url: https://www.loudersound.com/culture/films-tv-shows/pink-floyd-the-wall
