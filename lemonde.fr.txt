@@ -67,7 +67,7 @@ login_uri: https://secure.lemonde.fr/sfuser/connexion
 login_username_field: email
 login_password_field: password
 
-login_extra_fields: connection[_token]=@=xpath("//form//input[@id='connection__token']", request_html(config.getLoginUri()))
+login_extra_fields: csrf=@=xpath("//form//input[@id='csrf']", request_html(config.getLoginUri()))
 
 not_logged_in_xpath: //section[contains(concat(' ',normalize-space(@class),' '),' paywall__container ')]//p[@class='paywall__login']
 
