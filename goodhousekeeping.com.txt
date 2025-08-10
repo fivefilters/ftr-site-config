@@ -1,0 +1,22 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works WELL with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //main[@id='main-content']//div[contains(@class, 'article-container')]
+
+strip_id_or_class: gpt-leaderboard-ad
+strip_id_or_class: piano-paywall-container
+
+strip: //nav
+strip: //template
+strip: //aside
+strip: //div[contains(text(), 'What to read next')]/parent::div
+
+prune: no
+tidy: no
+
+test_url: https://www.goodhousekeeping.com/uk/lifestyle/a65055308/arcadia-channel-4/
