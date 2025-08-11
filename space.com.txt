@@ -1,0 +1,8 @@
+host: space.com
+
+title: //h1
+author: //div[contains(@class, "byline")]//a | //div[contains(@class, "byline")]//span[contains(@class,"author")]
+date: //div[contains(@class, "byline")]//time/@datetime
+body: //div[@id="article-body"]//p | //h2 | //div[@class="box less-space hero-image-wrapper"] | //p[@class="strapline"] | //figcaption
+
+strip: //p[contains(@class,"fancy-box__body-text")] | //div[contains(@class, "newsletter-form__wrapper newsletter-form__wrapper--inbodyContent")]
