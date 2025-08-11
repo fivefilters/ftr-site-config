@@ -1,0 +1,7 @@
+body: //div[@id="article-body"] | //div[@class="box less-space hero-image-wrapper"]
+
+strip_id_or_class: fancy-box__body-text
+strip_id_or_class: newsletter-form__wrapper
+
+test_url: https://www.space.com/space-25-anniversary-exoplanet-history
+test_url: https://www.space.com/artemis-accords-explained
