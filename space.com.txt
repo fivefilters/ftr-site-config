@@ -1,8 +1,7 @@
-host: space.com
+body: //div[@id="article-body"] | //div[@class="box less-space hero-image-wrapper"]
 
-title: //h1
-author: //div[contains(@class, "byline")]//a | //div[contains(@class, "byline")]//span[contains(@class,"author")]
-date: //div[contains(@class, "byline")]//time/@datetime
-body: //div[@id="article-body"]//p | //h2 | //div[@class="box less-space hero-image-wrapper"] | //p[@class="strapline"] | //figcaption
+strip_id_or_class: fancy-box__body-text
+strip_id_or_class: newsletter-form__wrapper newsletter-form__wrapper--inbodyContent
 
-strip: //p[contains(@class,"fancy-box__body-text")] | //div[contains(@class, "newsletter-form__wrapper newsletter-form__wrapper--inbodyContent")]
+test_url: https://www.space.com/space-25-anniversary-exoplanet-history
+test_url: https://www.space.com/artemis-accords-explained
