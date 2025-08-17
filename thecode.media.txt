@@ -1,0 +1,31 @@
+body: //article[@class='article']/div[@class='container']
+body: //article[@class='article']/div[@class='foo-cntnr']
+
+title: //h1[@class='article__title']
+
+strip_id_or_class: article-info
+strip_id_or_class: table-of-contents-wrp
+strip_id_or_class: table-of-contents
+strip_id_or_class: article-bottom
+strip_id_or_class: article-crumbs
+strip_id_or_class: share
+
+strip: //h1[@class='article__title']
+strip: //div[contains(@class, 'lazyblock-link-aside')]
+strip: //div[contains(@class, 'lazyblock-banner')]
+strip: //div[contains(@class, 'lazyblock-titry')]
+
+## [wallabag] remove literal script code, which has not been removed completely by graby/wallabag
+## e.g. see test_url, the problem is the "Table of Content" part (JavaScript generated)
+strip: //div[contains(@class, 'article-header')]/following-sibling::text()
+strip: //aside/text()
+
+## [wallabag] prevent removing sub-headings
+strip_attr: //h*[contains(@class,'wp-block-heading')]/@class
+
+## [wallabag] prevent indentation. only one of these lines:
+replace_string(class="container): class="foo-cntnr
+
+prune: no
+
+test_url: https://thecode.media/razbiraem-shemy-moshennikov-arbitrazh-kriptovalyuty/
