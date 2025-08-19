@@ -1,0 +1,4 @@
+body: //div[@id="contentDiv"]
+prune: no
+http_header(user-agent): Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:140.0) Gecko/20100101 Firefox/140.0
+test_url: https://www.sec.gov/Archives/edgar/data/1544204/000154420425000003/0001544204-25-000003-index.htm
