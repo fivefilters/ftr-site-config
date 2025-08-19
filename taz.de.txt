@@ -9,7 +9,8 @@ strip: //h1[1]
 
 # replace micro-img with noscipt-img
 strip: //img[contains(@src, '/14/')]
-replace_string(noscript>): div>
+replace_string(<noscript): <div
+replace_string(</noscript>): </div>
 
 # remove blank in meta>og:image>content, which resulted in an empty preview image in wallabag
 replace_string(.jpeg "): .jpeg"
@@ -20,3 +21,4 @@ tidy: no
 test_url: https://taz.de/Italienische-Comicneuheiten/!6041889/
 test_url: https://www.taz.de/!5504959/
 test_url: https://taz.de/!5708122
+test_url: https://taz.de/Ankommen-in-Deutschland-als-Gefluechtete/!6103413/
