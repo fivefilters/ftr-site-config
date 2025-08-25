@@ -1,12 +1,29 @@
-# Images are not loaded, because they are not relative to www.wired.com as claimed in src field of <img>
-
+body: //article[contains(@class, 'main-content')]
+body: //div[contains(@class, 'ArticlePageChunks-fwcPjP')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' ArticlePageContentBackGround-cNiFNN ')]
 body: //div[@id='container']
+
+strip: //aside
 strip: //button
 strip: //div[contains(@class, 'RecircMostPopularWrapper')]
+strip: //header//h1
+strip: //div[@data-testid='ContentHeaderRubric']
+strip: //div[contains(@class, 'SocialIconsWrapper')]
+strip: //div[starts-with(@class, 'AdWrapper')]
+strip: //div[contains(@class, 'ContentAdWrapper')]/parent::div
 
-# [wallabag]: activate sub-headings
+## activate images
+replace_string(<noscript): <div
+replace_string(</noscript): </div
+
+## just for testing, to get sure, wallabag also get's the lead image.
+insert_detected_image: no
+
+## [wallabag]: activate sub-headings
 prune: no
+tidy: no
 
 test_url: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
 test_contains: they are good to their users
+# Images are not loaded in following layout, because the base link is set in body and not in head node
+test_url: https://www.wired.com/2014/09/coupland-bell-labs/
