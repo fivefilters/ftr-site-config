@@ -1,0 +1,8 @@
+body: //main
+
+strip: //header
+strip: //footer
+
+prune: no
+
+test_url: https://earvingad.github.io/posts/headscale/
