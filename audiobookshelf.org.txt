@@ -1,0 +1,10 @@
+body: //article
+title: //article/h1[1]
+
+strip: //div[@class='nuxt-content']/hr[1]
+strip: //a[@aria-hidden="true"]
+strip: //h1/a
+
+prune: no
+
+test_url: https://www.audiobookshelf.org/guides/users/
