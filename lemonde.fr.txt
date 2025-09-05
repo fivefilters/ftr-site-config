@@ -29,6 +29,7 @@ strip: //*[contains(@class, 'comments')]
 
 # Remove "Article réservé aux abonnés"
 strip: //p[@class='article__status']
+strip: //p[@class='ds-article-status ds-article-status--premium']
 
 # Remove "Lecture restreinte Votre abonnement n’autorise pas la lecture de cet article"
 strip: //section[@id='js-capping-old-article']
