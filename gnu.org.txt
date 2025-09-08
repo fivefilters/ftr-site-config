@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' top-level-extent ')]
+prune:no
+
+test_url: https://www.gnu.org/software/bash/manual/bash.html
