@@ -60,8 +60,8 @@ strip: //figure[contains(@id,'gvideo')]
 strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
 
 # Tidy up links
-strip_attr: a@title
-strip_attr: a@target
+strip_attr: //a/@title
+strip_attr: //a/@target
 strip: //span[@class='go-vh' and normalize-space(text())='(öffnet im neuen Fenster)']
 
 
