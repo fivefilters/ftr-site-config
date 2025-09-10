@@ -15,6 +15,7 @@ date: //time
 author: //a[@rel='author']
 
 # Content is here
+body: //main/article
 body: //article
 
 # Fetch full multipage articles
