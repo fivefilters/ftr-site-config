@@ -15,6 +15,7 @@ date: //time
 author: //a[@rel='author']
 
 # Content is here
+body: //main/article
 body: //article
 
 # Fetch full multipage articles
@@ -36,6 +37,7 @@ strip_id_or_class: footer
 strip_id_or_class: job-market
 strip_id_or_class: tags
 strip_id_or_class: topictags
+strip_id_or_class: go-button-bar
 strip: //div[contains(@class, 'authors--withsource')]
 strip: //div[@class='toc']
 strip: //li[not(.//text()[normalize-space()])][not(@class)]
@@ -62,6 +64,7 @@ strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
 # Tidy up links
 strip_attr: //a/@title
 strip_attr: //a/@target
+strip: //svg[contains(@class, 'go-external-link__icon')]
 strip: //span[@class='go-vh' and normalize-space(text())='(öffnet im neuen Fenster)']
 
 
