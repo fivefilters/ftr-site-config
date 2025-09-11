@@ -4,5 +4,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content '
 strip_id_or_class: embed-container
 strip_id_or_class: listplans-shortcode-container
 strip_id_or_class: see-more
+strip_id_or_class: stretched-link-container
+strip_id_or_class: to-read
 
 test_url: https://www.frandroid.com/marques/tesla/770881_tesla-devoile-une-nouvelle-batterie-six-fois-plus-puissante
