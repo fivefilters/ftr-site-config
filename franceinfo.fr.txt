@@ -1,13 +1,21 @@
 body: //main/div[1]/article[1]
 
-strip: //section[@class='social-zone']/self::* | //section[@class='social-zone']/following-sibling::*
-
 strip_id_or_class: if-header-video__title-wrapper
 strip_id_or_class: if-header-video__wrapper-signature
 strip_id_or_class: embed-link
 strip_id_or_class: c-title
 strip_id_or_class: c-time
-#strip_id_or_class: media-info__wrapper
+strip_id_or_class: social-zone
+strip_id_or_class: signature
+strip_id_or_class: same-topic
+strip_id_or_class: shuffle-videos
+strip_id_or_class: video-tunnel-popin
+strip_id_or_class: related-tags
+strip_id_or_class: carousel-skeleton
+strip_id_or_class: same-topic-skeleton
+
+strip: //a[contains(@class, 'media-embed__link')]/parent::div
+
 
 # use images from noscript node, because this is the only source for diagrams
 find_string: <noscript>
@@ -16,6 +24,12 @@ find_string: </noscript>
 replace_string: </div>
 strip_id_or_class: lazyload
 
+# use larger (lead) image from source node [wallabag]
+replace_string(<source type="image/avif"): <img type="image/avif" 
+strip: //picture/img[position() > 1]
+
 prune: no
+tidy: no
 
 test_url: https://www.franceinfo.fr/environnement/biodiversite/protection-des-oceans/unoc-conference-sur-l-ocean/reportage-merous-par-centaines-dialogue-avec-les-pecheurs-la-reserve-marine-de-banyuls-cerbere-un-modele-a-suivre-pour-proteger-la-mer_7273257.html
+test_url: https://www.franceinfo.fr/societe/lgbt/temoignages-pourquoi-ca-serait-a-moi-de-partir-a-la-campagne-les-personnes-lgbt-en-quete-de-visibilite-pour-rompre-l-isolement_7485793.html
