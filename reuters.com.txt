@@ -2,7 +2,7 @@ http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gec
 
 body: //main[@id='main-content']/artcile[1]/div[1]
 
-## [wallabag] prevent indentation. only one of these lines:
+## [wallabag] prevent indentation:
 strip_attr: //div[contains(@class, 'container')]/@class
 
 # Reuters investigates - https://www.reuters.com/investigates/adoption/#article/part1
