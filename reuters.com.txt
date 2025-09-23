@@ -1,3 +1,10 @@
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+
+body: //main[@id='main-content']/artcile[1]/div[1]
+
+## [wallabag] prevent indentation. only one of these lines:
+strip_attr: //div[contains(@class, 'container')]/@class
+
 # Reuters investigates - https://www.reuters.com/investigates/adoption/#article/part1
 body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view ')]
 strip: //aside
