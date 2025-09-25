@@ -1,43 +1,47 @@
 http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
 
-body: //main[@id='main-content']/artcile[1]/div[1]
-
-## [wallabag] prevent indentation:
-strip_attr: //div[contains(@class, 'container')]/@class
-
-# Reuters investigates - https://www.reuters.com/investigates/adoption/#article/part1
-body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view ')]
-strip: //aside
-strip: //header
-strip_id_or_class: article-meta
-strip_id_or_class: related-items
-
-# Reuters news - https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
-body: //div[contains(@class, 'article-body__container_')]
-body: //div[contains(@class, 'article-body__content_')]
-# body: //div[contains(concat(' ',normalize-space(@class),' '),' paywall-article ')]
-strip: //div[contains(@data-testid, 'gallery')]
-
+body: //main[@id='main-content']/article[1]/div[1]
 body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='article-text'] | //div[@class='pageNavigation']
 body: //article[@itemtype="http://schema.org/NewsArticle"]
-strip: //li[@class='next']
-strip: //span[@class='articleLocation']
-prune: no
-tidy: no
+body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view ')]
 
+author: substring-after(//p[@itemprop="author"] , 'By ')
+author: substring-after(//ul[contains(@class, 'article-meta')]//p[@class='byline'] , 'By ')
+date: //time/@datetime
+
+strip_id_or_class: article-meta
+strip_id_or_class: related-items
 strip_id_or_class: related-container
 strip_id_or_class: share-in-article-container
+strip_id_or_class: meta-container
 
+strip: //svg
+strip: //nav
+strip: //aside
+strip: //header
+
+strip: //li[@class='next']
+strip: //span[@class='articleLocation']
 strip: //div[contains(@class, 'registration-prompt')]
 strip: //*[@data-testid="toolbar-container" or @data-testid="ArticleToolbar" or @data-testid="LicenceContentButton" or @data-testid="promo-box" or @data-testid="ResponsiveAdSlot"]
-strip: //svg
 strip: //a//span[contains(., 'opens new tab')]
 strip: //a[contains(@class, 'caption__license')]
 strip: //div[contains(@class, 'author-bio__')]
 strip: //p[contains(@class, '_promo-box_')]
+strip: //div[@data-testid="SocialIcon"]
+strip: //div[@data-testid="AuthorBio"]
+strip: //a[contains(@href, '/about-us/trust-principles')]/parent::*
 
+# activate images in galeries/carousels
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
+
+## [wallabag] prevent indentation:
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]/@class
+
+
+prune: no
+tidy: no
 
 test_url: https://www.reuters.com/world/us/us-attorney-general-garland-confirms-fbi-investigating-trump-2022-08-11/
 
