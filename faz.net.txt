@@ -33,6 +33,9 @@ strip_id_or_class: ArticlePagerTop
 strip_id_or_class: header-detail
 strip_id_or_class: intro-text
 strip: //button[contains(@class,'image-toggle')]
+# Remove section text in header
+strip: //article//header//h2/div[not(contains(@data-external-selector, 'header-title'))]
+
 
 # General cleanup
 strip: //div[@class='clear']
@@ -48,6 +51,7 @@ strip: //aside[contains(concat(' ',normalize-space(@class),' '),' btn ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' meta2 ')]
 strip: //footer
 strip: //aside[@data-external-selector='related-articles']
+strip: //button
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
@@ -70,6 +74,7 @@ strip_id_or_class: cbx-Author-is-in-article-container-info
 strip_id_or_class: BigBox
 strip_id_or_class: upper-toolbar
 strip_id_or_class: print:hidden
+strip_id_or_class: hidden
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
@@ -129,9 +134,7 @@ strip: //footer[@class='tsr-Base_ContentMeta']
 strip_id_or_class: aut-Teaser
 strip_id_or_class: related-articles
 
-# do not strip <button> without deeper definition or we loose new kind of images (2025)
-# e.g. https://www.faz.net/aktuell/politik/kanzler-spricht-im-bundestag-merz-regierungserklaerung-in-zehn-zitaten-110474745.html
-#strip: //button
+
 
 # Try it yourself
 test_url: https://www.faz.net/aktuell/feuilleton/bilder-und-zeiten/lord-byron-in-venedig-als-pilger-popstar-und-poet-19648440.html
