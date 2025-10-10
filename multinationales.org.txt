@@ -1,5 +1,5 @@
 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' main ')] | //div[contains(concat(' ',normalize-space(@class),' '),' notes ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' editorial ')] | //div[contains(concat(' ',normalize-space(@class),' '),' notes ')]
 
 date: //time[@pubdate='pubdate']/@datetime
 
