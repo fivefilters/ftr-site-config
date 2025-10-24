@@ -34,6 +34,10 @@ strip: //p[@class='ds-article-status ds-article-status--premium']
 # Remove "Lecture restreinte Votre abonnement n’autorise pas la lecture de cet article"
 strip: //section[@id='js-capping-old-article']
 
+# Remove "Le titulaire de votre abonnement a mis en pause son abonnement"
+strip_id_or_class: lmd-banners
+strip_id_or_class: js-lmd-banners
+
 # Remove quotes highlighted in articles, doublons with content
 # We use parent::blockquote to avoid a remaining empty blockquote node
 strip: //p[@class='article__quote']/parent::blockquote
