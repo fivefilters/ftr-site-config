@@ -4,6 +4,7 @@
 author: //meta[@name="author"]/@content
 date: //meta[@name="DC.date.issued"]/@content
 
+body: //div[@class='article__main']
 body: //div[@itemprop="articleBody"]
 body: //div[@itemprop="reviewBody"]
 body: //figcaption|//div[@class="img-wrapper"]/noscript/img
@@ -16,4 +17,7 @@ strip: //div[@id="article-top-page-number"]
 strip: //p[starts-with(normalize-space(.), '[')]
 strip: //p[starts-with(normalize-space(.), '+')]
 
-test_url: http://www.cio.com/article/3167845/social-business/5-things-you-need-to-know-about-snap-s-ipo.html
+prune: no
+tidy: no
+
+test_url: https://www.cio.com/article/4079004/microsoft-ends-volume-pricing-potentially-costing-companies-millions.html
