@@ -10,6 +10,10 @@ skip_id_or_class: BorderGrid-cell
 skip_id_or_class: js-repo-nav
 skip_id_or_class: Layout-sidebar
 
+strip: //select-panel
+strip: //dialog
+strip: //dialog-helper
+
 prune: no
 tidy: no
 
