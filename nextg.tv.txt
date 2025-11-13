@@ -60,4 +60,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.hallo-muenchen.de/muenchen/mitte/muenchen-sitzsteine-stachus-brunnen-corona-abstand-polizei-treffpunkt-maerz-mai-91420320.html
+test_url: https://www.nextg.tv/news/oktagon-begeistert-auf-rtl-mma-erreicht-erstmals-deutsches-massenpublikum-94003211.html

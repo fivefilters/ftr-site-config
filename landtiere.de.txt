@@ -60,4 +60,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.hallo-muenchen.de/muenchen/mitte/muenchen-sitzsteine-stachus-brunnen-corona-abstand-polizei-treffpunkt-maerz-mai-91420320.html
+test_url: https://www.landtiere.de/hunde/zu-schwierig-sind-traum-vom-familienhund-rassen-die-fuer-anfaenger-94022587.html

@@ -60,4 +60,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.hallo-muenchen.de/muenchen/mitte/muenchen-sitzsteine-stachus-brunnen-corona-abstand-polizei-treffpunkt-maerz-mai-91420320.html
+test_url: https://www.herbstfest-rosenheim.de/mittendrin/aktuell/herbstfest-rosenheim-2025-veranstalter-ziehen-bilanz-93934469.html

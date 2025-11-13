@@ -60,4 +60,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.hallo-muenchen.de/muenchen/mitte/muenchen-sitzsteine-stachus-brunnen-corona-abstand-polizei-treffpunkt-maerz-mai-91420320.html
+test_url: https://www.homeofsports.de/formel-1/michael-schumacher-crashte-sich-in-die-formel-1-geschichtsbuecher-zr-94036197.html

@@ -1,4 +1,4 @@
-# Author: HolgerAusB  |  Version: 2025-05-11
+# Author: HolgerAusB  |  Version: 2025-11-13
 #
 # to get a source-feed, try to add 'rssfeed.rdf' to the category-URL e.g.
 #    https://www.example.com/hessen/rssfeed.rdf
@@ -22,6 +22,7 @@ strip_id_or_class: id-Article-kicker
 strip_id_or_class: id-AuthorList
 strip_id_or_class: id-Comments
 strip_id_or_class: id-DonaldBreadcrumb
+strip_id_or_class: id-Headline
 strip_id_or_class: id-js-relatedStory
 strip_id_or_class: id-Mediabox-info-el
 strip_id_or_class: id-Recommendation
@@ -59,4 +60,4 @@ strip: //aside[contains(@class,'relatedStories')]
 tidy: no
 prune: no
 
-test_url: https://www.news.bayern/nachrichten/kirchenexperte-leo-xiv-koennte-friedenspapst-werden-zr-93722470.html
+test_url: https://www.news.bayern/nachrichten/bissiger-wels-durfte-geangelt-werden-auch-schuesse-erlaubt-zr-94026357.html
