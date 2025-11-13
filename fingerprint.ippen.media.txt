@@ -1,4 +1,4 @@
-# Author: HolgerAusB  |  Version: 2025-05-11
+# Author: HolgerAusB  |  Version: 2025-11-13
 #
 # This works for any ippen.media website if
 # fingerprinting for ippen.media is activated
@@ -25,6 +25,7 @@ strip_id_or_class: id-Article-kicker
 strip_id_or_class: id-AuthorList
 strip_id_or_class: id-Comments
 strip_id_or_class: id-DonaldBreadcrumb
+strip_id_or_class: id-Headline
 strip_id_or_class: id-js-relatedStory
 strip_id_or_class: id-Mediabox-info-el
 strip_id_or_class: id-Recommendation
@@ -64,3 +65,4 @@ prune: no
 
 test_url: https://www.fr.de/frankfurt/die-nfl-kommt-nach-frankfurt-91329620.html
 test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
+
