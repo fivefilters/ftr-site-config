@@ -1,17 +1,25 @@
 title: //meta[@name='og:title']/@content
-
 author: //meta[@name='author']/@content
-
-body: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-header ')]//*[contains(concat(' ',normalize-space(@class),' '),' td-post-sub-title ')] | //div[contains(concat(' ',normalize-space(@class),' '),' td-post-content ')]
+body: //main/article
 
 strip_id_or_class: send-gift-article-email
 strip_id_or_class: point-final
 strip_id_or_class: at-above-post
 strip_id_or_class: at-below-post
 
-test_url: https://www.mediacites.fr/actu/2017/12/05/lhistoire-de-mediacites-a-laube-de-son-1er-anniversaire/
+strip: //footer
+strip: //blockquote[contains(@class, 'wp-embedded-content')]
 
-# Wallabag-specific login directives (not supported in FTR):
+test_url: https://www.mediacites.fr/decryptage/toulouse/2024/04/22/les-parents-du-college-berthelot-de-toulouse-tirent-la-sonnette-dalarme/
+
+### login only for wallabag, DO NOT paste you credentials here, you need to do this in wallabag's UI
+###
+### If you are subscribing via lapresselibre, please remove or #de-activate the following block AND
+### Login with your browser and find the session-cookie you can put this in here by removing the ""
+### and replace the : with =
+### do NOT log out in your browser, remove cookie there instead if needed.
+# http_header(cookie): wordpress_logged_in_abcd=yourusername%C7_long_hash
+
 requires_login: yes
 login_uri: https://www.mediacites.fr/mon-compte/
 not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' restrictblock ')]
