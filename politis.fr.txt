@@ -1,7 +1,17 @@
-author: //div[contains(concat(' ',normalize-space(@class),' '),' article-author-sign ')]//a[@itemprop='author']
-body://div[contains(concat(' ',normalize-space(@class),' '),' article-text ')]
+body: //main[@id='main']/section[@class='section_top']//div[@class='extrait'] | //main[@id='main']/section[@class='section_content']
 
-test_url: https://www.politis.fr/articles/2018/07/john-coltrane-linfinie-creation-39113/
+author: //a[contains(@href, '/auteurs/')]
+
+strip_id_or_class: gt_abonnement
+strip_id_or_class: bloc_right
+strip_id_or_class: section_best_of
+strip_id_or_class: section_don_politis
+strip_id_or_class: partage_sociaux
+
+strip: //section[@class='section_plus_articles'] | //section[@class='section_plus_articles']/following-sibling::*
+
+## [wallabag] prevent indentation:
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]/@class
 
 # Wallabag-specific login directives (not supported in FTR)
 requires_login: yes
@@ -11,3 +21,4 @@ login_password_field: password
 not_logged_in_xpath: //h6[contains(concat(' ',normalize-space(@class),' '),' register-headline ')]
 
 
+test_url: https://www.politis.fr/articles/2018/07/john-coltrane-linfinie-creation-39113/
