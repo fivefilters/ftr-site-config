@@ -1,7 +1,16 @@
 title: //h1
 author: //a[@class='author']
+body: //artcile[@class='full article']
 
-# wallabag-specific login directives (not supported in FTR)
+
+### login only for wallabag, DO NOT paste you credentials here, you need to do this in wallabag's UI
+###
+### If you are subscribing via lapresselibre, please remove or #de-activate the following block AND
+### Login with your browser and find the session-cookie you can put this in here by removing the ""
+### and replace the : with =
+### do NOT log out in your browser, remove cookie there instead if needed.
+# http_header(cookie): _reflets_session=very_long_hash
+
 requires_login: yes
 
 login_uri: https://reflets.info/users/sign_in
@@ -14,4 +23,5 @@ login_extra_fields: commit=Connexion
 
 not_logged_in_xpath: //div[contains(@class, "warning")]
 
+###
 test_url: https://reflets.info/articles/monetiser-ses-donnees-personnelles-l-arbre-qui-cache-la-foret
