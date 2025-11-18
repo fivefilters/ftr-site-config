@@ -1,3 +1,5 @@
+body: //div[@id='next-single-post']
+body: //article[1]
 body:  //div[@id='article-single']
 title: //h1[@id='single-article-title']
 author: //meta[@name='author']/@content
@@ -36,7 +38,13 @@ tidy: no
 find_string: class="wp-block-heading"
 replace_string: class="wb_foo"
 
-# login only for wallabag, DO NOT paste you credentials here, you need to do this in wallabag's UI
+### login only for wallabag, DO NOT paste you credentials here, you need to do this in wallabag's UI
+###
+### If you are subscribing via lapresselibre, please remove or #de-activate the following block AND
+### Login with your browser and find the session-cookie you can put this in here by removing the ""
+### and replace the : with =
+### do NOT log out in your browser, remove cookie there instead if needed.
+# http_header(cookie): wordpress_logged_in_abcd=yourusername&C7_long_hash
 
 requires_login: yes
 
@@ -54,4 +62,3 @@ test_url: https://next.ink/120832/le-reseau-interministeriel-de-letat-rie-fete-s
 test_url: https://next.ink/127657/edito-limportance-de-bien-citer-et-verifier-ses-sources/
 test_url: https://next.ink/136362/les-ecrans-du-temps-perdu-pour-les-enfants/
 test_url: https://next.ink/143136/planete-9-son-absence-serait-statistiquement-impossible/
-

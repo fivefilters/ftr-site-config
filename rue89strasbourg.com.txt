@@ -1,0 +1,14 @@
+body: //main/figure | //main/div[contains(@class, 'entry-content')]
+author: //meta[@name='author']/@content
+
+strip: //aside
+
+strip_id_or_class: ad-block 
+
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+prune: no
+tidy: no
+
+test_url: https://www.rue89strasbourg.com/methanisation-derogations-epandage-risque-nappes-grand-est-365523
