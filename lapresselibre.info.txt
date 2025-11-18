@@ -4,9 +4,10 @@
 # This only works with wallabagger browser-plugin with activated
 # option 'Retrieve content from the browser' in it's settings
 
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+
 body: //article[@data-cy='article']//div[contains(@class,'article__content-centered')][1]
 
-prune: no
-tidy: no
+single_page_link: //a[contains(@class, 'article-hero__partner-website')]/@href
 
 test_url: https://lapresselibre.info/en/rue89lyon/feminicide-saint-priest-marche-blanche-claudine-prise-conscience
