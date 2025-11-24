@@ -2,9 +2,11 @@ title: substring-before(//meta[@property='og:title']/@content , ' | Aeon')
 body: (//main/div[@class='relative'])[1] | //div[@id='article-content']
 
 strip_id_or_class: no-pagemarks
+strip_id_or_class: NLFormInsertFromCMS
 
 strip: //button
 strip: (//main/div[@class='relative'])[1]//small
+strip: //main/div[contains(@class, 'hidden')]
 
 prune: no
 tidy: no
