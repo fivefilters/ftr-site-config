@@ -1,0 +1,5 @@
+body: //xxx7
+tidy: no
+prune: no
+
+test_url: http://az.lib.ru/s/shepkinakupernik_t_l/text_1910_inesa_di_kastro.shtml
