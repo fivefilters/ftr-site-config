@@ -1,4 +1,4 @@
-body: //section[@id = 'primary']/article/figure | //section[@id = 'primary']//div[contains(concat(' ',normalize-space(@class),' '),' full-article ')]
+body: //section[@id = 'primary']/article//figure | //section[@id = 'primary']//div[contains(concat(' ',normalize-space(@class),' '),' full-article ')]
 author: //dt[normalize-space(.) = 'Auteur']/following-sibling::dd[1]/a[@href]
 
 strip_id_or_class: modal_notes
