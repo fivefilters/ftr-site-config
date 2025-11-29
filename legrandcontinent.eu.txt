@@ -1,16 +1,10 @@
-body: (//article[contains(concat(' ',normalize-space(@class),' '),' post ')])[1]
-author: //meta[@name='author']/@content
+body: //section[@id = 'primary']/article//figure | //section[@id = 'primary']//div[contains(concat(' ',normalize-space(@class),' '),' full-article ')]
+author: //dt[normalize-space(.) = 'Auteur']/following-sibling::dd[1]/a[@href]
 
-# strip (parts) of header, footer, boxes
-strip: //header/h1 | //header/div[1]
-strip: //article/div[contains(@class, '-mt-3 text-center')]
-strip: //dt[contains(text(), 'Auteur')]/ancestor::div[1]
-strip: //a[contains(@class, 'share')]/parent::div
-strip: //section[contains(concat(' ',normalize-space(@class),' '),' dive ')]
-strip_id_or_class: 'comment-block hidden'
 strip_id_or_class: modal_notes
 strip_id_or_class: wider-side
 strip_id_or_class: special-side
+strip_id_or_class: print-block
 
 # iframes are oversized
 strip: //iframe/@width
