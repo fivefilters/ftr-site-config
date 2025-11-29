@@ -1,0 +1,10 @@
+title: substring-before(//meta[@property="og:title"]/@content , ' - Jacob Nordby')
+
+body: //div[@data-elementor-type='wp-post']
+body: //div[contains(@class, 'elementor-widget-theme-post-content')]
+
+prune: no
+tidy: no
+
+test_url: https://www.jacobnordby.com/an-open-letter-to-christians-from-a-former-believer/
+test_url: https://www.jacobnordby.com/rats-in-a-cage-experiment-breaks-our-ideas-of-what-causes-addictive-behavior/
