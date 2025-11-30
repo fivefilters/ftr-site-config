@@ -1,8 +1,13 @@
 body: //div[@id='cmsBody']
 
-next_page_link: //span[@id='next']/a
+next_page_link: //link[@rel="next"]
 
 strip_id_or_class: cmsCopyright
 strip_id_or_class: masterSocialbuttonBtm
 
-test_url: http://www.itmedia.co.jp/enterprise/articles/0912/05/news002.html
+strip: //div[@id="notice"]
+strip: //div[@class="ctrl"]
+strip: //div[@class="cmsUsingAffiliate"]
+
+test_url: https://www.itmedia.co.jp/enterprise/articles/0912/05/news002.html
+test_url: https://www.itmedia.co.jp/pcuser/articles/2401/05/news075.html
