@@ -1,0 +1,21 @@
+author: //meta[@name="writer"]/@content
+
+body: //div[@id="masterContents""]
+
+next_page_link: //link[@rel="next"]
+
+strip: //title
+strip: //div[@id="col200l"]
+strip: //div[@id="cmsDate"]
+strip: //div[@id="MembersOnlyCaution"]
+strip: //div[@id="cmsByline"]
+strip_id_or_class: cmsCopyright
+strip: //div[@id="masterSub"]
+strip: //div[@class="ctrl"]
+strip: //script[@type="module"]
+strip: //div[@id="notice"]
+
+test_url: https://atmarkit.itmedia.co.jp/ait/articles/2511/18/news004.html
+test_url: https://atmarkit.itmedia.co.jp/ait/articles/2511/20/news007.html
+test_url: https://atmarkit.itmedia.co.jp/ait/articles/2508/25/news012.html
+test_url: https://atmarkit.itmedia.co.jp/ait/articles/2511/17/news004.html
