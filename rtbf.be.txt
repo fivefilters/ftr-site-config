@@ -1,7 +1,7 @@
 http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
-title: substring-before(substring-after(//script, 'datePublished":"') , '","')[0]
-date: substring-before(substring-after(//script[@id='__NEXT_DATA__'] , 'updatedAt":"') , '","')[0]
+date: substring-before(substring-after(//script[@type='application/ld+json'][contains(., 'datePublished')], '"datePublished":"'), '"')
+title: //h1[contains(@data-testid, 'title')]
 body: //div[@id="content"]
 
 # Prevents wallabag from indenting the complete text
