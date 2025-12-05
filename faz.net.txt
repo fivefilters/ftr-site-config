@@ -11,7 +11,7 @@ author: //a[@rel='author']
 
 # Set date
 date: //span[@class='Datum']
-date: //span[@class='Datum'],/span
+date: //span[@class='Datum']/span
 
 # Fetch full multipage articles
 #single_page_link: //a[contains(@href, 'printPagedArticle')]

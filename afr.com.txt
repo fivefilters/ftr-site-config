@@ -7,6 +7,6 @@ body: //article[@id='content']
 strip: //button
 strip: //div[contains(@class, '_1kPGP')]
 strip: //div[contains(@data-testid, 'ArticleTags')]
-strip: //div[contains(@data-testid; 'PreFooter')]
+strip: //div[contains(@data-testid, 'PreFooter')]
 
 test_url: https://www.afr.com/companies/financial-services/union-says-sector-wide-bargaining-would-force-cba-and-anz-to-table-20220905-p5bfep

@@ -10,8 +10,8 @@ http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gec
 
 body: //main[@id='main-content']/div | //main[@id='main-content']/header
 title: //meta[@name="title"]/@content
-author: date: substring-before(substring-after(//script[@type="application/ld+json"], '"author":{"name":"'), '",')
-date: date: substring-before(substring-after(//script[@type="application/ld+json"], '"created_at":"'), '",')
+author: substring-before(substring-after(//script[@type="application/ld+json"], '"author":{"name":"'), '",')
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"created_at":"'), '",')
 
 ## Printer friendly page version seems not to exist any longer
 #body: //div[@id='printBody']
