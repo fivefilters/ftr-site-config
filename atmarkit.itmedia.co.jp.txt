@@ -1,6 +1,6 @@
 author: //meta[@name="writer"]/@content
 
-body: //div[@id="masterContents""]
+body: //div[@id="masterContents"]
 
 next_page_link: //link[@rel="next"]
 

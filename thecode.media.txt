@@ -21,7 +21,7 @@ strip: //div[contains(@class, 'article-header')]/following-sibling::text()
 strip: //aside/text()
 
 ## [wallabag] prevent removing sub-headings
-strip_attr: //h*[contains(@class,'wp-block-heading')]/@class
+strip_attr: //*[starts-with(name(), 'h') and contains(@class, 'wp-block-heading')]/@class
 
 ## [wallabag] prevent indentation. only one of these lines:
 replace_string(class="container): class="foo-cntnr
