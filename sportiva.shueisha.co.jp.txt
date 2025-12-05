@@ -1,8 +1,7 @@
+body: //main/article/div[contains(@class, 'c-document')]
+
+next_page_link: //a[contains(@class, 'navi-pager-c__button')]
+
 prune: no
 
-body: //div[@class="c-document c-document--theme-a u--padding-top-20 u--padding-horizontal-20 u--padding-horizontal-10-if-mobile"]
-
-next_page_link: //a[@class="navi-pager-c__button c-button c-button--theme-ghost-m-l"]
-
 test_url: https://sportiva.shueisha.co.jp/clm/motorsports/motorsports/2025/10/03/f1gp_6/
-test_url: https://sportiva.shueisha.co.jp/clm/motorsports/motorsports/2025/12/03/f1gp_7/
