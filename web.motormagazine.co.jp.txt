@@ -1,0 +1,9 @@
+body: //div[contains(@class, "article")]
+
+next_page_link: //a[@class="content-paging-next-block-button"]
+
+strip: //div[@class="content-paging-next-block"]
+strip: //div[contains(@class, "cite-box")]
+
+test_url: https://web.motormagazine.co.jp/_ct/17804185
+test_url: https://web.motormagazine.co.jp/_ct/17772375
