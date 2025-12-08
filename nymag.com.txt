@@ -1,4 +1,4 @@
-title: //meta[@property="og:title"]/@content
+title: //title
 body: //*[@itemprop="articleBody"]
 body: //div[@id='story']
 body: //section[@class='body']
