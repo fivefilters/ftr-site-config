@@ -12,7 +12,7 @@ single_page_link: //a[@id='continue-btn']
 
 # caption clean up
 wrap_in(i)://span[@class='articleImageCaptionwide']
-move_into (//span[@class='articleImageCaptionwide'])://div[@id = 'articleImage']/p
+move_into(//span[@class='articleImageCaptionwide']): //div[@id = 'articleImage']/p
 
 
 # clean up
