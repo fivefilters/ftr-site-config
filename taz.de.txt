@@ -1,19 +1,32 @@
-body: //article[1]
+# no images in wallabag because of it's strip empty nodes and
+# taz's illegal use of a closing </img> within noscript tag
+
+body: //main/section[1]/article[1]
+title: //article[1]/h2[1]
 
 strip_id_or_class: tzi-bottom-container
 strip_id_or_class: author-container
 strip_id_or_class: meta-data-container
 strip_id_or_class: is-hidden
+strip_id_or_class: tzi-bottom-container
 
 strip: //h1[1]
+strip: //article[1]/h2[1]
+strip: //button
+strip: //aside
 
 # replace micro-img with noscipt-img
 strip: //img[contains(@src, '/14/')]
-replace_string(<noscript): <div
-replace_string(</noscript>): </div>
+replace_string(noscript>): div>
 
 # remove blank in meta>og:image>content, which resulted in an empty preview image in wallabag
 replace_string(.jpeg "): .jpeg"
+
+
+# Replacing the large, special-font quotation mark with a ✱
+# and (for wallabag only) wrap that section into a blockquote
+replace_string(&#xE80F): ✱
+wrap_in(blockquote): //div[normalize-space(text())='✱']/ancestor::section[1]
 
 prune: no
 tidy: no
@@ -21,4 +34,3 @@ tidy: no
 test_url: https://taz.de/Italienische-Comicneuheiten/!6041889/
 test_url: https://www.taz.de/!5504959/
 test_url: https://taz.de/!5708122
-test_url: https://taz.de/Ankommen-in-Deutschland-als-Gefluechtete/!6103413/
