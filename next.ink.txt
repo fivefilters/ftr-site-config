@@ -2,7 +2,7 @@ body: //div[@id='next-single-post']
 body: //article[1]
 body:  //div[@id='article-single']
 title: //h1[@id='single-article-title']
-author: //meta[@name='author']/@content
+author: normalize-space(//p[contains(@class, 'next-list-author')]//a[@class='next-post-author'])
 
 strip: //div[contains(@class, 'thumbnail-mobile')]
 strip: //div[contains(@class, 'article-header')]/h1
