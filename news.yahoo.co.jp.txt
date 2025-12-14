@@ -1,0 +1,15 @@
+tidy: no
+prune: no
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article_body ')]
+body: //div[@data-ual-view-type="detail"]
+
+title: substring-before(//meta[@property='og:title']/@content , ' - Yahoo!ニュース')
+
+next_page_link: //a[@data-cl-params="_cl_vmodule:detail;_cl_link:prgrph;"] | //a[@data-cl-params="_cl_vmodule:page;_cl_link:next;"]
+
+test_url: https://news.yahoo.co.jp/articles/6a461f63bef4fe1b6f994d822b75869142f9e856
+test_url: https://news.yahoo.co.jp/articles/1092e226a2d958a11f89cff51519680743674e23
+test_url: https://news.yahoo.co.jp/articles/285231e51d5f93d629f6434ec8658db1fc730473?page=1
+test_url: https://news.yahoo.co.jp/expert/articles/17056029902372fe6e297e7801dfb913b3f45f1e
+test_url: https://news.yahoo.co.jp/articles/e0a4d94cf10d8ed820b22d7431aa3946a2b3c763?page=1
