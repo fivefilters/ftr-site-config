@@ -1,0 +1,24 @@
+title: //div[@id='articleHead']//h1
+date: substring-before(substring-after(//script[contains(text(), 'OpnDate')][1], "'OpnDate':'"),"',")
+author: //p[contains(concat(' ',normalize-space(@class),' '),' author ')]
+
+body: //div[@id='contents_detail']
+
+next_page_link: //link[@rel="next"]
+next_page_link: //div[@class="pages"]/a[contains(text(),"次へ")]
+
+strip_id_or_class: relatedarticle
+strip_id_or_class: serial
+strip_id_or_class: artsCont
+strip_id_or_class: returnCat
+
+# below replace rule for displaying the pictures
+find_string: <div class="photo single">
+replace_string: <div dummyclass="photo single">
+
+tidy: no
+
+test_url: https://ascii.jp/elem/000/004/350/4350373/
+test_url: https://ascii.jp/limit/group/ida/elem/000/004/353/4353258/
+test_url: https://ascii.jp/elem/000/004/353/4353850/?crank&rank=1
+test_url: https://ascii.jp/elem/000/004/340/4340906/
