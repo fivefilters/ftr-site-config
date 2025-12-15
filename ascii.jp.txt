@@ -1,9 +1,8 @@
-title: /html/body/div[1]/div/main/div[1]/div[2]/h1|/html/body/div[1]/div[2]/div[1]/div[3]/h1
+title: //div[@id='articleHead']//h1
 
 author: //p[contains(concat(' ',normalize-space(@class),' '),' author ')]
 
 body: //div[@id='contents_detail']
-date: translate(substring-before(substring-after(substring-after(//script[contains(text(), 'OpnDate')][1], 'OpnDate'),':'), ','), "'",'')
 
 next_page_link: //link[@rel="next"]
 next_page_link: //div[@class="pages"]/a[contains(text(),"次へ")]
