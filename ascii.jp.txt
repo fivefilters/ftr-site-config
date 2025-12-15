@@ -1,5 +1,5 @@
 title: //div[@id='articleHead']//h1
-
+date: substring-before(substring-after(//script[contains(text(), 'OpnDate')][1], "'OpnDate':'"),"',")
 author: //p[contains(concat(' ',normalize-space(@class),' '),' author ')]
 
 body: //div[@id='contents_detail']
