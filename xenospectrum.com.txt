@@ -1,0 +1,9 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | XenoSpectrum')
+
+strip: //hr[contains(@class, "wp-block-separator")]
+strip_id_or_class: wp-block-list
+strip: //div[contains(@class, "addtoany_content")]
+strip: //div[contains(@class, "xenos-adlabel")]
+strip: //strong[contains(., 'Sources')]
+
+test_url: https://xenospectrum.com/zhonghao-xinying-tpu-vs-nvidia-a100-google-engineer-china-chip/
