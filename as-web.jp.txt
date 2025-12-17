@@ -1,0 +1,3 @@
+prune: no
+
+test_url: https://www.as-web.jp/f1/1275289
