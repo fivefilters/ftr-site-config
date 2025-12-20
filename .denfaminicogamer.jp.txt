@@ -1,0 +1,7 @@
+body:  //article
+
+strip_id_or_class: azl
+strip_id_or_class: postTags
+strip_id_or_class: affiliate-note
+
+test_url: https://news.denfaminicogamer.jp/news/251219o
