@@ -15,6 +15,9 @@ strip: //div[@class="ctrl"]
 strip: //script[@type="module"]
 strip: //div[@id="notice"]
 
+replace_string(<h2): <h3
+replace_string(</h2>): </h3>
+
 test_url: https://atmarkit.itmedia.co.jp/ait/articles/2511/18/news004.html
 test_url: https://atmarkit.itmedia.co.jp/ait/articles/2511/20/news007.html
 test_url: https://atmarkit.itmedia.co.jp/ait/articles/2508/25/news012.html

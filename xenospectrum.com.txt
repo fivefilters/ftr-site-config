@@ -6,4 +6,7 @@ strip: //div[contains(@class, "addtoany_content")]
 strip: //div[contains(@class, "xenos-adlabel")]
 strip: //strong[contains(., 'Sources')]
 
+replace_string(<h2 class="wp-block-heading">): <h3>
+replace_string(</h2>): </h3>
+
 test_url: https://xenospectrum.com/zhonghao-xinying-tpu-vs-nvidia-a100-google-engineer-china-chip/
