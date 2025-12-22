@@ -8,7 +8,7 @@ strip_id_or_class: notice
 strip_id_or_class: ctrl
 strip_id_or_class: cmsUsingAffiliate
 
-toce_string(<h2): <h3
+replace_string(<h2): <h3
 replace_string(</h2>): </h3>
 
 test_url: https://www.itmedia.co.jp/enterprise/articles/0912/05/news002.html
