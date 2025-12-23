@@ -38,7 +38,6 @@ strip: //h1[1]
 strip: //div[@aria-label='Sponsored Offers']
 strip: //div[@aria-label='What to Read Next']
 strip: //div[@aria-label='Utility Bar']
-strip: //div[@data-type='inset']
 strip: //iframe
 
 
