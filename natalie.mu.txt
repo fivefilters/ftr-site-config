@@ -1,0 +1,10 @@
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified')
+
+body: //article[@class="NA_article"]
+
+strip: //p[@class="NA_article_gallery_title"]
+strip_id_or_class: NA_article_embed_article_title
+strip_id_or_class: NA_accordion
+strip_id_or_class: NA_article_item
+
+test_url: https://natalie.mu/eiga/news/652778
