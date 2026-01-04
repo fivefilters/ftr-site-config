@@ -1,0 +1,4 @@
+title: //main/section/hgroup/h1
+body: //section[@class='blog']
+
+test_url: https://standardebooks.org/blog/public-domain-day-2026
