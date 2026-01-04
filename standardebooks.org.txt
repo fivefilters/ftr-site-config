@@ -1,4 +1,11 @@
 title: //main/section/hgroup/h1
 body: //section[@class='blog']
 
+# remove link to 'Blog' and adv
+strip: //nav
+strip: //aside
+
+# [wallabag] activate images by removing <source> nodes from <picture>
+strip: //img/parent::picture/source
+
 test_url: https://standardebooks.org/blog/public-domain-day-2026
