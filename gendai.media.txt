@@ -1,0 +1,13 @@
+title: substring-before( //title/text() , '| ' )
+body: //div[contains(concat(' ',normalize-space(@class),' '),' gendai-articleContents ')]
+
+next_page_link: //a[@data-testid="pagination-next-page-link"]
+
+strip: //figcaption
+strip: //a[contain(@class, "text-sm")]
+
+replace_string(h2>): h3>
+
+test_url: https://gendai.media/articles/-/160916
+test_url: https://gendai.media/articles/-/151783
+test_url: https://gendai.media/articles/-/160153

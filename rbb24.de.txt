@@ -1,4 +1,4 @@
-author: substring(//div[@class='shorttext']//p//i), 5)
+author: substring(//div[@class='shorttext']//p//i, 5)
 title: //article//h3
 
 skip_json_ld: true

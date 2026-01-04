@@ -11,7 +11,7 @@ author: //a[@rel='author']
 
 # Set date
 date: //span[@class='Datum']
-date: //span[@class='Datum'],/span
+date: //span[@class='Datum']/span
 
 # Fetch full multipage articles
 #single_page_link: //a[contains(@href, 'printPagedArticle')]
@@ -134,6 +134,10 @@ strip: //footer[@class='tsr-Base_ContentMeta']
 strip_id_or_class: aut-Teaser
 strip_id_or_class: related-articles
 
+# 2025-12 fix for new design
+strip_attr: //div[contains(@class,'grid')]/@class
+strip_attr: //img[contains(@class, 'lazyload')]/@class
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' intro ')]
 
 
 # Try it yourself
@@ -144,3 +148,4 @@ test_url: http://www.faz.net/aktuell/politik/inland/allensbach-analyse-im-namen-
 test_url: http://www.faz.net/aktuell/feuilleton/kino/video-filmkritiken/video-filmkritik-when-animals-dream-zerrissene-jugend-13105772.html
 test_url: https://www.faz.net/aktuell/feuilleton/debatten/keine-smart-city-in-toronto-google-stadt-ist-abgesagt-16763217.html?GEPC=s5
 test_url: https://www.faz.net/aktuell/wirtschaft/wohnen/christian-voelkers-der-immobilienmakler-der-superreichen-17778869.html
+test_url: https://www.faz.net/aktuell/stil/mode-design/100-geburtstag-von-hildegard-knef-wie-der-fotograf-walter-sanders-sie-portraetierte-200391804.html
