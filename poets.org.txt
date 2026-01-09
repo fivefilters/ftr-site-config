@@ -1,0 +1,6 @@
+author: //main/div/div//div[@itemprop='author']//a
+
+# [FTR/P2K] pevent using a generic site image
+insert_detected_image: no 
+
+test_url: https://poets.org/poem/queer-trivia-night
