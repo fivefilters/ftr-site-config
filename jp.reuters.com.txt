@@ -1,0 +1,5 @@
+body: //div[@data-testid="ArticleBody"]
+
+strip: //p[@data-testid="Body"]
+
+test_url: https://jp.reuters.com/markets/commodities/RPRRV7HBKFNNXHMR5LCEATRUPA-2026-01-08/
