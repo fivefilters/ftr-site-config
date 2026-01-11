@@ -1,4 +1,4 @@
-body: //div[@class='article-page']//p[@class='amorce'] | //div[@class='article-page']//div[contains(@class, 'entry')]
+body: //div[@class='articleBody'] | //div[@class='article-page']//p[@class='amorce'] | //div[@class='article-page']//div[contains(@class, 'entry')]
 author: //div[@class='infosAuteur']  | //span[contains(@class,'authorModule__name')]
 # [wallabag] can't match on span nodes
 author: substring-before(//div[contains(concat(' ',normalize-space(@class),' '),' author ')] , ' LA PRESSE')
@@ -16,3 +16,4 @@ test_url: http://www.lapresse.ca/le-soleil/vivre-ici/la-science-au-quotidien/201
 test_url: https://www.lapresse.ca/actualites/politique/2024-11-21/mesures-du-gouvernement-trudeau/un-conge-de-tps-cet-hiver-et-un-cheque-de-250-au-printemps.php
 test_url: https://www.lapresse.ca/actualites/2025-06-14/planification-des-coupes-forestieres/le-forestier-en-chef-du-quebec-vise-par-une-demande-d-enquete.php
 test_url: https://www.lapresse.ca/actualites/sciences/2025-08-02/l-a-b-c-d-une-bombe-atomique.php
+test_rul: https://www.lapresse.ca/actualites/chroniques/2026-01-10/je-souhaite-que-donald-passe-de-duck-a-cormoran.php
