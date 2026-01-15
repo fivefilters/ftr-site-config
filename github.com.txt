@@ -20,4 +20,5 @@ prune: no
 tidy: no
 
 test_url: https://github.com/wallabag/wallabag
+test_url: https://github.com/wallabag/wallabag/releases/tag/2.6.14
 test_url: https://github.com/wallabag/wallabag/wiki/Auto%E2%80%90Updating-wallabag's-site%E2%80%90depended-config
