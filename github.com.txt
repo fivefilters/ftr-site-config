@@ -5,7 +5,7 @@ date: //*[@data-testid='latest-commit-details']//relative-time/@datetime
 body: //div[@id='wiki-body']
 body: //*[@itemprop='text'][ancestor::*[@itemscope][1][@itemtype='http://schema.org/SoftwareSourceCode']]
 body: //article[1]
-body: div[data-test-selector='body-content']
+body: //div[@data-test-selector='body-content']
 
 skip_id_or_class: BorderGrid-cell
 skip_id_or_class: js-repo-nav
