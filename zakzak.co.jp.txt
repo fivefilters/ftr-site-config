@@ -1,0 +1,24 @@
+title: //h1[@class="article-headline"]
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' article-wrapper ')]
+
+next_page_link: //img[@alt="次ページ"]/../@href
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' article-header ')]
+strip_id_or_class: breadcrumb
+strip_id_or_class: youtube-induction-text
+strip_id_or_class: article-header__meta
+strip_id_or_class: article-authors
+
+# remove `; container.appendChild(wrapper); }); ]]>
+replace_string(container.appendChild(wrapper);):
+replace_string(`;):
+replace_string(});):
+replace_string(<![CDATA[): _
+replace_string(]]>): _
+
+prune: no
+tidy: no
+
+test_url: https://www.zakzak.co.jp/article/20221117-P7W3C7KITVOMLA5MKJVY3RH73I/
+test_url: https://www.zakzak.co.jp/article/20251218-OOOZDYAJIBEWPF4LAAJKILXCEA/
