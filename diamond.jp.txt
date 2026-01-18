@@ -1,0 +1,5 @@
+body: //section[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+next_page_link: //a[@id="next-article"]
+
+test_url: https://diamond.jp/articles/-/340333
