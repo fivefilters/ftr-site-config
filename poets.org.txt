@@ -1,6 +1,24 @@
+body: //main//article
+date: //meta[@property='og:updated_time']/@content
 author: //main/div/div//div[@itemprop='author']//a
+
+strip: //button
+strip: //a[@data-byline-author-name]/parent::div
+
+strip_id_or_class: add-to-anthology-modal
+strip_id_or_class: poem__title
+strip_id_or_class: poem-actions
+strip_id_or_class: field--field_poem_themes
+
+# [wallabag] strip attr class="card" to prevent drawing a card box
+strip_attr: //article/@class
 
 # [FTR/P2K] pevent using a generic site image
 insert_detected_image: no 
 
+
+prune: no
+tidy: no
+
 test_url: https://poets.org/poem/queer-trivia-night
+test_url: https://poets.org/poem/i-decide-tell-ghost-cowboy-my-intentions
