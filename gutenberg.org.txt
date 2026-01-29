@@ -6,4 +6,4 @@ prune: no
 tidy: no
 
 test_url: https://www.gutenberg.org/cache/epub/57333/pg57333-images.html
-test_url: https://www.gutenberg.org/ebooks/76382
+test_url: https://www.gutenberg.org/cache/epub/76382/pg76382-images.html
