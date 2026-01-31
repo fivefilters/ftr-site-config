@@ -2,7 +2,7 @@ http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.goo
 
 date: substring-before(substring-after(//script[@type='application/ld+json'][contains(., 'datePublished')], '"datePublished":"'), '"')
 title: //h1[contains(@data-testid, 'title')]
-body: //div[@id="content"]
+body: //p[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')] | //div[@id="content"]
 
 # Prevents wallabag from indenting the complete text
 find_string: <div class="container
