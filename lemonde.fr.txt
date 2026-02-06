@@ -52,7 +52,7 @@ strip_id_or_class: reuse__content
 
 # Remove the insane "conjugaison.lemonde.fr" links:
 find_string: <a target='_blank' onclick='return false;' class='lien_interne conjug'
-replace_string: <input type='hidden' style='display:none;' 
+replace_string: <input type='hidden' style='display:none;'
 
 # Remove the insane cross-linking categories "Toute l’actualité"
 find_string: <a class="lien_interne rub"
@@ -72,7 +72,7 @@ login_uri: https://secure.lemonde.fr/sfuser/connexion
 login_username_field: email
 login_password_field: password
 
-login_extra_fields: csrf=@=xpath("//form//input[@id='csrf']", request_html(config.getLoginUri()))
+login_extra_fields: csrf=@=xpath("//form//input[@id='csrf']", request_html("https://secure.lemonde.fr/sfuser/connexion"))
 
 not_logged_in_xpath: //section[contains(concat(' ',normalize-space(@class),' '),' paywall__container ')]//p[@class='paywall__login']
 
@@ -85,4 +85,3 @@ test_url: https://www.lemonde.fr/pixels/article/2018/07/14/douze-jeux-video-pour
 test_url: https://www.lemonde.fr/sante/video/2016/04/07/diabete-pourquoi-une-telle-progression-de-l-epidemie_4898147_1651302.html
 test_url: https://www.lemonde.fr/pixels/article/2023/12/20/manettes-de-playstation-sony-condamne-a-13-5-millions-d-euros-d-amende-pour-des-pratiques-anticoncurrentielles_6206941_4408996.html
 test_url: https://www.lemonde.fr/planete/article/2024/02/29/contre-le-frelon-asiatique-les-apiculteurs-appellent-a-la-mobilisation-generale_6219215_3244.html
-
