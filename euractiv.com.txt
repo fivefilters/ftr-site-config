@@ -4,5 +4,7 @@
 
 strip_id_or_class: ea-own-embed
 
-body: //div[contains(concat(' ',normalize-space(@class),' '),' ea-article-body-content ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' c-news-detail__content ')]
+author: //a[@rel='author']/@content
+date: //div[contains(concat(' ',normalize-space(@class),' '),' c-news-detail__footer-time ')]//time[0]
 test_url: https://www.euractiv.com/section/economy-jobs/video/unlocking-the-benefits-of-diversity-in-the-workplace/
