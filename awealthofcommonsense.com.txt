@@ -1,0 +1,14 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+
+body: //div[@class='inner-main']/article[1]
+title: substring-before(//meta[@property='og:title']/@content , ' - A Wealth of Common Sense')
+date: //time/@datetime
+author: //a[contains(@href, '/author/')]
+
+strip: //header
+strip: //footer
+
+prune: no
+tidy: no
+
+test_url: https://awealthofcommonsense.com/2025/11/what-if-things-are-better-than-they-seem/

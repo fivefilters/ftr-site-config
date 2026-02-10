@@ -1,0 +1,5 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | 毎日新聞')
+
+strip_id_or_class: ad-articledetail-2
+
+test_url: https://mainichi.jp/articles/20251122/k00/00m/010/037000c

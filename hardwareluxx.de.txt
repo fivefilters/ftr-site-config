@@ -1,19 +1,13 @@
 tidy: no
 prune: no
 
-title: (//span[@itemprop='title'])[last()]
-author: //span[@itemprop='author']//span[@itemprop='name']
-body: //article
-date: //time
+title: //h1/p[contains(@itemprop,'headline')]
+author: //meta[@name='author']/@content
+body: //div[@id='maincontent']
+date: //time/@datetime
 
-strip: //header
-strip: //div[@id='bcr']
-strip: //footer
-strip: //section
-strip: //figure[@class='dynbench']
-strip: //div[@class='pagenavbar']
-
-next_page_link: //span[@class='next']/a
+next_page_link: //a[@rel='next']
 
 test_url: http://www.hardwareluxx.de/index.php/news/allgemein/netzpolitik/35169-creator-space-youtube-eroeffnet-neues-studio-in-berlin.html
 test_url: http://www.hardwareluxx.de/index.php/artikel/hardware/komplettsysteme/35020-caseking-king-mod-titan-oc-gaming-pc-im-test.html
+test_url: https://www.hardwareluxx.de/index.php/artikel/hardware/komplettsysteme/67554-asus-rog-nuc-15-im-test.html

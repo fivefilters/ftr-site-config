@@ -1,0 +1,7 @@
+date: //time/@datetime
+title: substring-before(//title , ' · Dan Cătălin Burzo')
+
+prune: no
+tidy: no
+
+test_url: https://danburzo.ro/http-caching-refresher/

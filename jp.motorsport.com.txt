@@ -1,0 +1,5 @@
+strip_id_or_class: relatedContent
+strip_id_or_class: text-body-lg
+strip: //p[contains(@class, "mt-1")]
+
+test_url: https://jp.motorsport.com/super-formula/news/sf-r12-kobayashi-on-2026-season/10779252/#goog_rewarded

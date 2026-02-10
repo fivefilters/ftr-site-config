@@ -1,0 +1,11 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' header ')] | //div[contains(@class, 'content-block-container')]
+
+test_url: https://www.spacex.com/updates

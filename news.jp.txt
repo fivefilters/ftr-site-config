@@ -1,0 +1,5 @@
+body:  //div[@class="nordot-body"]
+
+title: substring-before(//meta[@property='og:title']/@content , ' | NEWSjp')
+
+test_url: https://news.jp/i/1364403662903378547?c=768367547562557440

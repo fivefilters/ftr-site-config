@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post__content ')]
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' callout ')]
+strip: //*[contains(concat(' ',normalize-space(@class),' '),' is-hidden ')]
+prune: no
+
+test_url: https://community.lucid.co/product-updates/lucid-admin-panel-release-notes-q4-2024-10856

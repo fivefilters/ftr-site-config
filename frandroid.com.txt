@@ -6,5 +6,7 @@ strip_id_or_class: listplans-shortcode-container
 strip_id_or_class: see-more
 strip_id_or_class: stretched-link-container
 strip_id_or_class: to-read
+strip_id_or_class: article-footer
+strip_id_or_class: article-footer__related-posts
 
 test_url: https://www.frandroid.com/marques/tesla/770881_tesla-devoile-une-nouvelle-batterie-six-fois-plus-puissante

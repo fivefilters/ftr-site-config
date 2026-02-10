@@ -1,4 +1,4 @@
-body: //div[contains(@class, 'dk-entry__body)]
+body: //div[contains(@class, 'dk-entry__body')]
 author: //meta[@property="author"]/@content
 title: //meta[@property="og:title"]/@content
 

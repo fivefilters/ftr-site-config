@@ -1,0 +1,6 @@
+title: substring-before(//title, '/朝日税理士法人')
+
+strip: //h3[contains(.,  'カテゴリー')]
+strip: //h3[contains(.,  '月別アーカイブ')]
+
+test_url: https://www.taxacc.jp/blog/202512/

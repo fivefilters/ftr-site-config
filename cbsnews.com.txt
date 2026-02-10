@@ -1,8 +1,10 @@
 date: //meta[@name="published"]/@content
 date: //div[@class="timeLine"]
 title: //div[@id='contentBody']//h1
+title: //h1[@class="content__title"]
 author: //dl[@class="storyBlogByline"]/dd/a
 body: //div[@id='storyMediaBox'] | //div[contains(@class, 'storyText')]
+body: //section[@class="content__body"]
 
 # Content Pruning
 strip: //div[@class="scrollingArrows"]
@@ -10,6 +12,13 @@ strip: //div[@class="timeLine"]
 strip: //dl[@class="storyBlogByline"]
 strip: //span[@class='image-credit']
 
+strip: //div[@class="content__google"]
+strip: //footer[@class='content__footer']
+strip: //aside[@class="recirculation"]
+
 prune: no
 
 test_url: http://www.cbsnews.com/8301-201_162-57366361/rescued-americans-dad-proud-of-the-u.s/
+
+test_url: https://www.cbsnews.com/news/drunken-raccoon-virginia-liquor-store-bathroom-floor/
+test_contains: He fell through one of the ceiling tiles and went on a full-blown rampage, drinking everything.

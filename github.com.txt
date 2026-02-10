@@ -1,17 +1,24 @@
-title: //article[contains(concat(' ',normalize-space(@class),' '),' markdown-body ')]//h1
-author: //a[contains(concat(' ',normalize-space(@class),' '),' fn ')]
-date: //div[contains(concat(' ',normalize-space(@class),' '),' Details ')]//relative-time
+title: //div[@id='wiki-wrapper']//h1
+title: //*[@itemprop='text'][ancestor::*[@itemscope][1][@itemtype='http://schema.org/SoftwareSourceCode']]//h1
+date: //*[@data-testid='latest-commit-details']//relative-time/@datetime
 
 body: //div[@id='wiki-body']
-body: //div[contains(concat(' ',normalize-space(@class),' '),' Box-body ')]
+body: //*[@itemprop='text'][ancestor::*[@itemscope][1][@itemtype='http://schema.org/SoftwareSourceCode']]
 body: //article[1]
+body: //div[@data-test-selector='body-content']
 
 skip_id_or_class: BorderGrid-cell
 skip_id_or_class: js-repo-nav
 skip_id_or_class: Layout-sidebar
 
+strip: //select-panel
+strip: //dialog
+strip: //dialog-helper
+strip: //*[local-name()='svg'][@aria-hidden]
+
 prune: no
 tidy: no
 
 test_url: https://github.com/wallabag/wallabag
+test_url: https://github.com/wallabag/wallabag/releases/tag/2.6.14
 test_url: https://github.com/wallabag/wallabag/wiki/Auto%E2%80%90Updating-wallabag's-site%E2%80%90depended-config

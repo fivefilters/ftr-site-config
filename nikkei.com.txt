@@ -1,0 +1,10 @@
+body: //section[@class='container_campx13']
+body: //main/article[1]/section[1]
+
+title: substring-before(//meta[@property='og:title']/@content , ' - 日本経済新聞')
+
+strip: //div[@data-rn-inview-track="article-link"]
+strip: //div[@class="container_cck592u"]
+
+test_url: https://www.nikkei.com/article/DGXZQOGM054980V01C25A1000000/
+test_url: https://www.nikkei.com/article/DGXZQOUB1444Y0U5A111C2000000/

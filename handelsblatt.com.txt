@@ -20,7 +20,7 @@ strip_id_or_class: authors
 strip_id_or_class: source
 strip_id_or_class: kicker
 strip_id_or_class: headline
-app-storyline-teaser
+strip: //app-storyline-teaser
 strip: //app-toolbar
 strip: //button
 strip: //app-storyline-related-topics

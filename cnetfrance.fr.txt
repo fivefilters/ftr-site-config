@@ -1,5 +1,5 @@
 title: //h1
-body: //header/p/text() | //div[concat(' ',normalize-space(@class), ' '), ' article-main-body ')]
+body: //header/p/text() | //div[contains(@class, 'article-content')]
 strip: //header/div[@id="article-info"]
 strip: //div[@class="nr_title"]
 strip: //div[@id="livefyreContainer"]

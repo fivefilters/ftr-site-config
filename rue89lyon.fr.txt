@@ -1,0 +1,14 @@
+body: //main/figure | //main/div[contains(@class, 'entry-content')]
+author: //meta[@name='author']/@content
+
+strip: //aside
+
+strip_id_or_class: ad-block 
+
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+prune: no
+tidy: no
+
+test_url: https://www.rue89lyon.fr/2025/11/06/lyon-extreme-droite-et-wauquiez-veulent-encore-la-peau-de-lantifa-fest/
