@@ -1,4 +1,4 @@
-body: //article[@role='article']/div[@class='content']
+body: //section[@data-title="Content"]
 author: //meta[@name="cXenseParse:author" and not(@content="")]/@content
 date: //meta[@name="cXenseParse:recs:publishtime"]/@content
 
