@@ -7,7 +7,7 @@ strip_id_or_class: h1--page-title
 strip_id_or_class: layout__region--second
 strip_id_or_class: referenced-card
 strip_id_or_class: newsletter-widget-subscription-main
-strip_id_or_class: ubscription-newspick
+strip_id_or_class: subscription-newspick
 strip_id_or_class: hidden
 
 strip: //section[contains(@data-title, 'Text to speech')]
