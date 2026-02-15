@@ -1,0 +1,7 @@
+body: //main[@id="main-content"]//article
+
+strip_id_or_class: devsite-sidebar
+strip_id_or_class: nocontent
+strip: //*[@role="navigation"]
+
+test_url: https://docs.cloud.google.com/chronicle/docs/secops/release-notes
