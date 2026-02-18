@@ -1,3 +1,8 @@
+title: //h1[contains(@class, "article-title")]
+body: //div[contains(@class, "content-wrapper")]
+author: //div[contains(@class, "article-header-wrapper")]//a[@class="byline-link"]/text()
+date: //div[contains(@class, "article-header-wrapper")]//time/@datetime
+
 strip_id_or_class: tracking-wider
 
 test_url: https://futurism.com/the-byte/china-ai-prosecutor-crimes
