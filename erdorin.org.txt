@@ -1,0 +1,10 @@
+title: //h1
+body: //div[contains(@class,'post-header')] | //div[contains(@class,'featured-media')] | //div[contains(@class,'post-content')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' post-author-content ')]//h4
+date: //p[contains(concat(' ',normalize-space(@class),' '),' post-date ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' robots-nocontent ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' sharedaddy ') and (contains(concat(' ',normalize-space(@class),' '),' sd-block '))]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ata_snippets ')]
+
+test_url: https://erdorin.org/slayer-reign-in-blood/
