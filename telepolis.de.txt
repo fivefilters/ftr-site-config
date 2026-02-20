@@ -2,9 +2,13 @@
 # while telepolis.de does not need that much tweaking
 
 author: //meta[@name='author']/@content
+body: //p
+title: //h1
+date: //time/@datetime
 
 strip_id_or_class: printversion__back-to-article
 strip_id_or_class: printversion__logo
+strip: //figure
 
 strip: //nav
 
