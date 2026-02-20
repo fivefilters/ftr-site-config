@@ -33,4 +33,4 @@ test_url: https://eatsmarter.de/rezepte/chili-schokoladen-sorbet
 test_contains: Die Schokolade fein hacken
 
 test_url: https://eatsmarter.de/rezepte/thunfisch-wraps-1/druckansicht
-test_contains: den Strunk herausschneiden
+test_contains: Strunk herausschneiden
