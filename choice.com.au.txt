@@ -5,7 +5,7 @@
 body: //main
 title: //h1
 author: //span[@class='author-name']
-date://div[@class='article-date']
+date: //meta[@property="article:published_time"]/@content
 
 prune: no
 strip_id_or_class: breadcrumbs
