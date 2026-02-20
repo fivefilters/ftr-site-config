@@ -1,5 +1,5 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' post__content ')]
-strip: //section[contains(concat(' ',normalize-space(@class),' '),' callout ')]
+# strip: //section[contains(concat(' ',normalize-space(@class),' '),' callout ')]
 strip: //*[contains(concat(' ',normalize-space(@class),' '),' is-hidden ')]
 prune: no
 
