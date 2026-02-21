@@ -2,15 +2,17 @@
 # while telepolis.de does not need that much tweaking
 
 author: //meta[@name='author']/@content
-body: //p
-title: //h1
+body: //main/article[1]
+title: //meta[@property='og:title']/@content
 date: //time/@datetime
 
 strip_id_or_class: printversion__back-to-article
 strip_id_or_class: printversion__logo
-strip: //figure
 
+strip: //header
 strip: //nav
+
+strip: //div[@data-component="RecommendationBox"]/parent::div
 
 # use image from noscript-part
 strip: //a-img
@@ -20,8 +22,19 @@ single_page_link: //a[contains(@href, '?view=print')]
 single_page_link: //a[contains(@title, 'Druck')]
 single_page_link: //a[contains(@href, '?seite=all')]/@href
 
+# embedding youtube videos
+find_string: "></embetty-video>
+replace_string: "></iframe></embetty-video>
+
+find_string: <embetty-video type="youtube" video-id="
+replace_string: <embetty-video type="footube"><iframe width="480" height="360" src="https://www.youtube.com/embed/
+
 # prevent wallabag from stripping <h3 class="subheading">
 find_string: class="subheading"
 replace_string: class="wb-foo"
 
+prune: no
+tidy: no
+
 test_url: https://www.telepolis.de/features/Der-unprovozierte-Krieg-Wenn-Stoltenberg-und-Co-die-Wahrheit-ueber-die-Nato-Erweiterung-sagen-9314024.html
+test_url: https://www.telepolis.de/article/Trump-kuendigt-Freigabe-von-UFO-und-Alien-Akten-an-11184800.html
