@@ -1,8 +1,7 @@
-# parts taken over from heise.de.txt
-# while telepolis.de does not need that much tweaking
+body: //main/article[1]
+body: //article[contains(@class, 'printversion')]
 
 author: //meta[@name='author']/@content
-body: //main/article[1]
 title: //meta[@property='og:title']/@content
 date: //time/@datetime
 
