@@ -1,0 +1,7 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+date: //span[contains(concat(' ',normalize-space(@class),' '),' post-date ')]
+title: //h2[contains(concat(' ',normalize-space(@class),' '),' post-title ')]
+body: //div[contains(@class, 'post simple')]
+
+test_url: https://standblog.org/blog/post/2026/02/01/En-vrac-de-janvier-2026
