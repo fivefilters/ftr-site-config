@@ -1,7 +1,12 @@
 http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
-date: //span[contains(concat(' ',normalize-space(@class),' '),' post-date ')]
+date: //meta[@name="date"]/@content
 title: //h2[contains(concat(' ',normalize-space(@class),' '),' post-title ')]
+author: //meta[@name='author']/@content
 body: //div[contains(@class, 'post simple')]
+
+# pevent oversized textsmilies 
+find_string: class="smiley"
+replace_string: class="foosmiley" width="14" height="14"
 
 test_url: https://standblog.org/blog/post/2026/02/01/En-vrac-de-janvier-2026
