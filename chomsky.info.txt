@@ -1,5 +1,6 @@
 title: //*[@class='title']
-author: //*[@class='author']
+author: //h2
+body: //div[@id='detail_main_container']
 prune: no
 
 test_url: https://chomsky.info/20150120/
