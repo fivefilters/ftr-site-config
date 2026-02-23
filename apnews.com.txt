@@ -2,7 +2,11 @@ http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 
 prune: no
 
+title: //h1[@class='Page-headline']
+author: //div[@class='Page-authors']/span[@class='Link']/text()
+author: //div[@class='Page-authors']/a
 body: //div[@class="StoryPage-lede-content"] | //div[contains(@class, 'Page-lead')] | //div[contains(@class, 'Page-storyBody')]
+date: //meta[@property="article:published_time"]/@content
 
 test_url: https://apnews.com/article/israel-west-bank-gaza-middle-east-israel-palestinian-conflict-7974cc0c03897b8b21e5fc2f8c7d8a79
 test_contains: Israel slammed the Gaza Strip with airstrikes, in a dramatic escalation that included bombing the home of a senior Hamas leader
