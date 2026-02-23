@@ -1,4 +1,4 @@
-http_header(Cookie): golem_consent20=cmp|220101
+http_header(Cookie): golem_consent20=cmp|250101
 http_header(user-agent): Googlebot
 
 title: substring-before( //meta[@property="og:title"]/@content , ' - Golem.de' )
