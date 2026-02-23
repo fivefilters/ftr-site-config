@@ -1,5 +1,6 @@
 title: //h1
-body: //p[contains(concat(' ',normalize-space(@class),' '), ' intro ')] | //div[contains(concat(' ',normalize-space(@class),' '), ' longText ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '), ' content-area ')]
+date: //meta[@name="date"]/@content
 author: //meta[@name='author']/@content
 
 strip_id_or_class: slideshow
