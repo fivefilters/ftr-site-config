@@ -9,3 +9,5 @@ test_contains: “What do these letters mean?” We are of course referring to t
 body: //article
 test_url: https://www.16personalities.com/intj-parents
 test_contains: are known for their rationality and self-control
+
+body: substring-before(substring-after(//script[@type="application/ld+json"], '"articleBody":"'), '","inLanguage"')
