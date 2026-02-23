@@ -1,0 +1,5 @@
+title: //div[contains(concat(' ',normalize-space(@class),' '),' main ')]
+body: //div[contains(@class, 'main block')]
+date: //div[contains(@class, 'datepubli')]
+
+test_url: https://grisebouille.net/ep42-fais-un-voeu
