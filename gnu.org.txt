@@ -1,4 +1,12 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' top-level-extent ')]
+
+# For man pages, get the whole body as it just contains the raw man page content
+body: //body
+
 prune:no
 
 test_url: https://www.gnu.org/software/bash/manual/bash.html
+test_contains: Bash contains features that appear in other popular shells
+
+test_url: https://www.gnu.org/software/ed/manual/ed_manual.html
+test_contains: It is used to create, display, modify and otherwise manipulate text files
