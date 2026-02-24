@@ -1,6 +1,11 @@
-title: //h1
-body: //article[contains(@class,'type-post')]/div[@itemprop='text']
+title: //meta[@property="og:title"]/@content
+body: //article[contains(@class,'post')]
+date: //meta[@property="article:published_time"]/@content
+author: //meta[@name="twitter:data1"]/@content
+
 strip: //a[@rel='dofollow']
 strip: //div[contains(@class,'zem_rp_wrap')]
 strip: //div[@id='shr_canvas2']
+
 test_url: https://itsfoss.com/fix-gvfsd-smb-high-cpu-ubuntu/
+test_contains: But this nasty thing continued every time I logged into the system
