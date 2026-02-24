@@ -1,7 +1,7 @@
 # author: kreativmonkey
 
 # Singlepage
-single_page_link: //div[contains(@class, 'pane-eatsmarter-actionbar')]/div[@class='pane-content']/div[contains(@class, 'actionbar-print')]/div[@class='actionbar-item-action']/a
+single_page_link: //div[contains(@class, 'print-list')]/@data-url
 
 # Article Information
 title: //h1[contains(@class, 'title')]
