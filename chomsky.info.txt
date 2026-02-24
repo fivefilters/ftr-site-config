@@ -1,6 +1,6 @@
-title: //*[@class='title']
-author: //h2
-body: //div[@id='detail_main_container']
+title:  //div[@id='detail_main_container']/h1[1]
+author: //div[@id='detail_main_container']/h2[1]
+body:   //div[@id='detail_main_container']
 prune: no
 
 test_url: https://chomsky.info/20150120/
