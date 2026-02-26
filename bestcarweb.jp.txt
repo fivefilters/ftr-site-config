@@ -1,0 +1,11 @@
+next_page_link: //li[@class="next"]/a
+
+strip_id_or_class: pagination
+strip_id_or_class: post__inner
+
+strip: //p[@class="center"]
+
+replace_string(<strong>): <h3>
+replace_string(</strong>): </h3>
+
+test_url: https://bestcarweb.jp/news/business/1448955
