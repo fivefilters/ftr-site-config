@@ -1,7 +1,7 @@
-body: //section[@id="body-text"]
+body: //div[@class="article__content"]
 body: //section[contains(@class, 'body-text')]
 author: //meta[@name="author"]/@content
-date: //meta[@name="pubdate"]/@content
+date: //meta[@property='article:published_time']/@content
 title: //meta[@property="og:title"]/@content
 
 strip_id_or_class: highlights
@@ -17,7 +17,7 @@ replace_string: <meta norefresh
 
 prune: no
 
-test_url: http://edition.cnn.com/2012/05/13/us/new-york-police-policy/index.html
+test_url: https://edition.cnn.com/2012/05/13/us/new-york-police-policy/index.html
 test_contains: this discriminatory and ineffective practice
 
 test_url: http://rss.cnn.com/rss/edition.rss
