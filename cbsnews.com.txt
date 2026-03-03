@@ -1,24 +1,55 @@
-date: //meta[@name="published"]/@content
-date: //div[@class="timeLine"]
-title: //div[@id='contentBody']//h1
+# CBS News siteconfig
+# Handles both regular articles and live-update stories
+
 title: //h1[@class="content__title"]
-author: //dl[@class="storyBlogByline"]/dd/a
-body: //div[@id='storyMediaBox'] | //div[contains(@class, 'storyText')]
+
+# Regular articles
 body: //section[@class="content__body"]
 
-# Content Pruning
-strip: //div[@class="scrollingArrows"]
-strip: //div[@class="timeLine"]
-strip: //dl[@class="storyBlogByline"]
-strip: //span[@class='image-credit']
+# Live-update stories
+body: //section[contains(@class,"content-updating-story__content-wrapper")]
 
+date: //p[contains(@class,"content__meta--timestamp")]/time/@datetime
+
+author: //div[contains(@class,"byline__author__link-wrapper")]/a
+author: //a[contains(@class,"byline__author__link")]
+
+# Remove global navigation and header
+strip: //header[contains(@class,"site-header__container")]
+
+# Remove ads
+strip: //div[contains(@class,"top-ad-container")]
+strip: //div[contains(@class,"ad-intromercial")]
+
+# Remove sidebar widget area
+strip: //section[contains(@class,"content__widget-wrapper")]
+
+# Remove Google Follow button
 strip: //div[@class="content__google"]
-strip: //footer[@class='content__footer']
-strip: //aside[@class="recirculation"]
+
+# Remove newsletter promo blocks
+strip: //section[contains(@class,"post-newsletter-promo")]
+
+# Remove per-post share bars
+strip: //div[contains(@class,"post-update__share")]
+strip: //ul[contains(@class,"sharebar")]
+
+# Remove footer elements
+strip: //footer[contains(@class,"content__footer")]
+strip: //aside[contains(@class,"recirculation")]
+
+# Strip by ID or class
+strip_id_or_class: top-ad-container
+strip_id_or_class: post-update__share
+strip_id_or_class: sharebar
+strip_id_or_class: content__google
+strip_id_or_class: content__widget-wrapper
+strip_id_or_class: post-newsletter-promo
 
 prune: no
 
-test_url: http://www.cbsnews.com/8301-201_162-57366361/rescued-americans-dad-proud-of-the-u.s/
-
 test_url: https://www.cbsnews.com/news/drunken-raccoon-virginia-liquor-store-bathroom-floor/
 test_contains: He fell through one of the ceiling tiles and went on a full-blown rampage, drinking everything.
+
+test_url: https://www.cbsnews.com/live-updates/iran-us-war-day-3-american-deaths-israel-gulf-allies-hit-missile-strikes/
+test_contains: has been dragged into the Iran war with and attacks on its territory and missile interceptions
