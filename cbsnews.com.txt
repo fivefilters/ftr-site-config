@@ -38,7 +38,8 @@ strip: //ul[contains(@class,"sharebar")]
 strip: //footer[contains(@class,"content__footer")]
 strip: //aside[contains(@class,"recirculation")]
 
-# Strip by ID or class
+# more clean-up
+strip: //button
 strip_id_or_class: top-ad-container
 strip_id_or_class: post-update__share
 strip_id_or_class: sharebar
