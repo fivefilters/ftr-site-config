@@ -1,4 +1,11 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),'story-content')]
+
+date: //meta[@property="article:published_time"]/@content
+title: //meta[@property="og:title"]/@content
+author: //a[contains(@href, '/author/')]
+
+strip: //div[contains(@class, 'story-heads')]/h1
+
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' post_tag ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),'tag-container')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),'insert-post-ads')]
