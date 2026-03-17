@@ -1,5 +1,6 @@
 author: //*[@class='elementor-author-box__name']
 title: substring-before(//meta[@property='og:title']/@content , ' - New York Aktuell')
+body: //div[contains(@data-widget_type, 'theme-post-content')]
 
 test_url: https://newyorkaktuell.nyc/66-glauben-an-positive-auswirkungen-seiner-politik-zohran-mamdani-beginnt-sein-buergermeisteramt-am-1-januar-mit-grossem-vertrauensvorschuss/
 test_url: https://newyorkaktuell.nyc/feed/
