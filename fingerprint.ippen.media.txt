@@ -1,7 +1,7 @@
-# Author: HolgerAusB  |  Version: 2025-11-13
-#
 # This works for any ippen.media website if
 # fingerprinting for ippen.media is activated
+#
+# Author: HolgerAusB  |  Version: 2026-03-18
 #
 # to get a source-feed, try to add 'rssfeed.rdf' to the category-URL e.g.
 #    https://www.example.com/hessen/rssfeed.rdf
@@ -31,6 +31,7 @@ strip_id_or_class: id-Mediabox-info-el
 strip_id_or_class: id-Recommendation
 
 strip_id_or_class: id-Story-authors
+strip_id_or_class: id-Story-googleFollowButton
 strip_id_or_class: id-Story-interactionBar
 strip_id_or_class: id-Story-timestamp
 
@@ -65,4 +66,3 @@ prune: no
 
 test_url: https://www.fr.de/frankfurt/die-nfl-kommt-nach-frankfurt-91329620.html
 test_url: https://www.merkur.de/politik/ukraine-krieg-russland-putin-hyperschall-raketen-kinschal-video-twitter-fake-experten-91427019.html
-
