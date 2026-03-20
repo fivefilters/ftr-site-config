@@ -1,0 +1,9 @@
+title: substring-before(//meta[@property='og:title']/@content , '｜婦人公論.jp')
+author: //meta[@itemprop="author"]/@content
+date:  //meta[@itemprop="datePublished"]/@content
+
+next_page_link: //a[@class="article-nextpage__link"]
+
+strip_id_or_class: more-photo
+
+test_url: https://fujinkoron.jp/articles/-/20804
