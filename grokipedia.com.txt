@@ -1,0 +1,12 @@
+body: //article
+
+strip: //button
+strip: //article/div[1]/div[1]
+
+# [FTR] prevent using generic site logo as lead image
+insert_detected_image: no 
+
+prune: no
+tidy: no
+
+test_url: https://grokipedia.com/page/Protein
