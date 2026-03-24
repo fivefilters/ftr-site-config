@@ -1,9 +1,17 @@
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+# may not work with wallabag UI or FTR because of anti-bot technologies
+# should work with wallabagger browser plugin
 
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
+#http_header(user-agent): Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+
+http_header(referer): https://www.reuters.com/
+
+body: //main[@id='main-content']//div[contains(@class, 'masthead')] | //main[@id='main-content']//article
 body: //main[@id='main-content']/article[1]/div[1]
 body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='article-text'] | //div[@class='pageNavigation']
 body: //article[@itemtype="http://schema.org/NewsArticle"]
 body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view ')]
+body: //section[@class='content main']/article[1]//p
 
 author: substring-after(//p[@itemprop="author"] , 'By ')
 author: substring-after(//ul[contains(@class, 'article-meta')]//p[@class='byline'] , 'By ')
@@ -14,6 +22,11 @@ strip_id_or_class: related-items
 strip_id_or_class: related-container
 strip_id_or_class: share-in-article-container
 strip_id_or_class: meta-container
+strip_id_or_class: hidden-md-up
+strip_id_or_class: carousel-indicators
+strip_id_or_class: foocrsl-indicators
+strip_id_or_class: hidden-sm-up
+strip_id_or_class: other-stories-container
 
 strip: //svg
 strip: //nav
@@ -31,8 +44,14 @@ strip: //p[contains(@class, '_promo-box_')]
 strip: //div[@data-testid="SocialIcon"]
 strip: //div[@data-testid="AuthorBio"]
 strip: //a[contains(@href, '/about-us/trust-principles')]/parent::*
+strip: //div[contains(@class, 'article-module__read-next')]
 
 # activate images in galeries/carousels
+replace_string(class="carousel): class="foocrsl
+replace_string(carousel-item): crslitm
+
+#replace_string(<noscript): <div
+#replace_string(</noscript>): </div>
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
 
