@@ -11,7 +11,6 @@ body: //main[@id='main-content']/article[1]/div[1]
 body: //div[@id='articleImage' or @id='frame_fd1fade'] | //span[@id='article-text'] | //div[@class='pageNavigation']
 body: //article[@itemtype="http://schema.org/NewsArticle"]
 body: //article[contains(concat(' ',normalize-space(@class),' '),' content-view ')]
-body: //section[@class='content main']/article[1]//p
 
 author: substring-after(//p[@itemprop="author"] , 'By ')
 author: substring-after(//ul[contains(@class, 'article-meta')]//p[@class='byline'] , 'By ')
