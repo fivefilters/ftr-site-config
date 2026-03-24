@@ -48,9 +48,6 @@ strip: //div[contains(@class, 'article-module__read-next')]
 # activate images in galeries/carousels
 replace_string(class="carousel): class="foocrsl
 replace_string(carousel-item): crslitm
-
-#replace_string(<noscript): <div
-#replace_string(</noscript>): </div>
 replace_string(<noscript>): <!-- noscript -->
 replace_string(</noscript>): <!-- /noscript -->
 
