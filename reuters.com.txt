@@ -54,6 +54,7 @@ replace_string(</noscript>): <!-- /noscript -->
 ## [wallabag] prevent indentation:
 strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]/@class
 
+autodetect_on_failure: no
 skip_json_ld: yes
 prune: no
 tidy: no
