@@ -4,6 +4,7 @@ strip: //button
 strip: //article/div[1]/div[1]
 
 strip_attr: //a[contains(@class, 'break-words')]/@class
+strip_attr: //span[contains(@class, 'break-words')]/@class
 
 # [FTR] prevent using generic site logo as lead image
 insert_detected_image: no 
