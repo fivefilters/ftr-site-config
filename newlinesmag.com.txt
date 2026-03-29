@@ -1,0 +1,14 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' h2 ')]
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' running-note-detail ')]
+
+strip_id_or_class: nav-next
+strip_id_or_class: nav-previous
+strip_id_or_class: js-running-notes-sidebar
+strip_id_or_class: share_links
+
+strip: //footer
+
+prune: no
+
+test_url: https://newlinesmag.com/running-notes/kashmiris-drawing-on-historical-ties-to-persia-are-donating-their-life-savings-to-iran/
