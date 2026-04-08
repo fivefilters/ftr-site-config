@@ -44,6 +44,7 @@ strip: //div[@data-testid="SocialIcon"]
 strip: //div[@data-testid="AuthorBio"]
 strip: //a[contains(@href, '/about-us/trust-principles')]/parent::*
 strip: //div[contains(@class, 'article-module__read-next')]
+strip: //*[@aria-hidden="true"]
 
 # activate images in galeries/carousels
 replace_string(class="carousel): class="foocrsl
