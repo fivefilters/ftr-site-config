@@ -1,7 +1,7 @@
 http_header(User-Agent): PHP/8.4
 
-# get past the cookie wall [seems not to needed any more, as of 2025-05]
-#http_header(cookie): authId=1; pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
+# get past the cookie wall
+http_header(cookie): authId=1; pws=functional|analytics|content_recommendation|targeted_advertising|social_media; pwv=1
 
 body: //main[@id='main']/article[1]/section[1]/div[1] | //header/figure | //header/p
 

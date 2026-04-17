@@ -1,0 +1,22 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+date: //ul[contains(@class, 'StoryDate')]
+title: //h1[contains(@class, 'StoryTitle')]
+author: //a[contains(@class, 'StoryAuthor')]
+body: //header[contains(@class, 'StoryHeader')] | //h2[contains(@class, 'StoryChapo')] | //p[contains(@class, 'StoryText')]
+
+#remove the paying icon and ads
+strip: //img[contains(@alt, 'Icon payant')]
+strip: //div[contains(@class, 'AdContainer')]
+
+# Prevents wallabag from indenting the complete text
+find_string: <div class="container
+replace_string: <div class="foocontainer
+
+find_string: id="content"
+replace_string: id="foocontent"
+
+prune: no
+
+test_url: https://www.lavenir.net/regions/brabantwallon/braine-l-alleud/2026/02/13/un-quadragenaire-decede-dans-lincendie-de-son-appartement-a-braine-lalleud-IIBTHQGWKRHMFKXMC647N3FD3M/
+test_url: https://www.lavenir.net/regions/brabantwallon/genappe/2026/02/19/un-vol-de-bijoux-elucide-trop-tard-aucune-peine-mais-la-genappienne-devra-payer-87-000-a-la-victime-de-lasne-B4W4V7RPL5EMBCYVMXWUOAUIR4/

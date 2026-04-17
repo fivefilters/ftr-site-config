@@ -1,0 +1,15 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+date: //time[contains(@class, 'entry-date')]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' cm-entry-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' cm-post-content ')]
+
+#remove the paying icon and ads
+strip: //div[contains(@class, 'robots-nocontent')]
+strip: //div[contains(@class, 'sharedaddy')]
+strip: //div[contains(@class, 'jp-relatedposts')]
+strip: //div[contains(@class, 'like-posts')]
+strip: //div[contains(@class, 'reves-adlabel')]
+strip: //div[contains(@class, 'reves-apres-le-contenu')]
+
+test_url: https://reves-d-espace.com/echec-du-premier-vol-avec-equipage-du-starliner-un-rapport-accablant-pour-boeing-et-la-nasa/

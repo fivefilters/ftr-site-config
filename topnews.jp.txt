@@ -1,0 +1,15 @@
+body: //div[@class="column-680"]
+
+strip: //tbody
+strip: //a[@href='#news']
+strip: //a[@href='#related']
+strip: //a[@href='#nextprev']
+strip: //a[@href="/category/news"]
+strip: //a[@href="/category/honda"]
+strip: //a[@href="https://www.facebook.com/topnewsf1"]
+strip_id_or_class: f1news-hback
+strip_id_or_class: news
+strip_id_or_class: adcenter
+strip_id_or_class: honda-f1
+
+test_url: https://topnews.jp/2025/12/31/news/f1/f1teams/honda/242295.html

@@ -1,10 +1,28 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' csc-textpic-text ')]
+body: //div[@id='content']
 
-strip_id_or_class: introa_form
-strip_id_or_class: ttcl_1
-strip_id_or_class: ttcl_3
-strip_id_or_class: ttcl_5
-strip_id_or_class: nbc_belowcontent
+strip: //aside
+strip: //nav
+strip: //svg
+strip: //header/h1
 
+strip_id_or_class: intro-author
+strip_id_or_class: intro-date
+strip_id_or_class: intro-tags
+strip_id_or_class: socialarea
+
+strip: //div[contains(@class,  '-relatedarticles')]
+
+# [wallabag] re-write relative image path to fixed
+find_string: srcset="/fileadmin/
+replace_string: srcset="https://www.notebookcheck.net/fileadmin/
+
+# [FTR] add some extra space between image caption text an following article text
+find_string: </figcaption>
+replace_string: </figcaption><div> </div>
+
+prune: no
+tidy: no
+
+test_url: https://www.notebookcheck.net/Desperate-measures-to-save-Intel-US-reportedly-forcing-TSMC-to-buy-49-stake-in-Intel-to-secure-tariff-relief-for-Taiwan.1079424.0.html
 test_url: http://www.notebookcheck.net/Lenovo-ThinkPad-X1-Carbon-Ultrabook-Review.138033.0.html
 test_url: https://www.notebookcheck.net/Guide-How-to-check-a-new-laptop-for-issues.232476.0.html

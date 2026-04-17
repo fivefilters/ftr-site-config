@@ -1,0 +1,5 @@
+body: //main[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+
+prune: no
+
+test_url: https://www.everway.com/product-news/updates/the-new-orbitnote-ios-app-is-here/

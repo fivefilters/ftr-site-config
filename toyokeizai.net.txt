@@ -1,0 +1,16 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body-inner ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author-date ')]//div[contains(concat(' ',normalize-space(@class),' '),' author ')]
+
+next_page_link: //div[contains(@class, "article-next-page")]/a
+
+strip_id_or_class: article-end-authors
+strip_id_or_class: article-box-gwrap
+strip_id_or_class: author-follow-link
+strip_id_or_class: m-tooltip-wrap
+
+replace_string(<h2): <h3
+replace_string(</h2>): </h3>
+
+
+test_url: https://toyokeizai.net/articles/-/912773
+test_url: https://toyokeizai.net/articles/-/924178

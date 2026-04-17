@@ -1,0 +1,6 @@
+http_header(User-Agent): wallabag/2
+
+body: //article/div[@class='entry-content']
+
+
+test_url: https://www.bayometric.com/risk-factors-associated-biometric-identification/

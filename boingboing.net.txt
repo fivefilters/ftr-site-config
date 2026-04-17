@@ -1,5 +1,7 @@
 body: //article[contains(@id, 'post-')]//section[contains(@class, 'entry-content')] | //div[contains(@class, 'featured-image')] | //iframe/ancestor::div[1]
 author: //meta[@name="author"]/@content
+title: //meta[@property='og:title']/@content
+date: //time/@datetime
 
 strip: //article/div[1]/div[1]
 strip: //a[@href='https://premium.boingboing.net']/parent::div

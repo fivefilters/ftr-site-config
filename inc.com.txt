@@ -1,6 +1,11 @@
+http_header(User-Agent): Mastodon/4.3.2
+
+single_page_link: //a[contains(@href, 'Printer_Friendly.html')]
+
 author: substring-after(substring-before(//div[@id='byline'],'|'),'By')
 author: //div[@class='byline']/a
 date: //span[@class='pubdate']
+
 # print friendly page
 body: //div[@id='text']
 # regular page
@@ -12,10 +17,10 @@ strip: //div[@id='articlecontent']/div[@class='byline']
 strip: //div[@id='articlespacer']
 strip: //div[@id='incsharebox']
 strip: //div[@id='articlesidebar']
+strip: //a[contains(., 'Dig Deeper')]
 
 prune: no
 
-single_page_link: //a[contains(@href, 'Printer_Friendly.html')]
-strip: //a[contains(., 'Dig Deeper')]
+
 test_url: http://www.inc.com/guides/2010/11/seven-tips-for-lobbying-politicians.html
 test_url: http://www.inc.com/eric-schurenberg/startups-are-we-geting-irrationally-exuberant.html

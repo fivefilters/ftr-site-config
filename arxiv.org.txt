@@ -2,5 +2,8 @@ title: //h1[contains(concat(' ',normalize-space(@class),' '),' title ')]
 
 body: //blockquote[contains(concat(' ',normalize-space(@class),' '),' abstract ')]
 
+date: //meta[@name='citation_date']/@content
+author: //meta[@name='citation_author']/@content
+
 test_url: https://arxiv.org/abs/2009.03017
 test_url: https://arxiv.org/abs/2012.03780

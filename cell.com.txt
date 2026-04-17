@@ -6,7 +6,7 @@
 # This only works with wallabagger browser-plugin with activated
 # option 'Retrieve content from the browser' in it's settings
 
-body: //div[@class='article__body']
+body: //section[@id='bodymatter']
 
 prune: no
 tidy: no

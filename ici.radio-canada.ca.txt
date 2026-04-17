@@ -4,6 +4,9 @@ body: //div[@class='src-content']
 
 author: //span[contains(concat(' ',normalize-space(@class),' '),'group-hover/signature:underline')]
 author: substring-before((//a[contains(@href, '/profil/')])[1]/@title , ' (')
+#infolettre on web
+author: //img[starts-with(@src,'https://images.radio-canada.ca/v1/personnalites-rc/')]/@alt
+
 date: //time/@datetime
 
 strip: //header
@@ -24,3 +27,4 @@ test_url: http://ici.radio-canada.ca/nouvelle/1003322/lexique-mots-neige-hiver-g
 test_url: http://ici.radio-canada.ca/tele/deuxieme-chance/inscription/
 test_url: http://ici.radio-canada.ca/emissions/aujourd_hui_l_histoire/2016-2017/chronique.asp?idChronique=423294
 test_url: https://ici.radio-canada.ca/rss/4159
+test_url: https://ici.radio-canada.ca/decrypteurs/infolettre/202508021058

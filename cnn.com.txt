@@ -1,8 +1,17 @@
+body: //section[contains(@class, 'body')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article__content ')]
 body: //section[contains(@class, 'body-text')]
+
+title: //h1[@id='maincontent']
+
+author: //span[contains(concat(' ',normalize-space(@class),' '),' byline__name ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' vossi-byline__names ')]
 
 strip_id_or_class: highlights
 strip_id_or_class: video-inline_carousel
 strip_id_or_class: video-inline_carousel__wrapper
+strip_id_or_class: headline__options
+strip_id_or_class: related-content__link
 
 # Avoid redirecting to 'unsupported browser' page
 find_string: <meta http-equiv="refresh"
@@ -10,6 +19,9 @@ replace_string: <meta norefresh
 
 test_url: http://www.cnn.com/2012/05/13/us/new-york-police-policy/index.html
 test_contains: this discriminatory and ineffective practice
+
+test_url: https://www.cnn.com/2025/12/01/europe/eu-belarus-hybrid-attack-lithuania-intl-latam
+test_contains: after alleging that a Russian drone breached Romanian airspace
 
 test_url: http://rss.cnn.com/rss/edition.rss
 test_url: http://rss.cnn.com/rss/edition_technology.rss

@@ -1,0 +1,5 @@
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+test_url: https://www.sankei.com/article/20260119-ZR5VDPCBIJGNFI733WRF5SXJRY/

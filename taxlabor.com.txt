@@ -1,0 +1,8 @@
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
+
+strip: //p[@class="button-line"]
+
+strip_id_or_class: con1
+strip_id_or_class: post-views
+
+test_url: https://taxlabor.com/kyufutsuki-zeigaku-kojo-2026/

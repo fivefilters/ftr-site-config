@@ -4,6 +4,7 @@
 author: //meta[@name="author"]/@content
 date: //meta[@name="DC.date.issued"]/@content
 
+body: //div[@class='article__main']
 body: //div[@itemprop="articleBody"]
 body: //div[@itemprop="reviewBody"]
 body: //figcaption|//div[@class="img-wrapper"]/noscript/img
@@ -16,10 +17,8 @@ strip: //div[@id="article-top-page-number"]
 strip: //p[starts-with(normalize-space(.), '[')]
 strip: //p[starts-with(normalize-space(.), '+')]
 
-test_url: http://www.networkworld.com/index.rss 
-test_url: http://www.networkworld.com/article/2952852/email-services/4-great-gmail-tips-you-might-not-know-about.html#tk.rss_all
-test_url: http://www.networkworld.com/article/2951819/infrastructure-management/cios-say-applecare-for-enterprise-is-lacking.html
-test_url: http://www.networkworld.com/article/2951823/cisco-subnet/early-access-qa-new-cisco-ceo-chuck-robbins-heads-into-hyper-connected-mode.html
-test_url: http://www.networkworld.com/article/2947478/mobile/what-if-the-apple-watch-really-is-a-flop.html
-test_url: http://www.networkworld.com/article/2953522/cloud-computing/nfv-a-hit-for-opendaylight.html
-test_url: http://www.networkworld.com/article/2960522/wi-fi/best-wi-fi-stumblers-for-the-mac.html
+prune: no
+tidy: no
+
+test_url: https://www.networkworld.com/feed/
+test_url: https://www.networkworld.com/article/3630303/2025-global-network-outage-report-and-internet-health-check.html

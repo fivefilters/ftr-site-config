@@ -1,0 +1,6 @@
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
+author: //div[@class="author"]
+
+body: //div[@class="entryBody_wrap"]
+
+test_url: https://biz-journal.jp/company/post_393653.html

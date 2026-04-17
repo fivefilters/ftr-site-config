@@ -1,0 +1,24 @@
+body: //main[@class='global-main']/article[1]
+
+strip_id_or_class: post-title global-title
+strip_id_or_class: post-tags
+strip_id_or_class: global-tags
+strip_id_or_class: post-meta-wrap
+strip_id_or_class: post-sidebar
+strip_id_or_class: post-share
+
+# enlarge embedded youtube card slightly
+strip_attr: //iframe/@width
+strip_attr: //iframe/@height
+
+# [walabag] Make lead image visible
+strip_attr: //img/@srcset
+
+# [wallabag]: Make external bookmark cards more visible as such
+find_string: kg-bookmark-card
+replace_string: picker__box container
+
+
+prune: no
+
+test_url: https://absolument-tout.net/noir-et-brulant/

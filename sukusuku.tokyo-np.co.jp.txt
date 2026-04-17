@@ -1,0 +1,5 @@
+date: //header[@class="main_article_header"]//time/@datetime
+
+body: //section[@class="main_article_body"]
+
+test_url: https://sukusuku.tokyo-np.co.jp/hoiku/107987/

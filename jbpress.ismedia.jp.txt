@@ -1,0 +1,20 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | JBpress (ジェイビープレス)')
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified')
+author: substring-before(substring-after(//script[@type="application/ld+json"], '"@type":"Person","name":"'), '","jobTitle":')
+
+body: //article[@class="article"]
+
+next_page_link: //a[@class="article-next"]
+
+strip_id_or_class: m-pager
+strip_id_or_class: m-article-index
+strip_id_or_class: article-header
+strip_id_or_class: article-series
+strip_id_or_class: article-footer
+strip_id_or_class: article-continue-reading
+strip_id_or_class: article-header-sns
+strip_id_or_class: insertgallery
+
+test_url: https://jbpress.ismedia.jp/articles/-/92430
+test_url: https://jbpress.ismedia.jp/articles/-/92465
+test_url: https://jbpress.ismedia.jp/articles/-/92466

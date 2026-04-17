@@ -1,0 +1,8 @@
+body: //main//article
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//a
+
+strip: //article[contains(@class, 'media')]
+strip_id_or_class: teaser
+
+test_url: https://www.blaetter.de/rss.xml
+test_url: https://www.blaetter.de/ausgabe/2025/september/russlands-rekrutierungsmaschine#_ftnref6

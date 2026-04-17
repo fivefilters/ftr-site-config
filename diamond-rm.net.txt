@@ -1,0 +1,11 @@
+body: //div[@class="wpeditor"]
+
+next_page_link: //div[@class="box-nextpage"]/a
+
+strip_id_or_class: customer_favorite-wrap
+strip_id_or_class: wp_social_bookmarking_light
+strip_id_or_class: box-nextpage
+strip_id_or_class: btnAd
+strip_id_or_class: wpulike wpulike-default
+
+test_url: https://diamond-rm.net/management/businessplan/533256/

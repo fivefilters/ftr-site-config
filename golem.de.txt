@@ -1,24 +1,23 @@
-# Author: zinnober
-# Rewrite of original template which fetched the printer-version without pictures
-
-# As of 2020, this cookie is required to fetch articles because of the GDPR cookie warning
-http_header(Cookie): golem_consent20=cmp|220101
+http_header(Cookie): golem_consent20=cmp|250101
 http_header(user-agent): Googlebot
 
-tidy: no
-prune: no
-
-# Set full title
-title: //h1
-
-date: //time
+title: substring-before( //meta[@property="og:title"]/@content , ' - Golem.de' )
+date: //time/@datetime
 author: //a[@rel='author']
-
-# Content is here
+body: //main/article
 body: //article
 
 # Fetch full multipage articles
-next_page_link: //a[@id='atoc_next']
+next_page_link: //li[contains(@class, 'go-pagination__item--next')]/a
+
+# subheadings in multipage articles where misssing because of <h1>, changed all to <h2> and striped main title 
+replace_string(<h1): <h2
+replace_string(</h1>): </h2>
+strip_id_or_class: go-heading--h1
+
+# remove an id name, that is also internally used by wallabag's css with: display: none
+# resulted in a missing 2nd page of multi-page articles
+strip_attr: //div[@id='iqadtile8']/@id
 
 # Remove tracking and ads
 strip_id_or_class: iqadtile4
@@ -36,9 +35,20 @@ strip_id_or_class: footer
 strip_id_or_class: job-market
 strip_id_or_class: tags
 strip_id_or_class: topictags
+strip_id_or_class: go-button-bar
 strip: //div[contains(@class, 'authors--withsource')]
 strip: //div[@class='toc']
 strip: //li[not(.//text()[normalize-space()])][not(@class)]
+strip: //div[contains(@class, 'go-teaser-block')]
+strip: //ul[contains(@class, 'go-alink-list')]
+strip: //hr[contains(@class, 'go-hr')]/following-sibling::div[contains(@class, 'go-grid')]
+strip: //div[contains(@class, 'go-article-header__meta')]
+strip: //div[contains(@class, 'go-article-header__button-bar')]
+strip: //article[contains(@class, 'go-teaser--variant-affiliate')]
+strip: //div[contains(@class, 'go-gallery__actions')]
+strip: //nav[contains(@class, 'go-article__pagination')]
+strip: //div[contains(@class, 'go-article-header__series')][.//a[contains(@class, 'go-label')]]
+strip: //details[contains(@class, 'go-article__index')]
 
 # Tidy up galleries (could still be improved, though)
 strip: //img[@src='']
@@ -49,6 +59,13 @@ strip: //div[contains(@style,'margin')]
 strip: //figure[contains(@id,'gvideo')]
 strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
 
+# Tidy up links
+strip_attr: //a/@title
+strip_attr: //a/@target
+strip: //svg[contains(@class, 'go-external-link__icon')]
+strip: //span[@class='go-vh' and normalize-space(text())='(öffnet im neuen Fenster)']
+
+
 # Golem Plus Paywall
 http_header(Cookie): golem_multipage=single                   
 requires_login: yes                                           
@@ -58,7 +75,11 @@ login_password_field: password
 not_logged_in_xpath: //button[contains(@class, 'golem_login')]
 
 
-# Try yourself
+tidy: no
+prune: no
+
+test_url: https://www.golem.de/news/arbeitsplatz-unter-druck-was-haelt-dich-noch-im-job-2509-200011.html
+test_url: https://www.golem.de/news/onlineshopping-auf-pump-boomt-erstmals-mehr-als-zehn-millionen-neue-ratenkredite-2509-199696.html
 test_url: http://www.golem.de/news/intel-core-i7-5960x-im-test-die-pc-revolution-beginnt-mit-octacore-und-ddr4-1408-108893.html
 test_url: http://www.golem.de/news/test-infamous-first-light-neonbunter-actionspass-1408-108914.html
 test_url: https://www.golem.de/news/ressourcenschonend-programmieren-so-wurden-spiele-fuer-den-commodore-64-und-atari-entwickelt-2307-175508.html

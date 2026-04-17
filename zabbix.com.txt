@@ -1,0 +1,10 @@
+body: //div[@class='page group']
+
+## [wallabag] emphasis for yellow "Attention" box
+find_string: class="noteimportant
+replace_string: class="yellow noteimportant
+
+prune: no
+tidy: no
+
+test_url: https://www.zabbix.com/documentation/current/en/manual/web_monitoring

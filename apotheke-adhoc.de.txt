@@ -20,4 +20,4 @@ replace_string(Julia Pradel): &nbsp;
 replace_string(Franziska Gerhardt): &nbsp;
 
 test_url: https://www.apotheke-adhoc.de/nachrichten/detail/panorama/avie-fuer-den-nachfolger/
-
+test_contains: Der gebürtige Saarländer studierte in Berlin Pharmazie

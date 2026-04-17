@@ -1,0 +1,6 @@
+body: //main[@id='main']//article
+
+strip: //div[contains(@class, 'article_articleHeaderSocialWrapper__')]
+strip: //div[contains(@class, 'soft-paywall_wrapper__')]
+
+test_url: https://www.berliner-zeitung.de/wirtschaft-verantwortung/militarisierung-in-adlershof-so-bereiten-chemiker-die-bundeswehr-auf-krieg-vor-li.2361153

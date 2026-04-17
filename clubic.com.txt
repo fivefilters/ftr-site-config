@@ -20,6 +20,8 @@ strip_id_or_class: flex-container
 strip_id_or_class: card__author
 strip_id_or_class: marty-product-card-large
 prune: no
+// remove last div which usually contains "discover" stuff
+strip: //article/div[last()]
 
 body: //article
 strip_id_or_class: maillage

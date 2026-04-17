@@ -31,6 +31,15 @@ strip_id_or_class: c-river
 strip_id_or_class: chorus-ad-placement
 strip_id_or_class: c-related-list
 strip_id_or_class: sr-only
+# strip follow topics and authors
+strip_id_or_class: tly2fw0
+# strip second version of lead text an lead image
+strip_id_or_class: _1o1f7ku8
+strip_id_or_class: _1ymtmqpm
+# remove query string from images
+replace_string(?quality=90&): " foo="
+#replace_string(?quality=90&): ?quality=90" foo="
+
 
 #2017
 strip_id_or_class: e-image__meta

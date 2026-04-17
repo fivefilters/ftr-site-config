@@ -1,7 +1,7 @@
-# Author: HolgerAusB  |  Version: 2025-05-11
-#
 # This works for any ippen.media website if
 # fingerprinting for ippen.media is activated
+#
+# Author: HolgerAusB  |  Version: 2026-03-18
 #
 # to get a source-feed, try to add 'rssfeed.rdf' to the category-URL e.g.
 #    https://www.example.com/hessen/rssfeed.rdf
@@ -25,11 +25,13 @@ strip_id_or_class: id-Article-kicker
 strip_id_or_class: id-AuthorList
 strip_id_or_class: id-Comments
 strip_id_or_class: id-DonaldBreadcrumb
+strip_id_or_class: id-Headline
 strip_id_or_class: id-js-relatedStory
 strip_id_or_class: id-Mediabox-info-el
 strip_id_or_class: id-Recommendation
 
 strip_id_or_class: id-Story-authors
+strip_id_or_class: id-Story-googleFollowButton
 strip_id_or_class: id-Story-interactionBar
 strip_id_or_class: id-Story-timestamp
 

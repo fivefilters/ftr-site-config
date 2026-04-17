@@ -1,0 +1,12 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' center-content ')]
+
+strip_id_or_class: toolsRight
+strip_id_or_class: toc-anchor
+strip_id_or_class: bloc-tags
+strip_id_or_class: alignement-guide
+
+strip: //div[@class='content--header']/div[@class!='sub-title']
+
+prune: no
+
+test_url: https://www.has-sante.fr/jcms/p_3193968/fr/gestion-du-capital-sanguin-en-pre-per-et-post-operatoire-et-en-obstetrique

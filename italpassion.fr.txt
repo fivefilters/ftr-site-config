@@ -1,0 +1,6 @@
+replace_string(<h2): <h3
+replace_string(</h2>): </h3>
+
+strip_id_or_class: code-block
+
+test_url: https://www.italpassion.fr/ja/%E3%82%B9%E3%83%86%E3%83%A9%E3%83%86%E3%82%A3%E3%82%B9/%E3%82%B9%E3%83%86%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9-%E3%83%97%E3%82%B8%E3%83%A7%E3%83%BC%E3%83%BB%E3%83%95%E3%82%A1%E3%83%9F%E3%83%AA%E3%83%BC%E3%81%AF%E8%87%AA%E5%8B%95%E8%BB%8A/

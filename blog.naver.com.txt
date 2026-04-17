@@ -1,7 +1,7 @@
 prune: no
 tidy: no
 title: //div[contains(concat(' ',normalize-space(@class),' '),' se-title-text ')]
-body: //div[@id='viewTypeSelector']
+body: //div[contains(@class, 'se-viewer')]
 date: //p[contains(concat(' ',normalize-space(@class),' '),' blog_date ')]
 single_page_link: concat("https://m.blog.naver.com/", substring-after(//iframe[@id='mainFrame']/attribute::src, '/'))
 test_url: https://blog.naver.com/jjy0501/222998721678

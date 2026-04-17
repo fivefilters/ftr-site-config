@@ -1,0 +1,7 @@
+body: //div[@class="content-area"]
+
+strip_id_or_class: cmp-lst016
+strip_id_or_class: cmp-misc010
+strip_id_or_class: cmp-hdg005
+
+test_url: https://www.tokyo-np.co.jp/article/454831

@@ -1,0 +1,7 @@
+body: //main[@role='main']
+
+strip_id_or_class: mhPng
+strip_id_or_class: NbZMW
+strip: //div[@x-component-name="WriterProfile"]
+
+test_url: https://digital.asahi.com/articles/ASTDZ4CMVTDZUTIL03CM.html

@@ -1,0 +1,9 @@
+http_header(User-Agent): PHP/8.4
+
+body: //div[@id='article-texte'] | //div[@id='article-container']//img
+author: //meta[@property='og:article:author']/@content
+
+prune: no
+
+test_url: https://shs.cairn.info/revue-internationale-de-politique-comparee-2001-1-page-59?lang=fr
+test_url: https://shs.cairn.info/revue-multitudes-2004-4-page-55?lang=fr

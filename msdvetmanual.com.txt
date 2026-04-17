@@ -23,4 +23,4 @@ tidy: no
 insert_detected_image: no
 
 test_url: https://www.msdvetmanual.com/toxicology/food-hazards/raisin-and-grape-toxicosis-in-dogs
-test_contains: Xylitol toxicosis occurs in dogs after ingestion of xylitol
+test_contains: ingestions have also resulted in renal failure in dogs

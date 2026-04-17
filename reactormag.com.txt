@@ -1,0 +1,14 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+
+body: //article-content | //div[contains(@class, 'post-hero-description')] | //div[contains(@class, 'post-hero-media')] | //div[contains(@class, 'about-author')]
+title: //*[contains(concat(' ',normalize-space(@class),' '),' post-hero-title ')]
+
+strip: //button
+strip: //svg
+strip: //section[contains(@class, 'shop-the-')]
+
+prune: no
+tidy: no
+
+test_url: https://reactormag.com/the-stories-we-played-honoring-the-legacy-of-interactive-fiction/
+test_url: https://reactormag.com/bioessentialism-in-star-trek-strange-new-worlds/

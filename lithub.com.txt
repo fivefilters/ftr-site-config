@@ -1,4 +1,17 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' post_wrapper_inner ')]//div[contains(concat(' ',normalize-space(@class),' '),' post_inner_wrapper ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),'story-content')]
+
+date: //meta[@property="article:published_time"]/@content
+title: //meta[@property="og:title"]/@content
+author: //a[contains(@href, '/author/')]
+
+strip: //div[contains(@class, 'story-heads')]/h1
+
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' post_tag ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),'tag-container')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),'insert-post-ads')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),'disqus')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),'the-latest-footer')]
+strip: //noscript
 
 test_url: http://lithub.com/why-indie-presses-are-opening-bookstores/
+test_url: https://lithub.com/the-work-behind-the-writing-on-writers-and-their-day-jobs/

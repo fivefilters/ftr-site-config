@@ -1,7 +1,7 @@
 title: //h1[@itemprop='name']
-body: //div[@class='article-intro'] | //div[@class='fulltext']
-author: substring-after(//div[@class='autor-name'], 'von ')
-date: //time[@itemprop='datePublished']/@datetime
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-intro ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+author: substring-after(//div[@class='article-author-top'], 'von ')
+date: //meta[@property="date"]/@content
 
 strip_id_or_class: img-left
 strip_id_or_class: img-right

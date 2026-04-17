@@ -1,0 +1,24 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+
+body: //article
+
+strip_id_or_class: post-title
+strip_id_or_class: post-byline
+strip_id_or_class: post-traduccion
+strip_id_or_class: post-footer-share
+
+strip: //aside
+strip: //article/div[@class='post-content']/following-sibling::*
+
+strip_attr: //img[contains(@src, 'http')]/@srcset
+
+prune: no
+
+test_url: https://jacobin.com.br/2025/10/quando-uma-superpotencia-cai-a-percepcao-social-da-realidade-se-dissolve/

@@ -1,8 +1,10 @@
-title: //h2[contains(@class, 'primary')]
+title: //title
 body: //*[@itemprop="articleBody"]
 body: //div[@id='story']
+body: //section[@class='body']
 author: //*[@class='by']/a
-date: substring-after(//*[@class='date'], 'Published')
+author: //meta[@name="author"]/@content
+date: //header//time/@datetime
 
 #Skip GDPR warning
 http_header(Cookie): nymuc=11111111111

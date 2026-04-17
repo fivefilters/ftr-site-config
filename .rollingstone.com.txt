@@ -1,0 +1,25 @@
+body: (//div[contains(concat(' ',normalize-space(@class),' '),' main ')]//div[contains(@class, 'main-column')])[1]//article
+
+strip: //hr
+strip: //nav
+strip: //aside
+strip: //footer
+strip: //article//h1
+
+strip_id_or_class: snark-line
+
+# activate images
+find_string: src="data:image
+replace_string: foosrc="data:image
+
+find_string: data-runner-src="https
+replace_string: src="https
+
+# set w/h for YT iframes
+find_string: width="100%" height="auto"
+replace_string: width="580" height="326"
+
+
+prune: no
+
+test_url: https://qc.rollingstone.com/coeur-de-pirate-couverture-fr/

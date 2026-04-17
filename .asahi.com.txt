@@ -1,0 +1,22 @@
+author: //a[@class="article-header-author__name"]
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+
+next_page_link: //a[@class="article-body-guide"]
+
+strip: //a[@class="article-body-guide"]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' m-acc ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' m-pagination ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' --leafs ')]
+
+strip_id_or_class: article-tags
+strip_id_or_class: article-index
+strip_id_or_class: article-book
+
+replace_string(<i>): 
+replace_string(</i>):
+replace_string(<h2): <h3
+replace_string(</h2>): </h3>
+
+test_url: https://dot.asahi.com/aerakids/articles/-/274073
+test_url: https://dot.asahi.com/aerakids/articles/-/274981?page=1

@@ -19,9 +19,14 @@ strip_id_or_class: expanded-link-description
 strip_id_or_class: expanded-link-domain
 
 strip_id_or_class: header-anchor-widget
-
 strip_id_or_class: subscribe-widget
+
+strip: //button
+strip: //svg
 strip: //p[contains(concat(' ',normalize-space(@class),' '),' button-wrapper ')]
+
+# [wallabag] setting tweets into blockquotes
+wrap_in(blockquote): //div[@class='tweet']
 
 
 prune: no

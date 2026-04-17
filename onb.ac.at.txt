@@ -5,6 +5,7 @@ strip: //button
 strip_id_or_class: breadcrumbs
 strip_id_or_class: box-teaser
 strip_id_or_class: title-left
+strip_id_or_class: page-notice
 
 # [wallabag] prevent indentation of text
 find_string: class="container

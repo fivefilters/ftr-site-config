@@ -1,0 +1,7 @@
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"dateModified":"'), '",')
+
+body: //div[@class="article-body"]
+
+next_page_link: //div[@class="article-next-page"]/a
+
+test_url: https://limo.media/articles/-/110207

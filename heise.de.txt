@@ -79,6 +79,7 @@ strip: //a-collapse
 replace_string(<a-img): <div class="ff-a-img"><img data-ff-replacement="1"
 replace_string(</a-img>): </img></div>
 strip: //div[@class="ff-a-img"]//img[not(@data-ff-replacement)]
+strip: //img[contains(@src, 'image/svg+xml')]
 
 # Some optimizations
 replace_string(<title>Druckversion - ): <title>

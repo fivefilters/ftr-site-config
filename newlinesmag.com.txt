@@ -1,0 +1,32 @@
+http_header(User-Agent): Wallabag/2
+
+title: //meta[@property='og:title']/@content
+author: //a[@rel='author']/text()
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' running-note-detail ')]
+body: //div[@class='single_post']
+
+strip_id_or_class: nav-next
+strip_id_or_class: nav-previous
+strip_id_or_class: js-running-notes-sidebar
+strip_id_or_class: share_links
+strip_id_or_class: running-note-detail__date
+strip_id_or_class: running-note-detail__navigation
+strip_id_or_class: meta
+strip_id_or_class: single_post__meta
+strip_id_or_class: single_post__author_date flex_start__mob
+strip_id_or_class: single_post__shrs
+strip_id_or_class: single_post__tags
+
+strip: //footer
+strip: //button
+strip: //div[contains(@class, 'single_post__top container')]/h1
+strip: //a[contains(@href, '/become-a-member/')]/ancestor::p[1]
+
+## [wallabag] prevent indentation:
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]/@class
+
+prune: no
+
+test_url: https://newlinesmag.com/running-notes/kashmiris-drawing-on-historical-ties-to-persia-are-donating-their-life-savings-to-iran/
+test_url: https://newlinesmag.com/first-person/how-a-house-in-mount-lebanons-zabbougha-survived-wars-famine-and-loss/

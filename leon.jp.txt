@@ -1,0 +1,8 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | LEON レオン オフィシャルWebサイト')
+author: //p[@class="ar-Header_Credit"]
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","publisher":')
+
+strip_id_or_class: page-break
+
+test_url: https://www.leon.jp/lifestyle/59058
+test_url: https://www.leon.jp/cars/317668

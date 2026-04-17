@@ -4,6 +4,7 @@ body: //main
 prune: no
 tidy: no
 
+
 # strip some standard element
 strip: //header
 strip: //footer
@@ -21,6 +22,7 @@ strip_id_or_class: contentFooter
 strip_id_or_class: region--appendix
 strip_id_or_class: o-box
 strip_id_or_class: u-content-spacer
+#strip_id_or_class: sr-only
 
 strip: //aside[contains(@class, 'dontPrint')]
 strip: //blockquote[contains(@class, 'dontPrint')]
@@ -49,6 +51,18 @@ replace_string: "foo3="http
 
 find_string: 960w, http
 replace_string: "foo4="http
+
+find_string: 480w"
+replace_string: "
+
+find_string: 640w"
+replace_string: "
+
+find_string: 720w"
+replace_string: "
+
+find_string: 960w"
+replace_string: "
 
 find_string: .jpg "
 replace_string: .jpg"
@@ -83,8 +97,13 @@ find_string: >Formular <
 replace_string: ><
 find_string: >Ende des Formulars <
 replace_string: ><
+replace_string(Weitere Informationen): 
+replace_string(Ende der weiteren Informationen): 
+replace_string(Ende des Audiobeitrags): 
 
+# [wallabag]
 wrap_in(blockquote): //figure[contains(@class, 'print:hidden')]
+wrap_in(blockquote): //div[contains(@class, 'border-l-')]
 
 
 ##############

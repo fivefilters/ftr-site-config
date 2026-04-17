@@ -1,0 +1,9 @@
+body: //div[@class="post-content"] | //div[@class="post-media"]
+title: //h1[@class="post-title"]
+
+strip_id_or_class: ez-toc-container
+
+prune: no
+tidy: no
+
+test_url: https://creteinsider.com/things-to-do-in-rethymnon-town-crete/

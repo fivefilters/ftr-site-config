@@ -1,4 +1,6 @@
 title: //h2[@class="post-title"]
 author: //header[@class="post-header"]//img/@alt
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
+date: substring-before(substring-after(//header[@class='post-header'],'Posted on '),'by')
 
 test_url: https://f-droid.org/en/2020/01/16/tracking-the-trackers.html
