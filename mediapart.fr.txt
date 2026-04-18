@@ -24,10 +24,13 @@ strip_id_or_class:  screen-reader-only
 # as this is causing problem with other products, standard is de-activated
 #replace_string(<span class="screen-reader-only">): <span class="screen-reader-only"
 
-# [wallabag] inject class 'hljs-strong' to emphasise the lead paragraph
-replace_string(<p class="news__heading__top__intro): <p class="hljs-strong news__heading__top__intro
+# [wallabag] emphasise the lead paragraph
+replace_string(<p class="news__heading__top__intro): <strong class="news__heading__top__intro
 
 strip: //button
+strip: //article[contains(@class, "collection-card")]
+strip: //h2[contains(@class, "subheading-bullet-point")]
+strip: //figure[@id="lecteur-audio"]
 
 # prevent wallabag from tinyfying paragraphs
 find_string: class="container
@@ -43,13 +46,10 @@ wrap_in(blockquote): //aside[contains(@class, 'highlight')]
 requires_login: yes
 
 login_uri: https://www.mediapart.fr/login_check
-login_username_field: email
+login_username_field: username
 login_password_field: password
 
-login_extra_fields: formulaire_action="/login_check"
-login_extra_fields: op=Se+connecter
-
-not_logged_in_xpath: //body[contains(@class,"not-logged-in")]
+not_logged_in_xpath: //div[contains(@class,"paywall-restricted-content")]
 
 
 test_url: https://www.mediapart.fr/journal/france/170116/le-site-slatefr-est-passe-entre-les-mains-du-cac-40
