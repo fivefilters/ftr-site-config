@@ -1,6 +1,21 @@
-# Skip GDPR cookie wall
-http_header(Cookie): pwv=2; pws=functional|analytics|content_recommendation|targeted_advertising|social_media
+http_header(User-Agent): curl/7.83.1
 
-http_header(User-Agent): PHP/7.4
+body: //article[@id='article-content']
+
+strip: //aside
+strip: //section[@data-test-id="editorial-tips"]
+strip: //header//div[contains(@aria-label, 'Label:')]
+strip: //header//h1
+strip: //button/parent::div
+strip: //div[@id='article-content-bottom']/following-sibling::*
+
+# strip version vor small screens
+strip_id_or_class: _5smc8c6
+# author/date
+strip_id_or_class: lyeidx8
+strip_id_or_class: _22x56g0
+
+prune: no
+tidy: no
 
 test_url: https://www.trouw.nl/buitenland/zit-trump-straks-nog-vier-jaar-in-het-witte-huis-dit-zijn-z-n-kansen~b6017d3a/
