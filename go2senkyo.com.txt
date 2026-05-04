@@ -1,0 +1,6 @@
+title: substring-before(//meta[@property='og:title']/@content , '｜ 選挙ドットコム')
+author: //h3[@class="p_seijika_detail_bottom_author_data_ttl"]
+
+body: //section[contains(concat(' ',normalize-space(@class),' '),' p_seijika_detail_contents ')]
+
+test_url: https://go2senkyo.com/seijika/123742/posts/1345575
