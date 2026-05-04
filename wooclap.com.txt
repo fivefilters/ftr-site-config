@@ -1,0 +1,24 @@
+body: //div[@id='header']/parent::div
+title: //h1
+
+# remove category. text() for wallabag; span for FiveFilters
+strip: //div[@id='header']/text()
+strip: //div[@id='header']/span[1]
+
+# strip date and reading time
+strip_id_or_class: sc-a47a27ff-2
+
+# wallabag needs this to show images
+strip_attr: //img/@srcset
+find_string: width="100" height="100"
+replace_string:
+
+# enlarge Video preview
+find_string: <iframe allow
+replace_string: <iframe width="540" height="288" allow
+
+
+prune: no
+tidy: no
+
+test_url: https://www.wooclap.com/en/blog/4-kirkpatrick-levels-training/
