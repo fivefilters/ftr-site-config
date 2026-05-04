@@ -1,0 +1,9 @@
+# this is for the /glossary/ sub-folder
+# other sections of this domain might not work
+
+body: //main[@id='main-content']
+
+prune: no
+tidy: no
+
+test_url: https://www.commlabindia.com/glossary/xapi-experience-api
