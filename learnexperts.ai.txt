@@ -1,0 +1,12 @@
+http_header(User-Agent): Wallabag/2
+
+body: //article[contains(@id, 'post-')] | //div[@id='main_content']//div[contains(@class, 'banner-excerpt')] | //div[contains(@class, 'rv-post-img')]
+
+strip: //svg
+
+strip_id_or_class: hide-desktop
+
+prune: no
+tidy: no
+
+test_url: https://learnexperts.ai/blog/what-xapi-learning-experiences-learning-activities/
