@@ -1,0 +1,7 @@
+title: substring-before( //meta[@property='og:title']/@content , ' | Whereoware')
+body: /html/body/div[2]//div[contains(@class, 'row-depth-1 row-number-6 ')]/following-sibling::div | //div[contains(@class, 'widget-type-linked_image')]
+
+prune: no
+tidy: no
+
+test_url: https://www.whereoware.com/resources/defensible-business-case-value-realization-ai-economy
