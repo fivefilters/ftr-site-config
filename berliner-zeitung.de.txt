@@ -4,6 +4,7 @@ author: //a[contains(@href,'/autoren/')]/span
 date: //time[@datetime]/@datetime
 
 strip: //article//article
+strip: //a[contains(@href,'/autoren/')]//img
 strip: //div[starts-with(@id,'qmn-ad-')]
 strip: //div[@id='article-share']
 strip: //div[@id='beyondwords-player-root']
