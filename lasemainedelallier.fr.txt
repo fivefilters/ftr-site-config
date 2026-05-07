@@ -1,0 +1,7 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article-h1 ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' auteur_info ')]//span//a
+body: //section[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+
+test_url: https://www.lasemainedelallier.fr/lapalisse-nature-cimetiere/
+test_url: https://www.lasemainedelallier.fr/30-actions-du-plan-des-100-jours/
+test_url: https://www.lasemainedelallier.fr/montlucon-stationnement-gratuit-soutien-aux-commerces-renfort-de-la-police-municipale/
