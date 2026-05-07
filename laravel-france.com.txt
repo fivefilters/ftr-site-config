@@ -1,0 +1,5 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' font-bold ')]
+body: //main
+
+test_url: https://laravel-france.com/posts/laravel-13-est-disponible
+test_url: https://laravel-france.com/posts/laravel-cloud-5-gratuit
