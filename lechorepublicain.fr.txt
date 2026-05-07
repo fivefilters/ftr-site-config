@@ -1,0 +1,9 @@
+title: //div[@id="content"]//h1[@class="typo-h1"]
+body: //div[@id="content"]//section[@class="article"]
+
+strip_id_or_class: aspect-video
+strip_id_or_class: print:hidden
+
+test_url: https://www.lamontagne.fr/moulins-03000/actualites/150-personnes-a-moulins-pour-soutenir-le-journal-l-humanite-face-a-mumures-de-la-cite-devant-le-tribunal_14979990/
+test_url: https://www.lamontagne.fr/moulins-03000/actualites/l-udaf-de-l-allier-met-en-place-une-bulle-d-r-pour-les-aidants-des-personnes-en-situation-de-handicap_14974670/
+test_url: https://www.lamontagne.fr/moulins-03000/economie/la-guinguette-des-champins-a-moulins-est-de-retour_14977659/
