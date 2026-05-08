@@ -1,8 +1,4 @@
-title: //article//h1
-body: //article
-
-strip_id_or_class: entry-meta
-strip_id_or_class: post-card
-strip: //footer
+title: //main[@id="main"]//header/h1
+body: //main[@id="main"]//div[@id="single-wrapper"]//article[@data-clarity-region="article"]
 
 test_url: https://devblogs.microsoft.com/oldnewthing/?p=42203
