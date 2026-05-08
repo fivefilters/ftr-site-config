@@ -1,0 +1,16 @@
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified')
+
+body: //article[@class="NA_article"]
+
+next_page_link: //a[@title="次のページ"]
+
+strip: //p[@class="NA_article_gallery_title"]
+strip_id_or_class: NA_article_embed_article_title
+strip_id_or_class: NA_accordion
+strip_id_or_class: NA_article_item
+strip_id_or_class: PP_nextpage
+strip_id_or_class: PP_column
+strip_id_or_class: PP_profile
+
+test_url: https://natalie.mu/eiga/news/652778
+test_url: https://natalie.mu/music/pp/dreamscometrue08

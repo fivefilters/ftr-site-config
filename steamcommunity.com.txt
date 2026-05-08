@@ -1,4 +1,6 @@
 body: //div[contains(@class, "announcement_body")]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' guide ')]
 author: //a[@class="whiteLink"]
 
 test_url: https://steamcommunity.com/games/elitedangerous/announcements/detail/1711828601535410336
+test_url: https://steamcommunity.com/sharedfiles/filedetails/?id=3428624761

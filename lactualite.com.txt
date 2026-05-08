@@ -1,0 +1,12 @@
+title: //h1[@class='entry-title']
+
+body: //p[@class='entry-lead'] | //div[contains(@class,'entry-content')] | //div[contains(@class, 'entry-asset-wrapper')]/figure
+
+# a lire aussi
+strip: //aside[contains(@class, 'suggested-link')]
+
+strip_id_or_class: newsletter-callout
+strip_id_or_class: entry-sidebar
+
+
+test_url: https://lactualite.com/sante-et-science/les-dangers-detre-esclave-de-son-gps/

@@ -1,0 +1,16 @@
+http_header(User-Agent): Mastodon/4.3.2 (http.rb/5.2.0; +https://mastodon.social/) Bot
+
+body: //div[@id='main-content']/article[1]
+author: //a[@class='m-from-author__name']
+
+strip_id_or_class: t-content__dates
+strip_id_or_class: t-content__authors
+strip_id_or_class: m-interstitial
+strip_id_or_class: a-read-more
+strip_id_or_class: m-em-flash
+strip_id_or_class: t-content__shares
+strip_id_or_class: o-self-promo
+
+prune: no
+
+test_url: https://www.rfi.fr/fr/europe/20250210-en-europe-les-%C3%A9trangers-premi%C3%A8res-victimes-de-l-intelligence-artificielle

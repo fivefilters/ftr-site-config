@@ -1,0 +1,9 @@
+title: //h1
+
+# inscription newletter
+strip: //form[@id='zdnet_newsletter_inread']
+
+# related post
+strip: //div[contains(@class,'cnzd__related-posts-bloc')]
+
+test_url: https://www.zdnet.fr/guide-achat/mes-6-applications-android-open-source-preferees-sur-le-google-play-store-477744.htm

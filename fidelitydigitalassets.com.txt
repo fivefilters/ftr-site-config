@@ -1,0 +1,19 @@
+body: //article[1]
+
+author: //hero//p[contains(@class, 'coh-style-paragraph-small')]//a
+date: substring-before(//p[contains(@class, 'article-info')] , '•')
+
+strip: //nav
+strip: //button
+strip: //hero
+strip: //header/self::* | //header/preceding-sibling::*
+strip: //div[contains(@class, 'social-media-share')]
+strip: //div[contains(@id, 'related-articles')]/parent::div/parent::div
+
+strip_id_or_class: article-info
+strip_id_or_class: mobile
+
+prune: no
+tidy: no
+
+test_url: https://fidelitydigitalassets.com/research-and-insights/increasing-impact-bitcoins-ancient-supply?ccsource=owned_social_impact_bitcoin_ancient_supply_x

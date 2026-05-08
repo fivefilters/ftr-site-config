@@ -1,9 +1,9 @@
-title: normalize(//h1)
+title: normalize-space(//h1)
 
 author: //td/p[position()=last()]/em
 
 # I swear, this is really the best way to do this
-date: normalize(//td[contains(@style, "color: #ffffff")])
+date: normalize-space(//td[contains(@style, "color: #ffffff")])
 
 # my god, it's full of tables
 body: /table/tbody/tr[5]//table/tbody//table/tbody/tr/td

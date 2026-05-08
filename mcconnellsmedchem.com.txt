@@ -1,0 +1,20 @@
+# Domain uses anti-bot mechanisms.
+# If you try to load several articles in quick succession, you may be blocked for a while.
+
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+body: //article[1]
+title: //h1[contains(@class,'post-title')]
+
+strip_id_or_class: header-standard
+strip_id_or_class: header-classic
+strip_id_or_class: single-header
+strip_id_or_class: tags-share-box
+strip_id_or_class: single-post-share
+strip_id_or_class: post-share
+
+strip: //div[contains(@class, 'post-author')] | //div[contains(@class, 'post-author')]/following-sibling::*
+
+prune: no
+
+test_url: https://mcconnellsmedchem.com/2023/02/05/how-to-make-a-small-molecule-drug/

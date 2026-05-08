@@ -1,0 +1,7 @@
+author: //ul[@class="author list"]
+
+body: //article[@role="main"]
+
+strip_id_or_class: publish-date
+
+test_url: https://akiba-pc.watch.impress.co.jp/docs/news/news/2090945.html

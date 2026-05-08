@@ -13,9 +13,14 @@ strip_id_or_class: mailmunch-giftarticle
 strip_id_or_class: flex-chain
 strip_id_or_class: c2
 strip_id_or_class: article-dossier
+strip_id_or_class: custom-card-list
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' default__OutbrainWrapper')]
 strip: //h1[contains(concat(' ',normalize-space(@class),' '),' styled__CardTitle')]
 strip: //button
+strip_id_or_class: related-link-list-wrapper
+strip: //p[text() = "A lire aussi"]
+strip: //div[text() = "Dans la même rubrique"]
+strip: //h5[text() = "Pour aller plus loin :"]/parent::div
 prune: no
 
 test_url: https://www.liberation.fr/economie/transports/le-nombre-de-francais-qui-se-deplacent-regulierement-a-velo-a-augmente-de-48-en-cinq-ans-20240514_MCTAGIHEWVC63H56OAY4NPXT4M/

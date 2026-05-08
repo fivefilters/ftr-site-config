@@ -1,11 +1,22 @@
 http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
-title: substring-before(substring-after(//script, 'datePublished":"') , '","')[0]
-date: substring-before(substring-after(//script[@id='__NEXT_DATA__'] , 'updatedAt":"') , '","')[0]
-body: //div[@id="content"]
+date: substring-before(substring-after(//script[@type='application/ld+json'][contains(., 'datePublished')], '"datePublished":"'), '"')
+title: //h1[contains(@data-testid, 'title')]
+author: //a[contains(@href, '/auteur/')]
+body: //header//p[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')] | //header//img[contains(@class, 'absolute')] | //div[@id="content"] | //div[@id="foocontent"]
+
+# activate images
+strip_attr: //img[not(contains(@srcset, 'article'))]/@srcset
+strip_attr: //img/@data-srcset
 
 # Prevents wallabag from indenting the complete text
 find_string: <div class="container
 replace_string: <div class="foocontainer
 
+find_string: id="content"
+replace_string: id="foocontent"
+
+prune: no
+
 test_url: https://www.rtbf.be/article/limportance-du-marquage-au-sol-dans-la-securite-des-cyclistes-11319232
+test_url: https://www.rtbf.be/article/plongez-dans-le-quotidien-des-celtes-en-wallonie-11668723

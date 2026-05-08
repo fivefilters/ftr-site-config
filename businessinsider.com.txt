@@ -1,7 +1,7 @@
-title://div[@class="sl-layout-post"]/h1
-
+body: //section[contains(concat(' ',normalize-space(@class),' '),' post-page-container ')]
 body: //div[@id='content' or contains(@class, 'post-content') or contains(@class, 'slide-module') or contains(@class, 'KonaBody')]
 body: //article
+
 
 strip_id_or_class: post-content-more
 strip_id_or_class: category-wrapper
@@ -12,18 +12,41 @@ strip_id_or_class: post-content-more
 strip_id_or_class: post-content-bottom
 strip_id_or_class: the-refresh-player-wrapper
 strip_id_or_class: ad-close-icon
+strip_id_or_class: in-slide-sticky
+strip_id_or_class: inline-backup-paywall
+strip_id_or_class: related-links
+strip_id_or_class: related-links-container
+strip_id_or_class: sponsored-text
+strip_id_or_class: post_footer
+strip_id_or_class: in-post-sticky
+strip_id_or_class: post-top
+strip_id_or_class: caption-drawer-input
+strip_id_or_class: caption-drawer-label
+strip_id_or_class: share-bar
+strip_id_or_class: post-bottom-more
+strip_id_or_class: category-tagline
+strip_id_or_class: back-to-home-container
+strip_id_or_class: post-sidebar
 
-strip: //div[contains(@class, "post-sidebar")]
-strip: //div[@id='related-links']
-strip: //div[@class='related-links-container']
+strip: //time
 strip: //p[@class='source']
-author://div[@class="byline"]/a
-date://div[@class="byline"]/span[@class="date"]
-prune: no
 
 single_page_link: //a[contains(text(), 'View as one page')]
 
-strip://*[contains(@class,'sponsored-text')]
-strip: //div[@id='post_footer']
+
+# rewrite image src due to JavaScript/LazyLoad
+
+find_string: src="data:image/
+replace_string: foo-src-bar="data:image/
+
+find_string: data-srcs="{&quot;https://i.insider.com
+replace_string: src="https://i.insider.com
+
+find_string: &quot;:{&quot;contentType&quot;:&quot;image/
+replace_string: " ignore="image/
+
+
+prune: no
 
 test_url: http://www.businessinsider.com/microsoft-just-put-one-of-its-hardcore-technical-geniuses-on-xbox-2012-1
+test_url: https://www.businessinsider.com/chef-tips-recipes-everyone-should-know-how-to-make#let-your-rice-rest-for-at-least-10-minutes-after-its-done-cooking-15

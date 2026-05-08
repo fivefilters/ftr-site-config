@@ -1,0 +1,33 @@
+body: //main[@id='main']/article[1]
+
+strip: //header/h1/self::* | //header/h1/preceding-sibling::*
+strip: //aside
+strip: //svg
+
+strip_id_or_class: entry__byline
+strip_id_or_class: entry__terms-wrapper--tags
+strip_id_or_class: entry__sidebar
+strip_id_or_class: ad-dog
+
+# [wallabag] switch 'ratings' and 'author' from two line to single line view
+
+find_string: star-rating__text
+replace_string: star-rating__txt inline-block
+
+find_string: written-by__text
+replace_string: written-by__txt inline-block
+
+find_string: written-by__author
+replace_string: written-by__authr inline-block
+
+# There was no src attribute in NoScript version of images
+find_string: data-src="https://
+replace_string: src="https://
+
+
+prune: no
+
+test_url: https://www.denofgeek.com/feed/
+test_url: https://www.denofgeek.com/movies/best-spider-man-and-hulk-stories-inspire-brand-new-day/
+test_url: https://www.denofgeek.com/tv/wednesday-season-2-part-1-review/
+test_url: https://www.denofgeek.com/games/marvel-ninja-gaiden-dotemu-beat-em-up-games-2025/

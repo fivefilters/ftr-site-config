@@ -1,0 +1,15 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
+
+
+strip_id_or_class: jp-relatedposts
+strip_id_or_class: wp-image-22052
+strip_id_or_class: wp-image-16723
+
+strip: //a[contains(@href, '//t.me/')]/parent::*
+
+prune: no
+tidy: no
+
+test_url: https://www.sempredirebanzai.it/uno-studio-giapponese-ha-appurato-che-la-realta-virtuale-riesce-a-migliorare-la-miopia/

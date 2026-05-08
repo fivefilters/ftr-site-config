@@ -1,0 +1,4 @@
+title: //h1
+body: //*[contains(@class, 'module-post-content')]
+strip: //*[contains(@class, 'pf-button pf-button-content')]
+test_url: https://www.feinschwarz.net/bahnhofsmission/

@@ -1,0 +1,17 @@
+body: //main[@id='main']
+
+strip: //button
+
+strip_id_or_class: breadcrumbs
+strip_id_or_class: box-teaser
+strip_id_or_class: title-left
+strip_id_or_class: page-notice
+
+# [wallabag] prevent indentation of text
+find_string: class="container
+replace_string: class="foo-cntnr
+
+
+prune: no
+
+test_url: https://www.onb.ac.at/mehr/blogs/detail/die-drucke-der-bibliotheca-eugeniana-im-prunksaal-eine-spurensuche

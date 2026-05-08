@@ -1,0 +1,7 @@
+body: //article
+
+strip_id_or_class: app
+
+replace_string(▼ADVERTISEMENT):
+
+test_url: https://kyoko-np.net/2025121601.html

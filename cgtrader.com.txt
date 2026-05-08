@@ -1,0 +1,29 @@
+body: //div[@id='product-main']
+author: //div[@class='author-info']/a
+
+strip: //svg
+strip: //form
+strip: //div[@id='comments-container']//a[contains(@href, '#new-comment')]
+
+strip_id_or_class: product-sidebar
+strip_id_or_class: gallery-progress
+strip_id_or_class: overflow-gallery__nav-info
+strip_id_or_class: product-stats-info
+strip_id_or_class: product-tabs
+strip_id_or_class: tags-list
+strip_id_or_class: avatar
+
+
+# show all images from carausel/gallery
+
+find_string: src="https://assets.cgtrader.com/assets/no_image
+replace_string: foo-src="https://assets.cgtrader.com/assets/no_image
+
+find_string: data-src="https://img
+replace_string: src="https://img
+
+
+prune: no
+tidy: no
+
+test_url: https://www.cgtrader.com/free-3d-models/industrial/tool/work-light-8b1b8ea9-f742-4f38-8c8e-12a2953f8ac2

@@ -20,5 +20,5 @@ replace_string(<img class="id-card__img"): <img class="id-card__img" width="128"
 
 prune: no
 
-test_url: https://www.tagesschau.de/ausland/kim-trump-us-reaktionen-101.html
-test_contains: Es waren ein paar Schritte für Donald Trump
+test_url: https://www.tagesschau.de/ausland/trump-kim-interview-101.html
+test_contains: Ich war in der Tat überrascht

@@ -1,0 +1,18 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Wallabag/2
+
+body: //article[@class='post--single']//div[contains(@class, 'post--single--body')] | //article[@class='post--single']//div[contains(@class, 'post--single-featured-image')]
+title: //meta[@property='og:title']/@content
+author: //meta[@name='author']/@content
+date: //meta[@itemprop='datePublished']/@content
+
+strip_id_or_class: section--postcta
+
+
+test_url: https://mereorthodoxy.com/the-flattening-of-the-human-person-looksmaxxing-and-clavicular

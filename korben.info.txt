@@ -1,6 +1,18 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | Le site de Korben')
 author: //meta[@name="author"]/@content
-body: //article[contains(concat(' ',normalize-space(@class),' '),' status-publish ')]//div[contains(concat(' ',normalize-space(@class),' '),' entry-container ')]
-strip_id_or_class: post-categories
+date: //time/@datetime
+body: //article//div[@class='article-content']/div[contains(concat(' ',normalize-space(@class),' '),' content ')]
+
+
+# [wallabag] activating images
+strip_attr: //img[contains(@src,'data:image/svg+xml')]/@src
+find_string: data-srcset="https
+replace_string: srcset="https
+find_string: srcset="/cdn-cgi/
+replace_string: srcset="https://korben.info/cdn-cgi/
+find_string: , /cdn-cgi/
+replace_string: , https://korben.info/cdn-cgi/
+
 
 test_url: https://korben.info/gitcoin-aider-a-financer-les-developpements-open-source-avec-de-lethereum.html
 test_url: https://korben.info/leon-assistant-vocal-siri.html

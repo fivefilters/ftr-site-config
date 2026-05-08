@@ -1,4 +1,4 @@
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/123.0
+http_header(user-agent): Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:140.0) Gecko/20100101 Firefox/140.0
 
 # July 2020 redesign
 
@@ -29,6 +29,7 @@ strip: //picture/following-sibling::noscript[1]
 
 strip_id_or_class: pointer-events-none
 strip_id_or_class: border-separator-b
+strip_id_or_class: feature-bar
 strip: //button
 strip: //svg
 strip: //*[@data-app-hidden="true"]

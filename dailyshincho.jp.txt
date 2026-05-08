@@ -1,0 +1,21 @@
+title: //h1[@class="c-title--single"]
+
+body: //article[@class="l-contents__article"]
+
+single_page_link: //a[contains(concat(' ',normalize-space(@class),' '),' c-text-full__link ')]/@href
+next_page_link: //a[@class="c-text-next__link"]
+
+strip_id_or_class: c-text-date
+strip_id_or_class: c-text-next
+strip_id_or_class: c-text-page
+strip_id_or_class: p-pagination
+strip: //ul[@class="c-list-sns--vertical"]
+strip: //ul[contains(concat(' ',normalize-space(@class),' '),' c-list-sns--horizon ')]
+
+replace_string(<h2): <p
+replace_string(</h2>): </p>
+
+prune: no
+
+test_url: https://www.dailyshincho.jp/article/2025/12140500/
+test_url: https://www.dailyshincho.jp/article/2025/12171550/

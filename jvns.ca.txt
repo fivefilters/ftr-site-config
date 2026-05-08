@@ -1,0 +1,14 @@
+body: //div[@id='content']//article/main
+author: //meta[@name='author']/@content
+date: //time/@datetime
+
+# prevent wallabg from stripping sub-headings:
+strip_attr: //h3/@class
+
+# un-link the subheadings
+find_string: <a href="#
+replace_string: <span foo="#
+
+prune: no
+
+test_url: https://jvns.ca/blog/2023/11/10/how-cherry-pick-and-revert-work/#so-what-does-git-apply-do

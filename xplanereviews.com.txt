@@ -1,0 +1,16 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //article//div[@data-ips-hook="postContent"]
+strip: //article//div[@data-ips-hook="postContent"]/div[1]/p[1]/strong
+
+prune: no
+
+test_url: https://xplanereviews.com/forums/topic/18670-scenery-review-eddh-hamburg-international-xp12-by-justsim-sceneries/

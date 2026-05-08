@@ -1,7 +1,7 @@
 # author: kreativmonkey
 
 # Singlepage
-single_page_link: //div[contains(@class, 'pane-eatsmarter-actionbar')]/div[@class='pane-content']/div[contains(@class, 'actionbar-print')]/div[@class='actionbar-item-action']/a
+single_page_link: //div[contains(@class, 'print-list')]/@data-url
 
 # Article Information
 title: //h1[contains(@class, 'title')]
@@ -33,4 +33,4 @@ test_url: https://eatsmarter.de/rezepte/chili-schokoladen-sorbet
 test_contains: Die Schokolade fein hacken
 
 test_url: https://eatsmarter.de/rezepte/thunfisch-wraps-1/druckansicht
-test_contains: den Strunk herausschneiden
+test_contains: Strunk herausschneiden

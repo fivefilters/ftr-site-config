@@ -1,0 +1,9 @@
+body: //main
+
+strip: //aside
+strip: //header//h1
+strip: //header//time
+
+prune: no
+
+test_url: https://eudi-wallet.gov.de/news/eudi-wallet-community-event-2026

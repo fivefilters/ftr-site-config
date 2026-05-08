@@ -1,3 +1,9 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0
+
 find_string: data-src="
 replace_string: src="
+
+find_string: "visibility: hidden"
+replace_string: "visibility: visible"
+
 test_url: https://mp.weixin.qq.com/s/FAeiC7XX6MBxjSFKBNXhaQ

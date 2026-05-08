@@ -1,0 +1,19 @@
+body: //article[contains(@class,  'Article_wrapper__')]/div[contains(@class, 'Article_content__')] | //h1[contains(@class, 'Head_title__')] | //picture[contains(@class, 'Head_bgImage_hideOnPhone')]
+author: //div[contains(@class, "Head_author_")]
+title: substring-before(//meta[@name="twitter:title"]/@content, ' – Page Not Found')
+
+# Strip call-to-action sections
+strip: //div[contains(@class, "_ctaWrapper_")]
+
+# Strip gallery arrows
+strip: //div[contains(@class, "Gallery_arrow")]
+
+# Strip recommendation tiles below article
+strip: //article[contains(@class, "ArticleTile_")]
+
+# wallabag only: set quotes into <blockquote>
+wrap_in(blockquote): //div[contains(@class, 'Quote_quote_')]
+
+test_url: https://pagenotfound.cz/clanek/nova-piratska-vlna-nebo-boj-o-moc
+test_url: https://pagenotfound.cz/clanek/zkouska-zivota-pro-celou-rodinu-aneb-prijimacky-jako-hunger-games
+test_url: https://pagenotfound.cz/clanek/krestanska-influencerka-lady-zika-ma-jasno-pro-boha-je-laska-ke-stejnemu-pohlavi-hrich-jako-kazdy-jiny

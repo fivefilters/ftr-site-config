@@ -1,7 +1,3 @@
-# Author: zinnober
-# Complete rewrite of the faz.net template as the standard one is broken
-# I tried to consider as many page variants as possible, which was some serious work
-
 tidy: no
 prune: no
 
@@ -15,15 +11,15 @@ author: //a[@rel='author']
 
 # Set date
 date: //span[@class='Datum']
-date: //span[@class='Datum'],/span
+date: //span[@class='Datum']/span
 
 # Fetch full multipage articles
-single_page_link: //a[contains(@href, 'printPagedArticle')]
+#single_page_link: //a[contains(@href, 'printPagedArticle')]
 
 # Content is here
 
 body: //article[@class='storytelling']
-body: //article[@class='article']//div[contains(@class,'body-elements')] | (//div[contains(@class,'header-teaser__image')])[1] | (//div[contains(concat(' ',normalize-space(@class),' '),' header-teaser ')])[last()]
+body: //article[contains(@class='article')]//div[contains(@class,'body-elements')] | (//div[contains(@class,'header-teaser__image')])[1] | (//div[contains(concat(' ',normalize-space(@class),' '),' header-teaser ')])[last()]
 body: //article[1]
 body: //div[@class='Artikel']
 
@@ -37,6 +33,9 @@ strip_id_or_class: ArticlePagerTop
 strip_id_or_class: header-detail
 strip_id_or_class: intro-text
 strip: //button[contains(@class,'image-toggle')]
+# Remove section text in header
+strip: //article//header//h2/div[not(contains(@data-external-selector, 'header-title'))]
+
 
 # General cleanup
 strip: //div[@class='clear']
@@ -46,9 +45,13 @@ replace_string( ·  ):
 strip_id_or_class: TeaserMore
 strip_id_or_class: plista_alternativ
 strip_id_or_class: paywall
-#strip: //button
 strip_id_or_class: header-teaser__image-details
 strip_id_or_class: tik4-sharing
+strip: //aside[contains(concat(' ',normalize-space(@class),' '),' btn ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' meta2 ')]
+strip: //footer
+strip: //aside[@data-external-selector='related-articles']
+strip: //button
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
@@ -70,6 +73,8 @@ strip_id_or_class: IndexTitel
 strip_id_or_class: cbx-Author-is-in-article-container-info
 strip_id_or_class: BigBox
 strip_id_or_class: upper-toolbar
+strip_id_or_class: print:hidden
+strip_id_or_class: hidden
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
@@ -85,11 +90,13 @@ strip_id_or_class: BilderRelatedLinks
 # Handle <img src='https://www.faz.net/img/leer.gif' width='62' data-retina-src='[real img URL]'
 strip_attr: //img/@width
 strip_attr: //img/@height
+strip_attr: //img/@loading
 find_string: src='https://www.faz.net/img/leer.gif'
 replace_string: removed-src=''
 replace_string(data-retina-src=): src= 
 
 # Remove clutter after article
+strip_id_or_class: article-footer
 strip_id_or_class: ArticlePagerBottom
 strip_id_or_class: backToHome
 strip_id_or_class: ArtikelAbbinder
@@ -106,6 +113,7 @@ strip_id_or_class: stageModule
 strip_id_or_class: ContentFooter
 strip_id_or_class: ServicesFooter
 strip_id_or_class: FAZFooter
+strip: //div[@data-module="teaser"]
 
 # Clean up stuff present just in some articles
 strip_id_or_class: Teaser620
@@ -126,6 +134,12 @@ strip: //footer[@class='tsr-Base_ContentMeta']
 strip_id_or_class: aut-Teaser
 strip_id_or_class: related-articles
 
+# 2025-12 fix for new design
+strip_attr: //div[contains(@class,'grid')]/@class
+strip_attr: //img[contains(@class, 'lazyload')]/@class
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' intro ')]
+
+
 # Try it yourself
 test_url: https://www.faz.net/aktuell/feuilleton/bilder-und-zeiten/lord-byron-in-venedig-als-pilger-popstar-und-poet-19648440.html
 test_url: https://www.faz.net/aktuell/politik/europawahl/europawahl-2024-wer-in-die-eu-einzahlt-und-wer-mittel-erhaelt-19707069.html
@@ -134,3 +148,4 @@ test_url: http://www.faz.net/aktuell/politik/inland/allensbach-analyse-im-namen-
 test_url: http://www.faz.net/aktuell/feuilleton/kino/video-filmkritiken/video-filmkritik-when-animals-dream-zerrissene-jugend-13105772.html
 test_url: https://www.faz.net/aktuell/feuilleton/debatten/keine-smart-city-in-toronto-google-stadt-ist-abgesagt-16763217.html?GEPC=s5
 test_url: https://www.faz.net/aktuell/wirtschaft/wohnen/christian-voelkers-der-immobilienmakler-der-superreichen-17778869.html
+test_url: https://www.faz.net/aktuell/stil/mode-design/100-geburtstag-von-hildegard-knef-wie-der-fotograf-walter-sanders-sie-portraetierte-200391804.html

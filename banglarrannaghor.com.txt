@@ -1,0 +1,15 @@
+body: //article[@data-hook='post']//section[@data-hook='post-description']
+
+strip: //button
+strip: //br[@role="presentation"]
+
+# show real image instead of of the tiny and blured version
+strip_attr: //img[contains(@src, ',blur')]/@src
+find_string: data-pin-media="https
+replace_string: srcset="https
+
+
+prune: yes
+tidy: yes
+
+test_url: https://www.banglarrannaghor.com/post/festive-chicken-mandi-with-crispy-skin-stovetop-method

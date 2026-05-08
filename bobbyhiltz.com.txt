@@ -1,0 +1,9 @@
+title: //h2[contains(concat(' ',normalize-space(@class),' '),' p-name ')]
+body: //article[contains(concat(' ',normalize-space(@class),' '),' h-entry ')]
+author: //a[contains(concat(' ',normalize-space(@class),' '),' p-author ')]
+date: //span[contains(concat(' ',normalize-space(@class),' '),' dt-published ')]
+strip: //footer//p
+strip: //aside[contains(concat(' ',normalize-space(@class),' '),' syndication ')]
+
+test_url: https://bobbyhiltz.com/posts/2025/11/press/
+test_url: https://bobbyhiltz.com/posts/2025/10/credit-feed-4/

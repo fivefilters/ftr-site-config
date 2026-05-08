@@ -18,6 +18,8 @@ strip: //header
 strip: //footer
 strip: //aside
 strip: //a[contains(@href, '/tags/')]/ancestor::h2[1]
+# Remove navigation links
+strip_id_or_class: bg-red-blast h-dvh
 
 strip_attr: //img/@srcset
 

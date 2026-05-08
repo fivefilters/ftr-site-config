@@ -1,0 +1,25 @@
+body:   //section[@id='content']/header | //main[@class='article']
+title:  //section[@id='content']/header/h1
+author: //a[contains(@href, '/author/')]
+date:   //time/@datetime
+
+strip: //header/h1
+strip: //main/header
+strip: //svg
+
+find_string: <a class="image-wrapper
+replace_string: <img class="image-wrapper
+
+find_string: href="https://cdn.kinocheck.com/i/
+replace_string: src="https://cdn.kinocheck.com/i/w=1280/
+
+# [wallabag] rename class, that is also used by wallabag itself
+find_string: class="video-container"
+replace_string: class="foo-video-cntnr"
+
+prune: no
+tidy: no
+
+test_url: https://kinocheck.de/news/ve0ysy/mikey-madison-und-jeremy-allen-white-fuer-the-social-network-2-im-gespraech
+# feed
+test_url: https://kinocheck.de/rss/news

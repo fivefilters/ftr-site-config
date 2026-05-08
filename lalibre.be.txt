@@ -1,7 +1,8 @@
 http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' ap-Title ')]
-date: //meta[contains(concat(' ',normalize-space(@class),' '),' cXenseParse:recs:publishtime ')]@content
+date: //meta[@name='cXenseParse:recs:publishtime']/@content
+author: //a[@class='ap-StoryAuthor-bodyTextName']/text()
 body: //article[contains(concat(' ',normalize-space(@class),' '),' ap-Story ')]
 
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' ap-StoryHeader-topbar ')]

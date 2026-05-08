@@ -1,0 +1,4 @@
+body: //body//article
+prune: no
+
+test_url: https://help.sharegate.com/en/articles/12185777-release-25-9-2

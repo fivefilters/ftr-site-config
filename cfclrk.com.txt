@@ -1,0 +1,8 @@
+body: //body
+
+strip: //header
+strip: //nav
+
+prune: no
+
+test_url: https://www.cfclrk.com/articles/github_identities.html

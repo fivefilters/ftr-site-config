@@ -1,12 +1,17 @@
-http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+http_header(user-agent): Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //article[contains(@class, 'article-content')]
+body: //article
 
 strip_id_or_class: ad__section-border
 strip_id_or_class: article-meta
 strip_id_or_class: visually-hidden
 strip_id_or_class: article-comment
+strip_id_or_class: story-v2-right-rail
+strip_id_or_class: list-widget-trending
 
 strip: //header[contains(@class, 'identity-intro')]/parent::*
-strip: //section[@class='more-topic']
+strip: //section[contains(@class, 'more-topic')]
 strip: //section[contains(@class, 'newsletter-widget')]/parent::div
 strip: //nav
 

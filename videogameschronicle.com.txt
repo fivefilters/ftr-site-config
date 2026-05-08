@@ -1,0 +1,10 @@
+body: //div[@id='content_body'] | //div[@class='post__header-main']/p | //figure[@class='post__featured-image']
+title: substring-before(//meta[@property='og:title']/@content , ' | VGC')
+
+strip_id_or_class: signoff
+
+prune: no
+tidy: no
+
+test_url: https://www.videogameschronicle.com/features/the-return-of-bam-margera-iconic-skate-star-talks-tony-hawks-pro-skater-3-4-thug-and-more/
+test_url: https://www.videogameschronicle.com/news/civilization-6-is-currently-free-to-claim-on-the-epic-games-store/

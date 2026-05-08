@@ -1,0 +1,8 @@
+body: //section[contains(@class, 'page-content')]//div[contains(@class, 'post-section-row')] | //h2[contains(@class, 'article-hero')] | //h2[contains(@class, 'section-heading')] | //img[contains(@class,'article-hero-img')]
+
+author: //div[@class='post-author-block']/h2
+
+prune: no
+
+test_url: https://fathers.pl/cos-taki-slaby-czyli-jak-przez-dwadziescia-lat-probowalem-dogonic-wlasnego-ojca/
+test_url: https://fathers.pl/kazdy-moze-sie-dosiasc-filip-springer-o-tym-dlaczego-warto-palic-ogniska/

@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' storycontent ')]
+date: //div[@class='chronodata']
+
+test_url: https://thealexandrian.net/wordpress/39885/roleplaying-games/smart-prep

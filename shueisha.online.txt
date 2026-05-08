@@ -1,0 +1,16 @@
+title: substring-before(//meta[@property='og:title']/@content , '| 集英社オンライン')
+author: //div[contains(concat(' ',normalize-space(@class),' '),' article-header-authors ')]
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","publisher"')
+
+body: //div[@class="article-body"]
+
+next_page_link: //a[@class="article-induction__link"]
+
+strip_id_or_class: gallery-ttl
+strip_id_or_class: article-gallery-btn
+strip: //title
+
+prune: no
+
+test_url: https://shueisha.online/articles/-/255447
+test_url: https://shueisha.online/articles/-/256026

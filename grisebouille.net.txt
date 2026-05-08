@@ -1,0 +1,12 @@
+body: //main/div[contains(@class, 'main block')]
+title: //meta[@property='og:title']/@content
+date: //meta[@property="article:modified_time"]/@content
+author: //meta[@name='author']/@content
+
+strip_id_or_class: datepubli
+strip_id_or_class: article-nav
+
+prune: no
+tidy: no
+
+test_url: https://grisebouille.net/ep42-fais-un-voeu

@@ -2,7 +2,7 @@ body: //article[@id='postContent'] | //article[contains(@id, 'comment-')] | (//a
 author: (//a[contains(@class, 'person-listing')])[1]
 
 strip: //svg
-strip: //a[contains((concat(' ',normalize-space(@class),' '),' btn ')]
+strip: //a[contains(concat(' ',normalize-space(@class),' '),' btn ')]
 strip: //a[contains(@class, 'person-listing')]/following-sibling::text() | //a[contains(@class, 'person-listing')]/following-sibling::*
 strip: //button[contains(concat(' ',normalize-space(@class),' '),' btn ')]
 

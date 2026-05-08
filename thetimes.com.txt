@@ -1,0 +1,22 @@
+body: //article
+
+strip: //div[contains(@class, 'InlineAdWrapper')]
+strip: //div[contains(@class, 'inlineRelatedArticles')]
+strip: //div[contains(@class, 'hidden')]
+strip: //div[contains(@class, 'HeaderTopContainer')]
+strip: //div[contains(@class, 'keylines')]
+strip: //nav
+
+strip_id_or_class: related-articles
+strip_id_or_class: paywall-portal-article-footer
+strip_id_or_class: wc-newsletter-puff
+strip_id_or_class: inline-article-ad
+strip_id_or_class: article__quizle-sidebar
+strip_id_or_class: article-promoted-content
+strip_id_or_class: article-share-buttons
+strip_id_or_class: article-previous-next
+strip_id_or_class: comments-container
+
+prune: no
+
+test_url: https://www.thetimes.com/article/c1ee434c-86c8-11ec-9c9e-c5f8451b2970

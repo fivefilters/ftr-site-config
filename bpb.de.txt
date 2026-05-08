@@ -1,0 +1,42 @@
+body: //main/article[1]
+
+strip: //header
+strip: //footer
+
+strip: //a[contains(@text(), 'Interner Link:')]
+strip: //a[contains(@class, 'styled-link--internal')]
+strip_id_or_class: a-visually-hidden
+strip_id_or_class: styled-link--internal
+
+# activate images
+find_string: <bpb-picture
+replace_string: <img
+find_string: </bpb-picture>
+replace_string: 
+
+find_string: <bpb-lightbox>
+replace_string: <div class="bpb-lightbox">
+find_string: </bpb-lightbox>
+replace_string: </div>
+
+find_string: <bpb-lightbox-gallery id
+replace_string: <div class="bpb-lightbox-gallery" id
+find_string: </bpb-lightbox-gallery>
+replace_string: </div>
+
+find_string: <template slot="description">
+replace_string: <figcapture slot="description">
+
+# prevent double-pictures and captions in PushToKindle
+strip: //figure//div[@class='bpb-lightbox']
+strip: //div[@class='bpb-lightbox-gallery']
+
+# remove download-links on images in galery
+strip_id_or_class: scroller-gallery__link-interactive
+strip: //a[@rel='license']/self::a | //a[@rel='license']/preceding-sibling::text()
+
+
+prune: no
+tidy: no
+
+test_url: https://www.bpb.de/themen/nationalsozialismus-zweiter-weltkrieg/der-zweite-weltkrieg/199397/der-weg-in-den-krieg/

@@ -1,0 +1,21 @@
+body: //section[@id='content']//div[@class='article1']
+
+strip_id_or_class: article1-side
+strip_id_or_class: -hide-print
+strip_id_or_class: footnotes1-side
+strip_id_or_class: socials1
+strip_id_or_class: lazyload
+
+strip: //div[contains(@x-data, 'show: false')]
+
+# activate tables/figures in noscript nodes
+find_string: noscript>
+replace_string: div>
+
+prune: no
+# do NOT use 'tidy:', because wallabag won't catch anything if 'no'
+# and FTR will not catch author and date if set ti 'yes'
+# while yes is standard for wallabag and no is standard for FTR, everything is fine if not set manually
+
+test_url: https://www.americanprogress.org/article/project-2025-would-destroy-the-u-s-system-of-checks-and-balances-and-create-an-imperial-presidency/
+test_url: https://www.americanprogress.org/article/childhood-vaccination-has-saved-millions-of-lives-but-rising-hesitancy-could-reverse-decades-of-progress/

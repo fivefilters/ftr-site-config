@@ -1,0 +1,16 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' news_container ')]
+title: //h1[1]
+author: //p[@class="article-bottom-author"]
+
+# date for articles until 1999; 2000-2099; 2100-2199
+date: substring-before(substring-after( //link[@rel="canonical"]/@href , '/19') , '_')
+date: substring-before(substring-after( //link[@rel="canonical"]/@href , '/20') , '_')
+date: substring-before(substring-after( //link[@rel="canonical"]/@href , '/21') , '_')
+
+strip_id_or_class: other-news-note 
+strip_id_or_class: event_list.list
+strip_id_or_class: article_date
+strip_id_or_class: article-menu_base
+strip_id_or_class: right_side
+
+test_url: https://www.cnews.ru/news/top/2025-01-17_sozdana_absolyutno_besplatnaya

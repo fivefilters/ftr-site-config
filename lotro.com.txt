@@ -1,8 +1,6 @@
-# author: HolgerAusB
-#
 # Lord of The Rings Online (Game)
 #
-# This is only for the info-feed shown up in the game launcher.
+# This is only for articles in /home (news) and the info-feed shown up in the game launcher.
 #
 # subsribe to launcher feed:
 # https://www.lotro.com/en/launcher-feed.xml
@@ -13,11 +11,23 @@
 #  /fr/   Français (french)
 #
 
+# article-URL must contain language parameter e.g. ?lang=en_US
+# or 
+# you need to set ONE of the following cookies which must match the used language:
+
+#http_header(cookie): locale=en_US
+#http_header(cookie): locale=fr_FR
+#http_header(cookie): locale=de_DE
+
 body: //div[contains(@class, 'article-body')]
 
 strip_id_or_class: legal-and-language
 strip_id_or_class: footer-download
 strip_id_or_class: footer
+
+strip: //div[contains(@class, 'article-body')]/h1[1]
+
+prune: no
 
 test_url: https://www.lotro.com/news/lotro-producer-letter-march-2022-de?locale=de_DE
 test_url: https://www.lotro.com/en/launcher-feed.xml

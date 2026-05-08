@@ -1,0 +1,12 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | Merkmal（メルクマール）')
+
+next_page_link: //div[@class="link-nextpage"]/a
+
+strip_id_or_class: post-keyword
+strip_id_or_class: link-nextpage
+strip_id_or_class: link-gallery
+strip_id_or_class: link-post
+strip_id_or_class: pagination
+strip_id_or_class: recommend
+
+test_url: https://merkmal-biz.jp/post/113931

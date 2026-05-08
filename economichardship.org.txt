@@ -1,0 +1,13 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0
+
+body: //article[contains(@id, 'post-')]
+author: //meta[@name='author']/@content
+
+strip_id_or_class: vc_cta3-container
+strip_id_or_class: edgtf-post-info-bottom
+strip_id_or_class: edgtf-post-info-top
+strip_id_or_class: entry-title
+strip_id_or_class: edgtf-post-info
+strip_id_or_class: m-a-box 
+
+test_url: https://economichardship.org/2025/02/christian-right-is-coming-for-public-schools/

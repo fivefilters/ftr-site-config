@@ -1,0 +1,10 @@
+body: //article
+author: //div[contains(@class, 'f1-special-author--content')]/strong
+
+strip: //a[contains(@href, '/latest/article/')]/parent::p
+strip: //a[contains(@data-action-type, 'Promotion')]/parent::*
+strip: //h3[contains(text(), 'DISCOVER MORE')]/parent::*
+
+prune: no
+
+test_url: https://www.formula1.com/en/latest/article/epic-road-trips-rapping-with-tsunoda-and-strange-glasses-getting-to-know-the.54wjAIJL66YHREBjx1snKc

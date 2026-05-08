@@ -1,0 +1,22 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //main[@id='main-content']/header//picture | //main[@id='main-content']/div[1]/div[1]
+
+strip: //aside
+strip: //a[contains(@href, '/road-track-premium')]/ancestor::section[1]
+strip: //img[contains(@src, '/profile_photos/')]/ancestor::div[2]
+
+strip_id_or_class: pinterest
+
+prune: no
+tidy: no
+
+test_url: https://www.roadandtrack.com/car-culture/a10368266/the-complete-oral-history-of-the-mclaren-f1/

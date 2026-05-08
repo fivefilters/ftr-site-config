@@ -1,0 +1,16 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | 文春オンライン')
+
+body: //div[@class="article-body"]
+
+next_page_link: //a[contains(@data-track-category, 'gotoNext')]
+
+strip: //a[contains(@data-track-category, 'Photolink')]
+strip: //div[contains(@class, 'provide-site')]
+strip_id_or_class: article-leaks-link
+strip_id_or_class: paid-article-link
+strip_id_or_class: article-series-next-link
+strip_id_or_class: article__summary-list
+
+replace_string(ADVERTISEMENT):
+
+test_url: https://bunshun.jp/articles/-/85246

@@ -1,0 +1,21 @@
+body: //article[contains(@class, 'article-normal')]
+
+strip_id_or_class: post-title-container
+strip_id_or_class: post-comments-shortcut
+strip_id_or_class: js-authors-container
+strip_id_or_class: p-a-card-popover
+strip_id_or_class: article-meta-row
+strip_id_or_class: desvio-container
+strip_id_or_class: article-asset-video
+
+# [wallabag] prevent stripping content after first advert
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ad ')]
+
+# [wallabag] some beautifications
+wrap_in(blockquote): //*[@class='sumario_derecha']
+replace_string(h2>): h3>
+
+
+prune: no
+
+test_url: https://www.xataka.com/movilidad/gobierno-ha-dado-primer-paso-para-subir-impuestos-al-diesel-11-centimos-litro-a-cambio-6-500-millones-euros

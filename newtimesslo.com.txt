@@ -1,0 +1,9 @@
+body: //div[@id='StoryLayout']
+date: //meta[@name="date"]/@content
+
+# strip text 'click to enlarge' bevor images
+strip: //a[@class='zoomable']/preceding-sibling::*
+strip: //a[@class='zoomable']/preceding-sibling::text()
+
+test_url: https://www.newtimesslo.com/opinion/trampled-16629986
+test_url: https://www.newtimesslo.com/arts/the-civic-ballet-of-slo-presents-the-wonderful-wizard-of-oz-at-the-pac-on-april-18-and-19-16604864

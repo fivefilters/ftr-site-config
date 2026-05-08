@@ -1,0 +1,23 @@
+# Similar to tomshardware.com
+
+body: //section[contains(concat(' ',normalize-space(@class),' '),' content-wrapper ')]
+strip: //aside
+strip: //svg
+strip_id_or_class: ad-unit
+strip_id_or_class: table__instruction
+strip_id_or_class: border-b
+strip_id_or_class: how-we-test
+strip_id_or_class: mt-6
+# Image src not available in these
+strip_id_or_class: imageGallery-wrapper
+strip_id_or_class: author__avatar-block
+strip_id_or_class: slice-container-newsletterForm
+
+# Fix JS-only images
+find_string: src="https://vanilla.futurecdn.net/gamesradar/media/img/missing-image.svg"
+replace_string: old-src="https://vanilla.futurecdn.net/gamesradar/media/img/missing-image.svg"
+find_string: data-original-mos="http
+replace_string: src="http
+
+test_url: https://www.gamesradar.com/the-making-of-crash-team-racing/
+test_url: https://www.gamesradar.com/games/board-games/articulate-review/

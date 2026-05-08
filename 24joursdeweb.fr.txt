@@ -1,4 +1,6 @@
+title: //h1[@class="post-title"]
 author: substring-after(//h2[@class='post-author-title'], 'À propos de ')
 date: //p[@class="post-metas"]//time/@datetime
+body: //div[@class="post-entry"]
 
 test_url: https://www.24joursdeweb.fr/2020/impact-environnemental-du-numerique-quelles-regulations/

@@ -1,0 +1,8 @@
+author: substring-after(//div[@class="post-auther"], 'Text by ')
+
+body: //div[@class="single-post"]
+
+strip_id_or_class: nextPageTitle
+strip_id_or_class: post-auther
+
+test_url: https://newsphere.jp/list/indonesia_railway_48/?twclid=2-3n2mdr21avt5gwcknoazsxta4

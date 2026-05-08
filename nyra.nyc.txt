@@ -1,0 +1,13 @@
+body: //div[@id='article-content'] | //main/div[1]/div[1]/div[1]/h1/following-sibling::*
+
+# activating images (hidden, if no JavaScript)
+find_string: /image/auto/https:
+replace_string: /image/auto,width=640/https:
+
+replace_string(data-srcset): foo-dss
+replace_string(srcset): foo-ss
+
+prune: no
+tidy: no
+
+test_url: https://nyra.nyc/articles/waymo-money-waymo-problems

@@ -1,0 +1,15 @@
+# Sometimes https fails with wallabag due to a cert problem
+# try http instead
+
+body: //div[@id='contentBoxText']
+title: //meta[@name="description"]/@content
+
+# [wallabag] prevent indentation
+strip_attr: //div[contains(@class, 'container')]/@class
+
+prune: no
+tidy: no
+
+test_url: https://www.parlimen.gov.my/rss.bm
+test_url: https://www.parlimen.gov.my/tawaran_sebut_harga_par2367_sh52025_3.html
+test_url: https://www.parlimen.gov.my/tawaran_sebut_harga_par2367_sh82025.html?&lang=bm

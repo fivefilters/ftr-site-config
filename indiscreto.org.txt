@@ -1,0 +1,9 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+
+strip: //footer | //footer/following-sibling::*
+
+prune: no
+
+test_url: https://www.indiscreto.org/copyright-e-disobbedienza-civile/

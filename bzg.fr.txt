@@ -1,0 +1,8 @@
+body: //main/article
+
+strip: //aside
+
+prune: no
+
+test_url: https://bzg.fr/en/the-zen-of-task-management-with-org/
+test_url: https://bzg.fr/barbares-bisounours-baudets/

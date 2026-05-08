@@ -17,3 +17,5 @@ tidy: yes
 
 test_url: https://gizmodo.com/the-new-bad-tick-is-going-to-take-over-half-the-united-1831079855
 test_url: https://gizmodo.com/apple-iphone-16-review-2000500097
+test_url: https://gizmodo.com/these-hateful-eight-figures-are-appropriately-retro-1754478894
+test_contains: NECA have fully unveiled

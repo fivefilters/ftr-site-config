@@ -1,0 +1,27 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //div[@id='threadMainContainer']
+
+strip_id_or_class: user-profile-image
+strip_id_or_class: threadQuestionTitleStatusIcons
+strip_id_or_class: voting-button
+strip_id_or_class: message-voting-button
+strip_id_or_class: message-voting-container
+strip_id_or_class: thread-message-content-reply-to
+strip_id_or_class: reportAbuseMessageItem
+strip_id_or_class: message-user-info-affiliations
+strip_id_or_class: message-action-container
+
+
+replace_string(<button): <small><em
+replace_string(</button>): </em></small>
+
+prune: no
+
+test_url: https://answers.microsoft.com/de-de/windows/forum/all/windows-11-fotoanzeige-von-windows-foto-app/e36d3df3-4a14-4a31-8390-557dacdbf9df

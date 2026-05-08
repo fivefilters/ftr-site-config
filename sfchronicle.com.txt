@@ -1,0 +1,14 @@
+http_header(User-Agent): Mastodon/4
+
+body: //main//article[@class="rel"] | //section[contains(concat(' ',normalize-space(@class),' '),' mw1200px ')]
+
+strip: //div[contains(@class, 'breadcrumb')]
+strip: //a[@aria-label="Share to Facebook"]/parent::div
+strip: //p[text()='Advertisement']/parent::div
+strip: //h2[text()='More For You']/ancestor::div[@data-block-type="inlinerecirculation"]
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' mw1200px ')]//h1
+
+prune: no
+tidy: no
+
+test_url: https://www.sfchronicle.com/food/restaurants/article/thomas-keller-french-laundry-20290670.php

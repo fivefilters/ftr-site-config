@@ -1,0 +1,7 @@
+title: substring-before(//meta[@property='og:title']/@content , ' - webCG')
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified')
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-inner ')]
+
+test_url: https://www.webcg.net/articles/-/53125
+test_url: https://www.webcg.net/articles/-/53126

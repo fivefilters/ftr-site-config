@@ -1,0 +1,6 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' featured ')]/figure | //div[@class='post-excerpt'] | //div[contains(@class, 'entry-content')] | //div[contains(concat(' ',normalize-space(@class),' '),' slide ')]
+
+prune: no
+
+test_url: https://www.01net.com/tests/test-lincroyable-gaya-velo-cargo-electrique.html
+test_url: https://www.01net.com/actualites/apple-prudemment-analyser-emails-utilisateur-ameliorer-ia.html

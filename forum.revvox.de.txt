@@ -1,0 +1,12 @@
+# [Fulltext-RSS] needs this to catch page 2+
+http_header(user-agent): curl/7.83.1
+
+body: //div[contains(@id, 'post_')]
+
+next_page_link: //link[@rel='next']/@href
+
+prune: no
+tidy: no
+
+test_url: https://forum.revvox.de/t/cant-download-tonie-content-from-official-server/1457
+test_contains: A new timeout setting has been added

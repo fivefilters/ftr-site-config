@@ -1,0 +1,9 @@
+body: //div[@class="single"]
+
+next_page_link: //p[@class="next-title"]/a
+
+strip_id_or_class: direct-access-info
+replace_string(ADVERTISEMENT):
+
+test_url: https://number.bunshun.jp/articles/-/864328
+test_url: https://number.bunshun.jp/articles/-/868425

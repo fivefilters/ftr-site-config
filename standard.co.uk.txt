@@ -1,16 +1,44 @@
-autodetect_next_page: no
-footnotes: no
-dissolve: //div[@class="column-2"]//div[@class="widget"]
-dissolve: //div[@class="column-2"]//div
+body: //div[@id='frameInner']/article
 
-author: //div[@class="innerbyline"]/a
-strip: //div[@class="innerbyline"]/a
 
-strip: //p[@class="dateline"]
-date: //p[@class="dateline"]
+strip: //button
+strip: //svg
+strip: //aside
+strip: //div[@data-island-hydrate-component="BylineWithSocial"]
+strip: //div[@data-island-hydrate-component="Byline"]
 
-title: //h1[@class="title"]
-author: //div[@class="innerbyline"]/a
-date: //p[@class="dateline"]
-body: //div[@class="column-2"]
+strip_id_or_class: next-article-element
+strip_id_or_class: icon-placeholder
+strip_id_or_class: article-bottom
+strip_id_or_class: social-share
+
+#category-tags:
+strip_id_or_class: sc-buvPDS
+strip_id_or_class: sc-bJBgwP
+
+# headlines:
+strip_id_or_class: sc-bkSUFG
+strip_id_or_class: sc-erUUZj
+strip_id_or_class: sc-cnVHiu
+
+# JavaScript image galery buttons (only first image is in article):
+strip_id_or_class: sc-jxOSlx
+
+# newsletter box:
+strip_id_or_class: sc-xyOoZ
+
+# Trending articles / read more:
+strip_id_or_class: sc-ilJxFg
+strip_id_or_class: sc-jSCfdx
+strip_id_or_class: sc-doohEh
+strip_id_or_class: readMoreVariants
+
+# [PushToKindle] lead image failed to load when: height="100vh"
+strip_attr: //img[contains(@height, '100vh') and contains(@width, 'auto')]/@width
+strip_attr: //img[contains(@height, '100vh')]/@height
+
+prune: no
+
+test_url: https://www.standard.co.uk/culture/music/elton-john-brandi-carlile-collaboration-future-b1221509.html
+test_url: https://www.standard.co.uk/lifestyle/john-cleese-spouse-divorce-advice-lorraine-b1222581.html
 test_url: http://www.standard.co.uk/lifestyle/esmagazine/grace-and-flavour-pizarro-7938350.html

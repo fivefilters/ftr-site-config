@@ -2,6 +2,8 @@
 body: //div[@id="content"]//div[contains(@class, 'entry-content') or contains(@class, 'entrytext') or @class='main' or @class='entry']
 # if that fails, get div#content
 body: //div[@id='content']
+# if that fails, get article//div@class='entry-content' for recent entries
+body: //article//div[@class='entry-content']
 title: //meta[@property='og:title']/@content
 
 date: //div[@id='content']//span[contains(@class, 'entry-date')]
@@ -25,3 +27,7 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' navigation ')]
 #strip: //iframe
 
 test_url: https://elisehahn.wordpress.com/2013/09/22/looking-back-to-move-forward-navigating-race-and-racism-in-neoliberal-terrain/
+test_contains: On this rather gloomy first day of fall
+
+test_url: https://bernardrentier.wordpress.com/2025/12/08/prudence-methodologique-et-honnetete-interpretative-des-valeurs-non-negociables/
+test_contains: Le communiqué de presse qui en a été fait a provoqué

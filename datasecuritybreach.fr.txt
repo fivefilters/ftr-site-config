@@ -1,0 +1,13 @@
+body: //div[@class='content-inner']/div/article[1]
+title: //header/h1
+author: (//div[contains(@class, 'article-meta')]//a[contains(@href, '/author/')])[1]
+date: //time/@datetime
+
+strip_id_or_class: entry-footer
+
+strip: //a[contains(@href,  'veillezataz.com')]/parent::figure
+
+prune: no
+tidy: no
+
+test_url: https://www.datasecuritybreach.fr/google-mise-sur-lia-locale/

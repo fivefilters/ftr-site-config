@@ -10,8 +10,8 @@ requires_login: yes
 login_uri: https://predplatne.denikn.cz/sign/in/
 login_username_field: email
 login_password_field: password
-login_extra_fields: url=@=xpath("//meta[@property='og:url']/@content", request_html(config.getLoginUri()))
 
-not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' e_lock_button_login ')]
+not_logged_in_xpath: //div[@id="e_lock__hard"]
 
 test_url: https://denikn.cz/3186/jsem-vnitrne-vyhorely-mam-odpracovano-cunek-je-stary-provokater-rika-belobradek/
+test_url: https://denikn.cz/1663315/ludvik-umel-vzdy-vyjit-s-kazdym-profil-muze-ktery-se-diky-skvelym-kontaktum-drzel-v-cele-motola-ctvrt-stoleti/

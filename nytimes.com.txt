@@ -76,7 +76,7 @@ strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
 strip_id_or_class: related-links-block
 strip_id_or_class: g-LABELS
 
-http_header(user-agent): curl/7.83.1
+http_header(user-agent): Mozilla/5.0 (Macintosh; Intel Mac OS X 15.5; rv:141.0) Gecko/20100101 Firefox/141.0
 http_header(cookie): nyt-a=AAAA; nyt-gdpr=1;
 
 prune: no

@@ -10,15 +10,16 @@ strip_id_or_class: post__title__actions
 strip_id_or_class: post__title__author-date
 strip_id_or_class: post__title__title
 strip_id_or_class: post__title__kicker
+strip_id_or_class: related-list
 
-strip: //figcaption//div[contains(@class, 'attribution theme__anchors')]
+strip: //figcaption//div[contains(concat(' ',normalize-space(@class),' '),' post__aside ')]
 strip: //aside[contains(@class, 'post__sidebar hide')]
 
 prune: no
 tidy: no
 
 # wallabag only:
-wrap_in(blockquote): //aside[contains(@class, 'post__aside')]
+wrap_in(blockquote): //aside[contains(@class, 'post__aside') and not(contains(@class, 'hide-on-print'))]
 
 test_url: https://www.quantamagazine.org/a-path-less-taken-to-the-peak-of-the-math-world-20170627/
 test_contains: Mathematicians are interested in the following

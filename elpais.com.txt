@@ -6,6 +6,7 @@ body: //div[contains(@class, 'article_body')]
 body: //div[@class='columna_texto']
 body: //div[@id='cuerpo_noticia']
 body: //div[@class='estructura_2col_1zq']//div[@class='margen_n']
+body: (//article[1]/header//h2)[1] | //article[1]/header//figure | //div[@data-dtm-region="articulo_cuerpo"]
 author: //meta[@name="author"]/@content
 
 prune: no
@@ -21,6 +22,7 @@ strip_id_or_class: more_info
 strip: //div[starts-with(@id, 'sumario') and contains(., 'más información')]
 strip: //div[@id='coment' or @id='foros_not']
 strip: //picture//source
+strip: //svg
 
 test_url: https://elpais.com/educacion/2020-08-20/el-empeoramiento-de-la-epidemia-empuja-a-las-comunidades-a-endurecer-sus-planes-para-el-nuevo-curso.html
 test_url: http://elpais.com/elpais/2012/02/06/gente/1328526783_491687.html

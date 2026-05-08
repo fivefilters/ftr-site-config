@@ -1,0 +1,9 @@
+body: //div[@class='entry-content-single']
+author: //h4[contains(@class, 'author-title')]
+
+strip: //iframe
+
+strip_id_or_class: vlog-share-single
+
+test_url: https://spacetoday.com.br/astronomos-detectam-o-buraco-negro-mais-antigo-no-amanhecer-cosmico/
+test_url: https://spacetoday.com.br/o-risco-real-de-colisao-de-objetos-proximos-com-a-terra/

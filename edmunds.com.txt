@@ -1,0 +1,18 @@
+http_header(User-Agent): PHP/8.4
+
+body: //article[1]
+author: //meta[@name='author']/@content
+
+strip: //aside
+strip: //hr
+strip: //footer
+strip: //div[@class='track-car-value-module']/parent::div
+
+strip_id_or_class: article-metadata
+
+strip_attr: //div[contains(@class, 'container')]/@class
+
+prune: no
+tidy: no
+
+test_url: https://www.edmunds.com/car-maintenance/what-is-torque-in-car.html

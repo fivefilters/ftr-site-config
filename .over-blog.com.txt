@@ -1,0 +1,27 @@
+body: //div[@class='article']
+body: //div[@class='Post-body']
+body: //article[@class='item']
+body: //article[1]
+
+title: //h1[@class="post-title"]
+
+
+strip_id_or_class: post-title
+strip_id_or_class: bloc-infos
+strip_id_or_class: ob-PostNavigation
+strip_id_or_class: return
+strip_id_or_class: ob-h4
+strip_id_or_class: ob-user-avatar
+strip_id_or_class: ob-reply-link
+
+strip: //button
+
+find_string: <div class="ob-comment"
+replace_string: <hr /><div class="hr ob-comment"
+
+prune: no
+tidy: no
+
+test_url: https://lamiedupoiraud.over-blog.com/2018/06/brioche-100-levain.html
+test_url: https://cinemacinema.over-blog.com/2025/05/shang-chi-et-la-legende-des-dix-anneaux.html
+test_url: https://berenice3.over-blog.com/2025/06/ponticauds-de-limoges.html

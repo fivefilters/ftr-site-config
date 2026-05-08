@@ -10,10 +10,19 @@ title: //div[@id='content-header']/h1
 author: //div[@class='article-origins']
 body: //article[@class='story-article'] | //div[@id='A']
 
+# [wallabag] need this to find author
+skip_json_ld: yes
+
 strip_id_or_class: article-kicker
 strip_id_or_class: article-title
 strip_id_or_class: toolbar
+strip_id_or_class: article-actions
+strip_id_or_class: story-tool
+strip_id_or_class: story-community
+
 strip: //nav
+strip: //button
+
 strip: //ul[@class='lookupLinksArtikel']
 
 strip: //meta
@@ -41,6 +50,10 @@ find_string: 0 ? postingCount() : '' ">
 replace_string:
 
 http_header(Cookie): DSGVO_ZUSAGE_V1=true
+
+# Inject a hint for embedded content that can't be fetched
+find_string: <script class="js-embed-template"
+replace_string: <a href="." title="Rufen sie die Originalseite auf um den Inhalt zu sehen">[Eingebetteter Inhalt]</a><script class="foo-embed-template"
 
 # wallabagger only: enlarge embeded video
 find_string: <iframe data-ratio="16:9"

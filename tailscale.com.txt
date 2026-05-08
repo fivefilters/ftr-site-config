@@ -1,0 +1,22 @@
+body: //main[1]/section[1]/div[1]
+
+
+# strip meta
+strip: //main[1]/section[1]/div[1]/div[2]
+strip: //div[contains(@class, 'lg:hidden')]
+
+# strip header (title, category, date)
+strip: //main[1]/section[1]/div[1]/div[1]/div[1]
+
+# common cleanup
+strip: //svg
+
+# remove links from headings
+find_string: <a class="header-link
+replace_string: <invalid class="header-link 
+
+# tidy:yes is necessary for showing sub-headings
+prune: no
+tidy: yes
+
+test_url: https://tailscale.com/blog/frequent-reath-security

@@ -1,0 +1,12 @@
+body: //div[@id="article-body"] | //header//p[@class='strapline'] | //div[contains(@class, 'hero-image-wrapper')]
+
+strip_id_or_class: fancy-box__body-text
+strip_id_or_class: newsletter-form__wrapper
+strip_id_or_class: table__instruction
+strip_id_or_class: fancy-box
+
+strip: //aside
+strip: //nav
+
+test_url: https://www.space.com/space-25-anniversary-exoplanet-history
+test_url: https://www.space.com/artemis-accords-explained

@@ -1,3 +1,5 @@
+http_header(User-Agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
 title: //title
 # This site config will parse the XML pointed to by the 'single_page_link' by extracting
 # the embed iframe using find_string/replace_string
@@ -15,11 +17,6 @@ find_string: &quot;
 replace_string: '
 
 single_page_link: //link[@type='text/xml+oembed']
-
-# Correct User-Agent string needed to get the oembed URL
-http_header(user-agent): PHP/7.4
-# Skip cookie consent [does not work anymore, and blocks fetching now]
-#http_header(cookie): CONSENT=YES+srp.gws-20220606;
 
 prune: no
 tidy: no

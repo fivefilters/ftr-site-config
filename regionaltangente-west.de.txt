@@ -14,6 +14,7 @@ date: //time/@datetime
 strip_id_or_class: copytxt
 strip_id_or_class: imgSrc
 strip_id_or_class: back
+strip_id_or_class: pg_mailshare
 
 strip: //h1[1]
 strip: //div[@id='right']

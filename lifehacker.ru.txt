@@ -1,0 +1,14 @@
+title: substring-before(//meta[@name='lh_page_title']/@content , ' — Лайфхакер')
+author: //meta[@name='lh_author']/@content
+date: //meta[@name='lh_published_time']/@content
+body: //article[@id='article'] | //article[@id='post-content'] | //div[@class='article-card__subtitle'] | //div[@class='article-card__cover']
+
+# [wallabag] prevent stripping subheadings 
+strip_attr: //h2[contains(@class,'wp-block-heading')]/@class
+strip_attr: //h3[contains(@class,'wp-block-heading')]/@class
+
+# [wallabag] prevent indentation and boxing
+replace_string(<article id="article"): <article id="post-content"
+
+test_url: https://lifehacker.ru/tajm-menedzhment-prokrastinaciya/
+test_url: https://lifehacker.ru/kompot-iz-smorodiny-recepty/

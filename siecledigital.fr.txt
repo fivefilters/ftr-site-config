@@ -1,10 +1,17 @@
 title: //meta[@property="og:title"]/@content 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
 
+#newletter
+strip: //div[@id="nl-insert"]
+
+#ads
+strip: //div[div[1][contains(concat(' ', normalize-space(@class), ' '), ' siecl-adlabel ')]]
+
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' essb_links ')]
 
 prune: no
 tidy: no
 
 test_url: https://siecledigital.fr/2018/08/10/twitter-condamne-france-ufc-que-choisir/
+test_url: https://siecledigital.fr/2026/01/20/cybersecurity-act-leurope-muscle-sa-defense-numerique/
 

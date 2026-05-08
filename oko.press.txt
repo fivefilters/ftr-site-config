@@ -1,0 +1,22 @@
+title: //h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' mt-16 ')]
+body: //div[contains(@class, "column")]/section/p | //div[contains(@class, "column")]/*[self::p or self::h2] | //figure[@data-layout='column']
+
+strip_id_or_class: banner-content
+strip_id_or_class: hidden
+strip_id_or_class: print:hidden
+
+strip: //button
+strip: //a[contains(@href, '/autor/')]/parent::div/parent::div
+strip: //a[contains(@href, '/autor/')]/parent::li/parent::ul/parent::div
+strip: //div[@id='end-of-content']/following-sibling::text() | //div[@id='end-of-content']/following-sibling::*
+
+# activate images
+replace_string(noscript>): div>
+strip: //img[contains(@src, 'data:image/')]
+
+
+prune: no
+
+test_url: https://oko.press/czy-da-sie-przewidziec-zawal-serca
+test_url: https://oko.press/odstraszanie-nuklearne-w-europie

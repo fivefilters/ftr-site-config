@@ -1,7 +1,7 @@
 prune: no
  
 # Content
-body: //div[contains(@class, 'kochbar')]
+body: //section[contains(@class, 'jt-preparation')] | //section[contains(@class, 'jt-ingredients')]
 
 # Cleanup
 strip_id_or_class: kb-recipe-image-gallery-wrapper

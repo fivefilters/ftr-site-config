@@ -1,19 +1,16 @@
-#copied from nymag.com.txt
+title: //meta[@property="og:title"]/@content
+body: //section[@class='body']/div[contains(@class, 'article-content')]
+author: //meta[@name="author"]/@content
+date: //meta[@property="article:published_time"]/@content
 
-title: //h1[contains(@class, 'headline-primary')]
-body: //*[@itemprop="articleBody"]
-body: //div[@id='story']
-author: //*[@class='by']/a
-date: substring-after(//*[@class='date'], 'Published')
 prune: no
-strip: //aside[contains(@class, "related")]
-
-#Skip GDPR warning
-http_header(Cookie): nymuc=11111111111
-
-parser: html5php
 tidy: no
 
+## below from old config, before 2025-05:
+
+#copied from nymag.com.txt
+
+strip: //aside[contains(@class, "related")]
 next_page_link: //div[@class='page-navigation']//li[@class='next']/a
 
 test_url: http://www.vulture.com/2018/06/damsel-review.html

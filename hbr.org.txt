@@ -1,7 +1,36 @@
 title: //meta[@property="og:title"]/@content
 author: //div[@class="article-byline detached"]/ul[@class="article-byline-list"]/li[@class="article-author"]/a
-body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
+body: //article
 date: //meta[@property="article:published_time"]/@content
+
+strip: //svg
+strip: //div[contains(@class, 'Title_headline-container')]
+
+strip: //div[contains(@class, 'Standard_top-utils')]
+strip: //div[contains(@class, 'Premium_top-utils')]
+
+strip: //div[contains(@class, 'Standard_left-rail')]
+strip: //div[contains(@class, 'Premium_left-rail')]
+
+strip: //div[contains(@class, 'Standard_bottom-utils')]
+strip: //div[contains(@class, 'Premium_bottom-utils')]
+
+# You need Wallabagger to fetch summary because of JavaScript
+# If you choose to activate the following strips, you may also lose audio-player
+
+#strip: //div[contains(@class, 'Standard_summary')]
+#strip: //div[contains(@class, 'Premium_summary')]
+
+strip_attr: //img[contains(@src, 'http')]/@srcset
+strip_attr: //img[contains(@src, '/resources/')]/@srcset
+
+prune: no
+tidy: no
+
+
+### OLD version, before MAR 2026 ###
+
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article ')]
 
 strip_id_or_class: hide-for-print
 strip_id_or_class: is-hidden
@@ -19,7 +48,6 @@ replace_string(<article-promo class): <div class
 replace_string(</article-promo>): </div>
 strip_id_or_class: article-promo
 
-prune: no
 
 test_url: http://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs/ar/
 test_url: http://hbr.org/2013/03/big-bang-disruption/ar/

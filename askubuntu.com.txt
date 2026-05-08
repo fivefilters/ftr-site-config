@@ -1,0 +1,25 @@
+body: //div[contains(@class,'post-layout')]
+date: //time/@datetime
+author: (//div[@itemprop="author"])[1]/a
+
+strip_id_or_class: post-taglist
+strip_id_or_class: js-post-menu
+strip_id_or_class: -flair
+strip_id_or_class: js-post-comments-component
+
+strip: //button
+strip: //svg
+strip: //a[contains(@href, '/users/')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' answer ')]/text()
+strip: //span[@itemprop="commentCount"]
+
+find_string: <div class="js-vote-count
+replace_string: <hr><div class="foo-js-vote-count
+
+# [FTR] prevent generic site logo as lead image, if post contains no images
+insert_detected_image: no 
+
+prune: no
+tidy: yes
+
+test_url: https://askubuntu.com/questions/766048/mount-unknown-filesystem-type-lvm2-member

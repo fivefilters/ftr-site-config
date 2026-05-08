@@ -34,6 +34,8 @@ strip_id_or_class: js-cookies-bar
 strip_id_or_class: index-menu
 strip_id_or_class: newsletter-form
 strip_id_or_class: newsletter-rgpd
+strip_id_or_class: stretched-link-container
+strip_id_or_class: to-read
 
 test_url: https://www.numerama.com/sciences/818229-une-loi-mathematique-a-ete-decouverte-dans-les-dunes-de-sable-sur-terre-et-sur-mars.html
 test_url: http://www.numerama.com/sciences/243352-hubble-detecte-un-trou-noir-supermassif-propulse-hors-de-sa-galaxie.html

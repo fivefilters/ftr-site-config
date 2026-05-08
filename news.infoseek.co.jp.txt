@@ -1,0 +1,7 @@
+title: substring-before(//meta[@property='og:title']/@content , '｜Infoseekニュース')
+
+body: //div[@class="topic-detail__text"]
+
+next_page_link: //img[@alt="次のページ"]/../@href
+
+test_url: https://news.infoseek.co.jp/article/itmedia_mobile_20260130124/

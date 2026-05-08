@@ -1,15 +1,12 @@
-body: //article//div[contains(concat(' ',normalize-space(@class),' '),' gtm-story-text ')]
-body: //article
+http_header(User-Agent): Mastodon/4.3.2 (http.rb/5.2.0)
 
-# convert id with hidden string to avoid being dumped
-replace_string(hidden-): show-
-
+body: //main[@id='main-content']
 date: //meta[@name="datePublished"]/@content
-author: //a[contains(concat(' ',normalize-space(@class),' '),' gtm-author-byline ')]
 
-strip: //time[@itemprop="datePublished"]
-strip: //img[@role="presentation"]
+strip: //h1[@data-cy="story-headline"]/parent::div
+strip: //div[@data-cy="social-share-bottom"] | //div[@data-cy="social-share-bottom"]/following-sibling::*
 
-strip_id_or_class: gtm-primary-tag-link
 
-test_url: https://www.axios.com/apple-buy-driveai-753da17d-60fe-44f9-84ff-1d2d82cd0b81.html
+prune: no
+
+test_url: https://www.axios.com/2019/06/25/apple-buy-driveai

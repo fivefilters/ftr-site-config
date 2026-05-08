@@ -1,6 +1,6 @@
 #metadata
 title: //meta[@property="og:title"]/@content
-author: //div[@id="content"]//p[contains(@class, 'byline')/a[starts-with(@href, '/contributor')]
+author: //div[@id="content"]//p[contains(@class, 'byline')]/a[starts-with(@href, '/contributor')]
 date: //div[@id="content"]//p[contains(@class, 'post-date')]
 
 #text
@@ -10,7 +10,7 @@ prune: no
 
 #clean up
 strip_id_or_class: ssk-group
-strip: //div[contains(@id, 'div-gpt-ad)]
+strip: //div[contains(@id, 'div-gpt-ad')]
 
 test_url: http://lareviewofbooks.org/review/american-politics-redeembale-robert-gates-hillary-clinton-two-memoirs-washington-dc
 test_url: http://lareviewofbooks.org/interview/souvenirs-future

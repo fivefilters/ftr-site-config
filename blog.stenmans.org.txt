@@ -1,0 +1,11 @@
+body: //div[@id='content'] |  //div[@id='foocontent'] | //div[@id='footnotes']
+date: substring-after(//div[@id='footer'] , 'Last updated ')
+
+# [wallabag] prevent indentation
+find_string: <div id="content">
+replace_string: <div id="foocontent">
+
+prune: no
+tidy: no 
+
+test_url: https://blog.stenmans.org/theBeamBook/

@@ -1,4 +1,8 @@
-title: //title
-body: //div[@id='question']//div[contains(@class,'post-text')] | //div[@id='answers-header']//h2 | //div[contains(@class,'accepted-answer')]//div[contains(@class,'post-text')]
+title: //*[@itemprop='name'][ancestor::*[@itemscope][1]/@itemtype='https://schema.org/Question']
+body: //*[@itemprop='text'][ancestor::*[@itemscope][1]/@itemtype='https://schema.org/Question'] | //div[@id='answers-header']//h2 | //*[@itemprop='text'][ancestor::*[@itemscope][1][@itemtype='https://schema.org/Answer'][@itemprop='acceptedAnswer']]
+author: //meta[@itemprop='name'][ancestor::*[@itemscope][1][@itemtype='http://schema.org/Person'][@itemprop='author'][ancestor::*[@itemscope][1][@itemtype='https://schema.org/Question']]]/@content
+date: //*[@itemprop='dateCreated'][ancestor::*[@itemscope][1]/@itemtype='https://schema.org/Question']/@datetime
+
+tidy: no
 
 test_url: http://cstheory.stackexchange.com/questions/14811/what-is-the-enlightenment-im-supposed-to-attain-after-studying-finite-automata/14818#14818

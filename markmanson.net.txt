@@ -18,6 +18,6 @@ replace_string(</noscript>): </div>
 
 prune: no
 
-test_url: https://markmanson.net/how-to-be-insanely-successful
-test_contains: you see everyone around you obsessed
+test_url: https://markmanson.net/5-mindsets-that-create-success
+test_contains: that she was born into a poor family
 test_url: https://markmanson.net/feed
