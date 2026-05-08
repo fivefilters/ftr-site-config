@@ -2,4 +2,4 @@ title: //main//header[contains(concat(' ',normalize-space(@class),' '),' news-he
 author: //main//header[contains(concat(' ',normalize-space(@class),' '),' news-header ')]//p[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
 body: //main//article[contains(concat(' ',normalize-space(@class),' '),' w-full ')]
 
-test_url: https://www.macg.co/ailleurs/2024/10/microsoft-donne-des-yeux-et-une-voix-lia-de-copilot-146279
+test_url: https://www.watchgeneration.fr/sport/2026/04/la-coros-pace-4-se-decline-dans-une-version-black-crystal-plus-premium-19589
