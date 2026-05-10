@@ -1,0 +1,13 @@
+body: //main//div[contains(@class, 'xl:col-start-')]/*[self::img or self::main]
+title: //meta[@property='og:title']/@content
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' font-bold ')]
+# author selector would cause removing the autor's name from the body
+#author: //a[contains(@href, '/authors/')]
+
+strip: //button
+
+prune: no
+tidy: no
+
+test_url: https://laravel-france.com/posts/laravel-13-est-disponible
+test_url: https://laravel-france.com/posts/laravel-cloud-5-gratuit
