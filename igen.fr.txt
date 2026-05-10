@@ -1,3 +1,5 @@
-body: //main//header/following-sibling::article
+title: //main//header[contains(concat(' ',normalize-space(@class),' '),' news-header ')]//h1
+author: //main//header[contains(concat(' ',normalize-space(@class),' '),' news-header ')]//p[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
+body: //main//article[contains(concat(' ',normalize-space(@class),' '),' w-full ')]
 
 test_url: http://www.igen.fr/itunes/2016/05/itunes-mis-jour-la-semaine-prochaine-contre-le-bug-de-suppression-de-musique-95803
