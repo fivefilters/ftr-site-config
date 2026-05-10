@@ -1,0 +1,19 @@
+title: //meta[@property='og:title']/@content
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article-h1 ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' auteur_info ')]//a
+body: //section[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+
+strip_id_or_class: auteur
+strip_id_or_class: categories
+strip_id_or_class: article-titre
+strip_id_or_class: infos
+
+strip: //h2/mark//*[contains(text(), 'lire aussi dans nos pages')]/ancestor::h2[1] | //h2/mark//*[contains(text(), 'lire aussi dans nos pages')]/ancestor::h2[1]/following-sibling::*
+strip: //h2/mark[contains(text(), 'lire aussi dans nos pages')]/ancestor::h2[1] | //h2/mark[contains(text(), 'lire aussi dans nos pages')]/ancestor::h2[1]/following-sibling::*
+strip: //div[@class='article-disponible']/following-sibling::*
+
+prune: no
+
+test_url: https://www.lasemainedelallier.fr/lapalisse-nature-cimetiere/
+test_url: https://www.lasemainedelallier.fr/30-actions-du-plan-des-100-jours/
+test_url: https://www.lasemainedelallier.fr/montlucon-stationnement-gratuit-soutien-aux-commerces-renfort-de-la-police-municipale/
