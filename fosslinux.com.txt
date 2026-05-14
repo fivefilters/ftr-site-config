@@ -1,0 +1,13 @@
+body: //div[@id='main']//article[contains(@id, 'post-')]
+
+strip: //div[contains(@class, 'header-')]//*[contains(@class, 'post-title')]
+
+strip_id_or_class: penci-hide-tagupdated
+strip_id_or_class: post-box-meta-single
+strip_id_or_class: penci-posts-related-grid
+strip_id_or_class: post-comments
+
+prune: no
+tidy: no
+
+test_url: https://www.fosslinux.com/156189/zellij-vs-tmux-the-modern-terminal-multiplexer-for-linux.htm
