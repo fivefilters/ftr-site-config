@@ -6,6 +6,8 @@ body: //div[contains(@class,'article_head')]//h2 | //div[@id='body']
 author: //div[@class='byline']/a[0]
 
 strip_id_or_class: promo_article
+strip_id_or_class: google-ad
+strip_id_or_class: articleList
 
 # The Register embeds some quotes in a div with the class 'blockextract'.
 # Unfortunately Readability considers 'extract' as an indication that a node
@@ -15,6 +17,10 @@ strip_id_or_class: promo_article
 find_string: class="blockextract"
 replace_string: class="blockquote"
 wrap_in(blockquote): //div[contains(@class, 'blockquote')]
+
+# Some quotes are now h3 titles without proper blockquote tags
+# this wrap_in is a partial solution as we lack of a way to replace the h3 tag
+wrap_in(blockquote): //h3[contains(@class, 'quote')]
 
 #multipage
 test_url: http://www.theregister.co.uk/2015/07/06/geeks_guide_spaceguard_center/
