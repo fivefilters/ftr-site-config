@@ -1,14 +1,9 @@
-# official feed (sometimes doen't work):
-# https://www.vienna.at/news/wien/rss
-#
-# alternativly use https://createfeed.fivefilters.org/  with
-# url=https://www.vienna.at/news/wien/
-# item=.vodl-news-river__item-inner
-# item_title=h2
-# item_desc=span
-# strip=strong
+http_header(referer): https://www.vienna.at/
+http_header(cookie): __cmpcc=1
 
+body: //main[@id='main']//article
 body: //div[@class='vodl-region-article']/div[1]
+date: //meta[@property="article:published_time"]/@content
 
 strip_id_or_class: vodl-region-article__category-label
 strip_id_or_class: vodl-region-article__title-wrapper
@@ -21,16 +16,17 @@ strip: //button
 strip: //div[@data-type='embed']
 strip: //div[@data-type='video']
 
-prune: no
+prune: yes
 tidy: no
 
 # Some articles contain illegal characters with byte value 0x02
 # as conditional hyphenator. This causes an XML parsing error in FTR.
 replace_string():
 
-# activate lead image for wallabag
+# activate images for wallabag
 strip: //picture/source
-strip: //picture/img/@srcset
+strip_attr: //img/@srcset
 
 test_url: https://www.vienna.at/s-bahn-ring-mit-zwei-linien-in-wien-plane-nehmen-form-an/8464186
 test_url: https://www.vienna.at/erste-e-busse-der-wiener-linien-in-der-stadt-unterwegs/8455546
+test_url: https://www.vienna.at/zweiter-vorfall-binnen-zwei-tagen-us-maschinen-dringen-in-oesterreichischen-luftraum-ein/10165364
