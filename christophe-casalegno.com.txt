@@ -1,0 +1,4 @@
+title: //main//div[contains(concat(' ',normalize-space(@class),' '),' page-title ')]//h1
+body: //main//div[contains(concat(' ',normalize-space(@class),' '),' main ')]//div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+test_url: https://www.christophe-casalegno.com/jai-quitte-le-monde-de-la-cybersecurite-ce-que-vous-navez-pas-compris/
