@@ -76,6 +76,8 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' drop-capped ')]
 
 strip: //section[@data-component="tag-list"]
 strip: //section[@data-component="see-alsos"]
+strip: //div[@data-component="tag-list-block"]
+strip: //div[@data-component="links-block"]
 
 strip: //figcaption
 strip_id_or_class: image-and-copyright-container
