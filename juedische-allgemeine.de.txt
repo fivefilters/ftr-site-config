@@ -1,19 +1,14 @@
-body: //div[@id='article_container']
-author: //h4//a[@class='author']
-title: //h1
+body: //main
+author: //meta[@name='author']/@content
+title: //h2[@class="headline"]
 
-replace_string(lang="en"): lang="de"
-replace_string(/>1</a>):/></a>
-
-strip_id_or_class: share_toolbox
-strip_id_or_class: article_header
-strip_id_or_class: phototext
-
-strip_image_src: icon_author.gif
-
-strip: //img[@src='']
-strip: //h4[@id='author']
+strip_id_or_class: kicker
+strip_id_or_class: matadaten-autor
+strip_id_or_class: u-teaser-list
+strip_id_or_class: teaserbox-wrapper
+strip_id_or_class: button-wrapper
+strip_id_or_class: social-box-wrapper
 
 prune: no
 
-test_url: http://www.juedische-allgemeine.de/article/view/id/13366
+test_url: https://www.juedische-allgemeine.de/kultur/bob-dylan-der-geniale-sonderling/
