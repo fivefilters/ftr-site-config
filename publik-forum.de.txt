@@ -1,0 +1,16 @@
+title: //meta[@property='og:title']/@content
+author: //div[contains(@class,'autorenleiste')]//a[contains(@href, '/Autor/')]
+body: //div[@id="rs_read_this"]
+
+strip_id_or_class: bigtitle
+strip_id_or_class: autorenleiste
+strip_id_or_class: interaktion
+strip_id_or_class: serienartikel
+strip_id_or_class: anzeige
+strip_id_or_class: PFPayForFreeWall
+strip_id_or_class: publikationen
+strip_id_or_class: zwischencontentAusgabe
+
+strip: //div[contains(text(), 'Personalaudioinformationstext:')]
+
+test_url: https://www.publik-forum.de/religion-kirchen/im-geist-des-aufstehens
