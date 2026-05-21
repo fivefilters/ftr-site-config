@@ -1,0 +1,13 @@
+http_header(User-Agent): Wallabag/2
+
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+author: //div[@class="po-author-data"]/h2/a/text()
+
+strip_id_or_class: post-after-part
+strip_id_or_class: secondary-sidebar
+strip_id_or_class: taglist
+strip_id_or_class: widget_text
+strip_id_or_class: comments-area
+
+test_url: https://publicorthodoxy.org/2026/05/14/why-the-ecumenical-patriarchate-must-remain-in-constantinople/
