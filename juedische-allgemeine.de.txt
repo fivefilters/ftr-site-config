@@ -1,10 +1,14 @@
 body: //main
-author: //div[@class="matadaten-autor-container"]//span/a/text()
+author: //meta[@name='author']/@content
 title: //h2[@class="headline"]
 
 strip_id_or_class: kicker
 strip_id_or_class: matadaten-autor
 strip_id_or_class: u-teaser-list
 strip_id_or_class: teaserbox-wrapper
+strip_id_or_class: button-wrapper
+strip_id_or_class: social-box-wrapper
+
+prune: no
 
 test_url: https://www.juedische-allgemeine.de/kultur/bob-dylan-der-geniale-sonderling/
