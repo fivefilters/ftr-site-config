@@ -1,0 +1,13 @@
+title: substring-before(//meta[@property='og:title']/@content , ' | Deloitte Global')
+body: //div[contains(@class, 'content-width-')] | //iframe
+
+strip_id_or_class: feedbackbanner
+strip_id_or_class: article-info
+strip_id_or_class: authors
+strip_id_or_class: socialshare
+strip_id_or_class: cmp-layout-container--hide
+
+# wallabag only:
+wrap_in(blockquote):  //div[contains(concat(' ',normalize-space(@class),' '),' pull-quote ')]
+
+test_url: https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
