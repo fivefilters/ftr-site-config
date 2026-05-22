@@ -75,6 +75,7 @@ strip_id_or_class: BigBox
 strip_id_or_class: upper-toolbar
 strip_id_or_class: print:hidden
 strip_id_or_class: hidden
+strip: //a[contains(@href, '//google.com/preferences/')]/parent::div
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
