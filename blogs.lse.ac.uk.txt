@@ -1,3 +1,6 @@
 http_header(user-agent): PHP/8.3
 
+# [wallaback] activate sub-headings
+strip_attr: //*[contains(@class,'wp-block-heading')]/@class
+
 test_url: https://blogs.lse.ac.uk/politicsandpolicy/stop-working-on-increasing-road-safety/
