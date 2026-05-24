@@ -1,13 +1,41 @@
-title: substring-before(//meta[@property='og:title']/@content , ' | Deloitte Global')
-body: //div[contains(@class, 'content-width-')] | //iframe
+title: //meta[@property='og:title'and not(contains(@content, ' | Deloitte'))]/@content
+title: substring-before(//meta[@property='og:title']/@content , ' | Deloitte')
 
-strip_id_or_class: feedbackbanner
+body: //div[contains(@class, 'bodyresponsivegridcontainer')]
+
 strip_id_or_class: article-info
 strip_id_or_class: authors
-strip_id_or_class: socialshare
+strip_id_or_class: container-page-info
+strip_id_or_class: diauthors
+strip_id_or_class: disclaimer-modal
+strip_id_or_class: feedbackbanner
+strip_id_or_class: hide-no-results-error-msg
+strip_id_or_class: cmp-di-aside__control-container
+strip_id_or_class: cmp-di-link-list
+strip_id_or_class: cmp-di-right-rail__inner
+strip_id_or_class: cmp-in-page-nav__inner
 strip_id_or_class: cmp-layout-container--hide
+strip_id_or_class: cmp-title__text
+strip_id_or_class: socialshare
+strip_id_or_class: social-share
 
-# wallabag only:
+strip: //button
+strip: //nav
+strip: //script
+
+
+# [wallabag] fix: gravis accent in the script broke the HTML 
+replace_string(`): <script>
+
+# [wallabag] prevent indentation
+strip_attr: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]/@class
+
+# [wallabag] wrap quotes into blockquote node:
 wrap_in(blockquote):  //div[contains(concat(' ',normalize-space(@class),' '),' pull-quote ')]
 
+
+prune: no
+tidy: no
+
 test_url: https://www.deloitte.com/global/en/issues/generative-ai/ai-roi-the-paradox-of-rising-investment-and-elusive-returns.html
+test_url: https://www.deloitte.com/us/en/insights/topics/technology-management/future-of-tech-leadership.html
