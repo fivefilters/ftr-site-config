@@ -1,0 +1,15 @@
+http_header(User-Agent): PHP/8.4
+
+body: //article
+
+strip: //button
+strip: //nav
+strip: //rh-tooltip
+
+# [wallabag] highlight important- and note-boxes etc
+wrap_in(blockquote): //rh-alert
+
+prune: no
+tidy: no
+
+test_url: https://docs.redhat.com/en/documentation/openshift_container_platform/4.21/html/virtualization/networking
