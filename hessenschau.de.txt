@@ -27,6 +27,8 @@ strip_id_or_class: u-content-spacer
 strip: //aside[contains(@class, 'dontPrint')]
 strip: //blockquote[contains(@class, 'dontPrint')]
 strip: //div[contains(@x-data, 'socialSharing')]
+strip: //a[contains(@href, 'google.com/preferences/')]/parent::p/parent::div
+strip: //a[contains(@href, '/podcast/hessenschau-hoeren/')]/ancestor::div[contains(@class, 'relative')][1]
 
 # special IMAGE handling to work in FTR, wallabag and FreshRSS
 #
@@ -108,5 +110,4 @@ wrap_in(blockquote): //div[contains(@class, 'border-l-')]
 
 ##############
 test_url: https://www.hessenschau.de/rheinmain/index.rss
-test_url: https://www.hessenschau.de/panorama/weltkriegsbombe-im-frankfurter-osthafen-entschaerft,bombenfund-frankfurt-ostend-100.html
-test_url: https://www.hessenschau.de/panorama/beschaedigte-bahn-bruecke-in-frankfurt-bleibt-noch-weitere-zwei-monate-dicht-v1,bahn-bruecke-reparatur-100.html
+test_url: https://www.hessenschau.de/sport/fussball/eintracht-frankfurt/eintracht-vorstand-spricht-ueber-umdenken-nach-pyro-eskalation-wir-haben-unsere-unschuld-verloren-v1,reschke-randale-100.html
