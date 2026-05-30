@@ -29,7 +29,9 @@ strip: //blockquote[contains(@class, 'dontPrint')]
 strip: //div[contains(@x-data, 'socialSharing')]
 strip: //a[contains(@href, 'google.com/preferences/')]/parent::p/parent::div
 strip: //a[contains(@href, '/podcast/hessenschau-hoeren/')]/ancestor::div[contains(@class, 'relative')][1]
+strip: //a[contains(@href, '/die-hessenschau-app-des-hessischen-rundfunks')]/ancestor::div[1]
 
+#
 # special IMAGE handling to work in FTR, wallabag and FreshRSS
 #
 
