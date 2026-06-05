@@ -13,6 +13,12 @@ body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article
 autodetect_on_failure: no
 prune: no
 tidy: no
+parser: html5php
+
+# TYPO3: <source> tags are not self-closed; libxml swallows the fallback <img>.
+# html5php parses correctly; unwrap <picture> so wallabag shows the fallback img.
+replace_string(<picture>): <div class="ce-image-wrap">
+replace_string(</picture>): </div>
 
 strip: //div[contains(@class, 'news-authorprofile')]
 strip: //div[contains(@class, 'expert_ads')]
