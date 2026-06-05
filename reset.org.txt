@@ -1,0 +1,20 @@
+# reset.org — Cookie banner (Cookie Law Info) and donation popup (Popup Maker) are
+# present in the static HTML. Without a site config, Readability often picks overlay text.
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+
+title: //h1[contains(@class, 'article-title')]
+body: //div[contains(@class, 'type-post') and starts-with(@id, 'post-')]
+
+autodetect_on_failure: no
+prune: no
+
+strip: //div[contains(@class, 'cli-modal')]
+strip: //div[contains(@class, 'cli-bar')]
+strip: //div[contains(@id, 'cookie-law-info')]
+strip: //div[contains(@class, 'pum-overlay')]
+strip: //div[contains(@class, 'popmake')]
+strip: //div[contains(@class, 'socials-fixed')]
+strip: //div[contains(@class, 'related-single-posts')]
+
+test_url: https://reset.org/navi-apps-fuer-radtouren-und-wanderungen-ab-ins-gruen-ohne-grosse-datenspuren-und-mit-kleinem-co2-rucksack/

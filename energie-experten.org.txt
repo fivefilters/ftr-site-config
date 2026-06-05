@@ -1,0 +1,25 @@
+# energie-experten.org (TYPO3 News)
+# The schema.org articleBody block is empty; article text lives in separate
+# ce-bodytext / frame-type-* elements inside .article.
+# Without a site config, Graby/Readability often returns nothing or wrong blocks.
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+
+title: //h1[@itemprop="headline"]
+title: //meta[@property="og:title"]/@content
+
+body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')]
+
+autodetect_on_failure: no
+prune: no
+tidy: no
+
+strip: //div[contains(@class, 'news-authorprofile')]
+strip: //div[contains(@class, 'expert_ads')]
+strip: //div[contains(@class, 'news-related')]
+strip: //div[contains(@class, 'content_nav')]
+strip: //div[contains(@class, 'ce_newsletter_link')]
+strip: //span[contains(@class, 'ads_text')]
+strip: //ins[contains(@class, 'adsbygoogle')]
+
+test_url: https://www.energie-experten.org/news/weltweit-groesster-redox-flow-speicher-soll-stern-von-laufenburg-stabilisieren
