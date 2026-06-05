@@ -1,0 +1,31 @@
+# forum-geldpolitik.ch (Squarespace)
+#
+# Hero image in blog-item-banner uses lazy-loaded data-src (no src). og:image uses http.
+# Use a single blog-wrapper body xpath — separate body: lines stop at the first match
+# (banner-only yields hero image but zero article text).
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+
+find_string: property="og:image"
+replace_string: property="og:image-ignored"
+
+find_string: data-src="https://
+replace_string: src="https://
+
+title: substring-before(//meta[@property="og:title"]/@content, ' — Forum Geldpolitik')
+title: //h1[contains(@class,'entry-title')]
+
+body: //div[contains(@class,'blog-wrapper')]
+
+strip: //footer[contains(@class,'blog-item-footer')]
+strip: //div[contains(@class,'blog-item-actions')]
+strip: //div[contains(@class,'blog-item-author-profile')]
+strip: //section[contains(@class,'blog-item-pagination')]
+strip: //aside[contains(@class,'blog-item-sidebar')]
+strip: //section[contains(@class,'blog-item-comments')]
+
+autodetect_on_failure: no
+prune: no
+tidy: no
+
+test_url: https://forum-geldpolitik.ch/themen/2026/39-wertspeicher
