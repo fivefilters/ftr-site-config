@@ -1,0 +1,30 @@
+# republik.ch — Next.js articles with hero illustration in <figure>, text in .regwall
+#
+# og:image points to a different asset than the illustration in <figure>. Wallabag
+# uses og:image for list previews, so a generic/social image appeared instead of the
+# article illustration. Ignore og:image so wallabag uses the first in-content <img>.
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+
+find_string: property="og:image"
+replace_string: property="og:image-ignored"
+
+title: //meta[@property="og:title"]/@content
+title: //article//h1
+
+body: //article
+
+strip: //article//div[@data-can-breakout='true' and contains(@class,'center') and not(ancestor::div[contains(@class,'regwall')])]
+strip: //button
+strip: //svg
+strip: //hr
+strip: //a[@title='Teilen' or @title='Lesezeichen hinzufügen']
+
+strip_attr: //img/@srcSet
+strip_attr: //img/@srcset
+
+autodetect_on_failure: no
+prune: no
+tidy: no
+
+test_url: https://www.republik.ch/2026/06/03/zeit-die-dinge-persoenlich-zu-nehmen

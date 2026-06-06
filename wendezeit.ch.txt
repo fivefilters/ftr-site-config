@@ -1,0 +1,29 @@
+# wendezeit.ch (WordPress Neve + Rank Math)
+#
+# Sidebar widgets (book promo, search, TOC) sit beside the article. og:image carries
+# the featured image (not always in body). Do not strip picture/source — it removes imgs.
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+
+title: //h1[contains(@class,'entry-title')]
+title: //meta[@property="og:title"]/@content
+
+body: //article[contains(@class,'nv-single-post-wrap')]
+
+strip: //div[contains(@class,'yarpp')]
+strip: //div[contains(@class,'entry-header')]
+strip: //aside
+strip: //div[contains(@id,'block-')]
+strip: //img[contains(@src,'Buch-1x1-Bewusstsein-Sidebar')]
+strip: //img[contains(@src,'UTD-Logo')]
+strip: //img[contains(@src,'Weltkugel')]
+strip: //img[contains(@src,'gravatar.com')]
+
+strip_attr: //img/@srcset
+strip_attr: //img/@sizes
+
+autodetect_on_failure: no
+prune: no
+tidy: no
+
+test_url: https://wendezeit.ch/eigenverantwortung-oder-gesellschaftliche-regeln/
