@@ -5,6 +5,10 @@ strip: //cite
 
 skip_json_ld: yes
 
+# LQIP blur placeholders in img src break wallabag list previews (pixelated thumbnails)
+find_string: blur:100/q:1/
+replace_string: q:85/
+
 requires_login: yes
 not_logged_in_xpath: //form[@id='signupForm']
 
@@ -15,3 +19,4 @@ login_password_field: password
 login_extra_fields: csrfmiddlewaretoken=@=xpath('//input[@name="csrfmiddlewaretoken"]', request_html('https://perspective-daily.de/enrol/login'))
 
 test_url: https://perspective-daily.de/article/1212
+test_url: https://perspective-daily.de/article/4741-wie-dieser-mann-den-reichen-und-maechtigen-einfluesterte-das-wahre-problem-hiesse-demokratie/cdazHLS6
