@@ -1,0 +1,4 @@
+title: //article//h1
+body: //article/figure | //article/div[contains(@class, 'prose')]
+
+test_url: https://moneymorning.com/2026/05/31/broadcom-avgo-q2-2026-earnings-preview-ai-revenue-june
