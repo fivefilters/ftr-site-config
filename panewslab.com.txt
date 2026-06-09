@@ -1,0 +1,3 @@
+body: //article[contains(@class, 'article-content')]
+
+test_url: https://www.panewslab.com/en/articles/vs0q16r2
