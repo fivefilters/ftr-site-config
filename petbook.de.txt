@@ -1,0 +1,17 @@
+http_header(User-Agent): PHP/8.4
+
+body: //main/article[1]
+
+
+strip: //header
+strip: //div[@data-type="author"]
+strip: //div[@data-type="social-bar"]
+strip: //section[@data-type="related-posts"]
+strip: //*[@data-type="timestamp"]
+strip: //section[contains(@class, '-advertisement-')]
+
+
+prune: no
+
+test_url: https://www.petbook.de/katzen/vermissen-uns-katzen-studie
+test_url: https://www.petbook.de/kleintiere/rattenkoenig
