@@ -1,22 +1,17 @@
-#http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+# energie-experten.org (TYPO3 News)
+# Article text is split across .article and separate ce-* content elements.
+# Union with ce-* is required; scope to .news-single to avoid footer/sidebar widgets.
 
 title: //meta[@property="og:title"]/@content
 title: //h1[@itemprop="headline"]
 
-body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')] | //*[contains(@class, 'ce-')]
-#body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')]
+body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')] | //div[contains(@class, 'news news-single')]//*[contains(@class, 'ce-')]
 
-#autodetect_on_failure: no
-prune: no
-tidy: no
-#parser: html5php
-
-# TYPO3: <source> tags are not self-closed; libxml swallows the fallback <img>.
-# html5php parses correctly; unwrap <picture> so wallabag shows the fallback img.
+# TYPO3: unwrap <picture> so wallabag keeps the fallback <img>
 replace_string(<picture>): <div class="ce-image-wrap">
 replace_string(</picture>): </div>
 
-# replace an illegal acut accent and remove script node or wallabag will show parts of it
+# malformed accents in page HTML can expose script fragments in the fetch
 strip: //script
 
 strip_id_or_class: ads
@@ -25,9 +20,13 @@ strip_id_or_class: expert_ads_row
 strip: //div[contains(@class, 'news-authorprofile')]
 strip: //div[contains(@class, 'expert_ads')]
 strip: //div[contains(@class, 'news-related')]
+strip: //div[contains(@class, 'news-related-wrap')]
 strip: //div[contains(@class, 'content_nav')]
 strip: //div[contains(@class, 'ce_newsletter_link')]
 strip: //span[contains(@class, 'ads_text')]
 strip: //ins[contains(@class, 'adsbygoogle')]
+
+prune: no
+tidy: no
 
 test_url: https://www.energie-experten.org/news/weltweit-groesster-redox-flow-speicher-soll-stern-von-laufenburg-stabilisieren
