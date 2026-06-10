@@ -1,21 +1,25 @@
 # energie-experten.org (TYPO3 News)
-# Article text is split across .article and separate ce-* content elements.
-# Union with ce-* is required; scope to .news-single to avoid footer/sidebar widgets.
+# Article intro lives in .news-single/.article; later sections sit in sibling
+# frame-type-news_pi1 blocks OUTSIDE .news-single (ce-* global union required).
+# Footer widgets stripped via id/class rules below.
 
 title: //meta[@property="og:title"]/@content
 title: //h1[@itemprop="headline"]
 
-body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')] | //div[contains(@class, 'news news-single')]//*[contains(@class, 'ce-')]
+body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')] | //*[contains(@class, 'ce-')]
 
-# TYPO3: unwrap <picture> so wallabag keeps the fallback <img>
 replace_string(<picture>): <div class="ce-image-wrap">
 replace_string(</picture>): </div>
 
-# malformed accents in page HTML can expose script fragments in the fetch
 strip: //script
 
 strip_id_or_class: ads
 strip_id_or_class: expert_ads_row
+strip_id_or_class: angebote-anfordern
+strip_id_or_class: interressen-menue
+
+strip: //footer
+strip: //h1[@itemprop="headline"]
 
 strip: //div[contains(@class, 'news-authorprofile')]
 strip: //div[contains(@class, 'expert_ads')]
