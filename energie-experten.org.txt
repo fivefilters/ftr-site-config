@@ -1,0 +1,36 @@
+# energie-experten.org (TYPO3 News)
+# Article intro lives in .news-single/.article; later sections sit in sibling
+# frame-type-news_pi1 blocks OUTSIDE .news-single (ce-* global union required).
+# Footer widgets stripped via id/class rules below.
+
+title: //meta[@property="og:title"]/@content
+title: //h1[@itemprop="headline"]
+
+body: //div[contains(@class, 'news news-single')]//div[contains(@class, 'article')] | //*[contains(@class, 'ce-')]
+
+replace_string(<picture>): <div class="ce-image-wrap">
+replace_string(</picture>): </div>
+
+strip: //script
+
+strip_id_or_class: ads
+strip_id_or_class: expert_ads_row
+strip_id_or_class: angebote-anfordern
+strip_id_or_class: interressen-menue
+
+strip: //footer
+strip: //h1[@itemprop="headline"]
+
+strip: //div[contains(@class, 'news-authorprofile')]
+strip: //div[contains(@class, 'expert_ads')]
+strip: //div[contains(@class, 'news-related')]
+strip: //div[contains(@class, 'news-related-wrap')]
+strip: //div[contains(@class, 'content_nav')]
+strip: //div[contains(@class, 'ce_newsletter_link')]
+strip: //span[contains(@class, 'ads_text')]
+strip: //ins[contains(@class, 'adsbygoogle')]
+
+prune: no
+tidy: no
+
+test_url: https://www.energie-experten.org/news/weltweit-groesster-redox-flow-speicher-soll-stern-von-laufenburg-stabilisieren
