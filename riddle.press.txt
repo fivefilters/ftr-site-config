@@ -1,0 +1,15 @@
+http_header(User-Agent): Wallabag/2
+
+body: //main/article[1]
+
+strip_id_or_class: gh-article-tag
+strip_id_or_class: gh-article-title
+strip_id_or_class: gh-meta-share
+
+# [wallabag] activate lead/large images
+strip_attr: //img/@srcset
+
+prune: no
+tidy: no
+
+test_url: https://riddle.press/a-marriage-between-handwritten-notes-and-obsidian/
