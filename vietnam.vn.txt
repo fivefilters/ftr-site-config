@@ -1,0 +1,5 @@
+author: //meta[@name="author"]/content
+
+body: //div[contains(concat(' ',normalize-space(@class),' '), ' post-detail-body ')]
+
+test_url: https://www.vietnam.vn/ja/su-troi-day-cua-chip-nho-trung-quoc-kich-ban-ha-nhiet-cho-gia-ram-va-ssd-toan-cau
