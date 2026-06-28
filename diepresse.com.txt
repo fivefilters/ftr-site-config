@@ -13,16 +13,18 @@ body: //article | //div[@id='articletext'] | //div[@id='article-body']
 
 strip: //div[@class='meta__date']
 strip: //div[@class='meta__authors']
-strip: //article/h1[1]
+strip: //article/div[1]/h1[1]
 strip: //div[contains(@class, 'fm-relation')]
 strip: //div[@class='vued']
 strip: //svg
 strip: //button
+strip: //a[contains(@href, 'google.com/preferences/')]
 
 strip_id_or_class: skyline
 strip_id_or_class: article__actions
 strip_id_or_class: article__byline
 strip_id_or_class: article__breadcrumbs
+strip_id_or_class: author
 
 # strip gerneric text images when there is no article photo/image
 
