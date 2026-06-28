@@ -1,6 +1,9 @@
 title: substring-before(//title, '/朝日税理士法人')
+date: substring-before(substring-after(//script[@type="application/ld+json"], '"datePublished":"'), '","dateModified"')
+author: //meta[@name="author"]/content
 
 strip: //h3[contains(.,  'カテゴリー')]
 strip: //h3[contains(.,  '月別アーカイブ')]
 
 test_url: https://www.taxacc.jp/blog/202512/
+test_url: https://www.taxacc.jp/magazine/pc/202605-2/
