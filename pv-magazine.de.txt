@@ -1,0 +1,8 @@
+# pv-magazine.de — Cloudflare blocks Graby's default User-Agent (Chrome 15).
+# Modern UA restores fetch; Readability handles free articles.
+# Premium posts (_premium) remain teaser-only without shop SSO cookies.
+
+http_header(user-agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+
+test_url: https://www.pv-magazine.de/2026/06/23/montel-hitzewelle-sorgt-fuer-rekord-strompreise-in-europa/
+test_contains: historischen Preisspitzen
