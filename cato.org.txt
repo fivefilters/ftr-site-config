@@ -1,0 +1,16 @@
+# Site config for Cato Institute (cato.org)
+# Test URL: https://www.cato.org/blog/immigrants-use-less-welfare-even-counting-their-us-born-children
+
+# Extract title, date, author
+title: //h1[@property='headline']
+date: //meta[@property='article:published_time']/@content
+author: //span[@property='author']
+
+# Extract body
+body: //div[contains(concat(' ', normalize-space(@class), ' '), ' js-read-depth-tracking-container ')]
+body: //div[contains(concat(' ', normalize-space(@class), ' '), ' main-content ')]
+
+# Strip elements we don't need
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' sentinel ')]
+
+test_url: https://www.cato.org/blog/immigrants-use-less-welfare-even-counting-their-us-born-children
