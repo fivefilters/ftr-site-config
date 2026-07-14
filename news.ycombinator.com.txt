@@ -1,5 +1,14 @@
+http_header(User-Agent): wallabag/2
+
 body: //table[@class='comment-tree']
 date: substring-after(//a[contains(@href, 'item?id=')] , 'on ')
+
+# Remove the nonfunctional collapse links
+strip: //a[@class= 'togg clicky']
+
+# Remove extra padding
+find_string: td
+replace_string: td style="padding: 0;"
 
 strip_comments: no
 strip: //a[. = 'reply']
