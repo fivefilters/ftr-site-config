@@ -1,3 +1,0 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' inner-post-entry ')]
-
-test_url: https://www.smarthomebeginner.com/docker-home-media-server-2018-basic/

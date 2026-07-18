@@ -1,5 +1,0 @@
-body: //article
-
-strip: //aside[contains(@class, "mashsb-container")]
-
-test_url: https://juliareda.eu/2019/02/eu-copyright-final-text/

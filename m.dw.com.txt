@@ -1,6 +1,0 @@
-title: //h1
-body: //div[@class='article__intro'] | //div[@itemprop='articleBody']
-author: //meta[@name='author']/@content
-
-test_url: https://m.dw.com/de/wie-sieht-die-zukunft-von-fridays-for-future-aus/a-50436506
-test_contains: Sie protestieren nun schon seit Monaten für den weltweiten

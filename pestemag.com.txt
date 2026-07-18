@@ -1,8 +1,0 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' blog-item-content ')]
-
-# Remove pull quotes
-strip_id_or_class: quote-block
-
-prune: no
-
-test_url: https://www.pestemag.com/featured-posts/detained-in-haitis-national-prison-men-describe-horrors-of-cholera-outbreak-r5kbz
