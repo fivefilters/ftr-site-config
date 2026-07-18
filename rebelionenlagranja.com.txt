@@ -1,7 +1,0 @@
-title: //h1[@class='entry-title']
-author: //meta[@name="twitter:data1"]/@content
-date: //span[@class='entry-date']
-body: //div[@class='article-content']
-
-test_url: https://rebelionenlagranja.com/noticias/las-maquinaciones-de-iglesias-en-bolivia-para-bloquear-la-investigacion-penal-sobre-podemos-20201125
-test_url: https://rebelionenlagranja.com/noticias/james-bond-la-hora-de-morir-por-lou-aguilar-20211001

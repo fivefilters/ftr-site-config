@@ -1,3 +1,0 @@
-body: //div[contains(@class, "excerpt")]
-
-test_url: https://www.chaperonsetvous.fr/legalite-ca-commence-a-la-creche-3/

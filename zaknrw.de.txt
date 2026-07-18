@@ -1,3 +1,0 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' single-content ')]
-
-test_url: http://www.zaknrw.de/medium/audience-development-und-diversitaet

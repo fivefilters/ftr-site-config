@@ -1,3 +1,0 @@
-body: //section[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
-
-test_url: http://www.xlsemanal.com/firmas/20171126/perez-reverte-el-hombre-que-si-estaba-alli.html
