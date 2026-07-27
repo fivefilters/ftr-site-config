@@ -1,20 +1,12 @@
 title: //h1
 author: //div[contains(@class,'single-post-top')]/p[@class='small']
-date: //div[@class='date-cat']/p[@class='small'][1]
+date: //meta[@property="article:modified_time"]/@content
+date: //meta[@property="article:published_time"]/@content
 body: //div[contains(@class,'single-item')]
 
 strip: //div[contains(@class,'share')]
-strip: //noscript
 strip: //script
 strip: //style
-strip: //*[contains(@class,'owl-carousel')]//div[position()>1]
-
-# Bilder mit lazyload: data-src als src verwenden
-strip_image_src: data:image/svg+xml
-
-# HTML5-Attribute für Bilder auflösen
-find_string: data-src="
-replace_string: src="
 
 prune: no
 tidy: no
