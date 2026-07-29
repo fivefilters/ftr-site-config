@@ -1,0 +1,19 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+body: //main/article[1]
+
+strip: //hgroup/div[1]
+strip: //div[contains(@class, 'article-hero-block_')]
+strip: //div[contains(@class, 'tag-list_')]
+strip: //div[contains(@class, 'trustbox_')]
+
+prune: no
+tidy: no
+
+test_url: https://www.aachener-zeitung.de/region-nrw/erst-hitze-dann-gewitter-bis-zu-34-grad-in-der-region/159327668.html
