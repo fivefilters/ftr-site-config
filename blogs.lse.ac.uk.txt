@@ -1,5 +1,14 @@
 http_header(user-agent): PHP/8.3
 
+body: //div[@class='single-post__main-content']
+author: //div[@class='author__main']//h3
+
+strip_id_or_class: comments
+strip_id_or_class: read-next
+strip_id_or_class: pf-button
+
+strip: //h3[starts-with(. , 'by ')]
+
 # [wallaback] activate sub-headings
 strip_attr: //*[contains(@class,'wp-block-heading')]/@class
 
