@@ -1,0 +1,6 @@
+date: //aside//time/@datetime
+
+strip: //a[@class="message"]
+strip: //img[@class="signature"]
+
+test_url: https://arielsalminen.com/2026/progressive-web-components/
