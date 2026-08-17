@@ -10,6 +10,9 @@ strip: //div[@class='aawp']
 strip_id_or_class: aawp-disclaimer
 strip_id_or_class: su-posts
 strip_id_or_class: wp-embedded-content
+strip: //div[contains(@class,'cb-bookmark-container')]
+strip: //div[contains(@class,'cb-error-report-wrap')]
+strip: //a[contains(@class,'cb-internal-link-card')]
 
 # remove google preferences box
 strip: //a[contains(@href, 'google.com/preferences/')]
