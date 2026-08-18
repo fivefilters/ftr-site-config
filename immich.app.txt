@@ -1,6 +1,19 @@
 title: //h1
 body: //div[contains(@class, 'max-w-3xl')] | //div[contains(@class, 'max-w-2xl')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' mt-4 ')]/p[1]
+author: substring-after(//div[contains(concat(' ',normalize-space(@class),' '),' mt-4 ')]/p[2] , '— ')
 
+# strip header, seem to work only for 'Release Notes'
 strip: //div[contains(@class, 'max-w-3xl')]/div[1]
 
+# category link
+strip_id_or_class: mt-2
+# breadcrumbs
+strip: //ul[contains(@class, 'text-muted')]
+# date/author
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' mt-4 ')]
+
+prune: no
+
 test_url: https://immich.app/blog/v3.1.0-release
+test_url: https://immich.app/blog/2026-june-recap
