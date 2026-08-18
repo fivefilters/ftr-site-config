@@ -1,0 +1,6 @@
+title: //h1
+body: //div[contains(@class, 'max-w-3xl')] | //div[contains(@class, 'max-w-2xl')]
+
+strip: //div[contains(@class, 'max-w-3xl')]/div[1]
+
+test_url: https://immich.app/blog/v3.1.0-release
