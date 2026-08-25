@@ -1,0 +1,5 @@
+title: //h1[@class="entry-title"]
+body: //div[@class="entry-content"]
+date: //time[contains(@class, 'published')]/@datetime
+
+test_url: https://mzemmour.hypotheses.org/130
