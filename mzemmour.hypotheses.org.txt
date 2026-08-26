@@ -2,4 +2,10 @@ title: //h1[@class="entry-title"]
 body: //div[@class="entry-content"]
 date: //time[contains(@class, 'published')]/@datetime
 
+strip: //div[contains(@class, "section_ppa")]/following-sibling::div[@class="citation"]/preceding-sibling::hr
+strip: //div[contains(@class, "section_ppa")]/following-sibling::div[@class="citation"]/following-sibling::hr
+strip: //div[contains(@class, "section_ppa")]/following-sibling::div[@class="citation"]
+strip: //div[contains(@class, "section_ppa")]
+strip: //ul[@class="soc"]
+
 test_url: https://mzemmour.hypotheses.org/130
