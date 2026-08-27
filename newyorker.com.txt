@@ -29,7 +29,7 @@ tidy: no
 http_header(Cookie): pay_ent_msmp=1
 
 test_url: https://www.newyorker.com/magazine/2016/02/08/mothers-day-fiction-george-saunders
-test_url: https://www.newyorker.com/online/blogs/culture/2012/06/mug-shot-web-sites.html
+test_url: https://www.newyorker.com/culture/culture-desk/hotties-hunks-beat-up-celebrities-the-allure-of-the-mug-shot
 test_url: https://www.newyorker.com/reporting/2013/04/22/130422fa_fact_bilger?currentPage=all&mobify=0
 test_url: https://www.newyorker.com/magazine/2023/11/20/a-coder-considers-the-waning-days-of-the-craft
 # Cartoons
