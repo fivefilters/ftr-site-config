@@ -15,10 +15,8 @@ strip: //h1
 strip: //div[@data-testid="BylinesWrapper"]
 strip: //time
 strip: //ul[@data-testid="socialIconslist"]
-strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' caption ')]
 
 # Clean up body
-strip: //div[@data-testid="GenericCallout"]
 strip: //figure[@data-testid="IframeEmbed"]
 
 # Strip unrelated cartoons
