@@ -1,6 +1,8 @@
 # Emphasize lead paragraph (replace needs to be done before parsing body)
 find_string: <header
 replace_string: <em
+find_string: </header>
+replace_string: </em>
 
 body: //em[@data-testid='SplitScreenContentHeaderWrapper'] | //div[@class='body__inner-container']
 
