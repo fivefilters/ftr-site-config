@@ -2,7 +2,11 @@ title: //main//header//h1
 date: //header//time/@datetime
 body: //main//article//div[@id="post-content"]
 
+# [wallabag] activate images
+strip_attr: //img[contains(@src, '/')]/@srcset
+
 prune: no
 tidy: no
 
 test_url: https://www.d12frosted.io/posts/2025-12-06-vui-under-the-hood
+test_url: https://www.d12frosted.io/posts/2026-06-30-vulpea-schemas
