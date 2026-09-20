@@ -1,4 +1,0 @@
-# Title is not detected automatically
-title: //section[contains(@class, 'section-intro')]//h1
-
-test_url: https://labs.mwrinfosecurity.com/blog/hp-nonstop-basics/

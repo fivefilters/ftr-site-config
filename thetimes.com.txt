@@ -16,6 +16,7 @@ strip_id_or_class: article-promoted-content
 strip_id_or_class: article-share-buttons
 strip_id_or_class: article-previous-next
 strip_id_or_class: comments-container
+strip_id_or_class: top-stories
 
 prune: no
 

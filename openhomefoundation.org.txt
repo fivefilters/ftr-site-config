@@ -1,0 +1,4 @@
+title: //h1
+author: //meta[@property="og:image:author"]/@content
+
+test_url: https://www.openhomefoundation.org/blog/a-big-win-for-android-interoperability/

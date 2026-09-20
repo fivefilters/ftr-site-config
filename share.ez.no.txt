@@ -1,4 +1,0 @@
-author: //div[@class="entry-user"]//a
-body: //div[@class="attribute-long"]
-
-test_url: http://share.ez.no/blogs/jean-luc-chassaing/how-one-should-code-in-ez-platform

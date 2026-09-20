@@ -8,6 +8,7 @@ author: //div[@class='byline']/a[0]
 strip_id_or_class: promo_article
 strip_id_or_class: google-ad
 strip_id_or_class: articleList
+strip_id_or_class: articlesByTag
 
 # The Register embeds some quotes in a div with the class 'blockextract'.
 # Unfortunately Readability considers 'extract' as an indication that a node

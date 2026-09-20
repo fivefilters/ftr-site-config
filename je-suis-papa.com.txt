@@ -1,3 +1,0 @@
-strip: //noscript
-
-test_url: http://www.je-suis-papa.com/pandacraft-kit-educatif-creatif-abonnement-12-ans/

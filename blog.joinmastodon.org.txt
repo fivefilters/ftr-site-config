@@ -1,0 +1,5 @@
+body: //main[@id="main-content"]
+date: //article//time[contains(@class, "dt-published")]/@datetime
+author: //meta[@name="article:author"]/@content
+
+test_url: https://blog.joinmastodon.org/2026/06/mastodon-4.6/

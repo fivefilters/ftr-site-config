@@ -1,5 +1,0 @@
-title: //h1
-body: //div[@class='copy__content'] | //div[@class='heroStage__introText']
-
-test_url: https://www.addendum.org/pendler/problem-pendlerpauschale
-test_url: https://www.addendum.org/repraesentation/zusammensetzung-nationalrat/

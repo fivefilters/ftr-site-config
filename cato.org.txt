@@ -1,0 +1,23 @@
+# Site uses JavaScript, API-calls and/or techniques to prevent content catching, so...
+
+# This works NOT with ftr.fivefilters.net (FTR|Fulltext-RSS)
+# This works NOT with wallabag UI
+
+# This only works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+##############################################
+
+# Extract title, date, author (will not work with wallabagger)
+title: //h1[@property='headline']
+date: //meta[@property='article:published_time']/@content
+author: //span[@property='author']
+author: //div[contains(@class, 'authors')]//a
+
+# Extract body
+body: //div[contains(concat(' ', normalize-space(@class), ' '), ' js-read-depth-tracking-container ')]
+body: //div[contains(concat(' ', normalize-space(@class), ' '), ' main-content ')]
+
+# Strip elements we don't need
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' sentinel ')]
+
+test_url: https://www.cato.org/blog/immigrants-use-less-welfare-even-counting-their-us-born-children

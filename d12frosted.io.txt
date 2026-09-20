@@ -1,0 +1,19 @@
+title: //main//header//h1
+date: //header//time/@datetime
+body: //main//article//div[@id="post-content"]
+
+# [wallabag] activate images
+strip_attr: //img[contains(@src, '/')]/@srcset
+
+# Strip the "#1" in front of titles. This solution is clean and works
+# everywhere except in Wallabag:
+strip_id_or_class: heading-level-indicator
+# This solution is less clean but works in Wallabag:
+find_string: text-ink-muted">#1
+replace_string: text-ink-muted">
+
+prune: no
+tidy: no
+
+test_url: https://www.d12frosted.io/posts/2025-12-06-vui-under-the-hood
+test_url: https://www.d12frosted.io/posts/2026-06-30-vulpea-schemas

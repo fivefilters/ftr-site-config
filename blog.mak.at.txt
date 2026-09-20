@@ -1,0 +1,14 @@
+title: //h1
+author: //div[contains(@class,'single-post-top')]/p[@class='small']
+date: //meta[@property="article:modified_time"]/@content
+date: //meta[@property="article:published_time"]/@content
+body: //div[contains(@class,'single-item')]
+
+strip: //div[contains(@class,'share')]
+strip: //script
+strip: //style
+
+prune: no
+tidy: no
+
+test_url: https://blog.mak.at/zum-100-geburtstag-der-frankfurter-kueche/

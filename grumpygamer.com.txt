@@ -1,5 +1,5 @@
-title: //h3[@class="post-title"]
+title: //div[@class="title"]
 author: "Ron Gilbert"
-body: //div[@class="grumpypost"]
+body: //div[@class="body"]
 
 test_url: https://grumpygamer.com/scope_budget_schedule

@@ -1,9 +1,11 @@
 body: //main
 
-strip: //aside
 strip: //header//h1
-strip: //header//time
+strip: //header//time/parent::div
+strip: //figure/following-sibling::div[contains(@class, 'top-0')]
+
+strip_id_or_class: lg:hidden
 
 prune: no
 
-test_url: https://eudi-wallet.gov.de/news/eudi-wallet-community-event-2026
+test_url: https://eudi-wallet.gov.de/news/eudi-wallet-hackathon-2026

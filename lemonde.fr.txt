@@ -18,6 +18,15 @@ strip: //section[contains(@class, 'services')]
 strip: //section[@id="js-capping"]
 strip: //footer[contains(@class, "article__footer-single")]
 
+# Deal with in article ad slot
+# DoubleClick For Publishers (dfp) and in-article ad format (inread) are blocked by adblocker
+find_string: aria-hidden='true'
+replace_string: data-randomotherstring='true'
+find_string: dfp
+replace_string: randomotherstring
+find_string: inread
+replace_string: randomotherstring
+
 # Remove "Lire aussi" blocks
 strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]
 
@@ -86,3 +95,4 @@ test_url: https://www.lemonde.fr/pixels/article/2018/07/14/douze-jeux-video-pour
 test_url: https://www.lemonde.fr/sante/video/2016/04/07/diabete-pourquoi-une-telle-progression-de-l-epidemie_4898147_1651302.html
 test_url: https://www.lemonde.fr/pixels/article/2023/12/20/manettes-de-playstation-sony-condamne-a-13-5-millions-d-euros-d-amende-pour-des-pratiques-anticoncurrentielles_6206941_4408996.html
 test_url: https://www.lemonde.fr/planete/article/2024/02/29/contre-le-frelon-asiatique-les-apiculteurs-appellent-a-la-mobilisation-generale_6219215_3244.html
+

@@ -1,3 +1,0 @@
-body: //div[@id="product_tabs-0"]
-
-test_url: https://www.marketresearchdirect.com/consumer-goods/smart-lighting-market-in-india-2018-2023-market-report
