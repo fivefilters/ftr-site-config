@@ -1,4 +1,5 @@
 author: //a[@class="article-header-author__name"]
+author: //div[@class="article-author-bottom__name"]
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
 
@@ -12,6 +13,8 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' --leafs ')]
 strip_id_or_class: article-tags
 strip_id_or_class: article-index
 strip_id_or_class: article-book
+strip_id_or_class: article-body-aera-book-wrap
+strip_id_or_class: article-body-recommend
 
 replace_string(<i>): 
 replace_string(</i>):
@@ -20,3 +23,4 @@ replace_string(</h2>): </h3>
 
 test_url: https://dot.asahi.com/aerakids/articles/-/274073
 test_url: https://dot.asahi.com/aerakids/articles/-/274981?page=1
+test_url: https://dot.asahi.com/articles/-/292768?page=1
