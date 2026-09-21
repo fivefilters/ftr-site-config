@@ -1,4 +1,4 @@
-body: //article[contains(@class, 'article-normal')]
+body: //main/article[1]
 
 strip_id_or_class: post-title-container
 strip_id_or_class: post-comments-shortcut
