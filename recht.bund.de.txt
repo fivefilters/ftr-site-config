@@ -1,4 +1,4 @@
-# Official Publication of Federal Laws in Germany
+# Bundesgesetzblatt - Official Publication of Federal Laws in Germany
 
 # the real content is an iframe-ed PDF, which can't be embedded in
 # other domain's webpages, so you will only find meta data
@@ -14,6 +14,9 @@ strip: //*[contains(@class, '-tooltip')]
 
 # remove 'about' section
 strip_id_or_class: qs-carousel
+
+# common clean-up
+strip: //h1
 
 prune: no
 tidy: no
