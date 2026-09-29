@@ -1,0 +1,30 @@
+# Official Publication of Federal Laws in Germany
+
+# the real content is an iframe-ed PDF, which can't be embedded in
+# other domain's webpages, so you will only find meta data
+# and download buttons in the excerpt
+
+body: //main
+
+# remove the PDF, as it would deny to show up in RSS Reader or Read-Later-App
+strip: //iframe
+
+# remove button and the button-toolitip
+strip: //*[contains(@class, '-tooltip')]
+
+# remove 'about' section
+strip_id_or_class: qs-carousel
+
+prune: no
+tidy: no
+
+test_url: https://www.recht.bund.de/bgbl/1/2026/261/VO
+
+# Feed für Veröffentlichungen im Bundesgesetzblatt Teil I
+test_url: https://www.recht.bund.de/rss/feeds/rss_bgbl-1.xml
+
+# Feed für Veröffentlichungen im Bundesgesetzblatt Teil II
+test_url: https://www.recht.bund.de/rss/feeds/rss_bgbl-2.xml
+
+# Feed für Veröffentlichungen im Bundesgesetzblatt Teil I+II
+https://www.recht.bund.de/rss/feeds/rss_bgbl-1-2.xml
