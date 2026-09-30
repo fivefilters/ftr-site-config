@@ -1,0 +1,25 @@
+title: //h1
+
+strip: //div[@class="metabit tags"]
+strip: //aside[@id="toc"]
+strip: //footer/following-sibling::h2
+strip: //footer
+strip: //section[@id="bluesky-likes"]/following-sibling::h3
+strip: //section[@id="bluesky-likes"]
+
+find_string: tabindex="-1"
+replace_string:
+
+find_string: <a class="header-anchor" href="
+replace_string: <span data-header-href="
+
+find_string: </a></h2>
+replace_string: </span></h2>
+
+find_string: <details
+replace_string: <details open
+
+replace_string(<details): <div
+replace_string(</details>): </div>
+
+test_url: https://verou.me/blog/2026/web-deps/
