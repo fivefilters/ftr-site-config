@@ -1,0 +1,16 @@
+# DE: Offizielle Datenbank mit Bundesgesetzen in Deutschland
+#     Beste Ergebnisse mit den HTML-Versionen der Gesetze
+
+# EN: Offical database for Federal Laws in Germany
+#     Best results with the HTML versions of the laws
+
+body: //div[starts-with(@id, 'content_')]/div[@id='container']
+
+# remove title from content and weblinks to 'Unofficial Table of Contents'
+strip: //div[@class='jnheader']/h1
+strip: //a[contains(@href, 'index.html')]
+
+prune: no
+tidy: no
+
+test_url: https://www.gesetze-im-internet.de/bimschv_35/BJNR221810006.html
