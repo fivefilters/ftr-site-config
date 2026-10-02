@@ -1,0 +1,9 @@
+title: //div[@class='print-hidden']/*/h1
+body: //div[@itemProp='articleBody']
+author: //a[contains(@class, '_author__title')]
+next_page_link: //a[@title='Next Page']
+http_header(User-Agent): PHP/8.4
+# single page
+test_url: https://www.literotica.com/s/why-i-am-here
+# multi-page
+test_url: https://www.literotica.com/s/this-is-how-you-remind-me
