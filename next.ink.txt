@@ -1,4 +1,4 @@
-body: //div[@id='next-single-post']
+body: //div[@id="next-header-post"]//p[@class="wp-block-paragraph"] | //div[@id='next-single-post']
 body: //article[1]
 body:  //div[@id='article-single']
 title: //h1[@id='single-article-title']
@@ -48,14 +48,16 @@ replace_string: class="wb_foo"
 
 requires_login: yes
 
-login_uri: https://next.ink/wp-admin/admin-ajax.php
+login_uri: https://next.ink/auth/login/
 login_username_field: username
 login_password_field: password
 
-login_extra_fields: action=ajaxlogin
-login_extra_fields: security=@=xpath('//input[@name="security"]', request_html('https://next.ink/login/'))
+login_extra_fields: _wp_http_referer=/auth/login/
+login_extra_fields: bifrost_auth_action=login
+login_extra_fields: submit=Connexion
+login_extra_fields: _wpnonce=@=xpath('//input[@name="_wpnonce"]', request_html('https://next.ink/auth/login/'))
 
-not_logged_in_xpath: //div[contains(concat(' ',normalize-space(@class),' '),' content-form-account-paywall ')]
+not_logged_in_xpath: //div[@id="next-paywall-separator"]
 
 src_lazy_load_attr: fifu-data-src
 
