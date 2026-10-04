@@ -1,0 +1,13 @@
+body: //*[@data-sentry-component="HtmlContent"] | //figure[@data-sentry-component="SupportingImage"]
+author: //div[@data-sentry-component="Byline"]//img/@alt
+
+strip: //div[@data-sentry-component="SectionLink"]
+strip: //h1[@data-sentry-component="Heading"]
+strip: //h3[text()='Del artikkel']/parent::div | //h3[text()='Del artikkel']/parent::div/following-sibling::*
+
+strip_id_or_class: print:hidden
+
+prune: no
+tidy: no
+
+test_url: https://medwatch.no/nyheter/ehelse/article19686216.ece
