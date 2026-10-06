@@ -1,5 +1,5 @@
 title: //h1
-body: //div[contains(@class, 'max-w-3xl')] | //div[contains(@class, 'max-w-2xl')]
+body: //article
 date: //div[contains(concat(' ',normalize-space(@class),' '),' mt-4 ')]/p[1]
 author: substring-after(//div[contains(concat(' ',normalize-space(@class),' '),' mt-4 ')]/p[2] , '— ')
 
@@ -12,6 +12,8 @@ strip_id_or_class: mt-2
 strip: //ul[contains(@class, 'text-muted')]
 # date/author
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' mt-4 ')]
+# bottom navigation
+strip: //nav
 
 prune: no
 
