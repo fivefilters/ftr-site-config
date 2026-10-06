@@ -14,6 +14,9 @@ strip_id_or_class: breadcrumb
 strip_id_or_class: short-article-description
 # Strip links to other articles (despite the quite generic name)
 strip_id_or_class: paragraph
+# strip section seemore
+strip_id_or_class: article-seemore-synopsis
 
 test_url: http://www.futura-sciences.com/magazines/espace/infos/actu/d/astronomie-surprenants-panaches-ceres-62066/
 test_url: http://www.futura-sciences.com/magazines/high-tech/infos/actu/d/technologie-bientot-plus-besoin-machine-laver-62157/#xtor=RSS-8
+test_url: https://www.futura-sciences.com/planete/questions-reponses/abeille-miel-peut-il-traverser-annees-bacteries-ne-attaquent-k2m6-t9k0-26347/#xtor%3DRSS-11
