@@ -1,0 +1,5 @@
+body: //div[@id='comic'] | //div[@class='post-comic']//div[@class='entry']
+
+test_url: https://www.buttersafe.com/2026/06/04/big-long-cigarette-so-long-it-goes-into-the-sky-comics/
+test_contains: 2026-06-04-BigLongCigaretteComics.jpg
+test_contains: a wonderful mind that thinks of beautiful things
