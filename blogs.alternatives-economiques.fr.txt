@@ -1,0 +1,3 @@
+author: //div[contains(@class, "field--name-field-auteur")]
+
+test_url: https://blogs.alternatives-economiques.fr/groupeduvendredi/2026/10/08/budget-2027-tout-le-monde-ne-contribue-pas-a-l-effort
