@@ -1,0 +1,10 @@
+body: //div[@class='content']//article[1]//div[contains(@class, 'full-content')] | //div[@class='content']//article[1]//div[contains(@class, 'full-content')]/preceding-sibling::div[contains(@class, 'lead-media-wrapper')]
+title: //h1[@class='page-title']
+
+strip: //footer
+strip_id_or_class: field-tags
+
+prune: no
+tidy: no
+
+test_url: https://fstoppers.com/education/how-bayer-filter-works-and-why-your-camera-sensor-colorblind-904186
