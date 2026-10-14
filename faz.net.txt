@@ -47,6 +47,7 @@ replace_string( ·  ):
 strip_id_or_class: TeaserMore
 strip_id_or_class: plista_alternativ
 strip_id_or_class: paywall
+strip_id_or_class: regwall
 strip_id_or_class: header-teaser__image-details
 strip_id_or_class: tik4-sharing
 strip: //aside[contains(concat(' ',normalize-space(@class),' '),' btn ')]
