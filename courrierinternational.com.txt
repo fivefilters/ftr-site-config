@@ -1,35 +1,26 @@
-title: //h1
-
-# We can have multiple authors
-author: //div[@class='author-name-short']
+title: //h1[@class='article-title']
+author: //div[@class='article-authors']
 
 # Publication date
 date: //time[@itemprop='datePublished']/@datetime
 
 body: //div[@class='article-content'] | //p[@class='article-lede']
 
-strip_id_or_class: article-aside
-strip_id_or_class: article-headlines
-strip_id_or_class: article-subject-readmore
+strip_id_or_class: asset-read-more
 strip_id_or_class: article-secondary
-strip_id_or_class: box-reserved-abo
-strip_id_or_class: action-zen-off-top
-strip_id_or_class: action-zen-off-bottom
+strip_id_or_class: bloc-newsletter-article
 
 strip: //aside
 strip: //details
 
 prune: no
 
-requires_login: true
-not_logged_in_xpath: //div[@class="box-reserved-abo"]
+requires_login: yes
+not_logged_in_xpath: //div[@class="article-paywall"]
 
-login_uri: https://www.courrierinternational.com/login
-login_username_field: name
-login_password_field: pass
-login_extra_fields: form_build_id=@=xpath('//form[@id="user-login-form"]//input[@name="form_build_id"]', request_html('https://www.courrierinternational.com/login'))
-login_extra_fields: form_id=user_login_block
-login_extra_fields: remember_me=1
+login_uri: https://secure.courrierinternational.com/sfuser/connexion
+login_username_field: email
+login_password_field: password
 
 test_url: https://www.courrierinternational.com/article/securite-informatique-cyberattaque-une-tempete-planetaire
 test_url: https://www.courrierinternational.com/article/election-aux-philippines-duterte-en-majeste-apres-les-elections-de-mi-mandat
