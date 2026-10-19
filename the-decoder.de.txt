@@ -1,0 +1,7 @@
+strip_id_or_class: wp-worthy-pixel
+strip_id_or_class: not-prose
+strip_id_or_class: leading-none
+strip_id_or_class: exclude-from-pdf
+
+test_url: https://the-decoder.de/minimax-m3-1-flash-ist-chinas-neuestes-modell-das-ki-preise-richtung-keller-drueckt/
+
