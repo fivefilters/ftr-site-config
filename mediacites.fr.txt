@@ -6,6 +6,7 @@ strip_id_or_class: send-gift-article-email
 strip_id_or_class: point-final
 strip_id_or_class: at-above-post
 strip_id_or_class: at-below-post
+strip_id_or_class: nonabo-message
 
 strip: //footer
 strip: //blockquote[contains(@class, 'wp-embedded-content')]
