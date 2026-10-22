@@ -1,0 +1,12 @@
+title: //h1[@id='page-title']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' blogs__body__center ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' author ')]//time/@datetime
+author: //div[contains(concat(' ',normalize-space(@class),' bio__body__name ')]
+
+single_page_link: //link[@rel="canonical"]
+
+strip_id_or_class: blogs__body__left
+strip_id_or_class: blogs__body__right
+
+
+test_url: https://blogs.mediapart.fr/michaelzemmour/blog/141026/temoignage-d-un-enseignant-chercheur-dans-le-contexte-de-la-mobilisation
