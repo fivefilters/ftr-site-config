@@ -1,7 +1,9 @@
 #bypass cookie check
 single_page_link: //a[contains(@href, '/accept?url=')]
 
-test_url: http://www.ad.nl/ad/nl/10444/Offside/article/detail/4043834/2015/05/31/Dani-Alves-voetbalt-met-drol-op-zijn-hoofd.dhtml
-test_contains: De nieuwe coupe van Alves
+http_header(User-Agent): curl/8.7.1
+
+test_url: https://www.ad.nl/bodegraven-reeuwijk/metalfestival-schiet-sgp-in-het-verkeerde-keelgat-de-poorten-van-godslastering-zullen-weer-openen~a3fe5e8d/
+test_contains: Maar dat het festival hem en in ieder geval zijn partijgenoten flink kwetst
 
 test_url: http://www.ad.nl/digitaal/rss.xml
