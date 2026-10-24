@@ -1,0 +1,5 @@
+body: //p[@class="ArticleBase-HeaderSummary"] | //div[contains(@class, "ArticleBase-FeaturedImageWrapper")] | //div[contains(@class, 'ArticleBase-BodyContent')]
+
+strip: //noscript
+
+test_url: https://www.gamedeveloper.com/business/ea-closes-mass-effect-dragon-age-creator-bioware-after-30-years-of-game-development
