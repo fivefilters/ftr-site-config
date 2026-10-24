@@ -1,0 +1,9 @@
+body: //article[@data-hook="post"]//section[@data-hook="post-description"]
+
+strip: //button
+
+# replace the small and slightly blured preview images with full-sized version
+find_string: /v1/fill/
+replace_string: " foo="
+
+test_url: https://www.ourwildneighbours.sg/post/reptile-awareness-day-do-you-know-your-scaly-neighbour
