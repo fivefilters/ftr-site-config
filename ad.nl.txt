@@ -1,9 +1,11 @@
+http_header(User-Agent): curl/8.7.1
+
 #bypass cookie check
 single_page_link: //a[contains(@href, '/accept?url=')]
 
-http_header(User-Agent): curl/8.7.1
+strip: //div[@data-content-type="CROSS_PROMOTION"]
 
 test_url: https://www.ad.nl/bodegraven-reeuwijk/metalfestival-schiet-sgp-in-het-verkeerde-keelgat-de-poorten-van-godslastering-zullen-weer-openen~a3fe5e8d/
 test_contains: Maar dat het festival hem en in ieder geval zijn partijgenoten flink kwetst
 
-test_url: http://www.ad.nl/digitaal/rss.xml
+test_url: http://www.ad.nl/tech/rss.xml
