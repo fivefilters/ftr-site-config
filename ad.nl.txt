@@ -1,11 +1,31 @@
 http_header(User-Agent): curl/8.7.1
 
+body: //section[@data-testid="primary-left"]/article
+
 #bypass cookie check
 single_page_link: //a[contains(@href, '/accept?url=')]
 
 strip: //div[@data-content-type="CROSS_PROMOTION"]
+strip: //div[@data-content-type="ADVERTISEMENT"]
+strip: //div[@data-content-type="MARKETING"]
+strip: //div[@data-content-type="SHARE"]
+strip: //div[@data-content-type="VIDEO_NEWS"]
+strip: //div[@data-content-type="AUTHOR"]
+strip: //div[@data-content-type="TIMESTAMP"]
+strip: //div[@data-content-type="PREFERRED_SOURCE"]
+strip: //div[@data-content-type="TITLE"]
+
+strip: //div[@data-content-type="PODCAST_PLAYLIST"]/self::div | //div[@data-content-type="PODCAST_PLAYLIST"]/preceding-sibling::div[@data-content-type="SUBHEADER"]
+
+strip: //button[contains(@class, '-top-link')]
+strip: //svg
+
+prune: no
+tidy: no
 
 test_url: https://www.ad.nl/bodegraven-reeuwijk/metalfestival-schiet-sgp-in-het-verkeerde-keelgat-de-poorten-van-godslastering-zullen-weer-openen~a3fe5e8d/
 test_contains: Maar dat het festival hem en in ieder geval zijn partijgenoten flink kwetst
+test_url: https://www.ad.nl/wielrennen/kooij-mag-dromen-van-eerste-geel-de-kansen-voor-van-der-poel-en-weinig-hooggebergte-dit-weten-we-over-het-tourparkoers~aff7bc08/
+test_contains: De Tour de France begint komend jaar
 
 test_url: http://www.ad.nl/tech/rss.xml
