@@ -1,8 +1,8 @@
-title: //h1[contains(concat(' ',normalize-space(@class),' '),' page-header ')]
-author: //div[contains(concat(' ',normalize-space(@class),' '),' field-name-submitted-by ')]//a[contains(@href,'/autor/')]
+title: //meta[@property="og:title"]/@content
+author: //meta[@property="schema:name"]/@content
 
 # The intro, the main image and the "paragraphs" blocks share the row holding field-name-body
-body: //div[contains(concat(' ',normalize-space(@class),' '),' node-article ')]/div[.//div[contains(concat(' ',normalize-space(@class),' '),' field-name-body ')]]
+body: //div[contains(@class, 'field-name-body')]/parent::div
 
 # Author card at the end of the article
 strip_id_or_class: field-name-field-ref-author
