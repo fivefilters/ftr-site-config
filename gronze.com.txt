@@ -1,0 +1,16 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' page-header ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' field-name-submitted-by ')]//a[contains(@href,'/autor/')]
+
+# The intro, the main image and the "paragraphs" blocks share the row holding field-name-body
+body: //div[contains(concat(' ',normalize-space(@class),' '),' node-article ')]/div[.//div[contains(concat(' ',normalize-space(@class),' '),' field-name-body ')]]
+
+# Author card at the end of the article
+strip_id_or_class: field-name-field-ref-author
+# Hidden file name above images
+strip_id_or_class: element-invisible
+strip_id_or_class: rdf-meta
+
+prune: no
+
+test_url: https://www.gronze.com/articulos/motivaciones-para-hacer-camino-santiago-14167
+test_url: https://www.gronze.com/articulos/hospitalidad-monastica-en-camino-santiago-42747
