@@ -1,4 +1,4 @@
-body: //main[@id="main-content"]
+body: //article[@class="h-entry"]/div[contains(@class, "rounded-lg")] | //main[@id="main-content"]
 date: //article//time[contains(@class, "dt-published")]/@datetime
 author: //meta[@name="article:author"]/@content
 
