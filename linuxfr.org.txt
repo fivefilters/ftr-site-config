@@ -1,0 +1,3 @@
+date: //article//time/@datetime
+
+test_url: https://linuxfr.org/news/flus-sort-en-3-0
