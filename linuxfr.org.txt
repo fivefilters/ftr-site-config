@@ -1,3 +1,17 @@
+body: //main/article
 date: //article//time/@datetime
+
+strip: //header
+strip: //footer
+strip: //figure[@class='score']
+
+strip_id_or_class: datePourCss
+
+## If you want to keep the TOC/summery/sommaire, remove/deactivate next 2 lines
+strip_id_or_class: sommaire
+strip_id_or_class: toc
+
+prune: no
+tidy: no
 
 test_url: https://linuxfr.org/news/flus-sort-en-3-0
