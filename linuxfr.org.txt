@@ -7,9 +7,9 @@ strip: //figure[@class='score']
 
 strip_id_or_class: datePourCss
 
-## If you want to strip the TOC/summery/sommaire, remove the # in next 2 lines
-#strip_id_or_class: sommaire
-#strip_id_or_class: toc
+## If you want to keep the TOC/summery/sommaire, remove/deactivate next 2 lines
+strip_id_or_class: sommaire
+strip_id_or_class: toc
 
 prune: no
 tidy: no
