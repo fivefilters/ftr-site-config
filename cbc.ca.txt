@@ -1,0 +1,3 @@
+http_header(user-agent): wallabag
+
+test_url: https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287
