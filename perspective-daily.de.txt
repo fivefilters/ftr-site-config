@@ -1,9 +1,24 @@
+# Site uses JavaScript, API-calls and/or techniques to build pages in your browser
+
+# special inline cites will result in incomplete sentences for
+# ... ftr.fivefilters.net (FTR|Fulltext-RSS)
+# ... wallabag UI
+
+# This only fully works with wallabagger browser-plugin with activated
+# option 'Retrieve content from the browser' in it's settings
+
+http_header(User-Agent): Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+
+body: //p[starts-with(@id, 'article_section_')] | //div[@id='article_text'] | //div[contains(@class, 'image_header')]
+
 # replace_string(<span class="info">): <div class="info">
 # strip: //span[@class="info"]
 
 strip: //cite
 
 skip_json_ld: yes
+prune: no
+
 
 # LQIP blur placeholders in img src break wallabag list previews (pixelated thumbnails)
 find_string: blur:100/q:1/
